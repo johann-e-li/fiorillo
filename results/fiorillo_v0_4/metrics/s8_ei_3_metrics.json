@@ -1,0 +1,217 @@
+{
+  "system": "s8_ei_3",
+  "arm": "B",
+  "base_dir": "/root/eddm_s8/models/qwen3_4b_base",
+  "init": "/root/eddm_s8/models/s7_b3",
+  "keep": "last",
+  "freeze_steps": 0,
+  "eval_every": 80,
+  "lr_adapters": 5e-05,
+  "lr_head": 0.0001,
+  "lora": {
+    "r": 16,
+    "alpha": 32.0,
+    "dropout": 0.05,
+    "wrapped_layers": 252
+  },
+  "gradient_checkpointing": false,
+  "autocast": "torch.bfloat16",
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  },
+  "rows": {
+    "train": 10046,
+    "validation": 300,
+    "test": 0
+  },
+  "epochs": 2,
+  "micro_batch": 1,
+  "grad_accum": 32,
+  "optimizer_steps": 628,
+  "max_len": 4096,
+  "elapsed_seconds": 7624.2,
+  "train_seconds": 7430.4,
+  "sequences_per_second": 2.7,
+  "validation_history": [
+    {
+      "n": 300,
+      "accuracy": 0.9167,
+      "log_loss": 0.218,
+      "ece": 0.0389,
+      "selection_log_loss": 0.218,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.9167,
+          "log_loss": 0.218,
+          "ece": 0.0389
+        }
+      },
+      "epoch": 1,
+      "step": 80,
+      "elapsed_seconds": 966.0
+    },
+    {
+      "n": 300,
+      "accuracy": 0.9367,
+      "log_loss": 0.2001,
+      "ece": 0.0286,
+      "selection_log_loss": 0.2001,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.9367,
+          "log_loss": 0.2001,
+          "ece": 0.0286
+        }
+      },
+      "epoch": 1,
+      "step": 160,
+      "elapsed_seconds": 1921.0
+    },
+    {
+      "n": 300,
+      "accuracy": 0.9367,
+      "log_loss": 0.1895,
+      "ece": 0.0373,
+      "selection_log_loss": 0.1895,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.9367,
+          "log_loss": 0.1895,
+          "ece": 0.0373
+        }
+      },
+      "epoch": 1,
+      "step": 240,
+      "elapsed_seconds": 2892.5
+    },
+    {
+      "n": 300,
+      "accuracy": 0.94,
+      "log_loss": 0.1793,
+      "ece": 0.028,
+      "selection_log_loss": 0.1793,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.94,
+          "log_loss": 0.1793,
+          "ece": 0.028
+        }
+      },
+      "epoch": 1,
+      "step": 314,
+      "elapsed_seconds": 3778.7
+    },
+    {
+      "n": 300,
+      "accuracy": 0.94,
+      "log_loss": 0.1794,
+      "ece": 0.0263,
+      "selection_log_loss": 0.1794,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.94,
+          "log_loss": 0.1794,
+          "ece": 0.0263
+        }
+      },
+      "epoch": 2,
+      "step": 320,
+      "elapsed_seconds": 3901.2
+    },
+    {
+      "n": 300,
+      "accuracy": 0.94,
+      "log_loss": 0.2082,
+      "ece": 0.0353,
+      "selection_log_loss": 0.2082,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.94,
+          "log_loss": 0.2082,
+          "ece": 0.0353
+        }
+      },
+      "epoch": 2,
+      "step": 400,
+      "elapsed_seconds": 4848.3
+    },
+    {
+      "n": 300,
+      "accuracy": 0.94,
+      "log_loss": 0.1989,
+      "ece": 0.0444,
+      "selection_log_loss": 0.1989,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.94,
+          "log_loss": 0.1989,
+          "ece": 0.0444
+        }
+      },
+      "epoch": 2,
+      "step": 480,
+      "elapsed_seconds": 5802.1
+    },
+    {
+      "n": 300,
+      "accuracy": 0.9367,
+      "log_loss": 0.1942,
+      "ece": 0.0375,
+      "selection_log_loss": 0.1942,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.9367,
+          "log_loss": 0.1942,
+          "ece": 0.0375
+        }
+      },
+      "epoch": 2,
+      "step": 560,
+      "elapsed_seconds": 6750.8
+    },
+    {
+      "n": 300,
+      "accuracy": 0.9367,
+      "log_loss": 0.1949,
+      "ece": 0.042,
+      "selection_log_loss": 0.1949,
+      "per_question": {
+        "evidence_effect": {
+          "n": 300,
+          "accuracy": 0.9367,
+          "log_loss": 0.1949,
+          "ece": 0.042
+        }
+      },
+      "epoch": 2,
+      "step": 628,
+      "elapsed_seconds": 7568.8
+    }
+  ],
+  "best_validation_selection_log_loss": 0.1793,
+  "best_validation_selection_log_loss_exact": 0.1793,
+  "kept_validation_selection_log_loss_exact": 0.1949,
+  "temperature": {
+    "evidence_effect": 1.3385
+  },
+  "no_test": true,
+  "test": "not run (the test split is predicted only by the predict subcommand, after the freeze)",
+  "validation_final": {
+    "n": 300,
+    "accuracy": 0.9367,
+    "log_loss": 0.1949,
+    "ece": 0.042
+  },
+  "peak_gpu_memory_gib": 36.4
+}

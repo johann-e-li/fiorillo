@@ -1,0 +1,25 @@
+2026-09-30T22:59:01Z  stage calibrate started
+s8_ei evidence_effect: temperature 0.1994, temperature_intercepts 0.2004: temperature
+s8_ei_1 evidence_effect: temperature 0.1990, temperature_intercepts 0.2005: temperature
+s8_ei_2 evidence_effect: temperature 0.2083, temperature_intercepts 0.2090: temperature
+s8_ei_3 evidence_effect: temperature 0.2070, temperature_intercepts 0.2073: temperature
+s8_a3 pubmedqa_answer: temperature 0.6609, temperature_intercepts 0.6089: temperature_intercepts
+s8_a3 readmit_window: temperature 0.8537, temperature_intercepts 0.8536: temperature_intercepts
+gemma4_31b evidence_effect: temperature 0.3956, temperature_intercepts 0.3424: temperature_intercepts
+gemma4_31b pubmedqa_answer: temperature 0.6579, temperature_intercepts 0.6004: temperature_intercepts
+{
+ "predictions": "s8_ei_evidence_effect_validation.csv",
+ "validation_rows": 1237,
+ "n": 1218,
+ "draws": 5000,
+ "ece_if_calibrated": {
+  "median": 0.013592554567322803,
+  "p05": 0.008260563037150911,
+  "p95": 0.0202444146886282
+ },
+ "share_at_most_0.05": 1.0
+}
+pubmedqa_answer validation: n 150; accuracy at 0, 10, 20, 30 and 50 percent 0.787, 0.820, 0.813, 0.800, 0.793
+evidence_effect validation: n 1237; accuracy at 0, 10, 20, 30 and 50 percent 0.937, 0.937, 0.919, 0.906, 0.892
+{"s": 0.6974704298234246, "D": 1.6464836163185048, "se_test": 0.025643710329711543, "pass_line": -0.050260748676212365, "validation_mean_difference": -0.1416598958392974}
+2026-09-30T22:59:17Z  stage calibrate finished

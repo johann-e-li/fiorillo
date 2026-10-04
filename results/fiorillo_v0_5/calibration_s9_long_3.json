@@ -1,0 +1,70 @@
+{
+ "plan": "docs/prompt_session10.md, S9_LONG_3 (I-102)",
+ "label": "descriptive: s9_long_3 was not calibrated in session 9 (I-102); no frozen system, comparison or file of session 9 depends on it",
+ "s9_long_3": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_long_3",
+    "kind": "the softmax of the run's logits (recipe_session9.py's run_probs)",
+    "logits": "results/fiorillo_v0_5/logits/s9_long_3_evidence_effect_validation_logits.csv",
+    "logits_sha256": "0a8dab7acdfc43d86865b5bbdd532a7788eafa7b5c8b9e8797cfce6d7a0cd01b",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1823424097148318,
+      "min": 0.18086975609666447,
+      "max": 0.1853429920973876
+     },
+     "params": [
+      0.23422204678684647
+     ],
+     "temperature": 1.2639251115611487,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1846896102298588,
+      "min": 0.18185221700357276,
+      "max": 0.19019099606969042
+     },
+     "params": [
+      0.2233976992964725,
+      0.2569122119627294,
+      0.07284233171973074
+     ],
+     "temperature": 1.2503177253507467,
+     "intercepts": [
+      0.0,
+      0.2569122119627294,
+      0.07284233171973074
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-03T07:08:48Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.1903460794802709,
+    "log_loss": 0.18067365482498363,
+    "ece": 0.03380712459563746
+   },
+   "validation_rows_written": 1237
+  }
+ },
+ "test": {
+  "logits": "results/fiorillo_v0_5/logits/s9_long_3_evidence_effect_test_logits.csv",
+  "logits_sha256": "3d2a9470ff5ccf0e65bfd9debb5089293758f365b282064794aa4ba997cb15ac",
+  "rows_written": 1218
+ },
+ "time_utc": "2026-10-03T07:08:48Z"
+}

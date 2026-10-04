@@ -1,0 +1,78 @@
+{
+ "source": "src/tasks/pubmedqa_phases.py",
+ "plan": "docs/prompt_session7.md, THE RECORDS",
+ "written_utc": "2026-09-30T13:48:05Z",
+ "parquet_sha256": {
+  "pqa_labeled.parquet": "3d56bd1abc11884579ecc3aab9dd3cdfce8b7cf54715daeca93b8022b7be231c",
+  "pqa_artificial.parquet": "cdee2d3c01369f47d2ea7b89cd32ee64b142cc0debcb863bf39b3a81a3cece05",
+  "pqa_unlabeled.parquet": "2f390ea5e6e3dc53b2736a52be2f594e05f5d8a599c3de754ad72f1068251e6e"
+ },
+ "session4_records_sha256": {
+  "pubmedqa_answer_train.jsonl": "fa221c9f4fc0e23fea3012e1e9ba4c3bface1c6668024faee54f799ac7ed1b99",
+  "pubmedqa_answer_validation.jsonl": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6"
+ },
+ "reference": {
+  "file": "pqa_l_reference.jsonl",
+  "items": 1000,
+  "sha256": "3973f894afd78a442d53395ee7d6e08d302d947aca86a0e1254e1b906df2e636"
+ },
+ "drop_reasons": [
+  "pubid_in_pqa_labeled",
+  "session4_validation_item",
+  "13_word_match"
+ ],
+ "counts": {
+  "pqa_artificial": {
+   "rows": 211269,
+   "kept": 209246,
+   "pubid_in_pqa_labeled": 0,
+   "session4_validation_item": 2000,
+   "13_word_match": 23
+  },
+  "pqa_unlabeled": {
+   "rows": 61249,
+   "kept": 61221,
+   "pubid_in_pqa_labeled": 0,
+   "session4_validation_item": 0,
+   "13_word_match": 28
+  },
+  "labeler_pqa_l_train": {
+   "records": 350
+  },
+  "labeler_validation": {
+   "records": 150
+  }
+ },
+ "files": {
+  "pubmedqa_phase1_train.jsonl": {
+   "records": 209246,
+   "bytes": 370856980,
+   "sha256": "585f68cbbffc6ff48e26a15d96d21f63feebc68aa36b973a121a9e84bd8c2968"
+  },
+  "pqa_u_unlabeled.jsonl": {
+   "records": 61221,
+   "bytes": 103492232,
+   "sha256": "492f54b3007832467ed51fc493a2128df37d9d21e94bce3a6b065c91348a66a1"
+  },
+  "labeler_pqa_a.jsonl": {
+   "records": 209246,
+   "bytes": 116296189,
+   "sha256": "fac76f3e7849170dc003e36c61e1c77034276fea441038028306c493b379afed"
+  },
+  "labeler_pqa_u.jsonl": {
+   "records": 61221,
+   "bytes": 34526091,
+   "sha256": "4c996bde2c18ce069938ef52fa9536579452509d57d8c2eda622d83a7341965a"
+  },
+  "labeler_pqa_l_train.jsonl": {
+   "records": 350,
+   "bytes": 190262,
+   "sha256": "d74f47e579d546cfe2e5fc354fe34cbd9b32e92097df0bfab36c7d0ab6d843f6"
+  },
+  "labeler_validation.jsonl": {
+   "records": 150,
+   "bytes": 81645,
+   "sha256": "98116560b9ea2bc046f73c5e32eb80159f3884be39a59238d02e43f0a2a7cc4e"
+  }
+ }
+}

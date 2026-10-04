@@ -1,0 +1,46 @@
+{
+  "system": "s8_a3",
+  "model_dir": "/root/eddm_s8/models/s8_a3",
+  "device": "cuda",
+  "max_len": 768,
+  "head_max_len": 192,
+  "items_test": {
+    "records": 7498,
+    "items": 7498,
+    "skipped": 0,
+    "truncated": 0
+  },
+  "temperature_from": "/root/eddm_s8/models/s8_a3/calibration.json",
+  "temperature": {
+    "pubmedqa_answer": 1.9491,
+    "readmit_window": 0.9935
+  },
+  "test_per_question_raw": {
+    "pubmedqa_answer": {
+      "n": 500,
+      "accuracy": 0.764,
+      "log_loss": 0.7526,
+      "ece": 0.1077
+    },
+    "readmit_window": {
+      "n": 6998,
+      "accuracy": 0.6087,
+      "log_loss": 0.8442,
+      "ece": 0.0172
+    }
+  },
+  "test_per_question_calibrated": {
+    "pubmedqa_answer": {
+      "n": 500,
+      "accuracy": 0.764,
+      "log_loss": 0.6368,
+      "ece": 0.0535
+    },
+    "readmit_window": {
+      "n": 6998,
+      "accuracy": 0.6087,
+      "log_loss": 0.8441,
+      "ece": 0.0181
+    }
+  }
+}

@@ -1,0 +1,607 @@
+section,evaluation,system,reference,group,metric,estimate,low,high,n,system_estimate,reference_estimate,note
+metrics,evidence_effect,s9_ei_wavg,,,log_loss,0.216386,0.171416,0.264470,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,brier,0.110099,0.087121,0.136348,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,accuracy,0.926929,0.908859,0.942559,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,macro_f1,0.924755,0.905949,0.940922,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,f1_increased,0.918519,0.893959,0.938995,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,f1_decreased,0.915825,0.887589,0.943663,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,f1_no_difference,0.939922,0.921824,0.955533,1218,,,
+metrics,evidence_effect,s9_ei_wavg,,,ece,0.016754,0.012365,0.034818,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,log_loss,0.216386,0.171416,0.264470,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,brier,0.110099,0.087121,0.136348,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,accuracy,0.926929,0.908859,0.942559,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,macro_f1,0.924755,0.905949,0.940922,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,f1_increased,0.918519,0.893959,0.938995,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,f1_decreased,0.915825,0.887589,0.943663,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,f1_no_difference,0.939922,0.921824,0.955533,1218,,,
+metrics,evidence_effect,s9_ei_wavg_temperature,,,ece,0.016754,0.012365,0.034818,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,log_loss,0.240538,0.182603,0.303671,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,brier,0.113573,0.088516,0.141675,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,accuracy,0.926929,0.908859,0.942559,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,macro_f1,0.924755,0.905949,0.940922,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,f1_increased,0.918519,0.893959,0.938995,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,f1_decreased,0.915825,0.887589,0.943663,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,f1_no_difference,0.939922,0.921824,0.955533,1218,,,
+metrics,evidence_effect,s9_ei_wavg-raw,,,ece,0.037302,0.028052,0.054614,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,log_loss,0.308626,0.254521,0.369247,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,brier,0.151995,0.127919,0.177599,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,accuracy,0.921182,0.903733,0.938018,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,macro_f1,0.919830,0.902225,0.937384,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,f1_increased,0.911168,0.886841,0.930293,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,f1_decreased,0.917647,0.890130,0.942636,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,f1_no_difference,0.930674,0.910329,0.947785,1218,,,
+metrics,evidence_effect,s9_ei_wavg_sa,,,ece,0.064817,0.050968,0.081781,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,log_loss,0.216386,0.171416,0.264470,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,brier,0.110099,0.087121,0.136348,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,accuracy,0.926929,0.908859,0.942559,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,macro_f1,0.924755,0.905949,0.940922,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,f1_increased,0.918519,0.893959,0.938995,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,f1_decreased,0.915825,0.887589,0.943663,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,f1_no_difference,0.939922,0.921824,0.955533,1218,,,
+metrics,evidence_effect,s9_ei_wavg_s8rule,,,ece,0.016754,0.012365,0.034818,1218,,,
+metrics,evidence_effect,s9_ei,,,log_loss,0.211593,0.169194,0.259392,1218,,,
+metrics,evidence_effect,s9_ei,,,brier,0.107534,0.085414,0.132912,1218,,,
+metrics,evidence_effect,s9_ei,,,accuracy,0.930213,0.912506,0.945698,1218,,,
+metrics,evidence_effect,s9_ei,,,macro_f1,0.927851,0.909478,0.944210,1218,,,
+metrics,evidence_effect,s9_ei,,,f1_increased,0.924784,0.902282,0.944158,1218,,,
+metrics,evidence_effect,s9_ei,,,f1_decreased,0.916107,0.888098,0.943044,1218,,,
+metrics,evidence_effect,s9_ei,,,f1_no_difference,0.942663,0.924488,0.957590,1218,,,
+metrics,evidence_effect,s9_ei,,,ece,0.011510,0.010271,0.031604,1218,,,
+metrics,evidence_effect,s9_b,,,log_loss,0.216419,0.171446,0.266287,1218,,,
+metrics,evidence_effect,s9_b,,,brier,0.110743,0.086891,0.136360,1218,,,
+metrics,evidence_effect,s9_b,,,accuracy,0.928571,0.911584,0.944632,1218,,,
+metrics,evidence_effect,s9_b,,,macro_f1,0.926601,0.909302,0.943508,1218,,,
+metrics,evidence_effect,s9_b,,,f1_increased,0.920441,0.898201,0.940092,1218,,,
+metrics,evidence_effect,s9_b,,,f1_decreased,0.918644,0.891209,0.945099,1218,,,
+metrics,evidence_effect,s9_b,,,f1_no_difference,0.940719,0.921196,0.956273,1218,,,
+metrics,evidence_effect,s9_b,,,ece,0.012583,0.010516,0.032805,1218,,,
+metrics,evidence_effect,s9_b_1,,,log_loss,0.223885,0.178863,0.274621,1218,,,
+metrics,evidence_effect,s9_b_1,,,brier,0.114791,0.090203,0.141703,1218,,,
+metrics,evidence_effect,s9_b_1,,,accuracy,0.926929,0.909312,0.943807,1218,,,
+metrics,evidence_effect,s9_b_1,,,macro_f1,0.925686,0.907771,0.942580,1218,,,
+metrics,evidence_effect,s9_b_1,,,f1_increased,0.917791,0.893612,0.938450,1218,,,
+metrics,evidence_effect,s9_b_1,,,f1_decreased,0.922559,0.894649,0.947549,1218,,,
+metrics,evidence_effect,s9_b_1,,,f1_no_difference,0.936709,0.916264,0.954265,1218,,,
+metrics,evidence_effect,s9_b_1,,,ece,0.015286,0.010726,0.032061,1218,,,
+metrics,evidence_effect,s9_b_2,,,log_loss,0.224809,0.179251,0.273083,1218,,,
+metrics,evidence_effect,s9_b_2,,,brier,0.115214,0.091110,0.141427,1218,,,
+metrics,evidence_effect,s9_b_2,,,accuracy,0.924466,0.905822,0.941227,1218,,,
+metrics,evidence_effect,s9_b_2,,,macro_f1,0.922717,0.903863,0.939719,1218,,,
+metrics,evidence_effect,s9_b_2,,,f1_increased,0.914634,0.890305,0.936026,1218,,,
+metrics,evidence_effect,s9_b_2,,,f1_decreased,0.916808,0.888889,0.942376,1218,,,
+metrics,evidence_effect,s9_b_2,,,f1_no_difference,0.936709,0.916062,0.954637,1218,,,
+metrics,evidence_effect,s9_b_2,,,ece,0.011794,0.010109,0.030565,1218,,,
+metrics,evidence_effect,s9_b_3,,,log_loss,0.218914,0.173541,0.270447,1218,,,
+metrics,evidence_effect,s9_b_3,,,brier,0.111068,0.086521,0.138281,1218,,,
+metrics,evidence_effect,s9_b_3,,,accuracy,0.927750,0.909861,0.943609,1218,,,
+metrics,evidence_effect,s9_b_3,,,macro_f1,0.925538,0.906656,0.942085,1218,,,
+metrics,evidence_effect,s9_b_3,,,f1_increased,0.925337,0.902734,0.943582,1218,,,
+metrics,evidence_effect,s9_b_3,,,f1_decreased,0.913413,0.885278,0.939252,1218,,,
+metrics,evidence_effect,s9_b_3,,,f1_no_difference,0.937864,0.918687,0.955475,1218,,,
+metrics,evidence_effect,s9_b_3,,,ece,0.006034,0.009270,0.028201,1218,,,
+metrics,evidence_effect,s9_long_1,,,log_loss,0.217685,0.172814,0.267091,1218,,,
+metrics,evidence_effect,s9_long_1,,,brier,0.111110,0.087479,0.136723,1218,,,
+metrics,evidence_effect,s9_long_1,,,accuracy,0.924466,0.907216,0.940792,1218,,,
+metrics,evidence_effect,s9_long_1,,,macro_f1,0.922614,0.904639,0.939788,1218,,,
+metrics,evidence_effect,s9_long_1,,,f1_increased,0.916667,0.891298,0.937301,1218,,,
+metrics,evidence_effect,s9_long_1,,,f1_decreased,0.915254,0.888518,0.941383,1218,,,
+metrics,evidence_effect,s9_long_1,,,f1_no_difference,0.935922,0.916752,0.952124,1218,,,
+metrics,evidence_effect,s9_long_1,,,ece,0.021523,0.013745,0.037392,1218,,,
+metrics,evidence_effect,s9_long_2,,,log_loss,0.223468,0.179370,0.273764,1218,,,
+metrics,evidence_effect,s9_long_2,,,brier,0.113383,0.089912,0.139035,1218,,,
+metrics,evidence_effect,s9_long_2,,,accuracy,0.929392,0.911813,0.944678,1218,,,
+metrics,evidence_effect,s9_long_2,,,macro_f1,0.927108,0.908602,0.943604,1218,,,
+metrics,evidence_effect,s9_long_2,,,f1_increased,0.923077,0.899470,0.942893,1218,,,
+metrics,evidence_effect,s9_long_2,,,f1_decreased,0.916388,0.885757,0.943335,1218,,,
+metrics,evidence_effect,s9_long_2,,,f1_no_difference,0.941860,0.923632,0.956865,1218,,,
+metrics,evidence_effect,s9_long_2,,,ece,0.022569,0.013900,0.039196,1218,,,
+metrics,evidence_effect,s8_ei,,,log_loss,0.199449,0.157254,0.248619,1218,,,
+metrics,evidence_effect,s8_ei,,,brier,0.100116,0.077771,0.126561,1218,,,
+metrics,evidence_effect,s8_ei,,,accuracy,0.940887,0.924604,0.955372,1218,,,
+metrics,evidence_effect,s8_ei,,,macro_f1,0.939909,0.922543,0.954353,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_increased,0.935802,0.915164,0.952917,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_decreased,0.936455,0.911256,0.957656,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_no_difference,0.947471,0.927764,0.963037,1218,,,
+metrics,evidence_effect,s8_ei,,,ece,0.011914,0.011950,0.029970,1218,,,
+metrics,evidence_effect,gemma4_31b,,,log_loss,0.407805,0.337272,0.480403,1218,,,
+metrics,evidence_effect,gemma4_31b,,,brier,0.204016,0.167069,0.241809,1218,,,
+metrics,evidence_effect,gemma4_31b,,,accuracy,0.871100,0.845020,0.894911,1218,,,
+metrics,evidence_effect,gemma4_31b,,,macro_f1,0.862587,0.833263,0.887909,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_increased,0.845466,0.808773,0.879348,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_decreased,0.824104,0.778712,0.862701,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_no_difference,0.918191,0.894729,0.939537,1218,,,
+metrics,evidence_effect,gemma4_31b,,,ece,0.028293,0.022099,0.056017,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,log_loss,0.399290,0.330090,0.479325,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,brier,0.200535,0.164866,0.239535,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,accuracy,0.875205,0.848946,0.899103,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,macro_f1,0.866774,0.838981,0.893451,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,f1_increased,0.847328,0.810346,0.881051,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,f1_decreased,0.830065,0.783333,0.872092,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,f1_no_difference,0.922929,0.899287,0.941990,1218,,,
+metrics,evidence_effect,gemma4_31b_long,,,ece,0.028336,0.023758,0.056724,1218,,,
+metrics,evidence_effect,prior,,,log_loss,1.076717,1.058008,1.094031,1218,,,
+metrics,evidence_effect,prior,,,brier,0.652536,0.639467,0.664342,1218,,,
+metrics,evidence_effect,prior,,,accuracy,0.421182,0.385464,0.458370,1218,,,
+metrics,evidence_effect,prior,,,macro_f1,0.197574,0.185480,0.209535,1218,,,
+metrics,evidence_effect,prior,,,f1_increased,0.000000,0.000000,0.000000,1218,,,
+metrics,evidence_effect,prior,,,f1_decreased,0.000000,0.000000,0.000000,1218,,,
+metrics,evidence_effect,prior,,,f1_no_difference,0.592721,0.556441,0.628606,1218,,,
+metrics,evidence_effect,prior,,,ece,0.030540,0.001807,0.066258,1218,,,
+metrics,pubmedqa_answer,s7_b3,,,log_loss,0.579666,0.506978,0.650873,500,,,
+metrics,pubmedqa_answer,s7_b3,,,brier,0.314738,0.268273,0.359516,500,,,
+metrics,pubmedqa_answer,s7_b3,,,ece,0.040133,0.031459,0.079987,500,,,
+metrics,pubmedqa_answer,s7_b3,,,accuracy,0.796000,0.760000,0.834000,500,,,
+metrics,pubmedqa_answer,s7_b3,,,macro_f1,0.569754,0.540643,0.603864,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa-raw,,,log_loss,0.889874,0.742807,1.034747,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa-raw,,,brier,0.405766,0.346167,0.462324,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa-raw,,,ece,0.137099,0.111368,0.180287,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa-raw,,,accuracy,0.752000,0.712000,0.790000,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa-raw,,,macro_f1,0.548107,0.511869,0.592187,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa,,,log_loss,0.733975,0.634121,0.836695,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa,,,brier,0.388578,0.335171,0.438853,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa,,,ece,0.087615,0.066661,0.129895,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa,,,accuracy,0.738000,0.698000,0.776050,500,,,
+metrics,pubmedqa_answer,biogpt_large_pqa,,,macro_f1,0.526939,0.496303,0.563782,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,log_loss,0.613082,0.530868,0.695734,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,brier,0.320942,0.272804,0.369646,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,ece,0.057493,0.043073,0.096993,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,accuracy,0.784000,0.745950,0.820050,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,macro_f1,0.586196,0.552652,0.625214,500,,,
+metrics,pubmedqa_answer,prior,,,log_loss,1.159279,1.040141,1.292050,500,,,
+metrics,pubmedqa_answer,prior,,,brier,0.585499,0.550341,0.620792,500,,,
+metrics,pubmedqa_answer,prior,,,ece,0.064627,0.022627,0.108627,500,,,
+metrics,pubmedqa_answer,prior,,,accuracy,0.552000,0.508000,0.594000,500,,,
+metrics,pubmedqa_answer,prior,,,macro_f1,0.237113,0.224580,0.248432,500,,,
+metrics,readmit_window,readmission_pool_v2,,,log_loss,0.827515,0.813195,0.841139,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,brier,0.497196,0.488222,0.506167,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,ece,0.006583,0.008520,0.022508,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,accuracy,0.615747,0.604173,0.626897,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,macro_f1,0.369494,0.357856,0.381300,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,macro_f1_tuned,0.463226,0.448849,0.478001,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,quadratic_weighted_kappa,0.130131,0.110128,0.149150,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,auroc_30d,0.662194,0.639414,0.685497,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,calibration_intercept_30d,-0.019197,-0.103092,0.064556,6998,,,
+metrics,readmit_window,readmission_pool_v2,,,calibration_slope_30d,1.049268,0.910825,1.194045,6998,,,
+metrics,readmit_window,readmission_pool,,,log_loss,0.827515,0.813195,0.841139,6998,,,
+metrics,readmit_window,readmission_pool,,,brier,0.497196,0.488222,0.506167,6998,,,
+metrics,readmit_window,readmission_pool,,,ece,0.006583,0.008520,0.022508,6998,,,
+metrics,readmit_window,readmission_pool,,,accuracy,0.615747,0.604173,0.626897,6998,,,
+metrics,readmit_window,readmission_pool,,,macro_f1,0.369494,0.357856,0.381300,6998,,,
+metrics,readmit_window,readmission_pool,,,macro_f1_tuned,0.463226,0.448849,0.478001,6998,,,
+metrics,readmit_window,readmission_pool,,,quadratic_weighted_kappa,0.130131,0.110128,0.149150,6998,,,
+metrics,readmit_window,readmission_pool,,,auroc_30d,0.662194,0.639414,0.685497,6998,,,
+metrics,readmit_window,readmission_pool,,,calibration_intercept_30d,-0.019197,-0.103092,0.064556,6998,,,
+metrics,readmit_window,readmission_pool,,,calibration_slope_30d,1.049268,0.910825,1.194045,6998,,,
+metrics,readmit_window,xgboost_codes,,,log_loss,0.832608,0.818381,0.846163,6998,,,
+metrics,readmit_window,xgboost_codes,,,brier,0.501097,0.492111,0.510001,6998,,,
+metrics,readmit_window,xgboost_codes,,,ece,0.012828,0.009713,0.025815,6998,,,
+metrics,readmit_window,xgboost_codes,,,accuracy,0.609889,0.598600,0.621038,6998,,,
+metrics,readmit_window,xgboost_codes,,,macro_f1,0.368175,0.356412,0.379914,6998,,,
+metrics,readmit_window,xgboost_codes,,,macro_f1_tuned,0.457823,0.443881,0.471796,6998,,,
+metrics,readmit_window,xgboost_codes,,,quadratic_weighted_kappa,0.124182,0.105730,0.143538,6998,,,
+metrics,readmit_window,xgboost_codes,,,auroc_30d,0.658419,0.634373,0.682245,6998,,,
+metrics,readmit_window,xgboost_codes,,,calibration_intercept_30d,-0.020814,-0.104848,0.063376,6998,,,
+metrics,readmit_window,xgboost_codes,,,calibration_slope_30d,1.014577,0.876092,1.157916,6998,,,
+metrics,readmit_window,xgboost_tuned,,,log_loss,0.830997,0.816581,0.844752,6998,,,
+metrics,readmit_window,xgboost_tuned,,,brier,0.499664,0.490681,0.508485,6998,,,
+metrics,readmit_window,xgboost_tuned,,,ece,0.010262,0.008106,0.024107,6998,,,
+metrics,readmit_window,xgboost_tuned,,,accuracy,0.613890,0.602601,0.625039,6998,,,
+metrics,readmit_window,xgboost_tuned,,,macro_f1,0.374791,0.362505,0.387050,6998,,,
+metrics,readmit_window,xgboost_tuned,,,macro_f1_tuned,0.455123,0.440973,0.469032,6998,,,
+metrics,readmit_window,xgboost_tuned,,,quadratic_weighted_kappa,0.137122,0.116834,0.158276,6998,,,
+metrics,readmit_window,xgboost_tuned,,,auroc_30d,0.658421,0.635458,0.681687,6998,,,
+metrics,readmit_window,xgboost_tuned,,,calibration_intercept_30d,-0.033816,-0.118058,0.050939,6998,,,
+metrics,readmit_window,xgboost_tuned,,,calibration_slope_30d,0.996908,0.863492,1.142972,6998,,,
+metrics,readmit_window,catboost_codes,,,log_loss,0.828865,0.814620,0.842821,6998,,,
+metrics,readmit_window,catboost_codes,,,brier,0.497995,0.488895,0.507225,6998,,,
+metrics,readmit_window,catboost_codes,,,ece,0.009076,0.008483,0.023182,6998,,,
+metrics,readmit_window,catboost_codes,,,accuracy,0.614604,0.602887,0.627036,6998,,,
+metrics,readmit_window,catboost_codes,,,macro_f1,0.366623,0.355183,0.378311,6998,,,
+metrics,readmit_window,catboost_codes,,,macro_f1_tuned,0.459513,0.445254,0.474325,6998,,,
+metrics,readmit_window,catboost_codes,,,quadratic_weighted_kappa,0.132537,0.113866,0.151966,6998,,,
+metrics,readmit_window,catboost_codes,,,auroc_30d,0.656479,0.633296,0.679252,6998,,,
+metrics,readmit_window,catboost_codes,,,calibration_intercept_30d,-0.036253,-0.120154,0.047421,6998,,,
+metrics,readmit_window,catboost_codes,,,calibration_slope_30d,1.015067,0.878135,1.153167,6998,,,
+metrics,readmit_window,catboost_tuned,,,log_loss,0.829101,0.814933,0.842893,6998,,,
+metrics,readmit_window,catboost_tuned,,,brier,0.498072,0.488885,0.507156,6998,,,
+metrics,readmit_window,catboost_tuned,,,ece,0.007804,0.008461,0.023026,6998,,,
+metrics,readmit_window,catboost_tuned,,,accuracy,0.614747,0.603458,0.626182,6998,,,
+metrics,readmit_window,catboost_tuned,,,macro_f1,0.367136,0.356577,0.378065,6998,,,
+metrics,readmit_window,catboost_tuned,,,macro_f1_tuned,0.460437,0.446874,0.474925,6998,,,
+metrics,readmit_window,catboost_tuned,,,quadratic_weighted_kappa,0.127445,0.108413,0.145904,6998,,,
+metrics,readmit_window,catboost_tuned,,,auroc_30d,0.658112,0.634750,0.682305,6998,,,
+metrics,readmit_window,catboost_tuned,,,calibration_intercept_30d,-0.028683,-0.111994,0.056069,6998,,,
+metrics,readmit_window,catboost_tuned,,,calibration_slope_30d,1.016025,0.880575,1.157419,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,log_loss,0.834734,0.820257,0.848693,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,brier,0.502580,0.493736,0.511372,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,ece,0.007108,0.007421,0.022507,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,accuracy,0.615747,0.604316,0.627472,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,macro_f1,0.356902,0.347657,0.365999,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,macro_f1_tuned,0.448428,0.433529,0.464257,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,quadratic_weighted_kappa,0.119972,0.102909,0.137652,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,auroc_30d,0.657741,0.634105,0.680674,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,calibration_intercept_30d,-0.017698,-0.101102,0.067960,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,calibration_slope_30d,1.093528,0.937853,1.250393,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,log_loss,0.834734,0.820257,0.848693,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,brier,0.502580,0.493736,0.511372,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,ece,0.007108,0.007421,0.022507,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,accuracy,0.615747,0.604316,0.627472,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,macro_f1,0.356902,0.347657,0.365999,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,macro_f1_tuned,0.448428,0.433529,0.464257,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,quadratic_weighted_kappa,0.119972,0.102909,0.137652,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,auroc_30d,0.657741,0.634105,0.680674,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,calibration_intercept_30d,-0.017698,-0.101102,0.067960,6998,,,
+metrics,readmit_window,lightgbm_tuned_refit,,,calibration_slope_30d,1.093528,0.937853,1.250393,6998,,,
+metrics,readmit_window,prior,,,log_loss,0.886096,0.873382,0.898439,6998,,,
+metrics,readmit_window,prior,,,brier,0.537695,0.529761,0.545345,6998,,,
+metrics,readmit_window,prior,,,ece,0.001669,0.000189,0.012675,6998,,,
+metrics,readmit_window,prior,,,accuracy,0.594170,0.582877,0.604744,6998,,,
+metrics,readmit_window,prior,,,macro_f1,0.248476,0.245493,0.251232,6998,,,
+metrics,readmit_window,prior,,,macro_f1_tuned,0.248476,0.245493,0.251232,6998,,,
+metrics,readmit_window,prior,,,quadratic_weighted_kappa,0.000000,0.000000,0.000000,6998,,,
+metrics,readmit_window,prior,,,auroc_30d,0.500000,0.500000,0.500000,6998,,,
+metrics,readmit_window,prior,,,calibration_intercept_30d,-0.029918,-0.111998,0.053650,6998,,,
+metrics,readmit_window,prior,,,calibration_slope_30d,,,,6998,,,
+K1,evidence_effect,s9_ei_wavg,prior,,log_loss,-0.860331,-0.910217,-0.809316,1218,0.216386,1.076717,"lower (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,brier,-0.542436,-0.569167,-0.513803,1218,0.110099,0.652536,"lower (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,accuracy,0.505747,0.465610,0.541915,1218,0.926929,0.421182,"higher (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,macro_f1,0.727182,0.704957,0.747870,1218,0.924755,0.197574,"higher (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,f1_increased,0.918519,0.893959,0.938995,1218,0.918519,0.000000,"higher (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,f1_decreased,0.915825,0.887589,0.943663,1218,0.915825,0.000000,"higher (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,f1_no_difference,0.347202,0.312280,0.380410,1218,0.939922,0.592721,"higher (better); s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,prior,,ece,-0.013786,-0.043363,0.023330,1218,0.016754,0.030540,"no difference was detected: the estimate is -0.0138, with a 95 percent interval of -0.0434 to 0.0233; the interval excludes the system being higher, that is worse, than the reference by more than 0.0233, and lower, that is better, by more than 0.0434; it is not a finding of equivalence; s9_ei_wavg (v0.5's EI specialist) minus the prior (v0.4's prior, the answer shares of session 8's whole training split)"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,log_loss,-0.182904,-0.257291,-0.116355,1218,0.216386,0.399290,"lower (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,brier,-0.090435,-0.127274,-0.056964,1218,0.110099,0.200535,"lower (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,accuracy,0.051724,0.030251,0.075981,1218,0.926929,0.875205,"higher (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,macro_f1,0.057981,0.034050,0.084947,1218,0.924755,0.866774,"higher (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,f1_increased,0.071190,0.036565,0.107777,1218,0.918519,0.847328,"higher (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,f1_decreased,0.085760,0.048806,0.126214,1218,0.915825,0.830065,"higher (better); s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,f1_no_difference,0.016994,-0.002066,0.036644,1218,0.939922,0.922929,"no difference was detected: the estimate is 0.0170, with a 95 percent interval of -0.0021 to 0.0366; the interval excludes the system being higher, that is better, than the reference by more than 0.0366, and lower, that is worse, by more than 0.0021; it is not a finding of equivalence; s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K1,evidence_effect,s9_ei_wavg,gemma4_31b_long,,ece,-0.011582,-0.034537,0.002662,1218,0.016754,0.028336,"no difference was detected: the estimate is -0.0116, with a 95 percent interval of -0.0345 to 0.0027; the interval excludes the system being higher, that is worse, than the reference by more than 0.0027, and lower, that is better, by more than 0.0345; it is not a finding of equivalence; s9_ei_wavg minus gemma4_31b_long, the large model of criterion 3, both calibrated on validation"
+K2,evidence_effect,s9_b,s8_ei,,log_loss,0.016970,0.005824,0.028367,1218,0.216419,0.199449,"higher (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,brier,0.010628,0.003730,0.017430,1218,0.110743,0.100116,"higher (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,accuracy,-0.012315,-0.020686,-0.003384,1218,0.928571,0.940887,"lower (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,macro_f1,-0.013308,-0.022620,-0.004086,1218,0.926601,0.939909,"lower (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,f1_increased,-0.015362,-0.028355,-0.003883,1218,0.920441,0.935802,"lower (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,f1_decreased,-0.017811,-0.032921,-0.003964,1218,0.918644,0.936455,"lower (worse); what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,f1_no_difference,-0.006752,-0.015038,0.001590,1218,0.940719,0.947471,"no difference was detected: the estimate is -0.0068, with a 95 percent interval of -0.0150 to 0.0016; the interval excludes the system being higher, that is better, than the reference by more than 0.0016, and lower, that is worse, by more than 0.0150; it is not a finding of equivalence; what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_b,s8_ei,,ece,0.000669,-0.010546,0.010240,1218,0.012583,0.011914,"no difference was detected: the estimate is 0.0007, with a 95 percent interval of -0.0105 to 0.0102; the interval excludes the system being higher, that is worse, than the reference by more than 0.0102, and lower, that is better, by more than 0.0105; it is not a finding of equivalence; what the license cost: s9_b (trained on the clean articles) minus s8_ei (trained on all of them), both three runs averaged and calibrated by session 8's rule (s9_b on the 654 clean validation prompts, s8_ei on all 1,237); descriptive"
+K2,evidence_effect,s9_ei_wavg,s8_ei,,log_loss,0.016937,-0.009508,0.039750,1218,0.216386,0.199449,"no difference was detected: the estimate is 0.0169, with a 95 percent interval of -0.0095 to 0.0397; the interval excludes the system being higher, that is worse, than the reference by more than 0.0397, and lower, that is better, by more than 0.0095; it is not a finding of equivalence; s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive"
+K2,evidence_effect,s9_ei_wavg,s8_ei,,brier,0.009984,-0.005532,0.023067,1218,0.110099,0.100116,"no difference was detected: the estimate is 0.0100, with a 95 percent interval of -0.0055 to 0.0231; the interval excludes the system being higher, that is worse, than the reference by more than 0.0231, and lower, that is better, by more than 0.0055; it is not a finding of equivalence; s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive"
+K2,evidence_effect,s9_ei_wavg,s8_ei,,accuracy,-0.013957,-0.024517,-0.002463,1218,0.926929,0.940887,lower (worse); s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive
+K2,evidence_effect,s9_ei_wavg,s8_ei,,macro_f1,-0.015154,-0.026120,-0.003600,1218,0.924755,0.939909,lower (worse); s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive
+K2,evidence_effect,s9_ei_wavg,s8_ei,,f1_increased,-0.017284,-0.031177,-0.004092,1218,0.918519,0.935802,lower (worse); s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive
+K2,evidence_effect,s9_ei_wavg,s8_ei,,f1_decreased,-0.020630,-0.035796,-0.005680,1218,0.915825,0.936455,lower (worse); s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive
+K2,evidence_effect,s9_ei_wavg,s8_ei,,f1_no_difference,-0.007548,-0.018948,0.005038,1218,0.939922,0.947471,"no difference was detected: the estimate is -0.0075, with a 95 percent interval of -0.0189 to 0.0050; the interval excludes the system being higher, that is better, than the reference by more than 0.0050, and lower, that is worse, by more than 0.0189; it is not a finding of equivalence; s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive"
+K2,evidence_effect,s9_ei_wavg,s8_ei,,ece,0.004840,-0.009346,0.014403,1218,0.016754,0.011914,"no difference was detected: the estimate is 0.0048, with a 95 percent interval of -0.0093 to 0.0144; the interval excludes the system being higher, that is worse, than the reference by more than 0.0144, and lower, that is better, by more than 0.0093; it is not a finding of equivalence; s9_ei_wavg (v0.5's EI specialist) minus s8_ei; descriptive"
+K3,evidence_effect,,,validation,recipe_selection,,,,,,,recipe_selection.json's decisions: passing candidates long; the combination not called; the winning recipe long; the weight average used True; swap averaging kept False
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",log_loss,0.208855,0.152469,0.275165,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",brier,0.107270,0.076683,0.141574,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",accuracy,0.928135,0.904153,0.948918,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",macro_f1,0.922859,0.897730,0.945710,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",f1_increased,0.937198,0.906847,0.960352,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",f1_decreased,0.888179,0.840676,0.928149,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",f1_no_difference,0.943201,0.916269,0.963552,654,,,
+K3_metrics,evidence_effect,s9_b_1_2,,"clean validation, out of fold",ece,0.012157,0.011706,0.036618,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",log_loss,0.210219,0.155648,0.271823,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",brier,0.108241,0.077235,0.141466,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",accuracy,0.935780,0.911248,0.956665,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",macro_f1,0.931407,0.905897,0.953549,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",f1_increased,0.949153,0.923483,0.969125,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",f1_decreased,0.899676,0.851064,0.936341,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",f1_no_difference,0.945392,0.920076,0.965855,654,,,
+K3_metrics,evidence_effect,s9_swap_1_2,,"clean validation, out of fold",ece,0.021936,0.018296,0.045375,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",log_loss,0.180232,0.132563,0.239672,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",brier,0.089176,0.063036,0.120346,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",accuracy,0.944954,0.924166,0.962646,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",macro_f1,0.940651,0.917780,0.959405,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",f1_increased,0.948905,0.925292,0.969415,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",f1_decreased,0.914286,0.874171,0.945559,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",f1_no_difference,0.958763,0.937917,0.975534,654,,,
+K3_metrics,evidence_effect,s9_long_1_2,,"clean validation, out of fold",ece,0.007426,0.009791,0.030252,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",log_loss,0.202840,0.146662,0.271481,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",brier,0.102590,0.071486,0.138175,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",accuracy,0.934251,0.910539,0.955358,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",macro_f1,0.928986,0.903349,0.952291,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",f1_increased,0.941463,0.916651,0.963755,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",f1_decreased,0.895238,0.851852,0.934139,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",f1_no_difference,0.950257,0.924333,0.970332,654,,,
+K3_metrics,evidence_effect,s9_lr1_1_2,,"clean validation, out of fold",ece,0.022503,0.016323,0.045166,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",log_loss,0.193286,0.138676,0.254747,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",brier,0.098522,0.068834,0.133008,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",accuracy,0.932722,0.908240,0.954413,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",macro_f1,0.928665,0.902652,0.951495,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",f1_increased,0.935252,0.906325,0.960594,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",f1_decreased,0.905537,0.860215,0.941185,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",f1_no_difference,0.945205,0.919275,0.965873,654,,,
+K3_metrics,evidence_effect,s9_lr2_1_2,,"clean validation, out of fold",ece,0.016100,0.012747,0.036887,654,,,
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",log_loss,0.001364,-0.015633,0.018664,654,0.210219,0.208855,"no difference was detected: the estimate is 0.0014, with a 95 percent interval of -0.0156 to 0.0187; the interval excludes the system being higher, that is worse, than the reference by more than 0.0187, and lower, that is better, by more than 0.0156; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",brier,0.000972,-0.008807,0.010436,654,0.108241,0.107270,"no difference was detected: the estimate is 0.0010, with a 95 percent interval of -0.0088 to 0.0104; the interval excludes the system being higher, that is worse, than the reference by more than 0.0104, and lower, that is better, by more than 0.0088; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",accuracy,0.007645,-0.001702,0.018122,654,0.935780,0.928135,"no difference was detected: the estimate is 0.0076, with a 95 percent interval of -0.0017 to 0.0181; the interval excludes the system being higher, that is better, than the reference by more than 0.0181, and lower, that is worse, by more than 0.0017; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",macro_f1,0.008548,-0.002201,0.019788,654,0.931407,0.922859,"no difference was detected: the estimate is 0.0085, with a 95 percent interval of -0.0022 to 0.0198; the interval excludes the system being higher, that is better, than the reference by more than 0.0198, and lower, that is worse, by more than 0.0022; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",f1_increased,0.011954,-0.002796,0.029255,654,0.949153,0.937198,"no difference was detected: the estimate is 0.0120, with a 95 percent interval of -0.0028 to 0.0293; the interval excludes the system being higher, that is better, than the reference by more than 0.0293, and lower, that is worse, by more than 0.0028; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",f1_decreased,0.011497,-0.005527,0.028015,654,0.899676,0.888179,"no difference was detected: the estimate is 0.0115, with a 95 percent interval of -0.0055 to 0.0280; the interval excludes the system being higher, that is better, than the reference by more than 0.0280, and lower, that is worse, by more than 0.0055; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",f1_no_difference,0.002191,-0.006520,0.011702,654,0.945392,0.943201,"no difference was detected: the estimate is 0.0022, with a 95 percent interval of -0.0065 to 0.0117; the interval excludes the system being higher, that is better, than the reference by more than 0.0117, and lower, that is worse, by more than 0.0065; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_swap_1_2,s9_b_1_2,"clean validation, out of fold",ece,0.009779,-0.006398,0.022109,654,0.021936,0.012157,"no difference was detected: the estimate is 0.0098, with a 95 percent interval of -0.0064 to 0.0221; the interval excludes the system being higher, that is worse, than the reference by more than 0.0221, and lower, that is better, by more than 0.0064; it is not a finding of equivalence; s9_swap_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",log_loss,-0.028623,-0.049630,-0.009705,654,0.180232,0.208855,"lower (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",brier,-0.018094,-0.030414,-0.006673,654,0.089176,0.107270,"lower (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",accuracy,0.016820,0.005598,0.029703,654,0.944954,0.928135,"higher (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",macro_f1,0.017792,0.006314,0.031428,654,0.940651,0.922859,"higher (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",f1_increased,0.011707,-0.000005,0.025837,654,0.948905,0.937198,"no difference was detected: the estimate is 0.0117, with a 95 percent interval of -0.0000 to 0.0258; the interval excludes the system being higher, that is better, than the reference by more than 0.0258, and lower, that is worse, by more than 0.0000; it is not a finding of equivalence; s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",f1_decreased,0.026107,0.006711,0.048596,654,0.914286,0.888179,"higher (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",f1_no_difference,0.015562,0.003464,0.029479,654,0.958763,0.943201,"higher (better); s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_long_1_2,s9_b_1_2,"clean validation, out of fold",ece,-0.004731,-0.017874,0.009271,654,0.007426,0.012157,"no difference was detected: the estimate is -0.0047, with a 95 percent interval of -0.0179 to 0.0093; the interval excludes the system being higher, that is worse, than the reference by more than 0.0093, and lower, that is better, by more than 0.0179; it is not a finding of equivalence; s9_long_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",log_loss,-0.006015,-0.018123,0.005686,654,0.202840,0.208855,"no difference was detected: the estimate is -0.0060, with a 95 percent interval of -0.0181 to 0.0057; the interval excludes the system being higher, that is worse, than the reference by more than 0.0057, and lower, that is better, by more than 0.0181; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",brier,-0.004680,-0.011744,0.001905,654,0.102590,0.107270,"no difference was detected: the estimate is -0.0047, with a 95 percent interval of -0.0117 to 0.0019; the interval excludes the system being higher, that is worse, than the reference by more than 0.0019, and lower, that is better, by more than 0.0117; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",accuracy,0.006116,-0.004762,0.016743,654,0.934251,0.928135,"no difference was detected: the estimate is 0.0061, with a 95 percent interval of -0.0048 to 0.0167; the interval excludes the system being higher, that is better, than the reference by more than 0.0167, and lower, that is worse, by more than 0.0048; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",macro_f1,0.006127,-0.005642,0.018285,654,0.928986,0.922859,"no difference was detected: the estimate is 0.0061, with a 95 percent interval of -0.0056 to 0.0183; the interval excludes the system being higher, that is better, than the reference by more than 0.0183, and lower, that is worse, by more than 0.0056; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",f1_increased,0.004265,-0.008068,0.019570,654,0.941463,0.937198,"no difference was detected: the estimate is 0.0043, with a 95 percent interval of -0.0081 to 0.0196; the interval excludes the system being higher, that is better, than the reference by more than 0.0196, and lower, that is worse, by more than 0.0081; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",f1_decreased,0.007059,-0.012835,0.026458,654,0.895238,0.888179,"no difference was detected: the estimate is 0.0071, with a 95 percent interval of -0.0128 to 0.0265; the interval excludes the system being higher, that is better, than the reference by more than 0.0265, and lower, that is worse, by more than 0.0128; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",f1_no_difference,0.007056,-0.003315,0.017618,654,0.950257,0.943201,"no difference was detected: the estimate is 0.0071, with a 95 percent interval of -0.0033 to 0.0176; the interval excludes the system being higher, that is better, than the reference by more than 0.0176, and lower, that is worse, by more than 0.0033; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr1_1_2,s9_b_1_2,"clean validation, out of fold",ece,0.010345,-0.007218,0.020478,654,0.022503,0.012157,"no difference was detected: the estimate is 0.0103, with a 95 percent interval of -0.0072 to 0.0205; the interval excludes the system being higher, that is worse, than the reference by more than 0.0205, and lower, that is better, by more than 0.0072; it is not a finding of equivalence; s9_lr1_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",log_loss,-0.015569,-0.031635,0.002117,654,0.193286,0.208855,"no difference was detected: the estimate is -0.0156, with a 95 percent interval of -0.0316 to 0.0021; the interval excludes the system being higher, that is worse, than the reference by more than 0.0021, and lower, that is better, by more than 0.0316; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",brier,-0.008748,-0.018100,0.000306,654,0.098522,0.107270,"no difference was detected: the estimate is -0.0087, with a 95 percent interval of -0.0181 to 0.0003; the interval excludes the system being higher, that is worse, than the reference by more than 0.0003, and lower, that is better, by more than 0.0181; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",accuracy,0.004587,-0.005687,0.014063,654,0.932722,0.928135,"no difference was detected: the estimate is 0.0046, with a 95 percent interval of -0.0057 to 0.0141; the interval excludes the system being higher, that is better, than the reference by more than 0.0141, and lower, that is worse, by more than 0.0057; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",macro_f1,0.005805,-0.004980,0.016090,654,0.928665,0.922859,"no difference was detected: the estimate is 0.0058, with a 95 percent interval of -0.0050 to 0.0161; the interval excludes the system being higher, that is better, than the reference by more than 0.0161, and lower, that is worse, by more than 0.0050; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",f1_increased,-0.001946,-0.018068,0.013954,654,0.935252,0.937198,"no difference was detected: the estimate is -0.0019, with a 95 percent interval of -0.0181 to 0.0140; the interval excludes the system being higher, that is better, than the reference by more than 0.0140, and lower, that is worse, by more than 0.0181; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",f1_decreased,0.017359,-0.000466,0.033653,654,0.905537,0.888179,"no difference was detected: the estimate is 0.0174, with a 95 percent interval of -0.0005 to 0.0337; the interval excludes the system being higher, that is better, than the reference by more than 0.0337, and lower, that is worse, by more than 0.0005; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",f1_no_difference,0.002004,-0.007956,0.011804,654,0.945205,0.943201,"no difference was detected: the estimate is 0.0020, with a 95 percent interval of -0.0080 to 0.0118; the interval excludes the system being higher, that is better, than the reference by more than 0.0118, and lower, that is worse, by more than 0.0080; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3,evidence_effect,s9_lr2_1_2,s9_b_1_2,"clean validation, out of fold",ece,0.003942,-0.011859,0.014514,654,0.016100,0.012157,"no difference was detected: the estimate is 0.0039, with a 95 percent interval of -0.0119 to 0.0145; the interval excludes the system being higher, that is worse, than the reference by more than 0.0145, and lower, that is better, by more than 0.0119; it is not a finding of equivalence; s9_lr2_1_2 minus s9_b_1_2: the average of its two runs minus the average of s9_b_1 and s9_b_2 (correction 2); validation, out of fold, descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,log_loss,-0.000033,-0.020158,0.017385,1218,0.216386,0.216419,"no difference was detected: the estimate is -0.0000, with a 95 percent interval of -0.0202 to 0.0174; the interval excludes the system being higher, that is worse, than the reference by more than 0.0174, and lower, that is better, by more than 0.0202; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,brier,-0.000644,-0.012976,0.008868,1218,0.110099,0.110743,"no difference was detected: the estimate is -0.0006, with a 95 percent interval of -0.0130 to 0.0089; the interval excludes the system being higher, that is worse, than the reference by more than 0.0089, and lower, that is better, by more than 0.0130; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,accuracy,-0.001642,-0.010574,0.008726,1218,0.926929,0.928571,"no difference was detected: the estimate is -0.0016, with a 95 percent interval of -0.0106 to 0.0087; the interval excludes the system being higher, that is better, than the reference by more than 0.0087, and lower, that is worse, by more than 0.0106; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,macro_f1,-0.001846,-0.011213,0.008925,1218,0.924755,0.926601,"no difference was detected: the estimate is -0.0018, with a 95 percent interval of -0.0112 to 0.0089; the interval excludes the system being higher, that is better, than the reference by more than 0.0089, and lower, that is worse, by more than 0.0112; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,f1_increased,-0.001922,-0.013555,0.010508,1218,0.918519,0.920441,"no difference was detected: the estimate is -0.0019, with a 95 percent interval of -0.0136 to 0.0105; the interval excludes the system being higher, that is better, than the reference by more than 0.0105, and lower, that is worse, by more than 0.0136; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,f1_decreased,-0.002819,-0.017439,0.012631,1218,0.915825,0.918644,"no difference was detected: the estimate is -0.0028, with a 95 percent interval of -0.0174 to 0.0126; the interval excludes the system being higher, that is better, than the reference by more than 0.0126, and lower, that is worse, by more than 0.0174; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,f1_no_difference,-0.000797,-0.009531,0.009965,1218,0.939922,0.940719,"no difference was detected: the estimate is -0.0008, with a 95 percent interval of -0.0095 to 0.0100; the interval excludes the system being higher, that is better, than the reference by more than 0.0100, and lower, that is worse, by more than 0.0095; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K3_test,evidence_effect,s9_ei_wavg,s9_b,,ece,0.004171,-0.009429,0.015285,1218,0.016754,0.012583,"no difference was detected: the estimate is 0.0042, with a 95 percent interval of -0.0094 to 0.0153; the interval excludes the system being higher, that is worse, than the reference by more than 0.0153, and lower, that is better, by more than 0.0094; it is not a finding of equivalence; on test: s9_ei_wavg (v0.5's EI specialist) minus s9_b (base's three runs averaged, session 8's rule); descriptive"
+K4,evidence_effect,s8_ei,,none,accuracy,0.509031,0.477947,0.543883,1218,,,
+K4,evidence_effect,s8_ei,,none,macro_f1,0.428896,0.394138,0.463435,1218,,,
+K4,evidence_effect,s8_ei,,none,agreement_with_full_input,0.513957,0.481156,0.547331,1218,,,
+K4,evidence_effect,s8_ei,,title,accuracy,0.571547,0.534551,0.606453,1209,,,
+K4,evidence_effect,s8_ei,,title,macro_f1,0.533832,0.496393,0.573295,1209,,,
+K4,evidence_effect,s8_ei,,title,agreement_with_full_input,0.568238,0.534271,0.602661,1209,,,
+K4,evidence_effect,s8_ei,,swap,accuracy,0.810345,0.780209,0.839968,1218,,,
+K4,evidence_effect,s8_ei,,swap,macro_f1,0.795776,0.763268,0.828323,1218,,,
+K4,evidence_effect,s8_ei,,swap,exchange_share,0.722617,0.676512,0.771430,703,,,
+K4,evidence_effect,s8_ei,,swap,stay_share,0.980583,0.965656,0.993098,515,,,
+K4,evidence_effect,s8_ei,,"swap, comparator a time point or baseline",exchange_share,0.131579,0.025000,0.263158,38,,,
+K4,evidence_effect,s8_ei,,"swap, comparator a time point or baseline",stay_share,1.000000,1.000000,1.000000,10,,,
+K4,evidence_effect,s8_ei,,title minus none (prompts in both),macro_f1_difference,0.102431,0.073587,0.133051,1209,,,
+K4,evidence_effect,s8_ei,,title minus none (prompts in both),title_macro_f1,0.533832,0.496393,0.573295,1209,,,
+K4,evidence_effect,s8_ei,,title minus none (prompts in both),none_macro_f1,0.431401,0.396699,0.464988,1209,,,
+K4,evidence_effect,s8_ei,,none,reading,,,,,,,its answers depend on the article's text
+K4,evidence_effect,s8_ei,,title,reading,,,,,,,"the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart"
+K4,evidence_effect,s8_ei,,swap,reading,,,,,,,partly
+K4,evidence_effect,s9_ei_wavg,,none,accuracy,0.515599,0.487404,0.549419,1218,,,
+K4,evidence_effect,s9_ei_wavg,,none,macro_f1,0.438425,0.408460,0.472627,1218,,,
+K4,evidence_effect,s9_ei_wavg,,none,agreement_with_full_input,0.523810,0.495513,0.557097,1218,,,
+K4,evidence_effect,s9_ei_wavg,,title,accuracy,0.571547,0.538950,0.604100,1209,,,
+K4,evidence_effect,s9_ei_wavg,,title,macro_f1,0.532677,0.499470,0.569215,1209,,,
+K4,evidence_effect,s9_ei_wavg,,title,agreement_with_full_input,0.578164,0.547101,0.610801,1209,,,
+K4,evidence_effect,s9_ei_wavg,,swap,accuracy,0.780788,0.749330,0.811725,1218,,,
+K4,evidence_effect,s9_ei_wavg,,swap,macro_f1,0.759973,0.726758,0.794569,1218,,,
+K4,evidence_effect,s9_ei_wavg,,swap,exchange_share,0.665236,0.620769,0.715663,699,,,
+K4,evidence_effect,s9_ei_wavg,,swap,stay_share,0.967245,0.947663,0.984129,519,,,
+K4,evidence_effect,s9_ei_wavg,,"swap, comparator a time point or baseline",exchange_share,0.216216,0.085655,0.343906,37,,,
+K4,evidence_effect,s9_ei_wavg,,"swap, comparator a time point or baseline",stay_share,1.000000,1.000000,1.000000,11,,,
+K4,evidence_effect,s9_ei_wavg,,title minus none (prompts in both),macro_f1_difference,0.093876,0.065501,0.123414,1209,,,
+K4,evidence_effect,s9_ei_wavg,,title minus none (prompts in both),title_macro_f1,0.532677,0.499470,0.569215,1209,,,
+K4,evidence_effect,s9_ei_wavg,,title minus none (prompts in both),none_macro_f1,0.438801,0.407580,0.472345,1209,,,
+K4,evidence_effect,s9_ei_wavg,,none,reading,,,,,,,its answers depend on the article's text
+K4,evidence_effect,s9_ei_wavg,,title,reading,,,,,,,"the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart"
+K4,evidence_effect,s9_ei_wavg,,swap,reading,,,,,,,partly
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa-raw,,log_loss,-0.310208,-0.421927,-0.199606,500,0.579666,0.889874,"lower (better); s7_b3 (v0.5's PubMedQA specialist, session 7's calibration) minus BioGPT-Large-PubMedQA's uncalibrated probabilities, renormalized over the three answers (primary); descriptive"
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa-raw,,brier,-0.091028,-0.135199,-0.050547,500,0.314738,0.405766,"lower (better); s7_b3 (v0.5's PubMedQA specialist, session 7's calibration) minus BioGPT-Large-PubMedQA's uncalibrated probabilities, renormalized over the three answers (primary); descriptive"
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa-raw,,ece,-0.096966,-0.129756,-0.050124,500,0.040133,0.137099,"lower (better); s7_b3 (v0.5's PubMedQA specialist, session 7's calibration) minus BioGPT-Large-PubMedQA's uncalibrated probabilities, renormalized over the three answers (primary); descriptive"
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa-raw,,accuracy,0.044000,0.013950,0.078000,500,0.796000,0.752000,"higher (better); s7_b3 (v0.5's PubMedQA specialist, session 7's calibration) minus BioGPT-Large-PubMedQA's uncalibrated probabilities, renormalized over the three answers (primary); descriptive"
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa-raw,,macro_f1,0.021646,-0.024771,0.069579,500,0.569754,0.548107,"no difference was detected: the estimate is 0.0216, with a 95 percent interval of -0.0248 to 0.0696; the interval excludes the system being higher, that is better, than the reference by more than 0.0696, and lower, that is worse, by more than 0.0248; it is not a finding of equivalence; s7_b3 (v0.5's PubMedQA specialist, session 7's calibration) minus BioGPT-Large-PubMedQA's uncalibrated probabilities, renormalized over the three answers (primary); descriptive"
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa,,log_loss,-0.154310,-0.228552,-0.084402,500,0.579666,0.733975,lower (better); s7_b3 minus BioGPT-Large-PubMedQA calibrated by session 8's rule on the 150 validation items (secondary: it was fine-tuned on them); descriptive
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa,,brier,-0.073840,-0.111614,-0.038797,500,0.314738,0.388578,lower (better); s7_b3 minus BioGPT-Large-PubMedQA calibrated by session 8's rule on the 150 validation items (secondary: it was fine-tuned on them); descriptive
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa,,ece,-0.047482,-0.077904,-0.006405,500,0.040133,0.087615,lower (better); s7_b3 minus BioGPT-Large-PubMedQA calibrated by session 8's rule on the 150 validation items (secondary: it was fine-tuned on them); descriptive
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa,,accuracy,0.058000,0.026000,0.092000,500,0.796000,0.738000,higher (better); s7_b3 minus BioGPT-Large-PubMedQA calibrated by session 8's rule on the 150 validation items (secondary: it was fine-tuned on them); descriptive
+K5,pubmedqa_answer,s7_b3,biogpt_large_pqa,,macro_f1,0.042815,0.002389,0.085201,500,0.569754,0.526939,higher (better); s7_b3 minus BioGPT-Large-PubMedQA calibrated by session 8's rule on the 150 validation items (secondary: it was fine-tuned on them); descriptive
+K5,pubmedqa_answer,biogpt_large_pqa-raw,gemma4_31b,,log_loss,0.276791,0.169518,0.392466,500,0.889874,0.613082,higher (worse); BioGPT-Large-PubMedQA's uncalibrated probabilities (primary) minus gemma4_31b (calibrated on validation); descriptive
+K5,pubmedqa_answer,biogpt_large_pqa-raw,gemma4_31b,,brier,0.084824,0.041335,0.131396,500,0.405766,0.320942,higher (worse); BioGPT-Large-PubMedQA's uncalibrated probabilities (primary) minus gemma4_31b (calibrated on validation); descriptive
+K5,pubmedqa_answer,biogpt_large_pqa-raw,gemma4_31b,,ece,0.079606,0.037257,0.116336,500,0.137099,0.057493,higher (worse); BioGPT-Large-PubMedQA's uncalibrated probabilities (primary) minus gemma4_31b (calibrated on validation); descriptive
+K5,pubmedqa_answer,biogpt_large_pqa-raw,gemma4_31b,,accuracy,-0.032000,-0.068000,0.004000,500,0.752000,0.784000,"no difference was detected: the estimate is -0.0320, with a 95 percent interval of -0.0680 to 0.0040; the interval excludes the system being higher, that is better, than the reference by more than 0.0040, and lower, that is worse, by more than 0.0680; it is not a finding of equivalence; BioGPT-Large-PubMedQA's uncalibrated probabilities (primary) minus gemma4_31b (calibrated on validation); descriptive"
+K5,pubmedqa_answer,biogpt_large_pqa-raw,gemma4_31b,,macro_f1,-0.038089,-0.086710,0.013950,500,0.548107,0.586196,"no difference was detected: the estimate is -0.0381, with a 95 percent interval of -0.0867 to 0.0139; the interval excludes the system being higher, that is better, than the reference by more than 0.0139, and lower, that is worse, by more than 0.0867; it is not a finding of equivalence; BioGPT-Large-PubMedQA's uncalibrated probabilities (primary) minus gemma4_31b (calibrated on validation); descriptive"
+K5,pubmedqa_answer,biogpt_large_pqa,gemma4_31b,,log_loss,0.120893,0.051355,0.198715,500,0.733975,0.613082,higher (worse); BioGPT-Large-PubMedQA calibrated (secondary: it was fine-tuned on the calibration items) minus gemma4_31b; descriptive
+K5,pubmedqa_answer,biogpt_large_pqa,gemma4_31b,,brier,0.067636,0.028718,0.108328,500,0.388578,0.320942,higher (worse); BioGPT-Large-PubMedQA calibrated (secondary: it was fine-tuned on the calibration items) minus gemma4_31b; descriptive
+K5,pubmedqa_answer,biogpt_large_pqa,gemma4_31b,,ece,0.030122,-0.008268,0.067707,500,0.087615,0.057493,"no difference was detected: the estimate is 0.0301, with a 95 percent interval of -0.0083 to 0.0677; the interval excludes the system being higher, that is worse, than the reference by more than 0.0677, and lower, that is better, by more than 0.0083; it is not a finding of equivalence; BioGPT-Large-PubMedQA calibrated (secondary: it was fine-tuned on the calibration items) minus gemma4_31b; descriptive"
+K5,pubmedqa_answer,biogpt_large_pqa,gemma4_31b,,accuracy,-0.046000,-0.084000,-0.008000,500,0.738000,0.784000,lower (worse); BioGPT-Large-PubMedQA calibrated (secondary: it was fine-tuned on the calibration items) minus gemma4_31b; descriptive
+K5,pubmedqa_answer,biogpt_large_pqa,gemma4_31b,,macro_f1,-0.059257,-0.105810,-0.013465,500,0.526939,0.586196,lower (worse); BioGPT-Large-PubMedQA calibrated (secondary: it was fine-tuned on the calibration items) minus gemma4_31b; descriptive
+K6,readmit_window,readmission_pool_v2,readmission_pool,,log_loss,0.000000,0.000000,0.000000,6998,0.827515,0.827515,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,brier,0.000000,0.000000,0.000000,6998,0.497196,0.497196,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,ece,0.000000,0.000000,0.000000,6998,0.006583,0.006583,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,accuracy,0.000000,0.000000,0.000000,6998,0.615747,0.615747,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,macro_f1,0.000000,0.000000,0.000000,6998,0.369494,0.369494,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,macro_f1_tuned,0.000000,0.000000,0.000000,6998,0.463226,0.463226,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,quadratic_weighted_kappa,0.000000,0.000000,0.000000,6998,0.130131,0.130131,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,auroc_30d,0.000000,0.000000,0.000000,6998,0.662194,0.662194,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,calibration_intercept_30d,0.000000,0.000000,0.000000,6998,-0.019197,-0.019197,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); not ranked (an intercept is best at 0 and a slope at 1); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,readmission_pool_v2,readmission_pool,,calibration_slope_30d,0.000000,0.000000,0.000000,6998,1.049268,1.049268,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); not ranked (an intercept is best at 0 and a slope at 1); v0.5's pool minus session 8's pool: v0.5 keeps session 8's pool (readmission_pool_v2.json), so readmission_pool_v2 is session 8's weights and T applied again to its members' test files, and this difference is zero up to the printed digits; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,log_loss,0.001611,-0.000441,0.003659,6998,0.832608,0.830997,"no difference was detected: the estimate is 0.0016, with a 95 percent interval of -0.0004 to 0.0037; the interval excludes the system being higher, that is worse, than the reference by more than 0.0037, and lower, that is better, by more than 0.0004; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,brier,0.001433,0.000003,0.002805,6998,0.501097,0.499664,"higher (worse); session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,ece,0.002566,-0.007636,0.011533,6998,0.012828,0.010262,"no difference was detected: the estimate is 0.0026, with a 95 percent interval of -0.0076 to 0.0115; the interval excludes the system being higher, that is worse, than the reference by more than 0.0115, and lower, that is better, by more than 0.0076; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,accuracy,-0.004001,-0.008720,0.001000,6998,0.609889,0.613890,"no difference was detected: the estimate is -0.0040, with a 95 percent interval of -0.0087 to 0.0010; the interval excludes the system being higher, that is better, than the reference by more than 0.0010, and lower, that is worse, by more than 0.0087; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,macro_f1,-0.006616,-0.013964,0.000592,6998,0.368175,0.374791,"no difference was detected: the estimate is -0.0066, with a 95 percent interval of -0.0140 to 0.0006; the interval excludes the system being higher, that is better, than the reference by more than 0.0006, and lower, that is worse, by more than 0.0140; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,macro_f1_tuned,0.002701,-0.005769,0.011484,6998,0.457823,0.455123,"no difference was detected: the estimate is 0.0027, with a 95 percent interval of -0.0058 to 0.0115; the interval excludes the system being higher, that is better, than the reference by more than 0.0115, and lower, that is worse, by more than 0.0058; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,quadratic_weighted_kappa,-0.012940,-0.024807,-0.000612,6998,0.124182,0.137122,"lower (worse); session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,auroc_30d,-0.000003,-0.006488,0.006691,6998,0.658419,0.658421,"no difference was detected: the estimate is -0.0000, with a 95 percent interval of -0.0065 to 0.0067; the interval excludes the system being higher, that is better, than the reference by more than 0.0067, and lower, that is worse, by more than 0.0065; it is not a finding of equivalence; session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,calibration_intercept_30d,0.013002,0.008028,0.018426,6998,-0.020814,-0.033816,"higher (better); not ranked (an intercept is best at 0 and a slope at 1); session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,xgboost_codes,xgboost_tuned,,calibration_slope_30d,0.017669,-0.022250,0.056452,6998,1.014577,0.996908,"no difference was detected: the estimate is 0.0177, with a 95 percent interval of -0.0222 to 0.0565; the interval excludes the system being higher than the reference by more than 0.0565, and lower by more than 0.0222; it is not a finding of equivalence; not ranked (an intercept is best at 0 and a slope at 1); session 8's xgboost_tuned setting refitted with the recoded diagnosis fields, minus xgboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,log_loss,-0.000236,-0.002252,0.001717,6998,0.828865,0.829101,"no difference was detected: the estimate is -0.0002, with a 95 percent interval of -0.0023 to 0.0017; the interval excludes the system being higher, that is worse, than the reference by more than 0.0017, and lower, that is better, by more than 0.0023; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,brier,-0.000078,-0.001485,0.001271,6998,0.497995,0.498072,"no difference was detected: the estimate is -0.0001, with a 95 percent interval of -0.0015 to 0.0013; the interval excludes the system being higher, that is worse, than the reference by more than 0.0013, and lower, that is better, by more than 0.0015; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,ece,0.001272,-0.008347,0.008514,6998,0.009076,0.007804,"no difference was detected: the estimate is 0.0013, with a 95 percent interval of -0.0083 to 0.0085; the interval excludes the system being higher, that is worse, than the reference by more than 0.0085, and lower, that is better, by more than 0.0083; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,accuracy,-0.000143,-0.004716,0.004716,6998,0.614604,0.614747,"no difference was detected: the estimate is -0.0001, with a 95 percent interval of -0.0047 to 0.0047; the interval excludes the system being higher, that is better, than the reference by more than 0.0047, and lower, that is worse, by more than 0.0047; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,macro_f1,-0.000514,-0.007206,0.006710,6998,0.366623,0.367136,"no difference was detected: the estimate is -0.0005, with a 95 percent interval of -0.0072 to 0.0067; the interval excludes the system being higher, that is better, than the reference by more than 0.0067, and lower, that is worse, by more than 0.0072; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,macro_f1_tuned,-0.000924,-0.009479,0.007686,6998,0.459513,0.460437,"no difference was detected: the estimate is -0.0009, with a 95 percent interval of -0.0095 to 0.0077; the interval excludes the system being higher, that is better, than the reference by more than 0.0077, and lower, that is worse, by more than 0.0095; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,quadratic_weighted_kappa,0.005093,-0.005624,0.016661,6998,0.132537,0.127445,"no difference was detected: the estimate is 0.0051, with a 95 percent interval of -0.0056 to 0.0167; the interval excludes the system being higher, that is better, than the reference by more than 0.0167, and lower, that is worse, by more than 0.0056; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,auroc_30d,-0.001633,-0.008646,0.005083,6998,0.656479,0.658112,"no difference was detected: the estimate is -0.0016, with a 95 percent interval of -0.0086 to 0.0051; the interval excludes the system being higher, that is better, than the reference by more than 0.0051, and lower, that is worse, by more than 0.0086; it is not a finding of equivalence; session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,calibration_intercept_30d,-0.007569,-0.012583,-0.002413,6998,-0.036253,-0.028683,"lower (worse); not ranked (an intercept is best at 0 and a slope at 1); session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K6,readmit_window,catboost_codes,catboost_tuned,,calibration_slope_30d,-0.000958,-0.041868,0.038778,6998,1.015067,1.016025,"no difference was detected: the estimate is -0.0010, with a 95 percent interval of -0.0419 to 0.0388; the interval excludes the system being higher than the reference by more than 0.0388, and lower by more than 0.0419; it is not a finding of equivalence; not ranked (an intercept is best at 0 and a slope at 1); session 8's catboost_tuned setting refitted with the recoded diagnosis fields, minus catboost_tuned; descriptive"
+K7,evidence_effect,s8_ei,gemma4_31b,areas,aurc,0.011579,0.007127,0.017425,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,areas,e_aurc,0.009772,0.006072,0.014684,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,areas,augrc,0.009379,0.006004,0.013651,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_10,confidence_combined_accuracy,0.929392,0.910194,0.944721,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_10,random_expected_combined_accuracy,0.933954,0.918342,0.948467,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_10,oracle_combined_accuracy,0.958128,0.943256,0.970541,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_10,large_model_confidence_combined_accuracy,0.940066,0.923136,0.954813,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_20,confidence_combined_accuracy,0.916256,0.898482,0.932196,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_20,random_expected_combined_accuracy,0.926964,0.910988,0.941646,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_20,oracle_combined_accuracy,0.958128,0.943256,0.970541,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_20,large_model_confidence_combined_accuracy,0.938424,0.922167,0.953975,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_30,confidence_combined_accuracy,0.899836,0.878226,0.919169,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_30,random_expected_combined_accuracy,0.919974,0.903642,0.935236,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_30,oracle_combined_accuracy,0.958128,0.943256,0.970541,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_30,large_model_confidence_combined_accuracy,0.934319,0.916662,0.950981,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_50,confidence_combined_accuracy,0.878489,0.855178,0.901432,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_50,random_expected_combined_accuracy,0.905993,0.887590,0.922890,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_50,oracle_combined_accuracy,0.958128,0.943256,0.970541,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_50,large_model_confidence_combined_accuracy,0.935140,0.917138,0.951749,1218,,,
+K7,evidence_effect,s8_ei,gemma4_31b,rate_10,i35_rule_minus_confidence_accuracy,-0.000821,-0.002367,0.001581,1218,,,no difference was detected; a gain larger than 0.0016 and a loss larger than 0.0024 in combined accuracy (not equivalence)
+K7,evidence_effect,s8_ei,gemma4_31b,rate_20,i35_rule_minus_confidence_accuracy,0.000000,-0.001612,0.001648,1218,,,no difference was detected; a gain larger than 0.0016 and a loss larger than 0.0016 in combined accuracy (not equivalence)
+K7,evidence_effect,s8_ei,gemma4_31b,rate_30,i35_rule_minus_confidence_accuracy,0.000000,-0.000838,0.001616,1218,,,no difference was detected; a gain larger than 0.0016 and a loss larger than 0.0008 in combined accuracy (not equivalence)
+K7,evidence_effect,s8_ei,gemma4_31b,rate_50,i35_rule_minus_confidence_accuracy,0.000000,0.000000,0.000832,1218,,,no difference was detected; a gain larger than 0.0008 and a loss larger than -0.0000 in combined accuracy (not equivalence)
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,areas,aurc,0.012805,0.008188,0.018243,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,areas,e_aurc,0.010038,0.006394,0.014541,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,areas,augrc,0.010531,0.006927,0.014682,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_10,confidence_combined_accuracy,0.933498,0.916048,0.949184,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_10,random_expected_combined_accuracy,0.921791,0.903966,0.936919,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_10,oracle_combined_accuracy,0.957307,0.944215,0.969311,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_10,large_model_confidence_combined_accuracy,0.926929,0.909705,0.942789,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_20,confidence_combined_accuracy,0.917077,0.898585,0.932843,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_20,random_expected_combined_accuracy,0.916610,0.898798,0.932236,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_20,oracle_combined_accuracy,0.957307,0.944215,0.969311,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_20,large_model_confidence_combined_accuracy,0.926108,0.907636,0.942974,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_30,confidence_combined_accuracy,0.896552,0.875099,0.917281,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_30,random_expected_combined_accuracy,0.911429,0.893467,0.927612,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_30,oracle_combined_accuracy,0.957307,0.944215,0.969311,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_30,large_model_confidence_combined_accuracy,0.924466,0.905535,0.942267,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_50,confidence_combined_accuracy,0.876847,0.853469,0.901312,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_50,random_expected_combined_accuracy,0.901067,0.882109,0.918246,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_50,oracle_combined_accuracy,0.957307,0.944215,0.969311,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_50,large_model_confidence_combined_accuracy,0.926108,0.907283,0.944074,1218,,,
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_10,i35_rule_minus_confidence_accuracy,0.000000,-0.004763,0.004119,1218,,,no difference was detected; a gain larger than 0.0041 and a loss larger than 0.0048 in combined accuracy (not equivalence)
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_20,i35_rule_minus_confidence_accuracy,-0.000821,-0.002449,0.003234,1218,,,no difference was detected; a gain larger than 0.0032 and a loss larger than 0.0024 in combined accuracy (not equivalence)
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_30,i35_rule_minus_confidence_accuracy,0.000000,-0.002402,0.001714,1218,,,no difference was detected; a gain larger than 0.0017 and a loss larger than 0.0024 in combined accuracy (not equivalence)
+K7,evidence_effect,s9_ei_wavg,gemma4_31b_long,rate_50,i35_rule_minus_confidence_accuracy,0.000821,-0.000858,0.000861,1218,,,no difference was detected; a gain larger than 0.0009 and a loss larger than 0.0009 in combined accuracy (not equivalence)
+K7,pubmedqa_answer,s7_b3,gemma4_31b,areas,aurc,0.091759,0.066378,0.118331,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,areas,e_aurc,0.069167,0.049155,0.090054,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,areas,augrc,0.061532,0.046569,0.076659,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_10,confidence_combined_accuracy,0.800000,0.762000,0.836000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_10,random_expected_combined_accuracy,0.794800,0.760395,0.830805,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_10,oracle_combined_accuracy,0.838000,0.804000,0.872050,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_10,large_model_confidence_combined_accuracy,0.800000,0.764000,0.838000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_20,confidence_combined_accuracy,0.796000,0.760000,0.834000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_20,random_expected_combined_accuracy,0.793600,0.759580,0.828410,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_20,oracle_combined_accuracy,0.838000,0.804000,0.872050,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_20,large_model_confidence_combined_accuracy,0.800000,0.765950,0.838000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_30,confidence_combined_accuracy,0.794000,0.758000,0.832000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_30,random_expected_combined_accuracy,0.792400,0.757985,0.826200,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_30,oracle_combined_accuracy,0.838000,0.804000,0.872050,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_30,large_model_confidence_combined_accuracy,0.804000,0.769950,0.840000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_50,confidence_combined_accuracy,0.796000,0.759950,0.834000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_50,random_expected_combined_accuracy,0.790000,0.754975,0.823000,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_50,oracle_combined_accuracy,0.838000,0.804000,0.872050,500,,,
+K7,pubmedqa_answer,s7_b3,gemma4_31b,rate_50,large_model_confidence_combined_accuracy,0.802000,0.768000,0.838000,500,,,
+K8,evidence_effect,s9_ei_wavg,s9_ei,,log_loss,0.004793,0.001048,0.009221,1218,0.216386,0.211593,"higher (worse); s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,brier,0.002566,0.000577,0.004661,1218,0.110099,0.107534,"higher (worse); s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,accuracy,-0.003284,-0.007212,0.000000,1218,0.926929,0.930213,"no difference was detected: the estimate is -0.0033, with a 95 percent interval of -0.0072 to 0.0000; the interval excludes the system being higher, that is better, than the reference by more than 0.0000, and lower, that is worse, by more than 0.0072; it is not a finding of equivalence; s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,macro_f1,-0.003096,-0.006790,0.000335,1218,0.924755,0.927851,"no difference was detected: the estimate is -0.0031, with a 95 percent interval of -0.0068 to 0.0003; the interval excludes the system being higher, that is better, than the reference by more than 0.0003, and lower, that is worse, by more than 0.0068; it is not a finding of equivalence; s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,f1_increased,-0.006266,-0.011633,-0.001357,1218,0.918519,0.924784,"lower (worse); s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,f1_decreased,-0.000282,-0.005370,0.004573,1218,0.915825,0.916107,"no difference was detected: the estimate is -0.0003, with a 95 percent interval of -0.0054 to 0.0046; the interval excludes the system being higher, that is better, than the reference by more than 0.0046, and lower, that is worse, by more than 0.0054; it is not a finding of equivalence; s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,f1_no_difference,-0.002740,-0.007017,0.001152,1218,0.939922,0.942663,"no difference was detected: the estimate is -0.0027, with a 95 percent interval of -0.0070 to 0.0012; the interval excludes the system being higher, that is better, than the reference by more than 0.0012, and lower, that is worse, by more than 0.0070; it is not a finding of equivalence; s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K8,evidence_effect,s9_ei_wavg,s9_ei,,ece,0.005244,-0.004942,0.010134,1218,0.016754,0.011510,"no difference was detected: the estimate is 0.0052, with a 95 percent interval of -0.0049 to 0.0101; the interval excludes the system being higher, that is worse, than the reference by more than 0.0101, and lower, that is better, by more than 0.0049; it is not a finding of equivalence; s9_ei_wavg (the weight average) minus s9_ei (the probability average of the same runs: three, or two under correction 7), both calibrated by v0.5's chosen family (temperature), each fitted on its own 654 clean validation predictions; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,log_loss,0.000000,0.000000,0.000000,1218,0.216386,0.216386,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,brier,0.000000,0.000000,0.000000,1218,0.110099,0.110099,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,accuracy,0.000000,0.000000,0.000000,1218,0.926929,0.926929,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,macro_f1,0.000000,0.000000,0.000000,1218,0.924755,0.924755,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,f1_increased,0.000000,0.000000,0.000000,1218,0.918519,0.918519,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,f1_decreased,0.000000,0.000000,0.000000,1218,0.915825,0.915825,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,f1_no_difference,0.000000,0.000000,0.000000,1218,0.939922,0.939922,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,s9_ei_wavg_s8rule,,ece,0.000000,0.000000,0.000000,1218,0.016754,0.016754,"no difference was detected: the difference is 0 in every resample (the two give the same value on these items); s9_ei_wavg under its chosen family (temperature) minus under session 8's rule (temperature), both fitted on the 654 clean validation prompts; descriptive"
+K9,evidence_effect,s9_ei_wavg,,temperature,out_of_fold_log_loss,0.178083,,,654,,,"validation, calibration_s9.json; the mean over the repeats (min 0.17649, max 0.18081); chosen"
+K9,evidence_effect,s9_ei_wavg,,temperature_intercepts,out_of_fold_log_loss,0.180842,,,654,,,"validation, calibration_s9.json; the mean over the repeats (min 0.17750, max 0.18603)"
+K9,evidence_effect,s9_ei_wavg,,vector,out_of_fold_log_loss,0.183642,,,654,,,"validation, calibration_s9.json; the mean over the repeats (min 0.17906, max 0.19101)"
+K9,evidence_effect,s9_ei_wavg,,dirichlet_odir,out_of_fold_log_loss,0.182900,,,654,,,"validation, calibration_s9.json; the mean over the repeats (min 0.17812, max 0.19237)"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,log_loss,0.092240,0.067189,0.120554,1218,0.308626,0.216386,"higher (worse); s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,brier,0.041896,0.027901,0.056190,1218,0.151995,0.110099,"higher (worse); s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,accuracy,-0.005747,-0.018733,0.006557,1218,0.921182,0.926929,"no difference was detected: the estimate is -0.0057, with a 95 percent interval of -0.0187 to 0.0066; the interval excludes the system being higher, that is better, than the reference by more than 0.0066, and lower, that is worse, by more than 0.0187; it is not a finding of equivalence; s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,macro_f1,-0.004926,-0.018366,0.007481,1218,0.919830,0.924755,"no difference was detected: the estimate is -0.0049, with a 95 percent interval of -0.0184 to 0.0075; the interval excludes the system being higher, that is better, than the reference by more than 0.0075, and lower, that is worse, by more than 0.0184; it is not a finding of equivalence; s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,f1_increased,-0.007351,-0.026564,0.011659,1218,0.911168,0.918519,"no difference was detected: the estimate is -0.0074, with a 95 percent interval of -0.0266 to 0.0117; the interval excludes the system being higher, that is better, than the reference by more than 0.0117, and lower, that is worse, by more than 0.0266; it is not a finding of equivalence; s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,f1_decreased,0.001822,-0.016189,0.018769,1218,0.917647,0.915825,"no difference was detected: the estimate is 0.0018, with a 95 percent interval of -0.0162 to 0.0188; the interval excludes the system being higher, that is better, than the reference by more than 0.0188, and lower, that is worse, by more than 0.0162; it is not a finding of equivalence; s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,f1_no_difference,-0.009248,-0.022503,0.003412,1218,0.930674,0.939922,"no difference was detected: the estimate is -0.0092, with a 95 percent interval of -0.0225 to 0.0034; the interval excludes the system being higher, that is better, than the reference by more than 0.0034, and lower, that is worse, by more than 0.0225; it is not a finding of equivalence; s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K10,evidence_effect,s9_ei_wavg_sa,s9_ei_wavg,,ece,0.048063,0.025872,0.060172,1218,0.064817,0.016754,"higher (worse); s9_ei_wavg_sa (swap averaging) minus s9_ei_wavg (one pass), each calibrated by v0.5's chosen family (temperature) on its own 654 clean validation predictions; v0.5 does not use swap averaging (correction 3); descriptive"
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,log_loss,0.216253,0.171149,0.263746,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,brier,0.109834,0.085638,0.133922,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,accuracy,0.927393,0.910793,0.944263,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,macro_f1,0.925342,0.907228,0.941872,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,f1_increased,0.918851,0.896379,0.937819,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,f1_decreased,0.917369,0.886399,0.941539,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,f1_no_difference,0.939806,0.922619,0.955930,1212,,,
+K1_sensitivity_metrics,evidence_effect,s9_ei_wavg,,unflagged,ece,0.017438,0.012665,0.034906,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,log_loss,1.076299,1.057183,1.095351,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,brier,0.652208,0.639065,0.665360,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,accuracy,0.422442,0.387307,0.461479,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,macro_f1,0.197989,0.186119,0.210508,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,f1_increased,0.000000,0.000000,0.000000,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,f1_decreased,0.000000,0.000000,0.000000,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,f1_no_difference,0.593968,0.558358,0.631524,1212,,,
+K1_sensitivity_metrics,evidence_effect,prior,,unflagged,ece,0.029280,0.002225,0.064415,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,log_loss,0.401024,0.329275,0.480018,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,brier,0.201498,0.163623,0.240149,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,accuracy,0.874587,0.849003,0.897969,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,macro_f1,0.866015,0.838792,0.891245,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,f1_increased,0.845758,0.805355,0.881310,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,f1_decreased,0.829508,0.781585,0.870279,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,f1_no_difference,0.922780,0.900660,0.942917,1212,,,
+K1_sensitivity_metrics,evidence_effect,gemma4_31b_long,,unflagged,ece,0.028709,0.023861,0.056261,1212,,,
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,log_loss,-0.860047,-0.908662,-0.810913,1212,0.216253,1.076299,"lower (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,brier,-0.542374,-0.568138,-0.516367,1212,0.109834,0.652208,"lower (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,accuracy,0.504950,0.463015,0.541270,1212,0.927393,0.422442,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,macro_f1,0.727353,0.705115,0.747096,1212,0.925342,0.197989,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,f1_increased,0.918851,0.896379,0.937819,1212,0.918851,0.000000,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,f1_decreased,0.917369,0.886399,0.941539,1212,0.917369,0.000000,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,f1_no_difference,0.345838,0.308936,0.378668,1212,0.939806,0.593968,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,prior,unflagged,ece,-0.011842,-0.041273,0.022413,1212,0.017438,0.029280,"no difference was detected: the estimate is -0.0118, with a 95 percent interval of -0.0413 to 0.0224; the interval excludes the system being higher, that is worse, than the reference by more than 0.0224, and lower, that is better, by more than 0.0413; it is not a finding of equivalence; K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,log_loss,-0.184771,-0.260552,-0.116409,1212,0.216253,0.401024,"lower (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,brier,-0.091663,-0.127455,-0.057370,1212,0.109834,0.201498,"lower (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,accuracy,0.052805,0.030908,0.076434,1212,0.927393,0.874587,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,macro_f1,0.059327,0.035440,0.085573,1212,0.925342,0.866015,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,f1_increased,0.073093,0.039614,0.109726,1212,0.918851,0.845758,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,f1_decreased,0.087861,0.050256,0.128745,1212,0.917369,0.829508,"higher (better); K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,f1_no_difference,0.017026,-0.001575,0.035859,1212,0.939806,0.922780,"no difference was detected: the estimate is 0.0170, with a 95 percent interval of -0.0016 to 0.0359; the interval excludes the system being higher, that is better, than the reference by more than 0.0359, and lower, that is worse, by more than 0.0016; it is not a finding of equivalence; K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+K1_sensitivity,evidence_effect,s9_ei_wavg,gemma4_31b_long,unflagged,ece,-0.011271,-0.034117,0.001299,1212,0.017438,0.028709,"no difference was detected: the estimate is -0.0113, with a 95 percent interval of -0.0341 to 0.0013; the interval excludes the system being higher, that is worse, than the reference by more than 0.0013, and lower, that is better, by more than 0.0341; it is not a finding of equivalence; K1 without every test prompt the README flags (group.flag Incorrect, Questionable or Somewhat malformed; session 8's correction 13); descriptive"
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,increased,intercept,0.224350,-0.121932,0.599623,1218,,,increased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,increased,slope,0.911167,0.818811,1.040457,1218,,,increased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,increased,intercept_with_slope,0.171193,-0.124750,0.521061,1218,,,increased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,decreased,intercept,-0.129396,-0.486679,0.191702,1218,,,decreased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,decreased,slope,0.991924,0.877309,1.183288,1218,,,decreased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,decreased,intercept_with_slope,-0.132393,-0.474970,0.241487,1218,,,decreased against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,no_difference,intercept,-0.113900,-0.515142,0.281108,1218,,,no_difference against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,no_difference,slope,0.885038,0.794316,1.001136,1218,,,no_difference against the rest
+calibration_slope_intercept,evidence_effect,s9_ei_wavg,,no_difference,intercept_with_slope,-0.122975,-0.456873,0.207699,1218,,,no_difference against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,yes,intercept,-0.021740,-0.279986,0.245297,500,,,yes against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,yes,slope,0.964742,0.839426,1.138073,500,,,yes against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,yes,intercept_with_slope,-0.014464,-0.272783,0.246891,500,,,yes against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,no,intercept,-0.151287,-0.392689,0.097310,500,,,no against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,no,slope,1.186904,1.029564,1.425973,500,,,no against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,no,intercept_with_slope,-0.146842,-0.450359,0.149594,500,,,no against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,maybe,intercept,0.237053,-0.089035,0.524974,500,,,maybe against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,maybe,slope,0.899046,0.539238,1.312231,500,,,maybe against the rest
+calibration_slope_intercept,pubmedqa_answer,s7_b3,,maybe,intercept_with_slope,0.023063,-0.863726,0.892815,500,,,maybe against the rest
+release_bar,evidence_effect,s9_ei_wavg,,,criterion 1,,,,,,,"PASS: s9_ei_wavg's ECE at most the limit (the larger of 0.05 and the 95th percentile of a calibrated model's ECE at n 1,218, fixed in release_candidate.json before any test prediction); values {""ece"": 0.016754031192118286, ""limit"": 0.05}"
+release_bar,evidence_effect,s9_ei_wavg,prior,,criterion 2,,,,,,,"PASS: s9_ei_wavg's log loss below the prior's (v0.4's prior, the answer shares of session 8's whole training split), with the 95 percent interval of the difference (s9_ei_wavg minus the prior; 10,000 article resamples) wholly below zero; values {""articles"": 333, ""estimate"": -0.8603310774761451, ""high"": -0.8103947868376791, ""low"": -0.9077992130469236, ""n"": 1218, ""reference"": ""prior"", ""resamples"": 10000, ""system"": ""s9_ei_wavg""}"
+release_bar,evidence_effect,s9_ei_wavg,gemma4_31b_long,,criterion 3,,,,,,,"PASS: s9_ei_wavg's log loss below gemma4_31b_long's (both calibrated on validation), with the 95 percent interval of the difference (10,000 article resamples) wholly below zero; values {""articles"": 333, ""estimate"": -0.1829036828603476, ""high"": -0.11635838379935873, ""low"": -0.2597858440187696, ""n"": 1218, ""reference"": ""gemma4_31b_long"", ""resamples"": 10000, ""system"": ""s9_ei_wavg""}"
+release_bar,evidence_effect,s9_ei_wavg,gemma4_31b_long,,criterion 4,,,,,,,"PASS: s9_ei_wavg's macro-F1 not below gemma4_31b_long's point estimate; values {""large_model"": 0.86677410426927, ""specialist"": 0.9247553049878632}"
+release_bar,evidence_effect,s9_ei_wavg,,,overall,,,,,,,"PASS: every criterion passes: v0.5's bar is met, and THE RELEASE follows (step 17)"
+cost_per_1000_questions,evidence_effect,s9_ei_wavg,,specialists,usd_per_1000_questions,0.296656,,,,,,0.3034 seconds a question at 3.52 dollars an hour
+cost_per_1000_questions,pubmedqa_answer,s7_b3,,specialists,usd_per_1000_questions,0.019542,,,,,,0.0200 seconds a question at 3.52 dollars an hour
+cost_per_1000_questions,readmit_window,readmission_pool_v2,,specialists,usd_per_1000_questions,,,,,,,its members are trees on the CPU and readers predicted in earlier sessions; no test run summary of session 9 times them on the GPU
+cost_per_1000_questions,evidence_effect,gemma4_31b_long,,large_model,usd_per_1000_questions,2.442647,,,,,,2.4982 seconds a question at 3.52 dollars an hour
+cost_per_1000_questions,pubmedqa_answer,gemma4_31b,,large_model,usd_per_1000_questions,0.786170,,,,,,0.8040 seconds a question at 3.52 dollars an hour
+note,,,,,contamination,,,,,,,"Known contamination: Qwen3's and Gemma 4's pretraining text is not published and may include PMC articles (EI's articles are PMC's), EI's repository (public since 2019), PubMedQA and the UCI data, which would favor both; EI's test labels are public (the project's site serves them to its leaderboard), so no evaluation of EI can be blind; Laya's, ModernBERT's and reader v1's notes and session 4's notes on Duan stand. EI's test split was read in session 8, for v0.4's bar, its comparisons and its checks; v0.5's recipe, calibration and pool were chosen on validation only and frozen in release_candidate.json before any test prediction of a v0.5 system existed, and this is the second time the bar is judged on this split."
+note,,,,,biogpt_caveat,,,,,,,"BioGPT-Large-PubMedQA was fine-tuned on PQA-L's fold 0 training and development sets, which hold all 150 of this project's PubMedQA validation items, so its calibration (session 8's rule on those items) was fitted on items it was trained on: its uncalibrated probabilities, renormalized over the three answers, are the primary result and its calibrated ones are secondary (PUBMEDQA BESIDE BIOGPT-LARGE)"
+note,,,,,k3,,,,,,,"recipe_selection.json's score of a candidate is the mean of its two runs' own scores (correction 2), while K3 scores the two runs' probability average, so the two can differ; K3 is descriptive and decides nothing"

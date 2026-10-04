@@ -1,0 +1,37 @@
+{
+ "plan": "docs/prompt_session8.md, THE ARTICLE SELECTION",
+ "written_utc": "2026-09-30T10:46:00Z",
+ "max_len": 4096,
+ "spare": 16,
+ "rule": "title and abstract, then results-section passages, then others, by BM25 against the prompt's words, to 4,096 tokens",
+ "coverage": {
+  "train": {
+   "prompts_with_usable_offsets": 9850,
+   "covered": 9487,
+   "coverage": 0.9631472081218274
+  },
+  "validation": {
+   "prompts_with_usable_offsets": 1206,
+   "covered": 1151,
+   "coverage": 0.9543946932006634
+  }
+ },
+ "check_of_30_september_train": 0.9576,
+ "difference_from_check_train": 0.005547208121827407,
+ "within_one_point": true,
+ "mean_tokens_per_record": {
+  "train": 3839.037826000398,
+  "validation": 3831.042037186742,
+  "test": 3869.8341543513957
+ },
+ "bm25": {
+  "N": 44280,
+  "avgL": 149.08954381210478,
+  "articles": 2657,
+  "vocabulary": 115286,
+  "k1": 1.2,
+  "b": 0.75,
+  "file": "data/processed/session8/bm25_stats.json",
+  "sha256": "38834ae69348ad4c9fac8dbc3a1b82d4be8808368b837214f78175c6ef56a772"
+ }
+}

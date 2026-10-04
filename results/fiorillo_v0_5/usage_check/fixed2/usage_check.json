@@ -1,0 +1,1255 @@
+{
+ "plan": "docs/prompt_session10.md, correction 9 (the usage check's fourth run, on the second fix)",
+ "written_utc": "2026-10-03T12:12:06Z",
+ "rules": {
+  "readmit_window": "PASS when every row's largest absolute difference is at most 0.0001",
+  "pubmedqa_answer": "PASS when (a) on every record whose evaluated top probability is at least 0.6 the released top answer is the evaluated one and (b) the mean absolute difference over all records and answers is at most 0.02",
+  "evidence_effect": "PASS when (a) on every record whose evaluated top probability is at least 0.6 the released top answer is the evaluated one and (b) the mean absolute difference over all records and answers is at most 0.02",
+  "all": "a record answered with an error, or not answered, is a failure; the check PASSES when all three questions pass"
+ },
+ "versions": {
+  "python": "3.11.16",
+  "torch": "2.14.0",
+  "transformers": "5.17.0",
+  "xgboost": "3.2.0",
+  "catboost": "1.2.10"
+ },
+ "questions": {
+  "readmit_window": {
+   "n": 6998,
+   "answered": 6998,
+   "failures": [],
+   "options": [
+    "0",
+    "1",
+    "2"
+   ],
+   "largest_absolute_difference": 1.096195867411609e-08,
+   "mean_absolute_difference": 2.522011887696241e-10,
+   "rule": "PASS when every row's largest absolute difference is at most 0.0001",
+   "rows_above_0_0001": 0,
+   "verdict": "PASS",
+   "evaluated": "results/fiorillo_v0_5/predictions/readmission_pool_v2_readmit_window_test.csv",
+   "records_file": "data/processed/session10/usage_check_readmit_window_records.jsonl",
+   "answers_file": "results/fiorillo_v0_5/usage_check/fixed2/answers_readmit_window.jsonl",
+   "answers_sha256": "c7d2f95e1d6f436073f28db827ba795c7f320332eafea316faea50050e7e41e0",
+   "run": {
+    "log": "results/fiorillo_v0_5/usage_check/fixed2/run_readmit_window.log",
+    "mode": "fixed2",
+    "device_requested": "auto",
+    "device": "cpu (the pool's members with weight are trees: xgboost_tuned, catboost_tuned)",
+    "rerun_on_cpu": false,
+    "start_utc": "2026-10-03T11:04:04Z",
+    "end_utc": "2026-10-03T11:04:06Z",
+    "exit_status": "0",
+    "seconds": 2.0,
+    "seconds_per_record": 0.0002857959416976279,
+    "fault": null
+   }
+  },
+  "pubmedqa_answer": {
+   "n": 500,
+   "answered": 500,
+   "failures": [],
+   "options": [
+    "yes",
+    "no",
+    "maybe"
+   ],
+   "largest_absolute_difference": 0.01586670322837247,
+   "mean_absolute_difference": 0.0013022730912963447,
+   "rule": "PASS when (a) on every record whose evaluated top probability is at least 0.6 the released top answer is the evaluated one and (b) the mean absolute difference over all records and answers is at most 0.02",
+   "top_answer_changed_at_0_6_or_more": [],
+   "evaluated_top_probability_below_0_6": [
+    {
+     "id": "pubmedqa-7860319",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.551833469,
+     "evaluated": [
+      0.168441779,
+      0.551833469,
+      0.279724752
+     ],
+     "released": [
+      0.1633558018458405,
+      0.5591717812484861,
+      0.2774724169056735
+     ]
+    },
+    {
+     "id": "pubmedqa-9100537",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.516232737,
+     "evaluated": [
+      0.344934806,
+      0.516232737,
+      0.138832457
+     ],
+     "released": [
+      0.35008020185030614,
+      0.5123555454775838,
+      0.13756425267211014
+     ]
+    },
+    {
+     "id": "pubmedqa-9722752",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.457892353,
+     "evaluated": [
+      0.426709934,
+      0.457892353,
+      0.115397713
+     ],
+     "released": [
+      0.4218553685418331,
+      0.4625071095179326,
+      0.11563752194023426
+     ]
+    },
+    {
+     "id": "pubmedqa-9920954",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.468830046,
+     "evaluated": [
+      0.468830046,
+      0.373728627,
+      0.157441328
+     ],
+     "released": [
+      0.47420037936567133,
+      0.3692065076538222,
+      0.15659311298050646
+     ]
+    },
+    {
+     "id": "pubmedqa-10135926",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.481397093,
+     "evaluated": [
+      0.481397093,
+      0.377750634,
+      0.140852273
+     ],
+     "released": [
+      0.48329005060376545,
+      0.3770476747262614,
+      0.1396622746699732
+     ]
+    },
+    {
+     "id": "pubmedqa-10331115",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.519392905,
+     "evaluated": [
+      0.348415356,
+      0.519392905,
+      0.132191739
+     ],
+     "released": [
+      0.34684278457447687,
+      0.5222775645349733,
+      0.13087965089054998
+     ]
+    },
+    {
+     "id": "pubmedqa-11079675",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.426775942,
+     "evaluated": [
+      0.426775942,
+      0.258258744,
+      0.314965314
+     ],
+     "released": [
+      0.4305720672072501,
+      0.2547167571466919,
+      0.314711175646058
+     ]
+    },
+    {
+     "id": "pubmedqa-11570976",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.53571966,
+     "evaluated": [
+      0.53571966,
+      0.246097311,
+      0.218183029
+     ],
+     "released": [
+      0.5391585743701646,
+      0.2435460677852912,
+      0.21729535784454423
+     ]
+    },
+    {
+     "id": "pubmedqa-11833948",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.509336936,
+     "evaluated": [
+      0.340997777,
+      0.509336936,
+      0.149665287
+     ],
+     "released": [
+      0.34487901502994645,
+      0.505890063626406,
+      0.1492309213436475
+     ]
+    },
+    {
+     "id": "pubmedqa-12805495",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.594511372,
+     "evaluated": [
+      0.102941647,
+      0.594511372,
+      0.302546981
+     ],
+     "released": [
+      0.10231952846172986,
+      0.5971871489758458,
+      0.3004933225624245
+     ]
+    },
+    {
+     "id": "pubmedqa-12846929",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.432428984,
+     "evaluated": [
+      0.432428984,
+      0.403503794,
+      0.164067222
+     ],
+     "released": [
+      0.4305282897246995,
+      0.40552550160708223,
+      0.16394620866821835
+     ]
+    },
+    {
+     "id": "pubmedqa-12970636",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.523331769,
+     "evaluated": [
+      0.283824127,
+      0.523331769,
+      0.192844103
+     ],
+     "released": [
+      0.2860013023643392,
+      0.5219182775766362,
+      0.19208042005902465
+     ]
+    },
+    {
+     "id": "pubmedqa-14627582",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.515631396,
+     "evaluated": [
+      0.515631396,
+      0.303546952,
+      0.180821652
+     ],
+     "released": [
+      0.5126981964315327,
+      0.30445132738668634,
+      0.18285047618178096
+     ]
+    },
+    {
+     "id": "pubmedqa-15095519",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.592137037,
+     "evaluated": [
+      0.188372231,
+      0.592137037,
+      0.219490732
+     ],
+     "released": [
+      0.18929448663500367,
+      0.5902460013974677,
+      0.2204595119675285
+     ]
+    },
+    {
+     "id": "pubmedqa-15502995",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.479401076,
+     "evaluated": [
+      0.324130482,
+      0.479401076,
+      0.196468442
+     ],
+     "released": [
+      0.31962783133612116,
+      0.4843512599377543,
+      0.19602090872612452
+     ]
+    },
+    {
+     "id": "pubmedqa-16418930",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.539483181,
+     "evaluated": [
+      0.323481879,
+      0.539483181,
+      0.13703494
+     ],
+     "released": [
+      0.31531831082198425,
+      0.5491183402902887,
+      0.13556334888772711
+     ]
+    },
+    {
+     "id": "pubmedqa-16465002",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.580096101,
+     "evaluated": [
+      0.580096101,
+      0.29578685,
+      0.12411705
+     ],
+     "released": [
+      0.5800736070689956,
+      0.2964980580318716,
+      0.1234283348991329
+     ]
+    },
+    {
+     "id": "pubmedqa-16816043",
+     "evaluated_top": 2,
+     "released_top": 2,
+     "same": true,
+     "evaluated_top_probability": 0.52221039,
+     "evaluated": [
+      0.268641147,
+      0.209148463,
+      0.52221039
+     ],
+     "released": [
+      0.26772362671096006,
+      0.20817720561242523,
+      0.5240991676766148
+     ]
+    },
+    {
+     "id": "pubmedqa-16827975",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.462395476,
+     "evaluated": [
+      0.325186435,
+      0.462395476,
+      0.21241809
+     ],
+     "released": [
+      0.32251307700694504,
+      0.46566298344021806,
+      0.21182393955283704
+     ]
+    },
+    {
+     "id": "pubmedqa-17691856",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.423675952,
+     "evaluated": [
+      0.423675952,
+      0.34991529,
+      0.226408758
+     ],
+     "released": [
+      0.41797051100143445,
+      0.3538125582914505,
+      0.22821693070711502
+     ]
+    },
+    {
+     "id": "pubmedqa-18235194",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.560648082,
+     "evaluated": [
+      0.217585409,
+      0.560648082,
+      0.221766509
+     ],
+     "released": [
+      0.22031872690856233,
+      0.5559775492098697,
+      0.223703723881568
+     ]
+    },
+    {
+     "id": "pubmedqa-18359123",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.593337166,
+     "evaluated": [
+      0.127576699,
+      0.593337166,
+      0.279086135
+     ],
+     "released": [
+      0.12713287032832066,
+      0.5918205708933355,
+      0.28104655877834384
+     ]
+    },
+    {
+     "id": "pubmedqa-18507507",
+     "evaluated_top": 2,
+     "released_top": 2,
+     "same": true,
+     "evaluated_top_probability": 0.526193692,
+     "evaluated": [
+      0.295180868,
+      0.17862544,
+      0.526193692
+     ],
+     "released": [
+      0.2949794400372556,
+      0.17624445990032647,
+      0.5287761000624179
+     ]
+    },
+    {
+     "id": "pubmedqa-18708308",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.573941437,
+     "evaluated": [
+      0.289976924,
+      0.573941437,
+      0.136081639
+     ],
+     "released": [
+      0.2835671010070083,
+      0.5807555354180257,
+      0.135677363574966
+     ]
+    },
+    {
+     "id": "pubmedqa-18783922",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.490052777,
+     "evaluated": [
+      0.490052777,
+      0.35542555,
+      0.154521673
+     ],
+     "released": [
+      0.4874278737152043,
+      0.35594503266149663,
+      0.156627093623299
+     ]
+    },
+    {
+     "id": "pubmedqa-19027440",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.438077039,
+     "evaluated": [
+      0.3886399,
+      0.438077039,
+      0.173283061
+     ],
+     "released": [
+      0.3911277144539052,
+      0.435880841294829,
+      0.17299144425126575
+     ]
+    },
+    {
+     "id": "pubmedqa-19481382",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.565462053,
+     "evaluated": [
+      0.565462053,
+      0.326393124,
+      0.108144823
+     ],
+     "released": [
+      0.5631803544015151,
+      0.3290606848821178,
+      0.10775896071636709
+     ]
+    },
+    {
+     "id": "pubmedqa-19482903",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.468603845,
+     "evaluated": [
+      0.468603845,
+      0.367711816,
+      0.163684339
+     ],
+     "released": [
+      0.4679590420687184,
+      0.36872353304730465,
+      0.16331742488397696
+     ]
+    },
+    {
+     "id": "pubmedqa-19578820",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.540705569,
+     "evaluated": [
+      0.158050128,
+      0.540705569,
+      0.301244302
+     ],
+     "released": [
+      0.1611319902438946,
+      0.5312710049642521,
+      0.30759700479185337
+     ]
+    },
+    {
+     "id": "pubmedqa-20187289",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.539951378,
+     "evaluated": [
+      0.203055942,
+      0.539951378,
+      0.25699268
+     ],
+     "released": [
+      0.2054203146389664,
+      0.536316715175259,
+      0.25826297018577454
+     ]
+    },
+    {
+     "id": "pubmedqa-20337202",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.403222741,
+     "evaluated": [
+      0.403222741,
+      0.394453137,
+      0.202324122
+     ],
+     "released": [
+      0.4098362892834268,
+      0.39082150877813976,
+      0.1993422019384335
+     ]
+    },
+    {
+     "id": "pubmedqa-21164063",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.402413032,
+     "evaluated": [
+      0.323537031,
+      0.402413032,
+      0.274049937
+     ],
+     "released": [
+      0.31820510229007026,
+      0.4083021754556371,
+      0.2734927222542926
+     ]
+    },
+    {
+     "id": "pubmedqa-21252642",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.569957585,
+     "evaluated": [
+      0.237442425,
+      0.569957585,
+      0.192599989
+     ],
+     "released": [
+      0.23483834590828573,
+      0.5744209887869335,
+      0.1907406653047807
+     ]
+    },
+    {
+     "id": "pubmedqa-21420186",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.526117412,
+     "evaluated": [
+      0.526117412,
+      0.382334389,
+      0.091548199
+     ],
+     "released": [
+      0.5205576610861151,
+      0.3884681002113655,
+      0.09097423870251933
+     ]
+    },
+    {
+     "id": "pubmedqa-21712147",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.573639265,
+     "evaluated": [
+      0.573639265,
+      0.27954718,
+      0.146813554
+     ],
+     "released": [
+      0.5699584182671339,
+      0.2830387636347625,
+      0.14700281809810364
+     ]
+    },
+    {
+     "id": "pubmedqa-21789019",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.508227083,
+     "evaluated": [
+      0.508227083,
+      0.351597699,
+      0.140175217
+     ],
+     "released": [
+      0.5130210823993165,
+      0.3472615478479272,
+      0.13971736975275623
+     ]
+    },
+    {
+     "id": "pubmedqa-21889895",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.478185928,
+     "evaluated": [
+      0.268693512,
+      0.478185928,
+      0.25312056
+     ],
+     "released": [
+      0.26845468079983875,
+      0.479225940279491,
+      0.25231937892067036
+     ]
+    },
+    {
+     "id": "pubmedqa-21952349",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.571498804,
+     "evaluated": [
+      0.571498804,
+      0.321543088,
+      0.106958107
+     ],
+     "released": [
+      0.570996123334078,
+      0.3218892005576528,
+      0.10711467610826929
+     ]
+    },
+    {
+     "id": "pubmedqa-22266735",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.555300348,
+     "evaluated": [
+      0.555300348,
+      0.293934076,
+      0.150765575
+     ],
+     "released": [
+      0.554742977948128,
+      0.2962925633222514,
+      0.14896445872962064
+     ]
+    },
+    {
+     "id": "pubmedqa-22491528",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.435710653,
+     "evaluated": [
+      0.385021761,
+      0.435710653,
+      0.179267587
+     ],
+     "released": [
+      0.37335151557755597,
+      0.4461867467359867,
+      0.1804617376864574
+     ]
+    },
+    {
+     "id": "pubmedqa-22522271",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.524072282,
+     "evaluated": [
+      0.38887142,
+      0.524072282,
+      0.0870562977
+     ],
+     "released": [
+      0.4022526781013231,
+      0.5112136062280211,
+      0.08653371567065582
+     ]
+    },
+    {
+     "id": "pubmedqa-22668712",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.463114971,
+     "evaluated": [
+      0.356560316,
+      0.463114971,
+      0.180324713
+     ],
+     "released": [
+      0.3587332524300551,
+      0.46033124430789296,
+      0.18093550326205185
+     ]
+    },
+    {
+     "id": "pubmedqa-23149821",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.489255239,
+     "evaluated": [
+      0.350226027,
+      0.489255239,
+      0.160518733
+     ],
+     "released": [
+      0.34992113239405614,
+      0.48957588099783994,
+      0.16050298660810383
+     ]
+    },
+    {
+     "id": "pubmedqa-23224030",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.532509892,
+     "evaluated": [
+      0.532509892,
+      0.314719753,
+      0.152770355
+     ],
+     "released": [
+      0.5447338667524779,
+      0.3055856649973002,
+      0.14968046825022188
+     ]
+    },
+    {
+     "id": "pubmedqa-23497210",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.406913765,
+     "evaluated": [
+      0.305976296,
+      0.406913765,
+      0.287109939
+     ],
+     "released": [
+      0.30592349272561037,
+      0.40920601221632535,
+      0.2848704950580642
+     ]
+    },
+    {
+     "id": "pubmedqa-23517744",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.547147939,
+     "evaluated": [
+      0.547147939,
+      0.329150999,
+      0.123701062
+     ],
+     "released": [
+      0.5399880667149934,
+      0.33552361753482146,
+      0.12448831575018511
+     ]
+    },
+    {
+     "id": "pubmedqa-23621776",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.546204779,
+     "evaluated": [
+      0.357495465,
+      0.546204779,
+      0.0962997557
+     ],
+     "released": [
+      0.35278742933673557,
+      0.5510017341806357,
+      0.09621083648262879
+     ]
+    },
+    {
+     "id": "pubmedqa-23690198",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.446017425,
+     "evaluated": [
+      0.446017425,
+      0.318433262,
+      0.235549313
+     ],
+     "released": [
+      0.45240209820508276,
+      0.31445556548958703,
+      0.23314233630533013
+     ]
+    },
+    {
+     "id": "pubmedqa-23736032",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.553199751,
+     "evaluated": [
+      0.553199751,
+      0.145298128,
+      0.30150212
+     ],
+     "released": [
+      0.5539379320157823,
+      0.146525659510535,
+      0.2995364084736826
+     ]
+    },
+    {
+     "id": "pubmedqa-24352924",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.556633009,
+     "evaluated": [
+      0.556633009,
+      0.316276776,
+      0.127090214
+     ],
+     "released": [
+      0.5581111758719466,
+      0.3146715224072309,
+      0.12721730172082255
+     ]
+    },
+    {
+     "id": "pubmedqa-24476003",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.468926623,
+     "evaluated": [
+      0.468926623,
+      0.46053759,
+      0.0705357867
+     ],
+     "released": [
+      0.4739341408125152,
+      0.45487447011720183,
+      0.0711913890702829
+     ]
+    },
+    {
+     "id": "pubmedqa-24481006",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.58706184,
+     "evaluated": [
+      0.58706184,
+      0.270746551,
+      0.142191609
+     ],
+     "released": [
+      0.5851862092174978,
+      0.2723639257986557,
+      0.14244986498384643
+     ]
+    },
+    {
+     "id": "pubmedqa-24507422",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.437816345,
+     "evaluated": [
+      0.437816345,
+      0.429983871,
+      0.132199784
+     ],
+     "released": [
+      0.4369950060607351,
+      0.4313303286528564,
+      0.1316746652864085
+     ]
+    },
+    {
+     "id": "pubmedqa-24995509",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.465986409,
+     "evaluated": [
+      0.465986409,
+      0.414752018,
+      0.119261573
+     ],
+     "released": [
+      0.4694931894179391,
+      0.4119953106483487,
+      0.11851149993371216
+     ]
+    },
+    {
+     "id": "pubmedqa-25007420",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.458503686,
+     "evaluated": [
+      0.458503686,
+      0.341835531,
+      0.199660783
+     ],
+     "released": [
+      0.4515942974139858,
+      0.34702897748705636,
+      0.20137672509895785
+     ]
+    },
+    {
+     "id": "pubmedqa-25103647",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.519510803,
+     "evaluated": [
+      0.287919236,
+      0.519510803,
+      0.192569962
+     ],
+     "released": [
+      0.2878633171355132,
+      0.5185971372726205,
+      0.19353954559186629
+     ]
+    },
+    {
+     "id": "pubmedqa-25614468",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.480582912,
+     "evaluated": [
+      0.367830565,
+      0.480582912,
+      0.151586522
+     ],
+     "released": [
+      0.36339731001080694,
+      0.4859386495149121,
+      0.150664040474281
+     ]
+    },
+    {
+     "id": "pubmedqa-25940336",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.513522078,
+     "evaluated": [
+      0.513522078,
+      0.307103547,
+      0.179374375
+     ],
+     "released": [
+      0.5109284429413659,
+      0.3098210637549647,
+      0.1792504933036694
+     ]
+    },
+    {
+     "id": "pubmedqa-26419377",
+     "evaluated_top": 0,
+     "released_top": 0,
+     "same": true,
+     "evaluated_top_probability": 0.593079114,
+     "evaluated": [
+      0.593079114,
+      0.226423465,
+      0.180497421
+     ],
+     "released": [
+      0.5924486368534183,
+      0.22671425163191877,
+      0.18083711151466297
+     ]
+    },
+    {
+     "id": "pubmedqa-26778755",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.365362071,
+     "evaluated": [
+      0.347933872,
+      0.365362071,
+      0.286704057
+     ],
+     "released": [
+      0.343374573037574,
+      0.36620281609948674,
+      0.29042261086293913
+     ]
+    },
+    {
+     "id": "pubmedqa-26864326",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.420470213,
+     "evaluated": [
+      0.343420632,
+      0.420470213,
+      0.236109156
+     ],
+     "released": [
+      0.3398606870875391,
+      0.4233898293020605,
+      0.23674948361040055
+     ]
+    },
+    {
+     "id": "pubmedqa-27131771",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.497383971,
+     "evaluated": [
+      0.320770991,
+      0.497383971,
+      0.181845038
+     ],
+     "released": [
+      0.3273949940530588,
+      0.48961277773939055,
+      0.1829922282075506
+     ]
+    },
+    {
+     "id": "pubmedqa-27287237",
+     "evaluated_top": 2,
+     "released_top": 2,
+     "same": true,
+     "evaluated_top_probability": 0.353956824,
+     "evaluated": [
+      0.304972571,
+      0.341070605,
+      0.353956824
+     ],
+     "released": [
+      0.304508602323395,
+      0.33995417363652664,
+      0.3555372240400783
+     ]
+    },
+    {
+     "id": "pubmedqa-27642458",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.573019227,
+     "evaluated": [
+      0.287664739,
+      0.573019227,
+      0.139316034
+     ],
+     "released": [
+      0.28168499218839166,
+      0.5794668820510418,
+      0.1388481257605664
+     ]
+    },
+    {
+     "id": "pubmedqa-27643961",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.512622475,
+     "evaluated": [
+      0.38168804,
+      0.512622475,
+      0.105689485
+     ],
+     "released": [
+      0.3767894438200783,
+      0.5183958340238076,
+      0.10481472215611412
+     ]
+    }
+   ],
+   "below_0_6_count": 65,
+   "below_0_6_top_changed": 0,
+   "criterion_a": "PASS",
+   "criterion_b": "PASS",
+   "verdict": "PASS",
+   "evaluated": "results/fiorillo_v0_3/predictions/s7_b3_pubmedqa_answer_test.csv",
+   "records_file": "data/processed/session10/usage_check_pubmedqa_answer_records.jsonl",
+   "answers_file": "results/fiorillo_v0_5/usage_check/fixed2/answers_pubmedqa_answer.jsonl",
+   "answers_sha256": "a81923f325b1f076e849246881c0622572f980a8302f943acb52e809cca90b7f",
+   "run": {
+    "log": "results/fiorillo_v0_5/usage_check/fixed2/run_pubmedqa_answer.log",
+    "mode": "fixed2",
+    "device_requested": "auto",
+    "device": "mps",
+    "rerun_on_cpu": false,
+    "start_utc": "2026-10-03T11:04:06Z",
+    "end_utc": "2026-10-03T11:15:24Z",
+    "exit_status": "0",
+    "seconds": 678.0,
+    "seconds_per_record": 1.356,
+    "fault": null
+   }
+  },
+  "evidence_effect": {
+   "n": 60,
+   "answered": 60,
+   "failures": [],
+   "options": [
+    "significantly increased",
+    "significantly decreased",
+    "no significant difference"
+   ],
+   "largest_absolute_difference": 0.04594742556519671,
+   "mean_absolute_difference": 0.002759346426101419,
+   "rule": "PASS when (a) on every record whose evaluated top probability is at least 0.6 the released top answer is the evaluated one and (b) the mean absolute difference over all records and answers is at most 0.02",
+   "top_answer_changed_at_0_6_or_more": [],
+   "evaluated_top_probability_below_0_6": [
+    {
+     "id": "evidence-7931",
+     "evaluated_top": 1,
+     "released_top": 1,
+     "same": true,
+     "evaluated_top_probability": 0.474759319,
+     "evaluated": [
+      0.28095974,
+      0.474759319,
+      0.244280941
+     ],
+     "released": [
+      0.2971657455284538,
+      0.44891498576996103,
+      0.2539192687015851
+     ]
+    }
+   ],
+   "below_0_6_count": 1,
+   "below_0_6_top_changed": 0,
+   "criterion_a": "PASS",
+   "criterion_b": "PASS",
+   "verdict": "PASS",
+   "evaluated": "results/fiorillo_v0_5/predictions/s9_ei_wavg_evidence_effect_test.csv",
+   "records_file": "data/processed/session10/usage_check_evidence_effect_long_records.jsonl",
+   "answers_file": "results/fiorillo_v0_5/usage_check/fixed2/answers_evidence_effect.jsonl",
+   "answers_sha256": "041d7657d6fc29cbcd41158a8a0119661b59061714a8574211f896b48cb06250",
+   "run": {
+    "log": "results/fiorillo_v0_5/usage_check/fixed2/run_evidence_effect.log",
+    "mode": "fixed2",
+    "device_requested": "auto",
+    "device": "mps",
+    "rerun_on_cpu": false,
+    "start_utc": "2026-10-03T11:15:24Z",
+    "end_utc": "2026-10-03T12:12:05Z",
+    "exit_status": "0",
+    "seconds": 3401.0,
+    "seconds_per_record": 56.68333333333333,
+    "fault": null
+   }
+  }
+ },
+ "release": {
+  "folder": "models/fiorillo_v0_5/release",
+  "SHA256SUMS.txt_sha256": "e4d5190ea789f8fdd70f0baaf4e05f2a9ab9a27a750eca5f39145b09ccddd44c",
+  "predict_v0_5.py_sha256": "cbcc15277e5f468b66dc64e057423a8deaa68b5b23794b9481f1891b16b2027c"
+ },
+ "verdict": "PASS"
+}

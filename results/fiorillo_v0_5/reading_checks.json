@@ -1,0 +1,1094 @@
+{
+ "plan": "docs/prompt_session9.md, THE READING CHECKS and COMPARISONS (K4)",
+ "written_utc": "2026-10-02T15:38:23Z",
+ "source": "src/eval/reading_checks_session9.py combine",
+ "files": {
+  "s8_ei": {
+   "file": "results/fiorillo_v0_5/checks_s8.json",
+   "sha256": "eb4f4b1063e1b478a1235de7cfc9d7d1120139240f4ac0c6258fd5c542a86227"
+  },
+  "v05": {
+   "file": "results/fiorillo_v0_5/checks_v05.json",
+   "sha256": "6948f2458ec41f0f3b5dcb108393cb37ed620b34dd163d11e3d4aa5e6cfd5cad"
+  }
+ },
+ "same_none_and_title_records": {
+  "none": true,
+  "title": true
+ },
+ "readings": {
+  "s8_ei": {
+   "none": {
+    "reading": "its answers depend on the article's text",
+    "caveats": []
+   },
+   "title": {
+    "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+    "caveats": []
+   },
+   "swap": {
+    "reading": "partly",
+    "caveats": []
+   }
+  },
+  "v05": {
+   "none": {
+    "reading": "its answers depend on the article's text",
+    "caveats": []
+   },
+   "title": {
+    "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+    "caveats": []
+   },
+   "swap": {
+    "reading": "partly",
+    "caveats": []
+   }
+  }
+ },
+ "table": [
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "none",
+   "statistic": "accuracy",
+   "estimate": 0.5090311986863711,
+   "low": 0.4779471384693605,
+   "high": 0.5438830466086801,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "none",
+   "statistic": "macro_f1",
+   "estimate": 0.42889635215046,
+   "low": 0.3941380435427534,
+   "high": 0.4634352471704319,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "none",
+   "statistic": "agreement_with_full_input",
+   "estimate": 0.5139573070607554,
+   "low": 0.4811558703083223,
+   "high": 0.547330557261021,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title",
+   "statistic": "accuracy",
+   "estimate": 0.5715467328370554,
+   "low": 0.5345506217129252,
+   "high": 0.6064532298488156,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title",
+   "statistic": "macro_f1",
+   "estimate": 0.5338322677150441,
+   "low": 0.4963927849323022,
+   "high": 0.5732954792879654,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title",
+   "statistic": "agreement_with_full_input",
+   "estimate": 0.5682382133995038,
+   "low": 0.5342706865700035,
+   "high": 0.6026605740468611,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap",
+   "statistic": "accuracy",
+   "estimate": 0.8103448275862069,
+   "low": 0.7802094455510252,
+   "high": 0.8399683184402924,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap",
+   "statistic": "macro_f1",
+   "estimate": 0.7957762081111802,
+   "low": 0.7632684810114693,
+   "high": 0.828322577341189,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap",
+   "statistic": "exchange_share",
+   "estimate": 0.7226173541963016,
+   "low": 0.6765119549929677,
+   "high": 0.7714296111457684,
+   "n": 703,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap",
+   "statistic": "stay_share",
+   "estimate": 0.9805825242718447,
+   "low": 0.9656563728891974,
+   "high": 0.993098274168055,
+   "n": 515,
+   "articles": 333
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap, comparator a time point or baseline",
+   "statistic": "exchange_share",
+   "estimate": 0.13157894736842105,
+   "low": 0.025,
+   "high": 0.2631578947368421,
+   "n": 38,
+   "articles": 25
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap, comparator a time point or baseline",
+   "statistic": "stay_share",
+   "estimate": 1.0,
+   "low": 1.0,
+   "high": 1.0,
+   "n": 10,
+   "articles": 25
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title minus none (prompts in both)",
+   "statistic": "macro_f1_difference",
+   "estimate": 0.10243090342008837,
+   "low": 0.07358694976665542,
+   "high": 0.1330507028326412,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title minus none (prompts in both)",
+   "statistic": "title_macro_f1",
+   "estimate": 0.5338322677150441,
+   "low": 0.4963927849323022,
+   "high": 0.5732954792879654,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title minus none (prompts in both)",
+   "statistic": "none_macro_f1",
+   "estimate": 0.43140136429495574,
+   "low": 0.39669911373914213,
+   "high": 0.46498803012000733,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "none",
+   "statistic": "reading",
+   "reading": "its answers depend on the article's text",
+   "caveats": []
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "title",
+   "statistic": "reading",
+   "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+   "caveats": []
+  },
+  {
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "input": "swap",
+   "statistic": "reading",
+   "reading": "partly",
+   "caveats": []
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "none",
+   "statistic": "accuracy",
+   "estimate": 0.5155993431855501,
+   "low": 0.4874043700912808,
+   "high": 0.549419163083671,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "none",
+   "statistic": "macro_f1",
+   "estimate": 0.43842477997799784,
+   "low": 0.4084598234360342,
+   "high": 0.4726266164053353,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "none",
+   "statistic": "agreement_with_full_input",
+   "estimate": 0.5238095238095238,
+   "low": 0.49551312472474907,
+   "high": 0.5570968218942774,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title",
+   "statistic": "accuracy",
+   "estimate": 0.5715467328370554,
+   "low": 0.5389498710913596,
+   "high": 0.6041004873191512,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title",
+   "statistic": "macro_f1",
+   "estimate": 0.5326767750754318,
+   "low": 0.4994700608046109,
+   "high": 0.569215395410273,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title",
+   "statistic": "agreement_with_full_input",
+   "estimate": 0.5781637717121588,
+   "low": 0.5471011929584177,
+   "high": 0.6108010811301898,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap",
+   "statistic": "accuracy",
+   "estimate": 0.7807881773399015,
+   "low": 0.7493304992766576,
+   "high": 0.8117247464601403,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap",
+   "statistic": "macro_f1",
+   "estimate": 0.7599733905495842,
+   "low": 0.7267581039239533,
+   "high": 0.7945686289380317,
+   "n": 1218,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap",
+   "statistic": "exchange_share",
+   "estimate": 0.6652360515021459,
+   "low": 0.6207690229973761,
+   "high": 0.7156629939209727,
+   "n": 699,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap",
+   "statistic": "stay_share",
+   "estimate": 0.9672447013487476,
+   "low": 0.9476632983568947,
+   "high": 0.9841287756637643,
+   "n": 519,
+   "articles": 333
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap, comparator a time point or baseline",
+   "statistic": "exchange_share",
+   "estimate": 0.21621621621621623,
+   "low": 0.08565476190476191,
+   "high": 0.34390624999999986,
+   "n": 37,
+   "articles": 25
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap, comparator a time point or baseline",
+   "statistic": "stay_share",
+   "estimate": 1.0,
+   "low": 1.0,
+   "high": 1.0,
+   "n": 11,
+   "articles": 25
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title minus none (prompts in both)",
+   "statistic": "macro_f1_difference",
+   "estimate": 0.09387588809289454,
+   "low": 0.06550118036819974,
+   "high": 0.1234143833469792,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title minus none (prompts in both)",
+   "statistic": "title_macro_f1",
+   "estimate": 0.5326767750754318,
+   "low": 0.4994700608046109,
+   "high": 0.569215395410273,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title minus none (prompts in both)",
+   "statistic": "none_macro_f1",
+   "estimate": 0.4388008869825372,
+   "low": 0.4075802614223229,
+   "high": 0.47234492540470463,
+   "n": 1209,
+   "articles": 331
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "none",
+   "statistic": "reading",
+   "reading": "its answers depend on the article's text",
+   "caveats": []
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "title",
+   "statistic": "reading",
+   "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+   "caveats": []
+  },
+  {
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "input": "swap",
+   "statistic": "reading",
+   "reading": "partly",
+   "caveats": []
+  }
+ ],
+ "systems": {
+  "s8_ei": {
+   "plan": "docs/prompt_session9.md, THE READING CHECKS",
+   "written_utc": "2026-10-01T19:33:25Z",
+   "source": "src/eval/reading_checks_session9.py score",
+   "system": "s8_ei",
+   "name": "s8_ei",
+   "description": "s8_ei (its three runs' raw probabilities averaged, then session 8's calibration)",
+   "flags": {
+    "swap_augmented": false,
+    "swap_averaged": false
+   },
+   "settings": {
+    "split": "test",
+    "resamples": 1000,
+    "seed": 20260927,
+    "interval": "95 percent, percentile",
+    "resampling": "articles (group.pmcid), sorted by PMCID as text, every prompt of a drawn article kept (compare_session8.py); each input over its own articles, the time-point subset over its own, title minus none over the articles of the prompts in both inputs, the same draws for both",
+    "answers": [
+     "increased",
+     "decreased",
+     "no_difference"
+    ],
+    "answer": "the argmax of the calibrated probabilities",
+    "log_floor": 1e-300,
+    "line_tolerance": 1e-12
+   },
+   "calibration": {
+    "own": {
+     "file": "results/fiorillo_v0_4/calibration_s8.json",
+     "sha256": "a1a202ffcc946e31c49d31971fc70b43dba1bb8725423b7c3cd7b669bae15f2c",
+     "key": "s8_ei",
+     "qid": "evidence_effect",
+     "family": "temperature",
+     "params": [
+      0.37846529139749446
+     ]
+    },
+    "applied_to": {
+     "none": "own",
+     "title": "own",
+     "swap": "own"
+    }
+   },
+   "files": {
+    "runs": {
+     "none": [
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_1_none-raw_evidence_effect_test.csv",
+       "sha256": "6c5b3dd95659c2189850c2a788555b91a2d3699cc624e16b4493f0e7dd9317d9"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_2_none-raw_evidence_effect_test.csv",
+       "sha256": "c5431bcee28047f15dca602ae2225ef4006a7b7b082b52d93ca6ba927e861894"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_3_none-raw_evidence_effect_test.csv",
+       "sha256": "b891ef3f280b5be9875644ed823aab57ab013e0abd30c0469902bfdbc530fbcf"
+      }
+     ],
+     "title": [
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_1_title-raw_evidence_effect_test.csv",
+       "sha256": "b05da3f221f780750bec2da8396c21c586c9ae0d04b29daa34ef0053094d27c6"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_2_title-raw_evidence_effect_test.csv",
+       "sha256": "9fd7d691bb63c6c9a73577b7cacda0b1e990cd98c5f770c0ab07b2abe5e82fee"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_3_title-raw_evidence_effect_test.csv",
+       "sha256": "968f133344d535aa2a711edd6f86167eb639ee0f350687118d540dc835f797a1"
+      }
+     ],
+     "swap": [
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_1_swap-raw_evidence_effect_test.csv",
+       "sha256": "16ed079658e82e62415b3f4629cb8af3578e9025730b7b5f6689be92e45831fa"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_2_swap-raw_evidence_effect_test.csv",
+       "sha256": "95b26e2a444574dff9c0f60cf1184d6271ea41a4082fcf3e4728d576e1a36fc6"
+      },
+      {
+       "file": "results/fiorillo_v0_5/checks_s8/s8_ei_3_swap-raw_evidence_effect_test.csv",
+       "sha256": "0cc2fb46f0225e48b29e4e7c214790664aebc28e494414c672190cff6c043a1f"
+      }
+     ]
+    },
+    "full_input": [
+     {
+      "file": "results/fiorillo_v0_4/predictions/s8_ei-raw_evidence_effect_test.csv",
+      "sha256": "7e72fdfab5619f1bdc906fa540d6f1333166af6177e1ad5659094de43cae7c15"
+     }
+    ]
+   },
+   "inputs": {
+    "none": {
+     "records": {
+      "file": "data/processed/session9/checks/none/evidence_effect_test.jsonl",
+      "sha256": "86caa711db0ebe0c538c05537985a095deecbdd42a2b99d1905fb98e1c50a09b",
+      "rows": 1218
+     },
+     "n": 1218,
+     "articles": 333,
+     "probabilities": "the runs' raw probabilities averaged (3 runs), then s8_ei's calibration (temperature); on the full input, the raw probabilities of s8_ei-raw (the average of its three runs), then the same calibration",
+     "accuracy": {
+      "estimate": 0.5090311986863711,
+      "low": 0.4779471384693605,
+      "high": 0.5438830466086801
+     },
+     "macro_f1": {
+      "estimate": 0.42889635215046,
+      "low": 0.3941380435427534,
+      "high": 0.4634352471704319
+     },
+     "agreement_with_full_input": {
+      "estimate": 0.5139573070607554,
+      "low": 0.4811558703083223,
+      "high": 0.547330557261021,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 626,
+      "of": 1218
+     },
+     "answers": {
+      "increased": 280,
+      "decreased": 61,
+      "no_difference": 877
+     },
+     "full_input_answers": {
+      "increased": 399,
+      "decreased": 304,
+      "no_difference": 515
+     }
+    },
+    "title": {
+     "records": {
+      "file": "data/processed/session9/checks/title/evidence_effect_test.jsonl",
+      "sha256": "90bf1085ab132fb85b7ea9ab517df35010d4f415ec09679766b175121ccf0910",
+      "rows": 1209
+     },
+     "n": 1209,
+     "articles": 331,
+     "probabilities": "the runs' raw probabilities averaged (3 runs), then s8_ei's calibration (temperature); on the full input, the raw probabilities of s8_ei-raw (the average of its three runs), then the same calibration",
+     "accuracy": {
+      "estimate": 0.5715467328370554,
+      "low": 0.5345506217129252,
+      "high": 0.6064532298488156
+     },
+     "macro_f1": {
+      "estimate": 0.5338322677150441,
+      "low": 0.4963927849323022,
+      "high": 0.5732954792879654
+     },
+     "agreement_with_full_input": {
+      "estimate": 0.5682382133995038,
+      "low": 0.5342706865700035,
+      "high": 0.6026605740468611,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 687,
+      "of": 1209
+     },
+     "answers": {
+      "increased": 328,
+      "decreased": 137,
+      "no_difference": 744
+     },
+     "full_input_answers": {
+      "increased": 392,
+      "decreased": 303,
+      "no_difference": 514
+     },
+     "left_out_no_title": 9
+    },
+    "swap": {
+     "records": {
+      "file": "data/processed/session9/checks/swap/evidence_effect_test.jsonl",
+      "sha256": "7cdac0f8263e01029ad99081b00f11c72eaf05872bea424d24c067aff06aebb7",
+      "rows": 1218
+     },
+     "n": 1218,
+     "articles": 333,
+     "left_out_same_text": 0,
+     "probabilities": "the runs' raw probabilities averaged (3 runs), then s8_ei's calibration (temperature); on the full input, the raw probabilities of s8_ei-raw (the average of its three runs), then the same calibration",
+     "accuracy": {
+      "estimate": 0.8103448275862069,
+      "low": 0.7802094455510252,
+      "high": 0.8399683184402924
+     },
+     "macro_f1": {
+      "estimate": 0.7957762081111802,
+      "low": 0.7632684810114693,
+      "high": 0.828322577341189
+     },
+     "exchange_share": {
+      "estimate": 0.7226173541963016,
+      "low": 0.6765119549929677,
+      "high": 0.7714296111457684,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 508,
+      "of": 703
+     },
+     "stay_share": {
+      "estimate": 0.9805825242718447,
+      "low": 0.9656563728891974,
+      "high": 0.993098274168055,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 505,
+      "of": 515
+     },
+     "answers": {
+      "increased": 292,
+      "decreased": 313,
+      "no_difference": 613
+     },
+     "full_input_answers": {
+      "increased": 399,
+      "decreased": 304,
+      "no_difference": 515
+     },
+     "time_point_or_baseline": {
+      "rule": "the comparator of the prompt as written (the exchanged record's intervention) matches TIME_POINT, ignoring case; the subset's own articles resampled",
+      "pattern": "baseline|before|pre[-\u2010\u2011\u2012\u2013\u2014\u2015\u2212]|pretreatment|prior\\s+to|start",
+      "ignore_case": true,
+      "n": 48,
+      "articles": 25,
+      "exchange_share": {
+       "estimate": 0.13157894736842105,
+       "low": 0.025,
+       "high": 0.2631578947368421,
+       "resamples_defined": 1000,
+       "resamples": 1000,
+       "count": 5,
+       "of": 38
+      },
+      "stay_share": {
+       "estimate": 1.0,
+       "low": 1.0,
+       "high": 1.0,
+       "resamples_defined": 1000,
+       "resamples": 1000,
+       "count": 10,
+       "of": 10
+      }
+     }
+    }
+   },
+   "title_minus_none": {
+    "prompts": "the prompts in both inputs (every title prompt)",
+    "n": 1209,
+    "articles": 331,
+    "macro_f1_difference": {
+     "estimate": 0.10243090342008837,
+     "low": 0.07358694976665542,
+     "high": 0.1330507028326412
+    },
+    "title_macro_f1": {
+     "estimate": 0.5338322677150441,
+     "low": 0.4963927849323022,
+     "high": 0.5732954792879654
+    },
+    "none_macro_f1": {
+     "estimate": 0.43140136429495574,
+     "low": 0.39669911373914213,
+     "high": 0.46498803012000733
+    },
+    "difference_reading": "higher with the title than with no article",
+    "excludes": "title minus none in macro-F1 is 0.102, with a 95 percent interval of 0.074 to 0.133: the interval excludes a difference below 0.074 and one above 0.133; it excludes zero; it excludes 0.05 (below the interval)"
+   },
+   "readings": {
+    "none": {
+     "reading": "its answers depend on the article's text",
+     "value": 0.42889635215046,
+     "from": "macro-F1 with no article, its estimate",
+     "rule": "macro-F1 with no article (its estimate) at or below 0.60: \"its answers depend on the article's text\"; above 0.75: \"the prompt alone carries more than a classifier trained on prompts alone (0.511 macro-F1, DeYoung et al. 2020, Table 1); it may come from EI's training prompts (a model of 4 billion parameters may learn stronger priors from them than that classifier did), from pretraining, or from EI's public labels, and these checks cannot tell them apart\"; otherwise \"partly\"",
+     "caveats": []
+    },
+    "title": {
+     "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+     "value": {
+      "estimate": 0.10243090342008837,
+      "low": 0.07358694976665542,
+      "high": 0.1330507028326412
+     },
+     "from": "the 95 percent interval of the paired difference in macro-F1, title minus none",
+     "rule": "the 95 percent interval of the paired difference in macro-F1, title minus none: wholly above 0.05: \"the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart\"; wholly below 0.05: \"no added knowledge of 0.05 or more was detected\"; otherwise \"not settled\"",
+     "caveats": []
+    },
+    "swap": {
+     "reading": "partly",
+     "value": 0.8103448275862069,
+     "from": "accuracy against the exchanged answers, its estimate",
+     "rule": "accuracy against the exchanged answers (its estimate) at or above 0.85: \"it follows the comparison as written\"; below 0.70: \"it does not follow the exchange (recall of the trial or a bias toward one direction)\"; otherwise \"partly\"",
+     "caveats": []
+    }
+   },
+   "stop": false,
+   "stop_rule": "if s8_ei's macro-F1 with no article is above 0.85, the chain stops before the train stage (THE READING CHECKS); score then exits with code 3 after writing this file",
+   "references": {
+    "prior": {
+     "text": "the training split's answer shares score a macro-F1 of 0.198 on the test split (0.185 to 0.210)",
+     "macro_f1": {
+      "estimate": 0.1975736568457539,
+      "low": 0.18548019217842512,
+      "high": 0.20953532588178017
+     },
+     "n": 1218,
+     "source": "results/fiorillo_v0_4/comparison.json, metrics > evidence_effect > prior > macro_f1 (session 8's comparisons; no prediction file is read here)",
+     "sha256": "bb1bea6b27b269207f82d21d9f27afaba2c23ec85770a52a87303fe35ef292b2"
+    },
+    "windisch_2026": {
+     "text": "frontier models scored an accuracy of 0.79 to 0.88 from trial titles alone on 250 oncology trials, on a two-answer task (positive or negative), against a majority class of 0.584",
+     "accuracy_low": 0.79,
+     "accuracy_high": 0.88,
+     "trials": 250,
+     "answers": 2,
+     "majority_class_accuracy": 0.584,
+     "source": "Windisch et al. 2026, JMIR AI 2026;5:e95565, doi 10.2196/95565 (PubMed 42525868; full text PMC13419288), Table 1",
+     "verified": "confirmed at its source in step 0 (docs/prior_art.md, the session 9 check of 1 October 2026)"
+    }
+   },
+   "contamination": "Known contamination: Qwen3's and Gemma 4's pretraining text is not published and may include PMC articles (EI's articles are PMC's), EI's repository (public since 2019), PubMedQA and the UCI data, which would favor both; EI's test labels are public (the project's site serves them to its leaderboard), so no evaluation of EI can be blind; Laya's, ModernBERT's and reader v1's notes and session 4's notes on Duan stand. EI's test split was read in session 8.",
+   "notes": [
+    "Every number here is computed from the answers, so a calibration matters only where it moves an argmax (a temperature alone moves none).",
+    "title leaves out 9 prompts whose article gives no title (correction 6); swap leaves out 0 whose intervention and comparator are the same text."
+   ]
+  },
+  "v05": {
+   "plan": "docs/prompt_session9.md, THE READING CHECKS and correction 3",
+   "written_utc": "2026-10-02T15:38:18Z",
+   "source": "src/eval/reading_checks_session9.py score",
+   "system": "v05",
+   "name": "s9_ei_wavg",
+   "description": "v0.5's EI specialist, s9_ei_wavg (its one run: raw probabilities averaged, then its own calibration, temperature)",
+   "flags": {
+    "swap_augmented": false,
+    "swap_averaged": false
+   },
+   "settings": {
+    "split": "test",
+    "resamples": 1000,
+    "seed": 20260927,
+    "interval": "95 percent, percentile",
+    "resampling": "articles (group.pmcid), sorted by PMCID as text, every prompt of a drawn article kept (compare_session8.py); each input over its own articles, the time-point subset over its own, title minus none over the articles of the prompts in both inputs, the same draws for both",
+    "answers": [
+     "increased",
+     "decreased",
+     "no_difference"
+    ],
+    "answer": "the argmax of the calibrated probabilities",
+    "log_floor": 1e-300,
+    "line_tolerance": 1e-12
+   },
+   "calibration": {
+    "own": {
+     "file": "results/fiorillo_v0_5/calibration_s9.json",
+     "sha256": "8a2e711aacc47c44f12314217c1745e5594697e63cf568d08407f781d5292b9a",
+     "key": "s9_ei_wavg",
+     "qid": "evidence_effect",
+     "family": "temperature",
+     "params": [
+      0.2929051083469259
+     ]
+    },
+    "applied_to": {
+     "none": "own",
+     "title": "own",
+     "swap": "own"
+    }
+   },
+   "files": {
+    "runs": {
+     "none": [
+      {
+       "file": "results/fiorillo_v0_5/checks_v05/s9_ei_wavg_none-raw_evidence_effect_test.csv",
+       "sha256": "ee48e1f94a35418a21d327f2f05cd91637f90f75c417ec0e0d6b86214ad83c14"
+      }
+     ],
+     "title": [
+      {
+       "file": "results/fiorillo_v0_5/checks_v05/s9_ei_wavg_title-raw_evidence_effect_test.csv",
+       "sha256": "9866269448b72242e912d3b7d1754cdb3e1c7604f96013a4ba17cd689bc81fcf"
+      }
+     ],
+     "swap": [
+      {
+       "file": "results/fiorillo_v0_5/checks_v05/s9_ei_wavg_swap-raw_evidence_effect_test.csv",
+       "sha256": "9d726188ac60c40e76b5c3c7b3422bd9a2678f18929c7d0f25600427fd763415"
+      }
+     ]
+    },
+    "full_input": [
+     {
+      "file": "results/fiorillo_v0_5/predictions/s9_ei_wavg-raw_evidence_effect_test.csv",
+      "sha256": "1a7d956bf25eed2041c25500eb667387da1aa9d90696271fe9cff95b7af77baf"
+     }
+    ]
+   },
+   "inputs": {
+    "none": {
+     "records": {
+      "file": "data/processed/session9/checks/none/evidence_effect_test.jsonl",
+      "sha256": "86caa711db0ebe0c538c05537985a095deecbdd42a2b99d1905fb98e1c50a09b",
+      "rows": 1218
+     },
+     "n": 1218,
+     "articles": 333,
+     "probabilities": "the runs' raw probabilities averaged (1 run), then s9_ei_wavg's calibration (temperature); on the full input, the raw probabilities of the one file given, then the same calibration",
+     "accuracy": {
+      "estimate": 0.5155993431855501,
+      "low": 0.4874043700912808,
+      "high": 0.549419163083671
+     },
+     "macro_f1": {
+      "estimate": 0.43842477997799784,
+      "low": 0.4084598234360342,
+      "high": 0.4726266164053353
+     },
+     "agreement_with_full_input": {
+      "estimate": 0.5238095238095238,
+      "low": 0.49551312472474907,
+      "high": 0.5570968218942774,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 638,
+      "of": 1218
+     },
+     "answers": {
+      "increased": 397,
+      "decreased": 54,
+      "no_difference": 767
+     },
+     "full_input_answers": {
+      "increased": 399,
+      "decreased": 300,
+      "no_difference": 519
+     }
+    },
+    "title": {
+     "records": {
+      "file": "data/processed/session9/checks/title/evidence_effect_test.jsonl",
+      "sha256": "90bf1085ab132fb85b7ea9ab517df35010d4f415ec09679766b175121ccf0910",
+      "rows": 1209
+     },
+     "n": 1209,
+     "articles": 331,
+     "probabilities": "the runs' raw probabilities averaged (1 run), then s9_ei_wavg's calibration (temperature); on the full input, the raw probabilities of the one file given, then the same calibration",
+     "accuracy": {
+      "estimate": 0.5715467328370554,
+      "low": 0.5389498710913596,
+      "high": 0.6041004873191512
+     },
+     "macro_f1": {
+      "estimate": 0.5326767750754318,
+      "low": 0.4994700608046109,
+      "high": 0.569215395410273
+     },
+     "agreement_with_full_input": {
+      "estimate": 0.5781637717121588,
+      "low": 0.5471011929584177,
+      "high": 0.6108010811301898,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 699,
+      "of": 1209
+     },
+     "answers": {
+      "increased": 412,
+      "decreased": 130,
+      "no_difference": 667
+     },
+     "full_input_answers": {
+      "increased": 392,
+      "decreased": 299,
+      "no_difference": 518
+     },
+     "left_out_no_title": 9
+    },
+    "swap": {
+     "records": {
+      "file": "data/processed/session9/checks/swap_long/evidence_effect_test.jsonl",
+      "sha256": "bfd7e56701b0aaf8d785ca09958ded4860f93fead98e4c1692f3dd8c884c91f7",
+      "rows": 1218
+     },
+     "n": 1218,
+     "articles": 333,
+     "left_out_same_text": 0,
+     "probabilities": "the runs' raw probabilities averaged (1 run), then s9_ei_wavg's calibration (temperature); on the full input, the raw probabilities of the one file given, then the same calibration",
+     "accuracy": {
+      "estimate": 0.7807881773399015,
+      "low": 0.7493304992766576,
+      "high": 0.8117247464601403
+     },
+     "macro_f1": {
+      "estimate": 0.7599733905495842,
+      "low": 0.7267581039239533,
+      "high": 0.7945686289380317
+     },
+     "exchange_share": {
+      "estimate": 0.6652360515021459,
+      "low": 0.6207690229973761,
+      "high": 0.7156629939209727,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 465,
+      "of": 699
+     },
+     "stay_share": {
+      "estimate": 0.9672447013487476,
+      "low": 0.9476632983568947,
+      "high": 0.9841287756637643,
+      "resamples_defined": 1000,
+      "resamples": 1000,
+      "count": 502,
+      "of": 519
+     },
+     "answers": {
+      "increased": 311,
+      "decreased": 288,
+      "no_difference": 619
+     },
+     "full_input_answers": {
+      "increased": 399,
+      "decreased": 300,
+      "no_difference": 519
+     },
+     "time_point_or_baseline": {
+      "rule": "the comparator of the prompt as written (the exchanged record's intervention) matches TIME_POINT, ignoring case; the subset's own articles resampled",
+      "pattern": "baseline|before|pre[-\u2010\u2011\u2012\u2013\u2014\u2015\u2212]|pretreatment|prior\\s+to|start",
+      "ignore_case": true,
+      "n": 48,
+      "articles": 25,
+      "exchange_share": {
+       "estimate": 0.21621621621621623,
+       "low": 0.08565476190476191,
+       "high": 0.34390624999999986,
+       "resamples_defined": 1000,
+       "resamples": 1000,
+       "count": 8,
+       "of": 37
+      },
+      "stay_share": {
+       "estimate": 1.0,
+       "low": 1.0,
+       "high": 1.0,
+       "resamples_defined": 1000,
+       "resamples": 1000,
+       "count": 11,
+       "of": 11
+      }
+     }
+    }
+   },
+   "title_minus_none": {
+    "prompts": "the prompts in both inputs (every title prompt)",
+    "n": 1209,
+    "articles": 331,
+    "macro_f1_difference": {
+     "estimate": 0.09387588809289454,
+     "low": 0.06550118036819974,
+     "high": 0.1234143833469792
+    },
+    "title_macro_f1": {
+     "estimate": 0.5326767750754318,
+     "low": 0.4994700608046109,
+     "high": 0.569215395410273
+    },
+    "none_macro_f1": {
+     "estimate": 0.4388008869825372,
+     "low": 0.4075802614223229,
+     "high": 0.47234492540470463
+    },
+    "difference_reading": "higher with the title than with no article",
+    "excludes": "title minus none in macro-F1 is 0.094, with a 95 percent interval of 0.066 to 0.123: the interval excludes a difference below 0.066 and one above 0.123; it excludes zero; it excludes 0.05 (below the interval)"
+   },
+   "readings": {
+    "none": {
+     "reading": "its answers depend on the article's text",
+     "value": 0.43842477997799784,
+     "from": "macro-F1 with no article, its estimate",
+     "rule": "macro-F1 with no article (its estimate) at or below 0.60: \"its answers depend on the article's text\"; above 0.75: \"the prompt alone carries more than a classifier trained on prompts alone (0.511 macro-F1, DeYoung et al. 2020, Table 1); it may come from EI's training prompts (a model of 4 billion parameters may learn stronger priors from them than that classifier did), from pretraining, or from EI's public labels, and these checks cannot tell them apart\"; otherwise \"partly\"",
+     "caveats": []
+    },
+    "title": {
+     "reading": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+     "value": {
+      "estimate": 0.09387588809289454,
+      "low": 0.06550118036819974,
+      "high": 0.1234143833469792
+     },
+     "from": "the 95 percent interval of the paired difference in macro-F1, title minus none",
+     "rule": "the 95 percent interval of the paired difference in macro-F1, title minus none: wholly above 0.05: \"the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart\"; wholly below 0.05: \"no added knowledge of 0.05 or more was detected\"; otherwise \"not settled\"",
+     "caveats": []
+    },
+    "swap": {
+     "reading": "partly",
+     "value": 0.7807881773399015,
+     "from": "accuracy against the exchanged answers, its estimate",
+     "rule": "accuracy against the exchanged answers (its estimate) at or above 0.85: \"it follows the comparison as written\"; below 0.70: \"it does not follow the exchange (recall of the trial or a bias toward one direction)\"; otherwise \"partly\"",
+     "caveats": []
+    }
+   },
+   "stop": false,
+   "stop_rule": "the stop applies to s8_ei only",
+   "references": {
+    "prior": {
+     "text": "the training split's answer shares score a macro-F1 of 0.198 on the test split (0.185 to 0.210)",
+     "macro_f1": {
+      "estimate": 0.1975736568457539,
+      "low": 0.18548019217842512,
+      "high": 0.20953532588178017
+     },
+     "n": 1218,
+     "source": "results/fiorillo_v0_4/comparison.json, metrics > evidence_effect > prior > macro_f1 (session 8's comparisons; no prediction file is read here)",
+     "sha256": "bb1bea6b27b269207f82d21d9f27afaba2c23ec85770a52a87303fe35ef292b2"
+    },
+    "windisch_2026": {
+     "text": "frontier models scored an accuracy of 0.79 to 0.88 from trial titles alone on 250 oncology trials, on a two-answer task (positive or negative), against a majority class of 0.584",
+     "accuracy_low": 0.79,
+     "accuracy_high": 0.88,
+     "trials": 250,
+     "answers": 2,
+     "majority_class_accuracy": 0.584,
+     "source": "Windisch et al. 2026, JMIR AI 2026;5:e95565, doi 10.2196/95565 (PubMed 42525868; full text PMC13419288), Table 1",
+     "verified": "confirmed at its source in step 0 (docs/prior_art.md, the session 9 check of 1 October 2026)"
+    }
+   },
+   "contamination": "Known contamination: Qwen3's and Gemma 4's pretraining text is not published and may include PMC articles (EI's articles are PMC's), EI's repository (public since 2019), PubMedQA and the UCI data, which would favor both; EI's test labels are public (the project's site serves them to its leaderboard), so no evaluation of EI can be blind; Laya's, ModernBERT's and reader v1's notes and session 4's notes on Duan stand. EI's test split was read in session 8.",
+   "notes": [
+    "Every number here is computed from the answers, so a calibration matters only where it moves an argmax (a temperature alone moves none).",
+    "title leaves out 9 prompts whose article gives no title (correction 6); swap leaves out 0 whose intervention and comparator are the same text."
+   ]
+  }
+ },
+ "references": {
+  "prior": {
+   "text": "the training split's answer shares score a macro-F1 of 0.198 on the test split (0.185 to 0.210)",
+   "macro_f1": {
+    "estimate": 0.1975736568457539,
+    "low": 0.18548019217842512,
+    "high": 0.20953532588178017
+   },
+   "n": 1218,
+   "source": "results/fiorillo_v0_4/comparison.json, metrics > evidence_effect > prior > macro_f1 (session 8's comparisons; no prediction file is read here)",
+   "sha256": "bb1bea6b27b269207f82d21d9f27afaba2c23ec85770a52a87303fe35ef292b2"
+  },
+  "windisch_2026": {
+   "text": "frontier models scored an accuracy of 0.79 to 0.88 from trial titles alone on 250 oncology trials, on a two-answer task (positive or negative), against a majority class of 0.584",
+   "accuracy_low": 0.79,
+   "accuracy_high": 0.88,
+   "trials": 250,
+   "answers": 2,
+   "majority_class_accuracy": 0.584,
+   "source": "Windisch et al. 2026, JMIR AI 2026;5:e95565, doi 10.2196/95565 (PubMed 42525868; full text PMC13419288), Table 1",
+   "verified": "confirmed at its source in step 0 (docs/prior_art.md, the session 9 check of 1 October 2026)"
+  }
+ },
+ "contamination": "Known contamination: Qwen3's and Gemma 4's pretraining text is not published and may include PMC articles (EI's articles are PMC's), EI's repository (public since 2019), PubMedQA and the UCI data, which would favor both; EI's test labels are public (the project's site serves them to its leaderboard), so no evaluation of EI can be blind; Laya's, ModernBERT's and reader v1's notes and session 4's notes on Duan stand. EI's test split was read in session 8.",
+ "notes": [
+  "The readings are fixed in THE READING CHECKS and gate no release."
+ ]
+}

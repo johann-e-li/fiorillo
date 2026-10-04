@@ -1,0 +1,410 @@
+{
+ "plan": "docs/prompt_session8.md, HAND-OFF (secondary, descriptive)",
+ "split": "validation",
+ "rates": [
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.5
+ ],
+ "resamples": 1000,
+ "seed": 20260927,
+ "large_model": "gemma4_31b",
+ "hourly_rate": 3.51,
+ "items": "validation: the items marked calibrate; test: every test item",
+ "questions": {
+  "pubmedqa_answer": {
+   "fiorillo": "s7_b3",
+   "fiorillo_file": "/root/eddm_s8/code/results/fiorillo_v0_3/predictions/s7_b3_pubmedqa_answer_validation.csv",
+   "large_model_file": "/root/eddm_s8/code/results/fiorillo_v0_4/predictions/gemma4_31b_pubmedqa_answer_validation.csv",
+   "n": 150,
+   "articles": null,
+   "resampling": "items",
+   "rate_0": {
+    "handed_off": 0,
+    "accuracy": {
+     "estimate": 0.7866666666666666,
+     "low": 0.72,
+     "high": 0.8466666666666667
+    },
+    "macro_f1": {
+     "estimate": 0.5454828176022392,
+     "low": 0.49936147040003287,
+     "high": 0.5842394993115543
+    },
+    "log_loss": {
+     "estimate": 0.5602718152955397,
+     "low": 0.43243106488261074,
+     "high": 0.6996532189886714
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": null,
+     "low": null,
+     "high": null
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": null,
+     "low": null,
+     "high": null
+    }
+   },
+   "rate_10": {
+    "handed_off": 15,
+    "accuracy": {
+     "estimate": 0.82,
+     "low": 0.7533333333333333,
+     "high": 0.88
+    },
+    "macro_f1": {
+     "estimate": 0.5708766250717904,
+     "low": 0.5283328936356148,
+     "high": 0.6044260310403684
+    },
+    "log_loss": {
+     "estimate": 0.5485736418193331,
+     "low": 0.4086583073088335,
+     "high": 0.6968230205045712
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.3333333333333333,
+     "low": 0.13333333333333333,
+     "high": 0.5333333333333333
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.6666666666666666,
+     "low": 0.4,
+     "high": 0.9333333333333333
+    }
+   },
+   "rate_20": {
+    "handed_off": 30,
+    "accuracy": {
+     "estimate": 0.8133333333333334,
+     "low": 0.7533333333333333,
+     "high": 0.8733333333333333
+    },
+    "macro_f1": {
+     "estimate": 0.5737071651090343,
+     "low": 0.536500061282201,
+     "high": 0.6097147006950929
+    },
+    "log_loss": {
+     "estimate": 0.5631362162272837,
+     "low": 0.41407994416056954,
+     "high": 0.7027583141066418
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.43333333333333335,
+     "low": 0.26583333333333337,
+     "high": 0.6
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.5666666666666667,
+     "low": 0.4,
+     "high": 0.7333333333333333
+    }
+   },
+   "rate_30": {
+    "handed_off": 45,
+    "accuracy": {
+     "estimate": 0.8,
+     "low": 0.7466666666666667,
+     "high": 0.8666666666666667
+    },
+    "macro_f1": {
+     "estimate": 0.5683359844952736,
+     "low": 0.5340828907559477,
+     "high": 0.6057149906287836
+    },
+    "log_loss": {
+     "estimate": 0.5662806583915719,
+     "low": 0.41650332312303145,
+     "high": 0.7119466057589489
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.5111111111111111,
+     "low": 0.35555555555555557,
+     "high": 0.6666666666666666
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.5555555555555556,
+     "low": 0.4438888888888889,
+     "high": 0.7111111111111111
+    }
+   },
+   "rate_50": {
+    "handed_off": 75,
+    "accuracy": {
+     "estimate": 0.7933333333333333,
+     "low": 0.7331666666666666,
+     "high": 0.8534999999999999
+    },
+    "macro_f1": {
+     "estimate": 0.567246555163991,
+     "low": 0.5285736203375965,
+     "high": 0.6010127038427459
+    },
+    "log_loss": {
+     "estimate": 0.576924498604351,
+     "low": 0.4251137451841711,
+     "high": 0.7297888024752017
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.6533333333333333,
+     "low": 0.5466666666666666,
+     "high": 0.7733333333333333
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.6666666666666666,
+     "low": 0.56,
+     "high": 0.7733333333333333
+    }
+   },
+   "large_model_alone": {
+    "accuracy": {
+     "estimate": 0.78,
+     "low": 0.7133333333333334,
+     "high": 0.8466666666666667
+    },
+    "macro_f1": {
+     "estimate": 0.563527144962031,
+     "low": 0.5247298417321301,
+     "high": 0.5979841566463189
+    },
+    "log_loss": {
+     "estimate": 0.593359516673192,
+     "low": 0.4469886672040328,
+     "high": 0.7488089537708581
+    }
+   },
+   "fiorillo_alone": {
+    "accuracy": {
+     "estimate": 0.7866666666666666,
+     "low": 0.72,
+     "high": 0.8466666666666667
+    },
+    "macro_f1": {
+     "estimate": 0.5454828176022392,
+     "low": 0.49936147040003287,
+     "high": 0.5842394993115543
+    },
+    "log_loss": {
+     "estimate": 0.5602718152955397,
+     "low": 0.43243106488261074,
+     "high": 0.6996532189886714
+    }
+   },
+   "seconds_per_item": {
+    "fiorillo": null,
+    "large_model": 0.9450568901871641,
+    "notes": [
+     "no session 8 timing of s7_b3 on validation (s7_b3_timing_validation_run_summary.json)"
+    ]
+   },
+   "cost_per_1000_questions": {
+    "rate_0": null,
+    "rate_10": null,
+    "rate_20": null,
+    "rate_30": null,
+    "rate_50": null
+   }
+  },
+  "evidence_effect": {
+   "fiorillo": "s8_ei",
+   "fiorillo_file": "/root/eddm_s8/code/results/fiorillo_v0_4/predictions/s8_ei_evidence_effect_validation.csv",
+   "large_model_file": "/root/eddm_s8/code/results/fiorillo_v0_4/predictions/gemma4_31b_evidence_effect_validation.csv",
+   "n": 1237,
+   "articles": 340,
+   "resampling": "articles",
+   "rate_0": {
+    "handed_off": 0,
+    "accuracy": {
+     "estimate": 0.936944219886823,
+     "low": 0.9206177466150871,
+     "high": 0.9514955537590946
+    },
+    "macro_f1": {
+     "estimate": 0.933173944770903,
+     "low": 0.9160460811595877,
+     "high": 0.949058487160125
+    },
+    "log_loss": {
+     "estimate": 0.19865082409326615,
+     "low": 0.1572370354051875,
+     "high": 0.2460462603338401
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": null,
+     "low": null,
+     "high": null
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": null,
+     "low": null,
+     "high": null
+    }
+   },
+   "rate_10": {
+    "handed_off": 123,
+    "accuracy": {
+     "estimate": 0.936944219886823,
+     "low": 0.921800141857691,
+     "high": 0.952459163062471
+    },
+    "macro_f1": {
+     "estimate": 0.9314260587545635,
+     "low": 0.913945419740229,
+     "high": 0.9477027475414935
+    },
+    "log_loss": {
+     "estimate": 0.21078096554136286,
+     "low": 0.1657180365137921,
+     "high": 0.2611178882519445
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.6747967479674797,
+     "low": 0.5785027117768594,
+     "high": 0.7619047619047619
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.6747967479674797,
+     "low": 0.5690729640347251,
+     "high": 0.7786885245901639
+    }
+   },
+   "rate_20": {
+    "handed_off": 247,
+    "accuracy": {
+     "estimate": 0.9191592562651576,
+     "low": 0.9028106849709596,
+     "high": 0.9345436991057311
+    },
+    "macro_f1": {
+     "estimate": 0.9113916854922461,
+     "low": 0.8934033139928858,
+     "high": 0.9280663125284815
+    },
+    "log_loss": {
+     "estimate": 0.2556953199996439,
+     "low": 0.20683893370437667,
+     "high": 0.3084217123231522
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.7651821862348178,
+     "low": 0.7029203037079786,
+     "high": 0.8192783740002024
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.6761133603238867,
+     "low": 0.606425702811245,
+     "high": 0.7398637306211119
+    }
+   },
+   "rate_30": {
+    "handed_off": 371,
+    "accuracy": {
+     "estimate": 0.9062247372675829,
+     "low": 0.886174227377453,
+     "high": 0.9222224404294318
+    },
+    "macro_f1": {
+     "estimate": 0.8969761950276135,
+     "low": 0.8763630295821172,
+     "high": 0.9141999198594165
+    },
+    "log_loss": {
+     "estimate": 0.2701821893460965,
+     "low": 0.22317113332594934,
+     "high": 0.32813022787251883
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.8113207547169812,
+     "low": 0.7627973994488698,
+     "high": 0.8567708333333334
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.7088948787061995,
+     "low": 0.6489201150388116,
+     "high": 0.7609192546583851
+    }
+   },
+   "rate_50": {
+    "handed_off": 618,
+    "accuracy": {
+     "estimate": 0.8924818108326596,
+     "low": 0.8715934463559016,
+     "high": 0.9139409172177159
+    },
+    "macro_f1": {
+     "estimate": 0.8816342692545819,
+     "low": 0.8578374152641577,
+     "high": 0.9055018990996685
+    },
+    "log_loss": {
+     "estimate": 0.2993680731254768,
+     "low": 0.2443374861569043,
+     "high": 0.3577602568296808
+    },
+    "handed_off_fiorillo_accuracy": {
+     "estimate": 0.8770226537216829,
+     "low": 0.8466661341853036,
+     "high": 0.9061586970329372
+    },
+    "handed_off_large_model_accuracy": {
+     "estimate": 0.7880258899676376,
+     "low": 0.7460291608500078,
+     "high": 0.8319807403117045
+    }
+   },
+   "large_model_alone": {
+    "accuracy": {
+     "estimate": 0.8860145513338723,
+     "low": 0.8606613889563347,
+     "high": 0.9094636091912081
+    },
+    "macro_f1": {
+     "estimate": 0.8746820262377005,
+     "low": 0.8461202599674804,
+     "high": 0.8996190718555561
+    },
+    "log_loss": {
+     "estimate": 0.3403107199325635,
+     "low": 0.2825572360946877,
+     "high": 0.40364564118762486
+    }
+   },
+   "fiorillo_alone": {
+    "accuracy": {
+     "estimate": 0.936944219886823,
+     "low": 0.9206177466150871,
+     "high": 0.9514955537590946
+    },
+    "macro_f1": {
+     "estimate": 0.933173944770903,
+     "low": 0.9160460811595877,
+     "high": 0.949058487160125
+    },
+    "log_loss": {
+     "estimate": 0.19865082409326615,
+     "low": 0.1572370354051875,
+     "high": 0.2460462603338401
+    }
+   },
+   "seconds_per_item": {
+    "fiorillo": 0.5449493309805168,
+    "large_model": 1.906613313831636,
+    "notes": []
+   },
+   "cost_per_1000_questions": {
+    "rate_0": 0.5313255977060038,
+    "rate_10": 0.7172203958045884,
+    "rate_20": 0.9031151939031729,
+    "rate_30": 1.089009992001757,
+    "rate_50": 1.4607995881989264
+   }
+  }
+ },
+ "time_utc": "2026-09-30T22:59:11Z",
+ "costs_note": "The EI seeds' validation passes can share the GPU with arm A (the plan runs them side by side; the ei stage log lists the GPU's processes before each pass), so these costs can be higher than a run alone would give; PubMedQA's is left empty, since no session 8 run of s7_b3 reads the validation split. The test costs come from runs alone on the GPU (correction 4)."
+}

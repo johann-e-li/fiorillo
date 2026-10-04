@@ -1,0 +1,22 @@
+# TheBlueScrubs-v1 field names for src/corpus/filter_web.py (docs/prompt_session5.md, THE TEXT and step 7).
+# Filled in step 7 on 28 September 2026. The dataset's README.md describes the fields in words (the three Llama 3.1 70B
+# ratings, the SlimPajama source and the cancer label) but does not name them, so the names were read from the first
+# downloaded file on the list (train/chunk3_batch9_part2.json) and matched to those descriptions. The files are named
+# .json but hold one JSON object per line: {"text": ..., "meta": {"source", "probability", "ID",
+# "Scope of Medical Relevance", "Precision and Factual Detail", "Safety and Ethical Standards", "cancer"}}.
+# A field name may be a dotted path into a nested object; a nested object stored as a JSON string is parsed.
+format: jsonl
+text: text
+ratings:                # the three 1-to-5 ratings; a document is kept only if all three are 5
+  medical_relevance: "meta.Scope of Medical Relevance"
+  precision_and_factual_detail: "meta.Precision and Factual Detail"
+  safety_and_ethical_standards: "meta.Safety and Ethical Standards"
+source: meta.source     # the SlimPajama source of the document
+sources_kept:           # Common Crawl, C4, Wikipedia and StackExchange, as written in the data
+  - RedPajamaCommonCrawl
+  - RedPajamaC4
+  - RedPajamaWikipedia
+  - RedPajamaStackExchange
+cancer: meta.cancer     # the cancer label: 1 for cancer-related, 0 otherwise
+cancer_true:
+  - 1

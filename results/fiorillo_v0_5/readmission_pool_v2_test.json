@@ -1,0 +1,32 @@
+{
+ "plan": "docs/prompt_session9.md, THE READMISSION POOL, VERSION 2 and STEP 15",
+ "written_utc": "2026-10-02T15:38:09Z",
+ "system": "readmission_pool_v2",
+ "chosen": "session8",
+ "members": [
+  "lightgbm_tuned",
+  "xgboost_tuned",
+  "catboost_tuned",
+  "arm_laya",
+  "s7_b3"
+ ],
+ "weights": {
+  "lightgbm_tuned": 0.0,
+  "xgboost_tuned": 0.4,
+  "catboost_tuned": 0.6,
+  "arm_laya": 0.0,
+  "s7_b3": 0.0
+ },
+ "T": 0.9957247324725937,
+ "rows": 6998,
+ "member_test_files": {
+  "lightgbm_tuned": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_test.csv",
+  "xgboost_tuned": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_test.csv",
+  "catboost_tuned": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_test.csv",
+  "arm_laya": "results/public_v0/predictions/arm_laya_readmit_window_test.csv",
+  "s7_b3": "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_test.csv"
+ },
+ "predictions": "results/fiorillo_v0_5/predictions/readmission_pool_v2_readmit_window_test.csv",
+ "predictions_sha256": "c727038897d71979fa520e4f604642445515d7ee47098354c5c58326308e2a78",
+ "readmission_pool_v2_json_sha256": "6680ef67f16c8956115bb60ec899c38006fc3d74a3a6b7e88743a3f66382e57b"
+}

@@ -1,0 +1,17 @@
+2026-10-02T12:17:10Z  stage tabicl started
+2026-10-02T12:17:10Z  GPU free: 0 MiB used
+Using CPython 3.12.3 interpreter at: [36m/usr/local/bin/python[39m
+Creating virtual environment at: [36m/root/eddm_s9/tabicl_env[39m
+Activate with: [32msource /root/eddm_s9/tabicl_env/bin/activate[39m
+[2mUsing Python 3.12.3 environment at: /root/eddm_s9/tabicl_env[0m
+[2mResolved [1m4 packages[0m [2min 66ms[0m[0m
+[2mPrepared [1m4 packages[0m [2min 86ms[0m[0m
+[2mInstalled [1m4 packages[0m [2min 8ms[0m[0m
+ [32m+[39m [1meinops[0m[2m==0.8.2[0m
+ [32m+[39m [1mpsutil[0m[2m==7.2.2[0m
+ [32m+[39m [1mtabicl[0m[2m==2.2.0[0m
+ [32m+[39m [1mtqdm[0m[2m==4.70.1[0m
+tabicl_env: torch 2.8.0+cu128 from the training environment (/usr/local/lib/python3.12/dist-packages/torch/__init__.py), CUDA on NVIDIA H100 80GB HBM3; tabicl 2.2.0, einops 0.8.2, psutil 7.2.2, tqdm 4.70.1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+tabicl None is installed; the fixed version is 2.2.0
+2026-10-02T12:17:20Z  NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log); marker /root/eddm_s9/not_built/tabicl.txt written; the stage ends successfully so that all continues

@@ -1,0 +1,33 @@
+{
+  "system": "s7_b3_timing",
+  "phase_dir": "/root/eddm_s8/models/s7_b3",
+  "device": "cuda",
+  "max_len": 768,
+  "batch_size": 16,
+  "questions": "/root/eddm_s8/code/src/questions/public_v0.yaml",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "items_test": {
+    "records": 500,
+    "items": 500,
+    "skipped": 0,
+    "truncated": 0
+  },
+  "timing_test": {
+    "items": 500,
+    "forward_seconds": 9.992877173237503,
+    "seconds_per_item": 0.019985754346475006,
+    "items_per_second": 50.035639519224624,
+    "note": "the model's passes over the built items, GPU synchronized; tokenizing and item building not counted"
+  },
+  "test_per_question_raw": {
+    "pubmedqa_answer": {
+      "n": 500,
+      "accuracy": 0.786,
+      "log_loss": 0.671,
+      "ece": 0.0767
+    }
+  },
+  "max_abs_difference_vs_session7": 0.010124862000000068,
+  "compared_with": "results/fiorillo_v0_3/predictions/s7_b3-raw_pubmedqa_answer_test.csv (correction 4)"
+}

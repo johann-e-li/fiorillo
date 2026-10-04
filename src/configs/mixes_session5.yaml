@@ -1,0 +1,24 @@
+# Session 5 text mixes (docs/prompt_session5.md, THE TEXT and READER METHOD), read by src/train/pretrain_reader.py.
+# Shares are token shares in percent; every block holds 1,024 tokens, so they are block shares too.
+# tokens: the run's budget (500 million tokens = 1,908 optimizer steps of 256 blocks: 57 of warmup, decay from 1,717).
+# The long run resumes the winner's run from its start-of-decay checkpoint to long_run_tokens (7,630 steps in all,
+# decay from 6,867). Mix T, the task round, runs three passes over the task blocks, each in a fresh seeded
+# permutation; its steps are three times the task blocks divided by 256, rounded up.
+seed: 20260927
+block_tokens: 1024
+blocks_per_step: 256
+long_run_tokens: 2000000000
+heldout_blocks: {abstracts: 1000, pmc: 1000, case_reports: 1000, web: 1000, task: 200}
+mixes:
+  A:
+    shares: {abstracts: 100}
+    tokens: 500000000
+  B:
+    shares: {abstracts: 50, pmc: 40, case_reports: 10}
+    tokens: 500000000
+  C:
+    shares: {abstracts: 35, pmc: 30, case_reports: 10, web: 25}
+    tokens: 500000000
+  T:
+    shares: {task: 100}
+    passes: 3

@@ -1,0 +1,49 @@
+{
+ "plan": "docs/prompt_session9.md, THE LONGER INPUT",
+ "written_utc": "2026-10-01T08:19:36Z",
+ "max_len": 6144,
+ "spare": 16,
+ "rule": "session 8's THE ARTICLE SELECTION (title and abstract, then results-section passages, then others, by BM25 against the prompt's words) with a budget of 6,144 tokens; BM25's statistics are session 8's bm25_stats.json",
+ "coverage": {
+  "train": {
+   "prompts": 10046,
+   "prompts_with_usable_offsets": 9850,
+   "covered": 9754,
+   "coverage": 0.9902538071065989,
+   "mean_tokens": 5297.450228946845
+  },
+  "validation": {
+   "prompts": 1237,
+   "prompts_with_usable_offsets": 1206,
+   "covered": 1194,
+   "coverage": 0.9900497512437811,
+   "mean_tokens": 5253.272433306386
+  },
+  "train_clean": {
+   "prompts": 5279,
+   "prompts_with_usable_offsets": 5168,
+   "covered": 5100,
+   "coverage": 0.9868421052631579,
+   "mean_tokens": 5570.941655616594
+  }
+ },
+ "check_of_30_september_train": {
+  "coverage": 0.9891,
+  "mean_tokens": 5109
+ },
+ "difference_from_check_train": 0.0011538071065989586,
+ "within_one_point": true,
+ "at_4096_session8": {
+  "train": {
+   "prompts_with_usable_offsets": 9850,
+   "covered": 9487,
+   "coverage": 0.9631472081218274
+  },
+  "validation": {
+   "prompts_with_usable_offsets": 1206,
+   "covered": 1151,
+   "coverage": 0.9543946932006634
+  }
+ },
+ "skipped_by_the_selection": {}
+}

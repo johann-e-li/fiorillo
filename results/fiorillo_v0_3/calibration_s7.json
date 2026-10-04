@@ -1,0 +1,202 @@
+{
+ "s7_a3": {
+  "pubmedqa_answer": {
+   "source": {
+    "file": "/root/eddm_s7/code/results/fiorillo_v0_3/logits/s7_a3_pubmedqa_answer_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 150,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.5891781806408848,
+      "min": 0.5840690914067852,
+      "max": 0.5993803795118454
+     },
+     "params": [
+      0.3755205526850739
+     ],
+     "temperature": 1.4557490114732714,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.5823665448818708,
+      "min": 0.5753631352256754,
+      "max": 0.6032501294815986
+     },
+     "params": [
+      0.5171877445219557,
+      -0.09024957064363828,
+      -0.7086080086734868
+     ],
+     "temperature": 1.6773040033900928,
+     "intercepts": [
+      0.0,
+      -0.09024957064363828,
+      -0.7086080086734868
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature",
+   "time_utc": "2026-09-30T06:20:29Z"
+  },
+  "readmit_window": {
+   "source": {
+    "file": "/root/eddm_s7/code/results/fiorillo_v0_3/logits/s7_a3_readmit_window_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 6997,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8704885975882256,
+      "min": 0.870465385989524,
+      "max": 0.8705186016488292
+     },
+     "params": [
+      0.30713950221096753
+     ],
+     "temperature": 1.3595306123700772,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8666094217889662,
+      "min": 0.8664656007777389,
+      "max": 0.8668046047652092
+     },
+     "params": [
+      0.13561800192321316,
+      0.3108457154812547,
+      0.2510602525238196
+     ],
+     "temperature": 1.145244328894657,
+     "intercepts": [
+      0.0,
+      0.3108457154812547,
+      0.2510602525238196
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature",
+   "time_utc": "2026-09-30T06:20:32Z"
+  }
+ },
+ "s7_b3": {
+  "pubmedqa_answer": {
+   "source": {
+    "file": "/root/eddm_s7/code/results/fiorillo_v0_3/logits/s7_b3_pubmedqa_answer_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 150,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.6075014426801163,
+      "min": 0.6027012623531035,
+      "max": 0.6168473886498353
+     },
+     "params": [
+      0.49988466028842443
+     ],
+     "temperature": 1.6485311186305502,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.572085489107788,
+      "min": 0.5655190764837481,
+      "max": 0.5836487601051927
+     },
+     "params": [
+      0.6853176484884109,
+      -0.3920624652488797,
+      -1.134493957354086
+     ],
+     "temperature": 1.984402077754515,
+     "intercepts": [
+      0.0,
+      -0.3920624652488797,
+      -1.134493957354086
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature",
+   "time_utc": "2026-09-30T06:20:33Z"
+  },
+  "readmit_window": {
+   "source": {
+    "file": "/root/eddm_s7/code/results/fiorillo_v0_3/logits/s7_b3_readmit_window_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 6997,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8706350291663485,
+      "min": 0.8706062531942805,
+      "max": 0.8707017228354965
+     },
+     "params": [
+      -0.022404124199990223
+     ],
+     "temperature": 0.9778449843693837,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8680302065039067,
+      "min": 0.8678515050648085,
+      "max": 0.8682833300251899
+     },
+     "params": [
+      -0.20593246321463765,
+      0.007803879911007979,
+      0.47835196707415795
+     ],
+     "temperature": 0.813888041808791,
+     "intercepts": [
+      0.0,
+      0.007803879911007979,
+      0.47835196707415795
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature",
+   "time_utc": "2026-09-30T06:20:35Z"
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+  "system": "s8_a1",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": true,
+  "freeze_encoder_steps": 250,
+  "autocast": "torch.float16",
+  "eval_every": 0,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/reader_v1_laya",
+  "rows": {
+    "train": 209246,
+    "validation": 2150,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 6539,
+  "max_len": 768,
+  "elapsed_seconds": 6068.3,
+  "train_seconds": 6010.8,
+  "sequences_per_second": 34.81,
+  "validation_history": [
+    {
+      "n": 2150,
+      "accuracy": 0.9414,
+      "log_loss": 0.2472,
+      "ece": 0.0404,
+      "selection_log_loss": 1.4738,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.78,
+          "log_loss": 1.4738,
+          "ece": 0.1777
+        }
+      },
+      "epoch": 1,
+      "step": 6539,
+      "elapsed_seconds": 6050.7
+    }
+  ],
+  "best_validation_selection_log_loss": 1.4738,
+  "best_validation_selection_log_loss_exact": 1.4738,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 1.4738,
+  "temperature": {
+    "pubmedqa_answer": 4.2611
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 2150,
+    "accuracy": 0.9414,
+    "log_loss": 0.2472,
+    "ece": 0.0404
+  },
+  "test": "not run (--no-test)"
+}

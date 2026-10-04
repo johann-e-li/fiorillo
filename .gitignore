@@ -1,0 +1,8 @@
+# Folders the code writes to at the repository's root; none of them belongs in the repository.
+/data/
+/models/
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

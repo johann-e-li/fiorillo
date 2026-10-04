@@ -1,0 +1,33 @@
+{
+ "plan": "docs/prompt_session8.md, THE LARGE MODEL",
+ "evidence_effect": {
+  "validation": {
+   "items": 1237,
+   "wall_seconds": 3321.0720703601837,
+   "gpu_seconds_per_item": 2.6847793616492996,
+   "prompt_tokens_per_item": 5142.928860145514,
+   "first_pass_seconds": 668.1842803955078,
+   "top1000_items": 1081,
+   "top1000_seconds": 578.8969485759735,
+   "second_pass_items": 576,
+   "second_pass_seconds": 2073.9908413887024,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  },
+  "test": {
+   "items": 1218,
+   "wall_seconds": 3042.760416507721,
+   "gpu_seconds_per_item": 2.498161261500592,
+   "prompt_tokens_per_item": 5126.685550082102,
+   "first_pass_seconds": 656.9987716674805,
+   "top1000_items": 1051,
+   "top1000_seconds": 558.6450092792511,
+   "second_pass_items": 512,
+   "second_pass_seconds": 1827.1166355609894,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  }
+ },
+ "vllm": "0.30.0",
+ "load_seconds_first": 51.763354778289795,
+ "load_seconds_second": 45.78661561012268,
+ "time_utc": "2026-10-02T15:17:39Z"
+}

@@ -1,0 +1,6 @@
+# Where the project reads and writes. Scripts resolve locations through src/tools/paths.py, never by hard-coding them.
+# public_root: inside this repository (relative to the repository root).
+# restricted_root: outside this repository. MIMIC, HCUP (NRD, NIS) and anything trained on them live there.
+#   It is the folder named by the EDDM_RESTRICTED_ROOT environment variable, which is set only in your own Terminal.
+public_root: "."
+restricted_root: "${EDDM_RESTRICTED_ROOT}"

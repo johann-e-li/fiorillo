@@ -1,0 +1,38 @@
+{
+ "plan": "docs/prompt_session9.md, STEP 3 (prepare): session 4's records rebuilt on the pod",
+ "written_utc": "2026-10-01T19:07:16Z",
+ "expected_from": "results/public_v0/checksums.json",
+ "files": {
+  "pubmedqa_answer_test.jsonl": {
+   "sha256": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72",
+   "expected": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72",
+   "equal": true
+  },
+  "pubmedqa_answer_train.jsonl": {
+   "sha256": "fa221c9f4fc0e23fea3012e1e9ba4c3bface1c6668024faee54f799ac7ed1b99",
+   "expected": "fa221c9f4fc0e23fea3012e1e9ba4c3bface1c6668024faee54f799ac7ed1b99",
+   "equal": true
+  },
+  "pubmedqa_answer_validation.jsonl": {
+   "sha256": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6",
+   "expected": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6",
+   "equal": true
+  },
+  "readmit_window_test.jsonl": {
+   "sha256": "6f10d7ead393dfdcc84a1de4d1fd879b5bcc8aa0f8c4b2a7ecc97936e6bbbf3d",
+   "expected": "6f10d7ead393dfdcc84a1de4d1fd879b5bcc8aa0f8c4b2a7ecc97936e6bbbf3d",
+   "equal": true
+  },
+  "readmit_window_train.jsonl": {
+   "sha256": "ab3be43c7f47ecd94cf7f6df1d5d652a786b2d0ccf41629be90f74b4e2746702",
+   "expected": "ab3be43c7f47ecd94cf7f6df1d5d652a786b2d0ccf41629be90f74b4e2746702",
+   "equal": true
+  },
+  "readmit_window_validation.jsonl": {
+   "sha256": "651bd1ab5b4c63cafa5a20ed68489cdc197d110f864ed5816adf4a8dd53d3644",
+   "expected": "651bd1ab5b4c63cafa5a20ed68489cdc197d110f864ed5816adf4a8dd53d3644",
+   "equal": true
+  }
+ },
+ "all_equal": true
+}

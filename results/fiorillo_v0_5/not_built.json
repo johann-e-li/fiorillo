@@ -1,0 +1,7 @@
+{
+ "plan": "docs/prompt_session9.md, STEP 3: the pod stages' NOT BUILT markers",
+ "written_utc": "2026-10-02T15:18:19Z",
+ "stages": {
+  "tabicl": "NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)"
+ }
+}

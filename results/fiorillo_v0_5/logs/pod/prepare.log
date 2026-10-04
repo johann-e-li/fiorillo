@@ -1,0 +1,70 @@
+2026-10-01T19:05:39Z  stage prepare started
+uploads present and checked: 174 files
+pod_rate.txt: pod created 2026-10-01T15:55:18Z, $3.52 an hour, maintenance none
+Thu Oct  1 19:05:39 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:BA:00.0 Off |                    0 |
+| N/A   25C    P0             71W /  700W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+GPU: NVIDIA H100 80GB HBM3 | torch 2.8.0+cu128
+transformers 5.17.0 | tokenizers 0.23.2 | huggingface_hub 1.33.0 | laya 0.3.20 | numpy 2.4.6 | scipy 1.17.1 | scikit-learn 1.9.1 | pandas 3.0.6 | torch 2.8.0+cu128
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:  15%|█▌        | 2/13 [00:00<00:00, 18.24it/s]Fetching 13 files:  62%|██████▏   | 8/13 [00:00<00:00, 38.34it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:20<00:00, 38.34it/s]Fetching 13 files:  92%|█████████▏| 12/13 [00:52<00:05,  5.74s/it]Fetching 13 files: 100%|██████████| 13/13 [00:53<00:00,  5.03s/it]Fetching 13 files: 100%|██████████| 13/13 [00:53<00:00,  4.10s/it]
+Qwen3-4B-Base downloaded at 906bfd4b4dc7f14ee4320094d8b41684abff8539
+Qwen3-4B-Base at 906bfd4b4dc7f14ee4320094d8b41684abff8539: its 3 weight files have the sizes and SHA-256 that fixed_versions.json records
+pubmedqa_answer train: 21,050 records
+pubmedqa_answer validation: 2,150 records
+pubmedqa_answer test: 500 records
+{
+  "pubmedqa_answer_train.jsonl": "fa221c9f4fc0e23fea3012e1e9ba4c3bface1c6668024faee54f799ac7ed1b99",
+  "pubmedqa_answer_validation.jsonl": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6",
+  "pubmedqa_answer_test.jsonl": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72"
+}
+readmit_window train: 55,978 records
+readmit_window validation: 6,997 records
+readmit_window test: 6,998 records
+{
+  "readmit_window_train.jsonl": "ab3be43c7f47ecd94cf7f6df1d5d652a786b2d0ccf41629be90f74b4e2746702",
+  "readmit_window_validation.jsonl": "651bd1ab5b4c63cafa5a20ed68489cdc197d110f864ed5816adf4a8dd53d3644",
+  "readmit_window_test.jsonl": "6f10d7ead393dfdcc84a1de4d1fd879b5bcc8aa0f8c4b2a7ecc97936e6bbbf3d"
+}
+session 4's records rebuilt: 6 files, SHA-256 identical to results/public_v0/checksums.json
+{"articles": 3348, "fetched_now": 3348, "missing": 0, "complete": true, "seconds": 45.4}
+EI's raw files: 3356 files, each identical to results/fiorillo_v0_4/records_manifest.json
+{"all_equal": true}
+{"all_equal": true}
+s7_b3's and s8_ei's folders: 28 files, each identical to results/fiorillo_v0_5/records_manifest.json's models digests
+{"records": 5279, "items": 5279, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/clean/evidence_effect_train.jsonl"], "pad_token_id": 151643}
+{"records": 10557, "items": 10557, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/swap/evidence_effect_train.jsonl"], "pad_token_id": 151643}
+{"records": 5279, "items": 5279, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/long/evidence_effect_train.jsonl"], "pad_token_id": 151643}
+{"records": 200, "items": 200, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/clean/evidence_effect_validation_monitor.jsonl"], "pad_token_id": 151643}
+{"records": 200, "items": 200, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/long/evidence_effect_validation_monitor.jsonl"], "pad_token_id": 151643}
+{"records": 1218, "items": 1218, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/checks/none/evidence_effect_test.jsonl"], "pad_token_id": 151643}
+{"records": 1209, "items": 1209, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/checks/title/evidence_effect_test.jsonl"], "pad_token_id": 151643}
+{"records": 1218, "items": 1218, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/checks/swap/evidence_effect_test.jsonl"], "pad_token_id": 151643}
+{"records": 1237, "items": 1237, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s9/code/data/processed/session9/checks/swap/evidence_effect_validation.jsonl"], "pad_token_id": 151643}
+{"records": 1218, "items": 1218, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/checks/swap_long/evidence_effect_test.jsonl"], "pad_token_id": 151643}
+{"records": 1237, "items": 1237, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/checks/swap_long/evidence_effect_validation.jsonl"], "pad_token_id": 151643}
+{"records": 1237, "items": 1237, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/long/evidence_effect_validation.jsonl"], "pad_token_id": 151643}
+{"records": 1218, "items": 1218, "skipped": 0, "truncated": 0, "max_len": 6144, "files": ["/root/eddm_s9/code/data/processed/session9/long/evidence_effect_test.jsonl"], "pad_token_id": 151643}
+items in /root/eddm_s9/items (records, items, skipped, cut, max_len):
+{"clean_monitor": [200, 200, 0, 0, 4096], "clean_train": [5279, 5279, 0, 0, 4096], "long_monitor": [200, 200, 0, 0, 6144], "long_train": [5279, 5279, 0, 0, 6144], "swap_train": [10557, 10557, 0, 0, 4096]}
+items in /root/eddm_s9/items_check (records, items, skipped, cut, max_len):
+{"check_long_test": [1218, 1218, 0, 0, 6144], "check_long_validation": [1237, 1237, 0, 0, 6144], "check_none_test": [1218, 1218, 0, 0, 4096], "check_swap_long_test": [1218, 1218, 0, 0, 6144], "check_swap_long_validation": [1237, 1237, 0, 0, 6144], "check_swap_test": [1218, 1218, 0, 0, 4096], "check_swap_validation": [1237, 1237, 0, 0, 4096], "check_title_test": [1209, 1209, 0, 0, 4096]}
+overlay         200G   11G  190G   6% /
+2026-10-01T19:09:56Z  stage prepare finished

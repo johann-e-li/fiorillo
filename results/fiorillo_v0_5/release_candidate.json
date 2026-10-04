@@ -1,0 +1,143 @@
+{
+ "plan": "docs/prompt_session9.md, the freeze (STEP 3's freeze stage)",
+ "system": "fiorillo_v0_5",
+ "specialists": {
+  "pubmedqa_answer": {
+   "system": "s7_b3",
+   "calibration_source": "results/fiorillo_v0_3/calibration_s7.json",
+   "family": "temperature_intercepts",
+   "params": [
+    0.6853176484884109,
+    -0.3920624652488797,
+    -1.134493957354086
+   ],
+   "out_of_fold_log_loss": {
+    "mean": 0.572085489107788,
+    "min": 0.5655190764837481,
+    "max": 0.5836487601051927
+   }
+  },
+  "evidence_effect": {
+   "system": "s9_ei_wavg",
+   "base_system": "s9_ei_wavg",
+   "swap_averaging": false,
+   "recipe": "long",
+   "runs": [
+    "s9_long_1",
+    "s9_long_2",
+    "s9_long_3"
+   ],
+   "single_pass_systems": [
+    "s9_ei_wavg"
+   ],
+   "max_len": 6144,
+   "calibration_source": "results/fiorillo_v0_5/calibration_s9.json",
+   "family": "temperature",
+   "params": [
+    0.2929051083469259
+   ],
+   "out_of_fold_log_loss": {
+    "mean": 0.1780834342525998,
+    "min": 0.17649378498598373,
+    "max": 0.18080761664233153
+   }
+  },
+  "readmit_window": {
+   "system": "readmission_pool_v2",
+   "chosen": "session8",
+   "members": [
+    "lightgbm_tuned",
+    "xgboost_tuned",
+    "catboost_tuned",
+    "arm_laya",
+    "s7_b3"
+   ],
+   "weights": {
+    "lightgbm_tuned": 0.0,
+    "xgboost_tuned": 0.4,
+    "catboost_tuned": 0.6,
+    "arm_laya": 0.0,
+    "s7_b3": 0.0
+   },
+   "T": 0.9957247324725937,
+   "validation_log_loss": 0.8367890633905656,
+   "source": "results/fiorillo_v0_5/readmission_pool_v2.json"
+  }
+ },
+ "reference": {
+  "criterion_3_large_model": "gemma4_31b_long",
+  "gemma4_31b_long": {
+   "evidence_effect": {
+    "family": "temperature_intercepts",
+    "params": [
+     1.8291951661180084,
+     -1.8226614702970938,
+     -1.207807066583259
+    ],
+    "out_of_fold_log_loss": {
+     "mean": 0.33839667502777226,
+     "min": 0.3371167155972894,
+     "max": 0.3396940687028972
+    }
+   },
+   "calibration_source": "results/fiorillo_v0_5/calibration_s9.json"
+  }
+ },
+ "biogpt_large_pqa": {
+  "family": "temperature_intercepts",
+  "params": [
+   0.3804848980832857,
+   0.4662979710113871,
+   0.06778243017551111
+  ],
+  "out_of_fold_log_loss": {
+   "mean": 0.5055773933929539,
+   "min": 0.4956360396167239,
+   "max": 0.5189097221899851
+  }
+ },
+ "handoff_rules": {
+  "s8_ei": "results/fiorillo_v0_5/validation_analyses/handoff_rule_s8.json",
+  "v05": "results/fiorillo_v0_5/handoff_rule_v05.json"
+ },
+ "ece_limits": {
+  "evidence_effect": {
+   "limit": 0.05,
+   "floor": 0.05,
+   "p95": 0.018431408650697503,
+   "n": 1218,
+   "draws": 5000,
+   "source": "results/fiorillo_v0_5/ece_limit_evidence_effect.json"
+  }
+ },
+ "stages": {
+  "trees": "finished",
+  "tabicl": "not built: NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)",
+  "biogpt": "finished",
+  "calibrate": "finished"
+ },
+ "osf_update": {
+  "link": "https://osf.io/kaxmn/",
+  "revision": "6abe7a9d0c9675529d443184",
+  "filed_utc": "2026-10-01T15:31:21Z"
+ },
+ "sha256": {
+  "results/fiorillo_v0_5/recipe_selection.json": "a8032a3bdc84ae18d7a35e840d1462afce38a82b80ed8bd364e9671722d90afb",
+  "results/fiorillo_v0_5/calibration_s9.json": "8a2e711aacc47c44f12314217c1745e5594697e63cf568d08407f781d5292b9a",
+  "results/fiorillo_v0_3/calibration_s7.json": "a57e4c4739a0f6636f91e97b2027b20d52938e9c3d3270dd35cd93dbda15f277",
+  "results/fiorillo_v0_5/ece_limit_evidence_effect.json": "fb759c4f7cd362a5d02de50ad9381fcfde9c60b97b97280e50de7d022bfc8e27",
+  "results/fiorillo_v0_5/validation_analyses/handoff_rule_s8.json": "f5d8335a67186183137a9fe488b0b6d07a2fdf1db0dc9415e35fa99384da3958",
+  "results/fiorillo_v0_5/handoff_rule_v05.json": "c88a57688086ef39b0ec6ce992a80e302b1ae280b26d13c36558922446c62815",
+  "results/fiorillo_v0_5/readmission_pool_v2.json": "6680ef67f16c8956115bb60ec899c38006fc3d74a3a6b7e88743a3f66382e57b",
+  "results/fiorillo_v0_5/weight_average.json": "04490ce7cb32e223001c47d4c2f6e0f1866edf8fd918daddec27aec663f0354e",
+  "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198",
+  "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_validation.csv": "5b59893b489d1da54aa793a27694a1505e681a5e1d0889ccfd54917235268aa9",
+  "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_validation.csv": "768a4152632e371ab8d7e32302fef4ad9cf904b204c31572f667fa96d2759c05",
+  "results/public_v0/predictions/arm_laya_readmit_window_validation.csv": "a29839303e335d1c9bc57ab45eff457ef8edbec28baee1554afad8c5eadffe1c",
+  "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_validation.csv": "44e8fc5fb581de83684c65664bc33e883865761ebf583583760aa10fab8f0f12",
+  "results/fiorillo_v0_5/predictions/lightgbm_tuned_readmit_window_validation.csv": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198",
+  "results/fiorillo_v0_5/predictions/xgboost_codes_readmit_window_validation.csv": "5827471e05bd5f9ecbd70891a0ec75866b06cdbf828d7555dfe2c94a530a5b8e",
+  "results/fiorillo_v0_5/predictions/catboost_codes_readmit_window_validation.csv": "502b66b11ca1729b3a90f4033079056106ad03ff081eded25539fcbe923d56f3"
+ },
+ "time_utc": "2026-10-02T13:40:31Z"
+}

@@ -1,0 +1,905 @@
+{
+ "plan": "docs/prompt_session9.md, HAND-OFF ANALYSES (I-34 and I-35; secondary and descriptive)",
+ "source": "src/eval/handoff_curves_session9.py curves",
+ "written_utc": "2026-10-01T14:04:20Z",
+ "split": "validation",
+ "seed": 20260927,
+ "resamples": 1000,
+ "hand_off_rates_percent": [
+  0,
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "coverages_percent": [
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "registered_rates_percent": [
+  10,
+  20,
+  30,
+  50
+ ],
+ "definitions": {
+  "items": "validation: the records marked calibrate (a record without the key counts as marked, as session 8 read them); test: every record; rows follow the large model's file (handoff_session8.aligned)",
+  "ranking": "confidence is Fiorillo's calibrated top probability; the least confident is handed off first; at hand-off rate r the floor(r n) least confident items go to the large model (session 8's order and count)",
+  "ties": "among exact ties the lower record ID, as text, is handed off first, in every order; inside a resample copies of one item are ordered by their place in the resample (key: the ID's rank times the resample's size plus the place)",
+  "risk_coverage": "at coverage c percent, the error rate of the n - floor((100 - c) n / 100) most confident answers, those the confidence rule keeps at hand-off rate 100 - c percent",
+  "aurc": "per item: the mean over k = 1 to n of the error rate of the k most confident answers (the reverse of the hand-off order, so among exact ties the higher ID counts as more confident)",
+  "e_aurc": "AURC minus the AURC, by the same rule, of a perfect ranking of the same answers (every right answer first)",
+  "augrc": "Traub et al. 2024 (arXiv:2407.01032, equations 3, 6 and 7): the area under the generalized risk-coverage curve, the generalized risk being the wrong answers among those kept divided by n (all items); computed as the authors' code does: one point for each distinct confidence, the curve closed at coverage 0 with risk 0, the trapezoid rule, not multiplied by the 1,000 their code uses for display; equal to (1 - AUROC_f) acc (1 - acc) + (1 - acc)^2 / 2, checked; without ties, the per-item mean over k of (wrong among the k most confident) / n, less (1 - acc) / (2 n)",
+  "confidence": "combined accuracy, the floor(r n) least confident handed off (session 8's rule)",
+  "random_expected": "the exact expected combined accuracy when floor(r n) items drawn uniformly without replacement are handed off: acc_F + floor(r n) / n x (acc_L - acc_F)",
+  "oracle": "a bound, not a rule: first the items Fiorillo gets wrong and the large model right, then those both get right or both wrong, last those Fiorillo gets right and the large model wrong, each group in session 8's order; no rule that hands off as many of the same items can do better",
+  "large_model_confidence": "a reference, not a usable rule (it needs the large model's answer on every item): the large model's calibrated top probability, the highest handed off first",
+  "intervals": "95 percent, percentile, from the resamples of handoff_session8.resample_indices (numpy default_rng(20260927); EI: articles, integers(0, m, m) over the m articles sorted by PMCID as text, every prompt of a drawn article kept; PubMedQA: items, integers(0, n, n)); at the registered rates for every curve, and for the three areas; each statistic computed again inside each resample, the items ranked again"
+ },
+ "pairs": [
+  {
+   "question": "evidence_effect",
+   "fiorillo": "s8_ei",
+   "large_model": "gemma4_31b",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_4/predictions/s8_ei_evidence_effect_validation.csv",
+     "sha256": "997195f2b5d60d8b1d8da7de1bec264ab7d077047aa20aafe7af8260053e241b"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_4/predictions/gemma4_31b_evidence_effect_validation.csv",
+     "sha256": "5cbb020296861a52e1539e62577fba815255234f6255d847112237b3d3a22126"
+    },
+    "records": {
+     "path": "data/processed/session8/evidence_effect_validation.jsonl",
+     "sha256": "4c0e9ac86e2cb8d8d1a2f650e4488b1b6ecfebb1149c7c5a94ef4b3b5468e0ee"
+    }
+   },
+   "n": 1237,
+   "articles": 340,
+   "resampling": "articles, sorted by PMCID as text",
+   "fiorillo_alone": {
+    "accuracy": 0.936944219886823,
+    "wrong": 78
+   },
+   "large_model_alone": {
+    "accuracy": 0.8860145513338723,
+    "wrong": 141
+   },
+   "ties": {
+    "fiorillo_confidence": 0,
+    "large_model_confidence": 176
+   },
+   "room": {
+    "items": 1237,
+    "fiorillo_wrong_large_model_right": 31,
+    "fiorillo_right_large_model_wrong": 94,
+    "both_right": 1065,
+    "both_wrong": 47,
+    "share_fiorillo_wrong_large_model_right": 0.025060630557801132,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 123,
+      "fiorillo_wrong_large_model_right": 23,
+      "fiorillo_right_large_model_wrong": 23
+     },
+     "rate_20": {
+      "handed_off": 247,
+      "fiorillo_wrong_large_model_right": 25,
+      "fiorillo_right_large_model_wrong": 47
+     },
+     "rate_30": {
+      "handed_off": 371,
+      "fiorillo_wrong_large_model_right": 28,
+      "fiorillo_right_large_model_wrong": 66
+     },
+     "rate_50": {
+      "handed_off": 618,
+      "fiorillo_wrong_large_model_right": 31,
+      "fiorillo_right_large_model_wrong": 86
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     62,
+     124,
+     186,
+     248,
+     310,
+     372,
+     433,
+     495,
+     557,
+     619,
+     681,
+     743,
+     805,
+     866,
+     928,
+     990,
+     1052,
+     1114,
+     1176,
+     1237
+    ],
+    "wrong": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     2,
+     2,
+     2,
+     5,
+     6,
+     7,
+     8,
+     14,
+     20,
+     26,
+     38,
+     50,
+     78
+    ],
+    "risk": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.004618937644341801,
+     0.00404040404040404,
+     0.003590664272890485,
+     0.0032310177705977385,
+     0.007342143906020558,
+     0.008075370121130552,
+     0.008695652173913044,
+     0.009237875288683603,
+     0.015086206896551725,
+     0.020202020202020204,
+     0.024714828897338403,
+     0.03411131059245961,
+     0.04251700680272109,
+     0.06305578011317704
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.010570259497671318,
+     "low": 0.006574650703187523,
+     "high": 0.015233040106285258
+    },
+    "e_aurc": {
+     "estimate": 0.00851360878121046,
+     "low": 0.00524628863514216,
+     "high": 0.012537057610774078
+    },
+    "augrc": {
+     "estimate": 0.008678126403031299,
+     "low": 0.005607582749394869,
+     "high": 0.012347149032581002
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.0020566507164608574
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.008678126403031297,
+    "auroc_f": 0.8867613548372824,
+    "difference": 1.734723475976807e-18,
+    "per_item_right_sum": 0.00870361378383695,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     61,
+     123,
+     185,
+     247,
+     309,
+     371,
+     432,
+     494,
+     556,
+     618,
+     680,
+     742,
+     804,
+     865,
+     927,
+     989,
+     1051,
+     1113,
+     1175,
+     1237
+    ],
+    "confidence": [
+     0.936944219886823,
+     0.9409862570735651,
+     0.936944219886823,
+     0.9280517380759903,
+     0.9191592562651576,
+     0.9118835893290218,
+     0.9062247372675829,
+     0.9013742926434923,
+     0.8965238480194018,
+     0.8957154405820533,
+     0.8924818108326596,
+     0.889248181083266,
+     0.8876313662085691,
+     0.8876313662085691,
+     0.8868229587712207,
+     0.8868229587712207,
+     0.8868229587712207,
+     0.8868229587712207,
+     0.8860145513338723,
+     0.8860145513338723,
+     0.8860145513338723
+    ],
+    "random_expected": [
+     0.936944219886823,
+     0.9344327325935894,
+     0.9318800733775159,
+     0.9293274141614423,
+     0.9267747549453688,
+     0.9242220957292953,
+     0.9216694365132218,
+     0.9191579492199882,
+     0.9166052900039147,
+     0.9140526307878412,
+     0.9114999715717675,
+     0.908947312355694,
+     0.9063946531396205,
+     0.903841993923547,
+     0.9013305066303134,
+     0.8987778474142399,
+     0.8962251881981663,
+     0.8936725289820928,
+     0.8911198697660193,
+     0.8885672105499458,
+     0.8860145513338723
+    ],
+    "oracle": [
+     0.936944219886823,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9620048504446241,
+     0.9361358124494745,
+     0.8860145513338723
+    ],
+    "large_model_confidence": [
+     0.936944219886823,
+     0.936944219886823,
+     0.9385610347615198,
+     0.9377526273241714,
+     0.9377526273241714,
+     0.9361358124494745,
+     0.9361358124494745,
+     0.936944219886823,
+     0.9377526273241714,
+     0.9377526273241714,
+     0.9385610347615198,
+     0.9409862570735651,
+     0.9401778496362166,
+     0.9401778496362166,
+     0.9401778496362166,
+     0.9401778496362166,
+     0.9377526273241714,
+     0.9320937752627324,
+     0.9240097008892482,
+     0.9037995149555376,
+     0.8860145513338723
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 123,
+     "confidence": {
+      "estimate": 0.936944219886823,
+      "low": 0.921800141857691,
+      "high": 0.952459163062471
+     },
+     "random_expected": {
+      "estimate": 0.9318800733775159,
+      "low": 0.9164313553567789,
+      "high": 0.9464817279788422
+     },
+     "oracle": {
+      "estimate": 0.9620048504446241,
+      "low": 0.9488015515632985,
+      "high": 0.9744444472640439
+     },
+     "large_model_confidence": {
+      "estimate": 0.9385610347615198,
+      "low": 0.9218712559904153,
+      "high": 0.9521253977846114
+     }
+    },
+    "rate_20": {
+     "handed_off": 247,
+     "confidence": {
+      "estimate": 0.9191592562651576,
+      "low": 0.9028106849709596,
+      "high": 0.9345436991057311
+     },
+     "random_expected": {
+      "estimate": 0.9267747549453688,
+      "low": 0.9115323315536265,
+      "high": 0.941670909377322
+     },
+     "oracle": {
+      "estimate": 0.9620048504446241,
+      "low": 0.9488015515632985,
+      "high": 0.9744444472640439
+     },
+     "large_model_confidence": {
+      "estimate": 0.9377526273241714,
+      "low": 0.9216458392727043,
+      "high": 0.9521253977846114
+     }
+    },
+    "rate_30": {
+     "handed_off": 371,
+     "confidence": {
+      "estimate": 0.9062247372675829,
+      "low": 0.886174227377453,
+      "high": 0.9222224404294318
+     },
+     "random_expected": {
+      "estimate": 0.9216694365132218,
+      "low": 0.9061063893946948,
+      "high": 0.9363642220178221
+     },
+     "oracle": {
+      "estimate": 0.9620048504446241,
+      "low": 0.9488015515632985,
+      "high": 0.9744444472640439
+     },
+     "large_model_confidence": {
+      "estimate": 0.9361358124494745,
+      "low": 0.9206039056872288,
+      "high": 0.9511012400149725
+     }
+    },
+    "rate_50": {
+     "handed_off": 618,
+     "confidence": {
+      "estimate": 0.8924818108326596,
+      "low": 0.8715934463559016,
+      "high": 0.9139409172177159
+     },
+     "random_expected": {
+      "estimate": 0.9114999715717675,
+      "low": 0.8941993464052288,
+      "high": 0.9275053697822557
+     },
+     "oracle": {
+      "estimate": 0.9620048504446241,
+      "low": 0.9488015515632985,
+      "high": 0.9744444472640439
+     },
+     "large_model_confidence": {
+      "estimate": 0.9385610347615198,
+      "low": 0.9222517730496455,
+      "high": 0.9530097526459309
+     }
+    }
+   }
+  },
+  {
+   "question": "pubmedqa_answer",
+   "fiorillo": "s7_b3",
+   "large_model": "gemma4_31b",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_3/predictions/s7_b3_pubmedqa_answer_validation.csv",
+     "sha256": "96294e3693ef6a8e4c101a2d49788e85374ce288494c42ddf25ef61325971b11"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_4/predictions/gemma4_31b_pubmedqa_answer_validation.csv",
+     "sha256": "522004744e992aeb344c98844d98e5541ebec828fe48a446bd784b15e37e27e3"
+    },
+    "records": {
+     "path": "data/processed/public/pubmedqa_answer_validation.jsonl",
+     "sha256": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6"
+    }
+   },
+   "n": 150,
+   "articles": null,
+   "resampling": "items",
+   "fiorillo_alone": {
+    "accuracy": 0.7866666666666666,
+    "wrong": 32
+   },
+   "large_model_alone": {
+    "accuracy": 0.78,
+    "wrong": 33
+   },
+   "ties": {
+    "fiorillo_confidence": 0,
+    "large_model_confidence": 0
+   },
+   "room": {
+    "items": 150,
+    "fiorillo_wrong_large_model_right": 10,
+    "fiorillo_right_large_model_wrong": 11,
+    "both_right": 107,
+    "both_wrong": 22,
+    "share_fiorillo_wrong_large_model_right": 0.06666666666666667,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 15,
+      "fiorillo_wrong_large_model_right": 5,
+      "fiorillo_right_large_model_wrong": 0
+     },
+     "rate_20": {
+      "handed_off": 30,
+      "fiorillo_wrong_large_model_right": 7,
+      "fiorillo_right_large_model_wrong": 3
+     },
+     "rate_30": {
+      "handed_off": 45,
+      "fiorillo_wrong_large_model_right": 9,
+      "fiorillo_right_large_model_wrong": 7
+     },
+     "rate_50": {
+      "handed_off": 75,
+      "fiorillo_wrong_large_model_right": 10,
+      "fiorillo_right_large_model_wrong": 9
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     8,
+     15,
+     23,
+     30,
+     38,
+     45,
+     53,
+     60,
+     68,
+     75,
+     83,
+     90,
+     98,
+     105,
+     113,
+     120,
+     128,
+     135,
+     143,
+     150
+    ],
+    "wrong": [
+     0,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3,
+     6,
+     6,
+     6,
+     7,
+     7,
+     9,
+     10,
+     12,
+     15,
+     19,
+     22,
+     27,
+     32
+    ],
+    "risk": [
+     0.0,
+     0.13333333333333333,
+     0.08695652173913043,
+     0.1,
+     0.07894736842105263,
+     0.06666666666666667,
+     0.05660377358490566,
+     0.1,
+     0.08823529411764706,
+     0.08,
+     0.08433734939759036,
+     0.07777777777777778,
+     0.09183673469387756,
+     0.09523809523809523,
+     0.10619469026548672,
+     0.125,
+     0.1484375,
+     0.16296296296296298,
+     0.1888111888111888,
+     0.21333333333333335
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.10168169650962237,
+     "low": 0.045609000530223584,
+     "high": 0.16492879140702296
+    },
+    "e_aurc": {
+     "estimate": 0.07640024000472834,
+     "low": 0.028202643158866902,
+     "high": 0.13221853700421243
+    },
+    "augrc": {
+     "estimate": 0.05915555555555556,
+     "low": 0.033265555555555555,
+     "high": 0.0893611111111111
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.025281456504894044
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.05915555555555557,
+    "auroc_f": 0.783103813559322,
+    "difference": -1.3877787807814457e-17,
+    "per_item_right_sum": 0.05986666666666667,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     7,
+     15,
+     22,
+     30,
+     37,
+     45,
+     52,
+     60,
+     67,
+     75,
+     82,
+     90,
+     97,
+     105,
+     112,
+     120,
+     127,
+     135,
+     142,
+     150
+    ],
+    "confidence": [
+     0.7866666666666666,
+     0.8133333333333334,
+     0.82,
+     0.8133333333333334,
+     0.8133333333333334,
+     0.8133333333333334,
+     0.8,
+     0.8,
+     0.8066666666666666,
+     0.8,
+     0.7933333333333333,
+     0.7933333333333333,
+     0.7933333333333333,
+     0.7933333333333333,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.78,
+     0.78,
+     0.78,
+     0.78
+    ],
+    "random_expected": [
+     0.7866666666666666,
+     0.7863555555555555,
+     0.7859999999999999,
+     0.7856888888888889,
+     0.7853333333333333,
+     0.7850222222222222,
+     0.7846666666666666,
+     0.7843555555555556,
+     0.784,
+     0.7836888888888889,
+     0.7833333333333333,
+     0.7830222222222222,
+     0.7826666666666666,
+     0.7823555555555556,
+     0.782,
+     0.7816888888888889,
+     0.7813333333333333,
+     0.7810222222222223,
+     0.7806666666666667,
+     0.7803555555555556,
+     0.78
+    ],
+    "oracle": [
+     0.7866666666666666,
+     0.8333333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8533333333333334,
+     0.8333333333333334,
+     0.78
+    ],
+    "large_model_confidence": [
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7866666666666666,
+     0.7933333333333333,
+     0.7933333333333333,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8066666666666666,
+     0.8066666666666666,
+     0.8066666666666666,
+     0.82,
+     0.8333333333333334,
+     0.82,
+     0.8066666666666666,
+     0.78
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 15,
+     "confidence": {
+      "estimate": 0.82,
+      "low": 0.7533333333333333,
+      "high": 0.88
+     },
+     "random_expected": {
+      "estimate": 0.7859999999999999,
+      "low": 0.72065,
+      "high": 0.84535
+     },
+     "oracle": {
+      "estimate": 0.8533333333333334,
+      "low": 0.7933333333333333,
+      "high": 0.9066666666666666
+     },
+     "large_model_confidence": {
+      "estimate": 0.7866666666666666,
+      "low": 0.72,
+      "high": 0.8466666666666667
+     }
+    },
+    "rate_20": {
+     "handed_off": 30,
+     "confidence": {
+      "estimate": 0.8133333333333334,
+      "low": 0.7533333333333333,
+      "high": 0.8733333333333333
+     },
+     "random_expected": {
+      "estimate": 0.7853333333333333,
+      "low": 0.7213333333333334,
+      "high": 0.8427
+     },
+     "oracle": {
+      "estimate": 0.8533333333333334,
+      "low": 0.7933333333333333,
+      "high": 0.9066666666666666
+     },
+     "large_model_confidence": {
+      "estimate": 0.7866666666666666,
+      "low": 0.72,
+      "high": 0.8466666666666667
+     }
+    },
+    "rate_30": {
+     "handed_off": 45,
+     "confidence": {
+      "estimate": 0.8,
+      "low": 0.7466666666666667,
+      "high": 0.8666666666666667
+     },
+     "random_expected": {
+      "estimate": 0.7846666666666666,
+      "low": 0.7233166666666667,
+      "high": 0.8420166666666666
+     },
+     "oracle": {
+      "estimate": 0.8533333333333334,
+      "low": 0.7933333333333333,
+      "high": 0.9066666666666666
+     },
+     "large_model_confidence": {
+      "estimate": 0.7866666666666666,
+      "low": 0.72,
+      "high": 0.8533333333333334
+     }
+    },
+    "rate_50": {
+     "handed_off": 75,
+     "confidence": {
+      "estimate": 0.7933333333333333,
+      "low": 0.7331666666666666,
+      "high": 0.8534999999999999
+     },
+     "random_expected": {
+      "estimate": 0.7833333333333333,
+      "low": 0.7233333333333334,
+      "high": 0.8400000000000001
+     },
+     "oracle": {
+      "estimate": 0.8533333333333334,
+      "low": 0.7933333333333333,
+      "high": 0.9066666666666666
+     },
+     "large_model_confidence": {
+      "estimate": 0.8,
+      "low": 0.7333333333333333,
+      "high": 0.86
+     }
+    }
+   }
+  }
+ ]
+}

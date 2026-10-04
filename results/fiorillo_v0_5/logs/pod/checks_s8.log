@@ -1,0 +1,58 @@
+2026-10-01T19:19:32Z  stage checks_s8 started
+the OSF update: https://osf.io/kaxmn/, filed 2026-10-01T15:31:21Z
+2026-10-01T19:19:32Z  GPU free: 0 MiB used
+2026-10-01T19:19:32Z  s8_ei_1_none predicts test from /root/eddm_s9/code/data/processed/session9/checks/none (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 128/398 [00:00<00:00, 1270.32it/s]Loading weights:  64%|██████▍   | 256/398 [00:00<00:00, 918.86it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1429.21it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_1_none test: 1218 rows, 13.0 forward seconds
+2026-10-01T19:19:55Z  s8_ei_1_title predicts test from /root/eddm_s9/code/data/processed/session9/checks/title (1209 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 155/398 [00:00<00:00, 1537.31it/s]Loading weights:  78%|███████▊  | 309/398 [00:00<00:00, 1158.08it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1324.34it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_1_title test: 1209 rows, 13.1 forward seconds
+2026-10-01T19:20:17Z  s8_ei_1_swap predicts test from /root/eddm_s9/code/data/processed/session9/checks/swap (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 132/398 [00:00<00:00, 1263.44it/s]Loading weights:  65%|██████▌   | 259/398 [00:00<00:00, 822.34it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1282.57it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_1_swap test: 1218 rows, 220.9 forward seconds
+2026-10-01T19:24:08Z  s8_ei_2_none predicts test from /root/eddm_s9/code/data/processed/session9/checks/none (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 1540.99it/s]Loading weights:  78%|███████▊  | 312/398 [00:00<00:00, 1267.53it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1460.52it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_2_none test: 1218 rows, 12.9 forward seconds
+2026-10-01T19:24:33Z  s8_ei_2_title predicts test from /root/eddm_s9/code/data/processed/session9/checks/title (1209 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  49%|████▊     | 194/398 [00:00<00:00, 1898.21it/s]Loading weights:  96%|█████████▋| 384/398 [00:00<00:00, 1830.58it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1892.23it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_2_title test: 1209 rows, 13.0 forward seconds
+2026-10-01T19:24:55Z  s8_ei_2_swap predicts test from /root/eddm_s9/code/data/processed/session9/checks/swap (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7769.04it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_2_swap test: 1218 rows, 220.9 forward seconds
+2026-10-01T19:28:46Z  s8_ei_3_none predicts test from /root/eddm_s9/code/data/processed/session9/checks/none (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  76%|███████▋  | 304/398 [00:00<00:00, 3024.55it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 3364.77it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_3_none test: 1218 rows, 12.8 forward seconds
+2026-10-01T19:29:10Z  s8_ei_3_title predicts test from /root/eddm_s9/code/data/processed/session9/checks/title (1209 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  36%|███▌      | 143/398 [00:00<00:00, 1426.76it/s]Loading weights:  72%|███████▏  | 286/398 [00:00<00:00, 894.66it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1208.33it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_3_title test: 1209 rows, 12.9 forward seconds
+2026-10-01T19:29:33Z  s8_ei_3_swap predicts test from /root/eddm_s9/code/data/processed/session9/checks/swap (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 5618.08it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s8_ei_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_3_swap test: 1218 rows, 220.8 forward seconds
+{
+ "written": "results/fiorillo_v0_5/checks_s8.json",
+ "system": "s8_ei",
+ "name": "s8_ei",
+ "stop": false,
+ "none_macro_f1": 0.42889635215046,
+ "title_minus_none": {
+  "estimate": 0.10243090342008837,
+  "low": 0.07358694976665542,
+  "high": 0.1330507028326412
+ },
+ "swap_accuracy": 0.8103448275862069,
+ "readings": {
+  "none": "its answers depend on the article's text",
+  "title": "the title adds information about the result: a title can state the result, or the model may recall the trial, and these checks cannot tell them apart",
+  "swap": "partly"
+ }
+}
+2026-10-01T19:33:25Z  stage checks_s8 finished

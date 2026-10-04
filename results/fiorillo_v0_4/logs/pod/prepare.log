@@ -1,0 +1,120 @@
+2026-09-30T13:46:35Z  stage prepare started
+uploads present and checked: 120 files
+Wed Sep 30 13:46:35 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.211.01             Driver Version: 570.211.01     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:18:00.0 Off |                    0 |
+| N/A   18C    P0             69W /  700W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+GPU: NVIDIA H100 80GB HBM3 | torch 2.8.0+cu128
+transformers 5.17.0 | tokenizers 0.23.2 | huggingface_hub 1.33.0 | laya 0.3.20 | numpy 2.4.6 | torch 2.8.0+cu128
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:  60%|██████    | 3/5 [00:00<00:00, 26.59it/s]Fetching 5 files: 100%|██████████| 5/5 [00:01<00:00,  3.17it/s]
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:  23%|██▎       | 3/13 [00:00<00:00, 27.21it/s]Fetching 13 files:  62%|██████▏   | 8/13 [00:00<00:00, 36.56it/s]Fetching 13 files:  92%|█████████▏| 12/13 [00:04<00:00,  2.01it/s]Fetching 13 files: 100%|██████████| 13/13 [00:05<00:00,  2.43it/s]
+downloads done
+pubmedqa_answer train: 21,050 records
+pubmedqa_answer validation: 2,150 records
+pubmedqa_answer test: 500 records
+{
+  "pubmedqa_answer_train.jsonl": "fa221c9f4fc0e23fea3012e1e9ba4c3bface1c6668024faee54f799ac7ed1b99",
+  "pubmedqa_answer_validation.jsonl": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6",
+  "pubmedqa_answer_test.jsonl": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72"
+}
+readmit_window train: 55,978 records
+readmit_window validation: 6,997 records
+readmit_window test: 6,998 records
+{
+  "readmit_window_train.jsonl": "ab3be43c7f47ecd94cf7f6df1d5d652a786b2d0ccf41629be90f74b4e2746702",
+  "readmit_window_validation.jsonl": "651bd1ab5b4c63cafa5a20ed68489cdc197d110f864ed5816adf4a8dd53d3644",
+  "readmit_window_test.jsonl": "6f10d7ead393dfdcc84a1de4d1fd879b5bcc8aa0f8c4b2a7ecc97936e6bbbf3d"
+}
+session 4's records rebuilt: 6 files, SHA-256 identical to the copy of results/public_v0/checksums.json
+pqa_labeled.parquet: downloaded and checked, SHA-256 3d56bd1abc118845...
+pqa_artificial.parquet: downloaded and checked, SHA-256 cdee2d3c01369f47...
+pqa_unlabeled.parquet: downloaded and checked, SHA-256 2f390ea5e6e3dc53...
+pqa_artificial batch 1 of 11: {'rows': 20000, 'kept': 19820, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 179, '13_word_match': 1}
+pqa_artificial batch 2 of 11: {'rows': 20000, 'kept': 19811, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 187, '13_word_match': 2}
+pqa_artificial batch 3 of 11: {'rows': 20000, 'kept': 19820, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 179, '13_word_match': 1}
+pqa_artificial batch 4 of 11: {'rows': 20000, 'kept': 19803, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 194, '13_word_match': 3}
+pqa_artificial batch 5 of 11: {'rows': 20000, 'kept': 19819, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 180, '13_word_match': 1}
+pqa_artificial batch 6 of 11: {'rows': 20000, 'kept': 19821, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 179, '13_word_match': 0}
+pqa_artificial batch 7 of 11: {'rows': 20000, 'kept': 19817, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 183, '13_word_match': 0}
+pqa_artificial batch 8 of 11: {'rows': 20000, 'kept': 19773, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 219, '13_word_match': 8}
+pqa_artificial batch 9 of 11: {'rows': 20000, 'kept': 19798, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 200, '13_word_match': 2}
+pqa_artificial batch 10 of 11: {'rows': 20000, 'kept': 19798, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 197, '13_word_match': 5}
+pqa_artificial batch 11 of 11: {'rows': 11269, 'kept': 11166, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 103, '13_word_match': 0}
+pqa_unlabeled batch 1 of 4: {'rows': 20000, 'kept': 19988, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 0, '13_word_match': 12}
+pqa_unlabeled batch 2 of 4: {'rows': 20000, 'kept': 19992, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 0, '13_word_match': 8}
+pqa_unlabeled batch 3 of 4: {'rows': 20000, 'kept': 19992, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 0, '13_word_match': 8}
+pqa_unlabeled batch 4 of 4: {'rows': 1249, 'kept': 1249, 'pubid_in_pqa_labeled': 0, 'session4_validation_item': 0, '13_word_match': 0}
+{
+ "status": "assembled",
+ "seconds": 25.1,
+ "counts": {
+  "pqa_artificial": {
+   "rows": 211269,
+   "kept": 209246,
+   "pubid_in_pqa_labeled": 0,
+   "session4_validation_item": 2000,
+   "13_word_match": 23
+  },
+  "pqa_unlabeled": {
+   "rows": 61249,
+   "kept": 61221,
+   "pubid_in_pqa_labeled": 0,
+   "session4_validation_item": 0,
+   "13_word_match": 28
+  },
+  "labeler_pqa_l_train": {
+   "records": 350
+  },
+  "labeler_validation": {
+   "records": 150
+  }
+ },
+ "files": {
+  "pubmedqa_phase1_train.jsonl": 209246,
+  "pqa_u_unlabeled.jsonl": 61221,
+  "labeler_pqa_a.jsonl": 209246,
+  "labeler_pqa_u.jsonl": 61221,
+  "labeler_pqa_l_train.jsonl": 350,
+  "labeler_validation.jsonl": 150
+ }
+}
+session 7's records built on the pod: 6 files, each identical to session 7's records_manifest.json
+{"articles": 3348, "fetched_now": 3348, "missing": 0, "complete": true, "seconds": 71.0}
+EI's raw files: 3356 files, each identical to records_manifest.json
+{"all_equal": true}
+s7_b3's adapter.safetensors: SHA-256 checked
+{"records": 10046, "items": 10046, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s8/code/data/processed/session8/evidence_effect_train.jsonl"], "pad_token_id": 151643}
+{"records": 300, "items": 300, "skipped": 0, "truncated": 0, "max_len": 4096, "files": ["/root/eddm_s8/code/data/processed/session8/evidence_effect_validation_monitor.jsonl"], "pad_token_id": 151643}
+EI's items built (records, items, skipped, cut):
+{
+ "ei_monitor": {
+  "records": 300,
+  "items": 300,
+  "skipped": 0,
+  "truncated": 0
+ },
+ "ei_train": {
+  "records": 10046,
+  "items": 10046,
+  "skipped": 0,
+  "truncated": 0
+ }
+}
+2026-09-30T13:49:48Z  stage prepare finished

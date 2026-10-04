@@ -1,0 +1,40 @@
+{
+ "plan": "docs/prompt_session10.md, S9_LONG_3 (I-102)",
+ "label": "descriptive: s9_long_3 was not calibrated in session 9 (I-102); no frozen system, comparison or file of session 9 depends on it",
+ "system": "s9_long_3",
+ "family": "temperature",
+ "predictions": "results/fiorillo_v0_5/predictions/s9_long_3_evidence_effect_test.csv",
+ "n": 1218,
+ "articles": 333,
+ "interval": "95 percent percentile interval over article resamples: compare_session8.py's cluster_bootstrap with compare_session9.py's RESAMPLES and SEED",
+ "resamples": 1000,
+ "seed": 20260927,
+ "metrics": {
+  "log_loss": {
+   "estimate": 0.21387585273864695,
+   "low": 0.17252484802231194,
+   "high": 0.2625596511171831
+  },
+  "ece": {
+   "estimate": 0.016380245133703304,
+   "low": 0.011778400926372824,
+   "high": 0.03277112734349173
+  },
+  "brier": {
+   "estimate": 0.10842501491932025,
+   "low": 0.0873833976009855,
+   "high": 0.133485884828127
+  },
+  "accuracy": {
+   "estimate": 0.9318555008210181,
+   "low": 0.9154462352412468,
+   "high": 0.9466884638271238
+  },
+  "macro_f1": {
+   "estimate": 0.9301293299220785,
+   "low": 0.913023718271984,
+   "high": 0.9452998330527329
+  }
+ },
+ "time_utc": "2026-10-03T07:08:48Z"
+}

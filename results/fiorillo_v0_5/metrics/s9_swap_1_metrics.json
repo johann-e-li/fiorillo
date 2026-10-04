@@ -1,0 +1,145 @@
+{
+  "system": "s9_swap_1",
+  "arm": "B",
+  "base_dir": "/root/eddm_s9/models/qwen3_4b_base",
+  "init": "/root/eddm_s9/models/s7_b3",
+  "keep": "last",
+  "freeze_steps": 0,
+  "eval_every": 80,
+  "lr_adapters": 5e-05,
+  "lr_head": 0.0001,
+  "lora": {
+    "r": 16,
+    "alpha": 32.0,
+    "dropout": 0.05,
+    "wrapped_layers": 252
+  },
+  "gradient_checkpointing": false,
+  "autocast": "torch.bfloat16",
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  },
+  "rows": {
+    "train": 10557,
+    "validation": 200,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 1,
+  "grad_accum": 32,
+  "optimizer_steps": 330,
+  "max_len": 4096,
+  "elapsed_seconds": 3982.4,
+  "train_seconds": 3890.5,
+  "sequences_per_second": 2.71,
+  "validation_history": [
+    {
+      "n": 200,
+      "accuracy": 0.92,
+      "log_loss": 0.2076,
+      "ece": 0.0347,
+      "selection_log_loss": 0.2076,
+      "per_question": {
+        "evidence_effect": {
+          "n": 200,
+          "accuracy": 0.92,
+          "log_loss": 0.2076,
+          "ece": 0.0347
+        }
+      },
+      "epoch": 1,
+      "step": 80,
+      "elapsed_seconds": 948.8
+    },
+    {
+      "n": 200,
+      "accuracy": 0.94,
+      "log_loss": 0.1573,
+      "ece": 0.0357,
+      "selection_log_loss": 0.1573,
+      "per_question": {
+        "evidence_effect": {
+          "n": 200,
+          "accuracy": 0.94,
+          "log_loss": 0.1573,
+          "ece": 0.0357
+        }
+      },
+      "epoch": 1,
+      "step": 160,
+      "elapsed_seconds": 1898.6
+    },
+    {
+      "n": 200,
+      "accuracy": 0.95,
+      "log_loss": 0.1649,
+      "ece": 0.0293,
+      "selection_log_loss": 0.1649,
+      "per_question": {
+        "evidence_effect": {
+          "n": 200,
+          "accuracy": 0.95,
+          "log_loss": 0.1649,
+          "ece": 0.0293
+        }
+      },
+      "epoch": 1,
+      "step": 240,
+      "elapsed_seconds": 2848.4
+    },
+    {
+      "n": 200,
+      "accuracy": 0.95,
+      "log_loss": 0.1677,
+      "ece": 0.0282,
+      "selection_log_loss": 0.1677,
+      "per_question": {
+        "evidence_effect": {
+          "n": 200,
+          "accuracy": 0.95,
+          "log_loss": 0.1677,
+          "ece": 0.0282
+        }
+      },
+      "epoch": 1,
+      "step": 320,
+      "elapsed_seconds": 3795.9
+    },
+    {
+      "n": 200,
+      "accuracy": 0.95,
+      "log_loss": 0.1667,
+      "ece": 0.0251,
+      "selection_log_loss": 0.1667,
+      "per_question": {
+        "evidence_effect": {
+          "n": 200,
+          "accuracy": 0.95,
+          "log_loss": 0.1667,
+          "ece": 0.0251
+        }
+      },
+      "epoch": 1,
+      "step": 330,
+      "elapsed_seconds": 3945.1
+    }
+  ],
+  "best_validation_selection_log_loss": 0.1573,
+  "best_validation_selection_log_loss_exact": 0.1573,
+  "kept_validation_selection_log_loss_exact": 0.1667,
+  "temperature": {
+    "evidence_effect": 1.1008
+  },
+  "no_test": true,
+  "test": "not run (the test split is predicted only by the predict subcommand, after the freeze)",
+  "validation_final": {
+    "n": 200,
+    "accuracy": 0.95,
+    "log_loss": 0.1667,
+    "ece": 0.0251
+  },
+  "peak_gpu_memory_gib": 36.4
+}

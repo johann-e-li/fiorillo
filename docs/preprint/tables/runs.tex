@@ -1,0 +1,28 @@
+\begin{tabular}{llcccc}
+\toprule
+Recipe & System & Validation score & Test log loss & Test accuracy & Test ECE \\
+\midrule
+Base recipe & \texttt{s9\_b\_1} & 0.2171 & \begin{tabular}[t]{@{}c@{}}0.2239\\[-1pt]{\scriptsize (0.1789 to 0.2746)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9269\\[-1pt]{\scriptsize (0.9093 to 0.9438)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0153\\[-1pt]{\scriptsize (0.0107 to 0.0321)}\end{tabular} \\[2pt]
+ & \texttt{s9\_b\_2} & 0.2061 & \begin{tabular}[t]{@{}c@{}}0.2248\\[-1pt]{\scriptsize (0.1793 to 0.2731)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9245\\[-1pt]{\scriptsize (0.9058 to 0.9412)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0118\\[-1pt]{\scriptsize (0.0101 to 0.0306)}\end{tabular} \\[2pt]
+ & \texttt{s9\_b\_3} & 0.2094 & \begin{tabular}[t]{@{}c@{}}0.2189\\[-1pt]{\scriptsize (0.1735 to 0.2704)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9278\\[-1pt]{\scriptsize (0.9099 to 0.9436)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0060\\[-1pt]{\scriptsize (0.0093 to 0.0282)}\end{tabular} \\[2pt]
+ & \texttt{s9\_b} & 0.2067 & \begin{tabular}[t]{@{}c@{}}0.2164\\[-1pt]{\scriptsize (0.1714 to 0.2663)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9286\\[-1pt]{\scriptsize (0.9116 to 0.9446)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0126\\[-1pt]{\scriptsize (0.0105 to 0.0328)}\end{tabular} \\[2pt]
+\midrule
+Swap augmentation & \texttt{s9\_swap\_1} & 0.2100 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+ & \texttt{s9\_swap\_2} & 0.2174 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+\midrule
+First higher learning rate & \texttt{s9\_lr1\_1} & 0.2153 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+ & \texttt{s9\_lr1\_2} & 0.2015 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+\midrule
+Second higher learning rate & \texttt{s9\_lr2\_1} & 0.2053 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+ & \texttt{s9\_lr2\_2} & 0.1983 & NOT RUN & NOT RUN & NOT RUN \\[2pt]
+\midrule
+Longer inputs (chosen) & \texttt{s9\_long\_1} & 0.1816 & \begin{tabular}[t]{@{}c@{}}0.2177\\[-1pt]{\scriptsize (0.1728 to 0.2671)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9245\\[-1pt]{\scriptsize (0.9072 to 0.9408)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0215\\[-1pt]{\scriptsize (0.0137 to 0.0374)}\end{tabular} \\[2pt]
+ & \texttt{s9\_long\_2} & 0.1852 & \begin{tabular}[t]{@{}c@{}}0.2235\\[-1pt]{\scriptsize (0.1794 to 0.2738)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9294\\[-1pt]{\scriptsize (0.9118 to 0.9447)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0226\\[-1pt]{\scriptsize (0.0139 to 0.0392)}\end{tabular} \\[2pt]
+ & \texttt{s9\_long\_3}\textsuperscript{b} & 0.1823 & \begin{tabular}[t]{@{}c@{}}0.2139\\[-1pt]{\scriptsize (0.1725 to 0.2626)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9319\\[-1pt]{\scriptsize (0.9154 to 0.9467)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0164\\[-1pt]{\scriptsize (0.0118 to 0.0328)}\end{tabular} \\[2pt]
+ & \texttt{s9\_ei} & 0.1790 & \begin{tabular}[t]{@{}c@{}}0.2116\\[-1pt]{\scriptsize (0.1692 to 0.2594)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9302\\[-1pt]{\scriptsize (0.9125 to 0.9457)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0115\\[-1pt]{\scriptsize (0.0103 to 0.0316)}\end{tabular} \\[2pt]
+ & \texttt{s9\_ei\_wavg} & 0.1781 & \begin{tabular}[t]{@{}c@{}}0.2164\\[-1pt]{\scriptsize (0.1714 to 0.2645)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9269\\[-1pt]{\scriptsize (0.9089 to 0.9426)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0168\\[-1pt]{\scriptsize (0.0124 to 0.0348)}\end{tabular} \\[2pt]
+ & \texttt{s9\_ei\_wavg\_sa} & 0.2515 & \begin{tabular}[t]{@{}c@{}}0.3086\\[-1pt]{\scriptsize (0.2545 to 0.3692)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9212\\[-1pt]{\scriptsize (0.9037 to 0.9380)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0648\\[-1pt]{\scriptsize (0.0510 to 0.0818)}\end{tabular} \\[2pt]
+\midrule
+Fiorillo v0.4 & \texttt{s8\_ei} & 0.1994\textsuperscript{a} & \begin{tabular}[t]{@{}c@{}}0.1994\\[-1pt]{\scriptsize (0.1573 to 0.2486)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.9409\\[-1pt]{\scriptsize (0.9246 to 0.9554)}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.0119\\[-1pt]{\scriptsize (0.0119 to 0.0300)}\end{tabular} \\[2pt]
+\bottomrule
+\end{tabular}

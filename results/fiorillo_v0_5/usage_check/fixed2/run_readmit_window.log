@@ -1,0 +1,21 @@
+usage_check question: readmit_window
+usage_check records: data/processed/session10/usage_check_readmit_window_records.jsonl (6998 records)
+usage_check mode: fixed2
+usage_check device_requested: auto
+usage_check device_resolved: mps
+usage_check start_utc: 2026-10-03T11:04:04Z
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:632: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  frame[c] = pd.Categorical(frame[c], categories=cats[c])
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:632: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  frame[c] = pd.Categorical(frame[c], categories=cats[c])
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:632: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  frame[c] = pd.Categorical(frame[c], categories=cats[c])
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:647: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[f"{f}_code3"] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:647: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[f"{f}_code3"] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/Users/johannli/Documents/Research/ed-decision-model/models/fiorillo_v0_5/release/predict_v0_5.py:647: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[f"{f}_code3"] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+
+usage_check end_utc: 2026-10-03T11:04:06Z
+usage_check exit_status: 0

@@ -1,0 +1,21 @@
+2026-09-30T13:56:42Z  stage pilot started
+2026-09-30T13:56:42Z  GPU free: 0 MiB used
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 4329.71it/s]
+{"setting": "a", "micro_batch": 1, "grad_accum": 32, "gradient_checkpointing": false, "steps": 30, "train_items_per_second": 2.8557667737879053, "peak_gpu_memory_gib": 36.397950172424316, "out_of_memory": false, "timed_steps": [11, 30], "passes": true}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7133.14it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+{"setting": "b", "micro_batch": 4, "grad_accum": 8, "gradient_checkpointing": true, "steps": 30, "train_items_per_second": 1.292276985725993, "peak_gpu_memory_gib": 15.386985778808594, "out_of_memory": false, "timed_steps": [11, 30], "passes": true}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 105/398 [00:00<00:00, 1033.13it/s]Loading weights:  53%|█████▎    | 209/398 [00:00<00:00, 787.92it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1305.19it/s]
+{
+  "chosen": {
+    "setting": "a",
+    "micro_batch": 1,
+    "grad_accum": 32,
+    "gradient_checkpointing": false,
+    "train_items_per_second": 2.8557667737879053,
+    "peak_gpu_memory_gib": 36.397950172424316
+  },
+  "stop_and_ask": false,
+  "validation_items_per_second": 5.3708220358516785
+}
+2026-09-30T14:15:54Z  stage pilot finished

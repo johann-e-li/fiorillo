@@ -1,0 +1,22 @@
+{
+ "release_candidate_sha256": "72196e0fcf8d945ea1e4e38196fe491406f40e50561c93d6f84159cca40dce11",
+ "testpreds_start_utc": "2026-10-01T01:13:53Z",
+ "trees": {
+  "xgboost_tuned": {
+   "model": "xgboost_tuned.json",
+   "model_sha256": "7099c5f024908e46b6dd26bb61663b78ae9f580ae119d21240283ebd6b9d1c04",
+   "validation_reproduced_max_abs_difference": 4.999847480480213e-10,
+   "test_rows": 6998,
+   "test_predictions": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_test.csv",
+   "time_utc": "2026-10-01T02:09:11Z"
+  },
+  "catboost_tuned": {
+   "model": "catboost_tuned.cbm",
+   "model_sha256": "37296654b3908b1033c06ef54fafb9affa2956658295186d1e50a9da71191457",
+   "validation_reproduced_max_abs_difference": 4.999816394235523e-10,
+   "test_rows": 6998,
+   "test_predictions": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_test.csv",
+   "time_utc": "2026-10-01T02:09:13Z"
+  }
+ }
+}

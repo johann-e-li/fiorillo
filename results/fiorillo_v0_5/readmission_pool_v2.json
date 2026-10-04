@@ -1,0 +1,257 @@
+{
+ "plan": "docs/prompt_session9.md, THE READMISSION POOL, VERSION 2",
+ "written_utc": "2026-10-02T13:40:27Z",
+ "system": "readmission_pool_v2",
+ "rows": 6997,
+ "rule": "v0.5 uses the new pool if its out-of-fold log loss is lower than session 8's pool's by at least 0.002; otherwise it keeps session 8's pool",
+ "choice": {
+  "chosen": "session8",
+  "new_out_of_fold_log_loss": 0.8368058109340917,
+  "session8_out_of_fold_log_loss": 0.8371531263967888,
+  "session8_minus_new": 0.00034731546269717306,
+  "margin": 0.002,
+  "time_utc": "2026-10-02T13:40:26Z"
+ },
+ "chosen": "session8",
+ "members": [
+  "lightgbm_tuned",
+  "xgboost_tuned",
+  "catboost_tuned",
+  "arm_laya",
+  "s7_b3"
+ ],
+ "weights": {
+  "lightgbm_tuned": 0.0,
+  "xgboost_tuned": 0.4,
+  "catboost_tuned": 0.6,
+  "arm_laya": 0.0,
+  "s7_b3": 0.0
+ },
+ "T": 0.9957247324725937,
+ "member_files": {
+  "lightgbm_tuned": {
+   "file": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv",
+   "sha256": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198"
+  },
+  "xgboost_tuned": {
+   "file": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_validation.csv",
+   "sha256": "5b59893b489d1da54aa793a27694a1505e681a5e1d0889ccfd54917235268aa9"
+  },
+  "catboost_tuned": {
+   "file": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_validation.csv",
+   "sha256": "768a4152632e371ab8d7e32302fef4ad9cf904b204c31572f667fa96d2759c05"
+  },
+  "arm_laya": {
+   "file": "results/public_v0/predictions/arm_laya_readmit_window_validation.csv",
+   "sha256": "a29839303e335d1c9bc57ab45eff457ef8edbec28baee1554afad8c5eadffe1c"
+  },
+  "s7_b3": {
+   "file": "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_validation.csv",
+   "sha256": "44e8fc5fb581de83684c65664bc33e883865761ebf583583760aa10fab8f0f12"
+  }
+ },
+ "validation_log_loss": 0.8367890633905656,
+ "validation": {
+  "auroc_30d": 0.6661154754607225,
+  "ece": 0.014970603186061032
+ },
+ "nonzero_weight_members": [
+  "xgboost_tuned",
+  "catboost_tuned"
+ ],
+ "release_files": {
+  "xgboost_tuned": [
+   "models/fiorillo_v0_4/trees/xgboost_tuned.json",
+   "models/fiorillo_v0_5/trees/recode_tables.json"
+  ],
+  "catboost_tuned": [
+   "models/fiorillo_v0_4/trees/catboost_tuned.cbm",
+   "models/fiorillo_v0_5/trees/recode_tables.json"
+  ]
+ },
+ "pools": {
+  "session8": {
+   "members": [
+    "lightgbm_tuned",
+    "xgboost_tuned",
+    "catboost_tuned",
+    "arm_laya",
+    "s7_b3"
+   ],
+   "weights": {
+    "lightgbm_tuned": 0.0,
+    "xgboost_tuned": 0.4,
+    "catboost_tuned": 0.6,
+    "arm_laya": 0.0,
+    "s7_b3": 0.0
+   },
+   "T": 0.9957247324725937,
+   "grid_points": 1001,
+   "source": "results/fiorillo_v0_4/readmission_pool.json",
+   "source_sha256": "9a1f1b224ee7016d1c35fd4966815e919e79dbfd0dd0ec54817bb0b64027325a",
+   "member_files": {
+    "lightgbm_tuned": {
+     "file": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv",
+     "sha256": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198"
+    },
+    "xgboost_tuned": {
+     "file": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_validation.csv",
+     "sha256": "5b59893b489d1da54aa793a27694a1505e681a5e1d0889ccfd54917235268aa9"
+    },
+    "catboost_tuned": {
+     "file": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_validation.csv",
+     "sha256": "768a4152632e371ab8d7e32302fef4ad9cf904b204c31572f667fa96d2759c05"
+    },
+    "arm_laya": {
+     "file": "results/public_v0/predictions/arm_laya_readmit_window_validation.csv",
+     "sha256": "a29839303e335d1c9bc57ab45eff457ef8edbec28baee1554afad8c5eadffe1c"
+    },
+    "s7_b3": {
+     "file": "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_validation.csv",
+     "sha256": "44e8fc5fb581de83684c65664bc33e883865761ebf583583760aa10fab8f0f12"
+    }
+   },
+   "validation_log_loss": 0.8367890633905656,
+   "validation_log_loss_recorded": 0.8367890633905656,
+   "validation": {
+    "auroc_30d": 0.6661154754607225,
+    "ece": 0.014970603186061032
+   },
+   "out_of_fold_log_loss": {
+    "mean": 0.8371531263967888,
+    "min": 0.8369633461722463,
+    "max": 0.8376503276122612,
+    "folds": 5,
+    "repeats": 20,
+    "seed": 20260927,
+    "grid_points": 1001
+   },
+   "out_of_fold_log_loss_recorded": 0.8371531263967888,
+   "torch_fit_on_validation": {
+    "grid_index": 229,
+    "weights": [
+     0.0,
+     0.4,
+     0.6,
+     0.0,
+     0.0
+    ],
+    "T": 0.9957247324725937,
+    "validation_log_loss": 0.8367890633905656,
+    "matches_session8": true
+   },
+   "members_alone_validation_log_loss": {
+    "lightgbm_tuned": 0.8448828492936207,
+    "xgboost_tuned": 0.839880199376958,
+    "catboost_tuned": 0.8384539732429455,
+    "arm_laya": 0.8634156925397874,
+    "s7_b3": 0.867826674308135
+   }
+  },
+  "new": {
+   "members": [
+    "lightgbm_tuned",
+    "xgboost_tuned",
+    "catboost_tuned",
+    "arm_laya",
+    "s7_b3",
+    "xgboost_codes",
+    "catboost_codes"
+   ],
+   "weights": {
+    "lightgbm_tuned": 0.0,
+    "xgboost_tuned": 0.3,
+    "catboost_tuned": 0.3,
+    "arm_laya": 0.0,
+    "s7_b3": 0.0,
+    "xgboost_codes": 0.0,
+    "catboost_codes": 0.4
+   },
+   "T": 0.9922128243818921,
+   "grid_index": 2471,
+   "grid_points": 8008,
+   "member_files": {
+    "lightgbm_tuned": {
+     "file": "results/fiorillo_v0_5/predictions/lightgbm_tuned_readmit_window_validation.csv",
+     "sha256": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198"
+    },
+    "xgboost_tuned": {
+     "file": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_validation.csv",
+     "sha256": "5b59893b489d1da54aa793a27694a1505e681a5e1d0889ccfd54917235268aa9"
+    },
+    "catboost_tuned": {
+     "file": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_validation.csv",
+     "sha256": "768a4152632e371ab8d7e32302fef4ad9cf904b204c31572f667fa96d2759c05"
+    },
+    "arm_laya": {
+     "file": "results/public_v0/predictions/arm_laya_readmit_window_validation.csv",
+     "sha256": "a29839303e335d1c9bc57ab45eff457ef8edbec28baee1554afad8c5eadffe1c"
+    },
+    "s7_b3": {
+     "file": "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_validation.csv",
+     "sha256": "44e8fc5fb581de83684c65664bc33e883865761ebf583583760aa10fab8f0f12"
+    },
+    "xgboost_codes": {
+     "file": "results/fiorillo_v0_5/predictions/xgboost_codes_readmit_window_validation.csv",
+     "sha256": "5827471e05bd5f9ecbd70891a0ec75866b06cdbf828d7555dfe2c94a530a5b8e"
+    },
+    "catboost_codes": {
+     "file": "results/fiorillo_v0_5/predictions/catboost_codes_readmit_window_validation.csv",
+     "sha256": "502b66b11ca1729b3a90f4033079056106ad03ff081eded25539fcbe923d56f3"
+    }
+   },
+   "dropped": [
+    {
+     "member": "tabicl",
+     "status": "NOT BUILT",
+     "reason": "NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)"
+    }
+   ],
+   "validation_log_loss": 0.8363391325893289,
+   "validation_log_loss_fit": 0.8363391325893287,
+   "validation": {
+    "auroc_30d": 0.6663873409622154,
+    "ece": 0.011573183158259146
+   },
+   "out_of_fold_log_loss": {
+    "mean": 0.8368058109340917,
+    "min": 0.8365461234709026,
+    "max": 0.8371984538848111,
+    "folds": 5,
+    "repeats": 20,
+    "seed": 20260927,
+    "grid_points": 8008
+   },
+   "members_alone_validation_log_loss": {
+    "lightgbm_tuned": 0.8448828492936207,
+    "xgboost_tuned": 0.839880199376958,
+    "catboost_tuned": 0.8384539732429455,
+    "arm_laya": 0.8634156925397874,
+    "s7_b3": 0.867826674308135,
+    "xgboost_codes": 0.8422975525647731,
+    "catboost_codes": 0.8380030720047967
+   }
+  }
+ },
+ "folds": {
+  "folds": 5,
+  "repeats": 20,
+  "seed": 20260927,
+  "rows_in_the_order_of": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv",
+  "method": "calibration_family_cv.py's folds_for with numpy's default_rng(seed), as session 8's pool drew them",
+  "note": "the weights and T are refitted in each fold, for both pools, by the same torch fit"
+ },
+ "fit": {
+  "method": "softmax((sum of w_m log p_m) / T); log p clipped at 1e-12; weights in steps of 0.1 summing to 1 (itertools.product order); T in [0.1, 10] by session 8's damped Newton method on 1 / T; the lowest validation log loss kept, the first in grid order among exact ties",
+  "device": "cuda",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.8.0+cu128",
+  "dtype": "float64",
+  "chunk": 1024,
+  "newton_iterations": 40,
+  "newton_tolerance": 1e-08
+ },
+ "predictions": "results/fiorillo_v0_5/predictions/readmission_pool_v2_readmit_window_validation.csv",
+ "predictions_sha256": "505e6b32d8c9e3a964f57965c9643549d8690749bcb5251e9b30888e7a81e955",
+ "seconds": 8.9
+}

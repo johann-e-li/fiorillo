@@ -1,0 +1,269 @@
+{
+ "plan": "docs/prompt_session9.md, step 0 (d), with corrections 1 to 5",
+ "written_utc": "2026-10-01T08:12:33Z",
+ "read_utc": {
+  "pypi_huggingface_github": "2026-10-01T07:56:06Z",
+  "biogpt_scripts": [
+   "2026-10-01T07:47:32Z",
+   "2026-10-01T07:57:22Z"
+  ],
+  "tabicl_readme": "2026-10-01T08:05:28Z"
+ },
+ "qwen3_4b_base": {
+  "repo": "Qwen/Qwen3-4B-Base",
+  "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "license": "apache-2.0",
+  "gated": false,
+  "last_modified": "2025-07-26T03:45:37.000Z",
+  "weights": {
+   "model-00001-of-00003.safetensors": {
+    "bytes": 3957900840,
+    "sha256": "4c807e2503d68ae373d508689d00a41f4b33f33c2536da97ab81a20caddc1241"
+   },
+   "model-00002-of-00003.safetensors": {
+    "bytes": 3987450520,
+    "sha256": "f4707585548b2fc75a6b1d732e8465c62040a8699903c32850781beeb9b27826"
+   },
+   "model-00003-of-00003.safetensors": {
+    "bytes": 99630640,
+    "sha256": "c7b1aa8fb672de2e00423c99876926022e50b18d4f0d140670788510a27f9965"
+   }
+  },
+  "note": "the revision s8_ei used (docs/fiorillo_v0_4.md), and the repository's current revision when read"
+ },
+ "tabicl": {
+  "version": "2.2.0",
+  "newest_on_pypi_when_read": true,
+  "uploaded": "2026-09-02T15:13:36.629078Z",
+  "license": "BSD-3-Clause (the wheel's tabicl-2.2.0.dist-info/licenses/LICENSE; the code under src/tabicl/forecast, derived from TabPFN-TS, is Apache-2.0 and is not used)",
+  "requires_python": ">=3.10",
+  "requires": [
+   "einops>=0.7",
+   "huggingface-hub",
+   "numpy",
+   "psutil",
+   "scikit-learn>=1.3.0",
+   "scipy",
+   "torch>=2.2",
+   "tqdm>=4.64.0"
+  ],
+  "files": {
+   "tabicl-2.2.0-py3-none-any.whl": {
+    "sha256": "c80b8ec2719be26bc0bf1dd758a2361f58019d8f7877038b785529a425789ce4",
+    "bytes": 310448
+   },
+   "tabicl-2.2.0.tar.gz": {
+    "sha256": "dfc41f2acd9603e4402cedae9e42f9922cfb8cfc9fcf7901d773e26609e47e21",
+    "bytes": 268084
+   }
+  },
+  "source": {
+   "repo": "github.com/soda-inria/tabicl",
+   "tag": "v2.2.0",
+   "commit": "0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3"
+  },
+  "estimator": "tabicl.TabICLClassifier",
+  "defaults": {
+   "n_estimators": 8,
+   "norm_methods": null,
+   "feat_shuffle_method": "latin",
+   "class_shuffle_method": "shift",
+   "outlier_threshold": 4.0,
+   "softmax_temperature": 0.9,
+   "average_logits": true,
+   "support_many_classes": true,
+   "batch_size": 8,
+   "kv_cache": false,
+   "use_amp": "auto",
+   "use_fa3": "auto",
+   "offload_mode": "auto",
+   "random_state": 42
+  },
+  "random_state_used": 20260927,
+  "checkpoint": {
+   "repo": "jingang/TabICL",
+   "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+   "file": "tabicl-classifier-v2-20260212.ckpt",
+   "bytes": 110368038,
+   "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+   "license": "bsd-3-clause (the card's metadata; the card states no other terms)",
+   "gated": false,
+   "load": "download with huggingface_hub.hf_hub_download(repo_id='jingang/TabICL', filename='tabicl-classifier-v2-20260212.ckpt', revision=<this revision>), check its SHA-256, and pass its path as model_path with allow_auto_download=False, so that no other revision is fetched"
+  },
+  "documentation": {
+   "readme": "README.md at tag v2.2.0, sha256 82b000c9c915c73ae70a444622aa0422d440d7a12952411ecdd59cd33e7f76fe",
+   "inputs": "pandas DataFrames or numpy arrays; categorical columns (string, object, category and boolean types) are detected and ordinal-encoded, with a separate category for missing values; missing numerical values (NaN) are mean-imputed",
+   "context": "the README reports strong results with 300 to 100,000 training samples and up to 2,000 features, and larger sets (for example 500,000 samples) through CPU and disk offloading; it sets no largest context below the 55,978 training records, so the whole training split is the context (THE READMISSION POOL, VERSION 2)"
+  }
+ },
+ "biogpt_large_pubmedqa": {
+  "repo": "microsoft/BioGPT-Large-PubMedQA",
+  "revision": "39c04fb31dfc8094b0f04c7bb7973cf612606c0c",
+  "created": "2023-02-03T20:33:43.000Z",
+  "last_modified": "2023-02-04T07:50:25.000Z",
+  "license": "mit (the card's metadata; the repository holds no license file)",
+  "gated": false,
+  "files": {
+   "pytorch_model.bin": {
+    "bytes": 6285062061,
+    "sha256": "e4c7b87ba705e6102ac59bfae004a161fce5648893f8571ae4381e353842ad9e"
+   },
+   "vocab.json": {
+    "bytes": 1241528
+   },
+   "merges.txt": {
+    "bytes": 565613
+   },
+   "config.json": {
+    "bytes": 674
+   },
+   "tokenizer_config.json": {
+    "bytes": 272
+   },
+   "special_tokens_map.json": {
+    "bytes": 119
+   }
+  },
+  "architecture": {
+   "class": "BioGptForCausalLM",
+   "num_hidden_layers": 48,
+   "hidden_size": 1600,
+   "num_attention_heads": 25,
+   "vocab_size": 57726,
+   "max_position_embeddings": 2048,
+   "torch_dtype": "float32"
+  },
+  "tokenizer": "BioGptTokenizer at the same revision (Moses tokenization through sacremoses, then BPE); it puts </s> (id 2) before the text, as fairseq's language model puts its eos before the sequence (src/language_model_prompt_dataset.py, collate, move_eos_to_beginning)",
+  "fairseq_preprocessing": "Moses tokenizer.perl -l en -a (aggressive hyphen splitting, escaping on), fastBPE with biogpt_large_bpecodes, and fairseq-preprocess with biogpt_large_dict.txt (examples/QA-PubMedQA/preprocess_large.sh); the tokenizer at the revision stands in for these, and step 4 checks it on made-up text",
+  "setting": "reasoning-required: the question and the contexts, without the long answer",
+  "source": "'question: {q} context: {c} ', where q is the question stripped and c is the contexts, each stripped, joined with single spaces, with newlines replaced by spaces, runs of whitespace collapsed to one space, and stripped (examples/QA-PubMedQA/rebuild_data.py, build_source_seq without long_answer)",
+  "learned_prompt": {
+   "tokens": [
+    "learned1",
+    "learned2",
+    "learned3",
+    "learned4",
+    "learned5",
+    "learned6",
+    "learned7",
+    "learned8",
+    "learned9"
+   ],
+   "ids": [
+    57717,
+    57718,
+    57719,
+    57720,
+    57721,
+    57722,
+    57723,
+    57724,
+    57725
+   ],
+   "count": 9,
+   "basis": "the model's vocabulary (57,726 entries) adds learned1 to learned9 (ids 57717 to 57725) after BioGPT-Large's 57,717 (microsoft/biogpt-large's vocab.json); the task adds one dictionary entry for each learned token (src/language_modeling_prompt.py, setup_prompt: encode_line adds missing words)"
+  },
+  "order": "source tokens (without their eos), then learned1 to learned9, then the target (collate's make_sentence with prefix False: torch.cat([source, prompt, target])); the task adds <seqsep> to the dictionary only when prefix is True (setup_prompt), and the vocabulary has no <seqsep>",
+  "target": "the answer to the question given the context is {yes|no|maybe}. (rebuild_data.py, build_target_seq)",
+  "target_opening_words": "the answer to the question given the context is",
+  "answer_words": {
+   "yes": {
+    "token": "yes</w>",
+    "id": 22134
+   },
+   "no": {
+    "token": "no</w>",
+    "id": 126
+   },
+   "maybe": {
+    "token": "maybe</w>",
+    "id": 28139
+   }
+  },
+  "source_truncation": {
+   "max_source_positions": 384,
+   "rule": "a source longer than 384 tokens keeps its first 383 and '...' (id 11774), as LanguageModelPromptDataset.__getitem__ cuts it",
+   "basis": "the task's default (src/language_modeling_prompt.py); the fine-tuning command is not in the repository at this commit, and the checkpoint's own arguments could not be read (correction 5)"
+  },
+  "checkpoint_arguments": {
+   "status": "not read in step 0: the archive's host is outside the network allowlists of the linked shell and the cloud workspace",
+   "archive": "https://msralaphilly2.blob.core.windows.net/release/BioGPT/checkpoints/QA-PubMedQA-BioGPT-Large.tgz (with the read-only signature in microsoft/BioGPT's README at the commit)",
+   "rule": "correction 5: the pod reads them before scoring and uses them if they differ"
+  },
+  "published_inference": "infer_large.sh runs inference.py (beam 1, generation); postprocess.py takes the words after 'the answer to the question given the context is', and hard_match_evaluation.py scores accuracy; this project reads the next token's probabilities after the opening words instead (PUBMEDQA BESIDE BIOGPT-LARGE)",
+  "fine_tuning_data": "PQA-L fold 0's train_set.json and dev_set.json (examples/QA-PubMedQA/README.md)",
+  "scripts": {
+   "repo": "microsoft/BioGPT",
+   "commit": "648f7d6503c038b44e70b7510bf431c7be94e891",
+   "commit_date": "2023-11-13T15:41:16Z",
+   "license": "MIT",
+   "files_sha256": {
+    "README.md": "2866ed179e49fe8df03a98d52187f222cf2394316f6b71be0176def26cefc851",
+    "examples/QA-PubMedQA/README.md": "0c83ff2687bae415274e9b5b2f044b785f05af9174f20b7eecec0b426f0dd0e1",
+    "examples/QA-PubMedQA/hard_match_evaluation.py": "17e9c6f0d1812c852f3097aa382ee2d021d68698873770699161d0138ac2afa9",
+    "examples/QA-PubMedQA/infer.sh": "f0c47d938f5658d59b0400836c7137240e4e8250e03045e585e53a92316500f5",
+    "examples/QA-PubMedQA/infer_large.sh": "1e4c8a5af2efcb09805aa4f3f991ca6950076888cb0654863c69d5e60f623c6d",
+    "examples/QA-PubMedQA/postprocess.py": "5a56dec4755bcbc32112bc2812cec0fe6a617a8b1132125284ec9d73e74b2f1d",
+    "examples/QA-PubMedQA/preprocess.sh": "ae6ba7aea9577fa2d55e114eb8692c689eae020a4a961d80d39d334e05631a03",
+    "examples/QA-PubMedQA/preprocess_large.sh": "e1b36d50aabcb3d4d4ff7f55c06170170afc05323ef3f95636652e1351998a57",
+    "examples/QA-PubMedQA/rebuild_data.py": "7cb50bdea7a5f0ed1915d3b64cbcca56bdb6b67c3967c4ec56207b5d831c9047",
+    "inference.py": "688cec8244754e1877dfda246fdc8dcd34dbfbaf6bd88411175112f960c271f6",
+    "src/language_model_prompt_dataset.py": "9fc68515f69b7953c7bf770ea14da8245a5eadaadd277acc479e0f0c200cab5b",
+    "src/language_modeling_prompt.py": "9deafa98628df8cb81f1158e7d04cf2685b0f3577195fe38a5e919e3c8a64c27",
+    "src/transformer_lm_prompt.py": "8559b2ec930cbd77a5da12c8d9b08d7e745979e87e95f6aba12db475bce1811c"
+   }
+  }
+ },
+ "sacremoses": {
+  "version": "0.2.0",
+  "uploaded": "2026-08-14T22:32:16.537823Z",
+  "license": "MIT (its classifier)",
+  "requires_python": ">=3.9",
+  "files": {
+   "sacremoses-0.2.0-py3-none-any.whl": {
+    "sha256": "d413d118486b3a449f829566b3759a4b33bbc56b12496369316b52708585f594",
+    "bytes": 867756
+   },
+   "sacremoses-0.2.0.tar.gz": {
+    "sha256": "5aec4792efc2726710243d3566b381990e6b678cb1fd7b9d2dae216b4b8f1b1e",
+    "bytes": 868464
+   }
+  }
+ },
+ "gemma_4_31b_it": {
+  "repo": "google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "gated": false,
+  "license": "apache-2.0 (model card license_link https://ai.google.dev/gemma/docs/gemma_4_license)",
+  "created": "2026-03-11",
+  "last_modified": "2026-07-20",
+  "architecture": "Gemma4ForConditionalGeneration (text, image; text only here)",
+  "weights_bytes": 62546338248,
+  "weights_gb": 62.55,
+  "text_config": {
+   "num_hidden_layers": 60,
+   "hidden_size": 5376,
+   "num_attention_heads": 32,
+   "num_key_value_heads": 16,
+   "head_dim": 256,
+   "vocab_size": 262144,
+   "sliding_window": 1024
+  },
+  "thinking_off": "apply_chat_template(messages, add_generation_prompt=True, enable_thinking=False) with no system message; the template's default for enable_thinking is false, and with it off the generation prompt ends with an empty thought block, '<|channel>thought\\n<channel|>', so the next token is the answer (model card, section 'Thinking Mode Configuration': 'if thinking is disabled, the model will still generate the tags but with an empty thought block')"
+ },
+ "vllm": {
+  "version": "0.30.0",
+  "released": "2026-09-22",
+  "license": "Apache-2.0",
+  "gemma_4": "supported; the 0.30.0 release notes list Gemma 4 work (QKV fuser for Gemma4, #55690; pruned sliding-window tiles for Gemma 4 multimodal prompts, #53147)",
+  "requires": "torch==2.13.0; transformers>=5.10.4",
+  "builds": {
+   "default": "vllm==0.30.0 from PyPI, built for CUDA 13.0 (the release's default)",
+   "cu129": "vllm-0.30.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl from https://github.com/vllm-project/vllm/releases/tag/v0.30.0, with torch==2.13.0 from https://download.pytorch.org/whl/cu129"
+  },
+  "rule_on_the_pod": "prepare_large reads the driver's CUDA version from nvidia-smi: 13.0 or later, the default build; otherwise the cu129 build; then checks that vLLM imports and CUDA starts in /root/eddm_s8/vllm_env/ (correction 1)"
+ },
+ "copied_from": "results/fiorillo_v0_4/fixed_versions.json (written 2026-09-30T10:37:01Z): gemma_4_31b_it and vllm, unchanged",
+ "pod_image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+ "python_packages": "the versions in uv.lock where it lists them (transformers 5.17.0); tabicl and sacremoses as above, tabicl in its own environment (/root/eddm_s9/tabicl_env/)"
+}

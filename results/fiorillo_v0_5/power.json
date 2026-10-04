@@ -1,0 +1,173 @@
+{
+ "source": "src/eval/power_session9.py plan",
+ "plan": "docs/prompt_session9.md, POWER AND THE BAR and step 1",
+ "note": "Derived: session 8's normal approximation. Differences are 'v0.5's EI specialist minus the large model of criterion 3' in EI test log loss; a gain is the negative of a difference. se = s sqrt(D / n), with s and D as session 8 measured them on validation for s8_ei and gemma4_31b (they stand in for v0.5's specialist and the criterion-3 large model). The real gains of the 'worse than s8_ei' rows are s8_ei's test gain over gemma4_31b (session 8's criterion 3 estimate) less each amount. No prediction file is read.",
+ "inputs": {
+  "power_validation": "results/fiorillo_v0_4/power_validation.json",
+  "comparison": "results/fiorillo_v0_4/comparison.json",
+  "s": 0.6974704298234246,
+  "D": 1.6464836163185048,
+  "n_test": 1218,
+  "s8_ei_minus_gemma4_31b": {
+   "estimate": -0.2083554227661726,
+   "low": -0.2720161694545972,
+   "high": -0.1505168146288581
+  },
+  "s8_gain": 0.2083554227661726
+ },
+ "z_95": 1.9599639845400536,
+ "se": 0.025643710329711543,
+ "pass_line": -0.050260748676212365,
+ "real_gain_for_80_percent": 0.07184303979729068,
+ "chance_by_real_gain": [
+  {
+   "real_gain": 0.0,
+   "chance": 0.025000000000000022
+  },
+  {
+   "real_gain": 0.01,
+   "chance": 0.05820699561982173
+  },
+  {
+   "real_gain": 0.02,
+   "chance": 0.1189910307476959
+  },
+  {
+   "real_gain": 0.03,
+   "chance": 0.21473863427385587
+  },
+  {
+   "real_gain": 0.04,
+   "chance": 0.34453137735843653
+  },
+  {
+   "real_gain": 0.05,
+   "chance": 0.49594357143827594
+  },
+  {
+   "real_gain": 0.06,
+   "chance": 0.6479497317021836
+  },
+  {
+   "real_gain": 0.07,
+   "chance": 0.7792759591146063
+  },
+  {
+   "real_gain": 0.08,
+   "chance": 0.8769164243954615
+  },
+  {
+   "real_gain": 0.09,
+   "chance": 0.9393894544238457
+  },
+  {
+   "real_gain": 0.1,
+   "chance": 0.9737875250533339
+  },
+  {
+   "real_gain": 0.11,
+   "chance": 0.9900860020664437
+  },
+  {
+   "real_gain": 0.12,
+   "chance": 0.9967314204793574
+  },
+  {
+   "real_gain": 0.13,
+   "chance": 0.9990629951582528
+  },
+  {
+   "real_gain": 0.14,
+   "chance": 0.9997669030717493
+  },
+  {
+   "real_gain": 0.15,
+   "chance": 0.9999497586958068
+  },
+  {
+   "real_gain": 0.16,
+   "chance": 0.9999906293827769
+  },
+  {
+   "real_gain": 0.17,
+   "chance": 0.9999984891693818
+  },
+  {
+   "real_gain": 0.18,
+   "chance": 0.9999997896020005
+  },
+  {
+   "real_gain": 0.19,
+   "chance": 0.9999999747101223
+  },
+  {
+   "real_gain": 0.2,
+   "chance": 0.999999997377702
+  },
+  {
+   "real_gain": 0.21,
+   "chance": 0.9999999997655564
+  },
+  {
+   "real_gain": 0.22,
+   "chance": 0.999999999981935
+  },
+  {
+   "real_gain": 0.23,
+   "chance": 0.9999999999988007
+  },
+  {
+   "real_gain": 0.24,
+   "chance": 0.9999999999999314
+  },
+  {
+   "real_gain": 0.25,
+   "chance": 0.9999999999999967
+  },
+  {
+   "real_gain": 0.26,
+   "chance": 0.9999999999999998
+  },
+  {
+   "real_gain": 0.27,
+   "chance": 1.0
+  },
+  {
+   "real_gain": 0.28,
+   "chance": 1.0
+  },
+  {
+   "real_gain": 0.29,
+   "chance": 1.0
+  },
+  {
+   "real_gain": 0.3,
+   "chance": 1.0
+  }
+ ],
+ "if_worse_than_s8_ei": [
+  {
+   "worse_than_s8_ei_by": 0.025,
+   "real_gain": 0.18335542276617262,
+   "chance": 0.9999998949369904
+  },
+  {
+   "worse_than_s8_ei_by": 0.05,
+   "real_gain": 0.1583554227661726,
+   "chance": 0.9999875249697499
+  },
+  {
+   "worse_than_s8_ei_by": 0.075,
+   "real_gain": 0.13335542276617263,
+   "chance": 0.9994030909887304
+  },
+  {
+   "worse_than_s8_ei_by": 0.1,
+   "real_gain": 0.1083554227661726,
+   "chance": 0.9882576165074701
+  }
+ ],
+ "step_1_rule": "tell Johann before step 8 if criterion 3's chance is below 0.8 when v0.5's EI specialist is worse than s8_ei by 0.1 in log loss",
+ "chance_if_worse_by_0.1": 0.9882576165074701,
+ "tell_johann_before_step_8": false
+}

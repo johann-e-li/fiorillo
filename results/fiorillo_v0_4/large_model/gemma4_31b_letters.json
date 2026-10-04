@@ -1,0 +1,83 @@
+{
+ "plan": "docs/prompt_session8.md, THE LARGE MODEL",
+ "evidence_effect": {
+  "validation": {
+   "items": 1237,
+   "letters_summed_probability": {
+    "median": 0.9999999297012409,
+    "p10": 0.9999983276407702,
+    "share_below_0_5": 0.0016168148746968471
+   },
+   "answered_second_way": 1084,
+   "by_method": {
+    "top20": 153,
+    "top1000": 497,
+    "prompt": 587
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  },
+  "test": {
+   "items": 1218,
+   "letters_summed_probability": {
+    "median": 0.9999999227657607,
+    "p10": 0.9999974533094236,
+    "share_below_0_5": 0.0
+   },
+   "answered_second_way": 1052,
+   "by_method": {
+    "top20": 166,
+    "top1000": 529,
+    "prompt": 523
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  }
+ },
+ "pubmedqa_answer": {
+  "validation": {
+   "items": 150,
+   "letters_summed_probability": {
+    "median": 0.999999499488768,
+    "p10": 0.9999988930922362,
+    "share_below_0_5": 0.0
+   },
+   "answered_second_way": 109,
+   "by_method": {
+    "top20": 41,
+    "top1000": 56,
+    "prompt": 53
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  },
+  "test": {
+   "items": 500,
+   "letters_summed_probability": {
+    "median": 0.9999994969152481,
+    "p10": 0.9999984989432442,
+    "share_below_0_5": 0.0
+   },
+   "answered_second_way": 362,
+   "by_method": {
+    "top20": 138,
+    "top1000": 186,
+    "prompt": 176
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  }
+ },
+ "letter_ids": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ]
+ },
+ "variants_left_out": [],
+ "time_utc": "2026-10-01T02:08:59Z"
+}

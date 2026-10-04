@@ -1,0 +1,1086 @@
+{
+ "plan": "docs/prompt_session9.md, CALIBRATION",
+ "v05_ei": {
+  "system": "s9_ei_wavg",
+  "base_system": "s9_ei_wavg",
+  "swap_averaging": false,
+  "other_form": "s9_ei_wavg_sa",
+  "recipe": "long"
+ },
+ "s9_ei_wavg": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_ei_wavg",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1780834342525998,
+      "min": 0.17649378498598373,
+      "max": 0.18080761664233153
+     },
+     "out_of_fold_ece": {
+      "mean": 0.02087566342496783,
+      "min": 0.012522543105834883,
+      "max": 0.025344434116033543
+     },
+     "out_of_fold_log_loss_by_label": [
+      0.15262672430981433,
+      0.28984509208955034,
+      0.1358068087124368
+     ],
+     "params": [
+      0.2929051083469259
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.18084190997470512,
+      "min": 0.17749840608302297,
+      "max": 0.18602854381028314
+     },
+     "out_of_fold_ece": {
+      "mean": 0.020660932678176924,
+      "min": 0.010581861677170425,
+      "max": 0.02778955865213241
+     },
+     "out_of_fold_log_loss_by_label": [
+      0.16402348338084588,
+      0.28157767507092074,
+      0.13839888852532073
+     ],
+     "params": [
+      0.2897892068786645,
+      0.14170849995507734,
+      0.062280923857372966
+     ]
+    },
+    "vector": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1836418461809342,
+      "min": 0.17906395861531085,
+      "max": 0.19100942266619653
+     },
+     "out_of_fold_ece": {
+      "mean": 0.017506531188060663,
+      "min": 0.00929036061201857,
+      "max": 0.024400003466890304
+     },
+     "out_of_fold_log_loss_by_label": [
+      0.16566924496300006,
+      0.2843022193298246,
+      0.1420565446913076
+     ],
+     "params": [
+      0.8635262022782768,
+      0.6842259798911906,
+      0.7232803471832872,
+      -0.19011724731536112,
+      -0.16568880432464803
+     ]
+    },
+    "dirichlet_odir": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1828996861476367,
+      "min": 0.17812339076529624,
+      "max": 0.19236660564378316
+     },
+     "out_of_fold_ece": {
+      "mean": 0.015431309876826959,
+      "min": 0.009016925255732245,
+      "max": 0.021066819916300432
+     },
+     "out_of_fold_log_loss_by_label": [
+      0.1677111182870157,
+      0.28225436388011993,
+      0.14004800427577438
+     ],
+     "params": {
+      "W": [
+       [
+        0.8381637533889299,
+        0.011817230899651822,
+        -0.028428130707556325
+       ],
+       [
+        -0.008670075571155067,
+        0.6885809331547831,
+        0.028428107679338354
+       ],
+       [
+        0.008670065532749393,
+        -0.011817220796387872,
+        0.7439408156257539
+       ]
+      ],
+      "b": [
+       0.0011506806917457653,
+       -7.09645845747044e-05,
+       -0.0010797161071710581
+      ],
+      "lambda_od": 1.0,
+      "lambda_b": 1.0
+     }
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the lowest mean out-of-fold log loss among temperature, temperature_intercepts, vector and dirichlet_odir; an exact tie (within 1e-12) goes to the family listed first",
+   "time_utc": "2026-10-02T13:40:07Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.19098517394375433,
+    "log_loss": 0.17632574608867185,
+    "ece": 0.021489162137438927
+   }
+  }
+ },
+ "s9_ei_wavg_s8rule": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_ei_wavg",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1780834342525998,
+      "min": 0.17649378498598373,
+      "max": 0.18080761664233153
+     },
+     "params": [
+      0.2929051083469259
+     ],
+     "temperature": 1.3403155996342142,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.18084190997470512,
+      "min": 0.17749840608302297,
+      "max": 0.18602854381028314
+     },
+     "params": [
+      0.2897892068786645,
+      0.14170849995507734,
+      0.062280923857372966
+     ],
+     "temperature": 1.3361458079929822,
+     "intercepts": [
+      0.0,
+      0.14170849995507734,
+      0.062280923857372966
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:08Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.19098517394375433,
+    "log_loss": 0.17632574608867185,
+    "ece": 0.021489162137438927
+   }
+  }
+ },
+ "s9_ei_wavg_sa": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_ei_wavg_sa",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "families": {
+    "temperature": {
+     "params": [
+      -0.17080953922727551
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family chosen for v0.5's EI specialist, fitted on this system's own clean validation predictions",
+   "time_utc": "2026-10-02T13:40:08Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.2639101740300586,
+    "log_loss": 0.26020084798199317,
+    "ece": 0.07533592124315555
+   }
+  }
+ },
+ "s9_ei": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_ei",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "families": {
+    "temperature": {
+     "params": [
+      0.24192159098665617
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family chosen for v0.5's EI specialist, fitted on this system's own clean validation predictions",
+   "time_utc": "2026-10-02T13:40:08Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.18728243919079535,
+    "log_loss": 0.1773031608402671,
+    "ece": 0.013270048240356639
+   }
+  }
+ },
+ "s9_b": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_b",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20673370971268284,
+      "min": 0.2049982242617939,
+      "max": 0.20911177100152425
+     },
+     "params": [
+      0.326620696750864
+     ],
+     "temperature": 1.3862755586217155,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20870415665968517,
+      "min": 0.2059982213376188,
+      "max": 0.2128536235510761
+     },
+     "params": [
+      0.31962012725864675,
+      0.26163801858950997,
+      0.11198233925896542
+     ],
+     "temperature": 1.3766047303863849,
+     "intercepts": [
+      0.0,
+      0.26163801858950997,
+      0.11198233925896542
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:08Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.22325111354365415,
+    "log_loss": 0.20476417032750513,
+    "ece": 0.015721952874029034
+   }
+  }
+ },
+ "s9_b_1": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_b_1",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21711453609383038,
+      "min": 0.21555689317266694,
+      "max": 0.21952312748596606
+     },
+     "params": [
+      0.36523764609401105
+     ],
+     "temperature": 1.4408563813568385,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21921456746991336,
+      "min": 0.2162779997696834,
+      "max": 0.22358574240667856
+     },
+     "params": [
+      0.3600902356109353,
+      0.24818399495336868,
+      0.16442028101527972
+     ],
+     "temperature": 1.4334587577513278,
+     "intercepts": [
+      0.0,
+      0.24818399495336868,
+      0.16442028101527972
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:09Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.23972646559129626,
+    "log_loss": 0.21539293038811294,
+    "ece": 0.01982788269471307
+   }
+  }
+ },
+ "s9_b_2": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_b_2",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20608442450273143,
+      "min": 0.20440862473809854,
+      "max": 0.2080319256479615
+     },
+     "params": [
+      0.3335131603404601
+     ],
+     "temperature": 1.395863416458439,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20853574640726716,
+      "min": 0.20601414018464984,
+      "max": 0.213089186300503
+     },
+     "params": [
+      0.32738842759114417,
+      0.12714519020068893,
+      -0.060207607347830754
+     ],
+     "temperature": 1.3873402537685506,
+     "intercepts": [
+      0.0,
+      0.12714519020068893,
+      -0.060207607347830754
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:09Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.22447067491512962,
+    "log_loss": 0.20413905267755159,
+    "ece": 0.025369344908411216
+   }
+  }
+ },
+ "s9_b_3": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_b_3",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20941300238923982,
+      "min": 0.20782954941176177,
+      "max": 0.21160478415179254
+     },
+     "params": [
+      0.3849964297486615
+     ],
+     "temperature": 1.4696090745580124,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21064871257896223,
+      "min": 0.20799261439573558,
+      "max": 0.21449986368331272
+     },
+     "params": [
+      0.37566801374143766,
+      0.35803428746291693,
+      0.23456399145443219
+     ],
+     "temperature": 1.4559636935885405,
+     "intercepts": [
+      0.0,
+      0.35803428746291693,
+      0.23456399145443219
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:10Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.23399068199899034,
+    "log_loss": 0.20755805560166543,
+    "ece": 0.022572193780576035
+   }
+  }
+ },
+ "s9_long_1": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_long_1",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.18155562441134596,
+      "min": 0.1803071451306565,
+      "max": 0.18496521812716368
+     },
+     "params": [
+      0.30417209521758376
+     ],
+     "temperature": 1.3555023114832572,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.184284938763752,
+      "min": 0.18160058053400804,
+      "max": 0.19068352687423099
+     },
+     "params": [
+      0.30263447845466596,
+      0.17530028143663262,
+      0.15245498246927888
+     ],
+     "temperature": 1.3534196699695245,
+     "intercepts": [
+      0.0,
+      0.17530028143663262,
+      0.15245498246927888
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:10Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.19562150734429018,
+    "log_loss": 0.17983365790168768,
+    "ece": 0.01972159406925594
+   }
+  }
+ },
+ "s9_long_2": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_long_2",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.18518353577660362,
+      "min": 0.18389918795149873,
+      "max": 0.18804699984038725
+     },
+     "params": [
+      0.27530900968111593
+     ],
+     "temperature": 1.3169375584538878,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.18812618768123146,
+      "min": 0.18519032910951522,
+      "max": 0.19455813849825662
+     },
+     "params": [
+      0.27483877201138857,
+      0.006961577285225448,
+      -0.016696720420583757
+     ],
+     "temperature": 1.3163184303853026,
+     "intercepts": [
+      0.0,
+      0.006961577285225448,
+      -0.016696720420583757
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:11Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.19739524974655268,
+    "log_loss": 0.18360971900821382,
+    "ece": 0.02439214668323878
+   }
+  }
+ },
+ "s9_lr1_1": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_lr1_1",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21529627523306932,
+      "min": 0.21369169363724355,
+      "max": 0.2192406732413712
+     },
+     "params": [
+      0.3674492777124552
+     ],
+     "temperature": 1.4440465513275282,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.218346456750414,
+      "min": 0.21531723181925808,
+      "max": 0.22565211099852256
+     },
+     "params": [
+      0.3646277880718283,
+      0.09831489387769653,
+      0.022051821839094515
+     ],
+     "temperature": 1.43997793142595,
+     "intercepts": [
+      0.0,
+      0.09831489387769653,
+      0.022051821839094515
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:11Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.2409990835917004,
+    "log_loss": 0.2134785926961713,
+    "ece": 0.025743255897885373
+   }
+  }
+ },
+ "s9_lr1_2": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_lr1_2",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.2014746142371678,
+      "min": 0.20002847592371678,
+      "max": 0.20333481350143198
+     },
+     "params": [
+      0.3944247675553222
+     ],
+     "temperature": 1.4835305705125448,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20386845468875908,
+      "min": 0.20088975336460904,
+      "max": 0.20948780574395418
+     },
+     "params": [
+      0.39122212296154296,
+      0.17411718547867053,
+      0.1843972573424227
+     ],
+     "temperature": 1.4787869494719095,
+     "intercepts": [
+      0.0,
+      0.17411718547867053,
+      0.1843972573424227
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:12Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.22849655704363409,
+    "log_loss": 0.19967562483089016,
+    "ece": 0.02371401578306544
+   }
+  }
+ },
+ "s9_lr2_1": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_lr2_1",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20596239268896593,
+      "min": 0.20458341737531383,
+      "max": 0.20772277814313717
+     },
+     "params": [
+      0.42429616844065016
+     ],
+     "temperature": 1.5285142244276528,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.2053419829189364,
+      "min": 0.20267662797011252,
+      "max": 0.209093072816845
+     },
+     "params": [
+      0.41626141607635403,
+      0.4966588443914263,
+      0.49867791172931164
+     ],
+     "temperature": 1.5162821976077043,
+     "intercepts": [
+      0.0,
+      0.4966588443914263,
+      0.49867791172931164
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:12Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.24036061036251888,
+    "log_loss": 0.20086105119521033,
+    "ece": 0.01904183277240755
+   }
+  }
+ },
+ "s9_lr2_2": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_lr2_2",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.19833197305560718,
+      "min": 0.19721458348453597,
+      "max": 0.2010629774796281
+     },
+     "params": [
+      0.3393003151797949
+     ],
+     "temperature": 1.4039649138833608,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.19988192611050182,
+      "min": 0.1971243145927388,
+      "max": 0.20352221839909557
+     },
+     "params": [
+      0.3278396234635848,
+      0.36362587319045503,
+      0.24666510604052921
+     ],
+     "temperature": 1.3879663572017424,
+     "intercepts": [
+      0.0,
+      0.36362587319045503,
+      0.24666510604052921
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:13Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.21821860122464173,
+    "log_loss": 0.19685018747453514,
+    "ece": 0.024416798331503148
+   }
+  }
+ },
+ "s9_swap_1": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_swap_1",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20997632376328226,
+      "min": 0.20855630519854126,
+      "max": 0.2124623262956048
+     },
+     "params": [
+      0.18583095837339153
+     ],
+     "temperature": 1.2042186800868686,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.2123293524901746,
+      "min": 0.20953918417002057,
+      "max": 0.2169587030877579
+     },
+     "params": [
+      0.18266583837430092,
+      0.16317764099099405,
+      0.11623059138325237
+     ],
+     "temperature": 1.2004132090224617,
+     "intercepts": [
+      0.0,
+      0.16317764099099405,
+      0.11623059138325237
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:13Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.21442663580512528,
+    "log_loss": 0.2081960561513076,
+    "ece": 0.01929415368139724
+   }
+  }
+ },
+ "s9_swap_2": {
+  "evidence_effect": {
+   "source": {
+    "system": "s9_swap_2",
+    "kind": "logits (runs) or the mean of the runs' softmaxed logits; swap-averaged where named _sa",
+    "calibrate_items": "the 654 clean validation prompts (data/processed/session9/clean/)"
+   },
+   "n_calibrate": 654,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21744065375691393,
+      "min": 0.2156814283240398,
+      "max": 0.22061839066728375
+     },
+     "params": [
+      0.14505272967988186
+     ],
+     "temperature": 1.1561005294716582,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.21975350645681777,
+      "min": 0.21691918485020797,
+      "max": 0.22348280404396964
+     },
+     "params": [
+      0.1392798972017221,
+      0.17044381665165695,
+      0.11294762317981523
+     ],
+     "temperature": 1.1494457816404224,
+     "intercepts": [
+      0.0,
+      0.17044381665165695,
+      0.11294762317981523
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:14Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.21917194938316611,
+    "log_loss": 0.21536890079410073,
+    "ece": 0.013248371302236299
+   }
+  }
+ },
+ "gemma4_31b_long": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_5/large_model/gemma4_31b_long-raw_evidence_effect_validation.csv",
+    "kind": "raw probabilities (printed)"
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.3896007406856964,
+      "min": 0.388936461274723,
+      "max": 0.3905279889155647
+     },
+     "params": [
+      1.9673437755268908
+     ],
+     "temperature": 7.1516548360426855,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.33839667502777226,
+      "min": 0.3371167155972894,
+      "max": 0.3396940687028972
+     },
+     "params": [
+      1.8291951661180084,
+      -1.8226614702970938,
+      -1.207807066583259
+     ],
+     "temperature": 6.228871433807551,
+     "intercepts": [
+      0.0,
+      -1.8226614702970938,
+      -1.207807066583259
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:14Z",
+   "validation_calibrate_items": {
+    "log_loss": 0.3363335801995795,
+    "ece": 0.048397911925065505
+   }
+  }
+ },
+ "biogpt_large_pqa": {
+  "pubmedqa_answer": {
+   "source": {
+    "file": "results/fiorillo_v0_5/predictions/biogpt_large_pqa-raw_pubmedqa_answer_validation.csv",
+    "kind": "raw probabilities (printed)",
+    "caveat": "BioGPT-Large was fine-tuned on these 150 items, so its calibrated results are secondary (PUBMEDQA BESIDE BIOGPT-LARGE)"
+   },
+   "n_calibrate": 150,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.5076626417784078,
+      "min": 0.5012694550239476,
+      "max": 0.5184968721910969
+     },
+     "params": [
+      0.3829493950701542
+     ],
+     "temperature": 1.4666038108075266,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.5055773933929539,
+      "min": 0.4956360396167239,
+      "max": 0.5189097221899851
+     },
+     "params": [
+      0.3804848980832857,
+      0.4662979710113871,
+      0.06778243017551111
+     ],
+     "temperature": 1.462993820367323,
+     "intercepts": [
+      0.0,
+      0.4662979710113871,
+      0.06778243017551111
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "session 8's rule: the lower mean out-of-fold log loss of temperature and temperature_intercepts; an exact tie goes to temperature",
+   "time_utc": "2026-10-02T13:40:15Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.5360085773961608,
+    "log_loss": 0.49135366911555195,
+    "ece": 0.06880996583162916
+   }
+  }
+ },
+ "kept_from_earlier_sessions": {
+  "s8_ei": {
+   "source": "results/fiorillo_v0_4/calibration_s8.json",
+   "sha256": "a1a202ffcc946e31c49d31971fc70b43dba1bb8725423b7c3cd7b669bae15f2c"
+  },
+  "gemma4_31b": {
+   "source": "results/fiorillo_v0_4/calibration_s8.json"
+  },
+  "s7_b3": {
+   "source": "results/fiorillo_v0_3/calibration_s7.json",
+   "sha256": "a57e4c4739a0f6636f91e97b2027b20d52938e9c3d3270dd35cd93dbda15f277"
+  }
+ },
+ "families_table_v05": {
+  "system": "s9_ei_wavg",
+  "table": {
+   "temperature": {
+    "mean": 0.1780834342525998,
+    "min": 0.17649378498598373,
+    "max": 0.18080761664233153
+   },
+   "temperature_intercepts": {
+    "mean": 0.18084190997470512,
+    "min": 0.17749840608302297,
+    "max": 0.18602854381028314
+   },
+   "vector": {
+    "mean": 0.1836418461809342,
+    "min": 0.17906395861531085,
+    "max": 0.19100942266619653
+   },
+   "dirichlet_odir": {
+    "mean": 0.1828996861476367,
+    "min": 0.17812339076529624,
+    "max": 0.19236660564378316
+   }
+  },
+  "chosen": "temperature",
+  "note": "I-36, reported whatever is chosen"
+ },
+ "time_utc": "2026-10-02T13:40:15Z"
+}

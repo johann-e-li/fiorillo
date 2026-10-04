@@ -1,0 +1,10 @@
+2026-10-02T13:40:31Z  stage freeze started
+the OSF update: https://osf.io/kaxmn/, filed 2026-10-01T15:31:21Z
+{
+ "written": "results/fiorillo_v0_5/release_candidate.json",
+ "v05_ei": "s9_ei_wavg",
+ "large_model": "gemma4_31b_long",
+ "ece_limit": 0.05,
+ "time_utc": "2026-10-02T13:40:31Z"
+}
+2026-10-02T13:40:31Z  stage freeze finished

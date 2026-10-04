@@ -1,0 +1,1020 @@
+{
+ "plan": "docs/prompt_session8.md, CORRECTIONS 14 and 15 (descriptive, not pre-registered)",
+ "time_utc": "2026-10-01T03:24:50Z",
+ "settings": {
+  "resamples": 1000,
+  "seed": 20260927,
+  "interval": "95 percent, percentile, articles resampled",
+  "sentence_min_chars": 60,
+  "min_shared_sentences": 2,
+  "title_min_chars": 20,
+  "predictions": "calibrated (s8_ei and gemma4_31b as compare_session8.py reads them)"
+ },
+ "reading_the_evidence": {
+  "coverage_recount_validation": {
+   "prompts_with_usable_offsets": 1206,
+   "covered": 1151
+  },
+  "coverage_test": {
+   "prompts_with_usable_offsets": 1212,
+   "covered": 1153,
+   "coverage": 0.9513201320132013
+  },
+  "by_subset": {
+   "validation": {
+    "s8_ei": {
+     "all": {
+      "prompts": 1237,
+      "articles": 340,
+      "labels": {
+       "increased": 394,
+       "decreased": 299,
+       "no_difference": 544
+      },
+      "accuracy": {
+       "estimate": 0.936944219886823,
+       "low": 0.9206177466150871,
+       "high": 0.9514955537590946
+      },
+      "macro_f1": {
+       "estimate": 0.933173944770903,
+       "low": 0.9160460811595877,
+       "high": 0.949058487160125
+      }
+     },
+     "evidence inside the input": {
+      "prompts": 1151,
+      "articles": 332,
+      "labels": {
+       "increased": 366,
+       "decreased": 284,
+       "no_difference": 501
+      },
+      "accuracy": {
+       "estimate": 0.946133796698523,
+       "low": 0.9312445604873804,
+       "high": 0.9602465091458895
+      },
+      "macro_f1": {
+       "estimate": 0.9425501219655699,
+       "low": 0.9264224473771113,
+       "high": 0.9577535774150333
+      }
+     },
+     "evidence outside the input": {
+      "prompts": 55,
+      "articles": 30,
+      "labels": {
+       "increased": 22,
+       "decreased": 12,
+       "no_difference": 21
+      },
+      "accuracy": {
+       "estimate": 0.7272727272727273,
+       "low": 0.5509948979591837,
+       "high": 0.8688904068002428
+      },
+      "macro_f1": {
+       "estimate": 0.709349593495935,
+       "low": 0.535474250427269,
+       "high": 0.8518540713662663
+      }
+     },
+     "no usable evidence offsets": {
+      "prompts": 31,
+      "articles": 16,
+      "labels": {
+       "increased": 6,
+       "decreased": 3,
+       "no_difference": 22
+      },
+      "accuracy": {
+       "estimate": 0.967741935483871,
+       "low": 0.8748641304347826,
+       "high": 1.0
+      },
+      "macro_f1": {
+       "estimate": 0.9666070363744783,
+       "low": 0.8248645246629117,
+       "high": 1.0
+      }
+     },
+     "evidence in the abstract": {
+      "prompts": 623,
+      "articles": 253,
+      "labels": {
+       "increased": 218,
+       "decreased": 160,
+       "no_difference": 245
+      },
+      "accuracy": {
+       "estimate": 0.9550561797752809,
+       "low": 0.9366067229723302,
+       "high": 0.9715275194871998
+      },
+      "macro_f1": {
+       "estimate": 0.9527494057027689,
+       "low": 0.9327261239377043,
+       "high": 0.96970843520881
+      }
+     },
+     "evidence not in the abstract": {
+      "prompts": 614,
+      "articles": 244,
+      "labels": {
+       "increased": 176,
+       "decreased": 139,
+       "no_difference": 299
+      },
+      "accuracy": {
+       "estimate": 0.9185667752442996,
+       "low": 0.8882253372249707,
+       "high": 0.9442668488160292
+      },
+      "macro_f1": {
+       "estimate": 0.912259621760696,
+       "low": 0.8780984144004,
+       "high": 0.9404779885767276
+      }
+     },
+     "outside the input and not in the abstract": {
+      "prompts": 55,
+      "articles": 30,
+      "labels": {
+       "increased": 22,
+       "decreased": 12,
+       "no_difference": 21
+      },
+      "accuracy": {
+       "estimate": 0.7272727272727273,
+       "low": 0.5509948979591837,
+       "high": 0.8688904068002428
+      },
+      "macro_f1": {
+       "estimate": 0.709349593495935,
+       "low": 0.535474250427269,
+       "high": 0.8518540713662663
+      }
+     }
+    },
+    "gemma4_31b": {
+     "all": {
+      "prompts": 1237,
+      "articles": 340,
+      "labels": {
+       "increased": 394,
+       "decreased": 299,
+       "no_difference": 544
+      },
+      "accuracy": {
+       "estimate": 0.8860145513338723,
+       "low": 0.8606613889563347,
+       "high": 0.9094636091912081
+      },
+      "macro_f1": {
+       "estimate": 0.8746820262377005,
+       "low": 0.8461202599674804,
+       "high": 0.8996190718555561
+      }
+     },
+     "evidence inside the input": {
+      "prompts": 1151,
+      "articles": 332,
+      "labels": {
+       "increased": 366,
+       "decreased": 284,
+       "no_difference": 501
+      },
+      "accuracy": {
+       "estimate": 0.8922675933970461,
+       "low": 0.8659530487909967,
+       "high": 0.9164658158717263
+      },
+      "macro_f1": {
+       "estimate": 0.8814901986194594,
+       "low": 0.8537623174900572,
+       "high": 0.9076115152468296
+      }
+     },
+     "evidence outside the input": {
+      "prompts": 55,
+      "articles": 30,
+      "labels": {
+       "increased": 22,
+       "decreased": 12,
+       "no_difference": 21
+      },
+      "accuracy": {
+       "estimate": 0.7272727272727273,
+       "low": 0.5490037950664137,
+       "high": 0.8772019334049409
+      },
+      "macro_f1": {
+       "estimate": 0.6799887419082467,
+       "low": 0.5041799265233629,
+       "high": 0.8640790140790141
+      }
+     },
+     "no usable evidence offsets": {
+      "prompts": 31,
+      "articles": 16,
+      "labels": {
+       "increased": 6,
+       "decreased": 3,
+       "no_difference": 22
+      },
+      "accuracy": {
+       "estimate": 0.9354838709677419,
+       "low": 0.8076923076923077,
+       "high": 1.0
+      },
+      "macro_f1": {
+       "estimate": 0.906926406926407,
+       "low": 0.6310217792543373,
+       "high": 1.0
+      }
+     },
+     "evidence in the abstract": {
+      "prompts": 623,
+      "articles": 253,
+      "labels": {
+       "increased": 218,
+       "decreased": 160,
+       "no_difference": 245
+      },
+      "accuracy": {
+       "estimate": 0.9020866773675762,
+       "low": 0.8646814564634033,
+       "high": 0.9316025439171575
+      },
+      "macro_f1": {
+       "estimate": 0.8951337394497317,
+       "low": 0.8561078847730594,
+       "high": 0.9263329633607688
+      }
+     },
+     "evidence not in the abstract": {
+      "prompts": 614,
+      "articles": 244,
+      "labels": {
+       "increased": 176,
+       "decreased": 139,
+       "no_difference": 299
+      },
+      "accuracy": {
+       "estimate": 0.8697068403908795,
+       "low": 0.8338653231752273,
+       "high": 0.9062526128762541
+      },
+      "macro_f1": {
+       "estimate": 0.8532915130137352,
+       "low": 0.812865533363819,
+       "high": 0.8944073150611489
+      }
+     },
+     "outside the input and not in the abstract": {
+      "prompts": 55,
+      "articles": 30,
+      "labels": {
+       "increased": 22,
+       "decreased": 12,
+       "no_difference": 21
+      },
+      "accuracy": {
+       "estimate": 0.7272727272727273,
+       "low": 0.5490037950664137,
+       "high": 0.8772019334049409
+      },
+      "macro_f1": {
+       "estimate": 0.6799887419082467,
+       "low": 0.5041799265233629,
+       "high": 0.8640790140790141
+      }
+     }
+    }
+   },
+   "test": {
+    "s8_ei": {
+     "all": {
+      "prompts": 1218,
+      "articles": 333,
+      "labels": {
+       "increased": 411,
+       "decreased": 294,
+       "no_difference": 513
+      },
+      "accuracy": {
+       "estimate": 0.9408866995073891,
+       "low": 0.924603716853033,
+       "high": 0.9553719008264463
+      },
+      "macro_f1": {
+       "estimate": 0.9399093785849176,
+       "low": 0.9225430777110123,
+       "high": 0.9543531326585599
+      }
+     },
+     "evidence inside the input": {
+      "prompts": 1153,
+      "articles": 328,
+      "labels": {
+       "increased": 394,
+       "decreased": 279,
+       "no_difference": 480
+      },
+      "accuracy": {
+       "estimate": 0.9488291413703382,
+       "low": 0.9335010344495226,
+       "high": 0.9622355958028337
+      },
+      "macro_f1": {
+       "estimate": 0.9477461770367949,
+       "low": 0.9324834174717794,
+       "high": 0.9608908637639791
+      }
+     },
+     "evidence outside the input": {
+      "prompts": 59,
+      "articles": 25,
+      "labels": {
+       "increased": 15,
+       "decreased": 14,
+       "no_difference": 30
+      },
+      "accuracy": {
+       "estimate": 0.7966101694915254,
+       "low": 0.6571428571428571,
+       "high": 0.925959595959596
+      },
+      "macro_f1": {
+       "estimate": 0.8001763668430334,
+       "low": 0.6402061234697495,
+       "high": 0.9219637535729488
+      }
+     },
+     "no usable evidence offsets": {
+      "prompts": 6,
+      "articles": 5,
+      "labels": {
+       "increased": 2,
+       "decreased": 1,
+       "no_difference": 3
+      },
+      "accuracy": {
+       "estimate": 0.8333333333333334,
+       "low": 0.4,
+       "high": 1.0
+      },
+      "macro_f1": {
+       "estimate": 0.6,
+       "low": 0.3333333333333333,
+       "high": 1.0
+      }
+     },
+     "evidence in the abstract": {
+      "prompts": 614,
+      "articles": 247,
+      "labels": {
+       "increased": 226,
+       "decreased": 180,
+       "no_difference": 208
+      },
+      "accuracy": {
+       "estimate": 0.9576547231270358,
+       "low": 0.9404057083867637,
+       "high": 0.9742886993214116
+      },
+      "macro_f1": {
+       "estimate": 0.9575142609083059,
+       "low": 0.9392086326180786,
+       "high": 0.97438450804405
+      }
+     },
+     "evidence not in the abstract": {
+      "prompts": 604,
+      "articles": 251,
+      "labels": {
+       "increased": 185,
+       "decreased": 114,
+       "no_difference": 305
+      },
+      "accuracy": {
+       "estimate": 0.9238410596026491,
+       "low": 0.8986385727833096,
+       "high": 0.9449716274762189
+      },
+      "macro_f1": {
+       "estimate": 0.9182501637364769,
+       "low": 0.8908276083433957,
+       "high": 0.9408238056962649
+      }
+     },
+     "outside the input and not in the abstract": {
+      "prompts": 56,
+      "articles": 23,
+      "labels": {
+       "increased": 12,
+       "decreased": 14,
+       "no_difference": 30
+      },
+      "accuracy": {
+       "estimate": 0.7857142857142857,
+       "low": 0.6428013392857144,
+       "high": 0.9152542372881356
+      },
+      "macro_f1": {
+       "estimate": 0.7863832633947575,
+       "low": 0.6182299203962323,
+       "high": 0.9036451502875404
+      }
+     }
+    },
+    "gemma4_31b": {
+     "all": {
+      "prompts": 1218,
+      "articles": 333,
+      "labels": {
+       "increased": 411,
+       "decreased": 294,
+       "no_difference": 513
+      },
+      "accuracy": {
+       "estimate": 0.8711001642036125,
+       "low": 0.8450204650545365,
+       "high": 0.8949108953926398
+      },
+      "macro_f1": {
+       "estimate": 0.8625869860641254,
+       "low": 0.8332631342532196,
+       "high": 0.8879088432077098
+      }
+     },
+     "evidence inside the input": {
+      "prompts": 1153,
+      "articles": 328,
+      "labels": {
+       "increased": 394,
+       "decreased": 279,
+       "no_difference": 480
+      },
+      "accuracy": {
+       "estimate": 0.8829141370338248,
+       "low": 0.8577521787648922,
+       "high": 0.90455582218007
+      },
+      "macro_f1": {
+       "estimate": 0.8744644110868259,
+       "low": 0.8461082340391559,
+       "high": 0.8977525916726914
+      }
+     },
+     "evidence outside the input": {
+      "prompts": 59,
+      "articles": 25,
+      "labels": {
+       "increased": 15,
+       "decreased": 14,
+       "no_difference": 30
+      },
+      "accuracy": {
+       "estimate": 0.6610169491525424,
+       "low": 0.4917963323145318,
+       "high": 0.8136370056497175
+      },
+      "macro_f1": {
+       "estimate": 0.6506995371092734,
+       "low": 0.4553378310800475,
+       "high": 0.79618763220107
+      }
+     },
+     "no usable evidence offsets": {
+      "prompts": 6,
+      "articles": 5,
+      "labels": {
+       "increased": 2,
+       "decreased": 1,
+       "no_difference": 3
+      },
+      "accuracy": {
+       "estimate": 0.6666666666666666,
+       "low": 0.2,
+       "high": 1.0
+      },
+      "macro_f1": {
+       "estimate": 0.5333333333333333,
+       "low": 0.16666666666666666,
+       "high": 1.0
+      }
+     },
+     "evidence in the abstract": {
+      "prompts": 614,
+      "articles": 247,
+      "labels": {
+       "increased": 226,
+       "decreased": 180,
+       "no_difference": 208
+      },
+      "accuracy": {
+       "estimate": 0.8811074918566775,
+       "low": 0.8443565974555033,
+       "high": 0.9143027210884354
+      },
+      "macro_f1": {
+       "estimate": 0.8796290025634467,
+       "low": 0.8422074567943357,
+       "high": 0.9139221670218187
+      }
+     },
+     "evidence not in the abstract": {
+      "prompts": 604,
+      "articles": 251,
+      "labels": {
+       "increased": 185,
+       "decreased": 114,
+       "no_difference": 305
+      },
+      "accuracy": {
+       "estimate": 0.8609271523178808,
+       "low": 0.822717341373215,
+       "high": 0.894295963627125
+      },
+      "macro_f1": {
+       "estimate": 0.8424123430177746,
+       "low": 0.8004362873822751,
+       "high": 0.8799113790690064
+      }
+     },
+     "outside the input and not in the abstract": {
+      "prompts": 56,
+      "articles": 23,
+      "labels": {
+       "increased": 12,
+       "decreased": 14,
+       "no_difference": 30
+      },
+      "accuracy": {
+       "estimate": 0.6607142857142857,
+       "low": 0.4915100154083205,
+       "high": 0.8104251899473991
+      },
+      "macro_f1": {
+       "estimate": 0.6459428855073138,
+       "low": 0.4433869747705364,
+       "high": 0.7787276714359681
+      }
+     }
+    }
+   }
+  },
+  "differences": {
+   "validation": {
+    "s8_ei": {
+     "outside minus inside": {
+      "estimate": -0.21886106942579575,
+      "low": -0.40554750374271764,
+      "high": -0.06657183701787855,
+      "prompts": [
+       55,
+       1151
+      ]
+     }
+    },
+    "gemma4_31b": {
+     "outside minus inside": {
+      "estimate": -0.1649948661243188,
+      "low": -0.3469155188690784,
+      "high": -0.010297699170114775,
+      "prompts": [
+       55,
+       1151
+      ]
+     }
+    }
+   },
+   "test": {
+    "s8_ei": {
+     "outside minus inside": {
+      "estimate": -0.15221897187881284,
+      "low": -0.2967232259658611,
+      "high": -0.03274046227741352,
+      "prompts": [
+       59,
+       1153
+      ]
+     }
+    },
+    "gemma4_31b": {
+     "outside minus inside": {
+      "estimate": -0.22189718788128243,
+      "low": -0.41749380352283255,
+      "high": -0.07827364764864761,
+      "prompts": [
+       59,
+       1153
+      ]
+     }
+    }
+   }
+  }
+ },
+ "pubmedqa": {
+  "files": {
+   "pqa_labeled": {
+    "rows": 1000
+   },
+   "pqa_unlabeled": {
+    "rows": 61249
+   },
+   "pqa_artificial": {
+    "rows": 211269
+   }
+  },
+  "evaluated_articles": {
+   "validation": 340,
+   "test": 333
+  },
+  "evaluated_articles_without_long_sentences": 0,
+  "matches": [
+   {
+    "pmcid": "116601",
+    "pubid": 12079501,
+    "shared": 6,
+    "source": "pqa_artificial",
+    "ei_sentences": 9
+   },
+   {
+    "pmcid": "1664572",
+    "pubid": 17083722,
+    "shared": 7,
+    "source": "pqa_artificial",
+    "ei_sentences": 10
+   },
+   {
+    "pmcid": "2571050",
+    "pubid": 18694978,
+    "shared": 2,
+    "source": "pqa_unlabeled",
+    "ei_sentences": 20
+   },
+   {
+    "pmcid": "2858204",
+    "pubid": 20427683,
+    "shared": 8,
+    "source": "pqa_artificial",
+    "ei_sentences": 25
+   },
+   {
+    "pmcid": "3264513",
+    "pubid": 22177085,
+    "shared": 11,
+    "source": "pqa_artificial",
+    "ei_sentences": 13
+   },
+   {
+    "pmcid": "3329820",
+    "pubid": 22399700,
+    "shared": 6,
+    "source": "pqa_unlabeled",
+    "ei_sentences": 26
+   },
+   {
+    "pmcid": "3376522",
+    "pubid": 22382037,
+    "shared": 12,
+    "source": "pqa_artificial",
+    "ei_sentences": 19
+   },
+   {
+    "pmcid": "3686162",
+    "pubid": 23794558,
+    "shared": 8,
+    "source": "pqa_artificial",
+    "ei_sentences": 10
+   },
+   {
+    "pmcid": "3843300",
+    "pubid": 24319553,
+    "shared": 9,
+    "source": "pqa_artificial",
+    "ei_sentences": 11
+   },
+   {
+    "pmcid": "3897026",
+    "pubid": 24516491,
+    "shared": 15,
+    "source": "pqa_artificial",
+    "ei_sentences": 17
+   },
+   {
+    "pmcid": "4177066",
+    "pubid": 25193490,
+    "shared": 11,
+    "source": "pqa_unlabeled",
+    "ei_sentences": 15
+   },
+   {
+    "pmcid": "4221328",
+    "pubid": 25518015,
+    "shared": 10,
+    "source": "pqa_artificial",
+    "ei_sentences": 14
+   },
+   {
+    "pmcid": "4241940",
+    "pubid": 25566445,
+    "shared": 3,
+    "source": "pqa_artificial",
+    "ei_sentences": 8
+   },
+   {
+    "pmcid": "4365008",
+    "pubid": 25785441,
+    "shared": 8,
+    "source": "pqa_artificial",
+    "ei_sentences": 12
+   },
+   {
+    "pmcid": "4481831",
+    "pubid": 25993625,
+    "shared": 8,
+    "source": "pqa_artificial",
+    "ei_sentences": 10
+   },
+   {
+    "pmcid": "4491277",
+    "pubid": 26141379,
+    "shared": 20,
+    "source": "pqa_artificial",
+    "ei_sentences": 22
+   },
+   {
+    "pmcid": "4717613",
+    "pubid": 26782276,
+    "shared": 13,
+    "source": "pqa_unlabeled",
+    "ei_sentences": 15
+   },
+   {
+    "pmcid": "5051624",
+    "pubid": 27752610,
+    "shared": 10,
+    "source": "pqa_artificial",
+    "ei_sentences": 12
+   },
+   {
+    "pmcid": "5332489",
+    "pubid": 27334136,
+    "shared": 6,
+    "source": "pqa_unlabeled",
+    "ei_sentences": 8
+   },
+   {
+    "pmcid": "535900",
+    "pubid": 15571635,
+    "shared": 5,
+    "source": "pqa_artificial",
+    "ei_sentences": 8
+   },
+   {
+    "pmcid": "5876016",
+    "pubid": 27208316,
+    "shared": 7,
+    "source": "pqa_artificial",
+    "ei_sentences": 11
+   }
+  ],
+  "trained_files": {
+   "data/processed/session7/pubmedqa_phase1_train.jsonl": {
+    "what": "session 7, phase 1",
+    "pubids_found": [
+     12079501,
+     15571635,
+     17083722,
+     20427683,
+     22177085,
+     22382037,
+     23794558,
+     24319553,
+     24516491,
+     25518015,
+     25566445,
+     25785441,
+     25993625,
+     26141379,
+     27208316,
+     27752610
+    ]
+   },
+   "data/processed/session7/labeler_pqa_u.jsonl": {
+    "what": "session 7, phase 2",
+    "pubids_found": [
+     18694978,
+     22399700,
+     25193490,
+     26782276,
+     27334136
+    ]
+   },
+   "data/processed/public/pubmedqa_answer_train.jsonl": {
+    "what": "session 4's PubMedQA training records, read by phase 3",
+    "pubids_found": [
+     15571635,
+     17083722,
+     23794558,
+     25518015
+    ]
+   }
+  },
+  "matched_articles": {
+   "validation": [
+    "116601",
+    "2571050",
+    "3376522",
+    "3686162",
+    "3897026",
+    "4177066",
+    "4241940",
+    "4365008",
+    "4481831",
+    "4491277",
+    "5876016"
+   ],
+   "test": [
+    "1664572",
+    "2858204",
+    "3264513",
+    "3329820",
+    "3843300",
+    "4221328",
+    "4717613",
+    "5051624",
+    "5332489",
+    "535900"
+   ]
+  },
+  "matched_articles_whose_abstract_arm_b_trained_on": {
+   "validation": [
+    "116601",
+    "2571050",
+    "3376522",
+    "3686162",
+    "3897026",
+    "4177066",
+    "4241940",
+    "4365008",
+    "4481831",
+    "4491277",
+    "5876016"
+   ],
+   "test": [
+    "1664572",
+    "2858204",
+    "3264513",
+    "3329820",
+    "3843300",
+    "4221328",
+    "4717613",
+    "5051624",
+    "5332489",
+    "535900"
+   ]
+  },
+  "s8_ei_test_matched_or_not": {
+   "flagged": {
+    "prompts": 37,
+    "articles": 10,
+    "labels": {
+     "increased": 8,
+     "decreased": 12,
+     "no_difference": 17
+    },
+    "accuracy": {
+     "estimate": 0.8378378378378378,
+     "low": 0.6666666666666666,
+     "high": 0.944481981981982
+    },
+    "macro_f1": {
+     "estimate": 0.8439542483660132,
+     "low": 0.5233910637425702,
+     "high": 0.9412633524544793
+    }
+   },
+   "the rest": {
+    "prompts": 1181,
+    "articles": 323,
+    "labels": {
+     "increased": 403,
+     "decreased": 282,
+     "no_difference": 496
+    },
+    "accuracy": {
+     "estimate": 0.9441151566469094,
+     "low": 0.9264689966895849,
+     "high": 0.9585141827791404
+    },
+    "macro_f1": {
+     "estimate": 0.9431681733002096,
+     "low": 0.9255714302503258,
+     "high": 0.9573023662837518
+    }
+   },
+   "flagged minus the rest": {
+    "estimate": -0.10627731880907154,
+    "low": -0.28174481681843283,
+    "high": 0.005135979684334194,
+    "prompts": [
+     37,
+     1181
+    ]
+   }
+  },
+  "s8_ei_validation_matched_or_not": {
+   "flagged": {
+    "prompts": 36,
+    "articles": 11,
+    "labels": {
+     "increased": 7,
+     "decreased": 5,
+     "no_difference": 24
+    },
+    "accuracy": {
+     "estimate": 0.9722222222222222,
+     "low": 0.9130115089514066,
+     "high": 1.0
+    },
+    "macro_f1": {
+     "estimate": 0.9440559440559441,
+     "low": 0.8796296296296297,
+     "high": 1.0
+    }
+   },
+   "the rest": {
+    "prompts": 1201,
+    "articles": 329,
+    "labels": {
+     "increased": 387,
+     "decreased": 294,
+     "no_difference": 520
+    },
+    "accuracy": {
+     "estimate": 0.9358867610324729,
+     "low": 0.9183320080255005,
+     "high": 0.9513273140229749
+    },
+    "macro_f1": {
+     "estimate": 0.9324956590600321,
+     "low": 0.9136606176209338,
+     "high": 0.9495637878045903
+    }
+   },
+   "flagged minus the rest": {
+    "estimate": 0.036335461189749285,
+    "low": -0.02336865595141379,
+    "high": 0.07597135352735068,
+    "prompts": [
+     36,
+     1201
+    ]
+   }
+  }
+ },
+ "ei_splits": {
+  "train_articles": 2657,
+  "flagged": [],
+  "flagged_articles": {
+   "validation": [],
+   "test": []
+  },
+  "s8_ei_test_flagged_or_not": {
+   "flagged": {
+    "prompts": 0,
+    "articles": 0,
+    "labels": {
+     "increased": 0,
+     "decreased": 0,
+     "no_difference": 0
+    }
+   },
+   "the rest": {
+    "prompts": 1218,
+    "articles": 333,
+    "labels": {
+     "increased": 411,
+     "decreased": 294,
+     "no_difference": 513
+    },
+    "accuracy": {
+     "estimate": 0.9408866995073891,
+     "low": 0.924603716853033,
+     "high": 0.9553719008264463
+    },
+    "macro_f1": {
+     "estimate": 0.9399093785849176,
+     "low": 0.9225430777110123,
+     "high": 0.9543531326585599
+    }
+   }
+  }
+ },
+ "seconds": 4.7
+}

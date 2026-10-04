@@ -1,0 +1,485 @@
+{
+ "plan": "docs/prompt_session9.md, PUBMEDQA BESIDE BIOGPT-LARGE, with correction 5",
+ "written_utc": "2026-10-02T15:18:10Z",
+ "system": "biogpt_large_pqa",
+ "seed": 20260927,
+ "model": {
+  "repo": "microsoft/BioGPT-Large-PubMedQA",
+  "revision": "39c04fb31dfc8094b0f04c7bb7973cf612606c0c",
+  "dir": "/root/eddm_s9/models/biogpt_large_pqa",
+  "downloaded_revision": "39c04fb31dfc8094b0f04c7bb7973cf612606c0c",
+  "files": {
+   "pytorch_model.bin": {
+    "bytes": 6285062061,
+    "sha256": "e4c7b87ba705e6102ac59bfae004a161fce5648893f8571ae4381e353842ad9e"
+   },
+   "vocab.json": {
+    "bytes": 1241528,
+    "sha256": "e1c4335c3cddaafeea68182f6ed94de560c4172637c08fc6262c6d828eb2d003"
+   },
+   "merges.txt": {
+    "bytes": 565613,
+    "sha256": "9fbee5a9688af88827609ff8843267d7225a1237e09b778cb8d1aff2a1009858"
+   },
+   "config.json": {
+    "bytes": 674,
+    "sha256": "653c6096788cfa184f4ecd1e8d750aa1aef401181262f422d30568a64680fbf3"
+   },
+   "tokenizer_config.json": {
+    "bytes": 272,
+    "sha256": "90ba96dec0a0d40392044999e2d483e5bea3d388576729caacccf06b7af88515"
+   },
+   "special_tokens_map.json": {
+    "bytes": 119,
+    "sha256": "8f0294278cb5312ecdd793f09b77c0e4cb1f6c1aa2d484fdbb65e57a8fee37f0"
+   }
+  },
+  "class": "BioGptForCausalLM",
+  "tokenizer": "BioGptTokenizer",
+  "dtype": "float32",
+  "device": "cuda",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "sacremoses": "0.2.0",
+  "attn_implementation": "sdpa",
+  "float32_matmul_precision": "highest",
+  "max_position_embeddings": 2048,
+  "vocab_size": 57726,
+  "unexpected_keys": [],
+  "load_seconds": 1.521272679005051
+ },
+ "checkpoint_arguments": {
+  "archive_url": "https://msralaphilly2.blob.core.windows.net/release/BioGPT/checkpoints/QA-PubMedQA-BioGPT-Large.tgz (with the read-only signature in microsoft/BioGPT's README at commit 648f7d65)",
+  "limit_bytes": 1000000000,
+  "limit_seconds": 600,
+  "started_utc": "2026-10-02T13:29:21Z",
+  "status": "not read: network failure: URLError: <urlopen error [Errno -2] Name or service not known>; no time was left for another attempt",
+  "bytes_read": 0,
+  "bytes_read_note": "bytes of the archive as served (gzip-compressed)",
+  "seconds": 587.321,
+  "finished_utc": "2026-10-02T13:39:08Z",
+  "attempts": [
+   {
+    "started_utc": "2026-10-02T13:29:21Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:29:37Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:29:52Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:30:07Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:30:22Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:30:37Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:30:52Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:31:07Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:31:22Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:31:37Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:31:52Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:32:07Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:32:22Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:32:37Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:32:52Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:33:07Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:33:22Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:33:37Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:33:52Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:34:07Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:34:22Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:34:38Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:34:53Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:35:08Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:35:23Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:35:38Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:35:53Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:36:08Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:36:23Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:36:38Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:36:53Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:37:08Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:37:23Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:37:38Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:37:53Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:38:08Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:38:23Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:38:38Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:38:53Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   },
+   {
+    "started_utc": "2026-10-02T13:39:08Z",
+    "outcome": "network failure: URLError: <urlopen error [Errno -2] Name or service not known>"
+   }
+  ],
+  "saved": "nothing; the stream was read in memory and closed"
+ },
+ "input": {
+  "settings": {
+   "learned_prompt": 9,
+   "learned_prompt_pattern": "learned",
+   "prefix": false,
+   "manual_prompt": null,
+   "max_source_positions": 384,
+   "max_target_positions": null,
+   "tokens_per_sample": null
+  },
+  "origin": {
+   "learned_prompt": "fixed_versions.json",
+   "learned_prompt_pattern": "fixed_versions.json",
+   "prefix": "fixed_versions.json",
+   "manual_prompt": "fixed_versions.json",
+   "max_source_positions": "fixed_versions.json",
+   "max_target_positions": "not read; fixed_versions.json has no value",
+   "tokens_per_sample": "not read; fixed_versions.json has no value"
+  },
+  "differences_from_fixed_versions": {},
+  "unreadable_values": {},
+  "used_from": "fixed_versions.json, the checkpoint's arguments having not been read",
+  "lead_id": 2,
+  "lead_token": "</s>",
+  "prompt_kind": "learned",
+  "prompt_tokens": [
+   "learned1</w>",
+   "learned2</w>",
+   "learned3</w>",
+   "learned4</w>",
+   "learned5</w>",
+   "learned6</w>",
+   "learned7</w>",
+   "learned8</w>",
+   "learned9</w>"
+  ],
+  "prompt_ids": [
+   57717,
+   57718,
+   57719,
+   57720,
+   57721,
+   57722,
+   57723,
+   57724,
+   57725
+  ],
+  "prefix": false,
+  "sep_id": null,
+  "order": "</s>, the source (cut), the prompt, the opening words",
+  "max_source_positions": 384,
+  "ellipsis_token": "...</w>",
+  "ellipsis_id": 11774,
+  "opening_words": "the answer to the question given the context is",
+  "opening_ids": [
+   8,
+   9367,
+   20,
+   8,
+   2509,
+   785,
+   8,
+   1328,
+   34
+  ],
+  "opening_tokens": [
+   "the</w>",
+   "answer</w>",
+   "to</w>",
+   "the</w>",
+   "question</w>",
+   "given</w>",
+   "the</w>",
+   "context</w>",
+   "is</w>"
+  ],
+  "answer_ids": [
+   22134,
+   126,
+   28139
+  ],
+  "answers": {
+   "words": {
+    "yes": {
+     "ids": [
+      22134
+     ],
+     "tokens": [
+      "yes</w>"
+     ],
+     "ids_in_the_target_line": [
+      22134
+     ],
+     "same_in_the_target_line": true
+    },
+    "no": {
+     "ids": [
+      126
+     ],
+     "tokens": [
+      "no</w>"
+     ],
+     "ids_in_the_target_line": [
+      126
+     ],
+     "same_in_the_target_line": true
+    },
+    "maybe": {
+     "ids": [
+      28139
+     ],
+     "tokens": [
+      "maybe</w>"
+     ],
+     "ids_in_the_target_line": [
+      28139
+     ],
+     "same_in_the_target_line": true
+    }
+   },
+   "ids_used": [
+    22134,
+    126,
+    28139
+   ],
+   "order": [
+    "yes",
+    "no",
+    "maybe"
+   ],
+   "first_token_rule": false,
+   "multi_token_answers": [],
+   "rule": "each answer's token is the one the tokenizer gives for the word; if a word is not one token, the first token of each word is used"
+  },
+  "source_format": "question: {q} context: {c} (rebuild_data.py; the trailing space is dropped by the tokenizer)",
+  "tokenizer_call": "add_special_tokens True for the source (</s> first), False for the opening words; split_special_tokens True",
+  "answer_ids_same_as_fixed_versions": true,
+  "prompt_ids_same_as_fixed_versions": true
+ },
+ "validation": {
+  "items": 150,
+  "batch_size": 16,
+  "sources_cut": 18,
+  "source_tokens_before_the_cut": {
+   "mean": 289.8,
+   "median": 283.5,
+   "min": 107.0,
+   "max": 546.0
+  },
+  "input_tokens": {
+   "mean": 301.55333333333334,
+   "median": 302.5,
+   "min": 126.0,
+   "max": 403.0
+  },
+  "sources_with_a_special_token_string": 0,
+  "answer_tokens_summed_probability": {
+   "median": 0.9982452625275613,
+   "p10": 0.9872091859036056,
+   "min": 0.899903854796778,
+   "share_below_0_5": 0.0,
+   "note": "before renormalization; a check of the input"
+  },
+  "most_likely_next_token_is_an_answer": 150,
+  "tokenize_seconds": 0.350426383985905,
+  "forward_seconds": 4.610224263044074,
+  "seconds_per_item": 0.030734828420293826,
+  "items_per_second": 32.53637815461863,
+  "timing_note": "the model's passes over the built inputs, GPU synchronized; tokenizing and loading not counted",
+  "example_input": {
+   "id": "pubmedqa-15137012",
+   "tokens": 248,
+   "first_tokens": [
+    "</s>",
+    "question</w>",
+    ":</w>"
+   ],
+   "last_tokens": [
+    "with</w>",
+    "follicular</w>",
+    "development</w>",
+    "in</w>",
+    "each</w>",
+    "case</w>",
+    ".</w>",
+    "learned1</w>",
+    "learned2</w>",
+    "learned3</w>",
+    "learned4</w>",
+    "learned5</w>",
+    "learned6</w>",
+    "learned7</w>",
+    "learned8</w>",
+    "learned9</w>",
+    "the</w>",
+    "answer</w>",
+    "to</w>",
+    "the</w>",
+    "question</w>",
+    "given</w>",
+    "the</w>",
+    "context</w>",
+    "is</w>"
+   ]
+  },
+  "records": "data/processed/public/pubmedqa_answer_validation.jsonl",
+  "records_sha256": "a638554e8b43045ee00405865d45b555a24dc83c2313bb2dba98f971dfcf16c6",
+  "items_by_label": {
+   "yes": 84,
+   "no": 53,
+   "maybe": 13
+  },
+  "predictions": "results/fiorillo_v0_5/predictions/biogpt_large_pqa-raw_pubmedqa_answer_validation.csv",
+  "predictions_sha256": "3bf98fdb13f8422b104e584c8271739934d48ebe2b542316dfc80d4b574189fd",
+  "written_utc": "2026-10-02T13:39:24Z"
+ },
+ "primary_result": "the uncalibrated probabilities, renormalized over the three answers: BioGPT-Large was fine-tuned on PQA-L's fold 0 training and development sets, which hold all 150 validation items, so a calibration fitted on them is reported beside it with that caveat",
+ "test": {
+  "items": 500,
+  "batch_size": 16,
+  "sources_cut": 84,
+  "source_tokens_before_the_cut": {
+   "mean": 307.296,
+   "median": 302.5,
+   "min": 92.0,
+   "max": 583.0
+  },
+  "input_tokens": {
+   "mean": 316.586,
+   "median": 321.5,
+   "min": 111.0,
+   "max": 403.0
+  },
+  "sources_with_a_special_token_string": 0,
+  "answer_tokens_summed_probability": {
+   "median": 0.9981851158189153,
+   "p10": 0.9908288014641412,
+   "min": 0.36012591785450265,
+   "share_below_0_5": 0.002,
+   "note": "before renormalization; a check of the input"
+  },
+  "most_likely_next_token_is_an_answer": 500,
+  "tokenize_seconds": 1.0478975520236418,
+  "forward_seconds": 15.073461058898829,
+  "seconds_per_item": 0.030146922117797657,
+  "items_per_second": 33.17088212496612,
+  "timing_note": "the model's passes over the built inputs, GPU synchronized; tokenizing and loading not counted",
+  "records": "data/processed/public/pubmedqa_answer_test.jsonl",
+  "records_sha256": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72",
+  "predictions": "results/fiorillo_v0_5/predictions/biogpt_large_pqa-raw_pubmedqa_answer_test.csv",
+  "predictions_sha256": "625d246c6608247a4483f3c2feef4542e358cdbcefd55e455fd01b77d33e6b7e",
+  "release_candidate_sha256": "bd45820bef38b523092813b406949c44af7f40babed6eb20658559ff3e83ea55",
+  "settings_from": "biogpt.json's input settings (the validation run's)",
+  "device": "cuda",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "dtype": "float32",
+  "load_seconds": 1.6107743509928696,
+  "written_utc": "2026-10-02T15:18:10Z"
+ }
+}

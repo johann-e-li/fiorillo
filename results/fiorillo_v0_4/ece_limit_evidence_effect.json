@@ -1,0 +1,12 @@
+{
+ "predictions": "s8_ei_evidence_effect_validation.csv",
+ "validation_rows": 1237,
+ "n": 1218,
+ "draws": 5000,
+ "ece_if_calibrated": {
+  "median": 0.013592554567322803,
+  "p05": 0.008260563037150911,
+  "p95": 0.0202444146886282
+ },
+ "share_at_most_0.05": 1.0
+}

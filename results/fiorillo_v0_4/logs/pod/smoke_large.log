@@ -1,0 +1,1014 @@
+2026-09-30T16:57:30Z  stage smoke_large started
+2026-09-30T16:57:30Z  smoke test: environment (no GPU work)
+vllm                             0.30.0+cu129
+torch                            2.13.0+cu129
+triton                           3.7.1
+cuda-bindings                    12.9.9
+cuda-python                      12.9.7
+nvidia-cutlass-dsl               4.7.1
+nvidia-cutlass-dsl-libs-cu12     4.7.1
+nvidia-cutlass-dsl-libs-cu13     4.7.1
+quack-kernels                    0.6.5
+apache-tvm-ffi                   0.1.11
+flashinfer-python                0.6.18.post1
+transformers                     5.17.0
+tokenizers                       0.23.2
+cuda.bindings CUDA_VERSION 12090 (below 13000 is needed on this 12.8 driver)
+nvcc for FlashInfer's JIT: /usr/local/cuda/bin/nvcc exists: True
+FA3 supported: True | FA4 supported: True 
+2026-09-30T16:57:35Z  smoke test: GPU used before (MiB) 39013
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00, 26.84it/s]Fetching 7 files: 100%|██████████| 7/7 [00:09<00:00,  1.59s/it]Fetching 7 files: 100%|██████████| 7/7 [00:09<00:00,  1.33s/it]
+2026-09-30T16:57:45Z  smoke test: E2B's tokenizer.json is identical to the 31B's
+{"prompts": {"evidence_effect_validation": 1237, "pubmedqa_answer_validation": 150}}
+2026-09-30T16:57:52Z  smoke test: first process (max_logprobs 1,000; logprobs 20, then 1,000)
+Traceback (most recent call last):
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/_ops.py", line 1516, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libnvrtc.so.13: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 145, in <module>
+    main()
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 141, in main
+    first(args, lm8) if args.mode == "first" else second(args, lm8)
+    ^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 56, in first
+    from vllm import SamplingParams
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/__init__.py", line 70, in __getattr__
+    module = import_module(module_name, __package__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/sampling_params.py", line 23, in <module>
+    from vllm.v1.serial_utils import PydanticMsgspecMixin
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/serial_utils.py", line 25, in <module>
+    from vllm.multimodal.inputs import (
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/multimodal/__init__.py", line 3, in <module>
+    from .hasher import MultiModalHasher
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/multimodal/hasher.py", line 17, in <module>
+    from .media import MediaWithBytes
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/multimodal/media/__init__.py", line 3, in <module>
+    from .audio import AudioEmbeddingMediaIO, AudioMediaIO
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/multimodal/media/audio.py", line 40, in <module>
+    from torchcodec.decoders import AudioDecoder
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/__init__.py", line 13, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/decoders/__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/_core/__init__.py", line 8, in <module>
+    from ._metadata import (
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/_core/_metadata.py", line 16, in <module>
+    from torchcodec._core.ops import (
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 35, in <module>
+    load_image_library()
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 71, in load_image_library
+    torch.ops.load_library(image_library_path)
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/_ops.py", line 1518, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /root/eddm_s8/vllm_env/lib/python3.12/site-packages/torchcodec/libtorchcodec_image.so
+2026-09-30T17:01:55Z  stage smoke_large started
+2026-09-30T17:01:55Z  smoke test: environment (no GPU work)
+vllm                             0.30.0+cu129
+torch                            2.13.0+cu129
+triton                           3.7.1
+cuda-bindings                    12.9.9
+cuda-python                      12.9.7
+nvidia-cutlass-dsl               4.7.1
+nvidia-cutlass-dsl-libs-cu12     4.7.1
+nvidia-cutlass-dsl-libs-cu13     4.7.1
+quack-kernels                    0.6.5
+apache-tvm-ffi                   0.1.11
+flashinfer-python                0.6.18.post1
+transformers                     5.17.0
+tokenizers                       0.23.2
+cuda.bindings CUDA_VERSION 12090 (below 13000 is needed on this 12.8 driver)
+nvcc for FlashInfer's JIT: /usr/local/cuda/bin/nvcc exists: True
+FA3 supported: True | FA4 supported: True 
+2026-09-30T17:01:59Z  smoke test: GPU used before (MiB) 39013
+2026-09-30T17:01:59Z  smoke test: E2B's tokenizer.json is identical to the 31B's
+2026-09-30T17:01:59Z  smoke test: first process (max_logprobs 1,000; logprobs 20, then 1,000)
+letter ids {'A': [236776, 562], 'B': [236799, 603], 'C': [236780, 565]} left out []
+prompt tokens: [4076, 4076, 4052, 4050, 337, 372]
+GPU used before load (MiB): 39013
+INFO 09-30 17:02:12 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/models/gemma4_e2b_smoke', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_logprobs': 1000, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/models/gemma4_e2b_smoke'}
+INFO 09-30 17:02:19 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 17:02:19 [model.py:2030] Using max model len 8192
+WARNING 09-30 17:02:19 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 17:02:21 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 17:02:21 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 17:02:21 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-30 17:02:21 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 17:02:21 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 17:02:21 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 17:02:21 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 17:02:21 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 17:02:21 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=32537) INFO 09-30 17:02:25 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/models/gemma4_e2b_smoke', speculative_config=None, tokenizer='/root/eddm_s8/models/gemma4_e2b_smoke', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/models/gemma4_e2b_smoke, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=32537) INFO 09-30 17:02:27 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_2a642efbd3e44dcfb26b9174f480082b backend=nccl
+(EngineCore pid=32537) INFO 09-30 17:02:27 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=32537) INFO 09-30 17:02:27 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=32537) INFO 09-30 17:02:28 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=32537) INFO 09-30 17:02:28 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=32537) INFO 09-30 17:02:30 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=32537) INFO 09-30 17:02:30 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=32537) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=32537) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=32537) INFO 09-30 17:02:31 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 128.42 GiB.
+(EngineCore pid=32537) INFO 09-30 17:02:31 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=32537) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=32537) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.89s/it]
+(EngineCore pid=32537) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.89s/it]
+(EngineCore pid=32537) 
+(EngineCore pid=32537) INFO 09-30 17:02:33 [default_loader.py:430] Loading weights took 1.99 seconds
+(EngineCore pid=32537) INFO 09-30 17:02:33 [model_runner.py:428] Model loading took 9.08 GiB memory and 5.870978 seconds
+(EngineCore pid=32537) INFO 09-30 17:02:33 [topk_topp_sampler.py:78] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=32537) INFO 09-30 17:02:33 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=32537) INFO 09-30 17:02:35 [gpu_worker.py:640] Available KV cache memory: 7.48 GiB
+(EngineCore pid=32537) INFO 09-30 17:02:35 [kv_cache_utils.py:2395] GPU KV cache size: 434,766 tokens, Maximum concurrency for 8,192 tokens per request: 53.07x
+(EngineCore pid=32537) INFO 09-30 17:02:35 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=32537) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=32537)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=32537) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:13<00:00, 13.12s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:13<00:00, 13.12s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=32537) INFO 09-30 17:02:48 [kernel_warmup.py:185] JIT kernel warmup finished in 13.12s.
+(EngineCore pid=32537) INFO 09-30 17:02:49 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json
+(EngineCore pid=32537) 2026-09-30 17:02:49,878 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=32537) INFO 09-30 17:02:49 [kernel_warmup.py:359] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+(EngineCore pid=32537) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=32537)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=32537) 2026-09-30 17:02:55,910 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=32537) 2026-09-30 17:02:55,921 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366] EngineCore failed to start.
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366] Traceback (most recent call last):
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1328, in run_engine_core
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1085, in __init__
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     super().__init__(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 145, in __init__
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 356, in _initialize_kv_caches
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     self.model_executor.compile_or_warm_up_model()
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 126, in compile_or_warm_up_model
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     compilation_times: list[CompilationTimes] = self.collective_rpc(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                                                 ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 103, in collective_rpc
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     result = run_method(self.driver_worker, method, args, kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/serial_utils.py", line 510, in run_method
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 811, in compile_or_warm_up_model
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     warmup_kernels(self.model_runner, self.execute_model, self.sample_tokens)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/warmup.py", line 235, in warmup_kernels
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     _warmup_kernels(model_runner, worker_execute_model, worker_sample_tokens)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/warmup.py", line 373, in _warmup_kernels
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     worker_sample_tokens(grammar_output)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 1145, in sample_tokens
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return self.model_runner.sample_tokens(grammar_output)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return func(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/eplb_utils.py", line 27, in wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     result = fn(self, *args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]              ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/model_runner.py", line 2048, in sample_tokens
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     sampler_output, num_sampled, num_rejected = self.sample(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                                                 ^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/model_runner.py", line 1554, in sample
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     sampler_output = self.sampler(logits, input_batch)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 141, in __call__
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     sampled, processed_logits = self.sample(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                                 ^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 310, in sample
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return self._sample_random(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 331, in _sample_random
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     sampled = flashinfer_sample(processed_logits, top_k, top_p).to(torch.int64)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/sample/ops/topk_topp_sampler.py", line 522, in flashinfer_sample
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     next_token_ids = flashinfer.sampling.top_k_top_p_sampling_from_logits(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return _inner(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 1547, in top_k_top_p_sampling_from_logits
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     masked_logits = top_k_mask_logits(logits, top_k)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return _inner(*args, **kwargs)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 1974, in top_k_mask_logits
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     return get_sampling_module().top_k_mask_logits(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 68, in get_sampling_module
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     module = gen_sampling_module().build_and_load()
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/core.py", line 320, in build_and_load
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     self.build()
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/core.py", line 427, in build
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     run_ninja(self.build_dir, self.ninja_path, verbose)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 370, in run_ninja
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     subprocess.run(
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/usr/lib/python3.12/subprocess.py", line 548, in run
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     with Popen(*popenargs, **kwargs) as process:
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     self._execute_child(args, executable, preexec_fn, close_fds,
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]   File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366]     raise child_exception_type(errno_num, err_msg, err_filename)
+(EngineCore pid=32537) ERROR 09-30 17:03:00 [core.py:1366] FileNotFoundError: [Errno 2] No such file or directory: 'ninja'
+(EngineCore pid=32537) Process EngineCore:
+(EngineCore pid=32537) Traceback (most recent call last):
+(EngineCore pid=32537)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=32537)     self.run()
+(EngineCore pid=32537)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=32537)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1370, in run_engine_core
+(EngineCore pid=32537)     raise e
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1328, in run_engine_core
+(EngineCore pid=32537)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=32537)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1085, in __init__
+(EngineCore pid=32537)     super().__init__(
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 145, in __init__
+(EngineCore pid=32537)     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=32537)                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 356, in _initialize_kv_caches
+(EngineCore pid=32537)     self.model_executor.compile_or_warm_up_model()
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 126, in compile_or_warm_up_model
+(EngineCore pid=32537)     compilation_times: list[CompilationTimes] = self.collective_rpc(
+(EngineCore pid=32537)                                                 ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 103, in collective_rpc
+(EngineCore pid=32537)     result = run_method(self.driver_worker, method, args, kwargs)
+(EngineCore pid=32537)              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/serial_utils.py", line 510, in run_method
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 811, in compile_or_warm_up_model
+(EngineCore pid=32537)     warmup_kernels(self.model_runner, self.execute_model, self.sample_tokens)
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/warmup.py", line 235, in warmup_kernels
+(EngineCore pid=32537)     _warmup_kernels(model_runner, worker_execute_model, worker_sample_tokens)
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/warmup.py", line 373, in _warmup_kernels
+(EngineCore pid=32537)     worker_sample_tokens(grammar_output)
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 1145, in sample_tokens
+(EngineCore pid=32537)     return self.model_runner.sample_tokens(grammar_output)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=32537)     return func(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/eplb_utils.py", line 27, in wrapper
+(EngineCore pid=32537)     result = fn(self, *args, **kwargs)
+(EngineCore pid=32537)              ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/model_runner.py", line 2048, in sample_tokens
+(EngineCore pid=32537)     sampler_output, num_sampled, num_rejected = self.sample(
+(EngineCore pid=32537)                                                 ^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/model_runner.py", line 1554, in sample
+(EngineCore pid=32537)     sampler_output = self.sampler(logits, input_batch)
+(EngineCore pid=32537)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 141, in __call__
+(EngineCore pid=32537)     sampled, processed_logits = self.sample(
+(EngineCore pid=32537)                                 ^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 310, in sample
+(EngineCore pid=32537)     return self._sample_random(
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/worker/gpu/sample/sampler.py", line 331, in _sample_random
+(EngineCore pid=32537)     sampled = flashinfer_sample(processed_logits, top_k, top_p).to(torch.int64)
+(EngineCore pid=32537)               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/sample/ops/topk_topp_sampler.py", line 522, in flashinfer_sample
+(EngineCore pid=32537)     next_token_ids = flashinfer.sampling.top_k_top_p_sampling_from_logits(
+(EngineCore pid=32537)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+(EngineCore pid=32537)     return _inner(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 1547, in top_k_top_p_sampling_from_logits
+(EngineCore pid=32537)     masked_logits = top_k_mask_logits(logits, top_k)
+(EngineCore pid=32537)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/api_logging.py", line 2333, in _auto_dump_wrapper
+(EngineCore pid=32537)     return _inner(*args, **kwargs)
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 1974, in top_k_mask_logits
+(EngineCore pid=32537)     return get_sampling_module().top_k_mask_logits(
+(EngineCore pid=32537)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/sampling.py", line 68, in get_sampling_module
+(EngineCore pid=32537)     module = gen_sampling_module().build_and_load()
+(EngineCore pid=32537)              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/core.py", line 320, in build_and_load
+(EngineCore pid=32537)     self.build()
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/core.py", line 427, in build
+(EngineCore pid=32537)     run_ninja(self.build_dir, self.ninja_path, verbose)
+(EngineCore pid=32537)   File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 370, in run_ninja
+(EngineCore pid=32537)     subprocess.run(
+(EngineCore pid=32537)   File "/usr/lib/python3.12/subprocess.py", line 548, in run
+(EngineCore pid=32537)     with Popen(*popenargs, **kwargs) as process:
+(EngineCore pid=32537)          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=32537)   File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+(EngineCore pid=32537)     self._execute_child(args, executable, preexec_fn, close_fds,
+(EngineCore pid=32537)   File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+(EngineCore pid=32537)     raise child_exception_type(errno_num, err_msg, err_filename)
+(EngineCore pid=32537) FileNotFoundError: [Errno 2] No such file or directory: 'ninja'
+INFO 09-30 17:03:00 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+Traceback (most recent call last):
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 145, in <module>
+    main()
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 141, in main
+    first(args, lm8) if args.mode == "first" else second(args, lm8)
+    ^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 65, in first
+    llm = lm8.make_llm(args.model_dir, args.util, max_logprobs=lm8.TOP_AGAIN)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/code/src/eval/large_model_session8.py", line 237, in make_llm
+    llm = LLM(limit_mm_per_prompt={m: 0 for m in modalities}, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 343, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 184, in from_engine_args
+    return cls(
+           ^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/llm_engine.py", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 122, in make_client
+    return SyncMPClient(
+           ^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 880, in __init__
+    super().__init__(
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 656, in __init__
+    with launch_core_engines(
+  File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+2026-09-30T17:04:06Z  stage smoke_large started
+2026-09-30T17:04:06Z  smoke test: environment (no GPU work)
+vllm                             0.30.0+cu129
+torch                            2.13.0+cu129
+triton                           3.7.1
+cuda-bindings                    12.9.9
+cuda-python                      12.9.7
+nvidia-cutlass-dsl               4.7.1
+nvidia-cutlass-dsl-libs-cu12     4.7.1
+nvidia-cutlass-dsl-libs-cu13     4.7.1
+quack-kernels                    0.6.5
+apache-tvm-ffi                   0.1.11
+flashinfer-python                0.6.18.post1
+transformers                     5.17.0
+tokenizers                       0.23.2
+cuda.bindings CUDA_VERSION 12090 (below 13000 is needed on this 12.8 driver)
+nvcc for FlashInfer's JIT: /usr/local/cuda/bin/nvcc exists: True
+FA3 supported: True | FA4 supported: True 
+2026-09-30T17:04:09Z  smoke test: GPU used before (MiB) 39013
+2026-09-30T17:04:09Z  smoke test: E2B's tokenizer.json is identical to the 31B's
+2026-09-30T17:04:09Z  smoke test: first process (max_logprobs 1,000; logprobs 20, then 1,000)
+letter ids {'A': [236776, 562], 'B': [236799, 603], 'C': [236780, 565]} left out []
+prompt tokens: [4076, 4076, 4052, 4050, 337, 372]
+GPU used before load (MiB): 39013
+INFO 09-30 17:04:16 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/models/gemma4_e2b_smoke', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_logprobs': 1000, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/models/gemma4_e2b_smoke'}
+INFO 09-30 17:04:16 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 17:04:16 [model.py:2030] Using max model len 8192
+WARNING 09-30 17:04:16 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 17:04:18 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 17:04:18 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 17:04:18 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-30 17:04:18 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 17:04:18 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 17:04:18 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 17:04:18 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 17:04:18 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 17:04:18 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=33370) INFO 09-30 17:04:22 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/models/gemma4_e2b_smoke', speculative_config=None, tokenizer='/root/eddm_s8/models/gemma4_e2b_smoke', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/models/gemma4_e2b_smoke, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=33370) INFO 09-30 17:04:23 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_52881bed250844359c3bd2a392d02d42 backend=nccl
+(EngineCore pid=33370) INFO 09-30 17:04:23 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=33370) INFO 09-30 17:04:23 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=33370) INFO 09-30 17:04:24 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=33370) INFO 09-30 17:04:24 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=33370) INFO 09-30 17:04:25 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=33370) INFO 09-30 17:04:25 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=33370) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=33370) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=33370) INFO 09-30 17:04:26 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.85 GiB.
+(EngineCore pid=33370) INFO 09-30 17:04:26 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=33370) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=33370) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.86s/it]
+(EngineCore pid=33370) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.86s/it]
+(EngineCore pid=33370) 
+(EngineCore pid=33370) INFO 09-30 17:04:28 [default_loader.py:430] Loading weights took 1.96 seconds
+(EngineCore pid=33370) INFO 09-30 17:04:28 [model_runner.py:428] Model loading took 9.08 GiB memory and 4.000186 seconds
+(EngineCore pid=33370) INFO 09-30 17:04:28 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=33370) INFO 09-30 17:04:28 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=33370) INFO 09-30 17:04:30 [gpu_worker.py:640] Available KV cache memory: 7.48 GiB
+(EngineCore pid=33370) INFO 09-30 17:04:30 [kv_cache_utils.py:2395] GPU KV cache size: 434,766 tokens, Maximum concurrency for 8,192 tokens per request: 53.07x
+(EngineCore pid=33370) INFO 09-30 17:04:30 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=33370) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=33370)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=33370) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.47s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.47s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=33370) INFO 09-30 17:04:37 [kernel_warmup.py:185] JIT kernel warmup finished in 7.47s.
+(EngineCore pid=33370) INFO 09-30 17:04:38 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json
+(EngineCore pid=33370) 2026-09-30 17:04:38,016 - INFO - autotuner.py:2789 - flashinfer.jit: [Autotuner]: Loaded 0 configs from /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json
+(EngineCore pid=33370) 2026-09-30 17:04:38,016 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=33370) INFO 09-30 17:04:38 [kernel_warmup.py:359] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+(EngineCore pid=33370) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=33370)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=33370) 2026-09-30 17:04:45,632 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=33370) 2026-09-30 17:04:45,638 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=33370) INFO 09-30 17:05:02 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 10.46 GiB for consumed memory (weights + non-torch), 1.86 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=7877242368` (7.34 GiB) to fit into requested memory, or `--kv-cache-memory=30194118144` (28.12 GiB) to fully utilize gpu memory. Current kv cache memory in use is 7.48 GiB.
+(EngineCore pid=33370) INFO 09-30 17:05:03 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=33370) INFO 09-30 17:05:04 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=33370) INFO 09-30 17:05:04 [core.py:379] init engine (profile, create kv cache, warmup model) took 35.66 s
+(EngineCore pid=33370) INFO 09-30 17:05:04 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=33370) INFO 09-30 17:05:04 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=33370) INFO 09-30 17:05:04 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 17:05:06 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 1000; max_num_seqs None; max_num_batched_tokens None
+load 50.3 s; GPU used after load (MiB): 60614
+(EngineCore pid=33370) WARNING 09-30 17:05:06 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=33370) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=33370)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=33370) WARNING 09-30 17:05:12 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=33370) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=33370)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=33370) WARNING 09-30 17:05:15 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+logprobs=20: 6 requests in 9.86 s
+  evidence-11828: method pending, letters' mass 0.0000, top token 'The', missing ['B', 'C']
+  evidence-11827: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  evidence-6459: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  evidence-6458: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  pubmedqa-15137012: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  pubmedqa-11053064: method pending, letters' mass 0.0000, top token 'The', missing ['B', 'C']
+logprobs=1000: 6 requests in 0.56 s
+  evidence-11828: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-11827: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-6459: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-6458: method top1000, letters' mass 0.0000, top token 'The', missing []
+  pubmedqa-15137012: method top1000, letters' mass 0.0000, top token 'The', missing []
+  pubmedqa-11053064: method top1000, letters' mass 0.0000, top token 'The', missing []
+FIRST PASS OK
+INFO 09-30 17:05:17 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=33370) INFO 09-30 17:05:17 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=33370) INFO 09-30 17:05:17 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=33370) INFO 09-30 17:05:17 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=33370) INFO 09-30 17:05:17 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+2026-09-30T17:05:19Z  smoke test: GPU used after the first process (MiB) 39013
+2026-09-30T17:05:19Z  smoke test: second process (max_num_seqs 1, max_num_batched_tokens 1,024, prompt_logprobs 0)
+GPU used before load (MiB): 39013
+INFO 09-30 17:05:27 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/models/gemma4_e2b_smoke', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_num_batched_tokens': 1024, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/models/gemma4_e2b_smoke'}
+INFO 09-30 17:05:27 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 17:05:27 [model.py:2030] Using max model len 8192
+WARNING 09-30 17:05:27 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 17:05:30 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 17:05:30 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 17:05:30 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=1024.
+INFO 09-30 17:05:30 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 17:05:30 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 17:05:30 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 17:05:30 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 17:05:30 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 17:05:30 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=34057) INFO 09-30 17:05:36 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/models/gemma4_e2b_smoke', speculative_config=None, tokenizer='/root/eddm_s8/models/gemma4_e2b_smoke', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/models/gemma4_e2b_smoke, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [1024], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=34057) INFO 09-30 17:05:37 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_cdabc77085514c05b6e66010419c6d72 backend=nccl
+(EngineCore pid=34057) INFO 09-30 17:05:37 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=34057) INFO 09-30 17:05:37 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=34057) INFO 09-30 17:05:38 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=34057) INFO 09-30 17:05:38 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=34057) INFO 09-30 17:05:38 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=34057) INFO 09-30 17:05:38 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=34057) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=34057) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=34057) INFO 09-30 17:05:39 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.78 GiB.
+(EngineCore pid=34057) INFO 09-30 17:05:39 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=34057) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=34057) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.83s/it]
+(EngineCore pid=34057) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.83s/it]
+(EngineCore pid=34057) 
+(EngineCore pid=34057) INFO 09-30 17:05:41 [default_loader.py:430] Loading weights took 1.93 seconds
+(EngineCore pid=34057) INFO 09-30 17:05:41 [model_runner.py:428] Model loading took 8.83 GiB memory and 3.953564 seconds
+(EngineCore pid=34057) INFO 09-30 17:05:41 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=34057) INFO 09-30 17:05:41 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=34057) INFO 09-30 17:05:43 [gpu_worker.py:640] Available KV cache memory: 10.53 GiB
+(EngineCore pid=34057) INFO 09-30 17:05:43 [kv_cache_utils.py:2395] GPU KV cache size: 1,127,517 tokens, Maximum concurrency for 8,192 tokens per request: 137.64x
+(EngineCore pid=34057) INFO 09-30 17:05:43 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=34057) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=34057)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=34057) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.41s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.41s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=34057) INFO 09-30 17:05:50 [kernel_warmup.py:185] JIT kernel warmup finished in 7.41s.
+(EngineCore pid=34057) INFO 09-30 17:05:50 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/07dfefb1a224c476e18d63abd4f915c0f8f9e5671459972912102bbd2f83466a/autotune_configs.json
+(EngineCore pid=34057) 2026-09-30 17:05:50,902 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=34057) INFO 09-30 17:05:50 [kernel_warmup.py:359] Running FlashInfer autotune with 1024 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024).
+(EngineCore pid=34057) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=34057)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=34057) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=34057)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=34057) 2026-09-30 17:05:57,172 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=34057) 2026-09-30 17:05:57,179 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/07dfefb1a224c476e18d63abd4f915c0f8f9e5671459972912102bbd2f83466a/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=34057) INFO 09-30 17:06:00 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 9.15 GiB for consumed memory (weights + non-torch), 0.12 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=11154061312` (10.39 GiB) to fit into requested memory, or `--kv-cache-memory=33470937088` (31.17 GiB) to fully utilize gpu memory. Current kv cache memory in use is 10.53 GiB.
+(EngineCore pid=34057) INFO 09-30 17:06:01 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=34057) INFO 09-30 17:06:01 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=34057) INFO 09-30 17:06:01 [core.py:379] init engine (profile, create kv cache, warmup model) took 19.56 s
+(EngineCore pid=34057) INFO 09-30 17:06:01 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=34057) INFO 09-30 17:06:01 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=34057) INFO 09-30 17:06:01 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 17:06:03 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 20; max_num_seqs 1; max_num_batched_tokens 1024
+load 37.1 s
+(EngineCore pid=34057) WARNING 09-30 17:06:03 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=34057) WARNING 09-30 17:06:07 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+36 prompt-logprob requests in 4.71 s
+  evidence-11828 variant 236776: prompt logprob -13.1202, first pass top-1,000 -12.8577, difference 0.2624
+  evidence-11828 variant 562: prompt logprob -20.3702, first pass top-1,000 -19.9827, difference 0.3874
+  evidence-11828 variant 236799: prompt logprob -13.9327, first pass top-1,000 -13.6702, difference 0.2624
+  evidence-11828 variant 603: prompt logprob -20.2452, first pass top-1,000 -19.8577, difference 0.3874
+  evidence-11828 variant 236780: prompt logprob -16.3077, first pass top-1,000 -16.0452, difference 0.2624
+  evidence-11828 variant 565: prompt logprob -22.3702, first pass top-1,000 absent, difference -
+  evidence-11827 variant 236776: prompt logprob -13.0889, first pass top-1,000 -12.8413, difference 0.2476
+  evidence-11827 variant 562: prompt logprob -20.7139, first pass top-1,000 absent, difference -
+  evidence-11827 variant 236799: prompt logprob -13.9014, first pass top-1,000 -13.5913, difference 0.3101
+  evidence-11827 variant 603: prompt logprob -20.4639, first pass top-1,000 -20.0288, difference 0.4351
+  evidence-11827 variant 236780: prompt logprob -15.8389, first pass top-1,000 -15.7163, difference 0.1226
+  evidence-11827 variant 565: prompt logprob -22.3389, first pass top-1,000 absent, difference -
+  evidence-6459 variant 236776: prompt logprob -12.8433, first pass top-1,000 -13.8551, difference 1.0117
+  evidence-6459 variant 562: prompt logprob -21.4058, first pass top-1,000 absent, difference -
+  evidence-6459 variant 236799: prompt logprob -13.5308, first pass top-1,000 -13.9801, difference 0.4492
+  evidence-6459 variant 603: prompt logprob -20.6558, first pass top-1,000 absent, difference -
+  evidence-6459 variant 236780: prompt logprob -15.1558, first pass top-1,000 -15.6051, difference 0.4492
+  evidence-6459 variant 565: prompt logprob -21.5308, first pass top-1,000 absent, difference -
+  evidence-6458 variant 236776: prompt logprob -12.3782, first pass top-1,000 -12.8254, difference 0.4472
+  evidence-6458 variant 562: prompt logprob -21.1907, first pass top-1,000 absent, difference -
+  evidence-6458 variant 236799: prompt logprob -13.5032, first pass top-1,000 -13.8254, difference 0.3222
+  evidence-6458 variant 603: prompt logprob -20.9407, first pass top-1,000 absent, difference -
+  evidence-6458 variant 236780: prompt logprob -14.9407, first pass top-1,000 -15.0754, difference 0.1347
+  evidence-6458 variant 565: prompt logprob -21.4407, first pass top-1,000 absent, difference -
+  pubmedqa-15137012 variant 236776: prompt logprob -13.8767, first pass top-1,000 -13.3456, difference 0.5311
+  pubmedqa-15137012 variant 562: prompt logprob -22.0017, first pass top-1,000 -21.5956, difference 0.4061
+  pubmedqa-15137012 variant 236799: prompt logprob -15.5017, first pass top-1,000 -15.2206, difference 0.2811
+  pubmedqa-15137012 variant 603: prompt logprob -22.5017, first pass top-1,000 -22.3456, difference 0.1561
+  pubmedqa-15137012 variant 236780: prompt logprob -20.3767, first pass top-1,000 -20.5956, difference 0.2189
+  pubmedqa-15137012 variant 565: prompt logprob -26.1267, first pass top-1,000 absent, difference -
+  pubmedqa-11053064 variant 236776: prompt logprob -13.5316, first pass top-1,000 -13.4691, difference 0.0625
+  pubmedqa-11053064 variant 562: prompt logprob -22.0941, first pass top-1,000 -21.9691, difference 0.1250
+  pubmedqa-11053064 variant 236799: prompt logprob -16.3441, first pass top-1,000 -16.2191, difference 0.1250
+  pubmedqa-11053064 variant 603: prompt logprob -23.0941, first pass top-1,000 -22.9691, difference 0.1250
+  pubmedqa-11053064 variant 236780: prompt logprob -20.3441, first pass top-1,000 -20.3441, difference 0.0000
+  pubmedqa-11053064 variant 565: prompt logprob -26.3441, first pass top-1,000 absent, difference -
+largest difference from the first pass: 1.0117 (bf16 logits; up to about 0.1 is expected)
+Traceback (most recent call last):
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 145, in <module>
+    main()
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 141, in main
+    first(args, lm8) if args.mode == "first" else second(args, lm8)
+                                                  ^^^^^^^^^^^^^^^^^
+  File "/root/eddm_s8/code/src/eval/smoke_large_session8.py", line 126, in second
+    assert worst < 0.25, "prompt log-probabilities disagree with the next-token log-probabilities"
+           ^^^^^^^^^^^^
+AssertionError: prompt log-probabilities disagree with the next-token log-probabilities
+Terminated
+2026-09-30T18:15:08Z  stage smoke_large started
+2026-09-30T18:15:08Z  smoke test: environment (no GPU work)
+vllm                             0.30.0+cu129
+torch                            2.13.0+cu129
+triton                           3.7.1
+cuda-bindings                    12.9.9
+cuda-python                      12.9.7
+nvidia-cutlass-dsl               4.7.1
+nvidia-cutlass-dsl-libs-cu12     4.7.1
+nvidia-cutlass-dsl-libs-cu13     4.7.1
+quack-kernels                    0.6.5
+apache-tvm-ffi                   0.1.11
+flashinfer-python                0.6.18.post1
+transformers                     5.17.0
+tokenizers                       0.23.2
+cuda.bindings CUDA_VERSION 12090 (below 13000 is needed on this 12.8 driver)
+nvcc for FlashInfer's JIT: /usr/local/cuda/bin/nvcc exists: True
+FA3 supported: True | FA4 supported: True 
+2026-09-30T18:15:12Z  smoke test: GPU used before (MiB) 39011
+2026-09-30T18:15:12Z  smoke test: E2B's tokenizer.json is identical to the 31B's
+2026-09-30T18:15:12Z  smoke test: first process (max_logprobs 1,000; logprobs 20, then 1,000)
+letter ids {'A': [236776, 562], 'B': [236799, 603], 'C': [236780, 565]} left out []
+prompt tokens: [4076, 4076, 4052, 4050, 337, 372]
+GPU used before load (MiB): 39011
+INFO 09-30 18:15:22 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/models/gemma4_e2b_smoke', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_logprobs': 1000, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/models/gemma4_e2b_smoke'}
+INFO 09-30 18:15:22 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 18:15:22 [model.py:2030] Using max model len 8192
+WARNING 09-30 18:15:22 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 18:15:24 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 18:15:24 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 18:15:24 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-30 18:15:24 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 18:15:24 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 18:15:24 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 18:15:24 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:15:24 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 18:15:24 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=38961) INFO 09-30 18:15:28 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/models/gemma4_e2b_smoke', speculative_config=None, tokenizer='/root/eddm_s8/models/gemma4_e2b_smoke', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/models/gemma4_e2b_smoke, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=38961) INFO 09-30 18:15:29 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_db5fd8699cf64872869d1e4b96ff49b6 backend=nccl
+(EngineCore pid=38961) INFO 09-30 18:15:29 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=38961) INFO 09-30 18:15:29 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=38961) INFO 09-30 18:15:30 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=38961) INFO 09-30 18:15:30 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=38961) INFO 09-30 18:15:31 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=38961) INFO 09-30 18:15:31 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=38961) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=38961) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=38961) INFO 09-30 18:15:31 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.82 GiB.
+(EngineCore pid=38961) INFO 09-30 18:15:31 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=38961) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=38961) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.84s/it]
+(EngineCore pid=38961) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.84s/it]
+(EngineCore pid=38961) 
+(EngineCore pid=38961) INFO 09-30 18:15:33 [default_loader.py:430] Loading weights took 1.94 seconds
+(EngineCore pid=38961) INFO 09-30 18:15:34 [model_runner.py:428] Model loading took 9.08 GiB memory and 3.994517 seconds
+(EngineCore pid=38961) INFO 09-30 18:15:34 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=38961) INFO 09-30 18:15:34 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=38961) INFO 09-30 18:15:35 [gpu_worker.py:640] Available KV cache memory: 7.48 GiB
+(EngineCore pid=38961) INFO 09-30 18:15:35 [kv_cache_utils.py:2395] GPU KV cache size: 434,766 tokens, Maximum concurrency for 8,192 tokens per request: 53.07x
+(EngineCore pid=38961) INFO 09-30 18:15:35 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=38961) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=38961)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=38961) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.46s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.46s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=38961) INFO 09-30 18:15:43 [kernel_warmup.py:185] JIT kernel warmup finished in 7.46s.
+(EngineCore pid=38961) INFO 09-30 18:15:43 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json
+(EngineCore pid=38961) 2026-09-30 18:15:43,571 - INFO - autotuner.py:2789 - flashinfer.jit: [Autotuner]: Loaded 0 configs from /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json
+(EngineCore pid=38961) 2026-09-30 18:15:43,571 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=38961) INFO 09-30 18:15:43 [kernel_warmup.py:359] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+(EngineCore pid=38961) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=38961)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=38961) 2026-09-30 18:15:49,642 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=38961) 2026-09-30 18:15:49,648 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/979850c01b0a29d0b681aa5e718c195728ab8ee5dbdf0488fdd1c3ffb107065d/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=38961) INFO 09-30 18:15:55 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 10.46 GiB for consumed memory (weights + non-torch), 1.86 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=7877242368` (7.34 GiB) to fit into requested memory, or `--kv-cache-memory=30196215296` (28.12 GiB) to fully utilize gpu memory. Current kv cache memory in use is 7.48 GiB.
+(EngineCore pid=38961) INFO 09-30 18:15:56 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=38961) INFO 09-30 18:15:56 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=38961) INFO 09-30 18:15:56 [core.py:379] init engine (profile, create kv cache, warmup model) took 22.74 s
+(EngineCore pid=38961) INFO 09-30 18:15:56 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=38961) INFO 09-30 18:15:56 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=38961) INFO 09-30 18:15:57 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:15:59 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 1000; max_num_seqs None; max_num_batched_tokens None
+load 38.2 s; GPU used after load (MiB): 60612
+(EngineCore pid=38961) WARNING 09-30 18:16:00 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=38961) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=38961)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=38961) WARNING 09-30 18:16:05 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=38961) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=38961)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=38961) WARNING 09-30 18:16:09 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+logprobs=20: 6 requests in 10.01 s
+  evidence-11828: method pending, letters' mass 0.0000, top token 'The', missing ['B', 'C']
+  evidence-11827: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  evidence-6459: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  evidence-6458: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  pubmedqa-15137012: method pending, letters' mass 0.0000, top token 'The', missing ['C']
+  pubmedqa-11053064: method pending, letters' mass 0.0000, top token 'The', missing ['B', 'C']
+logprobs=1000: 6 requests in 0.75 s
+  evidence-11828: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-11827: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-6459: method top1000, letters' mass 0.0000, top token 'The', missing []
+  evidence-6458: method top1000, letters' mass 0.0000, top token 'The', missing []
+  pubmedqa-15137012: method top1000, letters' mass 0.0000, top token 'The', missing []
+  pubmedqa-11053064: method top1000, letters' mass 0.0000, top token 'The', missing []
+INFO 09-30 18:16:10 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 09-30 18:16:10 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 09-30 18:16:10 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=38961) INFO 09-30 18:16:10 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=38961) INFO 09-30 18:16:10 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=38961) INFO 09-30 18:16:10 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=38961) INFO 09-30 18:16:10 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 09-30 18:16:11 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 09-30 18:16:11 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 09-30 18:16:11 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.1 s
+FIRST PASS OK
+2026-09-30T18:16:13Z  smoke test: GPU used 39011 MiB (before the smoke test: 39011 MiB)
+2026-09-30T18:16:13Z  smoke test: second process (max_num_seqs 1, max_num_batched_tokens 1,024; next-token and prompt log-probabilities in one engine)
+GPU used before load (MiB): 39011
+INFO 09-30 18:16:23 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/models/gemma4_e2b_smoke', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_num_batched_tokens': 1024, 'max_num_seqs': 1, 'max_logprobs': 1000, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/models/gemma4_e2b_smoke'}
+INFO 09-30 18:16:23 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 18:16:23 [model.py:2030] Using max model len 8192
+WARNING 09-30 18:16:23 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 18:16:25 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 18:16:25 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 18:16:25 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=1024.
+INFO 09-30 18:16:25 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 18:16:25 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 18:16:25 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 18:16:25 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:16:25 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 18:16:25 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=39581) INFO 09-30 18:16:29 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/models/gemma4_e2b_smoke', speculative_config=None, tokenizer='/root/eddm_s8/models/gemma4_e2b_smoke', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/models/gemma4_e2b_smoke, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [1024], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=39581) INFO 09-30 18:16:29 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_9d3caa96104b4d5fb3bfaa37fea0e0b2 backend=nccl
+(EngineCore pid=39581) INFO 09-30 18:16:29 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=39581) INFO 09-30 18:16:29 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=39581) INFO 09-30 18:16:31 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=39581) INFO 09-30 18:16:31 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=39581) INFO 09-30 18:16:32 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=39581) INFO 09-30 18:16:32 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=39581) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=39581) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=39581) INFO 09-30 18:16:33 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.88 GiB.
+(EngineCore pid=39581) INFO 09-30 18:16:33 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=39581) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=39581) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.08s/it]
+(EngineCore pid=39581) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.08s/it]
+(EngineCore pid=39581) 
+(EngineCore pid=39581) INFO 09-30 18:16:35 [default_loader.py:430] Loading weights took 2.26 seconds
+(EngineCore pid=39581) INFO 09-30 18:16:35 [model_runner.py:428] Model loading took 8.83 GiB memory and 5.138577 seconds
+(EngineCore pid=39581) INFO 09-30 18:16:35 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=39581) INFO 09-30 18:16:35 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=39581) INFO 09-30 18:16:37 [gpu_worker.py:640] Available KV cache memory: 10.53 GiB
+(EngineCore pid=39581) INFO 09-30 18:16:37 [kv_cache_utils.py:2395] GPU KV cache size: 1,127,517 tokens, Maximum concurrency for 8,192 tokens per request: 137.64x
+(EngineCore pid=39581) INFO 09-30 18:16:37 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=39581) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=39581)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=39581) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.40s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.40s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=39581) INFO 09-30 18:16:45 [kernel_warmup.py:185] JIT kernel warmup finished in 7.40s.
+(EngineCore pid=39581) INFO 09-30 18:16:45 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/2c64293e622baf80ba7a52168c88417eea439892468921cad08d42b3d855ec7d/autotune_configs.json
+(EngineCore pid=39581) 2026-09-30 18:16:45,281 - INFO - autotuner.py:2789 - flashinfer.jit: [Autotuner]: Loaded 0 configs from /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/2c64293e622baf80ba7a52168c88417eea439892468921cad08d42b3d855ec7d/autotune_configs.json
+(EngineCore pid=39581) 2026-09-30 18:16:45,281 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=39581) INFO 09-30 18:16:45 [kernel_warmup.py:359] Running FlashInfer autotune with 1024 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024).
+(EngineCore pid=39581) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=39581)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=39581) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=39581)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=39581) 2026-09-30 18:16:51,406 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=39581) 2026-09-30 18:16:51,412 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/2c64293e622baf80ba7a52168c88417eea439892468921cad08d42b3d855ec7d/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=39581) INFO 09-30 18:16:54 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 9.15 GiB for consumed memory (weights + non-torch), 0.12 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=11154061312` (10.39 GiB) to fit into requested memory, or `--kv-cache-memory=33473034240` (31.17 GiB) to fully utilize gpu memory. Current kv cache memory in use is 10.53 GiB.
+(EngineCore pid=39581) INFO 09-30 18:16:55 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=39581) INFO 09-30 18:16:55 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=39581) INFO 09-30 18:16:55 [core.py:379] init engine (profile, create kv cache, warmup model) took 19.48 s
+(EngineCore pid=39581) INFO 09-30 18:16:55 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=39581) INFO 09-30 18:16:55 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=39581) INFO 09-30 18:16:55 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:16:58 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 1000; max_num_seqs 1; max_num_batched_tokens 1024
+load 35.8 s
+(EngineCore pid=39581) WARNING 09-30 18:16:58 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=39581) WARNING 09-30 18:16:58 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+6 next-token and 36 prompt-logprob requests in 5.26 s
+INFO 09-30 18:17:03 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 09-30 18:17:03 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 09-30 18:17:03 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=39581) INFO 09-30 18:17:03 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=39581) INFO 09-30 18:17:03 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=39581) INFO 09-30 18:17:03 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=39581) INFO 09-30 18:17:03 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 09-30 18:17:04 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 09-30 18:17:04 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 09-30 18:17:04 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.1 s
+  evidence-11828 variant 236776: prompt logprob -13.1202; next-token here -13.1202; first process -12.8577
+  evidence-11828 variant 562: prompt logprob -20.3702; next-token here absent; first process -19.9827
+  evidence-11828 variant 236799: prompt logprob -13.9327; next-token here -13.9327; first process -13.6702
+  evidence-11828 variant 603: prompt logprob -20.2452; next-token here -20.2452; first process -19.8577
+  evidence-11828 variant 236780: prompt logprob -16.3077; next-token here -16.3077; first process -16.0452
+  evidence-11828 variant 565: prompt logprob -22.3702; next-token here absent; first process absent
+  evidence-11827 variant 236776: prompt logprob -13.0889; next-token here -13.0889; first process -12.8413
+  evidence-11827 variant 562: prompt logprob -20.7139; next-token here -20.7139; first process absent
+  evidence-11827 variant 236799: prompt logprob -13.9014; next-token here -13.9014; first process -13.5913
+  evidence-11827 variant 603: prompt logprob -20.4639; next-token here -20.4639; first process -20.0288
+  evidence-11827 variant 236780: prompt logprob -15.8389; next-token here -15.8389; first process -15.7163
+  evidence-11827 variant 565: prompt logprob -22.3389; next-token here absent; first process absent
+  evidence-6459 variant 236776: prompt logprob -12.8433; next-token here -12.8433; first process -13.8551
+  evidence-6459 variant 562: prompt logprob -21.4058; next-token here absent; first process absent
+  evidence-6459 variant 236799: prompt logprob -13.5308; next-token here -13.5308; first process -13.9801
+  evidence-6459 variant 603: prompt logprob -20.6558; next-token here absent; first process absent
+  evidence-6459 variant 236780: prompt logprob -15.1558; next-token here -15.1558; first process -15.6051
+  evidence-6459 variant 565: prompt logprob -21.5308; next-token here absent; first process absent
+  evidence-6458 variant 236776: prompt logprob -12.3782; next-token here -12.3782; first process -12.8254
+  evidence-6458 variant 562: prompt logprob -21.1907; next-token here absent; first process absent
+  evidence-6458 variant 236799: prompt logprob -13.5032; next-token here -13.5032; first process -13.8254
+  evidence-6458 variant 603: prompt logprob -20.9407; next-token here absent; first process absent
+  evidence-6458 variant 236780: prompt logprob -14.9407; next-token here -14.9407; first process -15.0754
+  evidence-6458 variant 565: prompt logprob -21.4407; next-token here absent; first process absent
+  pubmedqa-15137012 variant 236776: prompt logprob -13.8767; next-token here -13.8767; first process -13.3456
+  pubmedqa-15137012 variant 562: prompt logprob -22.0017; next-token here -22.0017; first process -21.5956
+  pubmedqa-15137012 variant 236799: prompt logprob -15.5017; next-token here -15.5017; first process -15.2206
+  pubmedqa-15137012 variant 603: prompt logprob -22.5017; next-token here -22.5017; first process -22.3456
+  pubmedqa-15137012 variant 236780: prompt logprob -20.3767; next-token here -20.3767; first process -20.5956
+  pubmedqa-15137012 variant 565: prompt logprob -26.1267; next-token here absent; first process absent
+  pubmedqa-11053064 variant 236776: prompt logprob -13.5316; next-token here -13.5316; first process -13.4691
+  pubmedqa-11053064 variant 562: prompt logprob -22.0941; next-token here -22.0941; first process -21.9691
+  pubmedqa-11053064 variant 236799: prompt logprob -16.3441; next-token here -16.3441; first process -16.2191
+  pubmedqa-11053064 variant 603: prompt logprob -23.0941; next-token here -23.0941; first process -22.9691
+  pubmedqa-11053064 variant 236780: prompt logprob -20.3441; next-token here -20.3441; first process -20.3441
+  pubmedqa-11053064 variant 565: prompt logprob -26.3441; next-token here absent; first process absent
+same engine: 25 of 36 variants in its top 1,000; largest |prompt - next-token| 0.000000
+against the first process: 25 variants compared; largest difference 1.0117 (reported, not checked: the first engine batches the prompts; correction 12)
+SECOND PASS OK
+2026-09-30T18:17:06Z  smoke test: GPU used 39011 MiB (before the smoke test: 39011 MiB)
+2026-09-30T18:17:06Z  smoke test: the script's own answer() on the six items, then its second() and finish() in a new process (correction 12), in /root/eddm_s8/smoke_large/pipeline_20260930T181706Z
+GPU used 39011 MiB (before the smoke test: 39011 MiB)
+INFO 09-30 18:17:17 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/smoke_large/e2b_with_31b_template', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/smoke_large/e2b_with_31b_template'}
+INFO 09-30 18:17:17 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 18:17:17 [model.py:2030] Using max model len 8192
+WARNING 09-30 18:17:17 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 18:17:20 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 18:17:20 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 18:17:20 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-30 18:17:20 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 18:17:20 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 18:17:20 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 18:17:20 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:17:20 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 18:17:20 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=40078) INFO 09-30 18:17:27 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/smoke_large/e2b_with_31b_template', speculative_config=None, tokenizer='/root/eddm_s8/smoke_large/e2b_with_31b_template', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/smoke_large/e2b_with_31b_template, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=40078) INFO 09-30 18:17:27 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_7f9a9f5b42514978aef4dc6fc92be1f9 backend=nccl
+(EngineCore pid=40078) INFO 09-30 18:17:27 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=40078) INFO 09-30 18:17:27 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=40078) INFO 09-30 18:17:28 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=40078) INFO 09-30 18:17:28 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=40078) INFO 09-30 18:17:29 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=40078) INFO 09-30 18:17:29 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=40078) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=40078) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=40078) INFO 09-30 18:17:30 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.81 GiB.
+(EngineCore pid=40078) INFO 09-30 18:17:30 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=40078) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=40078) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.85s/it]
+(EngineCore pid=40078) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.85s/it]
+(EngineCore pid=40078) 
+(EngineCore pid=40078) INFO 09-30 18:17:32 [default_loader.py:430] Loading weights took 1.95 seconds
+(EngineCore pid=40078) INFO 09-30 18:17:32 [model_runner.py:428] Model loading took 9.08 GiB memory and 4.023534 seconds
+(EngineCore pid=40078) INFO 09-30 18:17:32 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=40078) INFO 09-30 18:17:32 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=40078) INFO 09-30 18:17:34 [gpu_worker.py:640] Available KV cache memory: 7.48 GiB
+(EngineCore pid=40078) INFO 09-30 18:17:34 [kv_cache_utils.py:2395] GPU KV cache size: 434,766 tokens, Maximum concurrency for 8,192 tokens per request: 53.07x
+(EngineCore pid=40078) INFO 09-30 18:17:34 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=40078) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40078)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40078) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.71s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:07<00:00,  7.71s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=40078) INFO 09-30 18:17:42 [kernel_warmup.py:185] JIT kernel warmup finished in 7.71s.
+(EngineCore pid=40078) INFO 09-30 18:17:42 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/8ed5d88a1a010cb300dc3cac4d988fa804f5748ea5150a496b446a30aca8f42e/autotune_configs.json
+(EngineCore pid=40078) 2026-09-30 18:17:42,330 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=40078) INFO 09-30 18:17:42 [kernel_warmup.py:359] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+(EngineCore pid=40078) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40078)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40078) 2026-09-30 18:17:51,058 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=40078) 2026-09-30 18:17:51,070 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/8ed5d88a1a010cb300dc3cac4d988fa804f5748ea5150a496b446a30aca8f42e/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=40078) INFO 09-30 18:18:02 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 10.46 GiB for consumed memory (weights + non-torch), 1.86 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=7877242368` (7.34 GiB) to fit into requested memory, or `--kv-cache-memory=30196215296` (28.12 GiB) to fully utilize gpu memory. Current kv cache memory in use is 7.48 GiB.
+(EngineCore pid=40078) INFO 09-30 18:18:03 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=40078) INFO 09-30 18:18:03 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=40078) INFO 09-30 18:18:03 [core.py:379] init engine (profile, create kv cache, warmup model) took 31.11 s
+(EngineCore pid=40078) INFO 09-30 18:18:03 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=40078) INFO 09-30 18:18:03 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=40078) INFO 09-30 18:18:03 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:18:06 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 20; max_num_seqs None; max_num_batched_tokens None
+(EngineCore pid=40078) WARNING 09-30 18:18:06 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=40078) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40078)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40078) WARNING 09-30 18:18:17 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=40078) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40078)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40078) WARNING 09-30 18:18:23 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+evidence_effect validation: 4 items in 11.5 s; 4 asked again with the top 20 (6.8 s); 4 left for the second process
+pubmedqa_answer validation: 2 items in 0.1 s; 2 asked again with the top 20 (0.1 s); 2 left for the second process
+INFO 09-30 18:18:25 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 09-30 18:18:25 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 09-30 18:18:25 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=40078) INFO 09-30 18:18:25 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=40078) INFO 09-30 18:18:25 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=40078) INFO 09-30 18:18:25 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=40078) INFO 09-30 18:18:25 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 09-30 18:18:26 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 09-30 18:18:26 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 09-30 18:18:26 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.3 s
+6 items need the second process: run second
+answer(): 6 of 6 items left for the second process
+PIPELINE ANSWER OK
+2026-09-30T18:18:28Z  smoke test: GPU used 39011 MiB (before the smoke test: 39011 MiB)
+GPU used 39011 MiB (before the smoke test: 39011 MiB)
+INFO 09-30 18:18:39 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s8/smoke_large/e2b_with_31b_template', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.25, 'max_num_batched_tokens': 1024, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s8/smoke_large/e2b_with_31b_template'}
+INFO 09-30 18:18:39 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 09-30 18:18:39 [model.py:2030] Using max model len 8192
+WARNING 09-30 18:18:39 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 09-30 18:18:42 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 09-30 18:18:42 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 09-30 18:18:42 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=1024.
+INFO 09-30 18:18:42 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 09-30 18:18:42 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-30 18:18:42 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-30 18:18:42 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:18:42 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 09-30 18:18:42 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=40642) INFO 09-30 18:18:49 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s8/smoke_large/e2b_with_31b_template', speculative_config=None, tokenizer='/root/eddm_s8/smoke_large/e2b_with_31b_template', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s8/smoke_large/e2b_with_31b_template, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [1024], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=40642) INFO 09-30 18:18:49 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_65ede56c6d6348c98c18fa9b26fd34be backend=nccl
+(EngineCore pid=40642) INFO 09-30 18:18:50 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=40642) INFO 09-30 18:18:50 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=40642) INFO 09-30 18:18:51 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=40642) INFO 09-30 18:18:51 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=40642) INFO 09-30 18:18:52 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=40642) INFO 09-30 18:18:52 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=40642) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=40642) <frozen importlib._bootstrap_external>:1297: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=40642) INFO 09-30 18:18:53 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 9.54 GiB. Available RAM: 127.83 GiB.
+(EngineCore pid=40642) INFO 09-30 18:18:53 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=40642) Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+(EngineCore pid=40642) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.06s/it]
+(EngineCore pid=40642) Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:02<00:00,  2.06s/it]
+(EngineCore pid=40642) 
+(EngineCore pid=40642) INFO 09-30 18:18:55 [default_loader.py:430] Loading weights took 2.24 seconds
+(EngineCore pid=40642) INFO 09-30 18:18:55 [model_runner.py:428] Model loading took 8.83 GiB memory and 5.030011 seconds
+(EngineCore pid=40642) INFO 09-30 18:18:55 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=40642) INFO 09-30 18:18:55 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=40642) INFO 09-30 18:18:57 [gpu_worker.py:640] Available KV cache memory: 10.53 GiB
+(EngineCore pid=40642) INFO 09-30 18:18:57 [kv_cache_utils.py:2395] GPU KV cache size: 1,127,517 tokens, Maximum concurrency for 8,192 tokens per request: 137.64x
+(EngineCore pid=40642) INFO 09-30 18:18:57 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=40642) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40642)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40642) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:13<00:00, 13.22s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:13<00:00, 13.22s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=40642) INFO 09-30 18:19:11 [kernel_warmup.py:185] JIT kernel warmup finished in 13.22s.
+(EngineCore pid=40642) INFO 09-30 18:19:11 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/196614c98511967bff0b3b36731d6365d20c80cc1685d9aa14d6b245b3b473de/autotune_configs.json
+(EngineCore pid=40642) 2026-09-30 18:19:11,357 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=40642) INFO 09-30 18:19:11 [kernel_warmup.py:359] Running FlashInfer autotune with 1024 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024).
+(EngineCore pid=40642) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40642)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40642) /root/eddm_s8/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=40642)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=40642) 2026-09-30 18:19:17,562 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=40642) 2026-09-30 18:19:17,572 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/196614c98511967bff0b3b36731d6365d20c80cc1685d9aa14d6b245b3b473de/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=40642) INFO 09-30 18:19:20 [gpu_worker.py:888] Free memory on device (40.58/79.19 GiB) on startup. Desired GPU memory utilization is (0.25, 19.8 GiB). Actual usage is 9.15 GiB for consumed memory (weights + non-torch), 0.12 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=11154061312` (10.39 GiB) to fit into requested memory, or `--kv-cache-memory=33473034240` (31.17 GiB) to fully utilize gpu memory. Current kv cache memory in use is 10.53 GiB.
+(EngineCore pid=40642) INFO 09-30 18:19:21 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=40642) INFO 09-30 18:19:21 [torch_utils.py:287] Reducing Torch threads from 112 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=40642) INFO 09-30 18:19:21 [core.py:379] init engine (profile, create kv cache, warmup model) took 25.75 s
+(EngineCore pid=40642) INFO 09-30 18:19:21 [kv_cache_utils.py:748] kv cache group sizes [32, 32, 32, 32, 16]
+(EngineCore pid=40642) INFO 09-30 18:19:21 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=40642) INFO 09-30 18:19:21 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 09-30 18:19:24 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.25; max_logprobs 20; max_num_seqs 1; max_num_batched_tokens 1024
+(EngineCore pid=40642) WARNING 09-30 18:19:24 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=40642) WARNING 09-30 18:19:28 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+INFO 09-30 18:19:29 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 09-30 18:19:29 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 09-30 18:19:29 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=40642) INFO 09-30 18:19:29 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=40642) INFO 09-30 18:19:29 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=40642) INFO 09-30 18:19:29 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=40642) INFO 09-30 18:19:29 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 09-30 18:19:30 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 09-30 18:19:30 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 09-30 18:19:30 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.2 s
+evidence_effect validation: 4 rows written; letters' median summed probability 0.0000
+pubmedqa_answer validation: 2 rows written; letters' median summed probability 0.0000
+second(): 6 items answered from prompt log-probabilities
+evidence_effect: 4 rows; methods {'top20': 0, 'top1000': 0, 'prompt': 4}; letters' median summed probability 3.68e-06; wall seconds 21.78
+pubmedqa_answer: 2 rows; methods {'top20': 0, 'top1000': 0, 'prompt': 2}; letters' median summed probability 1.27e-06; wall seconds 1.86
+second() against the second mode: 36 of 36 variants compared; largest difference 0.000000
+PIPELINE SECOND OK
+2026-09-30T18:19:32Z  smoke test: GPU used 39011 MiB (before the smoke test: 39011 MiB)
+2026-09-30T18:19:32Z  SMOKE TEST PASSED
+2026-09-30T18:19:32Z  stage smoke_large finished

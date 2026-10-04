@@ -1,0 +1,11 @@
+# Question bank for session 8 (docs/prompt_session8.md, EI'S QUESTION). Wording fixed in the plan; do not edit.
+# Keys use Laya's public question format: type, instructions, criteria. The criteria's order is the label order:
+# significantly increased 0, significantly decreased 1, no significant difference 2 (EI's Label Code 1, -1 and 0).
+questions:
+  evidence_effect:
+    type: choice
+    instructions: "Based only on this article, how did the outcome differ with the intervention compared with the comparator?"
+    criteria:
+      "significantly increased": "the outcome was significantly higher with the intervention than with the comparator"
+      "significantly decreased": "the outcome was significantly lower with the intervention than with the comparator"
+      "no significant difference": "the article reports no significant difference in the outcome between the intervention and the comparator"

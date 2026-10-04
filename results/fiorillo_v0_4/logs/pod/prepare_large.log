@@ -1,0 +1,411 @@
+2026-09-30T14:16:57Z  stage prepare_large started
+2026-09-30T14:16:57Z  driver CUDA version 12.8
+uv 0.12.21 (x86_64-unknown-linux-gnu)
+Using CPython 3.12.3 interpreter at: [36m/usr/local/bin/python[39m
+Creating virtual environment at: [36m/root/eddm_s8/vllm_env[39m
+Activate with: [32msource /root/eddm_s8/vllm_env/bin/activate[39m
+2026-09-30T14:16:58Z  installing vLLM 0.30.0's CUDA 12.9 build with torch 2.13.0 for CUDA 12.9 (correction 1)
+[2mUsing Python 3.12.3 environment at: /root/eddm_s8/vllm_env[0m
+[2mResolved [1m196 packages[0m [2min 14.70s[0m[0m
+[36m[1mDownloading[0m[39m cryptography [2m(4.5MiB)[0m
+[36m[1mDownloading[0m[39m sympy [2m(6.0MiB)[0m
+[36m[1mDownloading[0m[39m pillow [2m(6.6MiB)[0m
+[36m[1mDownloading[0m[39m cuda-core [2m(6.3MiB)[0m
+[36m[1mDownloading[0m[39m transformers [2m(11.7MiB)[0m
+[36m[1mDownloading[0m[39m numpy [2m(15.8MiB)[0m
+[36m[1mDownloading[0m[39m instanttensor [2m(5.9MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cudnn-frontend [2m(8.4MiB)[0m
+[36m[1mDownloading[0m[39m torchcodec [2m(9.5MiB)[0m
+[36m[1mDownloading[0m[39m pycountry [2m(7.7MiB)[0m
+[36m[1mDownloading[0m[39m tokenspeed-triton [2m(95.3MiB)[0m
+[36m[1mDownloading[0m[39m cuda-bindings [2m(7.3MiB)[0m
+[36m[1mDownloading[0m[39m flashinfer-python [2m(17.5MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cutlass-dsl-libs-cu12 [2m(84.6MiB)[0m
+[36m[1mDownloading[0m[39m pynvvideocodec [2m(41.2MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cuda-nvcc-cu12 [2m(38.7MiB)[0m
+[36m[1mDownloading[0m[39m z3-solver [2m(27.9MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cutlass-dsl-libs-cu13 [2m(84.2MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cuda-nvdisasm [2m(5.0MiB)[0m
+[36m[1mDownloading[0m[39m mistral-common [2m(6.3MiB)[0m
+[36m[1mDownloading[0m[39m tilelang [2m(48.2MiB)[0m
+[36m[1mDownloading[0m[39m grpcio [2m(6.8MiB)[0m
+[36m[1mDownloading[0m[39m llvmlite [2m(53.7MiB)[0m
+[36m[1mDownloading[0m[39m triton [2m(188.0MiB)[0m
+[36m[1mDownloading[0m[39m torchaudio [2m(1.5MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cublas-cu12 [2m(554.3MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cudnn-cu12 [2m(627.4MiB)[0m
+[36m[1mDownloading[0m[39m vllm [2m(520.2MiB)[0m
+[36m[1mDownloading[0m[39m torch [2m(886.5MiB)[0m
+[36m[1mDownloading[0m[39m opencv-python-headless [2m(58.4MiB)[0m
+[36m[1mDownloading[0m[39m hf-xet [2m(4.3MiB)[0m
+[36m[1mDownloading[0m[39m torchvision [2m(8.9MiB)[0m
+[36m[1mDownloading[0m[39m uvloop [2m(4.2MiB)[0m
+[36m[1mDownloading[0m[39m numba [2m(3.6MiB)[0m
+[36m[1mDownloading[0m[39m nccl4py [2m(3.5MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cuda-nvrtc-cu12 [2m(85.4MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cusolver-cu12 [2m(322.5MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cusparse-cu12 [2m(349.5MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-nvshmem-cu12 [2m(132.7MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cufft-cu12 [2m(191.6MiB)[0m
+ [36m[1mDownloaded[0m[39m torchaudio
+[36m[1mDownloading[0m[39m nvidia-cuda-cccl-cu12 [2m(3.0MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cuda-cupti-cu12 [2m(10.3MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-nvjitlink-cu12 [2m(37.9MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-curand-cu12 [2m(65.1MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cusparselt-cu12 [2m(228.2MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-nccl-cu12 [2m(280.0MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cuda-runtime-cu12 [2m(3.3MiB)[0m
+[36m[1mDownloading[0m[39m nvidia-cufile-cu12 [2m(1.2MiB)[0m
+[36m[1mDownloading[0m[39m tokenizers [2m(3.2MiB)[0m
+[36m[1mDownloading[0m[39m openai-harmony [2m(2.8MiB)[0m
+[36m[1mDownloading[0m[39m llguidance [2m(2.9MiB)[0m
+ [36m[1mDownloaded[0m[39m nvidia-cufile-cu12
+[36m[1mDownloading[0m[39m nvidia-cutlass-dsl-libs-base [2m(2.7MiB)[0m
+ [36m[1mDownloaded[0m[39m nvidia-cuda-cccl-cu12
+[36m[1mDownloading[0m[39m apache-tvm-ffi [2m(2.6MiB)[0m
+ [36m[1mDownloaded[0m[39m torchvision
+[36m[1mDownloading[0m[39m outlines-core [2m(2.2MiB)[0m
+ [36m[1mDownloaded[0m[39m tokenizers
+ [36m[1mDownloaded[0m[39m numba
+ [36m[1mDownloaded[0m[39m nccl4py
+ [36m[1mDownloaded[0m[39m nvidia-cuda-runtime-cu12
+[36m[1mDownloading[0m[39m fastsafetensors [2m(2.0MiB)[0m
+[36m[1mDownloading[0m[39m openai [2m(2.0MiB)[0m
+ [36m[1mDownloaded[0m[39m uvloop
+ [36m[1mDownloaded[0m[39m hf-xet
+ [36m[1mDownloaded[0m[39m openai-harmony
+ [36m[1mDownloaded[0m[39m llguidance
+[36m[1mDownloading[0m[39m networkx [2m(2.0MiB)[0m
+[36m[1mDownloading[0m[39m pydantic-core [2m(2.0MiB)[0m
+[36m[1mDownloading[0m[39m sentencepiece [2m(1.3MiB)[0m
+[36m[1mDownloading[0m[39m aiohttp [2m(1.7MiB)[0m
+[36m[1mDownloading[0m[39m anthropic [2m(1.3MiB)[0m
+[36m[1mDownloading[0m[39m xgrammar [2m(1.3MiB)[0m
+ [36m[1mDownloaded[0m[39m cryptography
+[36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+ [36m[1mDownloaded[0m[39m nvidia-cuda-nvdisasm
+ [36m[1mDownloaded[0m[39m nvidia-cutlass-dsl-libs-base
+ [36m[1mDownloaded[0m[39m apache-tvm-ffi
+[36m[1mDownloading[0m[39m nvidia-cutlass-dsl-libs-core [2m(1.2MiB)[0m
+[36m[1mDownloading[0m[39m setuptools [2m(1.0MiB)[0m
+ [36m[1mDownloaded[0m[39m instanttensor
+ [36m[1mDownloaded[0m[39m sympy
+ [36m[1mDownloaded[0m[39m sentencepiece
+ [36m[1mDownloaded[0m[39m outlines-core
+ [36m[1mDownloaded[0m[39m anthropic
+ [36m[1mDownloaded[0m[39m mistral-common
+ [36m[1mDownloaded[0m[39m xgrammar
+[36m[1mDownloading[0m[39m tiktoken [2m(1.1MiB)[0m
+ [36m[1mDownloaded[0m[39m cuda-core
+ [36m[1mDownloaded[0m[39m pygments
+ [36m[1mDownloaded[0m[39m networkx
+ [36m[1mDownloaded[0m[39m fastsafetensors
+ [36m[1mDownloaded[0m[39m pydantic-core
+ [36m[1mDownloaded[0m[39m aiohttp
+ [36m[1mDownloaded[0m[39m grpcio
+ [36m[1mDownloaded[0m[39m setuptools
+ [36m[1mDownloaded[0m[39m tiktoken
+ [36m[1mDownloaded[0m[39m nvidia-cutlass-dsl-libs-core
+ [36m[1mDownloaded[0m[39m pillow
+ [36m[1mDownloaded[0m[39m openai
+ [36m[1mDownloaded[0m[39m pycountry
+ [36m[1mDownloaded[0m[39m cuda-bindings
+ [36m[1mDownloaded[0m[39m nvidia-cudnn-frontend
+ [36m[1mDownloaded[0m[39m torchcodec
+ [36m[1mDownloaded[0m[39m transformers
+ [36m[1mDownloaded[0m[39m numpy
+ [36m[1mDownloaded[0m[39m nvidia-cuda-cupti-cu12
+ [36m[1mDownloaded[0m[39m flashinfer-python
+ [36m[1mDownloaded[0m[39m z3-solver
+ [36m[1mDownloaded[0m[39m nvidia-cuda-nvcc-cu12
+ [36m[1mDownloaded[0m[39m pynvvideocodec
+ [36m[1mDownloaded[0m[39m tilelang
+ [36m[1mDownloaded[0m[39m opencv-python-headless
+ [36m[1mDownloaded[0m[39m llvmlite
+ [36m[1mDownloaded[0m[39m nvidia-cutlass-dsl-libs-cu13
+ [36m[1mDownloaded[0m[39m nvidia-cutlass-dsl-libs-cu12
+ [36m[1mDownloaded[0m[39m tokenspeed-triton
+ [36m[1mDownloaded[0m[39m nvidia-nvjitlink-cu12
+ [36m[1mDownloaded[0m[39m triton
+ [36m[1mDownloaded[0m[39m nvidia-curand-cu12
+ [36m[1mDownloaded[0m[39m vllm
+ [36m[1mDownloaded[0m[39m nvidia-cuda-nvrtc-cu12
+ [36m[1mDownloaded[0m[39m torch
+ [36m[1mDownloaded[0m[39m nvidia-nvshmem-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cusparselt-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cufft-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cusolver-cu12
+ [36m[1mDownloaded[0m[39m nvidia-nccl-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cudnn-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cublas-cu12
+ [36m[1mDownloaded[0m[39m nvidia-cusparse-cu12
+[2mPrepared [1m196 packages[0m [2min 28.45s[0m[0m
+[2mInstalled [1m196 packages[0m [2min 1.36s[0m[0m
+ [32m+[39m [1magent-detector[0m[2m==2.0.0[0m
+ [32m+[39m [1maiohappyeyeballs[0m[2m==2.7.1[0m
+ [32m+[39m [1maiohttp[0m[2m==3.14.3[0m
+ [32m+[39m [1maiosignal[0m[2m==1.4.0[0m
+ [32m+[39m [1mannotated-doc[0m[2m==0.0.5[0m
+ [32m+[39m [1mannotated-types[0m[2m==0.8.0[0m
+ [32m+[39m [1manthropic[0m[2m==1.9.0[0m
+ [32m+[39m [1manyio[0m[2m==4.15.1[0m
+ [32m+[39m [1mapache-tvm-ffi[0m[2m==0.1.11[0m
+ [32m+[39m [1mastor[0m[2m==0.8.1[0m
+ [32m+[39m [1mattrs[0m[2m==26.1.0[0m
+ [32m+[39m [1mblake3[0m[2m==1.0.10[0m
+ [32m+[39m [1mcachetools[0m[2m==7.2.0[0m
+ [32m+[39m [1mcbor2[0m[2m==6.1.4[0m
+ [32m+[39m [1mcertifi[0m[2m==2026.7.22[0m
+ [32m+[39m [1mcffi[0m[2m==2.1.1[0m
+ [32m+[39m [1mcharset-normalizer[0m[2m==3.5.2[0m
+ [32m+[39m [1mclick[0m[2m==8.5.0[0m
+ [32m+[39m [1mcloudpickle[0m[2m==3.1.2[0m
+ [32m+[39m [1mcompressed-tensors[0m[2m==0.17.0[0m
+ [32m+[39m [1mcryptography[0m[2m==50.0.1[0m
+ [32m+[39m [1mcuda-bindings[0m[2m==12.9.9[0m
+ [32m+[39m [1mcuda-core[0m[2m==1.2.1[0m
+ [32m+[39m [1mcuda-pathfinder[0m[2m==1.8.2[0m
+ [32m+[39m [1mcuda-python[0m[2m==12.9.7[0m
+ [32m+[39m [1mcuda-tile[0m[2m==1.6.0[0m
+ [32m+[39m [1mcuda-toolkit[0m[2m==12.9.1[0m
+ [32m+[39m [1mdepyf[0m[2m==0.20.0[0m
+ [32m+[39m [1mdetect-installer[0m[2m==0.2.1[0m
+ [32m+[39m [1mdill[0m[2m==0.4.1[0m
+ [32m+[39m [1mdnspython[0m[2m==2.8.0[0m
+ [32m+[39m [1mdocstring-parser[0m[2m==0.18.0[0m
+ [32m+[39m [1meinops[0m[2m==0.8.2[0m
+ [32m+[39m [1memail-validator[0m[2m==2.3.0[0m
+ [32m+[39m [1mfastapi[0m[2m==0.136.3[0m
+ [32m+[39m [1mfastapi-cli[0m[2m==0.0.32[0m
+ [32m+[39m [1mfastapi-cloud-cli[0m[2m==0.26.0[0m
+ [32m+[39m [1mfastar[0m[2m==0.12.0[0m
+ [32m+[39m [1mfastsafetensors[0m[2m==0.4.0[0m
+ [32m+[39m [1mfilelock[0m[2m==4.0.7[0m
+ [32m+[39m [1mflashinfer-python[0m[2m==0.6.18.post1[0m
+ [32m+[39m [1mfrozenlist[0m[2m==1.8.0[0m
+ [32m+[39m [1mfsspec[0m[2m==2026.9.0[0m
+ [32m+[39m [1mgoogleapis-common-protos[0m[2m==1.75.5[0m
+ [32m+[39m [1mgrpcio[0m[2m==1.84.0[0m
+ [32m+[39m [1mh11[0m[2m==0.16.0[0m
+ [32m+[39m [1mhf-xet[0m[2m==1.6.0[0m
+ [32m+[39m [1mhttpcore[0m[2m==1.0.9[0m
+ [32m+[39m [1mhttpcore2[0m[2m==2.13.1[0m
+ [32m+[39m [1mhttptools[0m[2m==0.8.0[0m
+ [32m+[39m [1mhttpx[0m[2m==0.28.1[0m
+ [32m+[39m [1mhttpx2[0m[2m==2.13.1[0m
+ [32m+[39m [1mhuggingface-hub[0m[2m==1.33.0[0m
+ [32m+[39m [1mhumming-kernels[0m[2m==0.1.12[0m
+ [32m+[39m [1midna[0m[2m==3.20[0m
+ [32m+[39m [1mijson[0m[2m==3.5.1[0m
+ [32m+[39m [1minstanttensor[0m[2m==0.2.0[0m
+ [32m+[39m [1minteregular[0m[2m==0.3.3[0m
+ [32m+[39m [1mjinja2[0m[2m==3.1.6[0m
+ [32m+[39m [1mjiter[0m[2m==0.17.0[0m
+ [32m+[39m [1mjmespath[0m[2m==1.1.0[0m
+ [32m+[39m [1mjsonschema[0m[2m==4.26.0[0m
+ [32m+[39m [1mjsonschema-specifications[0m[2m==2025.9.1[0m
+ [32m+[39m [1mlark[0m[2m==1.2.2[0m
+ [32m+[39m [1mllguidance[0m[2m==1.7.6[0m
+ [32m+[39m [1mllvmlite[0m[2m==0.47.0[0m
+ [32m+[39m [1mlm-format-enforcer[0m[2m==0.11.3[0m
+ [32m+[39m [1mloguru[0m[2m==0.7.3[0m
+ [32m+[39m [1mmarkdown-it-py[0m[2m==4.2.0[0m
+ [32m+[39m [1mmarkupsafe[0m[2m==3.0.3[0m
+ [32m+[39m [1mmcp[0m[2m==2.2.0[0m
+ [32m+[39m [1mmcp-types[0m[2m==2.2.0[0m
+ [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+ [32m+[39m [1mmistral-common[0m[2m==1.12.0[0m
+ [32m+[39m [1mml-dtypes[0m[2m==0.6.0[0m
+ [32m+[39m [1mmodel-hosting-container-standards[0m[2m==0.1.16[0m
+ [32m+[39m [1mmpmath[0m[2m==1.3.0[0m
+ [32m+[39m [1mmsgspec[0m[2m==0.22.0[0m
+ [32m+[39m [1mmultidict[0m[2m==6.9.1[0m
+ [32m+[39m [1mnccl4py[0m[2m==0.6.0[0m
+ [32m+[39m [1mnetworkx[0m[2m==3.7[0m
+ [32m+[39m [1mninja[0m[2m==1.13.2[0m
+ [32m+[39m [1mnumba[0m[2m==0.65.0[0m
+ [32m+[39m [1mnumpy[0m[2m==2.3.5[0m
+ [32m+[39m [1mnvidia-cublas-cu12[0m[2m==12.9.1.4[0m
+ [32m+[39m [1mnvidia-cuda-cccl-cu12[0m[2m==12.9.27[0m
+ [32m+[39m [1mnvidia-cuda-cupti-cu12[0m[2m==12.9.79[0m
+ [32m+[39m [1mnvidia-cuda-nvcc-cu12[0m[2m==12.9.86[0m
+ [32m+[39m [1mnvidia-cuda-nvdisasm[0m[2m==13.4.92[0m
+ [32m+[39m [1mnvidia-cuda-nvrtc-cu12[0m[2m==12.9.86[0m
+ [32m+[39m [1mnvidia-cuda-runtime-cu12[0m[2m==12.9.79[0m
+ [32m+[39m [1mnvidia-cudnn-cu12[0m[2m==9.20.0.48[0m
+ [32m+[39m [1mnvidia-cudnn-frontend[0m[2m==1.30.0[0m
+ [32m+[39m [1mnvidia-cufft-cu12[0m[2m==11.4.1.4[0m
+ [32m+[39m [1mnvidia-cufile-cu12[0m[2m==1.14.1.1[0m
+ [32m+[39m [1mnvidia-curand-cu12[0m[2m==10.3.10.19[0m
+ [32m+[39m [1mnvidia-cusolver-cu12[0m[2m==11.7.5.82[0m
+ [32m+[39m [1mnvidia-cusparse-cu12[0m[2m==12.5.10.65[0m
+ [32m+[39m [1mnvidia-cusparselt-cu12[0m[2m==0.8.1[0m
+ [32m+[39m [1mnvidia-cutlass-dsl[0m[2m==4.7.1[0m
+ [32m+[39m [1mnvidia-cutlass-dsl-libs-base[0m[2m==4.7.1[0m
+ [32m+[39m [1mnvidia-cutlass-dsl-libs-core[0m[2m==4.7.1[0m
+ [32m+[39m [1mnvidia-cutlass-dsl-libs-cu12[0m[2m==4.7.1[0m
+ [32m+[39m [1mnvidia-cutlass-dsl-libs-cu13[0m[2m==4.7.1[0m
+ [32m+[39m [1mnvidia-ml-py[0m[2m==13.615.71[0m
+ [32m+[39m [1mnvidia-nccl-cu12[0m[2m==2.29.7[0m
+ [32m+[39m [1mnvidia-nvjitlink-cu12[0m[2m==12.9.86[0m
+ [32m+[39m [1mnvidia-nvshmem-cu12[0m[2m==3.4.5[0m
+ [32m+[39m [1mnvidia-nvtx-cu12[0m[2m==12.9.79[0m
+ [32m+[39m [1mnvtx[0m[2m==0.2.15[0m
+ [32m+[39m [1mopenai[0m[2m==3.22.1[0m
+ [32m+[39m [1mopenai-harmony[0m[2m==0.0.8[0m
+ [32m+[39m [1mopencv-python-headless[0m[2m==5.0.0.93[0m
+ [32m+[39m [1mopentelemetry-api[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-exporter-http-transport[0m[2m==0.66b0[0m
+ [32m+[39m [1mopentelemetry-exporter-otlp[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-exporter-otlp-common[0m[2m==0.66b0[0m
+ [32m+[39m [1mopentelemetry-exporter-otlp-proto-common[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-exporter-otlp-proto-grpc[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-exporter-otlp-proto-http[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-proto[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-sdk[0m[2m==1.45.0[0m
+ [32m+[39m [1mopentelemetry-semantic-conventions[0m[2m==0.66b0[0m
+ [32m+[39m [1mopentelemetry-semantic-conventions-ai[0m[2m==0.5.1[0m
+ [32m+[39m [1moutlines-core[0m[2m==0.2.14[0m
+ [32m+[39m [1mpackaging[0m[2m==26.3[0m
+ [32m+[39m [1mpartial-json-parser[0m[2m==0.2.1.1.post7[0m
+ [32m+[39m [1mpillow[0m[2m==12.3.0[0m
+ [32m+[39m [1mprometheus-client[0m[2m==0.26.0[0m
+ [32m+[39m [1mprometheus-fastapi-instrumentator[0m[2m==8.1.0[0m
+ [32m+[39m [1mpropcache[0m[2m==0.5.4[0m
+ [32m+[39m [1mprotobuf[0m[2m==7.36.2[0m
+ [32m+[39m [1mpsutil[0m[2m==7.2.2[0m
+ [32m+[39m [1mpy-cpuinfo[0m[2m==9.0.0[0m
+ [32m+[39m [1mpybase64[0m[2m==1.5.0[0m
+ [32m+[39m [1mpycountry[0m[2m==26.2.16[0m
+ [32m+[39m [1mpycparser[0m[2m==3.0[0m
+ [32m+[39m [1mpydantic[0m[2m==2.13.5[0m
+ [32m+[39m [1mpydantic-core[0m[2m==2.46.5[0m
+ [32m+[39m [1mpydantic-extra-types[0m[2m==2.11.1[0m
+ [32m+[39m [1mpydantic-settings[0m[2m==2.15.0[0m
+ [32m+[39m [1mpygments[0m[2m==2.21.0[0m
+ [32m+[39m [1mpyjwt[0m[2m==2.15.1[0m
+ [32m+[39m [1mpynvvideocodec[0m[2m==2.0.4[0m
+ [32m+[39m [1mpython-dotenv[0m[2m==1.2.3[0m
+ [32m+[39m [1mpython-json-logger[0m[2m==4.2.0[0m
+ [32m+[39m [1mpython-multipart[0m[2m==0.0.32[0m
+ [32m+[39m [1mpyyaml[0m[2m==6.0.3[0m
+ [32m+[39m [1mpyzmq[0m[2m==27.2.0[0m
+ [32m+[39m [1mquack-kernels[0m[2m==0.6.5[0m
+ [32m+[39m [1mreferencing[0m[2m==0.37.0[0m
+ [32m+[39m [1mregex[0m[2m==2026.9.29[0m
+ [32m+[39m [1mrequests[0m[2m==2.34.2[0m
+ [32m+[39m [1mrich[0m[2m==15.0.0[0m
+ [32m+[39m [1mrich-toolkit[0m[2m==0.20.5[0m
+ [32m+[39m [1mrignore[0m[2m==0.8.1[0m
+ [32m+[39m [1mrpds-py[0m[2m==2026.6.3[0m
+ [32m+[39m [1msafetensors[0m[2m==0.8.0[0m
+ [32m+[39m [1msentencepiece[0m[2m==0.2.2[0m
+ [32m+[39m [1msentry-sdk[0m[2m==2.71.0[0m
+ [32m+[39m [1msetproctitle[0m[2m==1.3.7[0m
+ [32m+[39m [1msetuptools[0m[2m==80.10.2[0m
+ [32m+[39m [1mshellingham[0m[2m==1.5.4[0m
+ [32m+[39m [1msix[0m[2m==1.17.0[0m
+ [32m+[39m [1msniffio[0m[2m==1.3.1[0m
+ [32m+[39m [1msse-starlette[0m[2m==3.5.0[0m
+ [32m+[39m [1mstarlette[0m[2m==1.7.0[0m
+ [32m+[39m [1msupervisor[0m[2m==4.3.0[0m
+ [32m+[39m [1msympy[0m[2m==1.14.0[0m
+ [32m+[39m [1mtabulate[0m[2m==0.10.0[0m
+ [32m+[39m [1mtiktoken[0m[2m==0.14.0[0m
+ [32m+[39m [1mtilelang[0m[2m==0.1.12[0m
+ [32m+[39m [1mtokenizers[0m[2m==0.23.2[0m
+ [32m+[39m [1mtokenspeed-mla[0m[2m==0.1.8[0m
+ [32m+[39m [1mtokenspeed-triton[0m[2m==3.8.10.post20260920[0m
+ [32m+[39m [1mtorch[0m[2m==2.13.0+cu129[0m
+ [32m+[39m [1mtorch-c-dlpack-ext[0m[2m==0.1.5[0m
+ [32m+[39m [1mtorchaudio[0m[2m==2.11.0+cu129[0m
+ [32m+[39m [1mtorchcodec[0m[2m==0.17.0[0m
+ [32m+[39m [1mtorchvision[0m[2m==0.28.0+cu129[0m
+ [32m+[39m [1mtqdm[0m[2m==4.70.1[0m
+ [32m+[39m [1mtransformers[0m[2m==5.17.0[0m
+ [32m+[39m [1mtriton[0m[2m==3.7.1[0m
+ [32m+[39m [1mtruststore[0m[2m==0.10.4[0m
+ [32m+[39m [1mtyper[0m[2m==0.27.2[0m
+ [32m+[39m [1mtyping-extensions[0m[2m==4.16.0[0m
+ [32m+[39m [1mtyping-inspection[0m[2m==0.4.4[0m
+ [32m+[39m [1murllib3[0m[2m==2.8.0[0m
+ [32m+[39m [1muvicorn[0m[2m==0.54.0[0m
+ [32m+[39m [1muvloop[0m[2m==0.22.1[0m
+ [32m+[39m [1mvllm[0m[2m==0.30.0+cu129 (from https://github.com/vllm-project/vllm/releases/download/v0.30.0/vllm-0.30.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl)[0m
+ [32m+[39m [1mwatchfiles[0m[2m==1.3.0[0m
+ [32m+[39m [1mwebsockets[0m[2m==17.1[0m
+ [32m+[39m [1mxgrammar[0m[2m==0.2.8[0m
+ [32m+[39m [1myarl[0m[2m==1.25.1[0m
+ [32m+[39m [1mz3-solver[0m[2m==4.15.4.0[0m
+vllm 0.30.0 | torch 2.13.0+cu129 | CUDA build 12.9
+CUDA starts: NVIDIA H100 80GB HBM3
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+ModuleNotFoundError: No module named 'vllm._C'
+2026-09-30T14:17:57Z  vLLM does not import, CUDA does not start, or vLLM's or Triton's kernels do not run in /root/eddm_s8/vllm_env; stopping, and Johann is asked (corrections 1 and 5)
+2026-09-30T14:20:39Z  stage prepare_large started
+2026-09-30T14:20:39Z  driver CUDA version 12.8
+uv 0.12.21 (x86_64-unknown-linux-gnu)
+2026-09-30T14:20:40Z  installing vLLM 0.30.0's CUDA 12.9 build with torch 2.13.0 for CUDA 12.9 (correction 1)
+[2mUsing Python 3.12.3 environment at: /root/eddm_s8/vllm_env[0m
+[2mChecked [1m6 packages[0m [2min 46ms[0m[0m
+vllm 0.30.0 | torch 2.13.0+cu129 | CUDA build 12.9
+CUDA starts: NVIDIA H100 80GB HBM3
+vLLM's compiled kernels loaded, and one of them (rms_norm) ran and matched torch
+Traceback (most recent call last):
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/triton/runtime/jit.py", line 462, in __init__
+    self.raw_src, self.starting_line_number = inspect.getsourcelines(fn)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 1260, in getsourcelines
+    lines, lnum = findsource(object)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 1089, in findsource
+    raise OSError('could not get source code')
+OSError: could not get source code
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 18, in <module>
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/triton/runtime/jit.py", line 970, in jit
+    return decorator(fn)
+           ^^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/triton/runtime/jit.py", line 958, in decorator
+    return JITFunction(
+           ^^^^^^^^^^^^
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/triton/runtime/jit.py", line 773, in __init__
+    super().__init__(fn)
+  File "/root/eddm_s8/vllm_env/lib/python3.12/site-packages/triton/runtime/jit.py", line 464, in __init__
+    raise ValueError("@jit functions should be defined in a Python file") from e
+ValueError: @jit functions should be defined in a Python file
+2026-09-30T14:20:43Z  vLLM does not import, CUDA does not start, or vLLM's or Triton's kernels do not run in /root/eddm_s8/vllm_env; stopping, and Johann is asked (corrections 1 and 5)
+2026-09-30T14:22:01Z  stage prepare_large started
+2026-09-30T14:22:01Z  driver CUDA version 12.8
+uv 0.12.21 (x86_64-unknown-linux-gnu)
+2026-09-30T14:22:02Z  installing vLLM 0.30.0's CUDA 12.9 build with torch 2.13.0 for CUDA 12.9 (correction 1)
+[2mUsing Python 3.12.3 environment at: /root/eddm_s8/vllm_env[0m
+[2mChecked [1m6 packages[0m [2min 17ms[0m[0m
+vllm 0.30.0 | torch 2.13.0+cu129 | CUDA build 12.9
+CUDA starts: NVIDIA H100 80GB HBM3
+vLLM's compiled kernels loaded, and one of them (rms_norm) ran and matched torch
+a Triton kernel compiled and ran
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 9 files:  44%|████▍     | 4/9 [00:00<00:00, 27.23it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:00<00:00,  9.55it/s]Fetching 9 files:  89%|████████▉ | 8/9 [00:20<00:00,  9.55it/s]Fetching 9 files: 100%|██████████| 9/9 [00:28<00:00,  4.61s/it]Fetching 9 files: 100%|██████████| 9/9 [00:28<00:00,  3.13s/it]
+Gemma 4 31B-it downloaded at 842da3794eaa0b77d5f08bae87a17459d91ff475
+Gemma 4 31B-it: 62546338248 bytes of weights, as fixed_versions.json says
+2026-09-30T14:22:37Z  stage prepare_large finished
+2026-09-30T17:00:54Z  stage prepare_large started
+2026-09-30T17:00:54Z  driver CUDA version 12.8
+uv 0.12.21 (x86_64-unknown-linux-gnu)
+2026-09-30T17:00:55Z  installing vLLM 0.30.0's CUDA 12.9 build with torch 2.13.0 for CUDA 12.9 (correction 1)
+[2mUsing Python 3.12.3 environment at: /root/eddm_s8/vllm_env[0m
+[2mChecked [1m6 packages[0m [2min 18ms[0m[0m
+[2mUsing Python 3.12.3 environment at: /root/eddm_s8/vllm_env[0m
+[2mChecked [1m1 package[0m [2min 3ms[0m[0m
+vllm 0.30.0 | torch 2.13.0+cu129 | CUDA build 12.9
+CUDA starts: NVIDIA H100 80GB HBM3
+vLLM's compiled kernels loaded, and one of them (rms_norm) ran and matched torch
+vllm.multimodal and torchcodec import
+a Triton kernel compiled and ran
+Gemma 4 31B-it: 62546338248 bytes of weights, as fixed_versions.json says
+2026-09-30T17:01:04Z  stage prepare_large finished

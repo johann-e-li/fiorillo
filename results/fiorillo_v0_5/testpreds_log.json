@@ -1,0 +1,36 @@
+{
+ "release_candidate_sha256": "bd45820bef38b523092813b406949c44af7f40babed6eb20658559ff3e83ea55",
+ "testpreds_start_utc": "2026-10-02T13:40:32Z",
+ "trees_v2": {
+  "xgboost_codes": {
+   "model": "xgboost_codes.json",
+   "model_sha256": "cb32b7318e9fb06c43aae45dfda75f53da31b1e1e88175d622fb2b3858a5766d",
+   "validation_reproduced_max_abs_difference": 4.999695102370083e-10,
+   "test_rows": 6998,
+   "seconds": 0.28,
+   "test_predictions": "results/fiorillo_v0_5/predictions/xgboost_codes_readmit_window_test.csv",
+   "test_predictions_sha256": "492eb73aa7f04e9ad35566dce0a3f581133c4166a49c8fd04796be40b42d4e3a",
+   "time_utc": "2026-10-02T15:18:15Z"
+  },
+  "catboost_codes": {
+   "model": "catboost_codes.cbm",
+   "model_sha256": "d92c96afbb3864849b36a677c6571fe02c760b07005aefe37dbd4e1c1c33aa90",
+   "validation_reproduced_max_abs_difference": 4.999393676818897e-10,
+   "test_rows": 6998,
+   "seconds": 0.31,
+   "test_predictions": "results/fiorillo_v0_5/predictions/catboost_codes_readmit_window_test.csv",
+   "test_predictions_sha256": "93e3aca51c71700f20db40ed8de30c99da7a52a9c5dc5eca038107826a8c8d98",
+   "time_utc": "2026-10-02T15:18:16Z"
+  },
+  "lightgbm_tuned": {
+   "model": "lightgbm_tuned.txt",
+   "model_sha256": "af46032dc4004bff7354c1ff49f3dee49906cceb6e0ebc251f6992bdd21f3768",
+   "validation_reproduced_max_abs_difference": 4.999920477644082e-10,
+   "test_rows": 6998,
+   "seconds": 0.2,
+   "test_predictions": "results/fiorillo_v0_5/predictions/lightgbm_tuned_readmit_window_test.csv",
+   "test_predictions_sha256": "d95f7b88682bd0079b995b93f6d2a6cd32b958ff20a1694ce11e7b058a9eefb8",
+   "time_utc": "2026-10-02T15:18:18Z"
+  }
+ }
+}

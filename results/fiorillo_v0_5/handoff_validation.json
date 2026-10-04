@@ -1,0 +1,490 @@
+{
+ "plan": "docs/prompt_session9.md, HAND-OFF ANALYSES (I-34 and I-35; secondary and descriptive)",
+ "source": "src/eval/handoff_curves_session9.py curves",
+ "written_utc": "2026-10-02T13:40:29Z",
+ "split": "validation",
+ "seed": 20260927,
+ "resamples": 1000,
+ "hand_off_rates_percent": [
+  0,
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "coverages_percent": [
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "registered_rates_percent": [
+  10,
+  20,
+  30,
+  50
+ ],
+ "definitions": {
+  "items": "validation: the records marked calibrate (a record without the key counts as marked, as session 8 read them); test: every record; rows follow the large model's file (handoff_session8.aligned)",
+  "ranking": "confidence is Fiorillo's calibrated top probability; the least confident is handed off first; at hand-off rate r the floor(r n) least confident items go to the large model (session 8's order and count)",
+  "ties": "among exact ties the lower record ID, as text, is handed off first, in every order; inside a resample copies of one item are ordered by their place in the resample (key: the ID's rank times the resample's size plus the place)",
+  "risk_coverage": "at coverage c percent, the error rate of the n - floor((100 - c) n / 100) most confident answers, those the confidence rule keeps at hand-off rate 100 - c percent",
+  "aurc": "per item: the mean over k = 1 to n of the error rate of the k most confident answers (the reverse of the hand-off order, so among exact ties the higher ID counts as more confident)",
+  "e_aurc": "AURC minus the AURC, by the same rule, of a perfect ranking of the same answers (every right answer first)",
+  "augrc": "Traub et al. 2024 (arXiv:2407.01032, equations 3, 6 and 7): the area under the generalized risk-coverage curve, the generalized risk being the wrong answers among those kept divided by n (all items); computed as the authors' code does: one point for each distinct confidence, the curve closed at coverage 0 with risk 0, the trapezoid rule, not multiplied by the 1,000 their code uses for display; equal to (1 - AUROC_f) acc (1 - acc) + (1 - acc)^2 / 2, checked; without ties, the per-item mean over k of (wrong among the k most confident) / n, less (1 - acc) / (2 n)",
+  "confidence": "combined accuracy, the floor(r n) least confident handed off (session 8's rule)",
+  "random_expected": "the exact expected combined accuracy when floor(r n) items drawn uniformly without replacement are handed off: acc_F + floor(r n) / n x (acc_L - acc_F)",
+  "oracle": "a bound, not a rule: first the items Fiorillo gets wrong and the large model right, then those both get right or both wrong, last those Fiorillo gets right and the large model wrong, each group in session 8's order; no rule that hands off as many of the same items can do better",
+  "large_model_confidence": "a reference, not a usable rule (it needs the large model's answer on every item): the large model's calibrated top probability, the highest handed off first",
+  "intervals": "95 percent, percentile, from the resamples of handoff_session8.resample_indices (numpy default_rng(20260927); EI: articles, integers(0, m, m) over the m articles sorted by PMCID as text, every prompt of a drawn article kept; PubMedQA: items, integers(0, n, n)); at the registered rates for every curve, and for the three areas; each statistic computed again inside each resample, the items ranked again"
+ },
+ "pairs": [
+  {
+   "question": "evidence_effect",
+   "fiorillo": "s9_ei_wavg",
+   "large_model": "gemma4_31b_long",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_5/predictions/s9_ei_wavg_evidence_effect_validation.csv",
+     "sha256": "280bbd188313dee7f02e9d47a5982eb521c959023b1f93d07d7841f6b4157b02"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_5/predictions/gemma4_31b_long_evidence_effect_validation.csv",
+     "sha256": "1fe4120eff8b5c989a302392a731304ae1249df3eb06e5f7bfd1e3461418b0a8"
+    },
+    "records": {
+     "path": "data/processed/session8/evidence_effect_validation.jsonl",
+     "sha256": "4c0e9ac86e2cb8d8d1a2f650e4488b1b6ecfebb1149c7c5a94ef4b3b5468e0ee"
+    }
+   },
+   "n": 1237,
+   "articles": 340,
+   "resampling": "articles, sorted by PMCID as text",
+   "fiorillo_alone": {
+    "accuracy": 0.9377526273241714,
+    "wrong": 77
+   },
+   "large_model_alone": {
+    "accuracy": 0.8908649959579629,
+    "wrong": 135
+   },
+   "ties": {
+    "fiorillo_confidence": 42,
+    "large_model_confidence": 164
+   },
+   "room": {
+    "items": 1237,
+    "fiorillo_wrong_large_model_right": 28,
+    "fiorillo_right_large_model_wrong": 86,
+    "both_right": 1074,
+    "both_wrong": 49,
+    "share_fiorillo_wrong_large_model_right": 0.02263540824575586,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 123,
+      "fiorillo_wrong_large_model_right": 16,
+      "fiorillo_right_large_model_wrong": 19
+     },
+     "rate_20": {
+      "handed_off": 247,
+      "fiorillo_wrong_large_model_right": 22,
+      "fiorillo_right_large_model_wrong": 41
+     },
+     "rate_30": {
+      "handed_off": 371,
+      "fiorillo_wrong_large_model_right": 24,
+      "fiorillo_right_large_model_wrong": 60
+     },
+     "rate_50": {
+      "handed_off": 618,
+      "fiorillo_wrong_large_model_right": 27,
+      "fiorillo_right_large_model_wrong": 75
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     62,
+     124,
+     186,
+     248,
+     310,
+     372,
+     433,
+     495,
+     557,
+     619,
+     681,
+     743,
+     805,
+     866,
+     928,
+     990,
+     1052,
+     1114,
+     1176,
+     1237
+    ],
+    "wrong": [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     3,
+     3,
+     5,
+     7,
+     11,
+     12,
+     20,
+     27,
+     40,
+     52,
+     77
+    ],
+    "risk": [
+     0.0,
+     0.0,
+     0.005376344086021506,
+     0.004032258064516129,
+     0.0032258064516129032,
+     0.002688172043010753,
+     0.0023094688221709007,
+     0.00202020202020202,
+     0.003590664272890485,
+     0.004846526655896607,
+     0.004405286343612335,
+     0.006729475100942127,
+     0.008695652173913044,
+     0.012702078521939953,
+     0.01293103448275862,
+     0.020202020202020204,
+     0.025665399239543727,
+     0.03590664272890485,
+     0.04421768707482993,
+     0.06224737267582862
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.011140490620663242,
+     "low": 0.006635685458779395,
+     "high": 0.016822233160851963
+    },
+    "e_aurc": {
+     "estimate": 0.009136470731982123,
+     "low": 0.005211630615382758,
+     "high": 0.014394599829097514
+    },
+    "augrc": {
+     "estimate": 0.008782036494008178,
+     "low": 0.005604319024299145,
+     "high": 0.01246038400149803
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.0020040198886811193
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.008782036494008171,
+    "auroc_f": 0.8827418271383789,
+    "difference": 6.938893903907228e-18,
+    "per_item_right_sum": 0.008807523874813827,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     61,
+     123,
+     185,
+     247,
+     309,
+     371,
+     432,
+     494,
+     556,
+     618,
+     680,
+     742,
+     804,
+     865,
+     927,
+     989,
+     1051,
+     1113,
+     1175,
+     1237
+    ],
+    "confidence": [
+     0.9377526273241714,
+     0.9385610347615198,
+     0.9353274050121261,
+     0.9296685529506872,
+     0.9223928860145514,
+     0.9151172190784155,
+     0.9086499595796281,
+     0.9070331447049312,
+     0.904607922392886,
+     0.9037995149555376,
+     0.898949070331447,
+     0.8965238480194018,
+     0.8949070331447049,
+     0.8924818108326596,
+     0.8924818108326596,
+     0.8924818108326596,
+     0.8908649959579629,
+     0.8908649959579629,
+     0.8908649959579629,
+     0.8908649959579629,
+     0.8908649959579629
+    ],
+    "random_expected": [
+     0.9377526273241714,
+     0.9354404644192896,
+     0.9330903972044918,
+     0.930740329989694,
+     0.9283902627748961,
+     0.9260401955600983,
+     0.9236901283453005,
+     0.9213779654404187,
+     0.9190278982256209,
+     0.916677831010823,
+     0.9143277637960252,
+     0.9119776965812274,
+     0.9096276293664295,
+     0.9072775621516317,
+     0.9049653992467499,
+     0.9026153320319521,
+     0.9002652648171542,
+     0.8979151976023564,
+     0.8955651303875586,
+     0.8932150631727607,
+     0.8908649959579629
+    ],
+    "oracle": [
+     0.9377526273241714,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9603880355699272,
+     0.9409862570735651,
+     0.8908649959579629
+    ],
+    "large_model_confidence": [
+     0.9377526273241714,
+     0.9377526273241714,
+     0.936944219886823,
+     0.936944219886823,
+     0.936944219886823,
+     0.936944219886823,
+     0.9361358124494745,
+     0.9361358124494745,
+     0.9361358124494745,
+     0.9361358124494745,
+     0.9377526273241714,
+     0.9393694421988682,
+     0.9393694421988682,
+     0.9385610347615198,
+     0.9393694421988682,
+     0.9409862570735651,
+     0.9385610347615198,
+     0.9320937752627324,
+     0.919967663702506,
+     0.904607922392886,
+     0.8908649959579629
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 123,
+     "confidence": {
+      "estimate": 0.9353274050121261,
+      "low": 0.9200557475176941,
+      "high": 0.9508878456361962
+     },
+     "random_expected": {
+      "estimate": 0.9330903972044918,
+      "low": 0.9175645815043487,
+      "high": 0.947057418846315
+     },
+     "oracle": {
+      "estimate": 0.9603880355699272,
+      "low": 0.9467783315918322,
+      "high": 0.9729971106765466
+     },
+     "large_model_confidence": {
+      "estimate": 0.936944219886823,
+      "low": 0.9209485360675963,
+      "high": 0.9513407329648955
+     }
+    },
+    "rate_20": {
+     "handed_off": 247,
+     "confidence": {
+      "estimate": 0.9223928860145514,
+      "low": 0.9056902899217671,
+      "high": 0.9399856116198486
+     },
+     "random_expected": {
+      "estimate": 0.9283902627748961,
+      "low": 0.9132383865960242,
+      "high": 0.9422904111206374
+     },
+     "oracle": {
+      "estimate": 0.9603880355699272,
+      "low": 0.9467783315918322,
+      "high": 0.9729971106765466
+     },
+     "large_model_confidence": {
+      "estimate": 0.936944219886823,
+      "low": 0.9212557550945667,
+      "high": 0.9516507612056346
+     }
+    },
+    "rate_30": {
+     "handed_off": 371,
+     "confidence": {
+      "estimate": 0.9086499595796281,
+      "low": 0.8883414416506742,
+      "high": 0.9264513831356463
+     },
+     "random_expected": {
+      "estimate": 0.9236901283453005,
+      "low": 0.9080829771229494,
+      "high": 0.9378649697153733
+     },
+     "oracle": {
+      "estimate": 0.9603880355699272,
+      "low": 0.9467783315918322,
+      "high": 0.9729971106765466
+     },
+     "large_model_confidence": {
+      "estimate": 0.9361358124494745,
+      "low": 0.9199359160531039,
+      "high": 0.9508077890940794
+     }
+    },
+    "rate_50": {
+     "handed_off": 618,
+     "confidence": {
+      "estimate": 0.898949070331447,
+      "low": 0.8775669566248889,
+      "high": 0.9213962671441075
+     },
+     "random_expected": {
+      "estimate": 0.9143277637960252,
+      "low": 0.8970464140845328,
+      "high": 0.9306222201724921
+     },
+     "oracle": {
+      "estimate": 0.9603880355699272,
+      "low": 0.9467783315918322,
+      "high": 0.9729971106765466
+     },
+     "large_model_confidence": {
+      "estimate": 0.9377526273241714,
+      "low": 0.9217555971043674,
+      "high": 0.951686017118363
+     }
+    }
+   }
+  }
+ ]
+}

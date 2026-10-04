@@ -1,0 +1,23 @@
+{
+ "plan": "docs/prompt_session8.md, THE READMISSION POOL and step 15",
+ "members": [
+  "lightgbm_tuned",
+  "xgboost_tuned",
+  "catboost_tuned",
+  "arm_laya",
+  "s7_b3"
+ ],
+ "weights": {
+  "lightgbm_tuned": 0.0,
+  "xgboost_tuned": 0.4,
+  "catboost_tuned": 0.6,
+  "arm_laya": 0.0,
+  "s7_b3": 0.0
+ },
+ "T": 0.9957247324725937,
+ "rows": 6998,
+ "predictions": "results/fiorillo_v0_4/predictions/readmission_pool_readmit_window_test.csv",
+ "predictions_sha256": "c727038897d71979fa520e4f604642445515d7ee47098354c5c58326308e2a78",
+ "readmission_pool_json_sha256": "9a1f1b224ee7016d1c35fd4966815e919e79dbfd0dd0ec54817bb0b64027325a",
+ "time_utc": "2026-10-01T02:52:35Z"
+}

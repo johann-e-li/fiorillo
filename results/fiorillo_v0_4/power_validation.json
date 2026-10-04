@@ -1,0 +1,20 @@
+{
+ "source": "src/eval/power_session8.py validation",
+ "plan": "docs/prompt_session8.md, POWER AND THE BAR (step 12)",
+ "note": "For the record only; the bar does not change. Measured on EI's validation split; no test prediction is read.",
+ "records": "/root/eddm_s8/code/data/processed/session8/evidence_effect_validation.jsonl",
+ "system": "/root/eddm_s8/code/results/fiorillo_v0_4/predictions/s8_ei_evidence_effect_validation.csv",
+ "reference": "/root/eddm_s8/code/results/fiorillo_v0_4/predictions/gemma4_31b_evidence_effect_validation.csv",
+ "n_validation": 1237,
+ "articles_validation": 340,
+ "validation_mean_difference": -0.1416598958392974,
+ "s": 0.6974704298234246,
+ "variance_article_resamples": 0.0006705404601054923,
+ "variance_prompt_resamples": 0.00040725607801965475,
+ "D": 1.6464836163185048,
+ "n_test": 1218,
+ "se_test": 0.025643710329711543,
+ "pass_line": -0.050260748676212365,
+ "real_gain_for_80_percent": 0.07184303979729068,
+ "chance_at_validation_difference": 0.9998175117169694
+}

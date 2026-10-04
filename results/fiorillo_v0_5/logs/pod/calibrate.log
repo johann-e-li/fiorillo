@@ -1,0 +1,97 @@
+2026-10-02T13:39:25Z  stage calibrate started
+2026-10-02T13:39:26Z  GPU free: 0 MiB used
+v0.5's EI specialist s9_ei_wavg: chosen temperature; out-of-fold temperature 0.17808, temperature_intercepts 0.18084, vector 0.18364, dirichlet_odir 0.18290
+{
+ "predictions": "s9_ei_wavg_evidence_effect_validation.csv",
+ "validation_rows": 654,
+ "n": 1218,
+ "draws": 5000,
+ "ece_if_calibrated": {
+  "median": 0.012129978266830228,
+  "p05": 0.0071879740498351835,
+  "p95": 0.018431408650697503
+ },
+ "share_at_most_0.05": 1.0
+}
+{"system": "s9_ei_wavg", "limit": 0.05, "p95": 0.018431408650697503}
+{
+ "chosen": "session8",
+ "difference_session8_minus_new": 0.00034731546269717306,
+ "new": {
+  "members": [
+   "lightgbm_tuned",
+   "xgboost_tuned",
+   "catboost_tuned",
+   "arm_laya",
+   "s7_b3",
+   "xgboost_codes",
+   "catboost_codes"
+  ],
+  "weights": {
+   "lightgbm_tuned": 0.0,
+   "xgboost_tuned": 0.3,
+   "catboost_tuned": 0.3,
+   "arm_laya": 0.0,
+   "s7_b3": 0.0,
+   "xgboost_codes": 0.0,
+   "catboost_codes": 0.4
+  },
+  "T": 0.9922128243818921,
+  "validation_log_loss": 0.8363391325893289
+ },
+ "out_of_fold": {
+  "new": 0.8368058109340917,
+  "session8": 0.8371531263967888
+ },
+ "dropped": [
+  {
+   "member": "tabicl",
+   "status": "NOT BUILT",
+   "reason": "NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)"
+  }
+ ],
+ "seconds": 8.9
+}
+2026-10-02T13:40:27Z  I-35's run spread: s9_long_1-raw
+2026-10-02T13:40:27Z  I-35's run spread: s9_long_2-raw
+2026-10-02T13:40:27Z  I-35's run spread: s9_long_3-raw
+2026-10-02T13:40:27Z  the hand-off analyses on validation: s9_ei_wavg with gemma4_31b_long (/root/eddm_s9/code/results/fiorillo_v0_5/predictions/gemma4_31b_long_evidence_effect_validation.csv)
+{
+ "written": "/root/eddm_s9/code/results/fiorillo_v0_5/handoff_validation.json",
+ "pairs": [
+  {
+   "question": "evidence_effect",
+   "fiorillo": "s9_ei_wavg",
+   "large_model": "gemma4_31b_long",
+   "n": 1237,
+   "aurc": 0.01114,
+   "e_aurc": 0.00914,
+   "augrc": 0.00878,
+   "confidence": {
+    "rate_10": 0.9353,
+    "rate_20": 0.9224,
+    "rate_30": 0.9086,
+    "rate_50": 0.8989
+   },
+   "room": [
+    28,
+    16,
+    19
+   ]
+  }
+ ]
+}
+{
+ "written": "/root/eddm_s9/code/results/fiorillo_v0_5/handoff_rule_v05.json",
+ "positives": 28,
+ "coefficients": {
+  "top_probability": 0.7765702733760548,
+  "margin": -0.5085163554210916,
+  "entropy": 1.0329153407943914,
+  "run_sd": 0.2260503321436998
+ },
+ "intercept": -4.458538378618027,
+ "statement": "On validation s9_ei_wavg was wrong where gemma4_31b_long was right on 28 of 1,237 prompts (2.3 percent), and the confidence rule's 10 percent hand-off (123 prompts) held 16 of them and 19 prompts the other way (s9_ei_wavg right, gemma4_31b_long wrong), so a better rule has room of at most about 2.3 points of accuracy and few cases to learn from."
+}
+{"s": 0.7519887028615374, "D": 1.5715577458957024, "se_test": 0.02701175760480293, "pass_line": -0.052942072064539644, "validation_mean_difference": -0.13902130170093827}
+2026-10-02T13:40:31Z  stage calibrate finished

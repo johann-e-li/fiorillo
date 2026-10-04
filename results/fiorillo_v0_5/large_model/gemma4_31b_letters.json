@@ -1,0 +1,51 @@
+{
+ "plan": "docs/prompt_session8.md, THE LARGE MODEL",
+ "evidence_effect": {
+  "validation": {
+   "items": 1237,
+   "letters_summed_probability": {
+    "median": 0.9999999273478924,
+    "p10": 0.9999982234752884,
+    "share_below_0_5": 0.002425222312045271
+   },
+   "answered_second_way": 1081,
+   "by_method": {
+    "top20": 156,
+    "top1000": 505,
+    "prompt": 576
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  },
+  "test": {
+   "items": 1218,
+   "letters_summed_probability": {
+    "median": 0.9999999221445504,
+    "p10": 0.9999973921127698,
+    "share_below_0_5": 0.0008210180623973727
+   },
+   "answered_second_way": 1051,
+   "by_method": {
+    "top20": 167,
+    "top1000": 539,
+    "prompt": 512
+   },
+   "note": "before renormalization; the prompt way's sum is exact, the top-20 and top-1,000 ways count the letter variants among those log-probabilities (correction 5)"
+  }
+ },
+ "letter_ids": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ]
+ },
+ "variants_left_out": [],
+ "time_utc": "2026-10-02T15:17:39Z"
+}

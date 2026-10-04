@@ -1,0 +1,16 @@
+{
+ "predictions": "s9_ei_wavg_evidence_effect_validation.csv",
+ "validation_rows": 654,
+ "n": 1218,
+ "draws": 5000,
+ "ece_if_calibrated": {
+  "median": 0.012129978266830228,
+  "p05": 0.0071879740498351835,
+  "p95": 0.018431408650697503
+ },
+ "share_at_most_0.05": 1.0,
+ "system": "s9_ei_wavg",
+ "plan": "docs/prompt_session9.md, CALIBRATION (the ECE limit for criterion 1)",
+ "limit": 0.05,
+ "written_utc": "2026-10-02T13:40:16Z"
+}

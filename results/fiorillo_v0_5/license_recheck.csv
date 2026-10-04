@@ -1,0 +1,3349 @@
+pmcid,splits,europe_pmc,own_statement,clean,year,prompts
+PMC101395,train,none recorded,verbatim copying only,false,2002,4
+PMC102323,train,none recorded,verbatim copying only,false,2002,3
+PMC1065065,test,cc by,cc by,true,2004,1
+PMC1065070,train,cc by,cc by,true,2004,2
+PMC1065073,train,cc by,cc by,true,2004,2
+PMC1065104,train,cc by,cc by,true,2005,2
+PMC1074719,train,none recorded,other non-commercial or no-modification terms,false,2004,2
+PMC1079844,train,cc by,cc by,true,2005,5
+PMC1084341,train,cc by,cc by,true,2005,1
+PMC1087200,validation,cc by,cc by,true,2005,3
+PMC1087853,train,cc by,cc by,true,2005,2
+PMC1090588,train,cc by,cc by,true,2005,2
+PMC111061,train,none recorded,verbatim copying only,false,2002,1
+PMC111183,train,none recorded,copyright notice only,false,2002,4
+PMC111193,train,none recorded,verbatim copying only,false,2002,5
+PMC1131903,train,cc by,cc by,true,2005,4
+PMC1134663,train,cc by,cc by,true,2005,3
+PMC115849,validation,none recorded,verbatim copying only,false,2002,3
+PMC116601,validation,none recorded,verbatim copying only,false,2002,2
+PMC1173136,train,cc by,cc by,true,2005,1
+PMC1174877,train,cc by,cc by,true,2005,2
+PMC1174954,train,cc by,cc by,true,2005,3
+PMC1175098,train,cc by,cc by,true,2005,1
+PMC1175919,train,cc by,cc by,true,2005,2
+PMC1175929,train,cc by,cc by,true,2005,12
+PMC1177952,train,cc by,cc by,true,2005,3
+PMC1185549,train,cc by,cc by,true,2005,4
+PMC1187893,train,cc by,cc by,true,2005,7
+PMC1190172,train,cc by,cc by,true,2005,1
+PMC1190216,train,cc by,cc by,true,2005,2
+PMC1193545,train,cc by,other non-commercial or no-modification terms,false,2005,2
+PMC1198254,train,cc by,cc by,true,2005,4
+PMC1201146,train,cc by,cc by,true,2005,4
+PMC1208905,train,cc by,cc by,true,2005,2
+PMC1216327,train,cc by,cc by,true,2005,3
+PMC1224861,train,cc by,cc by,true,2005,6
+PMC1240403,train,cc by,no statement,false,2001,1
+PMC1241419,train,cc by,no statement,false,2003,1
+PMC125315,train,none recorded,copyright notice only,false,2002,3
+PMC1253473,train,cc by,cc by,true,2004,3
+PMC1261533,train,cc by,cc by,true,2005,6
+PMC1277845,train,cc by,cc by,true,2005,3
+PMC1291385,train,cc by,cc by,true,2005,3
+PMC1326200,train,cc by,cc by,true,2005,1
+PMC1332199,train,none recorded,other non-commercial or no-modification terms,false,2006,6
+PMC1334191,validation,cc by,cc by,true,2005,1
+PMC1382202,test,cc by,cc by,true,2006,1
+PMC1386666,train,cc by,cc by,true,2006,2
+PMC1403758,train,cc by,cc by,true,2006,1
+PMC1414018,train,cc by,cc by,true,2005,6
+PMC1420296,train,cc by,cc by,true,2006,3
+PMC1434781,test,cc by,cc by,true,2006,2
+PMC1440784,train,cc0,public domain,true,2006,1
+PMC1468428,train,cc by,cc by,true,2006,3
+PMC1475428,train,none recorded,other non-commercial or no-modification terms,false,2006,3
+PMC1475568,train,cc by,cc by,true,2006,15
+PMC1488892,train,cc0,cc0,true,2006,4
+PMC1488896,train,cc by,cc by,true,2006,2
+PMC1488900,train,cc by,cc by,true,2006,2
+PMC1489930,train,cc by,cc by,true,2006,1
+PMC1500954,train,cc by,cc by,true,2006,1
+PMC1501010,train,cc by,cc by,true,2006,5
+PMC1513142,train,cc by-nc,cc by-nc,false,2006,2
+PMC1513247,train,cc by,cc by,true,2006,2
+PMC1513406,train,cc by,cc by,true,2006,1
+PMC1522015,train,cc by,cc by,true,2006,2
+PMC1524987,train,cc by,cc by,true,2006,3
+PMC1526611,train,cc by,cc by,true,2006,4
+PMC1540413,train,cc by,cc by,true,2006,3
+PMC1550249,train,cc by,cc by,true,2006,3
+PMC1550259,train,cc by,cc by,true,2006,2
+PMC1550405,validation,cc by,cc by,true,2006,3
+PMC1550594,train,none recorded,cc by,true,2004,5
+PMC1550608,train,none recorded,cc by,true,2004,5
+PMC1550632,train,none recorded,cc by,true,2005,3
+PMC1550825,train,cc by,cc by,true,2006,1
+PMC1550875,train,cc by,cc by,true,2006,3
+PMC1550956,test,cc by,cc by,true,2006,2
+PMC1553435,train,cc by,cc by,true,2006,1
+PMC1562427,train,cc by,cc by,true,2006,1
+PMC1562433,train,cc by,cc by,true,2006,3
+PMC1569640,test,cc by,"open link or statement, restricting words in its text",false,2006,4
+PMC1570354,train,cc by,cc by,true,2006,3
+PMC1574360,train,cc by,cc by,true,2006,2
+PMC1578575,train,cc by,cc by,true,2006,1
+PMC1578590,train,cc by,cc by,true,2006,5
+PMC1579211,train,cc by,cc by,true,2006,2
+PMC1584256,train,cc by,cc by,true,2006,2
+PMC1586021,train,cc by,cc by,true,2006,3
+PMC1590049,train,cc by,cc by,true,2006,2
+PMC1618389,train,cc by,cc by,true,2006,2
+PMC1618957,train,cc by,"open link or statement, restricting words in its text",false,2006,4
+PMC1619408,validation,none recorded,copyright notice only,false,2006,3
+PMC1626393,train,cc0,public domain,true,2006,2
+PMC165418,train,none recorded,verbatim copying only,false,2003,5
+PMC1664572,test,cc by,cc by,true,2006,2
+PMC1676011,test,cc by,cc by,true,2006,3
+PMC1693558,test,cc by,cc by,true,2006,5
+PMC1693563,train,cc by,cc by,true,2006,4
+PMC1693922,validation,cc by,cc by,true,2006,4
+PMC1702540,train,cc by,cc by,true,2006,4
+PMC1705528,test,cc by-nc,copyright notice only,false,2006,5
+PMC1705535,train,cc by-nc,copyright notice only,false,2006,2
+PMC1713239,test,cc by,cc by,true,2006,2
+PMC1713262,test,cc by,cc by,true,2006,6
+PMC1716162,test,cc by,cc by,true,2006,2
+PMC1764008,train,cc by,cc by,true,2006,12
+PMC1764200,train,none recorded,no statement,false,2002,2
+PMC1766476,train,cc by-nc,copyright notice only,false,2006,5
+PMC1774569,train,cc by,cc by,true,2007,2
+PMC1779263,train,cc by,cc by,true,2007,2
+PMC1781578,train,cc by,no statement,false,2004,2
+PMC1783656,validation,cc by,cc by,true,2007,4
+PMC1783667,test,cc by,cc by,true,2007,5
+PMC1783850,train,cc by,cc by,true,2007,2
+PMC1784583,train,cc by,no statement,false,2005,3
+PMC1784771,train,none recorded,no statement,false,1998,4
+PMC1794254,test,cc by,cc by,true,2007,3
+PMC1794452,train,cc by,cc by,true,2006,5
+PMC1794469,train,cc by,cc by,true,2006,4
+PMC1794491,train,cc by,cc by,true,2006,3
+PMC1794625,test,cc by-nc,copyright notice only,false,2006,3
+PMC1796543,train,cc by,cc by,true,2007,4
+PMC1797029,train,cc by,cc by,true,2006,3
+PMC1804280,train,cc by,cc by,true,2007,6
+PMC1805771,train,cc by,cc by,true,2007,4
+PMC1810369,train,cc by-nc,cc by-nc,false,2007,2
+PMC1810515,test,cc by,cc by,true,2007,1
+PMC1820788,train,cc by,cc by,true,2007,2
+PMC1821024,validation,cc by,cc by,true,2007,4
+PMC1821028,train,cc by,cc by,true,2007,2
+PMC1824772,train,none recorded,copyright notice only,false,2007,1
+PMC1831486,train,cc by,cc by,true,2007,6
+PMC1831737,train,cc by,cc by,true,2007,11
+PMC1839864,train,none recorded,copyright notice only,false,2007,4
+PMC1847683,train,cc by,cc by,true,2007,3
+PMC1847837,train,cc by,cc by,true,2007,4
+PMC1849920,train,cc0,public domain,true,2007,3
+PMC1851720,test,cc by,cc by,true,2006,1
+PMC1852268,train,cc by,cc by,true,2003,1
+PMC1852293,train,cc by,cc by,true,2003,3
+PMC1852321,train,cc by,cc by,true,2007,4
+PMC1852556,test,cc by,cc by,true,2007,5
+PMC1859980,train,cc by,"open link or statement, restricting words in its text",false,2007,6
+PMC1863514,train,cc by,cc by,true,2007,2
+PMC1863515,train,cc by,cc by,true,2007,2
+PMC1865086,train,cc0,cc0,true,2007,4
+PMC1865087,train,cc by,cc by,true,2007,2
+PMC1866019,validation,cc by,cc by,true,2007,3
+PMC1868017,train,cc by,cc by,true,2007,3
+PMC1868022,train,cc by,cc by,true,2007,5
+PMC1868720,train,cc by,cc by,true,2007,3
+PMC1871574,test,cc by,cc by,true,2007,15
+PMC1874716,train,none recorded,cc by,true,2007,3
+PMC1876597,train,cc by,cc by,true,2007,3
+PMC1887535,train,cc by,cc by,true,2007,4
+PMC1888710,train,cc by,cc by,true,2007,1
+PMC1891198,validation,cc by,cc by,true,2007,2
+PMC1891438,train,cc by,cc by,true,2007,1
+PMC1891439,train,cc by,cc by,true,2007,4
+PMC1896161,train,cc by,cc by,true,2007,2
+PMC1904193,train,cc by,cc by,true,2007,1
+PMC1904445,train,cc by,cc by,true,2007,1
+PMC1905915,train,cc by,cc by,true,2007,3
+PMC1913056,test,cc by,cc by,true,2007,3
+PMC1913177,train,cc by-nc,copyright notice only,false,2007,3
+PMC1913555,train,cc by,cc by,true,2007,5
+PMC1913602,train,cc0,public domain,true,2007,5
+PMC1913915,train,cc by,cc by,true,2007,3
+PMC1913938,train,none recorded,cc by,true,2007,1
+PMC1913939,train,none recorded,cc by,true,2007,5
+PMC1914073,train,cc by,cc by,true,2007,4
+PMC1914252,test,cc by-nc,copyright notice only,false,2007,2
+PMC1915612,validation,cc by-nc,copyright notice only,false,2007,5
+PMC1915628,train,cc by-nc,copyright notice only,false,2007,1
+PMC1924504,train,cc by,cc by,true,2007,4
+PMC1925104,train,cc by,cc by,true,2007,2
+PMC1931598,test,cc by,cc by,true,2007,2
+PMC1936284,train,none recorded,copyright notice only,false,2007,2
+PMC1936359,train,none recorded,copyright notice only,false,2006,1
+PMC1936363,train,none recorded,copyright notice only,false,2006,1
+PMC1940068,validation,cc0,public domain,true,2007,1
+PMC1940326,train,cc by,cc by,true,2007,1
+PMC1949842,train,cc by,cc by,true,2007,6
+PMC1950208,train,cc by,cc by,true,2007,4
+PMC1964758,train,cc by,cc by,true,2007,3
+PMC1968186,train,cc by,cc by,true,1993,2
+PMC1968469,train,cc by,cc by,true,1993,3
+PMC1968524,test,cc by,cc by,true,1993,2
+PMC1969447,train,cc by,cc by,true,1994,2
+PMC1971065,train,cc by,cc by,true,2007,2
+PMC1971800,,cc by,cc by,true,1991,0
+PMC1974799,train,none recorded,copyright notice only,false,2007,5
+PMC1974808,validation,none recorded,copyright notice only,false,2007,1
+PMC1976842,train,cc by,cc by,true,1984,1
+PMC1977002,,cc by,cc by,true,1984,0
+PMC1977297,train,cc by,cc by,true,1991,3
+PMC1977696,train,cc by,cc by,true,1991,1
+PMC1978057,validation,cc by,cc by,true,1992,1
+PMC1994017,test,none recorded,copyright notice only,false,2006,4
+PMC2001223,train,cc by-nc,copyright notice only,false,2007,3
+PMC2002515,train,cc by,cc by,true,2007,3
+PMC2039813,train,cc by-nc,copyright notice only,false,2007,3
+PMC2047288,train,none recorded,cc by,true,2007,5
+PMC2074536,train,cc by,cc by,true,1996,3
+PMC2129145,train,cc by,copyright notice only,false,2005,7
+PMC2147023,train,cc by,cc by,true,2007,1
+PMC2194675,train,cc by,cc by,true,2007,8
+PMC2206488,,cc by,cc by,true,2007,0
+PMC2211287,train,cc by,cc by,true,2007,3
+PMC2212351,train,none recorded,cc by (words),true,2008,7
+PMC2223531,train,cc by,cc by,true,1997,2
+PMC2228375,train,cc by,"open link or statement, restricting words in its text",false,2007,7
+PMC2249589,train,cc by,cc by,true,2007,3
+PMC2253708,validation,cc by,"open link or statement, restricting words in its text",false,2008,3
+PMC2265739,train,cc by,cc by,true,2008,6
+PMC2277487,train,none recorded,publisher's own reuse terms,false,2008,2
+PMC2291328,train,none recorded,copyright notice only,false,2007,5
+PMC2291568,train,cc by,cc by,true,2008,6
+PMC2360030,train,cc by,cc by,true,2007,5
+PMC2360567,validation,cc by,cc by,true,2006,3
+PMC2361515,test,cc by,cc by,true,2005,5
+PMC2361520,train,cc by,cc by,true,2005,4
+PMC2361654,test,cc by,cc by,true,2005,2
+PMC2361806,train,cc by,cc by,true,2005,6
+PMC2361948,test,cc by,cc by,true,2005,6
+PMC2363351,train,cc by,cc by,true,2000,4
+PMC2363617,train,cc by,cc by,true,2001,1
+PMC2363753,validation,cc by,cc by,true,2001,4
+PMC2364533,train,cc by,cc by,true,1997,2
+PMC2364538,train,cc by,cc by,true,1997,4
+PMC2364680,train,cc by,cc by,true,1993,1
+PMC2365957,test,cc by,cc by,true,2008,3
+PMC2365983,train,none recorded,copyright notice only,false,2008,4
+PMC2366143,validation,cc by,cc by,true,1994,6
+PMC2367663,train,cc0,public domain,true,2008,2
+PMC2375236,validation,cc by,cc by,true,2001,4
+PMC2375877,train,cc by,cc by,true,2008,5
+PMC2376383,train,cc by,cc by,true,2003,5
+PMC2396624,train,cc by,cc by,true,2008,4
+PMC2409349,validation,cc by,cc by,true,2008,4
+PMC2409647,train,cc by,cc by,true,2004,7
+PMC2409966,train,cc0,cc0,true,2008,5
+PMC2427034,train,cc by,cc by,true,2008,6
+PMC2429977,train,cc by-nc,cc by-nc,false,2008,5
+PMC2430614,train,cc by,cc by,true,2008,3
+PMC2430617,train,cc by,cc by,true,2008,2
+PMC2442760,train,cc by,cc by,true,2008,2
+PMC2442830,test,cc by,cc by,true,2008,1
+PMC2447617,train,cc by,cc by,true,2008,6
+PMC2447849,train,cc by,cc by,true,2008,6
+PMC2464595,train,cc by,cc by,true,2008,2
+PMC2474851,validation,cc by,cc by,true,2008,2
+PMC2474855,validation,cc by,cc by,true,2008,2
+PMC2500197,train,none recorded,copyright notice only,false,2008,4
+PMC2500257,train,cc by-nc,copyright notice only,false,2008,6
+PMC2503659,train,cc by-nc,copyright notice only,false,2008,5
+PMC2517154,train,cc by-nc,cc by-nc,false,2008,11
+PMC2526991,test,cc by,cc by,true,2008,3
+PMC2527839,train,cc by,cc by,true,2008,1
+PMC2528216,train,cc by-nc,copyright notice only,false,2008,1
+PMC2529259,test,cc by,cc by,true,2008,2
+PMC2546382,train,cc by,cc by,true,2008,2
+PMC2556743,train,cc by,cc by,true,2007,3
+PMC2569033,train,cc by,cc by,true,2008,5
+PMC2570683,train,cc by,cc by,true,2008,3
+PMC2571050,validation,cc by-nc-nd,cc by-nc-nd,false,2008,6
+PMC2575601,train,cc by,cc by,true,2008,9
+PMC2581757,train,none recorded,cc by (words),true,2008,5
+PMC2584124,train,cc by-nc-nd,cc by-nc-nd,false,2008,7
+PMC2596788,test,cc by,cc by,true,2008,1
+PMC2600646,train,cc by,cc by,true,2008,3
+PMC2602945,train,cc by,cc by,true,2008,5
+PMC2607225,test,cc by,cc by,true,2008,2
+PMC2613135,train,cc by,cc by,true,2008,2
+PMC2627861,train,cc0,public domain,true,2009,2
+PMC2630316,train,cc by,cc by,true,2008,6
+PMC2635353,test,cc by,cc by,true,2009,6
+PMC2639329,test,cc by-nc,cc by-nc,false,2008,4
+PMC2639700,train,cc by,cc by,true,2009,2
+PMC2644279,validation,cc by-nc,cc by-nc,false,2009,4
+PMC2644667,train,cc by,cc by,true,2008,5
+PMC2645358,validation,cc by,cc by,true,2009,6
+PMC2649924,train,cc by,cc by,true,2009,4
+PMC2650591,train,none recorded,copyright notice only,false,2008,3
+PMC2650992,train,cc by-nc,cc by-nc,false,2009,3
+PMC2652457,train,cc by,cc by,true,2009,6
+PMC2656477,train,cc by,cc by,true,2009,2
+PMC2660282,train,cc by,cc by,true,2009,7
+PMC2662857,train,cc by,cc by,true,2009,5
+PMC2667135,test,cc by-nc,cc by-nc,false,2009,5
+PMC2671107,train,cc by-nc-nd,cc by-nc-nd,false,2009,3
+PMC2671648,train,cc by,cc by,true,2003,4
+PMC2674549,train,cc by-nc,cc by-nc,false,2009,9
+PMC2678276,train,cc by,cc by,true,2009,5
+PMC2680972,train,cc by,cc by,true,2009,3
+PMC2681019,train,cc by-nc-nd,cc by-nc-nd,false,2009,3
+PMC2686715,train,cc by,cc by,true,2009,2
+PMC2687939,train,none recorded,publisher's own reuse terms,false,2009,5
+PMC2688140,train,cc by,cc by,true,2009,2
+PMC2689169,train,cc by,cc by,true,2009,4
+PMC2689497,train,cc by,cc by,true,2009,6
+PMC2690844,train,none recorded,copyright notice only,false,2009,20
+PMC2691927,train,cc by-nc,copyright notice only,false,2009,12
+PMC2694359,test,cc by,cc by,true,2009,4
+PMC2694465,train,cc by-nc,copyright notice only,false,2009,4
+PMC2699080,train,cc by,cc by,true,2008,3
+PMC2699714,test,cc by-nc-nd,cc by-nc-nd,false,2009,3
+PMC2699720,test,cc by-nc-nd,cc by-nc-nd,false,2009,6
+PMC2699722,validation,cc by-nc-nd,cc by-nc-nd,false,2009,5
+PMC2699734,train,cc by-nc-nd,cc by-nc-nd,false,2009,1
+PMC270000,test,none recorded,verbatim copying only,false,2003,4
+PMC270049,train,none recorded,verbatim copying only,false,2003,3
+PMC2703617,train,cc by,cc by,true,2009,5
+PMC2708184,train,cc by,cc by,true,2009,9
+PMC2710065,validation,cc by-nc-sa,cc by-nc-sa,false,2009,2
+PMC2713840,train,cc by-nc,cc by-nc,false,2002,6
+PMC2714198,train,cc by,cc by,true,2009,2
+PMC2715417,train,cc by,cc by,true,2009,1
+PMC2717426,validation,cc by,cc by,true,2009,4
+PMC2720945,train,cc by,cc by,true,2009,6
+PMC2721929,train,cc by-nc,cc by-nc,false,2006,5
+PMC2722000,train,cc by-nc,cc by-nc,false,2006,4
+PMC2723123,test,cc by,cc by,true,2009,5
+PMC2724496,train,cc by,cc by,true,2009,1
+PMC2741450,train,cc by,cc by,true,2009,7
+PMC2742700,train,cc by-nc,other non-commercial or no-modification terms,false,2009,2
+PMC2744923,validation,cc by,cc by,true,2009,5
+PMC2748072,train,cc by,cc by,true,2009,3
+PMC2748711,train,cc by,cc by,true,2009,2
+PMC2752772,train,cc by-nc,cc by-nc,false,2009,1
+PMC2752780,train,cc by-nc,cc by-nc,false,2009,4
+PMC2755037,test,cc by-nc-nd,cc by-nc-nd,false,2009,5
+PMC2755038,train,cc by-nc-nd,cc by-nc-nd,false,2009,3
+PMC2758835,train,cc by,cc by,true,2009,3
+PMC2759629,train,cc by,cc by,true,2008,6
+PMC2759981,train,cc by,"open link or statement, restricting words in its text",false,2009,6
+PMC2762857,train,cc by,cc by,true,2009,7
+PMC2762969,train,cc by,cc by,true,2009,4
+PMC2765950,train,cc by,copyright notice only,false,2009,1
+PMC2769033,validation,cc by-nc,cc by-nc,false,2008,6
+PMC2770415,train,none recorded,other non-commercial or no-modification terms,false,2008,5
+PMC2772252,train,cc by,cc by,true,2009,1
+PMC2774638,train,cc by,cc by,true,2009,2
+PMC2778406,train,cc by-nc,other non-commercial or no-modification terms,false,2009,5
+PMC2778511,train,cc by,cc by,true,2009,2
+PMC2781775,train,cc by-nc,cc by-nc,false,2009,3
+PMC2782153,train,cc by-nc,cc by-nc,false,2005,6
+PMC2784386,test,cc by,cc by,true,2009,3
+PMC2784391,train,cc by,cc by,true,2009,2
+PMC2784472,train,cc by,cc by,true,2009,5
+PMC2785868,validation,cc by-nc,other non-commercial or no-modification terms,false,2009,2
+PMC2788265,train,cc by,cc by,true,2009,2
+PMC2796659,train,cc by,cc by,true,2009,3
+PMC2797436,train,cc by-nc,cc by-nc,false,2009,1
+PMC2797956,train,cc by-nc-nd,cc by-nc-nd,false,2010,2
+PMC2797957,test,cc by-nc-nd,cc by-nc-nd,false,2010,3
+PMC2800022,train,cc by-nc,cc by-nc,false,2010,5
+PMC2800200,train,cc by,"open link or statement, restricting words in its text",false,2010,4
+PMC2801838,train,cc by-nc,cc by-nc,false,2009,3
+PMC2806387,train,cc by,cc by,true,2010,1
+PMC2806484,train,none recorded,publisher's own reuse terms,false,2009,5
+PMC2806530,train,cc by-nc,cc by-nc,false,2009,2
+PMC2808793,train,cc by-nc,cc by-nc,false,2009,5
+PMC2815285,train,cc by-nc,copyright notice only,false,2010,4
+PMC2817867,validation,cc by,cc by,true,2009,9
+PMC2818614,train,cc by,cc by,true,2010,4
+PMC2822946,train,cc by,cc by,true,2010,4
+PMC2825665,train,cc by,cc by,true,2009,3
+PMC2826100,train,cc by-nc,cc by-nc,false,2010,1
+PMC2826289,train,cc by,cc by,true,2010,4
+PMC2829413,train,cc by-nc,cc by-nc,false,2010,6
+PMC2830179,validation,cc by,cc by,true,2010,4
+PMC2836298,validation,cc by,cc by,true,2010,3
+PMC2836470,train,cc by-nc,cc by-nc,false,2010,4
+PMC2836833,train,none recorded,other non-commercial or no-modification terms,false,2009,3
+PMC2837810,test,cc by,copyright notice only,false,2010,3
+PMC2837815,train,cc by,copyright notice only,false,2010,4
+PMC2841147,train,cc by,cc by,true,2010,5
+PMC2845036,train,cc by-nc-nd,cc by-nc-nd,false,2010,2
+PMC2847809,train,cc by,cc by,true,2009,3
+PMC2848004,validation,cc by,cc by,true,2010,4
+PMC2852703,validation,none recorded,copyright notice only,false,2009,1
+PMC2853089,train,cc by-nc-sa,cc by-nc-sa,false,2010,5
+PMC2855831,train,cc by,"open link or statement, restricting words in its text",false,2010,3
+PMC2855860,train,cc by-nc,copyright notice only,false,2010,2
+PMC2856148,train,cc by,cc by,true,2009,4
+PMC2858204,test,cc by-nc-nd,cc by-nc-nd,false,2010,6
+PMC2864284,train,cc by,cc by,true,2010,13
+PMC2865639,train,cc by-nc,cc by-nc,false,2010,3
+PMC2866241,train,cc by-nc,cc by-nc,false,2010,2
+PMC2867787,train,cc by,cc by,true,2010,2
+PMC2869037,validation,cc by-nc,cc by-nc,false,2010,5
+PMC2871176,train,cc by,"open link or statement, restricting words in its text",false,2009,55
+PMC2875419,train,cc by-nc-nd,cc by-nc-nd,false,2010,7
+PMC2876855,train,cc by-nc,cc by-nc,false,2010,3
+PMC2876942,train,cc by,cc by,true,2009,6
+PMC2877680,train,cc by,cc by,true,2010,2
+PMC2882922,test,cc by,cc by,true,2010,4
+PMC2885597,train,cc by-nc,cc by-nc,false,2010,5
+PMC2887151,train,cc by,cc by,true,2010,2
+PMC2887201,train,cc by,cc by,true,2010,6
+PMC2887326,train,cc by-nc,cc by-nc,false,2010,3
+PMC2888205,train,cc by,cc by,true,2010,7
+PMC2891743,train,cc by,cc by,true,2010,2
+PMC2892494,train,cc by,cc by,true,2010,6
+PMC2898847,train,cc0,public domain,true,2010,2
+PMC28991,train,none recorded,copyright notice only,false,1997,1
+PMC2899760,train,cc by-nc,cc by-nc,false,2009,3
+PMC2900076,validation,cc by,cc by,true,2009,4
+PMC29012,train,none recorded,copyright notice only,false,1999,1
+PMC29018,train,none recorded,copyright notice only,false,1999,2
+PMC29022,test,none recorded,copyright notice only,false,1999,1
+PMC29047,train,none recorded,copyright notice only,false,2000,3
+PMC29050,test,none recorded,copyright notice only,false,2000,1
+PMC29053,train,none recorded,copyright notice only,false,2001,2
+PMC2908852,train,cc by-nc,cc by-nc,false,2006,5
+PMC2909923,test,cc by,cc by,true,2010,6
+PMC2911596,train,cc by,cc by,true,2010,4
+PMC2912679,validation,cc by,cc by,true,2004,2
+PMC2920262,train,cc by,cc by,true,2010,5
+PMC2920889,train,cc by,cc by,true,2010,1
+PMC2921405,train,cc by,cc by,true,2010,4
+PMC2922723,train,cc by-nc,cc by-nc,false,2009,9
+PMC2928344,train,cc by-nc-nd,cc by-nc-nd,false,2010,5
+PMC2931380,train,cc by,cc by,true,2010,2
+PMC2935390,train,cc by,cc by,true,2010,3
+PMC2936735,train,cc by,cc by,true,2010,5
+PMC2941605,train,cc by,cc by,true,2010,3
+PMC2944158,train,cc by,cc by,true,2010,12
+PMC2944304,train,cc by,cc by,true,2010,2
+PMC2948428,train,cc by,"open link or statement, restricting words in its text",false,2010,4
+PMC2949642,train,cc by,cc by,true,2010,4
+PMC2952311,train,cc by,cc by,true,2011,6
+PMC2954378,train,cc by,cc by,true,2010,2
+PMC2956327,train,cc by,cc by,true,2010,4
+PMC2956883,test,none recorded,publisher's own reuse terms,false,2010,4
+PMC2966708,validation,cc by-nc,cc by-nc,false,2010,4
+PMC2967052,train,cc by,cc by,true,2010,3
+PMC2967098,train,cc by-nc-sa,cc by-nc-sa,false,1997,1
+PMC2972614,validation,cc by-nc,cc by-nc,false,2010,5
+PMC2972641,train,cc by,"open link or statement, restricting words in its text",false,2010,3
+PMC2974661,train,cc by,cc by,true,2010,1
+PMC2974815,train,cc by-nc,cc by-nc,false,2010,3
+PMC2981076,validation,cc by,publisher's own reuse terms,false,2010,5
+PMC2984512,train,cc by-nc,cc by-nc,false,2010,4
+PMC2992187,train,cc by-nc-nd,cc by-nc-nd,false,2010,4
+PMC2994546,train,cc by,cc by,true,2010,5
+PMC2994863,validation,cc by-nc,cc by-nc,false,2010,7
+PMC2995234,train,cc by-nc,cc by-nc,false,2010,6
+PMC3000449,train,none recorded,other non-commercial or no-modification terms,false,2010,5
+PMC3001156,train,cc by,cc by,true,2006,3
+PMC3003523,test,cc by,cc by,true,2009,6
+PMC3009979,train,cc by,cc by,true,2010,3
+PMC3010035,train,none recorded,publisher's own reuse terms,false,2010,6
+PMC3015551,validation,cc by-nc-nd,cc by-nc-nd,false,2005,3
+PMC3017527,train,cc by,cc by,true,2010,5
+PMC3017961,train,cc by,cc by,true,2009,3
+PMC3018908,train,cc by-nc,cc by-nc,false,2011,6
+PMC3019750,train,none recorded,copyright notice only,false,2011,2
+PMC3021887,test,cc by,cc by (words),true,2011,5
+PMC3026127,train,cc by-nc-sa,cc by-nc-sa,false,2010,2
+PMC3034877,test,cc by-nc,cc by-nc,false,2010,3
+PMC3039191,train,cc by-nc,cc by-nc,false,2011,1
+PMC3040733,,cc by,cc by,true,2011,0
+PMC3043099,train,cc by,cc by,true,2011,1
+PMC3044150,,cc by,cc by,true,2011,0
+PMC3046499,train,cc by,"open link or statement, restricting words in its text",false,2011,4
+PMC3046916,train,cc by,cc by,true,2011,2
+PMC3050701,train,cc by,cc by,true,2011,5
+PMC3051215,test,cc by-nc,cc by-nc,false,2011,2
+PMC3053227,train,cc by,cc by,true,2011,5
+PMC3056193,train,cc by-nc-sa,cc by-nc-sa,false,2011,1
+PMC3056480,train,cc by-nc-nd,cc by-nc-nd,false,2010,6
+PMC3065646,train,cc by-nc,cc by-nc,false,2011,1
+PMC3066231,train,cc by,cc by,true,2011,5
+PMC30713,train,none recorded,copyright notice only,false,2001,2
+PMC3074545,validation,cc by,cc by,true,2011,3
+PMC3085176,train,none recorded,cc by-nc-nd,false,2011,5
+PMC3087029,,cc by-nc,cc by-nc,false,2011,0
+PMC3087256,validation,cc by-nc-sa,cc by-nc-sa,false,2010,6
+PMC3089991,train,none recorded,publisher's own reuse terms,false,2011,3
+PMC3090298,train,cc by-nc,other non-commercial or no-modification terms,false,2011,14
+PMC3093782,train,cc by-nc,cc by-nc,false,2011,2
+PMC3094237,train,cc by,cc by,true,2011,4
+PMC3094245,train,cc by,cc by,true,2011,1
+PMC3095445,train,cc by,cc by,true,2011,4
+PMC3101755,train,cc by,cc by,true,2011,3
+PMC3103853,train,cc by,cc by (words),true,2011,5
+PMC3104134,train,cc by-nc,cc by-nc,false,2011,1
+PMC3106384,train,cc by,cc by,true,2011,2
+PMC3108651,train,cc by-nc,other non-commercial or no-modification terms,false,2010,2
+PMC3108665,train,cc by-nc,other non-commercial or no-modification terms,false,2010,1
+PMC3112403,train,cc by,cc by,true,2011,6
+PMC3117815,train,cc by,cc by,true,2011,6
+PMC3118076,train,cc by-nc-sa,cc by-nc-sa,false,2010,3
+PMC3120180,train,cc by-nc-nd,cc by-nc-nd,false,2011,3
+PMC3131514,train,cc by-nc,cc by-nc,false,2011,4
+PMC3132856,train,cc by-nc,other non-commercial or no-modification terms,false,2011,6
+PMC3132864,train,cc by-nc,cc by-nc,false,2011,2
+PMC3133979,train,cc by-nc-sa,cc by-nc-sa,false,2011,6
+PMC3134103,train,cc by,cc by,true,2011,6
+PMC3135864,train,cc by,cc by,true,2011,3
+PMC3136370,train,cc by,cc by,true,2011,4
+PMC3137438,test,none recorded,copyright notice only,false,2011,2
+PMC3137994,train,cc by,cc by (words),true,2011,2
+PMC3139306,train,cc by-nc-sa,cc by-nc-sa,false,2011,7
+PMC3140921,train,none recorded,copyright notice only,false,2011,2
+PMC3141615,train,cc by,cc by,true,2011,6
+PMC3143315,train,none recorded,publisher's own reuse terms,false,2011,4
+PMC3144183,validation,cc by,cc by,true,2011,4
+PMC3144604,train,cc by,cc by,true,2008,5
+PMC3148260,train,cc by-nc,cc by-nc,false,2011,5
+PMC3150240,train,cc by,cc by,true,2011,2
+PMC3150311,train,cc by,cc by,true,2011,6
+PMC3152513,train,cc by,cc by,true,2011,5
+PMC3154347,validation,cc by-nc,cc by-nc,false,2011,3
+PMC3154486,validation,cc by,cc by,true,2011,4
+PMC3154934,train,cc by,cc by,true,2011,3
+PMC31579,train,none recorded,copyright notice only,false,2001,1
+PMC3159986,test,cc by,cc by,true,2011,3
+PMC3160381,train,cc by,cc by,true,2011,5
+PMC3161280,train,cc by-nc-nd,cc by-nc-nd,false,2011,5
+PMC3162205,test,cc by-nc,cc by-nc,false,2011,5
+PMC3166670,test,cc by-nc,cc by-nc,false,2011,2
+PMC3169777,train,cc by-nc,cc by-nc,false,2011,4
+PMC3170595,train,cc by,cc by,true,2011,5
+PMC3172326,test,cc by-nc,cc by-nc,false,2011,3
+PMC3176493,train,cc by,cc by,true,2011,6
+PMC3177395,train,cc by-nc-sa,cc by-nc-sa,false,2011,4
+PMC3178704,train,cc by-nc,cc by-nc,false,2011,4
+PMC3179725,test,cc by,cc by,true,2011,4
+PMC3179931,train,cc by,cc by,true,2011,1
+PMC3180783,train,cc by,cc by,true,2011,6
+PMC3187863,train,cc by,"open link or statement, restricting words in its text",false,2011,7
+PMC3190091,validation,cc by-nc,cc by-nc,false,2011,2
+PMC3191350,test,none recorded,publisher's own reuse terms,false,2011,2
+PMC3191394,train,cc by-nc,cc by-nc,false,2011,3
+PMC3192699,train,cc by,cc by,true,2011,2
+PMC3195393,train,cc by,cc by,true,2011,4
+PMC3198285,train,cc by-nc-nd,cc by-nc-nd,false,2011,3
+PMC3199060,train,cc by,cc by (words),true,2012,3
+PMC3199893,test,cc by-nc-nd,cc by-nc-nd,false,2011,3
+PMC3200258,train,cc by,cc by,true,2011,3
+PMC3204557,train,cc by-nc,cc by-nc,false,2011,5
+PMC3206382,train,cc by,cc by,true,2011,4
+PMC3208043,train,cc by,cc by,true,2011,4
+PMC3208342,train,none recorded,publisher's own reuse terms,false,2011,2
+PMC3210325,train,cc by,cc by,true,2011,2
+PMC3210361,train,cc by-nc,cc by-nc,false,2011,5
+PMC3214395,train,cc by-nc-sa,cc by-nc-sa,false,2011,1
+PMC3214443,train,cc by-nc-sa,cc by-nc-sa,false,2011,4
+PMC3215167,train,cc by,cc by,true,2011,1
+PMC3215316,validation,cc by-nc-sa,cc by-nc-sa,false,2010,6
+PMC3215881,train,cc by-nc,cc by-nc,false,2011,5
+PMC3215945,train,cc by,cc by,true,2011,5
+PMC32174,test,none recorded,verbatim copying only,false,2001,8
+PMC3217852,train,cc by,cc by,true,2011,6
+PMC3219771,train,cc by-nc,cc by-nc,false,2011,6
+PMC3219777,test,cc by-nc,cc by-nc,false,2011,4
+PMC3220090,test,cc by-nc-sa,cc by-nc-sa,false,2010,1
+PMC3220859,train,cc by-nc-nd,cc by-nc-nd,false,2011,2
+PMC3221066,train,cc by-nc-sa,cc by-nc-sa,false,2010,6
+PMC3221331,train,cc by,cc by,true,2011,2
+PMC3222191,test,cc by,cc by,true,2011,6
+PMC3224529,train,cc by,cc by,true,2011,3
+PMC3224655,train,cc by-nc,other non-commercial or no-modification terms,false,2011,4
+PMC3227609,train,cc by,cc by,true,2011,6
+PMC3228981,train,cc by-nc,cc by-nc,false,2011,5
+PMC3230393,train,cc0,public domain,true,2011,6
+PMC3232004,train,cc by-nc-nd,cc by-nc-nd,false,2011,1
+PMC3232074,validation,cc by-nc,cc by-nc,false,2011,3
+PMC3233513,train,cc by,cc by,true,2011,7
+PMC3233526,train,cc by-nc,other non-commercial or no-modification terms,false,2011,17
+PMC3248601,train,cc by-nc,cc by-nc,false,2012,5
+PMC3253336,train,cc by,"open link or statement, restricting words in its text",false,2011,2
+PMC3253463,test,cc by,cc by,true,2012,6
+PMC3257955,test,cc by-nc,other non-commercial or no-modification terms,false,2011,2
+PMC3258215,train,cc by,cc by,true,2011,1
+PMC3258678,train,cc by-nc-nd,cc by-nc-nd,false,2011,4
+PMC3258705,train,cc by-nc-nd,cc by-nc-nd,false,2011,4
+PMC3259296,train,cc by-nc,cc by-nc,false,2011,5
+PMC3261693,train,cc by-nc,other non-commercial or no-modification terms,false,2012,5
+PMC3262135,train,cc by-nc,cc by-nc,false,2011,5
+PMC3263163,validation,cc by-nc-sa,cc by-nc-sa,false,2011,8
+PMC3263438,train,cc by-nc,cc by-nc,false,2012,4
+PMC3263747,validation,cc by,cc by (words),true,2011,3
+PMC3263860,train,cc by-nc-nd,cc by-nc-nd,false,2012,5
+PMC3263888,train,cc by-nc-nd,cc by-nc-nd,false,2012,3
+PMC3264513,test,cc by,cc by,true,2011,4
+PMC3266205,train,cc by,cc by,true,2011,4
+PMC3266479,test,none recorded,publisher's own reuse terms,false,2012,4
+PMC3266642,test,cc by,cc by,true,2011,6
+PMC3267052,train,cc by,"open link or statement, restricting words in its text",false,2012,2
+PMC3267522,train,cc by-nc,other non-commercial or no-modification terms,false,2012,11
+PMC3268925,train,cc by-nc,cc by-nc,false,2011,1
+PMC3269087,train,cc by,cc by,true,2010,6
+PMC3269419,train,cc by,cc by,true,2012,1
+PMC3269572,train,cc by-nc,cc by-nc,false,2011,2
+PMC3269796,train,cc by,"cc by-nc, by-nd or by-sa (words)",false,2011,5
+PMC3271295,train,cc by-nc,cc by-nc,false,2012,5
+PMC3271555,train,cc by-nc-sa,cc by-nc-sa,false,2011,3
+PMC3272014,train,cc by,cc by,true,2012,2
+PMC3276927,train,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC3276929,train,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC3278262,train,cc by-nc,other non-commercial or no-modification terms,false,2012,2
+PMC3278655,train,cc by,"open link or statement, restricting words in its text",false,2012,3
+PMC3279644,train,cc by-nc,cc by-nc,false,2011,2
+PMC3280326,train,cc by,cc by,true,2012,2
+PMC3281242,train,cc by-nc,cc by-nc,false,2012,4
+PMC3281341,train,cc by-nc-nd,cc by-nc-nd,false,2010,4
+PMC3283075,train,cc by-nc,cc by-nc,false,2011,6
+PMC3284878,train,cc by,cc by,true,2012,5
+PMC3289190,train,cc by-nc,cc by-nc,false,2011,4
+PMC3290117,test,none recorded,other non-commercial or no-modification terms,false,2012,4
+PMC3292461,train,cc by,cc by,true,2011,5
+PMC3293068,train,cc by,cc by,true,2012,7
+PMC3293139,test,cc by-nc,cc by-nc,false,2012,3
+PMC3295238,test,cc by-nc,cc by-nc,false,2009,5
+PMC3296686,train,cc0,cc0,true,2012,5
+PMC3298351,train,cc by-nc-nd,cc by-nc-nd,false,2010,9
+PMC3301259,train,none recorded,copyright notice only,false,1998,6
+PMC3302141,train,cc by-nc-nd,cc by-nc-nd,false,2011,6
+PMC3304380,train,cc by-nc,cc by-nc,false,2011,3
+PMC3307993,train,cc by-nc,cc by-nc,false,2011,3
+PMC3309311,train,cc by-nc,cc by-nc,false,2012,3
+PMC3309323,test,cc by-nc,cc by-nc,false,2012,2
+PMC3311713,test,none recorded,other non-commercial or no-modification terms,false,2011,5
+PMC3313169,train,cc by,copyright notice only,false,2009,1
+PMC3314673,test,cc by,cc by,true,2012,3
+PMC3315554,validation,cc by,cc by,true,2012,4
+PMC3315657,validation,cc by-nc,cc by-nc,false,2012,2
+PMC3316967,test,cc by,cc by,true,2012,5
+PMC3321403,train,cc by-nc,cc by-nc,false,2012,4
+PMC3321528,train,cc by,cc by,true,2012,3
+PMC3321723,test,none recorded,copyright notice only,false,2007,7
+PMC3326921,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3327628,train,cc by,cc by,true,2012,6
+PMC3329100,train,cc by-nc-sa,cc by-nc-sa,false,2011,1
+PMC3329148,test,cc by,cc by,true,2012,3
+PMC3329225,train,cc by-nc,cc by-nc,false,2012,4
+PMC3329632,train,cc by-nc,cc by-nc,false,2012,1
+PMC3329820,test,cc by-nc-nd,cc by-nc-nd,false,2012,7
+PMC3330821,validation,cc by,cc by,true,2012,3
+PMC3332247,test,cc by-nc,cc by-nc,false,2012,2
+PMC3333807,test,cc by-nc,other non-commercial or no-modification terms,false,2012,6
+PMC3335250,train,cc by,cc by,true,2012,4
+PMC3337377,train,cc by-nc,cc by-nc,false,2012,5
+PMC3338089,train,cc by,cc by,true,2012,2
+PMC3339723,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3339727,train,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3343759,test,cc by-nc-nd,cc by-nc-nd,false,2011,5
+PMC3346068,validation,cc by-nc,other non-commercial or no-modification terms,false,2012,7
+PMC3346674,train,cc by,cc by,true,2012,4
+PMC3348575,train,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC3348688,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2012,5
+PMC3349167,train,cc by,cc by,true,2012,4
+PMC3349215,train,cc by,cc by,true,2012,4
+PMC3349250,train,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3354371,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3357231,train,cc by-nc-nd,cc by-nc-nd,false,2012,6
+PMC3364603,train,cc by,cc by,true,2012,4
+PMC3368260,train,cc by,cc by,true,2012,2
+PMC3373522,train,cc by,cc by,true,2012,1
+PMC3373832,train,cc by,cc by,true,2012,1
+PMC3375426,train,none recorded,copyright notice only,false,2011,4
+PMC3376123,train,cc by,cc by,true,2012,5
+PMC3376478,train,cc by,cc by,true,2012,2
+PMC3376507,train,cc by,cc by,true,2012,5
+PMC3376511,test,cc by,cc by,true,2012,6
+PMC3376522,validation,cc by,cc by,true,2012,1
+PMC3379583,validation,cc by-nc-nd,cc by-nc-nd,false,2012,2
+PMC3381083,train,cc by,cc by,true,2010,5
+PMC3382640,train,cc by,cc by,true,2012,2
+PMC3382694,validation,cc by-nc,cc by-nc,false,2012,2
+PMC3383212,validation,cc by,cc by,true,2012,6
+PMC3386590,test,cc by,cc by,true,2012,2
+PMC3387601,train,cc by,cc by,true,2011,5
+PMC3388481,test,cc by,cc by,true,2012,4
+PMC3391000,train,cc by-nc-nd,cc by-nc-nd,false,2012,5
+PMC3395326,validation,cc by,cc by,true,2012,7
+PMC3398966,train,cc by,cc by,true,2012,1
+PMC3399388,train,cc by-nc,other non-commercial or no-modification terms,false,2012,7
+PMC3400348,test,cc by,cc by,true,2012,3
+PMC3403627,train,cc by,cc by,true,2012,3
+PMC3403961,train,cc by,cc by,true,2012,2
+PMC3406192,test,cc by-nc,cc by-nc,false,2012,2
+PMC3406743,train,cc by,cc by,true,2012,6
+PMC3407716,train,cc by,cc by,true,2012,5
+PMC3407981,train,cc by,cc by,true,2012,5
+PMC3409545,test,cc by,cc by,true,2012,1
+PMC3410988,train,cc by-nc-nd,cc by-nc-nd,false,2012,5
+PMC34114,train,none recorded,copyright notice only,false,2001,3
+PMC3411720,train,cc by,cc by,true,2012,5
+PMC3412848,test,cc by,cc by,true,2012,1
+PMC3414768,train,cc by,cc by,true,2012,1
+PMC3417877,train,cc by-nc,other non-commercial or no-modification terms,false,2011,4
+PMC3420321,train,cc by,cc by,true,2012,3
+PMC3421236,train,cc by,cc by (words),true,2012,4
+PMC3422059,train,cc by-nc,cc by-nc,false,2012,2
+PMC3423952,validation,cc by,cc by,true,2012,4
+PMC3424202,train,cc by,cc by,true,2012,6
+PMC3425422,train,cc by-nc-nd,cc by-nc-nd,false,2012,3
+PMC3425748,train,cc by-nc-sa,cc by-nc-sa,false,2003,4
+PMC3427491,validation,cc by,cc by,true,2012,5
+PMC3430047,train,cc by-nc-sa,cc by-nc-sa,false,2011,5
+PMC3432554,train,cc by,cc by,true,2012,6
+PMC3432818,validation,none recorded,cc by (words),true,2012,3
+PMC3432828,train,none recorded,cc by (words),true,2012,5
+PMC3434899,train,cc by-nc-sa,cc by-nc-sa,false,2011,4
+PMC3438419,train,cc by-nc,cc by-nc,false,2012,1
+PMC3438438,train,cc by,cc by,true,2012,2
+PMC3439673,validation,cc by,cc by,true,2012,4
+PMC3441250,validation,cc by,cc by,true,2012,6
+PMC3441280,train,cc by,cc by,true,2012,4
+PMC3442969,train,cc by,cc by,true,2012,2
+PMC3445058,train,none recorded,copyright notice only,false,2010,2
+PMC3446002,train,cc by-nc,cc by-nc,false,2010,3
+PMC3446145,train,cc by-nc,cc by-nc,false,2011,1
+PMC34516,validation,none recorded,verbatim copying only,false,2001,3
+PMC3452084,train,cc by-nc,copyright notice only,false,2008,4
+PMC3452313,train,cc by-nc,copyright notice only,false,2005,1
+PMC3456942,train,cc by,cc by,true,2012,1
+PMC3457720,train,cc by-nc-nd,cc by-nc-nd,false,2012,5
+PMC3459547,train,cc by-nc,other non-commercial or no-modification terms,false,2012,6
+PMC3459660,train,cc by-nc,other non-commercial or no-modification terms,false,2012,1
+PMC3460347,validation,cc by,cc by (words),true,2012,4
+PMC3464298,train,cc by,cc by,true,2012,1
+PMC3464379,train,cc by-nc,cc by-nc,false,2012,5
+PMC3466131,train,cc by,cc by,true,2012,4
+PMC3466198,train,cc by,cc by,true,2012,5
+PMC3467590,train,cc by-nc,cc by-nc,false,2012,5
+PMC3474173,train,cc by-nc,other non-commercial or no-modification terms,false,2012,2
+PMC3474775,train,cc by,cc by,true,2012,1
+PMC3474778,train,cc by,cc by,true,2012,3
+PMC3474842,train,cc by,cc by,true,2012,4
+PMC3475525,train,cc by,cc by,true,2012,3
+PMC3476139,train,cc by-nc,copyright notice only,false,2007,4
+PMC3476989,train,cc by,cc by,true,2012,1
+PMC3477095,test,cc by,cc by,true,2012,4
+PMC3478157,train,cc by,cc by,true,2012,3
+PMC3478519,train,cc by-nc-nd,cc by-nc-nd,false,2012,2
+PMC3479017,train,cc by,cc by,true,2012,6
+PMC3480782,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3480944,train,cc by,cc by,true,2012,2
+PMC3482439,train,cc by,cc by,true,2012,5
+PMC3483098,train,cc by-nc,cc by-nc,false,2012,5
+PMC3483184,train,cc by,cc by,true,2012,1
+PMC3483284,train,cc by,cc by,true,2012,2
+PMC3484141,test,cc0,cc0,true,2012,1
+PMC3487501,train,cc by,cc by,true,2010,3
+PMC3488177,train,cc by-nc,cc by-nc,false,2012,3
+PMC3488187,train,cc by,cc by,true,2012,4
+PMC3488813,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3489577,train,cc by,cc by,true,2012,6
+PMC3490871,validation,cc by,cc by,true,2012,4
+PMC3491019,train,cc by,cc by,true,2012,3
+PMC3491047,train,cc by,cc by,true,2012,5
+PMC3492023,train,cc by,cc by,true,2012,4
+PMC3493721,validation,cc by-nc,cc by-nc,false,2012,1
+PMC3493722,train,cc by-nc,cc by-nc,false,2012,3
+PMC3493727,train,cc by-nc,cc by-nc,false,2012,5
+PMC3494172,train,cc by-nc,cc by-nc,false,2012,1
+PMC3494213,test,cc by-nc,cc by-nc,false,2012,1
+PMC3494227,validation,cc by-nc,cc by-nc,false,2012,1
+PMC3496170,validation,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC3499334,train,cc by,cc by,true,2012,4
+PMC3499458,train,cc by,cc by,true,2012,1
+PMC3499555,train,cc by,cc by,true,2012,2
+PMC3503752,train,cc by,cc by,true,2012,5
+PMC3503942,train,cc by-nc,cc by-nc,false,2012,4
+PMC3504074,test,cc by,"open link or statement, restricting words in its text",false,2012,4
+PMC3504298,train,cc by,cc by,true,2012,5
+PMC3505775,train,cc by-nc,cc by-nc,false,2012,5
+PMC3506492,train,cc by,cc by,true,2012,6
+PMC3506580,train,cc by,cc by,true,2012,4
+PMC3508963,train,cc by,cc by,true,2012,4
+PMC3510731,train,cc by,cc by,true,2012,4
+PMC3510891,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3511173,train,cc by,cc by,true,2012,6
+PMC3511174,train,cc by,cc by,true,2012,4
+PMC3511947,train,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3511948,train,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3511949,train,cc by-nc-sa,cc by-nc-sa,false,2012,7
+PMC3513028,train,none recorded,copyright notice only,false,2012,5
+PMC3515338,train,cc by,cc by,true,2012,4
+PMC3515466,train,cc by,cc by,true,2012,3
+PMC3516972,train,cc by-nc-nd,cc by-nc-nd,false,2012,1
+PMC3517358,train,cc by,cc by,true,2012,5
+PMC3517846,train,cc by,cc by,true,2012,7
+PMC3524756,train,cc by,cc by,true,2012,2
+PMC3524789,train,cc by,cc by,true,2012,2
+PMC3525027,train,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3525031,validation,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3525032,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3525038,validation,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3525331,train,cc by,cc by,true,2012,5
+PMC3525560,train,cc by,cc by,true,2012,5
+PMC3525562,test,cc by,cc by,true,2012,1
+PMC3526879,test,cc by-nc,other non-commercial or no-modification terms,false,2012,6
+PMC3528484,validation,cc by,cc by,true,2012,6
+PMC3529678,train,cc by,cc by,true,2012,10
+PMC3531427,train,cc by,cc by,true,2012,7
+PMC3531529,train,cc by-nc,cc by-nc,false,2012,4
+PMC3532036,train,cc by-nc,other non-commercial or no-modification terms,false,2012,5
+PMC3532083,train,cc by,cc by,true,2012,2
+PMC3532974,train,cc by-nc,cc by-nc,false,2012,1
+PMC3533739,train,cc by,cc by,true,2012,2
+PMC3536709,test,cc by,cc by,true,2012,7
+PMC3536989,validation,cc by,cc by,true,2012,1
+PMC3537701,train,cc by,cc by,true,2012,3
+PMC3539107,test,cc by-nc,cc by-nc,false,2013,8
+PMC3539990,train,cc by,cc by,true,2012,2
+PMC3540345,train,cc by,cc by,true,2012,1
+PMC3540908,train,cc by-nc,other non-commercial or no-modification terms,false,2013,1
+PMC3540956,train,cc by-nc,other non-commercial or no-modification terms,false,2013,1
+PMC3542441,train,cc by-nc,cc by-nc,false,2012,5
+PMC3544341,validation,cc by-nc,other non-commercial or no-modification terms,false,2013,2
+PMC3544352,train,cc by-nc,other non-commercial or no-modification terms,false,2013,3
+PMC3544534,train,cc by,cc by,true,2012,4
+PMC3544627,train,cc by,cc by,true,2012,6
+PMC3544690,train,cc by,cc by,true,2012,2
+PMC3546023,train,cc by,cc by,true,2013,7
+PMC3546025,train,cc by,cc by,true,2012,6
+PMC3549293,validation,cc by,cc by,true,2012,1
+PMC3549413,train,cc by,cc by,true,2012,4
+PMC3551224,train,cc by-nc,cc by-nc,false,2013,6
+PMC3552315,train,cc by-nc,cc by-nc,false,2013,3
+PMC3556012,train,cc by,cc by,true,2012,5
+PMC3556286,test,cc by-nc-sa,cc by-nc-sa,false,2011,1
+PMC3556314,train,cc by,cc by,true,2013,3
+PMC3556334,validation,cc by,cc by,true,2013,4
+PMC3556767,train,none recorded,copyright notice only,false,2011,7
+PMC3557008,validation,cc by-nc,cc by-nc,false,2012,3
+PMC3557743,train,cc by-nc-nd,cc by-nc-nd,false,2012,5
+PMC3558408,train,cc by,cc by,true,2012,3
+PMC3558644,train,cc by-nc,cc by-nc,false,2013,2
+PMC3558645,train,cc by-nc,cc by-nc,false,2013,3
+PMC3558647,train,cc by-nc,cc by-nc,false,2013,1
+PMC3559346,train,cc0,cc0,true,2013,6
+PMC3560577,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2012,1
+PMC3561645,train,cc by,cc by,true,2012,2
+PMC3562202,train,cc by,cc by,true,2013,6
+PMC3563445,train,cc by,cc by,true,2013,3
+PMC3564767,train,cc by,cc by,true,2013,5
+PMC3564932,validation,cc by,cc by,true,2013,7
+PMC3567118,train,cc by,cc by,true,2013,4
+PMC3570228,train,cc by,"open link or statement, restricting words in its text",false,2013,6
+PMC3571647,train,cc by,cc by,true,2013,2
+PMC3571894,test,cc by,cc by,true,2013,6
+PMC3572221,train,cc by-nc,cc by-nc,false,2013,2
+PMC3573541,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3573831,train,cc by,cc by,true,2013,3
+PMC3575357,train,cc by,cc by,true,2013,3
+PMC3575558,train,cc by,cc by,true,2012,3
+PMC3575612,test,cc by,cc by,true,2013,3
+PMC3576014,train,cc by-nc,other non-commercial or no-modification terms,false,2013,2
+PMC3576519,validation,cc by,cc by,true,2013,5
+PMC3576910,test,none recorded,copyright notice only,false,2012,4
+PMC3577738,train,cc by,cc by,true,2013,3
+PMC3577773,train,cc by,cc by,true,2013,2
+PMC3577896,validation,cc by,cc by,true,2013,1
+PMC3578670,train,cc by-nc,other non-commercial or no-modification terms,false,2013,2
+PMC3580134,train,none recorded,copyright notice only,false,2012,72
+PMC3580298,train,cc by-nc,cc by-nc,false,2013,3
+PMC3580299,train,cc by-nc,cc by-nc,false,2013,5
+PMC3580327,train,cc by,cc by,true,2013,1
+PMC3580400,train,cc by,cc by,true,2012,2
+PMC3580611,train,none recorded,copyright notice only,false,2012,3
+PMC3580622,train,none recorded,copyright notice only,false,2012,5
+PMC3580671,train,cc by,cc by,true,2012,5
+PMC3580725,train,cc by,cc by,true,2012,5
+PMC3580751,train,cc by,cc by,true,2012,1
+PMC3581780,validation,cc by-nc,cc by-nc,false,2013,5
+PMC3584097,train,cc by,cc by,true,2013,2
+PMC3585302,test,cc by,cc by,true,2013,3
+PMC3585965,train,none recorded,copyright notice only,false,2012,2
+PMC3586143,train,none recorded,copyright notice only,false,2012,6
+PMC3590541,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3590543,train,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3590687,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3590691,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3590692,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3590739,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3590825,train,cc by,cc by,true,2012,4
+PMC3591547,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3596913,train,cc by,cc by,true,2013,1
+PMC3597059,train,cc by,cc by,true,2011,5
+PMC3597472,train,cc by,cc by,true,2013,2
+PMC3598394,train,cc by,cc by,true,2013,1
+PMC3598524,train,cc by,cc by,true,2013,2
+PMC3598549,train,cc by,cc by,true,2013,1
+PMC3599792,train,cc by,cc by,true,2013,3
+PMC3599931,train,cc by,cc by,true,2013,2
+PMC3599938,train,cc by,cc by,true,2013,3
+PMC3599990,train,cc by,cc by,true,2013,4
+PMC3600348,train,cc by,cc by,true,2013,5
+PMC3601258,train,cc by,cc by,true,2012,1
+PMC3602032,train,cc by,cc by,true,2013,6
+PMC3603112,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3604641,test,cc by-nc-nd,cc by-nc-nd,false,2013,4
+PMC3604854,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3606371,train,cc by,cc by,true,2013,3
+PMC3606470,train,cc by,cc by,true,2013,2
+PMC3606612,train,cc by,cc by,true,2013,4
+PMC3606616,train,cc by,cc by,true,2013,4
+PMC3608590,train,cc by,cc by,true,2013,6
+PMC3608893,train,cc by,cc by,true,2013,4
+PMC3611071,train,cc by-nc,cc by-nc,false,2013,7
+PMC3611073,train,cc by-nc,cc by-nc,false,2013,1
+PMC3611074,train,cc by-nc,cc by-nc,false,2013,4
+PMC3611103,train,cc by-nc,cc by-nc,false,2013,2
+PMC3611107,train,cc by-nc,cc by-nc,false,2013,2
+PMC3611645,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3611646,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3611743,train,cc by-nc,cc by-nc,false,2013,1
+PMC3612059,train,cc by,cc by,true,2013,1
+PMC3612585,train,cc by-nc,cc by-nc,false,2013,4
+PMC3613423,validation,cc by,cc by,true,2013,3
+PMC3614647,train,cc by,cc by,true,2006,5
+PMC3616124,train,cc0,cc0,true,2013,3
+PMC3616693,train,cc by-nc,other non-commercial or no-modification terms,false,2013,2
+PMC3616744,train,cc by-nc,other non-commercial or no-modification terms,false,2013,2
+PMC3617313,train,cc by-nc,cc by-nc,false,2013,6
+PMC3620378,train,cc by,cc by,true,2013,5
+PMC3620516,validation,cc by,cc by,true,2013,3
+PMC3620559,validation,cc by,cc by,true,2013,5
+PMC3621795,train,cc by,cc by,true,2013,3
+PMC3622018,validation,cc by,cc by,true,2013,4
+PMC3622020,train,cc by,cc by,true,2012,3
+PMC3622234,validation,cc by-nc,cc by-nc,false,2013,3
+PMC3626227,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2012,1
+PMC3626633,train,cc by,cc by,true,2013,5
+PMC3626705,train,cc by,cc by,true,2013,3
+PMC3627033,train,cc by-nc,cc by-nc,false,2013,1
+PMC3628587,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2013,5
+PMC3628658,train,cc by,cc by,true,2013,5
+PMC3628802,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2013,6
+PMC3629990,train,cc by,cc by,true,2013,2
+PMC3630066,validation,cc by,cc by,true,2013,1
+PMC3633335,train,cc by-nc,cc by-nc,false,2013,6
+PMC3634264,train,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3634960,train,cc by-nc,cc by-nc,false,2013,2
+PMC3635594,validation,cc by,copyright notice only,false,2013,1
+PMC3635629,,cc by-nc,cc by-nc,false,2013,0
+PMC3635645,train,cc by-nc,cc by-nc,false,2013,6
+PMC3635879,train,cc by,cc by,true,2013,3
+PMC3636767,validation,cc by-nc,other non-commercial or no-modification terms,false,2013,1
+PMC3636800,train,cc by,cc by,true,2013,3
+PMC3636841,train,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3636850,validation,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3636944,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3636954,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3637243,train,cc by,cc by,true,2013,6
+PMC3640161,train,cc by-nc,cc by-nc,false,2013,6
+PMC3640164,train,cc by-nc,cc by-nc,false,2013,6
+PMC3640933,train,cc by,cc by,true,2013,4
+PMC3640960,train,cc by,cc by,true,2013,1
+PMC3641298,validation,cc by-nc,cc by-nc,false,2013,5
+PMC3641305,train,cc by,cc by,true,2012,1
+PMC3642008,train,cc by,cc by,true,2013,4
+PMC3642659,train,cc by,cc by,true,2013,4
+PMC3643086,train,cc by,cc by,true,2013,2
+PMC3643134,test,cc by-nc,other non-commercial or no-modification terms,false,2010,4
+PMC3644688,train,cc by-nc,cc by-nc,false,2013,5
+PMC3646538,test,cc by,cc by,true,2013,1
+PMC3646683,train,cc by,cc by,true,2013,3
+PMC3646783,train,cc by,cc by,true,2013,1
+PMC3646875,train,cc by,cc by,true,2013,1
+PMC3647147,train,none recorded,publisher's own reuse terms,false,2013,3
+PMC3647148,train,none recorded,publisher's own reuse terms,false,2013,2
+PMC3648394,train,cc by,cc by,true,2013,5
+PMC3649350,train,cc by,cc by,true,2013,5
+PMC3650212,train,cc by-nc,cc by-nc,false,2013,6
+PMC3650238,train,cc by,cc by,true,2013,4
+PMC3651308,train,cc by,cc by,true,2013,3
+PMC3651817,test,cc by-nc,cc by-nc,false,2013,4
+PMC3652505,train,cc by,cc by,true,2013,5
+PMC3652643,train,cc by,"open link or statement, restricting words in its text",false,2013,1
+PMC3653044,train,cc by,cc by,true,2013,5
+PMC3653258,train,cc by-nc,cc by-nc,false,2013,2
+PMC3653866,,cc by,cc by,true,2013,0
+PMC3654355,validation,cc by,cc by,true,2013,5
+PMC3654568,train,cc by,"open link or statement, restricting words in its text",false,2013,3
+PMC3655222,validation,cc by,cc by,true,2013,5
+PMC3655855,train,cc by,cc by,true,2013,2
+PMC3656395,train,cc by,"open link or statement, restricting words in its text",false,2013,1
+PMC3656551,train,cc by-nc,cc by-nc,false,2012,1
+PMC3657667,train,cc by-nc,cc by-nc,false,2013,5
+PMC3657931,validation,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3658334,train,cc by-nc-sa,cc by-nc-sa,false,2013,1
+PMC3658388,train,cc by,cc by,true,2013,5
+PMC3658908,train,cc by,cc by,true,2013,4
+PMC3658914,train,cc by,cc by,true,2013,1
+PMC3659004,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2013,1
+PMC3659039,test,cc by,cc by,true,2013,5
+PMC3659156,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2013,1
+PMC3661239,train,cc by-nc,other non-commercial or no-modification terms,false,2011,1
+PMC3661336,train,cc by,cc by,true,2013,1
+PMC3661377,train,cc by,cc by,true,2013,5
+PMC3661555,train,cc by,cc by,true,2013,4
+PMC3661741,train,none recorded,other non-commercial or no-modification terms,false,2013,4
+PMC3661822,train,cc by-nc-nd,cc by-nc-nd,false,2013,4
+PMC3661884,train,cc by,cc by,true,2013,4
+PMC3662597,train,cc by,cc by,true,2013,5
+PMC3663169,test,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3663731,train,cc by,cc by,true,2013,2
+PMC3664086,train,cc by,cc by,true,2013,4
+PMC3664320,validation,cc by-nc,cc by-nc,false,2013,1
+PMC3664327,train,cc by,cc by,true,2013,1
+PMC3664372,train,cc by-nc,cc by-nc,false,2013,2
+PMC3664374,train,cc by-nc,cc by-nc,false,2013,2
+PMC3664406,validation,cc by,"open link or statement, restricting words in its text",false,2013,4
+PMC3665020,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3666902,validation,cc by,cc by,true,2013,6
+PMC3666914,train,cc by,cc by,true,2013,1
+PMC3666925,validation,cc by,cc by,true,2013,3
+PMC3668104,train,cc by-nc,cc by-nc,false,2013,3
+PMC3668608,validation,cc by,cc by,true,2013,3
+PMC3668955,train,cc by,cc by,true,2013,1
+PMC3669033,train,cc by,cc by,true,2013,5
+PMC3669105,validation,cc by,cc by,true,2013,2
+PMC3669111,train,cc by,cc by,true,2013,5
+PMC3669518,train,none recorded,publisher's own reuse terms,false,2013,2
+PMC3671204,train,cc by,cc by,true,2013,3
+PMC3671234,train,cc by,cc by,true,2013,2
+PMC3671244,train,cc by,cc by,true,2013,2
+PMC3672718,train,cc by,cc by,true,2013,1
+PMC3672758,train,cc by,cc by,true,2013,2
+PMC3672764,train,cc by,cc by,true,2013,4
+PMC3672778,train,cc by,cc by,true,2013,3
+PMC3678237,train,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3678501,train,cc by,cc by,true,2013,5
+PMC3680603,train,cc by-nc,cc by-nc,false,2013,3
+PMC3680633,train,cc by-nc,cc by-nc,false,2013,1
+PMC3680656,test,cc by-nc,cc by-nc,false,2013,4
+PMC3681374,validation,cc by,cc by,true,2012,4
+PMC3681386,train,cc by,cc by,true,2012,1
+PMC3681405,train,cc by-nc,other non-commercial or no-modification terms,false,2013,4
+PMC3682293,test,cc by,cc by,true,2012,4
+PMC3682309,train,cc by,cc by,true,2012,5
+PMC3682809,train,cc by,cc by,true,2013,2
+PMC3682900,train,cc by,cc by,true,2013,6
+PMC3685524,train,cc by,cc by,true,2013,6
+PMC3685599,train,cc by,cc by,true,2013,11
+PMC3685700,train,cc by,cc by,true,2013,4
+PMC3685774,train,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3685777,,cc by-nc-sa,cc by-nc-sa,false,2012,0
+PMC3685778,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3685779,train,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3686162,validation,cc by-nc,cc by-nc,false,2013,4
+PMC3686216,train,cc by-nc,cc by-nc,false,2013,2
+PMC3687098,validation,cc by-nc,cc by-nc,false,2013,4
+PMC3687261,validation,cc by-nc-nd,cc by-nc-nd,false,2013,4
+PMC3687883,test,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3688183,train,cc by,cc by,true,2013,1
+PMC3688436,train,cc by-nc,other non-commercial or no-modification terms,false,2013,3
+PMC3689826,validation,cc by,cc by,true,2013,3
+PMC3691625,train,cc by,cc by,true,2013,2
+PMC3691658,train,cc by,cc by,true,2013,2
+PMC3691744,validation,cc by,cc by,true,2013,5
+PMC3691930,train,cc by,cc by,true,2013,3
+PMC3692346,train,cc by-nc,other non-commercial or no-modification terms,false,2013,5
+PMC3693661,train,cc by,cc by,true,2013,4
+PMC3694465,train,cc by,cc by,true,2013,1
+PMC3695249,train,cc by-nc,cc by-nc,false,2013,3
+PMC3695250,train,cc by-nc,cc by-nc,false,2013,4
+PMC3696265,train,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3696875,train,cc by-nc,cc by-nc,false,2013,6
+PMC3697207,validation,cc by-nc-sa,cc by-nc-sa,false,2012,2
+PMC3697211,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3698010,train,cc by,cc by,true,2013,5
+PMC3698086,train,cc by,cc by,true,2013,5
+PMC3698199,train,cc by,cc by,true,2013,2
+PMC3698202,train,cc by,cc by,true,2013,5
+PMC3698473,train,none recorded,other non-commercial or no-modification terms,false,2012,3
+PMC3698474,train,none recorded,other non-commercial or no-modification terms,false,2012,2
+PMC3700147,train,cc by-nc-sa,cc by-nc-sa,false,2012,4
+PMC3701780,train,cc by-nc,cc by-nc,false,2013,5
+PMC3701833,train,cc by-nc,cc by-nc,false,2013,2
+PMC3701988,validation,cc by-nc-nd,cc by-nc-nd,false,2013,1
+PMC3702085,train,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC3702089,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC3702133,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3702143,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3702153,test,cc by-nc-sa,cc by-nc-sa,false,2012,5
+PMC3704267,train,cc by,cc by,true,2013,3
+PMC3705347,train,cc by,cc by,true,2013,2
+PMC3707735,train,cc by,cc by,true,2013,3
+PMC3707768,validation,cc by,cc by,true,2013,1
+PMC3707772,train,cc by,cc by,true,2013,1
+PMC3707921,train,cc by,cc by,true,2013,3
+PMC3711370,train,cc by-nc,cc by-nc,false,2013,1
+PMC3712263,train,cc by,cc by,true,2009,4
+PMC3712888,train,cc by,cc by,true,2013,4
+PMC3712961,train,cc by,cc by,true,2013,1
+PMC3713669,train,cc by-nc-sa,cc by-nc-sa,false,2013,1
+PMC3713866,train,cc by,cc by,true,2013,5
+PMC3713945,train,cc by,cc by,true,2013,2
+PMC3713949,train,cc by,cc by,true,2013,3
+PMC3714019,test,cc by-nc,cc by-nc,false,2013,3
+PMC3714284,train,cc0,cc0,true,2013,2
+PMC3714385,train,none recorded,cc by-nc-nd,false,2013,3
+PMC3714386,train,none recorded,cc by-nc-nd,false,2013,4
+PMC3714433,train,cc by-nc,cc by-nc,false,2013,2
+PMC3714436,train,cc by,cc by,true,2013,3
+PMC3714488,train,cc by-nc-nd,cc by-nc-nd,false,2013,3
+PMC3714520,train,cc by-nc-nd,cc by-nc-nd,false,2013,5
+PMC3716527,train,cc by,cc by,true,2013,3
+PMC3716952,train,cc by,cc by,true,2013,6
+PMC3717757,test,cc by-nc,cc by-nc,false,2013,2
+PMC3717762,train,cc by-nc,cc by-nc,false,2013,7
+PMC3718630,validation,cc by,cc by,true,2013,2
+PMC3718642,test,cc by,cc by,true,2013,3
+PMC3718707,validation,cc by,cc by,true,2013,1
+PMC3718763,train,cc by,cc by,true,2013,4
+PMC3719224,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3721088,train,cc by,cc by,true,2013,4
+PMC3724383,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3724560,train,cc by-nc,other non-commercial or no-modification terms,false,2013,3
+PMC3726585,train,cc by-nc,other non-commercial or no-modification terms,false,2013,5
+PMC3726903,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC3728073,train,cc by,cc by,true,2013,2
+PMC3730064,train,cc by-nc,cc by-nc,false,2013,3
+PMC3733184,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3733287,test,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3733607,train,cc by,cc by,true,2013,1
+PMC3733617,train,cc by,cc by,true,2013,1
+PMC3733748,train,cc by,cc by,true,2013,3
+PMC3734718,validation,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3735277,train,cc by-nc,other non-commercial or no-modification terms,false,2013,1
+PMC3735552,train,cc by,cc by,true,2013,3
+PMC3738153,train,cc by,cc by,true,2013,1
+PMC3738453,train,none recorded,other non-commercial or no-modification terms,false,2011,2
+PMC3738485,train,none recorded,other non-commercial or no-modification terms,false,2011,5
+PMC37407,train,none recorded,copyright notice only,false,2001,3
+PMC3742017,train,cc by-nc-sa,cc by-nc-sa,false,2012,1
+PMC3743070,train,cc by-nc,cc by-nc,false,2013,3
+PMC3743198,validation,cc by-nc,cc by-nc,false,2013,5
+PMC3743641,train,cc by-nc,cc by-nc,false,2013,12
+PMC3744251,train,cc by-nc,cc by-nc,false,2013,3
+PMC3744465,validation,cc by,cc by,true,2013,3
+PMC3747414,train,cc by,cc by,true,2013,3
+PMC3747459,train,cc by,"open link or statement, restricting words in its text",false,2013,4
+PMC3747462,train,cc by,cc by,true,2013,4
+PMC3747867,train,cc by-nc-nd,cc by-nc-nd,false,2013,2
+PMC3747889,train,cc by-nc-nd,cc by-nc-nd,false,2013,3
+PMC3748549,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3750227,validation,cc by,cc by,true,2013,4
+PMC3750435,train,cc by,"open link or statement, restricting words in its text",false,2013,6
+PMC3750766,train,cc by,cc by,true,2013,4
+PMC3751456,train,cc by,cc by,true,2013,4
+PMC3751503,train,cc by,cc by,true,2012,3
+PMC3751553,train,cc by,cc by,true,2013,5
+PMC3751568,validation,cc by,cc by,true,2013,2
+PMC3751573,validation,cc by,cc by,true,2013,1
+PMC3751685,train,cc by,cc by,true,2013,5
+PMC3752632,train,cc by-nc,cc by-nc,false,2013,5
+PMC3752932,train,cc by,"open link or statement, restricting words in its text",false,2013,4
+PMC3757635,test,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3757803,train,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3757993,train,cc by,cc by,true,2013,3
+PMC3759413,train,cc by,cc by,true,2013,1
+PMC3759706,validation,cc by,"open link or statement, restricting words in its text",false,2013,6
+PMC3766084,validation,cc by,cc by,true,2013,2
+PMC3767244,train,cc by,cc by,true,2012,6
+PMC3767897,train,cc by-nc,cc by-nc,false,2013,5
+PMC3769981,train,cc by-nc,cc by-nc,false,2013,4
+PMC3770450,train,cc by,cc by,true,2013,2
+PMC3770494,train,cc by-nc,cc by-nc,false,2013,2
+PMC3771300,train,none recorded,other non-commercial or no-modification terms,false,2013,2
+PMC3772299,train,cc by-nc,cc by-nc,false,2013,1
+PMC3774725,train,cc by,cc by,true,2013,3
+PMC3775167,train,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3775615,test,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2013,1
+PMC3775760,train,cc by,cc by,true,2013,1
+PMC3776379,train,cc by,cc by,true,2013,5
+PMC3778304,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3778569,test,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3780629,train,none recorded,copyright notice only,false,2013,4
+PMC3781502,train,cc by-nc-nd,cc by-nc-nd,false,2013,6
+PMC3781545,train,cc by-nc-nd,cc by-nc-nd,false,2013,9
+PMC3781572,train,cc by-nc-nd,cc by-nc-nd,false,2013,2
+PMC3781573,train,cc by-nc-nd,cc by-nc-nd,false,2013,2
+PMC3781990,train,none recorded,cc by-nc-nd,false,2013,3
+PMC3782125,train,cc by,cc by,true,2013,4
+PMC3782468,train,cc by,cc by,true,2013,6
+PMC3785381,train,cc by-nc,cc by-nc,false,2013,7
+PMC3785902,train,cc by,cc by,true,2013,5
+PMC3785973,train,cc by,cc by,true,2013,4
+PMC3786468,train,cc by,cc by,true,2013,4
+PMC3786549,validation,cc by-nc,cc by-nc,false,2013,2
+PMC3787573,train,cc by,cc by,true,2013,5
+PMC3788226,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC3790030,test,cc by-nc,cc by-nc,false,2013,6
+PMC3790036,train,cc by-nc,cc by-nc,false,2013,5
+PMC3790836,validation,cc by-nc,other non-commercial or no-modification terms,false,2013,3
+PMC3793419,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3793422,validation,cc by-nc-sa,cc by-nc-sa,false,2013,6
+PMC3793517,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3794450,train,cc by-nc,cc by-nc,false,2013,1
+PMC3798206,train,cc by-nc,cc by-nc,false,2013,4
+PMC3798588,test,cc by,cc by,true,2012,4
+PMC3798949,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3800406,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC3800940,train,cc by-nc-sa,conflicting license links,false,2012,1
+PMC3804449,train,cc by,cc by,true,2013,4
+PMC3804653,train,cc by-nc,cc by-nc,false,2013,2
+PMC3806324,test,cc by,cc by,true,2013,4
+PMC3806550,train,cc by,cc by,true,2013,2
+PMC3806618,train,cc by-nc-nd,cc by-nc-nd,false,2013,5
+PMC3806786,train,cc by,cc by,true,2013,3
+PMC3810136,train,cc by,cc by,true,2013,5
+PMC3813126,train,cc by,cc by,true,2012,4
+PMC3813772,train,cc by,cc by,true,2013,1
+PMC3814588,train,cc by,cc by,true,2012,1
+PMC3814649,validation,cc by,cc by,true,2012,2
+PMC3816860,train,cc by-nc-nd,cc by-nc-nd,false,2013,5
+PMC3816862,train,cc by-nc-nd,cc by-nc-nd,false,2013,2
+PMC3816909,train,cc by-nc-nd,cc by-nc-nd,false,2013,4
+PMC3821103,train,cc by,cc by,true,2012,6
+PMC3821116,train,cc by,cc by,true,2012,6
+PMC3821124,train,cc by,cc by,true,2013,3
+PMC3822756,train,none recorded,other non-commercial or no-modification terms,false,2012,7
+PMC3827502,train,cc by,cc by,true,2013,5
+PMC3829814,train,cc by,cc by,true,2013,5
+PMC3830844,train,cc by,cc by,true,2013,6
+PMC3831918,train,cc by,"open link or statement, restricting words in its text",false,2013,3
+PMC3835146,train,cc by-nc,cc by-nc,false,2009,3
+PMC3835502,train,cc by-nc,cc by-nc,false,2013,5
+PMC3838646,train,cc by,cc by,true,2013,4
+PMC3840008,train,cc by,cc by,true,2013,6
+PMC3840393,test,cc by,cc by,true,2013,6
+PMC3841356,train,cc by,cc by,true,2013,3
+PMC3842830,train,cc by,"open link or statement, restricting words in its text",false,2013,4
+PMC3842969,train,cc by,cc by,true,2013,6
+PMC3843300,test,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3845560,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3846239,train,cc by,cc by,true,2013,3
+PMC3846267,validation,cc by,cc by,true,2013,5
+PMC3848942,train,cc by,cc by,true,2013,6
+PMC3849694,train,cc by,cc by,true,2013,3
+PMC3850342,test,cc by,"open link or statement, restricting words in its text",false,2013,2
+PMC3854508,train,cc by,cc by,true,2013,6
+PMC3856388,train,cc by-nc,cc by-nc,false,2013,3
+PMC3856598,train,cc by,cc by,true,2013,5
+PMC3864139,train,cc by,cc by,true,2013,6
+PMC3868309,train,cc by,cc by,true,2013,4
+PMC3868679,train,cc by-nc,cc by-nc,false,2013,3
+PMC3872578,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3872585,test,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3872586,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC3875215,train,cc by-nc,cc by-nc,false,2013,1
+PMC3877023,train,cc by,cc by,true,2013,4
+PMC3877985,validation,cc by,cc by,true,2013,1
+PMC3878029,test,cc by,cc by,true,2013,4
+PMC387830,test,none recorded,verbatim copying only,false,2004,3
+PMC3878739,train,cc by,cc by,true,2013,3
+PMC3880665,train,cc by-nc,cc by-nc,false,2013,6
+PMC3881751,train,cc by-nc,cc by-nc,false,2010,5
+PMC3881817,train,cc by-nc,cc by-nc,false,2013,2
+PMC3881871,train,cc by-nc,cc by-nc,false,2013,1
+PMC3882495,train,cc by,cc by,true,2013,5
+PMC3883318,,cc by-nc-sa,cc by-nc-sa,false,2013,0
+PMC3883373,test,cc by-nc,cc by-nc,false,2013,6
+PMC3889827,train,cc by,cc by,true,2012,4
+PMC3890270,train,cc by,cc by,true,2014,5
+PMC3892103,train,cc by,cc by,true,2014,2
+PMC3892495,train,cc by-nc,cc by-nc,false,2013,4
+PMC3893439,train,cc by,cc by,true,2013,6
+PMC3893543,train,cc by,cc by,true,2014,2
+PMC3894078,train,cc by-nc-sa,cc by-nc-sa,false,2011,3
+PMC3895597,train,cc by-nc,cc by-nc,false,2014,4
+PMC3896966,train,cc by,cc by,true,2014,4
+PMC3897023,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3897026,validation,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC3897937,train,cc by,cc by,true,2014,6
+PMC3898240,train,cc by,cc by,true,2014,7
+PMC3898378,validation,cc by,cc by,true,2014,5
+PMC3898429,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC3901329,validation,cc by,cc by,true,2014,1
+PMC3903148,train,cc by-nc,cc by-nc,false,2013,4
+PMC3904487,train,cc by,cc by,true,2014,1
+PMC3907426,validation,cc by,cc by,true,2014,6
+PMC3912320,train,cc by-nc,cc by-nc,false,2014,3
+PMC3914313,test,cc by,cc by,true,2014,5
+PMC3914427,train,cc by,cc by,true,2014,5
+PMC3916852,train,cc by,cc by,true,2013,7
+PMC3916855,validation,cc by,cc by,true,2013,4
+PMC3917123,train,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC3917191,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC3917204,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC3917487,train,cc by-nc,cc by-nc,false,2013,4
+PMC3917884,train,cc by,cc by,true,2014,6
+PMC3918522,train,cc by-nc,cc by-nc,false,2014,5
+PMC3919744,train,cc by,cc by,true,2014,3
+PMC3920467,train,cc by-nc,cc by-nc,false,2013,4
+PMC3921228,train,cc by,cc by,true,2014,3
+PMC3924124,train,cc by,cc by,true,2009,1
+PMC3925077,test,cc by,cc by,true,2014,4
+PMC3926947,validation,cc by,cc by,true,2014,2
+PMC3929816,train,cc by,cc by,true,2013,3
+PMC3929824,train,cc by,cc by,true,2013,1
+PMC3931289,train,cc by,cc by,true,2014,4
+PMC3931696,train,cc by,cc by,true,2014,6
+PMC3932017,train,cc by,cc by,true,2014,5
+PMC3932201,train,cc by,cc by,true,2014,2
+PMC3932837,train,cc by,cc by,true,2014,2
+PMC3933059,train,cc by-nc,cc by-nc,false,2013,3
+PMC3935224,train,none recorded,other non-commercial or no-modification terms,false,2013,4
+PMC3936115,test,cc by,cc by,true,2013,3
+PMC3936610,train,cc by-nc,cc by-nc,false,2014,5
+PMC3937058,train,cc by,cc by,true,2014,3
+PMC3938677,validation,cc by,cc by,true,2014,6
+PMC3940644,train,cc by-nc,cc by-nc,false,2014,2
+PMC3941354,train,cc by,cc by,true,2013,6
+PMC3941910,train,cc by,cc by,true,2013,2
+PMC3943081,train,cc by,cc by,true,2013,1
+PMC3944283,train,cc by-nc-nd,cc by-nc-nd,false,2014,3
+PMC3944580,train,cc by-nc-nd,cc by-nc-nd,false,2013,4
+PMC3948438,train,cc by-nc,cc by-nc,false,2014,3
+PMC3951509,validation,cc by,cc by,true,2014,1
+PMC3952602,train,cc by,cc by,true,2014,5
+PMC3952721,train,cc by,"open link or statement, restricting words in its text",false,2014,3
+PMC3953439,train,cc by,cc by,true,2014,3
+PMC3953472,train,cc by,cc by,true,2014,6
+PMC3953523,train,cc by-nc,cc by-nc,false,2014,4
+PMC3954418,train,cc by,cc by,true,2014,2
+PMC3956097,validation,cc by,cc by,true,2014,6
+PMC3956949,train,cc by-nc,cc by-nc,false,2014,6
+PMC3958613,train,cc by-nc,cc by-nc,false,2014,5
+PMC3961020,train,cc by,cc by,true,2014,1
+PMC3961219,train,cc by,"open link or statement, restricting words in its text",false,2014,3
+PMC3961245,train,cc by,cc by,true,2014,4
+PMC3961596,train,cc by-nc,cc by-nc,false,2014,5
+PMC3961877,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC3963555,train,cc by-nc,cc by-nc,false,2014,2
+PMC3965881,train,cc by,cc by,true,2014,6
+PMC3966825,train,cc by,cc by,true,2014,1
+PMC3967502,train,cc by,publisher's own reuse terms,false,2013,2
+PMC3971783,train,cc by,cc by,true,2013,3
+PMC3972107,train,cc by,cc by,true,2014,6
+PMC3972946,test,cc by,cc by,true,2014,5
+PMC3977448,train,cc by,cc by,true,2014,2
+PMC3978457,train,cc by,cc by,true,2013,1
+PMC3979125,train,cc by,cc by,true,2013,2
+PMC3980039,train,cc by,cc by,true,2014,5
+PMC3982948,train,none recorded,no statement,false,2014,3
+PMC3984270,train,cc by,cc by,true,2014,4
+PMC3984416,train,cc by,cc by,true,2014,6
+PMC3984795,train,cc by,cc by,true,2014,6
+PMC3985324,train,cc by,cc by,true,2014,2
+PMC3987287,train,cc by,cc by,true,2014,12
+PMC3987889,train,cc by,cc by,true,2014,1
+PMC3990364,train,cc by-nc,cc by-nc,false,2014,4
+PMC3994324,train,cc by,cc by,true,2014,4
+PMC3994428,train,cc by,cc by,true,2014,4
+PMC3996149,train,cc by,cc by,true,2014,6
+PMC3996328,train,cc by,cc by,true,2014,2
+PMC400417,train,none recorded,verbatim copying only,false,2004,2
+PMC4004388,train,cc by,cc by,true,2014,1
+PMC4005035,train,cc by,cc by,true,2014,3
+PMC4006208,train,none recorded,copyright notice only,false,2014,3
+PMC4006506,train,cc by-nc,cc by-nc,false,2013,6
+PMC4007144,train,cc by,cc by,true,2014,6
+PMC4009088,train,cc by-nc,cc by-nc,false,2013,5
+PMC4009639,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4012222,train,cc by,cc by,true,2014,1
+PMC4015540,train,none recorded,copyright notice only,false,2011,5
+PMC4015738,validation,cc by,cc by,true,2013,6
+PMC4018592,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4018698,train,cc by,cc by,true,2012,6
+PMC4019890,train,cc by,cc by,true,2013,1
+PMC4021157,train,cc by,cc by,true,2014,5
+PMC4021263,train,cc by-nc,cc by-nc,false,2014,3
+PMC4023937,test,cc0,cc0,true,2014,5
+PMC4025600,train,cc by-nc,cc by-nc,false,2014,3
+PMC4026398,train,cc by-nc,cc by-nc,false,2014,3
+PMC4026558,train,cc by-nc,cc by-nc,false,2014,4
+PMC4028193,train,cc by,cc by,true,2014,2
+PMC4030092,train,cc by-nc-nd,cc by-nc-nd,false,2014,6
+PMC4030121,train,cc by-nc,cc by-nc,false,2014,2
+PMC4030328,validation,cc by,conflicting license links,false,2013,5
+PMC4030712,train,cc by,cc by,true,2012,3
+PMC4033571,validation,cc by-nc,cc by-nc,false,2014,6
+PMC4045244,validation,cc by,cc by,true,2014,2
+PMC4045368,train,cc by,cc by,true,2014,5
+PMC4045752,train,cc by,cc by,true,2014,2
+PMC4046846,train,cc by,cc by,true,2014,5
+PMC4048120,train,cc by,cc by,true,2014,6
+PMC4048141,validation,none recorded,copyright notice only,false,2014,4
+PMC4050230,validation,cc by-nc,cc by-nc,false,2014,2
+PMC4051747,validation,cc by,cc by,true,2014,1
+PMC4052655,test,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4052786,train,cc by,cc by,true,2014,4
+PMC4053826,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4054662,train,cc by,cc by,true,2014,5
+PMC4056626,train,cc by,cc by,true,2013,4
+PMC4056784,train,cc by,cc by,true,2013,6
+PMC4058264,train,cc by,cc by,true,2014,5
+PMC4059551,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4059969,train,cc by,cc by,true,2012,6
+PMC4060171,train,cc by,cc by,true,2014,5
+PMC4061186,train,cc by,"open link or statement, restricting words in its text",false,2014,5
+PMC4061622,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4061773,test,cc by,cc by,true,2014,3
+PMC4064756,train,cc by-nc,cc by-nc,false,2014,6
+PMC4064763,train,cc by-nc,cc by-nc,false,2014,4
+PMC4064768,train,cc by-nc,cc by-nc,false,2014,5
+PMC4065280,train,cc by-nc,cc by-nc,false,2014,6
+PMC4065461,train,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4067355,train,cc by,cc by,true,2014,6
+PMC4069047,validation,cc by-nc,cc by-nc,false,2014,5
+PMC4069273,train,cc by,cc by,true,2014,6
+PMC4069535,test,cc by,cc by,true,2014,4
+PMC4069731,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4075638,train,cc by,cc by,true,2014,3
+PMC4076224,test,cc by,cc by,true,2014,5
+PMC4076897,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC4077042,test,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4078065,train,none recorded,cc by (words),true,2014,5
+PMC4078386,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4079189,train,cc by,cc by,true,2014,2
+PMC4080584,train,cc by,cc by,true,2014,6
+PMC4081799,train,cc by,cc by,true,2013,5
+PMC4082484,train,cc by,cc by,true,2014,3
+PMC4083640,train,cc by,"open link or statement, restricting words in its text",false,2014,4
+PMC4084282,train,none recorded,copyright notice only,false,2009,6
+PMC4085197,train,cc by-nc-nd,cc by-nc-nd,false,2014,3
+PMC4085217,train,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4086013,train,cc by-nc,cc by-nc,false,2010,5
+PMC4088715,train,none recorded,copyright notice only,false,2008,2
+PMC4090726,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4092608,train,none recorded,copyright notice only,false,2006,3
+PMC4092903,test,cc by-nc,cc by-nc,false,2012,6
+PMC4092926,train,cc by-nc,cc by-nc,false,2012,3
+PMC4093188,train,cc by-nc,cc by-nc,false,2014,7
+PMC4094569,test,cc by-nc,cc by-nc,false,2014,6
+PMC4094699,train,cc by,cc by,true,2014,3
+PMC4096387,test,cc by,cc by,true,2014,6
+PMC4096666,validation,cc by-nc,cc by-nc,false,2014,4
+PMC4099602,validation,none recorded,no statement,false,2004,6
+PMC4101294,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4105274,validation,cc by-nc,cc by-nc,false,2014,1
+PMC4106715,train,none recorded,other non-commercial or no-modification terms,false,2011,6
+PMC4107254,test,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4109867,test,cc by-nc,cc by-nc,false,2014,9
+PMC4112748,train,cc by-nc,cc by-nc,false,2014,6
+PMC4112798,train,cc by-nc,cc by-nc,false,2014,4
+PMC4113172,train,none recorded,other non-commercial or no-modification terms,false,2014,2
+PMC4113835,validation,cc by,cc by,true,2014,7
+PMC4114003,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4114185,train,cc by,cc by,true,2014,5
+PMC4115605,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2014,5
+PMC4118506,test,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4119301,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4119719,train,cc by,cc by,true,2014,5
+PMC4121491,train,cc by-nc,cc by-nc,false,2014,2
+PMC4121500,train,cc by-nc,cc by-nc,false,2014,5
+PMC4124476,train,cc by,cc by,true,2014,5
+PMC4124480,train,cc by,cc by,true,2014,4
+PMC4126186,train,cc by-nc,cc by-nc,false,2014,6
+PMC4126761,train,cc by-nc,cc by-nc,false,2014,5
+PMC4127855,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4128609,train,cc by,cc by,true,2014,4
+PMC4128673,train,cc by,cc by,true,2014,6
+PMC4129110,train,cc by,cc by,true,2014,5
+PMC4131263,train,cc by,cc by,true,2014,3
+PMC4132222,validation,cc by-nc,cc by-nc,false,2014,1
+PMC4132637,train,cc by-nc,cc by-nc,false,2014,9
+PMC4134501,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4137650,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4138365,train,cc by,cc by,true,2014,3
+PMC4138383,train,cc by,cc by,true,2014,3
+PMC4138551,train,cc by,cc by,true,2014,8
+PMC4139977,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4139980,test,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4140238,test,cc by-nc,cc by-nc,false,2014,1
+PMC4140394,validation,cc by-nc,cc by-nc,false,2014,5
+PMC4140547,train,cc by-nc-nd,cc by-nc-nd,false,2014,3
+PMC4141382,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4141579,train,cc by,cc by,true,2014,2
+PMC4141807,train,cc by,cc by,true,2014,4
+PMC4143738,test,cc by,cc by,true,2014,6
+PMC4144850,train,cc by,cc by,true,2014,6
+PMC4145491,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4145879,test,cc by-nc-sa,cc by-nc-sa,false,2013,4
+PMC4148632,train,cc by-nc,cc by-nc,false,2014,6
+PMC4149239,train,cc by,cc by,true,2014,6
+PMC4152682,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4153077,train,cc by,cc by,true,2013,3
+PMC4153084,train,cc by-nc,cc by-nc,false,2014,5
+PMC4155124,train,cc by,cc by,true,2014,2
+PMC4155290,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4156403,train,cc0,cc0,true,2014,3
+PMC4160145,train,none recorded,copyright notice only,false,2014,4
+PMC4161265,test,cc by,cc by,true,2014,3
+PMC4161875,train,cc by,cc by,true,2014,2
+PMC4161888,train,cc by,cc by,true,2014,4
+PMC4162033,train,cc by-nc-sa,cc by-nc-sa,false,2014,1
+PMC4162719,test,cc by-nc,cc by-nc,false,2014,4
+PMC4163237,train,cc by,cc by,true,2014,3
+PMC4164149,train,cc by-nc,cc by-nc,false,2014,6
+PMC4165641,validation,none recorded,other non-commercial or no-modification terms,false,2014,2
+PMC4166055,train,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4166058,validation,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4166083,train,cc by,cc by,true,2014,4
+PMC4166382,train,cc by-nc,cc by-nc,false,2014,6
+PMC4168417,train,cc by,cc by,true,2014,5
+PMC4169371,train,cc by,cc by,true,2014,3
+PMC4170550,train,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4170701,train,cc by,cc by,true,2014,2
+PMC4171519,train,cc by,cc by,true,2014,6
+PMC4171887,train,cc by-nc-sa,cc by-nc-sa,false,2014,1
+PMC4173331,train,cc by-nc-sa,cc by-nc-sa,false,2010,6
+PMC4173342,train,cc by-nc-sa,cc by-nc-sa,false,2010,3
+PMC4173360,train,cc by-nc-sa,cc by-nc-sa,false,2011,5
+PMC4173437,train,cc by-nc-sa,cc by-nc-sa,false,2012,6
+PMC4173506,train,cc by-nc-sa,cc by-nc-sa,false,2013,5
+PMC4173564,train,cc by-nc-sa,cc by-nc-sa,false,2013,2
+PMC4173566,train,cc by-nc-sa,cc by-nc-sa,false,2013,3
+PMC4173571,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4173573,validation,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4173586,train,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4173592,train,cc by-nc-sa,cc by-nc-sa,false,2014,1
+PMC4175229,test,cc by-nc-nd,cc by-nc-nd,false,2014,3
+PMC4175232,train,cc by-nc-nd,cc by-nc-nd,false,2014,2
+PMC4175246,train,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4177066,validation,cc by,cc by,true,2014,2
+PMC4177075,train,cc by,cc by,true,2014,2
+PMC4179329,validation,cc by,cc by,true,2014,4
+PMC4181789,train,cc by,cc by,true,2014,6
+PMC4183082,validation,cc by,cc by,true,2014,4
+PMC4183415,train,cc by,cc by,true,2014,3
+PMC4183584,train,cc by,cc by,true,2014,4
+PMC4183888,train,cc by-nc,cc by-nc,false,2014,6
+PMC4183968,train,cc by,cc by,true,2014,3
+PMC4185107,train,cc by,cc by,true,2014,3
+PMC4188038,train,cc by,cc by,true,2014,1
+PMC4188585,train,cc by,cc by,true,2014,3
+PMC4188762,train,cc by-nc,cc by-nc,false,2014,3
+PMC4190894,test,cc by-nc,cc by-nc,false,2013,6
+PMC4191553,train,cc by-nc,cc by-nc,false,2014,6
+PMC4192987,test,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4194359,train,cc by,cc by,true,2014,3
+PMC4198846,train,cc by-nc-sa,cc by-nc-sa,false,2012,3
+PMC4198969,train,cc by-nc,cc by-nc,false,2014,1
+PMC4199180,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4199615,train,cc by,cc by,true,2014,5
+PMC420060,train,cc by,verbatim copying only,false,2004,3
+PMC4202567,test,cc by-nc,cc by-nc,false,2013,2
+PMC4202748,train,cc by-nc-nd,cc by-nc-nd,false,2013,3
+PMC4204994,train,cc by,cc by,true,2014,3
+PMC4206289,train,cc by,cc by,true,2014,4
+PMC4206772,train,cc by,cc by,true,2014,4
+PMC4207147,train,cc by-nc,cc by-nc,false,2013,3
+PMC4207773,train,cc by,cc by,true,2014,1
+PMC4210064,validation,cc by-nc-nd,cc by-nc-nd,false,2013,6
+PMC4210722,train,cc by,cc by,true,2014,1
+PMC4210946,test,cc by,cc by,true,2014,1
+PMC4210953,train,cc by,cc by,true,2014,2
+PMC4212559,validation,cc by-nc,cc by-nc,false,2014,4
+PMC4213554,train,cc by,cc by,true,2014,6
+PMC4215531,train,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4215680,validation,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4218710,test,cc by,"open link or statement, restricting words in its text",false,2014,5
+PMC4218764,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2014,2
+PMC4218766,validation,cc by,cc by,true,2014,1
+PMC4220866,train,cc by,cc by,true,2014,2
+PMC4221328,test,cc by-nc,cc by-nc,false,2014,3
+PMC4221638,train,cc by,cc by,true,2013,4
+PMC4221863,train,cc by,cc by,true,2014,3
+PMC4222010,train,cc by,cc by,true,2014,5
+PMC4222592,train,cc by,cc by,true,2013,6
+PMC4222660,train,cc by,cc by,true,2014,1
+PMC4223282,validation,cc by,cc by,true,2014,5
+PMC4223523,validation,cc by,cc by,true,2014,4
+PMC4223943,validation,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4223972,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4224669,train,cc by,cc by,true,2014,6
+PMC4226329,validation,cc by-nc-nd,cc by-nc-nd,false,2014,1
+PMC4227298,train,cc by,cc by,true,2014,1
+PMC4227976,train,cc by-nc,cc by-nc,false,2014,4
+PMC4228518,train,cc by,cc by,true,2014,6
+PMC4230312,train,cc by,cc by,true,2013,2
+PMC4231047,train,cc by,cc by,true,2014,4
+PMC4232010,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4232915,train,cc by-nc-nd,cc by-nc-nd,false,2014,4
+PMC4233044,train,cc by,cc by,true,2014,6
+PMC4233234,train,cc by,cc by,true,2014,2
+PMC4234788,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4234827,train,cc by,cc by,true,2014,5
+PMC4235088,validation,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4235563,train,cc by,cc by,true,2014,5
+PMC4236282,train,none recorded,other non-commercial or no-modification terms,false,2014,5
+PMC4236431,train,cc by,cc by,true,2014,2
+PMC4237335,validation,cc by,cc by,true,2014,4
+PMC4237982,train,none recorded,other non-commercial or no-modification terms,false,2014,5
+PMC4239746,train,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4240932,validation,cc by,cc by,true,2014,1
+PMC4241936,train,cc by-nc,cc by-nc,false,2014,6
+PMC4241940,validation,cc by-nc,cc by-nc,false,2014,5
+PMC4247720,validation,cc by,cc by,true,2014,2
+PMC4249579,test,cc by,cc by,true,2014,7
+PMC4251531,train,cc by-nc,cc by-nc,false,2014,9
+PMC4251615,train,cc by-nc,cc by-nc,false,2014,5
+PMC4252671,train,cc by-nc,cc by-nc,false,2014,7
+PMC4253794,train,cc by,cc by,true,2014,5
+PMC4255428,train,cc by,cc by,true,2014,1
+PMC4258079,train,cc by-nc-nd,cc by-nc-nd,false,2014,2
+PMC4258972,test,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4260384,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4260664,test,none recorded,other non-commercial or no-modification terms,false,2014,4
+PMC4261896,train,cc by,cc by,true,2014,1
+PMC4262215,validation,cc by-nc,cc by-nc,false,2014,6
+PMC4263705,test,cc by,cc by,true,2014,1
+PMC4264479,test,cc by,cc by,true,2014,2
+PMC4265247,train,cc by-nc-nd,cc by-nc-nd,false,2014,7
+PMC4265717,train,cc by-nc,cc by-nc,false,2014,3
+PMC4266420,train,cc by-nc,cc by-nc,false,2014,3
+PMC4266769,train,cc by-nc-nd,cc by-nc-nd,false,2014,6
+PMC4269544,train,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4269816,train,cc by-nc,cc by-nc,false,2014,6
+PMC4269914,train,cc by,cc by,true,2014,4
+PMC4270681,train,cc by,cc by,true,2014,5
+PMC4272222,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,4
+PMC4273016,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4273020,train,cc by-nc-nd,cc by-nc-nd,false,2014,1
+PMC4274041,test,cc by-nc,cc by-nc,false,2015,6
+PMC4274342,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4274545,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4274965,train,cc by,cc by,true,2014,2
+PMC4276527,test,none recorded,other non-commercial or no-modification terms,false,2014,4
+PMC4278388,validation,cc by-nc,cc by-nc,false,2014,6
+PMC4279802,train,cc by,cc by,true,2014,2
+PMC4280366,train,cc by-nc,cc by-nc,false,2014,2
+PMC4280425,train,cc by-nc-nd,cc by-nc-nd,false,2014,3
+PMC4280721,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4280732,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4280954,train,cc by,"open link or statement, restricting words in its text",false,2015,5
+PMC4281164,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4282128,train,cc by,cc by,true,2013,6
+PMC4282314,train,cc by-nc-nd,cc by-nc-nd,false,2014,6
+PMC4282697,train,cc by,cc by,true,2014,1
+PMC4283272,train,none recorded,publisher's own reuse terms,false,2014,5
+PMC4283612,train,cc by,cc by,true,2015,3
+PMC4283690,validation,cc by-nc,cc by-nc,false,2015,2
+PMC4284010,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4284021,validation,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4285787,validation,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4286912,test,cc by,cc by,true,2014,4
+PMC4286921,validation,cc by-nc,cc by-nc,false,2014,6
+PMC4288428,train,cc by,cc by,true,2014,6
+PMC4289223,train,cc by,cc by,true,2014,3
+PMC4292865,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4293505,train,cc by-nc,cc by-nc,false,2015,6
+PMC4296330,train,cc by-nc-sa,cc by-nc-sa,false,2014,6
+PMC4296355,test,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4296406,train,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC4296455,validation,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4297089,train,none recorded,copyright notice only,false,2013,1
+PMC4297469,train,cc by-nc,cc by-nc,false,2015,8
+PMC4298088,train,cc by-nc,cc by-nc,false,2015,3
+PMC4298817,train,cc by-nc,cc by-nc,false,2014,2
+PMC4300351,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4301466,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,2
+PMC4301654,train,cc by,cc by,true,2014,2
+PMC4301658,train,cc by,cc by,true,2014,3
+PMC4301837,train,cc by,cc by,true,2014,6
+PMC4302388,train,cc by,cc by,true,2015,2
+PMC4304200,train,cc by,cc by,true,2015,5
+PMC4305224,train,cc by,cc by,true,2015,6
+PMC4305536,train,cc by-nc-nd,cc by-nc-nd,false,2015,7
+PMC4306068,train,cc by,cc by,true,2014,2
+PMC4307364,train,cc by,cc by,true,2014,2
+PMC4307366,train,cc by,cc by,true,2014,3
+PMC4307639,train,cc by,cc by,true,2014,4
+PMC4310883,validation,cc by-nc-nd,cc by-nc-nd,false,2014,6
+PMC4311106,train,cc by-nc-sa,cc by-nc-sa,false,2014,5
+PMC4311411,train,cc by,cc by,true,2014,6
+PMC4312979,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4313493,train,cc by-nc-sa,cc by-nc-sa,false,2014,1
+PMC4314171,train,cc by-nc-sa,cc by-nc-sa,false,2014,3
+PMC4314848,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4315810,train,cc by,cc by,true,2015,4
+PMC4317856,train,cc by-nc,cc by-nc,false,2014,4
+PMC4318496,train,cc by,cc by,true,2015,1
+PMC4319071,train,cc by,cc by,true,2015,6
+PMC4319300,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4319305,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4320136,train,cc by,cc by,true,2015,4
+PMC4320624,train,cc by,cc by,true,2014,4
+PMC4322313,train,cc by-nc,cc by-nc,false,2015,2
+PMC4323432,train,cc by-nc,cc by-nc,false,2015,6
+PMC4323894,train,cc by-nc-sa,cc by-nc-sa,false,2014,4
+PMC4324478,train,cc by,cc by,true,2015,4
+PMC4324609,train,cc by-nc,cc by-nc,false,2015,6
+PMC4324646,test,cc by,cc by,true,2015,1
+PMC4327560,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,2
+PMC4329409,train,cc by-nc,cc by-nc,false,2015,3
+PMC4329963,validation,cc by-nc,cc by-nc,false,2014,1
+PMC4330076,train,cc by-nc,cc by-nc,false,2015,6
+PMC4331314,train,cc by,cc by,true,2015,3
+PMC4331444,train,cc by,cc by,true,2015,2
+PMC4331939,train,cc by-nc,cc by-nc,false,2012,3
+PMC4332717,train,cc by,cc by,true,2015,5
+PMC4334043,train,cc by,cc by,true,2014,2
+PMC4334515,train,cc by,cc by,true,2015,2
+PMC4334844,test,cc by,cc by,true,2015,2
+PMC4335628,train,cc by-nc,cc by-nc,false,2015,3
+PMC4335741,train,cc by,cc by,true,2011,5
+PMC4336131,test,cc by,cc by,true,2014,6
+PMC4338635,train,cc by,cc by,true,2014,6
+PMC4339160,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4339173,validation,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4339981,train,cc by,cc by,true,2015,5
+PMC4341337,train,cc by-nc,cc by-nc,false,2015,6
+PMC4341495,train,cc by-nc,cc by-nc,false,2014,4
+PMC4342682,train,cc by,cc by,true,2015,2
+PMC4344344,test,cc0,cc0,true,2015,4
+PMC4344586,train,cc by,cc by,true,2015,4
+PMC4347450,train,cc by,cc by,true,2015,3
+PMC4348728,train,cc by-nc,cc by-nc,false,2014,2
+PMC4354356,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4354432,train,cc by-nc,cc by-nc,false,2015,1
+PMC4354617,train,cc by-nc,cc by-nc,false,2015,3
+PMC4354798,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,2
+PMC4355142,train,cc by,cc by,true,2015,1
+PMC4355443,train,cc by,cc by,true,2014,4
+PMC4355923,train,cc by,"open link or statement, restricting words in its text",false,2015,2
+PMC4355974,train,cc by,cc by,true,2015,6
+PMC4356062,train,cc by,cc by,true,2015,5
+PMC4357072,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4358417,train,cc by-nc,cc by-nc,false,2015,2
+PMC4359119,train,cc by,cc by,true,2015,6
+PMC4359698,train,cc by,cc by,true,2015,2
+PMC4359699,train,cc by,cc by,true,2015,1
+PMC4359791,train,cc by,cc by,true,2015,1
+PMC4360612,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4360719,train,cc by-nc,cc by-nc,false,2015,1
+PMC4360779,train,cc by,cc by,true,2015,2
+PMC4361464,validation,cc by,cc by,true,2015,5
+PMC4362117,train,cc by-nc-sa,cc by-nc-sa,false,2014,2
+PMC4364332,train,cc by,cc by,true,2015,1
+PMC4364400,train,cc by-nc,cc by-nc,false,2015,5
+PMC4365008,validation,cc by,cc by,true,2015,4
+PMC4365564,train,cc by-nc-nd,cc by-nc-nd,false,2007,3
+PMC4367028,test,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4368876,train,cc by-nc,cc by-nc,false,2015,3
+PMC4369830,train,cc by,cc by,true,2015,2
+PMC4371718,validation,cc by,cc by,true,2015,5
+PMC4372550,train,cc by,cc by,true,2015,3
+PMC4374075,train,cc by-nc,cc by-nc,false,2015,4
+PMC4374260,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4377530,train,cc by-nc,cc by-nc,false,2015,3
+PMC4379665,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4382580,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4385682,train,cc by,cc by,true,2015,4
+PMC4386768,train,cc by-nc,cc by-nc,false,2015,10
+PMC4387644,train,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4389469,test,cc by-nc,cc by-nc,false,2014,3
+PMC4389977,validation,cc by,cc by,true,2015,6
+PMC4390525,train,cc by-nc,cc by-nc,false,2015,1
+PMC4391192,train,cc by,cc by,true,2015,3
+PMC4391304,train,cc by,cc by,true,2015,3
+PMC4392433,train,cc by-nc,cc by-nc,false,2015,6
+PMC4392900,train,cc by-nc-nd,cc by-nc-nd,false,2014,2
+PMC4393831,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2014,5
+PMC4395675,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4395706,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4395717,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4396724,train,cc by,cc by,true,2015,4
+PMC4396730,train,cc by,cc by,true,2015,5
+PMC4397550,train,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4398332,train,cc by,cc by,true,2015,6
+PMC4398439,train,cc by,cc by,true,2015,5
+PMC4399299,train,cc by,cc by,true,2015,7
+PMC4401879,test,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,2
+PMC4402460,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4402481,train,cc by,cc by,true,2015,5
+PMC4404560,train,cc by,cc by,true,2015,3
+PMC4407951,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC4409094,train,cc by-nc,cc by-nc,false,2015,2
+PMC4411165,train,cc by,cc by,true,2015,5
+PMC4411465,train,cc by,cc by,true,2015,5
+PMC4412792,train,cc by-nc,cc by-nc,false,2014,5
+PMC4414381,train,cc by,cc by,true,2015,13
+PMC4414618,train,cc by,cc by,true,2015,7
+PMC4415132,test,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4415997,test,cc by,cc by,true,2015,5
+PMC4416300,train,cc by,cc by,true,2014,6
+PMC4418140,train,cc by-nc-sa,cc by-nc-sa,false,2015,6
+PMC4419460,train,cc by,cc by,true,2015,2
+PMC4423288,train,none recorded,copyright notice only,false,2015,6
+PMC4424841,test,cc by,cc by,true,2015,3
+PMC4425923,train,cc by,cc by,true,2015,2
+PMC4427989,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4429825,train,cc by,cc by,true,2015,4
+PMC4431324,train,cc by-nc,cc by-nc,false,2015,5
+PMC4431716,train,cc by,cc by,true,2015,4
+PMC4432080,train,cc by,cc by,true,2014,2
+PMC4433997,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4435250,test,cc by-nc,cc by-nc,false,2015,3
+PMC4435702,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4436815,train,none recorded,copyright notice only,false,2014,9
+PMC4439020,test,cc by,cc by,true,2015,4
+PMC4440033,train,cc by-nc-nd,cc by-nc-nd,false,2014,5
+PMC4440276,train,cc by,cc by,true,2015,5
+PMC4442156,train,cc by-nc,cc by-nc,false,2015,1
+PMC4445854,train,cc by,cc by,true,2015,5
+PMC4449043,train,cc by,cc by,true,2015,1
+PMC4450164,train,cc by-nc,cc by-nc,false,2015,1
+PMC4450208,test,cc by,cc by,true,2015,5
+PMC4450462,validation,cc by,cc by,true,2015,5
+PMC4450858,train,cc by,cc by,true,2015,5
+PMC4453270,train,cc by,cc by,true,2015,4
+PMC4457092,train,cc by,cc by,true,2015,2
+PMC4458006,train,cc by,cc by,true,2015,1
+PMC4459874,train,cc by,cc by,true,2015,4
+PMC4461648,train,cc by,cc by,true,2015,4
+PMC4461907,train,cc by,cc by,true,2015,1
+PMC4461930,train,cc by,cc by,true,2015,7
+PMC4464926,train,cc by,cc by,true,2015,3
+PMC4467206,train,cc by,cc by,true,2015,3
+PMC4467620,train,cc by,cc by,true,2015,5
+PMC4468068,train,cc by,cc by,true,2015,1
+PMC4469426,train,cc by,cc by,true,2015,5
+PMC4471244,train,cc by,cc by,true,2015,3
+PMC4472776,train,cc by,cc by,true,2015,4
+PMC4472927,validation,cc by,cc by,true,2015,6
+PMC4472939,train,cc by,cc by,true,2015,2
+PMC4476212,validation,cc by-nc,cc by-nc,false,2015,5
+PMC4477338,train,none recorded,other non-commercial or no-modification terms,false,2015,3
+PMC4477402,train,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC4477769,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4478821,train,cc by-nc-sa,cc by-nc-sa,false,2015,6
+PMC4480825,train,cc by,cc by,true,2014,2
+PMC4481831,validation,cc by,"open link or statement, restricting words in its text",false,2015,3
+PMC4482193,train,cc by,cc by,true,2015,3
+PMC4483323,test,cc by,cc by,true,2015,2
+PMC4483334,train,cc by,cc by,true,2015,4
+PMC4483405,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC4483416,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4483448,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4486927,validation,cc by,cc by,true,2015,3
+PMC4486943,train,cc by-nc,cc by-nc,false,2015,4
+PMC4487203,train,cc by,cc by,true,2015,9
+PMC4488484,train,cc0,cc0,true,2015,4
+PMC4488551,validation,cc by,cc by,true,2015,14
+PMC4488565,validation,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4488801,train,cc by,cc by,true,2015,3
+PMC4489004,train,cc by,cc by,true,2015,3
+PMC4491277,validation,cc by,cc by,true,2015,2
+PMC4493951,train,cc by,cc by,true,2015,4
+PMC4494428,train,cc by,cc by,true,2014,5
+PMC4495314,train,cc by,cc by,true,2015,5
+PMC4497726,train,cc by,cc by,true,2015,5
+PMC4497728,test,cc by,cc by,true,2015,9
+PMC4499954,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4501118,train,cc by,cc by,true,2015,6
+PMC4502126,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4504059,train,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC4506382,validation,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4508540,test,cc by-nc,cc by-nc,false,2015,6
+PMC4509558,train,cc by,cc by,true,2015,2
+PMC4510702,validation,cc by,cc by,true,2015,6
+PMC4511304,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4511433,train,cc by,cc by,true,2015,1
+PMC4511434,validation,cc by,cc by,true,2014,1
+PMC4511442,train,cc by,cc by,true,2015,4
+PMC4513485,test,cc by,cc by,true,2015,6
+PMC4516063,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4517027,train,cc by,cc by,true,2015,4
+PMC4517417,train,cc by,cc by,true,2015,1
+PMC4517637,train,cc by,cc by,true,2015,4
+PMC4518214,test,cc by,cc by,true,2015,1
+PMC4518420,validation,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4519214,train,cc by,cc by,true,2015,2
+PMC4519544,train,cc by,cc by,true,2015,4
+PMC4520847,test,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC4524824,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4525010,validation,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4525725,train,cc by,cc by,true,2015,4
+PMC4526336,train,cc by-nc,cc by-nc,false,2015,1
+PMC4526789,validation,cc by,cc by,true,2015,4
+PMC4526972,train,cc by,cc by,true,2015,5
+PMC4526979,validation,cc by,cc by,true,2015,5
+PMC4527103,train,cc by,cc by,true,2015,3
+PMC4530210,train,cc by,cc by,true,2015,3
+PMC4530661,test,cc by-nc,cc by-nc,false,2015,2
+PMC4532714,train,cc by,cc by,true,2015,3
+PMC4533227,train,cc by,cc by,true,2015,5
+PMC4535555,train,cc by,cc by,true,2015,3
+PMC4537543,train,cc by,cc by,true,2015,6
+PMC4538249,train,cc by-nc,cc by-nc,false,2015,4
+PMC4538741,train,cc by,cc by,true,2015,7
+PMC4540107,train,cc by,cc by,true,2015,5
+PMC4540789,train,cc by-nc,cc by-nc,false,2015,5
+PMC4540839,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC4541185,test,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4541705,train,cc by,cc by,true,2014,2
+PMC4544133,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4544795,train,cc by,cc by,true,2015,5
+PMC4545275,train,cc by,cc by,true,2015,6
+PMC4545550,train,cc by,cc by,true,2015,6
+PMC4546110,train,cc by,cc by,true,2015,1
+PMC4546316,validation,cc by,cc by,true,2015,1
+PMC4550271,train,cc by,cc by,true,2015,3
+PMC4552663,train,cc by,cc by,true,2015,5
+PMC4554233,train,cc by,cc by,true,2015,3
+PMC4554239,validation,cc by,cc by,true,2015,6
+PMC4555141,train,cc by,cc by,true,2015,5
+PMC4555162,train,cc by,cc by,true,2015,2
+PMC4558453,test,cc by,cc by,true,2015,3
+PMC4558893,train,cc by,cc by,true,2015,6
+PMC4558976,test,cc by,cc by,true,2015,3
+PMC4560512,train,cc by-nc,cc by-nc,false,2015,2
+PMC4562579,train,cc by,cc by,true,2015,6
+PMC4563303,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4565804,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC4566202,train,cc by,cc by,true,2015,4
+PMC4568196,train,cc by-nc,cc by-nc,false,2015,5
+PMC4569055,train,cc by,cc by,true,2015,2
+PMC4569275,train,cc0,cc0,true,2015,5
+PMC4570722,train,cc by,cc by,true,2015,3
+PMC4574282,train,cc by,cc by,true,2015,2
+PMC4574984,train,cc by,cc by,true,2015,6
+PMC4577526,train,cc by,cc by,true,2015,3
+PMC4577567,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4579488,train,cc by-nc,cc by-nc,false,2015,2
+PMC4584261,train,cc by,cc by,true,2015,1
+PMC4586379,train,cc0,cc0,true,2015,2
+PMC4588424,train,cc by,cc by,true,2015,2
+PMC4588430,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4588672,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,2
+PMC4588874,train,cc by,cc by,true,2015,4
+PMC4588995,train,cc by-nc-nd,cc by-nc-nd,false,2013,3
+PMC4589005,validation,cc by-nc-nd,cc by-nc-nd,false,2013,3
+PMC4590407,train,cc by,cc by,true,2015,2
+PMC4590707,train,cc by,cc by,true,2015,3
+PMC4590893,train,cc by,cc by,true,2014,6
+PMC4590915,train,cc by,cc by,true,2014,4
+PMC4593658,validation,cc by-nc,cc by-nc,false,2015,4
+PMC4594140,train,cc by-nc,cc by-nc,false,2015,5
+PMC4595235,train,cc by,cc by,true,2015,6
+PMC4595873,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4596416,train,cc by,cc by,true,2015,4
+PMC4598102,test,cc by,cc by,true,2015,5
+PMC4598910,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4598931,train,cc by,cc by,true,2015,1
+PMC4599047,train,cc by-nc,cc by-nc,false,2015,3
+PMC4599543,train,cc by-nc,cc by-nc,false,2015,5
+PMC4600230,test,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4600913,validation,cc by,cc by,true,2015,6
+PMC4601415,train,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4601439,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4602159,test,cc by-nc,cc by-nc,false,2015,2
+PMC4604289,train,cc by-nc,cc by-nc,false,2015,6
+PMC4604314,train,cc by,cc by,true,2015,5
+PMC4608185,validation,cc by,cc by,true,2015,6
+PMC4608292,train,cc by,cc by,true,2015,6
+PMC4608345,train,cc by-nc,cc by-nc,false,2015,3
+PMC4608626,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4609664,train,cc by,cc by,true,2015,6
+PMC4610088,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4610679,train,cc by,cc by,true,2015,4
+PMC4610775,train,cc by-nc,cc by-nc,false,2015,3
+PMC4610922,train,cc by-nc,cc by-nc,false,2015,6
+PMC4610927,train,cc by-nc,cc by-nc,false,2015,5
+PMC4616075,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4616107,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4616122,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4619975,train,cc by,cc by,true,2015,2
+PMC4620004,train,cc by,cc by,true,2015,4
+PMC4621723,validation,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC4624894,test,cc by,cc by,true,2015,5
+PMC4625433,train,cc by,cc by,true,2015,3
+PMC4627615,train,cc by,cc by,true,2015,3
+PMC4627811,train,cc by,cc by,true,2015,5
+PMC4628236,train,cc by,cc by,true,2015,10
+PMC4630743,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4630885,train,cc by,cc by,true,2015,5
+PMC4631431,train,cc by-nc,cc by-nc,false,2015,3
+PMC4631853,validation,cc by,cc by,true,2015,3
+PMC4632359,train,cc by,cc by,true,2015,6
+PMC4632405,train,cc by,cc by,true,2015,5
+PMC4636656,train,cc by,cc by,true,2015,5
+PMC4636858,train,cc by-nc,cc by-nc,false,2015,4
+PMC4639339,train,cc by-nc,cc by-nc,false,2015,3
+PMC4639584,test,none recorded,cc by (words),true,2015,5
+PMC4639684,train,cc by,cc by,true,2015,6
+PMC4640056,train,cc by-nc,cc by-nc,false,2015,5
+PMC4644305,test,cc by-nc,cc by-nc,false,2015,4
+PMC4644316,train,cc by-nc,cc by-nc,false,2015,4
+PMC4644318,train,cc by-nc,cc by-nc,false,2015,4
+PMC4644613,test,cc by-nc,cc by-nc,false,2015,2
+PMC4648234,validation,cc by-nc,cc by-nc,false,2015,3
+PMC4649576,train,cc by-nc-sa,cc by-nc-sa,false,2014,1
+PMC4650105,train,cc by,cc by,true,2015,2
+PMC4650143,train,cc by,cc by,true,2015,2
+PMC4652407,validation,cc by,cc by,true,2015,5
+PMC4653470,train,cc by,cc by,true,2015,1
+PMC4658539,train,cc by,cc by,true,2015,6
+PMC4659198,train,cc by,cc by,true,2015,5
+PMC4662683,test,cc by,cc by,true,2015,3
+PMC4662763,validation,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,6
+PMC4663570,train,cc by,cc by,true,2015,5
+PMC4663612,test,cc by,cc by,true,2015,6
+PMC4666408,train,cc by,cc by,true,2015,3
+PMC4667210,train,cc by-nc,cc by-nc,false,2015,2
+PMC4667406,train,cc by,cc by,true,2015,5
+PMC4668172,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4672844,train,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4673066,train,cc by,cc by,true,2015,4
+PMC4673714,train,cc by,cc by,true,2015,5
+PMC4674443,train,cc by,cc by,true,2015,1
+PMC4674480,test,cc by-nc,cc by-nc,false,2015,5
+PMC4674925,train,cc by,cc by,true,2015,5
+PMC4675066,train,cc by,cc by,true,2015,2
+PMC4676364,train,cc by,cc by,true,2015,4
+PMC4676914,validation,cc by-nc,cc by-nc,false,2015,5
+PMC4676931,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4677000,train,cc by,cc by,true,2015,2
+PMC4678179,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4681154,train,cc by,cc by,true,2015,2
+PMC4681166,validation,cc by,cc by,true,2015,3
+PMC4681902,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC4682219,train,cc by,cc by,true,2015,4
+PMC4682450,validation,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4684352,validation,cc by,cc by,true,2015,6
+PMC4685630,train,cc by,cc by,true,2015,3
+PMC4686557,train,none recorded,copyright notice only,false,2015,4
+PMC4687062,train,cc by,cc by,true,2015,3
+PMC4687242,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4689520,train,cc by,cc by,true,2015,5
+PMC4689556,train,cc by,cc by,true,2015,1
+PMC4689586,train,cc by,cc by,true,2015,2
+PMC4689777,train,cc by-nc,cc by-nc,false,2015,5
+PMC4691672,train,cc by,cc by,true,2016,2
+PMC4693888,train,cc by,cc by,true,2015,3
+PMC4694650,train,cc by,cc by,true,2015,1
+PMC4694692,train,cc by-nc,cc by-nc,false,2016,5
+PMC4696193,train,cc by,cc by,true,2015,2
+PMC4696773,train,cc by,cc by,true,2015,6
+PMC4696975,train,cc by-nc,cc by-nc,false,2016,6
+PMC4697245,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4701161,train,cc by,cc by,true,2016,5
+PMC4701182,train,cc by,cc by,true,2016,6
+PMC4702321,train,cc by,cc by,true,2015,2
+PMC4704299,train,cc by,cc by,true,2016,4
+PMC4704894,train,cc by,cc by,true,2015,4
+PMC4705007,train,cc by,cc by,true,2015,3
+PMC4706730,train,cc by-nc,cc by-nc,false,2015,4
+PMC4707005,train,cc by,cc by,true,2016,3
+PMC4707401,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4709811,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC4709816,train,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC4709985,validation,cc by,cc by,true,2016,1
+PMC4710520,train,cc by,cc by,true,2016,4
+PMC4710681,train,cc by,cc by,true,2016,2
+PMC4710815,train,cc by-nc,cc by-nc,false,2015,4
+PMC4710971,train,cc by,cc by,true,2016,2
+PMC4711101,validation,cc by,cc by,true,2016,6
+PMC4712164,test,cc by-nc,cc by-nc,false,2015,4
+PMC4713062,train,cc by,cc by,true,2016,4
+PMC4713214,train,none recorded,copyright notice only,false,2012,3
+PMC4713759,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4713813,validation,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4714728,train,cc by-nc,cc by-nc,false,2016,5
+PMC4715405,train,cc by-nc,cc by-nc,false,2015,5
+PMC4716419,test,cc by-nc,cc by-nc,false,2016,4
+PMC4717319,test,cc by-nc,cc by-nc,false,2016,3
+PMC4717436,train,cc by-nc,cc by-nc,false,2016,1
+PMC4717613,test,cc by,cc by,true,2016,3
+PMC4720464,train,cc by-nc,cc by-nc,false,2015,2
+PMC4721471,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC4722945,train,none recorded,other non-commercial or no-modification terms,false,2016,5
+PMC4723179,train,cc by,cc by,true,2015,4
+PMC4723180,train,cc by,cc by,true,2015,2
+PMC4724125,train,cc by,cc by,true,2016,5
+PMC4726501,train,cc by,cc by,true,2016,2
+PMC4727391,train,cc by,cc by,true,2016,3
+PMC4727651,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2014,4
+PMC4729786,validation,cc by,cc by,true,2015,6
+PMC4730432,train,cc by,cc by,true,2015,2
+PMC4731528,train,cc by,cc by,true,2016,4
+PMC4731690,train,cc by,cc by,true,2016,4
+PMC4731919,train,cc by,cc by,true,2016,2
+PMC4733100,test,cc by-nc-nd,cc by-nc-nd,false,2016,4
+PMC4733105,test,cc by,cc by,true,2016,2
+PMC4733222,train,cc by,cc by,true,2016,3
+PMC4733270,test,cc by,cc by,true,2016,3
+PMC4733710,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4734805,train,cc by-nc,cc by-nc,false,2016,1
+PMC4734818,train,cc by-nc,cc by-nc,false,2016,6
+PMC4736250,train,cc by,cc by,true,2016,2
+PMC4737200,train,cc by,cc by,true,2015,14
+PMC4737269,train,cc by,cc by,true,2015,4
+PMC4738038,train,cc by-nc-nd,cc by-nc-nd,false,2016,4
+PMC4738984,train,none recorded,no statement,false,2012,2
+PMC4744284,train,cc by,cc by,true,2015,2
+PMC4744782,train,cc by-nc,cc by-nc,false,2015,4
+PMC4744955,test,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4745915,test,cc by,cc by,true,2016,4
+PMC4745960,train,cc by-nc,cc by-nc,false,2016,4
+PMC4747995,train,cc by,cc by,true,2016,3
+PMC4748139,,cc by,cc by,true,2016,0
+PMC4748323,train,cc by,cc by,true,2015,4
+PMC4748327,train,cc by,cc by,true,2015,2
+PMC4748685,train,cc by,cc by,true,2016,5
+PMC4748830,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2016,5
+PMC4749757,train,cc by-nc,cc by-nc,false,2016,5
+PMC4751201,train,cc by-nc,cc by-nc,false,2016,2
+PMC4751474,train,none recorded,other non-commercial or no-modification terms,false,2014,7
+PMC4752820,train,cc by-nc,cc by-nc,false,2016,2
+PMC4752899,train,cc by-nc,cc by-nc,false,2015,2
+PMC4752985,test,cc by,cc by,true,2016,1
+PMC4753023,train,cc by-nc,cc by-nc,false,2016,3
+PMC4754570,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,3
+PMC4755968,test,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC4756047,train,cc by-nc,cc by-nc,false,2016,5
+PMC4756949,train,cc by,cc by,true,2015,4
+PMC4756971,train,cc by,cc by,true,2015,4
+PMC4756994,train,cc by,cc by,true,2015,4
+PMC4757000,train,cc by,cc by,true,2015,5
+PMC4757005,train,cc by,cc by,true,2015,3
+PMC4757976,train,cc by,cc by,true,2016,4
+PMC4758401,validation,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC4759860,train,cc by,cc by,true,2016,4
+PMC4759876,test,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC4760038,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC4760045,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC4761605,train,cc by-nc,cc by-nc,false,2016,6
+PMC4763470,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC4763545,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4763632,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC4763824,train,cc by,cc by,true,2016,5
+PMC4764962,train,cc by-nc-sa,cc by-nc-sa,false,2016,1
+PMC4766670,train,cc by,cc by,true,2016,6
+PMC4768887,train,cc by-nc,cc by-nc,false,2016,5
+PMC4768925,train,cc by-nc-nd,cc by-nc-nd,false,2016,1
+PMC4769147,train,cc by,cc by,true,2016,3
+PMC4770250,validation,cc by-nc,cc by-nc,false,2013,5
+PMC4771973,test,cc by-nc,cc by-nc,false,2016,5
+PMC4772687,train,cc by-nc,cc by-nc,false,2016,2
+PMC4774750,train,cc by,cc by,true,2015,5
+PMC4776123,train,cc by,cc by,true,2016,5
+PMC4776406,train,cc by,cc by,true,2016,4
+PMC4776542,train,cc by-nc-sa,cc by-nc-sa,false,2016,8
+PMC4776564,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC4776972,train,cc by,"open link or statement, restricting words in its text",false,2013,6
+PMC4779585,test,cc by,cc by,true,2016,6
+PMC4780150,train,cc by,cc by,true,2016,5
+PMC4782022,train,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC4784207,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC4784348,train,cc by,cc by,true,2016,1
+PMC4785315,train,cc by,cc by,true,2016,3
+PMC4785405,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4786378,train,cc by,cc by,true,2016,2
+PMC4787139,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC4788673,train,cc by,cc by,true,2016,3
+PMC4789479,train,cc by,cc by,true,2016,2
+PMC4793173,train,cc by,"open link or statement, restricting words in its text",false,2016,4
+PMC4793655,train,cc by,cc by,true,2016,4
+PMC4794540,train,cc by,conflicting license links,false,2016,4
+PMC4794897,train,cc by,cc by,true,2016,2
+PMC4796446,train,cc by,cc by,true,2015,4
+PMC4796457,train,cc by,cc by,true,2015,5
+PMC4796524,train,cc by,cc by,true,2014,5
+PMC4796902,validation,cc by,cc by,true,2016,2
+PMC4799034,validation,cc by-nc,cc by-nc,false,2016,1
+PMC4802087,train,cc by,cc by,true,2015,2
+PMC4803206,test,cc by,cc by,true,2016,4
+PMC4803984,train,cc by,cc by,true,2016,1
+PMC4804082,train,cc by,cc by,true,2016,6
+PMC4804276,train,cc by,cc by,true,2016,2
+PMC4804512,train,cc by,cc by,true,2016,6
+PMC4805129,train,cc by,cc by,true,2016,4
+PMC4808543,train,cc by,cc by,true,2016,4
+PMC4808857,train,cc by,cc by,true,2016,6
+PMC4808872,train,cc by,cc by,true,2016,3
+PMC4809001,train,cc by,cc by,true,2016,4
+PMC4809147,train,cc by-nc,cc by-nc,false,2016,4
+PMC4809387,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2016,1
+PMC4810948,train,cc by-nc-sa,cc by-nc-sa,false,2016,6
+PMC4812817,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4814821,validation,cc by,cc by,true,2016,5
+PMC4815378,validation,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC4815882,validation,cc by-nc-sa,cc by-nc-sa,false,2015,6
+PMC4815896,test,cc by,cc by,true,2016,3
+PMC4816246,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC4819709,train,cc by-nc,cc by-nc,false,2016,34
+PMC4821226,train,cc by-nc,cc by-nc,false,2016,3
+PMC4821313,train,cc by-nc-nd,cc by-nc-nd,false,2016,3
+PMC4822094,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4823346,train,cc by,cc by,true,2015,6
+PMC4823408,train,cc by-nc,cc by-nc,false,2016,4
+PMC4824463,test,cc by,cc by,true,2016,5
+PMC4825255,test,cc by,cc by,true,2014,6
+PMC4826692,train,cc by,cc by,true,2016,5
+PMC4829247,train,cc by,cc by,true,2016,6
+PMC4830045,test,cc by,cc by,true,2016,2
+PMC4830153,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC4831612,train,cc by,cc by,true,2016,6
+PMC4831776,train,cc by,cc by,true,2016,5
+PMC4832354,train,cc by-nc,cc by-nc,false,2015,2
+PMC4834398,train,cc by,cc by,true,2016,6
+PMC4836241,test,cc by-nc-sa,cc by-nc-sa,false,2015,7
+PMC4836696,test,cc by,cc by,true,2016,2
+PMC4837818,train,cc by-nc-sa,cc by-nc-sa,false,2015,6
+PMC4837927,test,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2016,3
+PMC4839526,train,cc by,cc by,true,2015,6
+PMC4839625,train,cc by,cc by,true,2016,6
+PMC4840766,train,cc by-nc-nd,cc by-nc-nd,false,2016,4
+PMC4842387,train,cc by,cc by,true,2016,3
+PMC4842481,train,cc by-nc-nd,cc by-nc-nd,false,2016,8
+PMC4844154,train,cc by,cc by,true,2016,4
+PMC4845107,train,cc by-nc,cc by-nc,false,2015,7
+PMC4845428,validation,cc by,cc by,true,2016,3
+PMC4855961,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC4856346,validation,cc by,cc by,true,2016,4
+PMC4858101,train,none recorded,copyright notice only,false,2015,6
+PMC4859374,train,cc by-nc,cc by-nc,false,2016,2
+PMC4859395,train,cc by-nc,cc by-nc,false,2016,6
+PMC4860224,train,cc by,cc by,true,2016,3
+PMC4861095,train,cc by-nc,cc by-nc,false,2016,1
+PMC4861263,train,cc by,cc by,true,2016,1
+PMC4862081,train,cc by,cc by,true,2016,4
+PMC4864053,train,cc by,cc by,true,2016,2
+PMC4867039,train,cc by,cc by,true,2016,5
+PMC4867750,train,cc by,cc by,true,2016,6
+PMC4868208,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4868921,test,cc by,cc by,true,2016,6
+PMC4869362,train,cc by,cc by,true,2016,6
+PMC4869417,train,cc by-nc,cc by-nc,false,2016,2
+PMC4870813,test,cc by,cc by,true,2016,2
+PMC4871204,train,cc by-nc,cc by-nc,false,2016,5
+PMC4871571,train,cc0,cc0,true,2016,4
+PMC4872285,test,cc by-nc,cc by-nc,false,2016,6
+PMC4874073,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC4876157,train,cc by-nc,cc by-nc,false,2016,2
+PMC4877819,train,cc by,cc by,true,2016,4
+PMC4877983,train,cc by,cc by,true,2016,1
+PMC4878364,validation,cc by,cc by,true,2016,4
+PMC4879328,train,cc by,cc by,true,2016,6
+PMC4880652,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC4881089,test,cc by,cc by,true,2016,4
+PMC4881125,train,cc by,cc by,true,2016,4
+PMC4881703,train,cc by-nc-sa,cc by-nc-sa,false,2015,6
+PMC4882374,validation,cc by-nc,cc by-nc,false,2016,3
+PMC4882797,train,cc by,cc by,true,2016,2
+PMC4882812,train,cc by,cc by,true,2016,2
+PMC4883261,train,cc by,cc by,true,2015,5
+PMC4883760,train,cc by,cc by,true,2016,3
+PMC4884260,train,cc by,cc by,true,2016,2
+PMC4884360,train,cc by,cc by,true,2016,3
+PMC4888027,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4888158,validation,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2015,3
+PMC4889182,test,cc by-nc,cc by-nc,false,2016,1
+PMC4889193,test,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC4889691,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC4890862,train,cc by,cc by,true,2016,4
+PMC4892327,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2016,4
+PMC4893099,train,cc by-nc,cc by-nc,false,2016,6
+PMC4893237,train,cc by,cc by,true,2016,1
+PMC4893238,train,cc by,cc by,true,2016,3
+PMC4893393,validation,cc by,cc by,true,2014,1
+PMC4893758,test,cc by-nc,cc by-nc,false,2016,6
+PMC4894062,train,cc by,cc by,true,2016,5
+PMC4895399,train,cc by-nc,cc by-nc,false,2015,6
+PMC4895420,train,cc by-nc,cc by-nc,false,2015,4
+PMC4895766,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC4898395,train,cc by,cc by,true,2016,5
+PMC4899895,train,cc by,cc by,true,2016,6
+PMC4900317,train,cc by-nc-sa,cc by-nc-sa,false,2015,5
+PMC4904283,test,cc by,cc by,true,2016,4
+PMC4907437,train,cc by,cc by,true,2016,5
+PMC4907713,train,cc by-nc,cc by-nc,false,2016,5
+PMC4910973,train,cc by,cc by,true,2016,5
+PMC4913581,train,cc by-nc,cc by-nc,false,2016,6
+PMC4913995,train,cc by-nc,cc by-nc,false,2016,2
+PMC4914255,train,cc by,cc by,true,2016,6
+PMC4914313,test,cc by,cc by,true,2016,2
+PMC4916104,train,cc by,cc by,true,2016,5
+PMC4917592,train,cc by-nc,cc by-nc,false,2016,2
+PMC4917725,train,cc by,cc by,true,2016,1
+PMC4918317,test,cc by,cc by,true,2015,3
+PMC4918678,test,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC4920563,train,cc by,cc by,true,2016,3
+PMC4923578,train,cc by,cc by,true,2016,4
+PMC4924222,train,cc by,cc by,true,2016,5
+PMC4925999,validation,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC4928400,train,cc by,cc by,true,2016,6
+PMC4928948,train,cc by,cc by,true,2016,3
+PMC4932043,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC4937273,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC4940009,train,cc by-nc,cc by-nc,false,2016,4
+PMC4941128,train,cc by,cc by,true,2016,5
+PMC4941182,train,cc by-nc,cc by-nc,false,2016,2
+PMC4942591,train,cc by,cc by,true,2016,5
+PMC4946267,train,cc by-nc-sa,cc by-nc-sa,false,2015,3
+PMC4946773,validation,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC4947120,validation,cc by,cc by,true,2016,4
+PMC4947329,train,cc by,cc by,true,2016,4
+PMC4950066,train,cc by,cc by,true,2016,6
+PMC4950806,train,cc by-nc-nd,cc by-nc-nd,false,2016,3
+PMC4951149,train,cc by,cc by,true,2016,2
+PMC4951371,train,cc by-nc,cc by-nc,false,2016,3
+PMC4955417,train,cc by-nc-sa,cc by-nc-sa,false,2015,1
+PMC4957966,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC4958948,train,cc by,cc by,true,2016,9
+PMC4960789,train,cc by,cc by,true,2016,3
+PMC4960805,train,cc by,cc by,true,2016,4
+PMC4963027,validation,cc by,cc by,true,2016,2
+PMC4967427,train,cc by,cc by,true,2015,5
+PMC4967511,train,cc by,cc by,true,2016,4
+PMC4968528,test,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC4968829,train,cc by,cc by,true,2016,3
+PMC4969326,train,cc by-nc,cc by-nc,false,2016,5
+PMC4969982,train,cc by,cc by,true,2016,5
+PMC4972969,train,cc by,cc by,true,2016,8
+PMC4973627,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC4975837,train,cc by-nc,cc by-nc,false,2016,6
+PMC4976892,validation,cc by,cc by,true,2016,3
+PMC4980729,train,cc by,cc by,true,2012,5
+PMC4984426,validation,cc by-nc-nd,cc by-nc-nd,false,2016,3
+PMC4984795,validation,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC4984916,train,cc by-nc-sa,cc by-nc-sa,false,2016,1
+PMC4987981,train,cc by,cc by,true,2016,4
+PMC4990278,test,cc by,cc by,true,2016,3
+PMC4990415,train,cc by,cc by,true,2016,4
+PMC4990534,test,cc by,cc by,true,2016,3
+PMC4993942,train,cc by,cc by,true,2016,4
+PMC4994121,train,cc by,conflicting license links,false,2016,5
+PMC4994668,train,cc by,cc by,true,2016,7
+PMC4996097,train,cc by-nc,cc by-nc,false,2016,3
+PMC4996255,train,cc by-nc,cc by-nc,false,2016,1
+PMC5001793,train,cc by,cc by,true,2016,4
+PMC5002172,train,cc by,cc by,true,2016,6
+PMC5002324,train,cc by,cc by,true,2016,2
+PMC5003313,train,cc by-nc,cc by-nc,false,2016,2
+PMC5003869,validation,cc by,cc by,true,2016,5
+PMC5003992,train,cc by-nc,cc by-nc,false,2016,6
+PMC5006415,train,cc by,cc by,true,2016,2
+PMC5008205,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC5009836,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5010179,validation,cc by,cc by,true,2016,3
+PMC5011602,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5012042,train,cc by,cc by,true,2016,5
+PMC5013640,train,cc by,cc by,true,2016,2
+PMC5014878,train,cc by,cc by,true,2016,1
+PMC5015408,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5017045,train,cc by,cc by,true,2016,5
+PMC5018157,train,cc by-nc,cc by-nc,false,2016,4
+PMC5018291,train,none recorded,copyright notice only,false,2016,7
+PMC5018700,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5019463,train,cc by-nc,cc by-nc,false,2016,3
+PMC5019971,train,cc by-nc,cc by-nc,false,2016,7
+PMC5021260,validation,cc by,cc by,true,2016,1
+PMC5021748,train,cc by-nc,cc by-nc,false,2016,3
+PMC5022334,train,cc by-nc-sa,cc by-nc-sa,false,2016,6
+PMC5027814,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5029174,validation,cc by,cc by,true,2016,6
+PMC5029935,train,cc by,cc by,true,2016,2
+PMC5030453,validation,cc by,cc by,true,2016,3
+PMC5030464,validation,cc by,cc by,true,2016,6
+PMC5031764,train,cc by,cc by,true,2016,1
+PMC5033379,train,cc by,cc by,true,2016,6
+PMC5034497,train,cc by,cc by,true,2016,2
+PMC5038098,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5038569,train,cc by-nc,cc by-nc,false,2016,2
+PMC5040733,test,cc by,cc by,true,2016,4
+PMC5040779,train,cc by,cc by,true,2016,3
+PMC5041384,train,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC5043523,test,cc by,cc by,true,2016,1
+PMC5045523,train,cc by,cc by,true,2016,3
+PMC5045666,train,cc by-nc,cc by-nc,false,2016,3
+PMC5045682,train,cc by,cc by,true,2016,4
+PMC5045904,train,cc by-nc,cc by-nc,false,2016,5
+PMC5047020,validation,cc by-nc,cc by-nc,false,2016,3
+PMC5047648,test,cc by,cc by,true,2016,5
+PMC5049622,train,cc by-nc,cc by-nc,false,2015,5
+PMC5051624,test,cc by-nc,cc by-nc,false,2016,5
+PMC5052963,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5053082,train,cc by,cc by,true,2016,5
+PMC5054596,train,cc by,cc by,true,2016,4
+PMC5054611,train,cc by,cc by,true,2016,7
+PMC5055753,train,cc by-nc,cc by-nc,false,2016,4
+PMC5056957,train,cc by-nc-nd,cc by-nc-nd,false,2016,4
+PMC5057302,test,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC5057363,train,cc by-nc-nd,cc by-nc-nd,false,2015,3
+PMC5057414,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC5061809,test,cc by,cc by,true,2016,4
+PMC5062194,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5062220,validation,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC5062234,test,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5064056,validation,cc by,cc by,true,2016,2
+PMC5064802,validation,cc by,cc by,true,2016,3
+PMC5065057,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5066795,train,cc by-nc-nd,cc by-nc-nd,false,2016,1
+PMC5066848,validation,cc by-nc,cc by-nc,false,2016,1
+PMC5066860,test,cc by-nc,cc by-nc,false,2016,3
+PMC5067642,train,cc by-nc,cc by-nc,false,2016,1
+PMC5073301,train,cc by,cc by,true,2016,5
+PMC5073953,validation,cc by,cc by,true,2016,2
+PMC5074260,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5075282,train,cc by,cc by,true,2016,6
+PMC5077078,train,cc by,cc by,true,2016,4
+PMC5079604,train,none recorded,other non-commercial or no-modification terms,false,2016,7
+PMC5079608,train,none recorded,other non-commercial or no-modification terms,false,2016,5
+PMC5080766,train,cc by,cc by,true,2016,4
+PMC5086025,validation,cc by,cc by,true,2016,6
+PMC5088157,train,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC5089605,train,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC5091022,train,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC5091897,validation,cc by,cc by,true,2016,1
+PMC5093191,test,cc by,cc by,true,2016,2
+PMC5094122,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5094682,train,cc by,cc by,true,2016,5
+PMC5096778,train,cc by-nc,cc by-nc,false,2016,3
+PMC5099199,train,cc by-nc,cc by-nc,false,2016,5
+PMC5100099,train,cc by,cc by,true,2016,4
+PMC5101386,train,cc by,cc by,true,2016,4
+PMC5101425,train,cc by-nc,cc by-nc,false,2016,4
+PMC5101645,train,cc by-nc,cc by-nc,false,2016,3
+PMC5103135,train,cc by,cc by,true,2016,6
+PMC5103151,train,cc by,cc by,true,2016,2
+PMC5103331,train,cc by,cc by,true,2016,5
+PMC5103733,train,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5104394,train,cc by,cc by,true,2016,3
+PMC5106769,train,cc by,cc by,true,2016,4
+PMC5106877,train,cc by,cc by,true,2017,3
+PMC5107204,validation,cc by-nc,cc by-nc,false,2016,5
+PMC5116111,train,cc by,cc by,true,2016,6
+PMC5116460,train,cc by,cc by,true,2016,4
+PMC5117008,train,cc by-nc,cc by-nc,false,2015,1
+PMC5117579,train,cc by,cc by,true,2016,4
+PMC5118645,validation,cc by,cc by,true,2016,5
+PMC5119439,train,cc by-nc,cc by-nc,false,2016,5
+PMC5119624,train,cc by-nc,cc by-nc,false,2016,3
+PMC5120251,train,cc by-nc,cc by-nc,false,2016,4
+PMC5120636,train,cc by-nc,cc by-nc,false,2016,2
+PMC5122106,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC5122147,validation,cc by,cc by,true,2016,3
+PMC5122238,train,cc by-nc-sa,cc by-nc-sa,false,2016,2
+PMC5122613,validation,cc by,cc by,true,2015,5
+PMC5124283,train,cc by,cc by,true,2016,5
+PMC5124485,train,cc by-nc-nd,cc by-nc-nd,false,2016,3
+PMC5125190,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5125721,train,cc by-nc,cc by-nc,false,2016,3
+PMC5125808,train,cc by-nc,cc by-nc,false,2016,6
+PMC5126155,train,cc by-nc-sa,cc by-nc-sa,false,2016,4
+PMC5126873,train,cc by,cc by,true,2016,4
+PMC5127177,train,cc by,cc by,true,2016,3
+PMC5129050,train,cc by,cc by,true,2016,6
+PMC5129592,train,cc by,cc by,true,2016,1
+PMC5129820,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5129854,train,cc by,cc by,true,2016,3
+PMC5131536,train,cc by,cc by,true,2016,6
+PMC5132127,train,cc by-nc-nd,cc by-nc-nd,false,2016,1
+PMC5133075,train,cc by,cc by,true,2016,6
+PMC5133227,train,cc by-nc,cc by-nc,false,2016,4
+PMC5133722,test,cc by-nc-sa,cc by-nc-sa,false,2015,2
+PMC5135478,train,cc by-nc,cc by-nc,false,2016,7
+PMC5136709,train,cc by,cc by,true,2016,5
+PMC5137281,train,cc by-nc,cc by-nc,false,2016,8
+PMC5139733,train,cc by,cc by,true,2010,5
+PMC5140822,train,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC5141553,train,cc by,cc by,true,2016,6
+PMC5145296,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5148913,train,cc by,cc by,true,2016,5
+PMC5149084,train,cc by,cc by,true,2016,2
+PMC5153622,test,cc by,cc by,true,2016,6
+PMC5153686,train,cc by,cc by,true,2015,4
+PMC5154016,train,cc by,cc by,true,2016,6
+PMC5154305,validation,cc by,cc by,true,2016,4
+PMC5155184,test,cc by-nc,cc by-nc,false,2016,2
+PMC5156604,validation,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5156617,validation,cc by-nc,cc by-nc,false,2016,2
+PMC5156970,train,cc by-nc-sa,cc by-nc-sa,false,2016,3
+PMC5158040,train,cc by,cc by,true,2016,4
+PMC5167461,train,cc by-nc,cc by-nc,false,2016,4
+PMC5168495,train,cc by-nc,cc by-nc,false,2016,3
+PMC5168897,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5174811,train,cc by,cc by,true,2016,5
+PMC5176312,test,cc0,cc0,true,2016,3
+PMC5187654,validation,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5193306,train,cc by-nc,cc by-nc,false,2015,4
+PMC5200867,train,cc by-nc,cc by-nc,false,2016,6
+PMC5200917,train,cc by,cc by,true,2017,2
+PMC520750,train,cc by,cc by,true,2004,2
+PMC5207750,validation,cc by,cc by,true,2017,1
+PMC5207788,train,cc by,cc by,true,2017,4
+PMC5209819,train,cc by,cc by,true,2017,2
+PMC5214464,train,none recorded,no statement,false,2017,3
+PMC5215525,train,cc by,cc by,true,2016,6
+PMC5215617,train,cc by,cc by,true,2016,2
+PMC5215647,train,cc by-nc-nd,cc by-nc-nd,false,2015,6
+PMC5217661,train,cc by,cc by,true,2017,3
+PMC5217809,train,cc by-nc-nd,cc by-nc-nd,false,2016,2
+PMC5219826,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5220753,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5223669,train,cc by-nc,cc by-nc,false,2016,2
+PMC5225191,train,cc by,cc by,true,2016,3
+PMC5225252,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5228186,train,cc by,cc by,true,2017,4
+PMC522822,train,cc by,cc by,true,2004,1
+PMC5228611,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5228669,train,cc by-nd,cc by-nd,false,2017,1
+PMC5234109,train,cc by,cc by,true,2017,6
+PMC5236513,test,cc by-nc,cc by-nc,false,2017,3
+PMC5241452,validation,cc by,cc by,true,2017,3
+PMC5244020,train,cc by,cc by,true,2017,6
+PMC5244277,test,cc by-nc-nd,cc by-nc-nd,false,2016,5
+PMC5244530,train,cc by,cc by,true,2017,2
+PMC524504,train,cc by,cc by,true,2004,15
+PMC5245138,test,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5256321,train,cc by-nc,cc by-nc,false,2016,3
+PMC5260131,train,cc by,cc by,true,2017,6
+PMC5264222,train,cc by-nc,cc by-nc,false,2017,5
+PMC5264483,validation,cc by,cc by,true,2016,6
+PMC5265791,train,cc by-nd,cc by-nd,false,2016,5
+PMC5268424,train,cc by,cc by,true,2017,1
+PMC5273788,train,cc by,cc by,true,2017,6
+PMC5282794,train,cc by,cc by,true,2017,3
+PMC5285426,train,cc by,cc by,true,2016,4
+PMC5288524,train,cc by,cc by,true,2017,4
+PMC5289138,train,cc by-nc,cc by-nc,false,2017,2
+PMC5289293,validation,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5291156,train,cc by-nc-nd,copyright notice only,false,2017,5
+PMC5292014,test,cc by-nc,cc by-nc,false,2016,2
+PMC5292678,train,cc by,cc by,true,2017,5
+PMC529310,train,cc by,cc by,true,2004,1
+PMC5294349,train,cc by,cc by,true,2017,1
+PMC5294435,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5294576,train,cc by,cc by,true,2017,5
+PMC529470,train,cc by,cc by,true,2004,2
+PMC5295074,train,cc by,cc by,true,2017,2
+PMC5295657,train,cc by,cc by,true,2017,4
+PMC5295802,,cc by-nc,cc by-nc,false,2017,0
+PMC5296807,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5297995,train,cc by-nc,cc by-nc,false,2016,3
+PMC5299497,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5300803,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5300822,test,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5301061,validation,cc by-nc-sa,cc by-nc-sa,false,2016,6
+PMC5301372,train,cc by,cc by,true,2017,4
+PMC5301992,train,cc by-nc,cc by-nc,false,2016,5
+PMC5302797,train,cc by,cc by,true,2017,3
+PMC5306110,train,cc by-nc,cc by-nc,false,2016,4
+PMC5307611,train,cc by-nc,cc by-nc,false,2016,3
+PMC5307758,train,cc by,cc by,true,2017,1
+PMC5308129,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5309308,train,cc by,cc by,true,2017,3
+PMC5311860,validation,cc by,cc by,true,2017,4
+PMC5312688,validation,cc by-nc,cc by-nc,false,2017,3
+PMC5313491,validation,cc by,cc by,true,2017,5
+PMC5315239,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5316445,validation,cc by,cc by,true,2017,4
+PMC5319516,train,cc by,cc by,true,2017,3
+PMC5320660,train,cc by,cc by,true,2017,3
+PMC5320759,train,cc by,cc by,true,2017,5
+PMC5320771,train,cc by,cc by,true,2017,6
+PMC5324269,train,cc by,cc by,true,2017,2
+PMC5325897,train,cc by,cc by,true,2017,2
+PMC5330006,train,cc by,cc by,true,2017,3
+PMC5331547,train,cc by,cc by,true,2017,5
+PMC5331589,validation,cc by,cc by,true,2017,4
+PMC5331731,train,cc by,cc by,true,2017,5
+PMC5331772,validation,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5331968,train,cc by,cc by,true,2017,4
+PMC5332296,train,none recorded,other non-commercial or no-modification terms,false,2016,5
+PMC5332489,test,cc by,cc by,true,2016,1
+PMC5332972,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5333470,train,cc by,cc by,true,2017,5
+PMC5336430,train,cc by-nc,cc by-nc,false,2016,7
+PMC5337626,train,cc by,cc by,true,2017,3
+PMC5337766,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5338176,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5339463,train,cc by-nc,cc by-nc,false,2017,6
+PMC5340016,train,cc by,cc by,true,2017,4
+PMC5341634,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5341660,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5343026,train,cc by,cc by,true,2017,4
+PMC5343624,train,cc by-nc-sa,cc by-nc-sa,false,2016,5
+PMC5346199,train,cc by,cc by,true,2017,1
+PMC5346512,train,cc by,cc by,true,2017,6
+PMC5346637,validation,cc by,cc by,true,2016,6
+PMC5349672,train,cc by,cc by,true,2017,4
+PMC5350209,train,cc by,cc by,true,2016,6
+PMC5351968,train,cc by,cc by,true,2017,6
+PMC5354011,train,cc by,cc by,true,2016,1
+PMC5354029,train,cc by-nc,cc by-nc,false,2017,4
+PMC5354681,train,cc by,cc by,true,2017,5
+PMC5358282,train,cc by,cc by,true,2011,7
+PMC5358738,train,cc by,cc by,true,2017,4
+PMC535900,test,cc by,cc by,true,2004,2
+PMC535936,train,cc by,cc by,true,2004,2
+PMC5360580,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5360998,validation,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5362210,train,cc by,cc by,true,2017,3
+PMC5362536,train,cc by,cc by,true,2017,2
+PMC5362659,validation,cc by,cc by,true,2017,2
+PMC5367005,train,cc by,cc by,true,2017,2
+PMC5367746,train,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5369684,train,cc by,cc by,true,2017,2
+PMC5369693,train,cc by,cc by,true,2017,1
+PMC5370326,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5370803,train,cc by-nd,cc by-nd,false,2016,14
+PMC5372064,train,cc by,cc by,true,2017,4
+PMC5372065,train,cc by-nc,cc by-nc,false,2017,3
+PMC5372931,train,cc by,cc by,true,2017,3
+PMC5372977,train,cc by,cc by,true,2017,4
+PMC5374834,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5376493,train,cc by,cc by,true,2017,5
+PMC5377263,test,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5379203,train,cc by,cc by,true,2017,2
+PMC5379244,validation,cc by,cc by,true,2017,1
+PMC5379843,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5380277,train,cc by-nc-nd,cc by-nc-nd,false,2017,7
+PMC5380284,train,cc by-nd,cc by-nd,false,2017,5
+PMC5380326,train,cc by,cc by,true,2017,6
+PMC5381869,test,cc by,cc by,true,2017,6
+PMC5383744,train,cc by-nc,cc by-nc,false,2017,2
+PMC5384512,validation,cc by-nc-nd,cc by-nc-nd,false,2016,6
+PMC5384532,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5385703,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5387905,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5388694,test,cc by,cc by,true,2017,4
+PMC5388709,train,cc by,cc by,true,2017,3
+PMC5389230,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC539050,train,cc by,cc by,true,2004,1
+PMC5390629,train,cc by,cc by,true,2017,2
+PMC5391070,train,cc by,cc by,true,2017,3
+PMC5393542,train,cc by,cc by,true,2017,4
+PMC5395810,train,cc by,cc by,true,2017,2
+PMC5395856,train,cc by,cc by,true,2017,5
+PMC5395991,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5396972,train,cc by-nc,cc by-nc,false,2017,5
+PMC5397544,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5399146,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC5404215,train,none recorded,other non-commercial or no-modification terms,false,2017,3
+PMC5404432,test,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5404516,train,cc by,cc by,true,2017,3
+PMC5404992,validation,none recorded,other non-commercial or no-modification terms,false,2017,5
+PMC5405916,train,cc by,cc by,true,2017,5
+PMC5406030,validation,cc by,cc by,true,2017,5
+PMC5407976,validation,cc by,cc by,true,2017,5
+PMC5409660,test,cc by,cc by,true,2017,4
+PMC5409664,train,cc by,cc by,true,2017,3
+PMC5410668,test,cc by,cc by,true,2017,4
+PMC5411411,test,cc by,cc by,true,2016,4
+PMC5412886,train,cc by-nc,cc by-nc,false,2016,5
+PMC5413468,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5414231,train,cc by,cc by,true,2017,6
+PMC5414544,,cc by,cc by,true,2017,0
+PMC5415292,,cc by-nc,cc by-nc,false,2017,0
+PMC5416724,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5419060,train,cc by,cc by,true,2017,5
+PMC5420386,train,cc by,cc by,true,2016,3
+PMC5422432,train,cc by,cc by,true,2017,6
+PMC5423967,train,cc by,cc by,true,2017,2
+PMC5424452,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5425769,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5426232,train,cc by-nc,cc by-nc,false,2017,5
+PMC5426394,test,cc by-nc,cc by-nc,false,2017,8
+PMC5426756,test,cc by,cc by,true,2017,1
+PMC5427603,train,cc by,cc by,true,2017,1
+PMC5429471,train,cc by,cc by,true,2017,4
+PMC5431359,train,cc by-nc,cc by-nc,false,2017,6
+PMC5432698,train,cc by,cc by,true,2017,7
+PMC5433398,train,cc by-nc,cc by-nc,false,2015,3
+PMC5434251,train,cc by,cc by,true,2017,5
+PMC5434591,train,cc by-nc,cc by-nc,false,2017,5
+PMC5435062,train,cc by-nc,cc by-nc,false,2017,7
+PMC5435086,train,cc by,cc by,true,2017,2
+PMC5437665,train,cc by,cc by,true,2017,4
+PMC5438446,train,cc by,cc by,true,2017,4
+PMC5439319,validation,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5440036,train,cc by-nc,cc by-nc,false,2017,4
+PMC5440059,train,cc by-nc,cc by-nc,false,2017,2
+PMC5440538,train,cc by,cc by,true,2017,5
+PMC5440738,train,cc by,cc by,true,2017,5
+PMC5442201,train,cc by,cc by,true,2016,1
+PMC5442667,train,cc by,cc by,true,2017,5
+PMC5444773,train,cc by,cc by,true,2017,5
+PMC5446277,train,none recorded,other non-commercial or no-modification terms,false,2017,1
+PMC5446410,train,cc by,cc by,true,2017,2
+PMC5446455,train,none recorded,"cc by-nc, by-nd or by-sa (words)",false,2017,8
+PMC5446666,train,cc by,cc by,true,2017,3
+PMC5446739,train,cc by,cc by,true,2017,4
+PMC5447816,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5448649,train,cc by-nc,cc by-nc,false,2017,5
+PMC5450266,train,cc by,cc by,true,2017,6
+PMC5450344,train,cc by,cc by,true,2017,1
+PMC5450983,train,none recorded,no statement,false,2017,1
+PMC5451423,test,cc by,cc by,true,2017,2
+PMC5452066,train,cc by-nc,cc by-nc,false,2017,3
+PMC5452353,train,cc by,cc by,true,2017,5
+PMC5453890,train,cc by-nc,cc by-nc,false,2017,5
+PMC5454908,train,cc by,cc by,true,2017,3
+PMC5456350,test,cc0,cc0,true,2017,4
+PMC5457252,train,cc by,cc by,true,2016,5
+PMC5457616,train,cc by,cc by,true,2017,4
+PMC5457851,train,cc by-sa,cc by-sa,false,2017,5
+PMC5458653,train,cc by-nc,cc by-nc,false,2017,4
+PMC5459273,validation,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5459456,train,cc by,cc by,true,2017,4
+PMC5460737,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5461594,train,cc by-nc-sa,cc by-nc-sa,false,2017,7
+PMC546184,train,cc by,cc by,true,2005,4
+PMC5462369,train,cc0,cc0,true,2017,3
+PMC5462678,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5462761,train,cc by,cc by,true,2017,2
+PMC5465806,train,cc by,cc by,true,2016,2
+PMC5466093,train,cc by-nc,cc by-nc,false,2017,4
+PMC5467351,test,cc by,cc by,true,2017,4
+PMC5471294,train,cc by,cc by,true,2017,4
+PMC5471569,train,cc by,cc by,true,2017,2
+PMC5471755,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5472412,train,cc by-nc,cc by-nc,false,2017,7
+PMC5477737,validation,cc by,cc by,true,2017,4
+PMC547916,train,cc by,cc by,true,2005,1
+PMC5482825,train,cc by,cc by,true,2017,13
+PMC5483302,test,cc by,cc by,true,2017,1
+PMC5483485,train,cc by,cc by,true,2017,2
+PMC5486467,train,cc by,cc by,true,2016,3
+PMC5489138,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5490100,validation,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5490116,validation,cc by-nc-sa,cc by-nc-sa,false,2017,4
+PMC5491162,train,cc by-nc,cc by-nc,false,2017,5
+PMC5491994,train,cc by,cc by,true,2017,4
+PMC5493377,train,cc by,cc by,true,2017,5
+PMC5494175,train,cc by,cc by,true,2017,2
+PMC5494586,validation,cc by,cc by,true,2017,4
+PMC5496216,train,cc by,cc by,true,2017,1
+PMC5498096,train,cc by-nc,cc by-nc,false,2017,4
+PMC5498678,test,cc by-nc,cc by-nc,false,2017,2
+PMC5498708,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5498709,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5498715,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5498774,validation,cc by-nc,cc by-nc,false,2017,1
+PMC5499864,train,cc by-nc,cc by-nc,false,2017,4
+PMC5501521,train,cc by,cc by,true,2017,6
+PMC5502308,train,cc by-nc,cc by-nc,false,2017,3
+PMC5504551,test,cc by,cc by,true,2017,2
+PMC5504600,train,cc by,cc by,true,2017,4
+PMC5506592,train,cc by,cc by,true,2017,2
+PMC5506593,train,cc by,cc by,true,2017,1
+PMC5506697,train,cc by,cc by,true,2017,5
+PMC5508614,train,cc by,cc by,true,2017,5
+PMC5508798,train,cc by,cc by,true,2017,5
+PMC5509595,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5509597,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5509647,train,cc by,cc by,true,2017,3
+PMC5511020,test,cc by-nc,cc by-nc,false,2017,6
+PMC5511285,train,cc by,cc by,true,2017,4
+PMC5511975,train,cc by,cc by,true,2017,2
+PMC5513842,train,cc by-nc,cc by-nc,false,2017,5
+PMC5514258,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5514953,train,cc by,cc by,true,2017,3
+PMC5515187,validation,cc by-nc,cc by-nc,false,2017,3
+PMC5515881,validation,cc by,cc by,true,2017,5
+PMC5516151,train,cc by-nc-nd,cc by-nc-nd,false,2016,3
+PMC5516192,test,cc by,cc by,true,2017,6
+PMC5518918,train,cc by-nc,cc by-nc,false,2017,6
+PMC5518919,validation,cc by-nc,cc by-nc,false,2017,7
+PMC5519050,train,cc by,cc by,true,2017,3
+PMC5519461,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5520118,train,cc by-nc,cc by-nc,false,2017,4
+PMC5520264,train,cc by,cc by,true,2017,6
+PMC5521936,train,cc by-nc,cc by-nc,false,2017,4
+PMC5524701,train,cc by-nc,cc by-nc,false,2017,6
+PMC5524909,train,cc by,cc by,true,2017,6
+PMC5525241,train,cc by,cc by,true,2017,5
+PMC5525580,test,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5526285,train,cc by,cc by,true,2017,2
+PMC5529957,validation,cc by-nc,cc by-nc,false,2017,5
+PMC5529983,train,cc by,cc by,true,2017,2
+PMC5530334,train,cc by-nc,cc by-nc,false,2017,4
+PMC5530360,train,cc by-nc,cc by-nc,false,2017,6
+PMC5530572,train,cc by,cc by,true,2017,5
+PMC5532580,,cc by,cc by,true,2017,0
+PMC5534041,train,cc by,cc by,true,2017,5
+PMC5534217,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5534500,train,cc by-nc,cc by-nc,false,2017,6
+PMC5536130,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5536158,test,cc by,cc by,true,2017,3
+PMC5536558,train,cc by-nc,cc by-nc,false,2016,6
+PMC5539943,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5539984,validation,cc by,cc by,true,2017,3
+PMC5541727,test,cc by,cc by,true,2017,7
+PMC5545112,train,cc by,cc by,true,2017,2
+PMC5548257,train,cc by,cc by,true,2015,7
+PMC5549592,train,cc by,cc by,true,2017,1
+PMC554986,train,cc by,cc by,true,2005,2
+PMC5550381,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5551012,train,cc by,cc by,true,2017,2
+PMC5551190,test,cc by,cc by,true,2017,5
+PMC5551214,test,cc by,cc by,true,2017,2
+PMC5553001,train,cc by,cc by,true,2017,3
+PMC5555437,train,cc by,cc by,true,2017,4
+PMC5556332,train,cc by-nc,cc by-nc,false,2016,4
+PMC5556716,train,cc by-nc,cc by-nc,false,2016,3
+PMC5557991,train,cc by,cc by,true,2017,4
+PMC5559992,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5560514,train,cc by-nc,cc by-nc,false,2017,4
+PMC5560591,train,cc by-nc,cc by-nc,false,2016,5
+PMC5561409,train,cc by-nc,cc by-nc,false,2017,6
+PMC5561588,train,cc by,cc by,true,2017,1
+PMC5561674,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5562134,train,cc by-nc,cc by-nc,false,2017,3
+PMC5564101,test,cc by-nc,cc by-nc,false,2015,4
+PMC5564145,train,cc by-nc,cc by-nc,false,2017,5
+PMC5565373,train,cc by-nc,cc by-nc,false,2017,6
+PMC5566825,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5568359,train,cc by,cc by,true,2017,4
+PMC5568719,train,cc by,cc by,true,2017,3
+PMC5569261,validation,cc by-nc,cc by-nc,false,2016,1
+PMC5569270,train,cc by-nc,cc by-nc,false,2016,2
+PMC5571493,train,cc by,cc by,true,2017,6
+PMC5571924,validation,cc by,cc by,true,2017,3
+PMC5572237,train,cc by,cc by,true,2017,2
+PMC5573300,train,cc by,cc by,true,2017,4
+PMC5573922,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5577662,train,cc by,cc by,true,2017,5
+PMC5578640,validation,cc by,cc by,true,2017,3
+PMC5579675,train,cc by,cc by,true,2017,5
+PMC5584005,validation,cc by,cc by,true,2017,5
+PMC5585595,train,cc by,cc by,true,2017,2
+PMC5586978,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5587697,train,cc by,cc by,true,2017,6
+PMC5587887,train,cc by,cc by,true,2017,2
+PMC5588713,train,cc by,cc by,true,2017,4
+PMC5588958,train,cc by-nc,cc by-nc,false,2017,5
+PMC5589093,train,cc by,cc by,true,2017,17
+PMC5590362,train,cc by-nc-sa,cc by-nc-sa,false,2017,4
+PMC5592353,train,cc by-nc,cc by-nc,false,2017,6
+PMC5593173,train,cc by,cc by,true,2017,4
+PMC5593355,train,none recorded,copyright notice only,false,2017,2
+PMC5593668,train,cc by,cc by,true,2017,4
+PMC5593818,train,cc by,cc by,true,2017,5
+PMC5594766,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5595267,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5597285,train,cc by,"open link or statement, restricting words in its text",false,2017,3
+PMC5598124,train,cc by-nc,cc by-nc,false,2017,4
+PMC5599448,test,cc by-nc,cc by-nc,false,2017,4
+PMC5599826,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5599918,train,cc by-nc,cc by-nc,false,2017,5
+PMC5600923,test,cc by,cc by,true,2017,5
+PMC5601935,train,cc by,cc by,true,2017,5
+PMC5602855,test,cc by,cc by,true,2017,3
+PMC5604064,train,cc by,cc by,true,2017,1
+PMC5604419,train,cc by,cc by,true,2017,2
+PMC5609057,train,cc by,cc by,true,2017,1
+PMC5609346,train,cc by-nc,cc by-nc,false,2017,5
+PMC5610004,test,cc by,cc by,true,2017,1
+PMC5610548,train,cc by,cc by,true,2017,6
+PMC5610684,train,cc by,cc by,true,2017,3
+PMC5610854,train,cc by,cc by,true,2017,3
+PMC5611398,train,cc by,cc by,true,2017,4
+PMC5614293,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5614421,train,cc by,cc by,true,2017,4
+PMC5614960,train,cc by,cc by,true,2017,4
+PMC5615289,train,cc by,cc by,true,2017,5
+PMC5615441,train,cc by,cc by,true,2017,1
+PMC5617873,validation,cc by,cc by,true,2016,6
+PMC5618071,train,cc by,cc by,true,2017,1
+PMC5619630,train,cc by-nc-nd,cc by-nc-nd,false,2015,4
+PMC5620095,test,cc by-nc,cc by-nc,false,2017,5
+PMC56204,train,none recorded,copyright notice only,false,2001,1
+PMC5622764,train,cc by,cc by,true,2017,2
+PMC5623327,train,cc by-nc,cc by-nc,false,2017,4
+PMC5623480,train,cc by-nc,cc by-nc,false,2017,1
+PMC5626376,train,cc by-nc,cc by-nc,false,2017,5
+PMC5627563,train,cc by-nc-sa,cc by-nc-sa,false,2017,7
+PMC5628593,train,cc by-nc-sa,cc by-nc-sa,false,2015,4
+PMC5629746,train,cc by,cc by,true,2017,5
+PMC5629940,train,cc by-nc,cc by-nc,false,2017,6
+PMC5630555,train,cc by-nc,cc by-nc,false,2017,3
+PMC5630558,train,cc by-nc,cc by-nc,false,2017,5
+PMC5633094,test,cc by-nc,cc by-nc,false,2017,2
+PMC5633216,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5633234,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5634356,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5634755,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5635946,train,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5636088,train,cc by,cc by,true,2017,5
+PMC5636096,train,cc by,cc by,true,2017,5
+PMC5641458,train,cc by,"open link or statement, restricting words in its text",false,2018,6
+PMC5642191,train,cc by,cc by,true,2017,3
+PMC5642889,train,cc by,cc by,true,2017,4
+PMC5643294,train,cc by-nc,cc by-nc,false,2017,6
+PMC5643992,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5643995,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5644405,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5648411,train,cc by-sa,cc by-sa,false,2017,2
+PMC5648980,train,cc by,cc by,true,2017,6
+PMC5651290,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5653840,train,cc by,cc by,true,2017,2
+PMC5654031,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5654157,train,cc by-nc,cc by-nc,false,2017,2
+PMC5654748,train,cc by-nc,cc by-nc,false,2017,3
+PMC5655345,train,cc by,cc by,true,2017,6
+PMC5655920,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5655938,train,cc by,cc by,true,2017,2
+PMC5656289,test,cc by,cc by,true,2016,5
+PMC5656562,train,none recorded,other non-commercial or no-modification terms,false,2017,5
+PMC5659064,train,cc by-nc,cc by-nc,false,2017,5
+PMC5661713,train,cc by-nc,"cc by-nc, by-nd or by-sa (words)",false,2017,1
+PMC5662512,train,cc by,cc by,true,2017,5
+PMC5662620,train,cc by,cc by,true,2017,5
+PMC5667629,train,cc by-nc,cc by-nc,false,2017,3
+PMC5668004,train,cc by,cc by,true,2017,4
+PMC5668343,train,cc by,cc by,true,2017,2
+PMC5668634,train,cc by,cc by,true,2017,3
+PMC5672307,train,cc by,cc by,true,2017,4
+PMC5673730,train,cc by,cc by,true,2017,6
+PMC5674649,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5680306,validation,cc by,cc by,true,2017,3
+PMC5682159,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5682702,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5683978,train,cc by-nc,cc by-nc,false,2017,6
+PMC5684963,train,cc by-nc-nd,cc by-nc-nd,false,2015,5
+PMC5685077,validation,none recorded,no statement,false,2017,4
+PMC5686687,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5687903,train,cc by-nc,cc by-nc,false,2017,3
+PMC5689110,train,cc by,cc by (words),true,2017,6
+PMC5694526,train,cc by-nc,cc by-nc,false,2017,4
+PMC5694844,validation,cc by,cc by,true,2017,4
+PMC5695311,train,cc by-nc,cc by-nc,false,2017,3
+PMC5695666,test,none recorded,other non-commercial or no-modification terms,false,2017,1
+PMC5697397,test,cc by,cc by,true,2017,5
+PMC5697645,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5698974,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5702366,test,cc by-nc,cc by-nc,false,2017,5
+PMC5702778,train,cc by-nc,cc by-nc,false,2018,6
+PMC5703870,train,cc by,cc by,true,2017,4
+PMC5704406,validation,cc by-nc-sa,cc by-nc-sa,false,2017,4
+PMC5704449,train,cc by,cc by,true,2017,6
+PMC5705350,test,cc by-nc,cc by-nc,false,2017,3
+PMC5706318,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5706695,train,cc by,cc by,true,2017,4
+PMC5706840,train,cc by,cc by,true,2017,1
+PMC5707229,validation,cc by,cc by,true,2017,1
+PMC5707237,train,cc by,cc by,true,2016,1
+PMC5707413,train,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5707653,train,cc by,cc by,true,2017,6
+PMC5710015,train,cc by,cc by,true,2017,4
+PMC5711682,train,cc by-nc,cc by-nc,false,2017,5
+PMC5712123,train,cc by,cc by,true,2017,4
+PMC5712637,train,cc by,cc by,true,2017,6
+PMC5714973,train,cc by,cc by,true,2017,4
+PMC5715878,train,cc by-nc-nd,cc by-nc-nd,false,2016,4
+PMC5716426,train,cc by,cc by,true,2017,4
+PMC5718865,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5719521,train,cc by,cc by,true,2017,5
+PMC5720557,train,cc by,cc by,true,2009,5
+PMC5721317,train,cc by,cc by,true,2017,5
+PMC5721363,train,cc by,cc by,true,2017,4
+PMC5721487,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5722109,train,cc by,cc by,true,2017,1
+PMC5722122,train,cc by,cc by,true,2017,5
+PMC5722253,test,cc by,cc by,true,2017,3
+PMC5722980,train,cc by,cc by,true,2017,2
+PMC5723032,,cc by,cc by,true,2017,0
+PMC5723168,train,cc by-nc,cc by-nc,false,2017,1
+PMC5724392,train,cc by-nc-nd,cc by-nc-nd,false,2015,2
+PMC5725027,train,cc by,cc by,true,2017,4
+PMC5725301,validation,cc by-nc,cc by-nc,false,2017,1
+PMC5726464,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5728078,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5728271,train,cc by-nc,cc by-nc,false,2017,2
+PMC5729252,train,cc by,cc by,true,2017,2
+PMC5729492,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5729494,,cc by-nc,cc by-nc,false,2017,0
+PMC5729670,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5730627,train,cc by-nc,cc by-nc,false,2017,4
+PMC5731010,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5732440,train,cc by,cc by,true,2017,2
+PMC5732479,validation,cc by,cc by,true,2017,3
+PMC5732507,train,cc by,cc by,true,2017,1
+PMC5732563,train,cc by-nc,cc by-nc,false,2017,5
+PMC5735450,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5735476,train,cc by-nc-sa,cc by-nc-sa,false,2017,6
+PMC5735483,validation,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5735484,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5735486,validation,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5737852,train,cc by-nc,cc by-nc,false,2017,4
+PMC5737953,train,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC5738810,train,cc by,cc by,true,2017,8
+PMC5738975,train,cc by,cc by,true,2018,3
+PMC5739614,train,cc by,cc by,true,2017,2
+PMC5739620,train,cc by,cc by,true,2017,2
+PMC5739798,train,cc by,cc by,true,2017,4
+PMC5740257,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5741263,train,cc by,cc by,true,2017,3
+PMC5741844,train,cc by,cc by,true,2017,4
+PMC5741924,train,cc by,cc by,true,2017,4
+PMC5741948,test,cc by,cc by,true,2017,3
+PMC5742427,train,cc by,cc by,true,2017,6
+PMC5742508,train,cc by,cc by,true,2017,4
+PMC5742644,train,cc by,cc by,true,2017,5
+PMC5745479,train,cc by,cc by,true,2017,4
+PMC5746685,train,cc by,cc by,true,2017,3
+PMC5746709,test,cc by,cc by,true,2017,2
+PMC5747102,train,cc by,cc by,true,2017,3
+PMC5747107,train,cc by,cc by,true,2017,3
+PMC5747130,train,cc by,cc by,true,2017,4
+PMC5747224,train,cc by-nc-sa,cc by-nc-sa,false,2017,4
+PMC5749033,validation,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5752784,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5752787,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5752804,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5753687,train,cc by-nc,cc by-nc,false,2018,2
+PMC5753932,train,cc by,cc by,true,2017,1
+PMC5754420,train,cc by,cc by,true,2017,6
+PMC5754508,validation,cc by-nc,cc by-nc,false,2018,2
+PMC5755346,train,cc by,cc by,true,2018,2
+PMC5755650,train,cc by-nc,cc by-nc,false,2018,3
+PMC5756602,train,cc by,cc by,true,2018,4
+PMC5758845,train,cc by,cc by,true,2017,5
+PMC5758851,train,cc by,cc by,true,2017,6
+PMC5759220,validation,cc by,cc by,true,2018,3
+PMC5760819,train,cc by-nc-nd,cc by-nc-nd,false,2012,2
+PMC5761719,train,cc by,cc by,true,2018,4
+PMC5762262,train,none recorded,other non-commercial or no-modification terms,false,2017,5
+PMC5762805,train,cc by,cc by,true,2017,4
+PMC5762815,train,cc by,cc by,true,2017,5
+PMC5762965,train,cc by-nc-nd,cc by-nc-nd,false,2018,7
+PMC5763662,test,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5766333,validation,cc by-nc-nd,cc by-nc-nd,false,2018,7
+PMC5767990,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5768344,train,cc by,cc by,true,2017,7
+PMC5769181,validation,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5769187,test,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5769191,validation,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5769198,train,cc by-nc-sa,cc by-nc-sa,false,2018,5
+PMC5769202,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5771057,validation,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5771357,train,cc by,cc by,true,2018,5
+PMC5771358,test,cc by,cc by,true,2018,5
+PMC5771543,train,cc by-nc,cc by-nc,false,2018,3
+PMC5771895,train,cc by,cc by,true,2018,4
+PMC5772830,train,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5773205,train,cc by,cc by,true,2018,3
+PMC5773922,train,cc by,cc by,true,2018,5
+PMC5773984,validation,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5773985,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5773988,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5774613,train,cc by-nc,cc by-nc,false,2017,5
+PMC57749,train,none recorded,copyright notice only,false,2001,1
+PMC57750,train,none recorded,copyright notice only,false,2001,2
+PMC57751,train,none recorded,copyright notice only,false,2001,5
+PMC5776520,train,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5777197,train,cc by-nc,cc by-nc,false,2018,2
+PMC5777419,train,cc by,cc by,true,2018,2
+PMC5777424,train,cc by,cc by,true,2018,2
+PMC5777641,train,cc by,cc by,true,2018,4
+PMC5777645,test,cc by,cc by,true,2018,3
+PMC5777682,train,cc by-nd,cc by-nd,false,2017,4
+PMC5777927,validation,cc by-nc-nd,cc by-nc-nd,false,2018,1
+PMC5777928,train,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC5781260,train,cc by,cc by,true,2018,6
+PMC5781264,train,cc by,cc by,true,2018,2
+PMC5781293,test,cc by,cc by,true,2018,4
+PMC5782437,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5782456,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5784025,train,cc by,cc by,true,2018,5
+PMC5787910,train,cc by-nc-sa,cc by-nc-sa,false,2017,4
+PMC5788508,test,cc by-nc,cc by-nc,false,2017,2
+PMC5788993,train,cc by-nc,cc by-nc,false,2018,5
+PMC5789132,validation,cc by,cc by,true,2017,3
+PMC5789491,train,cc by-nc-sa,cc by-nc-sa,false,2018,5
+PMC5789501,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5789502,test,cc by-nc-sa,cc by-nc-sa,false,2018,3
+PMC5789504,train,cc by-nc-sa,cc by-nc-sa,false,2018,3
+PMC5789513,test,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5789697,train,cc by,cc by,true,2018,1
+PMC5790265,train,cc by,cc by,true,2018,2
+PMC5791393,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5791397,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5791430,train,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5791441,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5791469,train,cc by-nc-sa,cc by-nc-sa,false,2018,6
+PMC5791588,train,cc by,cc by,true,2018,2
+PMC5793008,train,cc by-nc-sa,cc by-nc-sa,false,2017,5
+PMC5797014,validation,cc by,cc by,true,2018,1
+PMC5799931,test,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5799985,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5799986,test,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5799988,validation,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5799990,train,cc by-nc-sa,cc by-nc-sa,false,2017,2
+PMC5800236,test,cc by,cc by,true,2018,1
+PMC5801240,train,cc by-nc,cc by-nc,false,2017,4
+PMC5801479,train,cc by,cc by,true,2018,3
+PMC5801514,train,cc by,cc by,true,2018,4
+PMC5801518,validation,cc by,cc by,true,2018,3
+PMC5803937,train,cc by-nc-sa,cc by-nc-sa,false,2018,6
+PMC5805208,train,cc by-nc,cc by-nc,false,2017,2
+PMC5805261,train,cc by,cc by,true,2018,3
+PMC5805426,train,cc by-nd,cc by-nd,false,2018,1
+PMC5805693,train,cc by,cc by,true,2018,4
+PMC5807031,train,cc by,cc by,true,2018,4
+PMC5807505,train,cc by,cc by,true,2017,3
+PMC5807510,train,cc by,cc by,true,2018,3
+PMC5807541,validation,cc by,cc by,true,2018,1
+PMC5807625,train,cc by,cc by,true,2018,2
+PMC5808274,train,cc by-nc-nd,cc by-nc-nd,false,2018,6
+PMC5808396,train,cc by,cc by,true,2018,3
+PMC5808689,train,cc by-nc,cc by-nc,false,2018,3
+PMC5808926,train,cc by,cc by,true,2018,2
+PMC5809626,train,cc by,cc by,true,2018,1
+PMC5809703,test,cc by-nc,cc by-nc,false,2018,3
+PMC5809706,train,cc by-nc,cc by-nc,false,2018,4
+PMC5809707,train,cc by-nc,cc by-nc,false,2018,6
+PMC5809709,train,cc by-nc,cc by-nc,false,2018,7
+PMC5809875,train,cc by,cc by,true,2018,2
+PMC5811944,train,none recorded,cc by (words),true,2017,3
+PMC5812048,train,cc by,cc by,true,2018,6
+PMC5812864,train,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5812876,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5812877,train,cc by-nc-nd,cc by-nc-nd,false,2017,4
+PMC5812981,train,cc by,cc by,true,2018,2
+PMC5812983,train,cc by,cc by,true,2018,1
+PMC5813072,train,cc by,cc by,true,2017,4
+PMC5814604,train,cc by,cc by,true,2018,2
+PMC5815237,test,cc by,cc by,true,2018,1
+PMC5815696,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5816054,validation,cc by,cc by,true,2018,2
+PMC5816528,test,cc by,cc by,true,2018,4
+PMC5816600,train,cc by,cc by,true,2018,2
+PMC5817800,train,cc by,cc by,true,2018,1
+PMC5818014,test,cc by,cc by,true,2018,2
+PMC5818021,train,cc by-nc,cc by-nc,false,2017,2
+PMC5819580,train,cc by-nc,cc by-nc,false,2018,6
+PMC5819581,test,cc by-nc,cc by-nc,false,2018,3
+PMC5820389,train,cc by,cc by,true,2017,3
+PMC5820800,train,cc by,cc by,true,2018,2
+PMC5822856,train,cc by-nc,cc by-nc,false,2018,3
+PMC5826979,train,cc by,cc by,true,2018,2
+PMC5827032,validation,cc by,cc by,true,2018,3
+PMC5827033,train,cc by-nc,cc by-nc,false,2018,5
+PMC5827042,train,cc by,cc by,true,2018,2
+PMC5827295,train,cc by,cc by,true,2018,1
+PMC5827302,train,cc by,cc by,true,2018,4
+PMC5827422,train,cc by,cc by,true,2018,5
+PMC5827475,train,cc by-nc-sa,cc by-nc-sa,false,2018,5
+PMC5827476,validation,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5827478,train,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5827507,train,cc by-nc-sa,cc by-nc-sa,false,2017,3
+PMC5830079,train,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5830087,train,cc by,cc by,true,2018,2
+PMC5831281,train,cc by-nc-sa,cc by-nc-sa,false,2017,1
+PMC5832511,train,cc by,cc by,true,2017,5
+PMC5834094,train,cc by,cc by,true,2017,3
+PMC5834159,train,cc by,cc by,true,2018,3
+PMC5835461,train,cc by-nc-nd,cc by-nc-nd,false,2017,5
+PMC5835557,train,cc by-nc-nd,cc by-nc-nd,false,2018,2
+PMC5835896,test,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5836868,test,cc by-nc,cc by-nc,false,2017,2
+PMC5836873,train,cc by-nc,cc by-nc,false,2017,4
+PMC5838771,train,cc by,cc by,true,2018,3
+PMC5838794,validation,cc by-nc,cc by-nc,false,2018,3
+PMC5838916,train,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5839221,train,cc by,cc by,true,2016,5
+PMC5840188,train,cc by-nc,cc by-nc,false,2018,2
+PMC5840243,train,cc by,cc by,true,2017,2
+PMC5840469,test,cc by-nc,cc by-nc,false,2018,4
+PMC5842245,train,cc by,cc by,true,2017,1
+PMC5842470,train,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5842771,train,cc by-nc,cc by-nc,false,2018,2
+PMC5843211,train,cc by,cc by,true,2018,1
+PMC5843437,validation,cc by-nc-nd,cc by-nc-nd,false,2017,3
+PMC5843959,train,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5844373,train,cc by-nc,cc by-nc,false,2018,2
+PMC5844532,train,cc by,cc by,true,2018,2
+PMC5844554,train,cc by,cc by,true,2018,4
+PMC5845721,validation,cc by,cc by,true,2018,3
+PMC5845829,train,cc by-nc-nd,cc by-nc-nd,false,2015,1
+PMC5846302,train,cc by-nc,cc by-nc,false,2018,3
+PMC5846971,test,cc by,cc by,true,2017,2
+PMC5847600,train,cc by,cc by,true,2018,3
+PMC5850145,train,cc by,cc by,true,2018,4
+PMC5850179,train,cc by-nc,cc by-nc,false,2018,3
+PMC5850185,test,cc by-nc,cc by-nc,false,2018,3
+PMC5850768,train,cc by-nc,cc by-nc,false,2017,3
+PMC5850777,train,cc by,cc by,true,2017,3
+PMC5850960,train,cc by,cc by,true,2018,4
+PMC5851005,train,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5851532,train,cc by,cc by,true,2018,1
+PMC5851630,train,cc by,cc by,true,2018,1
+PMC5852701,train,cc by,cc by,true,2018,4
+PMC5852772,train,cc by,cc by,true,2018,4
+PMC5852777,train,cc by,cc by,true,2018,3
+PMC5852865,train,cc by,cc by,true,2018,2
+PMC5852933,test,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5852975,train,cc by,cc by,true,2018,8
+PMC5853038,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5854362,train,cc by,cc by,true,2018,1
+PMC5856421,train,cc by,cc by,true,2018,3
+PMC5856890,train,cc by-nc,cc by-nc,false,2017,2
+PMC5856907,train,cc by-nc-sa,cc by-nc-sa,false,2018,5
+PMC5856914,train,cc by-nc,cc by-nc,false,2018,1
+PMC5858078,train,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5858425,train,cc by,cc by,true,2018,5
+PMC5859768,train,cc by-nc,cc by-nc,false,2018,4
+PMC5860698,train,cc0,cc0,true,2018,1
+PMC5861369,train,cc by-nc,cc by-nc,false,2018,4
+PMC5861900,train,cc by,cc by,true,2017,5
+PMC5862000,train,none recorded,general statement only,false,2018,2
+PMC5862001,train,cc by-nc-nd,cc by-nc-nd,false,2018,2
+PMC5862433,train,cc by,cc by,true,2018,1
+PMC5863299,train,cc by,cc by,true,2018,4
+PMC5863413,train,cc by-nc-sa,cc by-nc-sa,false,2018,6
+PMC5863418,test,cc by-nc-sa,cc by-nc-sa,false,2018,2
+PMC5863632,validation,cc by,cc by,true,2018,5
+PMC5864139,train,none recorded,other non-commercial or no-modification terms,false,2017,3
+PMC5865491,train,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5865731,train,cc by,cc by,true,2018,6
+PMC5866333,train,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC5866486,train,cc by,cc by,true,2018,1
+PMC5866733,validation,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5866829,train,cc by,cc by,true,2017,3
+PMC5866927,validation,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC5867479,train,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5868223,train,cc by-nc-sa,cc by-nc-sa,false,2018,4
+PMC5870330,train,cc by-nc-sa,cc by-nc-sa,false,2018,3
+PMC5870915,train,cc by,cc by,true,2018,4
+PMC5873424,test,cc by-nc-nd,cc by-nc-nd,false,2017,1
+PMC5873437,train,cc by-nc,cc by-nc,false,2018,3
+PMC5873829,train,cc by,cc by,true,2018,2
+PMC5874317,train,cc by,cc by,true,2018,6
+PMC5874977,train,cc by,cc by,true,2018,1
+PMC5876016,validation,none recorded,other non-commercial or no-modification terms,false,2016,2
+PMC5878866,test,cc by,cc by,true,2018,4
+PMC5880177,test,cc by,cc by,true,2018,3
+PMC5880517,test,cc by-nc,cc by-nc,false,2018,3
+PMC5881763,validation,cc by-nc,cc by-nc,false,2018,6
+PMC5883519,train,cc by,cc by,true,2018,5
+PMC5883528,train,cc by,cc by,true,2018,5
+PMC58836,train,none recorded,verbatim copying only,false,2001,3
+PMC5884496,train,cc by,cc by,true,2018,2
+PMC5884508,train,cc by,cc by,true,2018,2
+PMC5884950,train,cc by,cc by,true,2018,2
+PMC5886394,train,cc by,cc by,true,2018,6
+PMC5887937,train,cc by-nc-nd,cc by-nc-nd,false,2017,6
+PMC5889380,train,cc by,cc by,true,2018,1
+PMC5890227,train,cc by-nc-nd,cc by-nc-nd,false,2017,2
+PMC5891027,train,cc by,cc by,true,2018,4
+PMC5891985,train,cc by,cc by,true,2018,2
+PMC5892275,train,cc by,cc by,true,2018,6
+PMC5893461,train,cc by-nc-nd,cc by-nc-nd,false,2018,2
+PMC5897859,train,cc by-nc,cc by-nc,false,2018,5
+PMC5898527,train,cc by-nc-nd,cc by-nc-nd,false,2018,1
+PMC5900060,train,cc by-nc,cc by-nc,false,2018,1
+PMC5904467,train,cc by-nc,cc by-nc,false,2018,2
+PMC5908397,train,cc by,cc by,true,2018,5
+PMC5909776,validation,cc by-nc,cc by-nc,false,2018,5
+PMC5910333,test,cc by,cc by,true,2018,6
+PMC5911298,train,cc by,cc by,true,2018,6
+PMC5916905,validation,cc by,cc by,true,2018,5
+PMC5919699,train,cc by,cc by,true,2018,2
+PMC5920342,train,cc by-nc-nd,cc by-nc-nd,false,2018,5
+PMC5923799,train,cc by,cc by,true,2018,6
+PMC5925011,train,cc by,cc by,true,2018,4
+PMC5927490,train,cc by-nc,"cc by-nc, by-nd or by-sa (words)",false,2018,5
+PMC5928132,train,cc by,cc by,true,2018,3
+PMC5928476,train,cc by,cc by,true,2018,1
+PMC5932317,train,cc by-nc,cc by-nc,false,2018,2
+PMC5934937,test,cc by,cc by,true,2017,2
+PMC5934946,train,cc by-nc-sa,cc by-nc-sa,false,2018,1
+PMC5936036,train,cc by-nc,conflicting license links,false,2018,2
+PMC5937443,test,cc by,cc by,true,2018,5
+PMC5937795,train,cc by,cc by,true,2018,5
+PMC5940475,test,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5941723,train,cc by,cc by,true,2018,5
+PMC5944439,train,cc by,cc by,true,2018,5
+PMC5946268,train,cc by,cc by,true,2018,5
+PMC5947263,test,cc by-nc,cc by-nc,false,2017,5
+PMC5951568,train,cc by,cc by,true,2018,3
+PMC5951872,train,cc by,cc by,true,2018,3
+PMC5954168,train,cc by,cc by,true,2018,2
+PMC5956569,validation,cc by-nc,cc by-nc,false,2017,2
+PMC5957406,train,cc by,cc by,true,2018,5
+PMC5958330,train,cc by,cc by,true,2018,3
+PMC5958473,train,cc by-nc,cc by-nc,false,2017,4
+PMC59604,train,none recorded,copyright notice only,false,2000,4
+PMC5960495,train,cc by-nc,cc by-nc,false,2018,4
+PMC59610,train,none recorded,copyright notice only,false,2000,4
+PMC5963741,train,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC59647,train,none recorded,verbatim copying only,false,2001,1
+PMC5966460,test,cc by,cc by,true,2018,2
+PMC5966469,train,cc by,cc by,true,2018,1
+PMC5966929,train,cc by,cc by,true,2018,1
+PMC5968838,test,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5971365,train,cc by-nc,cc by-nc,false,2017,5
+PMC5971505,train,cc by-nc,cc by-nc,false,2017,6
+PMC5972262,validation,cc by-nc,cc by-nc,false,2018,3
+PMC5976302,validation,cc by-nc-nd,cc by-nc-nd,false,2018,3
+PMC5976307,train,cc by-nc-nd,cc by-nc-nd,false,2018,4
+PMC5976501,train,cc by,cc by,true,2018,2
+PMC5976807,train,cc by-nc-nd,cc by-nc-nd,false,2018,1
+PMC5976852,,cc by-nc-nd,cc by-nc-nd,false,2018,0
+PMC5976899,train,cc by,cc by,true,2018,2
+PMC5976903,train,cc by,cc by,true,2018,6
+PMC5976949,validation,cc by,cc by,true,2018,3
+PMC5976950,train,cc by,cc by,true,2018,4
+PMC5976967,train,cc by,cc by,true,2018,1
+PMC5977143,test,cc by,cc by,true,2018,2
+PMC5980265,train,cc by-nc,cc by-nc,false,2018,3
+PMC5980306,test,cc by-nc,cc by-nc,false,2018,2
+PMC5980378,train,cc by-nc,cc by-nc,false,2018,1
+PMC5980435,train,cc by-nc,cc by-nc,false,2018,2
+PMC5980459,train,cc by-nc,cc by-nc,false,2018,2
+PMC5982050,validation,cc by,cc by,true,2018,2
+PMC5983010,train,cc by-nc,cc by-nc,false,2018,2
+PMC5984011,train,cc by-nc-nd,cc by-nc-nd,false,2018,6
+PMC5984413,test,cc by,cc by,true,2018,3
+PMC5985578,train,cc by,cc by,true,2018,3
+PMC5985618,train,cc by,cc by,true,2018,3
+PMC5985784,train,cc by-nc,cc by-nc,false,2018,8
+PMC5985865,train,cc by-nc,"cc by-nc, by-nd or by-sa (words)",false,2018,2
+PMC5985893,train,cc by-nc,"cc by-nc, by-nd or by-sa (words)",false,2018,1
+PMC5986437,train,cc by,cc by,true,2018,1
+PMC5986443,train,cc by,cc by,true,2018,7
+PMC5986449,train,cc by,cc by,true,2018,3
+PMC5986454,train,cc by,cc by,true,2018,5
+PMC5986466,train,cc by,cc by,true,2018,5
+PMC5986478,train,cc by,cc by,true,2018,5
+PMC5986495,train,cc by,cc by,true,2018,5
+PMC5986505,train,cc by,cc by,true,2018,5
+PMC5986513,train,cc by,cc by,true,2018,2
+PMC5986584,train,none recorded,other non-commercial or no-modification terms,false,2017,4
+PMC5988794,train,cc by-nc-nd,cc by-nc-nd,false,2018,2
+PMC5989624,train,cc by-nc-nd,cc by-nc-nd,false,2018,1
+PMC59899,train,none recorded,verbatim copying only,false,2001,5
+PMC59901,train,none recorded,verbatim copying only,false,2001,2
+PMC60007,train,none recorded,verbatim copying only,false,2001,4
+PMC60658,train,none recorded,verbatim copying only,false,2001,1
+PMC60660,train,none recorded,verbatim copying only,false,2001,1
+PMC64502,train,none recorded,verbatim copying only,false,2001,1
+PMC65045,train,none recorded,verbatim copying only,false,2002,2
+PMC65514,train,none recorded,verbatim copying only,false,2002,2
+PMC65527,train,none recorded,verbatim copying only,false,2002,3
+PMC65676,train,none recorded,verbatim copying only,false,2002,1
+PMC65683,train,none recorded,verbatim copying only,false,2002,2
+PMC88884,train,none recorded,verbatim copying only,false,2002,9

@@ -1,0 +1,32 @@
+{
+ "plan": "docs/prompt_session8.md, step 15 (correction 3)",
+ "rows": 6998,
+ "members": {
+  "lightgbm_tuned": {
+   "file": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_test.csv",
+   "rows": 6998,
+   "sha256": "d95f7b88682bd0079b995b93f6d2a6cd32b958ff20a1694ce11e7b058a9eefb8"
+  },
+  "xgboost_tuned": {
+   "file": "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_test.csv",
+   "rows": 6998,
+   "sha256": "6270bd113a1ac6c6cfb3162916be29e02de7d99daf163664c6797ca65ffddbd7"
+  },
+  "catboost_tuned": {
+   "file": "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_test.csv",
+   "rows": 6998,
+   "sha256": "daab3899a1f290f0532d92bed1fa76b9aa6a643d05e86c8689a7f39fff429d33"
+  },
+  "arm_laya": {
+   "file": "results/public_v0/predictions/arm_laya_readmit_window_test.csv",
+   "rows": 6998,
+   "sha256": "4e9693e39f38d85a5c915c15246ec22812e2c3901c02fbcf132f0143fe46cb4f"
+  },
+  "s7_b3": {
+   "file": "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_test.csv",
+   "rows": 6998,
+   "sha256": "c0f87bbc845d9481fb83a3509274f5e74fb679f71347d18d673541f020bbb690"
+  }
+ },
+ "time_utc": "2026-10-01T02:52:35Z"
+}

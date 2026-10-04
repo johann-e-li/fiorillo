@@ -1,0 +1,50 @@
+{
+ "plan": "docs/prompt_session9.md, steps 9 and 13: the pod's times, rate and cost and the Runpod balance, as read from the Runpod console (Claude in Chrome, read only except the stop and the termination under step 8's advance approval) and recorded in docs/log.md",
+ "written_utc": "2026-10-02T15:56:11Z",
+ "pod": "gn7mjxvzwz4xne",
+ "as_deployed": {
+  "gpu": "1 x H100 SXM (80 GB)",
+  "gpu_memory_gb": 80,
+  "region": "US-NE-1",
+  "cloud": "Secure Cloud",
+  "pricing": "On-Demand",
+  "vcpu": 26,
+  "memory_gb": 251,
+  "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+  "container_disk_gb": 200,
+  "volume": null,
+  "compute_hourly_usd": 3.49,
+  "disk_hourly_usd": 0.028,
+  "hourly_usd": 3.52,
+  "source": "docs/log.md, session 9, step 9 (the console's pod page at deployment)"
+ },
+ "audit_log_utc": {
+  "created": "2026-10-01T15:55:18Z",
+  "first_stopped": "2026-10-01T15:55:27Z",
+  "started": "2026-10-01T16:00:24Z",
+  "stopped": "2026-10-02T15:29:23Z",
+  "deleted": "2026-10-02T15:29:57Z",
+  "source": "the console's Audit logs page, read at 15:32 UTC on 2 October (shown in Eastern time, converted to UTC)"
+ },
+ "jupyter_started_utc": "2026-10-01T16:30:55Z",
+ "balance_usd": {
+  "before_the_pod": 140.0,
+  "before_the_pod_source": "docs/log.md, session 9, step 8",
+  "after_the_pod": 59.07,
+  "after_the_pod_read_utc": "2026-10-02T15:32:29Z",
+  "note": "the console's Billing page says billing data is 1 hour behind, so the last hour's charge may post later"
+ },
+ "billing_explorer_usd": {
+  "2026-10-01": {
+   "total": 36.299,
+   "gpu_cloud": 36.035,
+   "storage": 0.264
+  },
+  "2026-10-02": {
+   "total": 51.007,
+   "gpu_cloud": 50.604,
+   "storage": 0.403
+  },
+  "note": "read at about 15:31 UTC on 2 October, 1 hour behind; 1 October's figures include session 8's pod until 02:44:54 UTC"
+ }
+}

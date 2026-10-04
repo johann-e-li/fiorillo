@@ -1,0 +1,31 @@
+{
+  "system": "s9_b_3",
+  "phase_dir": "/root/eddm_s9/models/s9_b_3",
+  "device": "cuda",
+  "max_len": 4096,
+  "batch_size": 4,
+  "questions": "src/questions/session8.yaml",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "items_test": {
+    "records": 1218,
+    "items": 1218,
+    "skipped": 0,
+    "truncated": 0
+  },
+  "timing_test": {
+    "items": 1218,
+    "forward_seconds": 221.05058671100414,
+    "seconds_per_item": 0.18148652439327106,
+    "items_per_second": 5.510050971239366,
+    "note": "the model's passes over the built items, GPU synchronized; tokenizing and item building not counted"
+  },
+  "test_per_question_raw": {
+    "evidence_effect": {
+      "n": 1218,
+      "accuracy": 0.9278,
+      "log_loss": 0.2492,
+      "ece": 0.0367
+    }
+  }
+}

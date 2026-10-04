@@ -1,0 +1,20 @@
+{
+ "source": "src/eval/power_session9.py validation (power_session8.validation)",
+ "plan": "docs/prompt_session9.md, POWER AND THE BAR (the calibrate stage)",
+ "note": "For the record only; the bar does not change. Measured on EI's validation split; no test prediction is read.",
+ "records": "/root/eddm_s9/code/data/processed/session8/evidence_effect_validation.jsonl",
+ "system": "/root/eddm_s9/code/results/fiorillo_v0_5/predictions/s9_ei_wavg_evidence_effect_validation.csv",
+ "reference": "/root/eddm_s9/code/results/fiorillo_v0_5/predictions/gemma4_31b_long_evidence_effect_validation.csv",
+ "n_validation": 1237,
+ "articles_validation": 340,
+ "validation_mean_difference": -0.13902130170093827,
+ "s": 0.7519887028615374,
+ "variance_article_resamples": 0.0007271427828970458,
+ "variance_prompt_resamples": 0.000462689191533725,
+ "D": 1.5715577458957024,
+ "n_test": 1218,
+ "se_test": 0.02701175760480293,
+ "pass_line": -0.052942072064539644,
+ "real_gain_for_80_percent": 0.07567574082086644,
+ "chance_at_validation_difference": 0.9992805495729447
+}

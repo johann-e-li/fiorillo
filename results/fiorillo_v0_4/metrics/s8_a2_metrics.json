@@ -1,0 +1,66 @@
+{
+  "system": "s8_a2",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": false,
+  "freeze_encoder_steps": 0,
+  "autocast": "torch.float16",
+  "eval_every": 0,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/s8_a1",
+  "rows": {
+    "train": 30599,
+    "validation": 2150,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 957,
+  "max_len": 768,
+  "elapsed_seconds": 919.7,
+  "train_seconds": 883.4,
+  "sequences_per_second": 34.64,
+  "validation_history": [
+    {
+      "n": 2150,
+      "accuracy": 0.9377,
+      "log_loss": 0.188,
+      "ece": 0.0188,
+      "selection_log_loss": 0.6259,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7667,
+          "log_loss": 0.6259,
+          "ece": 0.0891
+        }
+      },
+      "epoch": 1,
+      "step": 957,
+      "elapsed_seconds": 902.5
+    }
+  ],
+  "best_validation_selection_log_loss": 0.6259,
+  "best_validation_selection_log_loss_exact": 0.6259,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 0.6259,
+  "temperature": {
+    "pubmedqa_answer": 1.399
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 2150,
+    "accuracy": 0.9377,
+    "log_loss": 0.188,
+    "ece": 0.0188
+  },
+  "test": "not run (--no-test)"
+}

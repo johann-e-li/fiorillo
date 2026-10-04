@@ -1,0 +1,14 @@
+2026-10-02T13:28:21Z  stage biogpt started
+2026-10-02T13:28:21Z  GPU free: 0 MiB used
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  4.07it/s]Fetching 7 files: 100%|██████████| 7/7 [00:58<00:00,  8.66s/it]Fetching 7 files: 100%|██████████| 7/7 [00:58<00:00,  8.30s/it]
+microsoft/BioGPT-Large-PubMedQA downloaded at 39c04fb31dfc8094b0f04c7bb7973cf612606c0c
+{
+ "checkpoint_arguments": "not read: network failure: URLError: <urlopen error [Errno -2] Name or service not known>; no time was left for another attempt",
+ "values": null,
+ "seconds": 587.321,
+ "bytes_read": 0
+}
+Loading weights:   0%|          | 0/773 [00:00<?, ?it/s]Loading weights: 100%|██████████| 773/773 [00:00<00:00, 34991.01it/s]
+biogpt_large_pqa validation: 150 rows written to results/fiorillo_v0_5/predictions/biogpt_large_pqa-raw_pubmedqa_answer_validation.csv; 18 sources cut; 4.6 forward seconds; answers' median summed probability 0.9982
+2026-10-02T13:39:25Z  stage biogpt finished

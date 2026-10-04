@@ -1,0 +1,296 @@
+{
+ "plan": "docs/prompt_session9.md, THE RECIPE RULE (with corrections 2 and 3)",
+ "written_utc": "2026-10-02T12:17:03Z",
+ "n_clean_validation": 654,
+ "folds": 5,
+ "repeats": 20,
+ "seed": 20260927,
+ "dropped": [],
+ "margin": {
+  "m": 0.011030111591098957,
+  "spread": 0.011030111591098957,
+  "floor": 0.005,
+  "base_scores": {
+   "s9_b_1": 0.21711453609383038,
+   "s9_b_2": 0.20608442450273143,
+   "s9_b_3": 0.20941300238923982
+  }
+ },
+ "s9_b": {
+  "runs": [
+   "s9_b_1",
+   "s9_b_2",
+   "s9_b_3"
+  ],
+  "score": 0.20673370971268284
+ },
+ "candidates": {
+  "swap": {
+   "runs": [
+    "s9_swap_1",
+    "s9_swap_2"
+   ],
+   "scores": {
+    "s9_swap_1": 0.20997632376328226,
+    "s9_swap_2": 0.21744065375691393
+   },
+   "score": 0.2137084887600981,
+   "base_mean_12": 0.2115994802982809,
+   "m": 0.011030111591098957,
+   "below_base_mean_by_more_than_m": false,
+   "run_1_below_s9_b_1": true,
+   "run_2_below_s9_b_2": false,
+   "passes": false,
+   "rule": "two runs (correction 2)"
+  },
+  "long": {
+   "runs": [
+    "s9_long_1",
+    "s9_long_2"
+   ],
+   "scores": {
+    "s9_long_1": 0.18155562441134596,
+    "s9_long_2": 0.18518353577660362
+   },
+   "score": 0.1833695800939748,
+   "base_mean_12": 0.2115994802982809,
+   "m": 0.011030111591098957,
+   "below_base_mean_by_more_than_m": true,
+   "run_1_below_s9_b_1": true,
+   "run_2_below_s9_b_2": true,
+   "passes": true,
+   "rule": "two runs (correction 2)"
+  },
+  "lr1": {
+   "runs": [
+    "s9_lr1_1",
+    "s9_lr1_2"
+   ],
+   "scores": {
+    "s9_lr1_1": 0.21529627523306932,
+    "s9_lr1_2": 0.2014746142371678
+   },
+   "score": 0.20838544473511855,
+   "base_mean_12": 0.2115994802982809,
+   "m": 0.011030111591098957,
+   "below_base_mean_by_more_than_m": false,
+   "run_1_below_s9_b_1": true,
+   "run_2_below_s9_b_2": true,
+   "passes": false,
+   "rule": "two runs (correction 2)"
+  },
+  "lr2": {
+   "runs": [
+    "s9_lr2_1",
+    "s9_lr2_2"
+   ],
+   "scores": {
+    "s9_lr2_1": 0.2053419829189364,
+    "s9_lr2_2": 0.19833197305560718
+   },
+   "score": 0.2018369779872718,
+   "base_mean_12": 0.2115994802982809,
+   "m": 0.011030111591098957,
+   "below_base_mean_by_more_than_m": false,
+   "run_1_below_s9_b_1": true,
+   "run_2_below_s9_b_2": true,
+   "passes": false,
+   "rule": "two runs (correction 2)"
+  }
+ },
+ "learning_rate": {
+  "passing": [],
+  "chosen": null,
+  "rule": "lr1 and lr2 count as one change; if both pass, the one with the lower mean score"
+ },
+ "passing_changes": [
+  "long"
+ ],
+ "combination": {
+  "called": false,
+  "parts": [
+   "long"
+  ]
+ },
+ "winner": {
+  "recipe": "long",
+  "settings": {
+   "recipe": "long",
+   "lr_adapters": 5e-05,
+   "epochs": 2,
+   "max_len": 6144,
+   "memory_setting": "long",
+   "train_records": "data/processed/session9/long/evidence_effect_train.jsonl",
+   "monitor_records": "data/processed/session9/long/evidence_effect_validation_monitor.jsonl",
+   "train_items": "long_train",
+   "monitor_items": "long_monitor",
+   "validation_records_dir": "data/processed/session9/long",
+   "exchanged_validation_dir": "data/processed/session9/checks/swap_long"
+  },
+  "rule": "the combination if it passed; otherwise the passing candidate with the lowest score; otherwise base",
+  "runs": [
+   "s9_long_1",
+   "s9_long_2",
+   "s9_long_3"
+  ]
+ },
+ "s9_ei": {
+  "runs": [
+   "s9_long_1",
+   "s9_long_2",
+   "s9_long_3"
+  ],
+  "score": 0.17899480125120046
+ },
+ "weight_average": {
+  "built": true,
+  "score": 0.1780834342525998,
+  "s9_ei_score": 0.17899480125120046,
+  "m": 0.011030111591098957,
+  "uses_wavg": true,
+  "rule": "v0.5 uses s9_ei_wavg if its score is not above s9_ei's by more than m"
+ },
+ "swap_averaging": {
+  "system": "s9_ei_wavg",
+  "plain_score": 0.1780834342525998,
+  "swap_averaged_score": 0.25151158194638357,
+  "m": 0.011030111591098957,
+  "kept": false,
+  "exchanged_records": "data/processed/session9/checks/swap_long",
+  "exchanged_prompts": 1237,
+  "rule": "swap averaging is kept if the swap-averaged score is below the plain one by more than m (correction 3)"
+ },
+ "v05_ei": {
+  "system": "s9_ei_wavg",
+  "base_system": "s9_ei_wavg",
+  "swap_averaging": false,
+  "recipe": "long",
+  "runs": [
+   "s9_long_1",
+   "s9_long_2",
+   "s9_long_3"
+  ],
+  "single_pass_systems": [
+   "s9_ei_wavg"
+  ],
+  "max_len": 6144,
+  "validation_records_dir": "data/processed/session9/long",
+  "test_records_dir": "data/processed/session9/long",
+  "checks_swap_dir": "data/processed/session9/checks/swap_long",
+  "other_form": "s9_ei_wavg_sa",
+  "swap_augmented": false
+ },
+ "scores": {
+  "s9_b": 0.20673370971268284,
+  "s9_b_1": 0.21711453609383038,
+  "s9_b_2": 0.20608442450273143,
+  "s9_b_3": 0.20941300238923982,
+  "s9_ei": 0.17899480125120046,
+  "s9_ei_wavg": 0.1780834342525998,
+  "s9_ei_wavg_sa": 0.25151158194638357,
+  "s9_long_1": 0.18155562441134596,
+  "s9_long_2": 0.18518353577660362,
+  "s9_lr1_1": 0.21529627523306932,
+  "s9_lr1_2": 0.2014746142371678,
+  "s9_lr2_1": 0.2053419829189364,
+  "s9_lr2_2": 0.19833197305560718,
+  "s9_swap_1": 0.20997632376328226,
+  "s9_swap_2": 0.21744065375691393
+ },
+ "score_families": {
+  "s9_b": {
+   "temperature": 0.20673370971268284,
+   "temperature_intercepts": 0.20870415665968517
+  },
+  "s9_b_1": {
+   "temperature": 0.21711453609383038,
+   "temperature_intercepts": 0.21921456746991336
+  },
+  "s9_b_2": {
+   "temperature": 0.20608442450273143,
+   "temperature_intercepts": 0.20853574640726716
+  },
+  "s9_b_3": {
+   "temperature": 0.20941300238923982,
+   "temperature_intercepts": 0.21064871257896223
+  },
+  "s9_ei": {
+   "temperature": 0.17899480125120046,
+   "temperature_intercepts": 0.18174891904386897
+  },
+  "s9_ei_wavg": {
+   "temperature": 0.1780834342525998,
+   "temperature_intercepts": 0.18084190997470512
+  },
+  "s9_ei_wavg_sa": {
+   "temperature": 0.2642829286230903,
+   "temperature_intercepts": 0.25151158194638357
+  },
+  "s9_long_1": {
+   "temperature": 0.18155562441134596,
+   "temperature_intercepts": 0.184284938763752
+  },
+  "s9_long_2": {
+   "temperature": 0.18518353577660362,
+   "temperature_intercepts": 0.18812618768123146
+  },
+  "s9_lr1_1": {
+   "temperature": 0.21529627523306932,
+   "temperature_intercepts": 0.218346456750414
+  },
+  "s9_lr1_2": {
+   "temperature": 0.2014746142371678,
+   "temperature_intercepts": 0.20386845468875908
+  },
+  "s9_lr2_1": {
+   "temperature": 0.20596239268896593,
+   "temperature_intercepts": 0.2053419829189364
+  },
+  "s9_lr2_2": {
+   "temperature": 0.19833197305560718,
+   "temperature_intercepts": 0.19988192611050182
+  },
+  "s9_swap_1": {
+   "temperature": 0.20997632376328226,
+   "temperature_intercepts": 0.2123293524901746
+  },
+  "s9_swap_2": {
+   "temperature": 0.21744065375691393,
+   "temperature_intercepts": 0.21975350645681777
+  }
+ },
+ "decisions": {
+  "margin": {
+   "value": 0.011030111591,
+   "time_utc": "2026-10-01T23:38:49Z"
+  },
+  "candidate_swap": {
+   "value": false,
+   "time_utc": "2026-10-02T10:16:45Z"
+  },
+  "candidate_long": {
+   "value": true,
+   "time_utc": "2026-10-02T10:16:46Z"
+  },
+  "candidate_lr1": {
+   "value": false,
+   "time_utc": "2026-10-02T10:16:47Z"
+  },
+  "candidate_lr2": {
+   "value": false,
+   "time_utc": "2026-10-02T10:16:48Z"
+  },
+  "winner": {
+   "value": "long",
+   "time_utc": "2026-10-02T10:16:48Z"
+  },
+  "uses_weight_average": {
+   "value": true,
+   "time_utc": "2026-10-02T12:10:35Z"
+  },
+  "swap_averaging": {
+   "value": false,
+   "time_utc": "2026-10-02T12:17:10Z"
+  }
+ }
+}

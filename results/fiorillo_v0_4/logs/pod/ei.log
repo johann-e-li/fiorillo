@@ -1,0 +1,194 @@
+2026-09-30T14:16:54Z  stage ei started
+2026-09-30T14:16:54Z  EI: s8_ei_1, seed 20260927, micro-batch 1, accumulation 32, no gradient checkpointing
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 156/398 [00:00<00:00, 1555.47it/s]Loading weights:  78%|███████▊  | 312/398 [00:00<00:00, 926.42it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1231.16it/s]
+epoch 1 step 20/628 loss 0.0052 (1.5 sequences/s)
+epoch 1 step 40/628 loss 0.0744 (1.5 sequences/s)
+epoch 1 step 60/628 loss 0.0136 (1.4 sequences/s)
+epoch 1 step 80/628 loss 0.0008 (1.4 sequences/s)
+validation after epoch 1, step 80: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1813, 'ece': 0.0313, 'selection_log_loss': 0.1813, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1813, 'ece': 0.0313}}, 'epoch': 1, 'step': 80, 'elapsed_seconds': 1902.5}
+epoch 1 step 100/628 loss 0.0882 (1.4 sequences/s)
+epoch 1 step 120/628 loss 0.2287 (1.4 sequences/s)
+epoch 1 step 140/628 loss 2.4506 (1.4 sequences/s)
+epoch 1 step 160/628 loss 0.0051 (1.4 sequences/s)
+validation after epoch 1, step 160: {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1926, 'ece': 0.0375, 'selection_log_loss': 0.1926, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1926, 'ece': 0.0375}}, 'epoch': 1, 'step': 160, 'elapsed_seconds': 3853.9}
+epoch 1 step 180/628 loss 0.0151 (1.3 sequences/s)
+epoch 1 step 200/628 loss 0.1089 (1.3 sequences/s)
+epoch 1 step 220/628 loss 0.0028 (1.3 sequences/s)
+epoch 1 step 240/628 loss 0.0057 (1.4 sequences/s)
+validation after epoch 1, step 240: {'n': 300, 'accuracy': 0.96, 'log_loss': 0.1672, 'ece': 0.0382, 'selection_log_loss': 0.1672, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.96, 'log_loss': 0.1672, 'ece': 0.0382}}, 'epoch': 1, 'step': 240, 'elapsed_seconds': 5808.2}
+epoch 1 step 260/628 loss 1.1778 (1.3 sequences/s)
+epoch 1 step 280/628 loss 0.0001 (1.3 sequences/s)
+epoch 1 step 300/628 loss 0.9575 (1.3 sequences/s)
+validation after epoch 1, step 314: {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1821, 'ece': 0.0249, 'selection_log_loss': 0.1821, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1821, 'ece': 0.0249}}, 'epoch': 1, 'step': 314, 'elapsed_seconds': 7578.3}
+epoch 2 step 320/628 loss 0.0008 (1.4 sequences/s)
+validation after epoch 2, step 320: {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1895, 'ece': 0.0305, 'selection_log_loss': 0.1895, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1895, 'ece': 0.0305}}, 'epoch': 2, 'step': 320, 'elapsed_seconds': 7821.4}
+epoch 2 step 340/628 loss 0.0000 (1.3 sequences/s)
+epoch 2 step 360/628 loss 0.0074 (1.3 sequences/s)
+epoch 2 step 380/628 loss 0.0002 (1.3 sequences/s)
+epoch 2 step 400/628 loss 0.0058 (1.4 sequences/s)
+validation after epoch 2, step 400: {'n': 300, 'accuracy': 0.9533, 'log_loss': 0.1694, 'ece': 0.02, 'selection_log_loss': 0.1694, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9533, 'log_loss': 0.1694, 'ece': 0.02}}, 'epoch': 2, 'step': 400, 'elapsed_seconds': 9654.9}
+epoch 2 step 420/628 loss 0.0704 (1.4 sequences/s)
+epoch 2 step 440/628 loss 0.0002 (1.4 sequences/s)
+epoch 2 step 460/628 loss 0.0973 (1.4 sequences/s)
+epoch 2 step 480/628 loss 0.0317 (1.5 sequences/s)
+validation after epoch 2, step 480: {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1757, 'ece': 0.0236, 'selection_log_loss': 0.1757, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1757, 'ece': 0.0236}}, 'epoch': 2, 'step': 480, 'elapsed_seconds': 10634.7}
+epoch 2 step 500/628 loss 0.0082 (1.5 sequences/s)
+epoch 2 step 520/628 loss 0.0004 (1.5 sequences/s)
+epoch 2 step 540/628 loss 0.0052 (1.5 sequences/s)
+epoch 2 step 560/628 loss 0.0003 (1.6 sequences/s)
+validation after epoch 2, step 560: {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1789, 'ece': 0.0326, 'selection_log_loss': 0.1789, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1789, 'ece': 0.0326}}, 'epoch': 2, 'step': 560, 'elapsed_seconds': 11599.8}
+epoch 2 step 580/628 loss 0.0094 (1.6 sequences/s)
+epoch 2 step 600/628 loss 0.0033 (1.6 sequences/s)
+epoch 2 step 620/628 loss 0.0044 (1.6 sequences/s)
+validation after epoch 2, step 628: {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1815, 'ece': 0.0297, 'selection_log_loss': 0.1815, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1815, 'ece': 0.0297}}, 'epoch': 2, 'step': 628, 'elapsed_seconds': 12425.8}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_ei_1",
+  "optimizer_steps": 628,
+  "sequences_per_second": 1.64,
+  "kept_validation_selection_log_loss_exact": 0.1815,
+  "temperature": {
+    "evidence_effect": 1.3626
+  },
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  }
+}
+2026-09-30T17:45:23Z  EI: s8_ei_1 trained
+2026-09-30T17:45:23Z  EI: s8_ei_1 predicts validation; GPU memory used now: 525 MiB (arm A may be training beside it)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  35%|███▍      | 138/398 [00:00<00:00, 1366.22it/s]Loading weights:  69%|██████▉   | 275/398 [00:00<00:00, 1192.77it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1460.59it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s8/models/s8_ei_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_1 validation: 1237 rows, 224.6 forward seconds
+2026-09-30T17:49:19Z  EI: s8_ei_1 finished (validation predictions, logits, metrics, log and run summary in results)
+2026-09-30T17:49:19Z  EI: s8_ei_2, seed 20260928, micro-batch 1, accumulation 32, no gradient checkpointing
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 150/398 [00:00<00:00, 1488.87it/s]Loading weights:  75%|███████▌  | 299/398 [00:00<00:00, 953.30it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1091.87it/s]
+epoch 1 step 20/628 loss 2.1162 (2.8 sequences/s)
+epoch 1 step 40/628 loss 0.5061 (2.8 sequences/s)
+epoch 1 step 60/628 loss 0.0008 (2.8 sequences/s)
+epoch 1 step 80/628 loss 0.3136 (2.8 sequences/s)
+validation after epoch 1, step 80: {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1935, 'ece': 0.0304, 'selection_log_loss': 0.1935, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1935, 'ece': 0.0304}}, 'epoch': 1, 'step': 80, 'elapsed_seconds': 961.3}
+epoch 1 step 100/628 loss 0.0611 (2.7 sequences/s)
+epoch 1 step 120/628 loss 0.0024 (2.7 sequences/s)
+epoch 1 step 140/628 loss 0.0404 (2.7 sequences/s)
+epoch 1 step 160/628 loss 0.2291 (2.7 sequences/s)
+validation after epoch 1, step 160: {'n': 300, 'accuracy': 0.9267, 'log_loss': 0.2119, 'ece': 0.0488, 'selection_log_loss': 0.2119, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9267, 'log_loss': 0.2119, 'ece': 0.0488}}, 'epoch': 1, 'step': 160, 'elapsed_seconds': 1929.7}
+epoch 1 step 180/628 loss 1.9598 (2.7 sequences/s)
+epoch 1 step 200/628 loss 0.4778 (2.7 sequences/s)
+epoch 1 step 220/628 loss 0.0343 (2.7 sequences/s)
+epoch 1 step 240/628 loss 0.0019 (2.7 sequences/s)
+validation after epoch 1, step 240: {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1719, 'ece': 0.0295, 'selection_log_loss': 0.1719, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.93, 'log_loss': 0.1719, 'ece': 0.0295}}, 'epoch': 1, 'step': 240, 'elapsed_seconds': 2894.9}
+epoch 1 step 260/628 loss 0.0020 (2.7 sequences/s)
+epoch 1 step 280/628 loss 0.0041 (2.7 sequences/s)
+epoch 1 step 300/628 loss 1.1452 (2.7 sequences/s)
+validation after epoch 1, step 314: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1651, 'ece': 0.0299, 'selection_log_loss': 0.1651, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1651, 'ece': 0.0299}}, 'epoch': 1, 'step': 314, 'elapsed_seconds': 3780.2}
+epoch 2 step 320/628 loss 0.0008 (2.7 sequences/s)
+validation after epoch 2, step 320: {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1626, 'ece': 0.0276, 'selection_log_loss': 0.1626, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1626, 'ece': 0.0276}}, 'epoch': 2, 'step': 320, 'elapsed_seconds': 3901.5}
+epoch 2 step 340/628 loss 0.0001 (2.7 sequences/s)
+epoch 2 step 360/628 loss 0.0272 (2.7 sequences/s)
+epoch 2 step 380/628 loss 0.4712 (2.7 sequences/s)
+epoch 2 step 400/628 loss 0.0006 (2.7 sequences/s)
+validation after epoch 2, step 400: {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1686, 'ece': 0.0231, 'selection_log_loss': 0.1686, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1686, 'ece': 0.0231}}, 'epoch': 2, 'step': 400, 'elapsed_seconds': 4857.1}
+epoch 2 step 420/628 loss 0.0008 (2.7 sequences/s)
+epoch 2 step 440/628 loss 0.0268 (2.7 sequences/s)
+epoch 2 step 460/628 loss 0.0006 (2.7 sequences/s)
+epoch 2 step 480/628 loss 0.0005 (2.7 sequences/s)
+validation after epoch 2, step 480: {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1778, 'ece': 0.0328, 'selection_log_loss': 0.1778, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.95, 'log_loss': 0.1778, 'ece': 0.0328}}, 'epoch': 2, 'step': 480, 'elapsed_seconds': 5810.6}
+epoch 2 step 500/628 loss 0.0004 (2.7 sequences/s)
+epoch 2 step 520/628 loss 0.0006 (2.7 sequences/s)
+epoch 2 step 540/628 loss 0.0092 (2.7 sequences/s)
+epoch 2 step 560/628 loss 0.0043 (2.7 sequences/s)
+validation after epoch 2, step 560: {'n': 300, 'accuracy': 0.9433, 'log_loss': 0.19, 'ece': 0.0349, 'selection_log_loss': 0.19, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9433, 'log_loss': 0.19, 'ece': 0.0349}}, 'epoch': 2, 'step': 560, 'elapsed_seconds': 6767.4}
+epoch 2 step 580/628 loss 0.0019 (2.7 sequences/s)
+epoch 2 step 600/628 loss 0.0062 (2.7 sequences/s)
+epoch 2 step 620/628 loss 0.0033 (2.7 sequences/s)
+validation after epoch 2, step 628: {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1901, 'ece': 0.0376, 'selection_log_loss': 0.1901, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9467, 'log_loss': 0.1901, 'ece': 0.0376}}, 'epoch': 2, 'step': 628, 'elapsed_seconds': 7584.7}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_ei_2",
+  "optimizer_steps": 628,
+  "sequences_per_second": 2.7,
+  "kept_validation_selection_log_loss_exact": 0.1901,
+  "temperature": {
+    "evidence_effect": 1.4114
+  },
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  }
+}
+2026-09-30T19:56:53Z  EI: s8_ei_2 trained
+2026-09-30T19:56:53Z  EI: s8_ei_2 predicts validation; GPU memory used now: 0 MiB (arm A may be training beside it)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  54%|█████▍    | 215/398 [00:00<00:00, 2091.57it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1626.15it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s8/models/s8_ei_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_2 validation: 1237 rows, 224.8 forward seconds
+2026-09-30T20:00:53Z  EI: s8_ei_2 finished (validation predictions, logits, metrics, log and run summary in results)
+2026-09-30T20:00:53Z  EI: s8_ei_3, seed 20260929, micro-batch 1, accumulation 32, no gradient checkpointing
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7915.81it/s]
+epoch 1 step 20/628 loss 0.0129 (2.8 sequences/s)
+epoch 1 step 40/628 loss 0.0014 (2.8 sequences/s)
+epoch 1 step 60/628 loss 0.0120 (2.8 sequences/s)
+epoch 1 step 80/628 loss 0.0549 (2.8 sequences/s)
+validation after epoch 1, step 80: {'n': 300, 'accuracy': 0.9167, 'log_loss': 0.218, 'ece': 0.0389, 'selection_log_loss': 0.218, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9167, 'log_loss': 0.218, 'ece': 0.0389}}, 'epoch': 1, 'step': 80, 'elapsed_seconds': 966.0}
+epoch 1 step 100/628 loss 0.1885 (2.7 sequences/s)
+epoch 1 step 120/628 loss 0.0368 (2.7 sequences/s)
+epoch 1 step 140/628 loss 0.8466 (2.7 sequences/s)
+epoch 1 step 160/628 loss 0.0003 (2.8 sequences/s)
+validation after epoch 1, step 160: {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.2001, 'ece': 0.0286, 'selection_log_loss': 0.2001, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.2001, 'ece': 0.0286}}, 'epoch': 1, 'step': 160, 'elapsed_seconds': 1921.0}
+epoch 1 step 180/628 loss 0.0026 (2.7 sequences/s)
+epoch 1 step 200/628 loss 0.0212 (2.7 sequences/s)
+epoch 1 step 220/628 loss 0.0266 (2.7 sequences/s)
+epoch 1 step 240/628 loss 1.3495 (2.7 sequences/s)
+validation after epoch 1, step 240: {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1895, 'ece': 0.0373, 'selection_log_loss': 0.1895, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1895, 'ece': 0.0373}}, 'epoch': 1, 'step': 240, 'elapsed_seconds': 2892.5}
+epoch 1 step 260/628 loss 0.0031 (2.7 sequences/s)
+epoch 1 step 280/628 loss 0.0656 (2.7 sequences/s)
+epoch 1 step 300/628 loss 0.0003 (2.7 sequences/s)
+validation after epoch 1, step 314: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1793, 'ece': 0.028, 'selection_log_loss': 0.1793, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1793, 'ece': 0.028}}, 'epoch': 1, 'step': 314, 'elapsed_seconds': 3778.7}
+epoch 2 step 320/628 loss 0.4631 (2.7 sequences/s)
+validation after epoch 2, step 320: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1794, 'ece': 0.0263, 'selection_log_loss': 0.1794, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1794, 'ece': 0.0263}}, 'epoch': 2, 'step': 320, 'elapsed_seconds': 3901.2}
+epoch 2 step 340/628 loss 0.0038 (2.7 sequences/s)
+epoch 2 step 360/628 loss 3.7906 (2.7 sequences/s)
+epoch 2 step 380/628 loss 0.0008 (2.7 sequences/s)
+epoch 2 step 400/628 loss 0.0008 (2.7 sequences/s)
+validation after epoch 2, step 400: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.2082, 'ece': 0.0353, 'selection_log_loss': 0.2082, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.2082, 'ece': 0.0353}}, 'epoch': 2, 'step': 400, 'elapsed_seconds': 4848.3}
+epoch 2 step 420/628 loss 0.0404 (2.7 sequences/s)
+epoch 2 step 440/628 loss 0.0009 (2.7 sequences/s)
+epoch 2 step 460/628 loss 0.1030 (2.7 sequences/s)
+epoch 2 step 480/628 loss 0.0014 (2.7 sequences/s)
+validation after epoch 2, step 480: {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1989, 'ece': 0.0444, 'selection_log_loss': 0.1989, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.94, 'log_loss': 0.1989, 'ece': 0.0444}}, 'epoch': 2, 'step': 480, 'elapsed_seconds': 5802.1}
+epoch 2 step 500/628 loss 0.0008 (2.7 sequences/s)
+epoch 2 step 520/628 loss 0.0006 (2.7 sequences/s)
+epoch 2 step 540/628 loss 0.0034 (2.7 sequences/s)
+epoch 2 step 560/628 loss 0.0006 (2.7 sequences/s)
+validation after epoch 2, step 560: {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1942, 'ece': 0.0375, 'selection_log_loss': 0.1942, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1942, 'ece': 0.0375}}, 'epoch': 2, 'step': 560, 'elapsed_seconds': 6750.8}
+epoch 2 step 580/628 loss 0.0109 (2.7 sequences/s)
+epoch 2 step 600/628 loss 0.0033 (2.7 sequences/s)
+epoch 2 step 620/628 loss 0.0011 (2.7 sequences/s)
+validation after epoch 2, step 628: {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1949, 'ece': 0.042, 'selection_log_loss': 0.1949, 'per_question': {'evidence_effect': {'n': 300, 'accuracy': 0.9367, 'log_loss': 0.1949, 'ece': 0.042}}, 'epoch': 2, 'step': 628, 'elapsed_seconds': 7568.8}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_ei_3",
+  "optimizer_steps": 628,
+  "sequences_per_second": 2.7,
+  "kept_validation_selection_log_loss_exact": 0.1949,
+  "temperature": {
+    "evidence_effect": 1.3385
+  },
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  }
+}
+2026-09-30T22:08:13Z  EI: s8_ei_3 trained
+2026-09-30T22:08:13Z  EI: s8_ei_3 predicts validation; GPU memory used now: 0 MiB (arm A may be training beside it)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  55%|█████▌    | 220/398 [00:00<00:00, 2198.23it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1985.48it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s8/models/s8_ei_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s8_ei_3 validation: 1237 rows, 224.8 forward seconds
+2026-09-30T22:12:11Z  EI: s8_ei_3 finished (validation predictions, logits, metrics, log and run summary in results)
+2026-09-30T22:12:11Z  stage ei finished

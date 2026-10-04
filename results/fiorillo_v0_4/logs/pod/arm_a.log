@@ -1,0 +1,991 @@
+2026-09-30T14:16:55Z  stage arm_a started
+2026-09-30T14:16:55Z  arm A: s8_a1 from /root/eddm_s8/models/reader_v1_laya
+device: cuda, torch 2.8.0+cu128, calibration mode separate
+epoch 1 step 20/6539 loss 0.0739 (59.8 sequences/s)
+epoch 1 step 40/6539 loss 0.1256 (67.9 sequences/s)
+epoch 1 step 60/6539 loss 0.0627 (67.9 sequences/s)
+epoch 1 step 80/6539 loss 0.3661 (71.2 sequences/s)
+epoch 1 step 100/6539 loss 0.0933 (71.4 sequences/s)
+epoch 1 step 120/6539 loss 0.0774 (73.3 sequences/s)
+epoch 1 step 140/6539 loss 0.2165 (73.2 sequences/s)
+epoch 1 step 160/6539 loss 0.4634 (74.3 sequences/s)
+epoch 1 step 180/6539 loss 0.3914 (75.3 sequences/s)
+epoch 1 step 200/6539 loss 0.5178 (76.2 sequences/s)
+epoch 1 step 220/6539 loss 0.1460 (76.2 sequences/s)
+epoch 1 step 240/6539 loss 0.1494 (77.1 sequences/s)
+epoch 1 step 260/6539 loss 0.0256 (73.2 sequences/s)
+epoch 1 step 280/6539 loss 0.1908 (67.8 sequences/s)
+epoch 1 step 300/6539 loss 0.3799 (63.1 sequences/s)
+epoch 1 step 320/6539 loss 0.9493 (60.1 sequences/s)
+epoch 1 step 340/6539 loss 0.0032 (57.3 sequences/s)
+epoch 1 step 360/6539 loss 0.0055 (55.2 sequences/s)
+epoch 1 step 380/6539 loss 0.0364 (53.2 sequences/s)
+epoch 1 step 400/6539 loss 0.0134 (51.8 sequences/s)
+epoch 1 step 420/6539 loss 0.0290 (50.3 sequences/s)
+epoch 1 step 440/6539 loss 0.0090 (49.2 sequences/s)
+epoch 1 step 460/6539 loss 0.0143 (48.1 sequences/s)
+epoch 1 step 480/6539 loss 0.4228 (47.3 sequences/s)
+epoch 1 step 500/6539 loss 0.0017 (46.5 sequences/s)
+epoch 1 step 520/6539 loss 0.0319 (45.9 sequences/s)
+epoch 1 step 540/6539 loss 0.0024 (45.2 sequences/s)
+epoch 1 step 560/6539 loss 0.0007 (44.7 sequences/s)
+epoch 1 step 580/6539 loss 0.0071 (44.1 sequences/s)
+epoch 1 step 600/6539 loss 0.0001 (43.8 sequences/s)
+epoch 1 step 620/6539 loss 0.4952 (43.3 sequences/s)
+epoch 1 step 640/6539 loss 0.5697 (42.9 sequences/s)
+epoch 1 step 660/6539 loss 0.0313 (42.6 sequences/s)
+epoch 1 step 680/6539 loss 0.0013 (42.3 sequences/s)
+epoch 1 step 700/6539 loss 0.0054 (41.9 sequences/s)
+epoch 1 step 720/6539 loss 0.0064 (41.6 sequences/s)
+epoch 1 step 740/6539 loss 0.0047 (41.4 sequences/s)
+epoch 1 step 760/6539 loss 0.0698 (41.2 sequences/s)
+epoch 1 step 780/6539 loss 0.0011 (41.0 sequences/s)
+epoch 1 step 800/6539 loss 0.0006 (40.8 sequences/s)
+epoch 1 step 820/6539 loss 0.0807 (40.5 sequences/s)
+epoch 1 step 840/6539 loss 0.0054 (40.3 sequences/s)
+epoch 1 step 860/6539 loss 0.0001 (40.2 sequences/s)
+epoch 1 step 880/6539 loss 0.4521 (40.0 sequences/s)
+epoch 1 step 900/6539 loss 0.0011 (39.9 sequences/s)
+epoch 1 step 920/6539 loss 0.0006 (39.8 sequences/s)
+epoch 1 step 940/6539 loss 0.0030 (39.6 sequences/s)
+epoch 1 step 960/6539 loss 0.0946 (39.4 sequences/s)
+epoch 1 step 980/6539 loss 0.0022 (39.3 sequences/s)
+epoch 1 step 1000/6539 loss 0.0221 (39.2 sequences/s)
+epoch 1 step 1020/6539 loss 0.0368 (39.1 sequences/s)
+epoch 1 step 1040/6539 loss 0.0111 (38.9 sequences/s)
+epoch 1 step 1060/6539 loss 0.0083 (38.8 sequences/s)
+epoch 1 step 1080/6539 loss 0.0159 (38.7 sequences/s)
+epoch 1 step 1100/6539 loss 0.0088 (38.6 sequences/s)
+epoch 1 step 1120/6539 loss 0.1542 (38.5 sequences/s)
+epoch 1 step 1140/6539 loss 0.0147 (38.4 sequences/s)
+epoch 1 step 1160/6539 loss 0.4699 (38.3 sequences/s)
+epoch 1 step 1180/6539 loss 0.1314 (38.3 sequences/s)
+epoch 1 step 1200/6539 loss 0.0169 (38.2 sequences/s)
+epoch 1 step 1220/6539 loss 0.6014 (38.1 sequences/s)
+epoch 1 step 1240/6539 loss 0.0116 (38.0 sequences/s)
+epoch 1 step 1260/6539 loss 0.0073 (38.0 sequences/s)
+epoch 1 step 1280/6539 loss 0.0000 (37.9 sequences/s)
+epoch 1 step 1300/6539 loss 0.0172 (37.8 sequences/s)
+epoch 1 step 1320/6539 loss 0.5751 (37.8 sequences/s)
+epoch 1 step 1340/6539 loss 0.6156 (37.7 sequences/s)
+epoch 1 step 1360/6539 loss 0.0002 (37.6 sequences/s)
+epoch 1 step 1380/6539 loss 0.0011 (37.6 sequences/s)
+epoch 1 step 1400/6539 loss 0.0012 (37.5 sequences/s)
+epoch 1 step 1420/6539 loss 0.0138 (37.5 sequences/s)
+epoch 1 step 1440/6539 loss 0.0044 (37.5 sequences/s)
+epoch 1 step 1460/6539 loss 0.1242 (37.4 sequences/s)
+epoch 1 step 1480/6539 loss 0.0120 (37.4 sequences/s)
+epoch 1 step 1500/6539 loss 0.0292 (37.4 sequences/s)
+epoch 1 step 1520/6539 loss 0.0090 (37.3 sequences/s)
+epoch 1 step 1540/6539 loss 0.0060 (37.3 sequences/s)
+epoch 1 step 1560/6539 loss 0.0019 (37.2 sequences/s)
+epoch 1 step 1580/6539 loss 0.0804 (37.2 sequences/s)
+epoch 1 step 1600/6539 loss 0.0392 (37.1 sequences/s)
+epoch 1 step 1620/6539 loss 0.0005 (37.1 sequences/s)
+epoch 1 step 1640/6539 loss 0.0101 (37.0 sequences/s)
+epoch 1 step 1660/6539 loss 0.0057 (37.0 sequences/s)
+epoch 1 step 1680/6539 loss 0.0081 (37.0 sequences/s)
+epoch 1 step 1700/6539 loss 0.0004 (37.0 sequences/s)
+epoch 1 step 1720/6539 loss 0.1125 (36.9 sequences/s)
+epoch 1 step 1740/6539 loss 0.0027 (36.9 sequences/s)
+epoch 1 step 1760/6539 loss 0.0018 (36.9 sequences/s)
+epoch 1 step 1780/6539 loss 0.0014 (36.8 sequences/s)
+epoch 1 step 1800/6539 loss 0.0319 (36.8 sequences/s)
+epoch 1 step 1820/6539 loss 0.4290 (36.7 sequences/s)
+epoch 1 step 1840/6539 loss 0.0005 (36.7 sequences/s)
+epoch 1 step 1860/6539 loss 0.0044 (36.6 sequences/s)
+epoch 1 step 1880/6539 loss 0.5559 (36.6 sequences/s)
+epoch 1 step 1900/6539 loss 0.0021 (36.6 sequences/s)
+epoch 1 step 1920/6539 loss 0.0066 (36.6 sequences/s)
+epoch 1 step 1940/6539 loss 0.1526 (36.5 sequences/s)
+epoch 1 step 1960/6539 loss 0.0036 (36.5 sequences/s)
+epoch 1 step 1980/6539 loss 0.0012 (36.5 sequences/s)
+epoch 1 step 2000/6539 loss 0.0049 (36.4 sequences/s)
+epoch 1 step 2020/6539 loss 0.0023 (36.4 sequences/s)
+epoch 1 step 2040/6539 loss 0.1783 (36.4 sequences/s)
+epoch 1 step 2060/6539 loss 0.0324 (36.3 sequences/s)
+epoch 1 step 2080/6539 loss 0.0027 (36.3 sequences/s)
+epoch 1 step 2100/6539 loss 0.0026 (36.3 sequences/s)
+epoch 1 step 2120/6539 loss 0.1484 (36.3 sequences/s)
+epoch 1 step 2140/6539 loss 0.0039 (36.2 sequences/s)
+epoch 1 step 2160/6539 loss 0.1918 (36.2 sequences/s)
+epoch 1 step 2180/6539 loss 0.0930 (36.2 sequences/s)
+epoch 1 step 2200/6539 loss 0.0093 (36.2 sequences/s)
+epoch 1 step 2220/6539 loss 0.0051 (36.2 sequences/s)
+epoch 1 step 2240/6539 loss 0.0071 (36.1 sequences/s)
+epoch 1 step 2260/6539 loss 0.0006 (36.1 sequences/s)
+epoch 1 step 2280/6539 loss 0.5931 (36.1 sequences/s)
+epoch 1 step 2300/6539 loss 0.0011 (36.1 sequences/s)
+epoch 1 step 2320/6539 loss 0.0098 (36.1 sequences/s)
+epoch 1 step 2340/6539 loss 0.0203 (36.0 sequences/s)
+epoch 1 step 2360/6539 loss 0.2236 (36.0 sequences/s)
+epoch 1 step 2380/6539 loss 0.0155 (36.0 sequences/s)
+epoch 1 step 2400/6539 loss 0.0029 (36.0 sequences/s)
+epoch 1 step 2420/6539 loss 0.0374 (36.0 sequences/s)
+epoch 1 step 2440/6539 loss 0.0024 (35.9 sequences/s)
+epoch 1 step 2460/6539 loss 0.0213 (35.9 sequences/s)
+epoch 1 step 2480/6539 loss 0.0008 (35.9 sequences/s)
+epoch 1 step 2500/6539 loss 0.0220 (35.9 sequences/s)
+epoch 1 step 2520/6539 loss 0.2596 (35.9 sequences/s)
+epoch 1 step 2540/6539 loss 0.0047 (35.9 sequences/s)
+epoch 1 step 2560/6539 loss 0.0000 (35.8 sequences/s)
+epoch 1 step 2580/6539 loss 0.0032 (35.8 sequences/s)
+epoch 1 step 2600/6539 loss 0.0226 (35.8 sequences/s)
+epoch 1 step 2620/6539 loss 0.0047 (35.8 sequences/s)
+epoch 1 step 2640/6539 loss 0.0012 (35.8 sequences/s)
+epoch 1 step 2660/6539 loss 0.0003 (35.8 sequences/s)
+epoch 1 step 2680/6539 loss 0.0143 (35.8 sequences/s)
+epoch 1 step 2700/6539 loss 0.0016 (35.8 sequences/s)
+epoch 1 step 2720/6539 loss 0.0022 (35.7 sequences/s)
+epoch 1 step 2740/6539 loss 0.0039 (35.7 sequences/s)
+epoch 1 step 2760/6539 loss 0.0309 (35.7 sequences/s)
+epoch 1 step 2780/6539 loss 0.3668 (35.7 sequences/s)
+epoch 1 step 2800/6539 loss 0.6840 (35.7 sequences/s)
+epoch 1 step 2820/6539 loss 0.0105 (35.7 sequences/s)
+epoch 1 step 2840/6539 loss 0.0017 (35.7 sequences/s)
+epoch 1 step 2860/6539 loss 0.0003 (35.7 sequences/s)
+epoch 1 step 2880/6539 loss 0.0163 (35.6 sequences/s)
+epoch 1 step 2900/6539 loss 0.0010 (35.6 sequences/s)
+epoch 1 step 2920/6539 loss 0.0003 (35.6 sequences/s)
+epoch 1 step 2940/6539 loss 0.1676 (35.6 sequences/s)
+epoch 1 step 2960/6539 loss 0.0074 (35.6 sequences/s)
+epoch 1 step 2980/6539 loss 0.0061 (35.6 sequences/s)
+epoch 1 step 3000/6539 loss 0.0140 (35.6 sequences/s)
+epoch 1 step 3020/6539 loss 0.2771 (35.6 sequences/s)
+epoch 1 step 3040/6539 loss 0.0148 (35.6 sequences/s)
+epoch 1 step 3060/6539 loss 0.0124 (35.6 sequences/s)
+epoch 1 step 3080/6539 loss 0.0011 (35.6 sequences/s)
+epoch 1 step 3100/6539 loss 0.0014 (35.5 sequences/s)
+epoch 1 step 3120/6539 loss 0.0021 (35.5 sequences/s)
+epoch 1 step 3140/6539 loss 0.0191 (35.5 sequences/s)
+epoch 1 step 3160/6539 loss 0.0105 (35.5 sequences/s)
+epoch 1 step 3180/6539 loss 0.0084 (35.5 sequences/s)
+epoch 1 step 3200/6539 loss 0.1319 (35.5 sequences/s)
+epoch 1 step 3220/6539 loss 0.1717 (35.5 sequences/s)
+epoch 1 step 3240/6539 loss 0.0291 (35.5 sequences/s)
+epoch 1 step 3260/6539 loss 0.0050 (35.5 sequences/s)
+epoch 1 step 3280/6539 loss 0.0003 (35.5 sequences/s)
+epoch 1 step 3300/6539 loss 0.0009 (35.5 sequences/s)
+epoch 1 step 3320/6539 loss 0.0055 (35.5 sequences/s)
+epoch 1 step 3340/6539 loss 0.0020 (35.4 sequences/s)
+epoch 1 step 3360/6539 loss 0.0013 (35.4 sequences/s)
+epoch 1 step 3380/6539 loss 0.0004 (35.4 sequences/s)
+epoch 1 step 3400/6539 loss 0.0025 (35.4 sequences/s)
+epoch 1 step 3420/6539 loss 0.0046 (35.4 sequences/s)
+epoch 1 step 3440/6539 loss 0.0009 (35.4 sequences/s)
+epoch 1 step 3460/6539 loss 0.0015 (35.4 sequences/s)
+epoch 1 step 3480/6539 loss 0.4938 (35.4 sequences/s)
+epoch 1 step 3500/6539 loss 0.0012 (35.4 sequences/s)
+epoch 1 step 3520/6539 loss 0.5326 (35.4 sequences/s)
+epoch 1 step 3540/6539 loss 0.0003 (35.4 sequences/s)
+epoch 1 step 3560/6539 loss 0.3884 (35.4 sequences/s)
+epoch 1 step 3580/6539 loss 0.0041 (35.4 sequences/s)
+epoch 1 step 3600/6539 loss 0.0073 (35.4 sequences/s)
+epoch 1 step 3620/6539 loss 0.0413 (35.4 sequences/s)
+epoch 1 step 3640/6539 loss 0.0311 (35.3 sequences/s)
+epoch 1 step 3660/6539 loss 0.0062 (35.3 sequences/s)
+epoch 1 step 3680/6539 loss 0.0173 (35.3 sequences/s)
+epoch 1 step 3700/6539 loss 0.1161 (35.3 sequences/s)
+epoch 1 step 3720/6539 loss 0.0044 (35.3 sequences/s)
+epoch 1 step 3740/6539 loss 0.0142 (35.3 sequences/s)
+epoch 1 step 3760/6539 loss 0.0001 (35.3 sequences/s)
+epoch 1 step 3780/6539 loss 0.0026 (35.3 sequences/s)
+epoch 1 step 3800/6539 loss 0.0012 (35.3 sequences/s)
+epoch 1 step 3820/6539 loss 0.0005 (35.3 sequences/s)
+epoch 1 step 3840/6539 loss 0.0384 (35.3 sequences/s)
+epoch 1 step 3860/6539 loss 0.0003 (35.3 sequences/s)
+epoch 1 step 3880/6539 loss 0.0016 (35.3 sequences/s)
+epoch 1 step 3900/6539 loss 0.0005 (35.3 sequences/s)
+epoch 1 step 3920/6539 loss 0.0095 (35.3 sequences/s)
+epoch 1 step 3940/6539 loss 0.0012 (35.3 sequences/s)
+epoch 1 step 3960/6539 loss 0.0013 (35.2 sequences/s)
+epoch 1 step 3980/6539 loss 0.0817 (35.2 sequences/s)
+epoch 1 step 4000/6539 loss 0.0084 (35.2 sequences/s)
+epoch 1 step 4020/6539 loss 0.0031 (35.2 sequences/s)
+epoch 1 step 4040/6539 loss 0.0062 (35.2 sequences/s)
+epoch 1 step 4060/6539 loss 0.1280 (35.2 sequences/s)
+epoch 1 step 4080/6539 loss 0.0389 (35.2 sequences/s)
+epoch 1 step 4100/6539 loss 0.0014 (35.2 sequences/s)
+epoch 1 step 4120/6539 loss 0.0123 (35.2 sequences/s)
+epoch 1 step 4140/6539 loss 0.0044 (35.2 sequences/s)
+epoch 1 step 4160/6539 loss 0.0010 (35.2 sequences/s)
+epoch 1 step 4180/6539 loss 0.0004 (35.2 sequences/s)
+epoch 1 step 4200/6539 loss 0.1633 (35.2 sequences/s)
+epoch 1 step 4220/6539 loss 0.0119 (35.2 sequences/s)
+epoch 1 step 4240/6539 loss 0.0006 (35.2 sequences/s)
+epoch 1 step 4260/6539 loss 0.0005 (35.2 sequences/s)
+epoch 1 step 4280/6539 loss 0.0003 (35.1 sequences/s)
+epoch 1 step 4300/6539 loss 0.9387 (35.1 sequences/s)
+epoch 1 step 4320/6539 loss 0.0002 (35.1 sequences/s)
+epoch 1 step 4340/6539 loss 0.0010 (35.1 sequences/s)
+epoch 1 step 4360/6539 loss 0.0023 (35.1 sequences/s)
+epoch 1 step 4380/6539 loss 0.0001 (35.1 sequences/s)
+epoch 1 step 4400/6539 loss 0.0005 (35.1 sequences/s)
+epoch 1 step 4420/6539 loss 0.0016 (35.1 sequences/s)
+epoch 1 step 4440/6539 loss 0.0144 (35.1 sequences/s)
+epoch 1 step 4460/6539 loss 0.0001 (35.1 sequences/s)
+epoch 1 step 4480/6539 loss 0.0004 (35.1 sequences/s)
+epoch 1 step 4500/6539 loss 0.0017 (35.1 sequences/s)
+epoch 1 step 4520/6539 loss 0.0670 (35.1 sequences/s)
+epoch 1 step 4540/6539 loss 0.0009 (35.1 sequences/s)
+epoch 1 step 4560/6539 loss 0.0118 (35.1 sequences/s)
+epoch 1 step 4580/6539 loss 0.0347 (35.1 sequences/s)
+epoch 1 step 4600/6539 loss 0.0007 (35.1 sequences/s)
+epoch 1 step 4620/6539 loss 0.0001 (35.1 sequences/s)
+epoch 1 step 4640/6539 loss 0.2353 (35.1 sequences/s)
+epoch 1 step 4660/6539 loss 0.0002 (35.1 sequences/s)
+epoch 1 step 4680/6539 loss 0.0002 (35.1 sequences/s)
+epoch 1 step 4700/6539 loss 0.3629 (35.1 sequences/s)
+epoch 1 step 4720/6539 loss 0.0016 (35.1 sequences/s)
+epoch 1 step 4740/6539 loss 0.0006 (35.1 sequences/s)
+epoch 1 step 4760/6539 loss 0.0057 (35.1 sequences/s)
+epoch 1 step 4780/6539 loss 0.0061 (35.1 sequences/s)
+epoch 1 step 4800/6539 loss 0.0078 (35.1 sequences/s)
+epoch 1 step 4820/6539 loss 0.0001 (35.1 sequences/s)
+epoch 1 step 4840/6539 loss 0.3547 (35.1 sequences/s)
+epoch 1 step 4860/6539 loss 0.0078 (35.1 sequences/s)
+epoch 1 step 4880/6539 loss 0.0026 (35.1 sequences/s)
+epoch 1 step 4900/6539 loss 0.0009 (35.1 sequences/s)
+epoch 1 step 4920/6539 loss 0.0018 (35.1 sequences/s)
+epoch 1 step 4940/6539 loss 0.0002 (35.1 sequences/s)
+epoch 1 step 4960/6539 loss 0.0005 (35.1 sequences/s)
+epoch 1 step 4980/6539 loss 0.0015 (35.0 sequences/s)
+epoch 1 step 5000/6539 loss 0.0010 (35.0 sequences/s)
+epoch 1 step 5020/6539 loss 0.0009 (35.0 sequences/s)
+epoch 1 step 5040/6539 loss 0.0002 (35.0 sequences/s)
+epoch 1 step 5060/6539 loss 0.0030 (35.0 sequences/s)
+epoch 1 step 5080/6539 loss 0.3051 (35.0 sequences/s)
+epoch 1 step 5100/6539 loss 0.0012 (35.0 sequences/s)
+epoch 1 step 5120/6539 loss 0.0051 (35.0 sequences/s)
+epoch 1 step 5140/6539 loss 0.0011 (35.0 sequences/s)
+epoch 1 step 5160/6539 loss 0.0001 (35.0 sequences/s)
+epoch 1 step 5180/6539 loss 0.0032 (35.0 sequences/s)
+epoch 1 step 5200/6539 loss 0.0016 (35.0 sequences/s)
+epoch 1 step 5220/6539 loss 0.0027 (35.0 sequences/s)
+epoch 1 step 5240/6539 loss 0.0067 (35.0 sequences/s)
+epoch 1 step 5260/6539 loss 0.0014 (35.0 sequences/s)
+epoch 1 step 5280/6539 loss 0.8260 (35.0 sequences/s)
+epoch 1 step 5300/6539 loss 0.3445 (35.0 sequences/s)
+epoch 1 step 5320/6539 loss 0.0116 (35.0 sequences/s)
+epoch 1 step 5340/6539 loss 0.0011 (35.0 sequences/s)
+epoch 1 step 5360/6539 loss 0.0103 (35.0 sequences/s)
+epoch 1 step 5380/6539 loss 0.0002 (35.0 sequences/s)
+epoch 1 step 5400/6539 loss 0.0011 (35.0 sequences/s)
+epoch 1 step 5420/6539 loss 0.5347 (35.0 sequences/s)
+epoch 1 step 5440/6539 loss 0.0020 (35.0 sequences/s)
+epoch 1 step 5460/6539 loss 0.0009 (35.0 sequences/s)
+epoch 1 step 5480/6539 loss 0.0030 (35.0 sequences/s)
+epoch 1 step 5500/6539 loss 0.0009 (35.0 sequences/s)
+epoch 1 step 5520/6539 loss 0.0047 (35.0 sequences/s)
+epoch 1 step 5540/6539 loss 0.0035 (35.0 sequences/s)
+epoch 1 step 5560/6539 loss 0.0005 (35.0 sequences/s)
+epoch 1 step 5580/6539 loss 0.0099 (35.0 sequences/s)
+epoch 1 step 5600/6539 loss 0.0038 (34.9 sequences/s)
+epoch 1 step 5620/6539 loss 0.0009 (34.9 sequences/s)
+epoch 1 step 5640/6539 loss 0.0008 (34.9 sequences/s)
+epoch 1 step 5660/6539 loss 0.1062 (34.9 sequences/s)
+epoch 1 step 5680/6539 loss 0.0005 (34.9 sequences/s)
+epoch 1 step 5700/6539 loss 0.0061 (34.9 sequences/s)
+epoch 1 step 5720/6539 loss 0.0072 (34.9 sequences/s)
+epoch 1 step 5740/6539 loss 0.0535 (34.9 sequences/s)
+epoch 1 step 5760/6539 loss 0.0010 (34.9 sequences/s)
+epoch 1 step 5780/6539 loss 0.0021 (34.9 sequences/s)
+epoch 1 step 5800/6539 loss 0.0003 (34.9 sequences/s)
+epoch 1 step 5820/6539 loss 0.0007 (34.9 sequences/s)
+epoch 1 step 5840/6539 loss 0.0067 (34.9 sequences/s)
+epoch 1 step 5860/6539 loss 0.3859 (34.9 sequences/s)
+epoch 1 step 5880/6539 loss 0.0017 (34.9 sequences/s)
+epoch 1 step 5900/6539 loss 0.0128 (34.9 sequences/s)
+epoch 1 step 5920/6539 loss 0.0077 (34.9 sequences/s)
+epoch 1 step 5940/6539 loss 0.0003 (34.9 sequences/s)
+epoch 1 step 5960/6539 loss 0.0026 (34.9 sequences/s)
+epoch 1 step 5980/6539 loss 0.0060 (34.9 sequences/s)
+epoch 1 step 6000/6539 loss 0.0062 (34.9 sequences/s)
+epoch 1 step 6020/6539 loss 0.0036 (34.9 sequences/s)
+epoch 1 step 6040/6539 loss 0.0005 (34.9 sequences/s)
+epoch 1 step 6060/6539 loss 0.1740 (34.9 sequences/s)
+epoch 1 step 6080/6539 loss 0.0452 (34.9 sequences/s)
+epoch 1 step 6100/6539 loss 0.0019 (34.9 sequences/s)
+epoch 1 step 6120/6539 loss 0.0008 (34.9 sequences/s)
+epoch 1 step 6140/6539 loss 0.0004 (34.9 sequences/s)
+epoch 1 step 6160/6539 loss 0.4288 (34.9 sequences/s)
+epoch 1 step 6180/6539 loss 0.0006 (34.9 sequences/s)
+epoch 1 step 6200/6539 loss 0.0006 (34.9 sequences/s)
+epoch 1 step 6220/6539 loss 0.0020 (34.9 sequences/s)
+epoch 1 step 6240/6539 loss 0.0004 (34.9 sequences/s)
+epoch 1 step 6260/6539 loss 0.0024 (34.8 sequences/s)
+epoch 1 step 6280/6539 loss 0.0002 (34.8 sequences/s)
+epoch 1 step 6300/6539 loss 0.0073 (34.8 sequences/s)
+epoch 1 step 6320/6539 loss 0.0016 (34.8 sequences/s)
+epoch 1 step 6340/6539 loss 0.0076 (34.8 sequences/s)
+epoch 1 step 6360/6539 loss 0.0001 (34.8 sequences/s)
+epoch 1 step 6380/6539 loss 0.0119 (34.8 sequences/s)
+epoch 1 step 6400/6539 loss 0.0002 (34.8 sequences/s)
+epoch 1 step 6420/6539 loss 0.0004 (34.8 sequences/s)
+epoch 1 step 6440/6539 loss 0.0001 (34.8 sequences/s)
+epoch 1 step 6460/6539 loss 0.0076 (34.8 sequences/s)
+epoch 1 step 6480/6539 loss 0.0829 (34.8 sequences/s)
+epoch 1 step 6500/6539 loss 0.0809 (34.8 sequences/s)
+epoch 1 step 6520/6539 loss 0.0061 (34.8 sequences/s)
+validation after epoch 1, step 6539: {'n': 2150, 'accuracy': 0.9414, 'log_loss': 0.2472, 'ece': 0.0404, 'selection_log_loss': 1.4738, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.78, 'log_loss': 1.4738, 'ece': 0.1777}}, 'epoch': 1, 'step': 6539, 'elapsed_seconds': 6050.7}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_a1",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": true,
+  "freeze_encoder_steps": 250,
+  "autocast": "torch.float16",
+  "eval_every": 0,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/reader_v1_laya",
+  "rows": {
+    "train": 209246,
+    "validation": 2150,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 6539,
+  "max_len": 768,
+  "elapsed_seconds": 6068.3,
+  "train_seconds": 6010.8,
+  "sequences_per_second": 34.81,
+  "validation_history": [
+    {
+      "n": 2150,
+      "accuracy": 0.9414,
+      "log_loss": 0.2472,
+      "ece": 0.0404,
+      "selection_log_loss": 1.4738,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.78,
+          "log_loss": 1.4738,
+          "ece": 0.1777
+        }
+      },
+      "epoch": 1,
+      "step": 6539,
+      "elapsed_seconds": 6050.7
+    }
+  ],
+  "best_validation_selection_log_loss": 1.4738,
+  "best_validation_selection_log_loss_exact": 1.4738,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 1.4738,
+  "temperature": {
+    "pubmedqa_answer": 4.2611
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 2150,
+    "accuracy": 0.9414,
+    "log_loss": 0.2472,
+    "ece": 0.0404
+  },
+  "test": "not run (--no-test)"
+}
+saved model to /root/eddm_s8/models/s8_a1; metrics to /root/eddm_s8/code/results/fiorillo_v0_4/metrics/s8_a1_metrics.json
+2026-09-30T15:58:44Z  arm A: s8_a1 done
+2026-09-30T15:58:44Z  arm A: s8_a2 from /root/eddm_s8/models/s8_a1
+device: cuda, torch 2.8.0+cu128, calibration mode separate
+epoch 1 step 20/957 loss 0.5155 (31.5 sequences/s)
+epoch 1 step 40/957 loss 1.4557 (32.4 sequences/s)
+epoch 1 step 60/957 loss 0.2159 (32.9 sequences/s)
+epoch 1 step 80/957 loss 0.4368 (33.3 sequences/s)
+epoch 1 step 100/957 loss 0.5804 (33.5 sequences/s)
+epoch 1 step 120/957 loss 0.1637 (33.8 sequences/s)
+epoch 1 step 140/957 loss 1.0342 (33.9 sequences/s)
+epoch 1 step 160/957 loss 0.6732 (34.1 sequences/s)
+epoch 1 step 180/957 loss 0.4508 (34.1 sequences/s)
+epoch 1 step 200/957 loss 0.2308 (34.2 sequences/s)
+epoch 1 step 220/957 loss 0.3748 (34.3 sequences/s)
+epoch 1 step 240/957 loss 1.0289 (34.4 sequences/s)
+epoch 1 step 260/957 loss 0.3723 (34.4 sequences/s)
+epoch 1 step 280/957 loss 0.2485 (34.4 sequences/s)
+epoch 1 step 300/957 loss 0.4405 (34.4 sequences/s)
+epoch 1 step 320/957 loss 0.3979 (34.4 sequences/s)
+epoch 1 step 340/957 loss 0.2043 (34.4 sequences/s)
+epoch 1 step 360/957 loss 0.6681 (34.5 sequences/s)
+epoch 1 step 380/957 loss 0.5072 (34.5 sequences/s)
+epoch 1 step 400/957 loss 0.4240 (34.5 sequences/s)
+epoch 1 step 420/957 loss 0.5321 (34.5 sequences/s)
+epoch 1 step 440/957 loss 0.5489 (34.5 sequences/s)
+epoch 1 step 460/957 loss 0.0411 (34.5 sequences/s)
+epoch 1 step 480/957 loss 0.5840 (34.5 sequences/s)
+epoch 1 step 500/957 loss 0.2799 (34.5 sequences/s)
+epoch 1 step 520/957 loss 0.8693 (34.5 sequences/s)
+epoch 1 step 540/957 loss 0.7439 (34.5 sequences/s)
+epoch 1 step 560/957 loss 0.8176 (34.6 sequences/s)
+epoch 1 step 580/957 loss 0.7002 (34.5 sequences/s)
+epoch 1 step 600/957 loss 0.2778 (34.6 sequences/s)
+epoch 1 step 620/957 loss 0.0817 (34.6 sequences/s)
+epoch 1 step 640/957 loss 0.7474 (34.6 sequences/s)
+epoch 1 step 660/957 loss 0.1002 (34.6 sequences/s)
+epoch 1 step 680/957 loss 0.3097 (34.6 sequences/s)
+epoch 1 step 700/957 loss 0.1362 (34.6 sequences/s)
+epoch 1 step 720/957 loss 0.0679 (34.6 sequences/s)
+epoch 1 step 740/957 loss 0.8086 (34.7 sequences/s)
+epoch 1 step 760/957 loss 0.1610 (34.7 sequences/s)
+epoch 1 step 780/957 loss 0.2170 (34.7 sequences/s)
+epoch 1 step 800/957 loss 0.2560 (34.7 sequences/s)
+epoch 1 step 820/957 loss 0.2054 (34.7 sequences/s)
+epoch 1 step 840/957 loss 0.4225 (34.7 sequences/s)
+epoch 1 step 860/957 loss 0.7599 (34.6 sequences/s)
+epoch 1 step 880/957 loss 0.5423 (34.7 sequences/s)
+epoch 1 step 900/957 loss 0.2995 (34.7 sequences/s)
+epoch 1 step 920/957 loss 0.3281 (34.6 sequences/s)
+epoch 1 step 940/957 loss 0.4333 (34.7 sequences/s)
+validation after epoch 1, step 957: {'n': 2150, 'accuracy': 0.9377, 'log_loss': 0.188, 'ece': 0.0188, 'selection_log_loss': 0.6259, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7667, 'log_loss': 0.6259, 'ece': 0.0891}}, 'epoch': 1, 'step': 957, 'elapsed_seconds': 902.5}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_a2",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": false,
+  "freeze_encoder_steps": 0,
+  "autocast": "torch.float16",
+  "eval_every": 0,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/s8_a1",
+  "rows": {
+    "train": 30599,
+    "validation": 2150,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 957,
+  "max_len": 768,
+  "elapsed_seconds": 919.7,
+  "train_seconds": 883.4,
+  "sequences_per_second": 34.64,
+  "validation_history": [
+    {
+      "n": 2150,
+      "accuracy": 0.9377,
+      "log_loss": 0.188,
+      "ece": 0.0188,
+      "selection_log_loss": 0.6259,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7667,
+          "log_loss": 0.6259,
+          "ece": 0.0891
+        }
+      },
+      "epoch": 1,
+      "step": 957,
+      "elapsed_seconds": 902.5
+    }
+  ],
+  "best_validation_selection_log_loss": 0.6259,
+  "best_validation_selection_log_loss_exact": 0.6259,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 0.6259,
+  "temperature": {
+    "pubmedqa_answer": 1.399
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 2150,
+    "accuracy": 0.9377,
+    "log_loss": 0.188,
+    "ece": 0.0188
+  },
+  "test": "not run (--no-test)"
+}
+saved model to /root/eddm_s8/models/s8_a2; metrics to /root/eddm_s8/code/results/fiorillo_v0_4/metrics/s8_a2_metrics.json
+2026-09-30T16:14:23Z  arm A: s8_a2 done
+2026-09-30T16:14:23Z  arm A: s8_a3 from /root/eddm_s8/models/s8_a2
+device: cuda, torch 2.8.0+cu128, calibration mode separate
+epoch 1 step 20/2739 loss 1.0970 (37.3 sequences/s)
+epoch 1 step 40/2739 loss 0.8806 (38.6 sequences/s)
+epoch 1 step 60/2739 loss 0.0184 (40.0 sequences/s)
+epoch 1 step 80/2739 loss 0.8008 (40.1 sequences/s)
+epoch 1 step 100/2739 loss 0.7947 (40.9 sequences/s)
+epoch 1 step 120/2739 loss 0.6934 (41.2 sequences/s)
+epoch 1 step 140/2739 loss 0.7079 (41.5 sequences/s)
+epoch 1 step 160/2739 loss 0.0287 (41.8 sequences/s)
+epoch 1 step 180/2739 loss 0.9881 (42.1 sequences/s)
+epoch 1 step 200/2739 loss 0.7159 (42.5 sequences/s)
+epoch 1 step 220/2739 loss 1.4606 (42.6 sequences/s)
+epoch 1 step 240/2739 loss 0.2424 (42.7 sequences/s)
+validation after epoch 1, step 250: {'n': 9147, 'accuracy': 0.6705, 'log_loss': 0.7424, 'ece': 0.0141, 'selection_log_loss': 0.8132, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7733, 'log_loss': 0.7321, 'ece': 0.1342}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.8942, 'ece': 0.0136}}, 'epoch': 1, 'step': 250, 'elapsed_seconds': 235.9}
+epoch 1 step 260/2739 loss 1.1126 (34.4 sequences/s)
+epoch 1 step 280/2739 loss 0.7181 (34.9 sequences/s)
+epoch 1 step 300/2739 loss 0.1575 (35.4 sequences/s)
+epoch 1 step 320/2739 loss 0.4916 (35.9 sequences/s)
+epoch 1 step 340/2739 loss 0.1261 (36.3 sequences/s)
+epoch 1 step 360/2739 loss 0.9371 (36.6 sequences/s)
+epoch 1 step 380/2739 loss 0.1895 (36.9 sequences/s)
+epoch 1 step 400/2739 loss 0.2433 (37.2 sequences/s)
+epoch 1 step 420/2739 loss 0.8323 (37.5 sequences/s)
+epoch 1 step 440/2739 loss 1.3289 (37.9 sequences/s)
+epoch 1 step 460/2739 loss 0.2779 (38.1 sequences/s)
+epoch 1 step 480/2739 loss 0.3343 (38.3 sequences/s)
+epoch 1 step 500/2739 loss 0.4668 (38.6 sequences/s)
+validation after epoch 1, step 500: {'n': 9147, 'accuracy': 0.6673, 'log_loss': 0.7603, 'ece': 0.0565, 'selection_log_loss': 0.7964, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7133, 'log_loss': 0.6849, 'ece': 0.1102}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.908, 'ece': 0.068}}, 'epoch': 1, 'step': 500, 'elapsed_seconds': 464.4}
+epoch 1 step 520/2739 loss 0.8044 (34.8 sequences/s)
+epoch 1 step 540/2739 loss 0.4923 (35.1 sequences/s)
+epoch 1 step 560/2739 loss 0.7420 (35.3 sequences/s)
+epoch 1 step 580/2739 loss 1.0325 (35.6 sequences/s)
+epoch 1 step 600/2739 loss 0.7533 (35.8 sequences/s)
+epoch 1 step 620/2739 loss 0.8875 (36.0 sequences/s)
+epoch 1 step 640/2739 loss 0.7789 (36.3 sequences/s)
+epoch 1 step 660/2739 loss 0.3027 (36.5 sequences/s)
+epoch 1 step 680/2739 loss 0.7496 (36.7 sequences/s)
+epoch 1 step 700/2739 loss 0.8358 (36.9 sequences/s)
+epoch 1 step 720/2739 loss 0.7095 (37.0 sequences/s)
+epoch 1 step 740/2739 loss 0.6983 (37.1 sequences/s)
+validation after epoch 1, step 750: {'n': 9147, 'accuracy': 0.6702, 'log_loss': 0.7487, 'ece': 0.047, 'selection_log_loss': 0.8335, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7533, 'log_loss': 0.7735, 'ece': 0.1571}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.8934, 'ece': 0.0534}}, 'epoch': 1, 'step': 750, 'elapsed_seconds': 694.6}
+epoch 1 step 760/2739 loss 0.0425 (34.8 sequences/s)
+epoch 1 step 780/2739 loss 0.7652 (34.9 sequences/s)
+epoch 1 step 800/2739 loss 1.1038 (35.1 sequences/s)
+epoch 1 step 820/2739 loss 0.3439 (35.3 sequences/s)
+epoch 1 step 840/2739 loss 0.9286 (35.4 sequences/s)
+epoch 1 step 860/2739 loss 1.1856 (35.6 sequences/s)
+epoch 1 step 880/2739 loss 0.5713 (35.8 sequences/s)
+epoch 1 step 900/2739 loss 0.1717 (35.9 sequences/s)
+epoch 1 step 920/2739 loss 0.0929 (36.1 sequences/s)
+epoch 1 step 940/2739 loss 0.8005 (36.2 sequences/s)
+epoch 1 step 960/2739 loss 0.8195 (36.4 sequences/s)
+epoch 1 step 980/2739 loss 1.1065 (36.5 sequences/s)
+epoch 1 step 1000/2739 loss 1.3135 (36.6 sequences/s)
+validation after epoch 1, step 1000: {'n': 9147, 'accuracy': 0.673, 'log_loss': 0.7642, 'ece': 0.0984, 'selection_log_loss': 0.8298, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7867, 'log_loss': 0.7385, 'ece': 0.1224}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.9212, 'ece': 0.1248}}, 'epoch': 1, 'step': 1000, 'elapsed_seconds': 924.6}
+epoch 1 step 1020/2739 loss 0.7966 (34.9 sequences/s)
+epoch 1 step 1040/2739 loss 0.6698 (35.0 sequences/s)
+epoch 1 step 1060/2739 loss 1.0182 (35.2 sequences/s)
+epoch 1 step 1080/2739 loss 1.2128 (35.3 sequences/s)
+epoch 1 step 1100/2739 loss 0.6111 (35.4 sequences/s)
+epoch 1 step 1120/2739 loss 0.4752 (35.6 sequences/s)
+epoch 1 step 1140/2739 loss 0.8615 (35.7 sequences/s)
+epoch 1 step 1160/2739 loss 0.8857 (35.8 sequences/s)
+epoch 1 step 1180/2739 loss 0.8597 (35.9 sequences/s)
+epoch 1 step 1200/2739 loss 1.1045 (36.1 sequences/s)
+epoch 1 step 1220/2739 loss 0.8914 (36.2 sequences/s)
+epoch 1 step 1240/2739 loss 0.9391 (36.3 sequences/s)
+validation after epoch 1, step 1250: {'n': 9147, 'accuracy': 0.6722, 'log_loss': 0.728, 'ece': 0.0204, 'selection_log_loss': 0.8351, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.74, 'log_loss': 0.7869, 'ece': 0.1514}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.8833, 'ece': 0.0244}}, 'epoch': 1, 'step': 1250, 'elapsed_seconds': 1150.3}
+epoch 1 step 1260/2739 loss 0.7919 (35.0 sequences/s)
+epoch 1 step 1280/2739 loss 0.9109 (35.1 sequences/s)
+epoch 1 step 1300/2739 loss 0.8700 (35.2 sequences/s)
+epoch 1 step 1320/2739 loss 0.9151 (35.3 sequences/s)
+epoch 1 step 1340/2739 loss 0.4951 (35.5 sequences/s)
+epoch 1 step 1360/2739 loss 0.1691 (35.6 sequences/s)
+epoch 1 step 1380/2739 loss 1.2928 (35.7 sequences/s)
+epoch 1 step 1400/2739 loss 0.2736 (35.8 sequences/s)
+epoch 1 step 1420/2739 loss 0.2116 (35.9 sequences/s)
+epoch 1 step 1440/2739 loss 0.7404 (36.0 sequences/s)
+epoch 1 step 1460/2739 loss 0.0191 (36.1 sequences/s)
+epoch 1 step 1480/2739 loss 0.8445 (36.2 sequences/s)
+epoch 1 step 1500/2739 loss 0.3131 (36.3 sequences/s)
+validation after epoch 1, step 1500: {'n': 9147, 'accuracy': 0.673, 'log_loss': 0.7195, 'ece': 0.0334, 'selection_log_loss': 0.7951, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.76, 'log_loss': 0.7144, 'ece': 0.1407}, 'readmit_window': {'n': 6997, 'accuracy': 0.593, 'log_loss': 0.8757, 'ece': 0.041}}, 'epoch': 1, 'step': 1500, 'elapsed_seconds': 1376.5}
+epoch 1 step 1520/2739 loss 0.8906 (35.1 sequences/s)
+epoch 1 step 1540/2739 loss 0.5551 (35.2 sequences/s)
+epoch 1 step 1560/2739 loss 0.3906 (35.3 sequences/s)
+epoch 1 step 1580/2739 loss 0.6783 (35.4 sequences/s)
+epoch 1 step 1600/2739 loss 0.9394 (35.4 sequences/s)
+epoch 1 step 1620/2739 loss 0.7538 (35.5 sequences/s)
+epoch 1 step 1640/2739 loss 1.0560 (35.6 sequences/s)
+epoch 1 step 1660/2739 loss 0.5266 (35.7 sequences/s)
+epoch 1 step 1680/2739 loss 0.8973 (35.8 sequences/s)
+epoch 1 step 1700/2739 loss 0.8696 (35.9 sequences/s)
+epoch 1 step 1720/2739 loss 0.6690 (36.0 sequences/s)
+epoch 1 step 1740/2739 loss 0.0635 (36.1 sequences/s)
+validation after epoch 1, step 1750: {'n': 9147, 'accuracy': 0.6751, 'log_loss': 0.7223, 'ece': 0.0332, 'selection_log_loss': 0.8458, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7533, 'log_loss': 0.8185, 'ece': 0.138}, 'readmit_window': {'n': 6997, 'accuracy': 0.5955, 'log_loss': 0.873, 'ece': 0.038}}, 'epoch': 1, 'step': 1750, 'elapsed_seconds': 1604.7}
+epoch 1 step 1760/2739 loss 0.7481 (35.1 sequences/s)
+epoch 1 step 1780/2739 loss 0.3531 (35.1 sequences/s)
+epoch 1 step 1800/2739 loss 0.1588 (35.2 sequences/s)
+epoch 1 step 1820/2739 loss 0.7204 (35.3 sequences/s)
+epoch 1 step 1840/2739 loss 0.8034 (35.4 sequences/s)
+epoch 1 step 1860/2739 loss 0.1483 (35.5 sequences/s)
+epoch 1 step 1880/2739 loss 0.8448 (35.5 sequences/s)
+epoch 1 step 1900/2739 loss 0.2459 (35.6 sequences/s)
+epoch 1 step 1920/2739 loss 0.7811 (35.7 sequences/s)
+epoch 1 step 1940/2739 loss 0.4540 (35.7 sequences/s)
+epoch 1 step 1960/2739 loss 0.6302 (35.8 sequences/s)
+epoch 1 step 1980/2739 loss 0.9763 (35.9 sequences/s)
+epoch 1 step 2000/2739 loss 1.6781 (36.0 sequences/s)
+validation after epoch 1, step 2000: {'n': 9147, 'accuracy': 0.6754, 'log_loss': 0.7145, 'ece': 0.0302, 'selection_log_loss': 0.8189, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7533, 'log_loss': 0.7732, 'ece': 0.1678}, 'readmit_window': {'n': 6997, 'accuracy': 0.5964, 'log_loss': 0.8645, 'ece': 0.0358}}, 'epoch': 1, 'step': 2000, 'elapsed_seconds': 1833.7}
+epoch 1 step 2020/2739 loss 1.0977 (35.1 sequences/s)
+epoch 1 step 2040/2739 loss 1.0067 (35.2 sequences/s)
+epoch 1 step 2060/2739 loss 0.5553 (35.2 sequences/s)
+epoch 1 step 2080/2739 loss 0.8166 (35.3 sequences/s)
+epoch 1 step 2100/2739 loss 0.2337 (35.4 sequences/s)
+epoch 1 step 2120/2739 loss 0.7488 (35.4 sequences/s)
+epoch 1 step 2140/2739 loss 0.8076 (35.5 sequences/s)
+epoch 1 step 2160/2739 loss 0.5428 (35.6 sequences/s)
+epoch 1 step 2180/2739 loss 0.9983 (35.6 sequences/s)
+epoch 1 step 2200/2739 loss 0.6440 (35.7 sequences/s)
+epoch 1 step 2220/2739 loss 0.0588 (35.8 sequences/s)
+epoch 1 step 2240/2739 loss 0.7993 (35.8 sequences/s)
+validation after epoch 1, step 2250: {'n': 9147, 'accuracy': 0.684, 'log_loss': 0.7097, 'ece': 0.0137, 'selection_log_loss': 0.8361, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7333, 'log_loss': 0.8138, 'ece': 0.1504}, 'readmit_window': {'n': 6997, 'accuracy': 0.6078, 'log_loss': 0.8585, 'ece': 0.0145}}, 'epoch': 1, 'step': 2250, 'elapsed_seconds': 2060.9}
+epoch 1 step 2260/2739 loss 1.0074 (35.1 sequences/s)
+epoch 1 step 2280/2739 loss 0.3203 (35.1 sequences/s)
+epoch 1 step 2300/2739 loss 0.3772 (35.2 sequences/s)
+epoch 1 step 2320/2739 loss 0.9219 (35.3 sequences/s)
+epoch 1 step 2340/2739 loss 0.9321 (35.4 sequences/s)
+epoch 1 step 2360/2739 loss 0.7122 (35.4 sequences/s)
+epoch 1 step 2380/2739 loss 0.6829 (35.5 sequences/s)
+epoch 1 step 2400/2739 loss 0.3378 (35.5 sequences/s)
+epoch 1 step 2420/2739 loss 0.8653 (35.6 sequences/s)
+epoch 1 step 2440/2739 loss 0.7572 (35.6 sequences/s)
+epoch 1 step 2460/2739 loss 1.0078 (35.7 sequences/s)
+epoch 1 step 2480/2739 loss 1.2793 (35.8 sequences/s)
+epoch 1 step 2500/2739 loss 0.0181 (35.8 sequences/s)
+validation after epoch 1, step 2500: {'n': 9147, 'accuracy': 0.6869, 'log_loss': 0.7036, 'ece': 0.0175, 'selection_log_loss': 0.8078, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7333, 'log_loss': 0.7596, 'ece': 0.1366}, 'readmit_window': {'n': 6997, 'accuracy': 0.6101, 'log_loss': 0.856, 'ece': 0.0208}}, 'epoch': 1, 'step': 2500, 'elapsed_seconds': 2287.7}
+epoch 1 step 2520/2739 loss 0.5302 (35.1 sequences/s)
+epoch 1 step 2540/2739 loss 0.4617 (35.2 sequences/s)
+epoch 1 step 2560/2739 loss 0.0569 (35.3 sequences/s)
+epoch 1 step 2580/2739 loss 0.0355 (35.3 sequences/s)
+epoch 1 step 2600/2739 loss 0.5887 (35.4 sequences/s)
+epoch 1 step 2620/2739 loss 0.6270 (35.5 sequences/s)
+epoch 1 step 2640/2739 loss 0.7350 (35.5 sequences/s)
+epoch 1 step 2660/2739 loss 0.1204 (35.6 sequences/s)
+epoch 1 step 2680/2739 loss 0.7195 (35.6 sequences/s)
+epoch 1 step 2700/2739 loss 0.7853 (35.7 sequences/s)
+epoch 1 step 2720/2739 loss 0.4014 (35.7 sequences/s)
+validation after epoch 1, step 2739: {'n': 9147, 'accuracy': 0.6871, 'log_loss': 0.7039, 'ece': 0.0139, 'selection_log_loss': 0.8284, 'per_question': {'pubmedqa_answer': {'n': 150, 'accuracy': 0.7467, 'log_loss': 0.8031, 'ece': 0.1424}, 'readmit_window': {'n': 6997, 'accuracy': 0.6104, 'log_loss': 0.8536, 'ece': 0.0145}}, 'epoch': 1, 'step': 2739, 'elapsed_seconds': 2507.0}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s8_a3",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": false,
+  "freeze_encoder_steps": 0,
+  "autocast": "torch.float16",
+  "eval_every": 250,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/s8_a2",
+  "rows": {
+    "train": 87627,
+    "validation": 9147,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 2739,
+  "max_len": 768,
+  "elapsed_seconds": 2555.8,
+  "train_seconds": 2451.4,
+  "sequences_per_second": 35.75,
+  "validation_history": [
+    {
+      "n": 9147,
+      "accuracy": 0.6705,
+      "log_loss": 0.7424,
+      "ece": 0.0141,
+      "selection_log_loss": 0.8132,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7733,
+          "log_loss": 0.7321,
+          "ece": 0.1342
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8942,
+          "ece": 0.0136
+        }
+      },
+      "epoch": 1,
+      "step": 250,
+      "elapsed_seconds": 235.9
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6673,
+      "log_loss": 0.7603,
+      "ece": 0.0565,
+      "selection_log_loss": 0.7964,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7133,
+          "log_loss": 0.6849,
+          "ece": 0.1102
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.908,
+          "ece": 0.068
+        }
+      },
+      "epoch": 1,
+      "step": 500,
+      "elapsed_seconds": 464.4
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6702,
+      "log_loss": 0.7487,
+      "ece": 0.047,
+      "selection_log_loss": 0.8335,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.7735,
+          "ece": 0.1571
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8934,
+          "ece": 0.0534
+        }
+      },
+      "epoch": 1,
+      "step": 750,
+      "elapsed_seconds": 694.6
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.673,
+      "log_loss": 0.7642,
+      "ece": 0.0984,
+      "selection_log_loss": 0.8298,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7867,
+          "log_loss": 0.7385,
+          "ece": 0.1224
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.9212,
+          "ece": 0.1248
+        }
+      },
+      "epoch": 1,
+      "step": 1000,
+      "elapsed_seconds": 924.6
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6722,
+      "log_loss": 0.728,
+      "ece": 0.0204,
+      "selection_log_loss": 0.8351,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.74,
+          "log_loss": 0.7869,
+          "ece": 0.1514
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8833,
+          "ece": 0.0244
+        }
+      },
+      "epoch": 1,
+      "step": 1250,
+      "elapsed_seconds": 1150.3
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.673,
+      "log_loss": 0.7195,
+      "ece": 0.0334,
+      "selection_log_loss": 0.7951,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.76,
+          "log_loss": 0.7144,
+          "ece": 0.1407
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8757,
+          "ece": 0.041
+        }
+      },
+      "epoch": 1,
+      "step": 1500,
+      "elapsed_seconds": 1376.5
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6751,
+      "log_loss": 0.7223,
+      "ece": 0.0332,
+      "selection_log_loss": 0.8458,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.8185,
+          "ece": 0.138
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.5955,
+          "log_loss": 0.873,
+          "ece": 0.038
+        }
+      },
+      "epoch": 1,
+      "step": 1750,
+      "elapsed_seconds": 1604.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6754,
+      "log_loss": 0.7145,
+      "ece": 0.0302,
+      "selection_log_loss": 0.8189,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.7732,
+          "ece": 0.1678
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.5964,
+          "log_loss": 0.8645,
+          "ece": 0.0358
+        }
+      },
+      "epoch": 1,
+      "step": 2000,
+      "elapsed_seconds": 1833.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.684,
+      "log_loss": 0.7097,
+      "ece": 0.0137,
+      "selection_log_loss": 0.8361,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7333,
+          "log_loss": 0.8138,
+          "ece": 0.1504
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6078,
+          "log_loss": 0.8585,
+          "ece": 0.0145
+        }
+      },
+      "epoch": 1,
+      "step": 2250,
+      "elapsed_seconds": 2060.9
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6869,
+      "log_loss": 0.7036,
+      "ece": 0.0175,
+      "selection_log_loss": 0.8078,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7333,
+          "log_loss": 0.7596,
+          "ece": 0.1366
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6101,
+          "log_loss": 0.856,
+          "ece": 0.0208
+        }
+      },
+      "epoch": 1,
+      "step": 2500,
+      "elapsed_seconds": 2287.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6871,
+      "log_loss": 0.7039,
+      "ece": 0.0139,
+      "selection_log_loss": 0.8284,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7467,
+          "log_loss": 0.8031,
+          "ece": 0.1424
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6104,
+          "log_loss": 0.8536,
+          "ece": 0.0145
+        }
+      },
+      "epoch": 1,
+      "step": 2739,
+      "elapsed_seconds": 2507.0
+    }
+  ],
+  "best_validation_selection_log_loss": 0.7951,
+  "best_validation_selection_log_loss_exact": 0.79505,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 0.82835,
+  "temperature": {
+    "pubmedqa_answer": 1.9491,
+    "readmit_window": 0.9935
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 9147,
+    "accuracy": 0.6871,
+    "log_loss": 0.7039,
+    "ece": 0.0139
+  },
+  "test": "not run (--no-test)"
+}
+saved model to /root/eddm_s8/models/s8_a3; metrics to /root/eddm_s8/code/results/fiorillo_v0_4/metrics/s8_a3_metrics.json
+2026-09-30T16:57:23Z  arm A: s8_a3 done
+2026-09-30T16:57:23Z  arm A: s8_a3's validation predictions and logits copied
+2026-09-30T16:57:23Z  stage arm_a finished

@@ -1,0 +1,11 @@
+usage_check question: evidence_effect
+usage_check records: data/processed/session10/usage_check_evidence_effect_long_records.jsonl (60 records)
+usage_check mode: fixed2
+usage_check device_requested: auto
+usage_check device_resolved: mps
+usage_check start_utc: 2026-10-03T11:15:24Z
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<04:35,  1.44it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:01, 234.79it/s]Loading weights:  53%|█████▎    | 210/398 [00:01<00:00, 246.69it/s]Loading weights:  65%|██████▍   | 257/398 [00:01<00:00, 230.05it/s]Loading weights:  74%|███████▎  | 293/398 [00:03<00:01, 52.72it/s] Loading weights:  80%|███████▉  | 317/398 [00:04<00:01, 44.05it/s]Loading weights:  84%|████████▍ | 334/398 [00:05<00:01, 35.52it/s]Loading weights:  87%|████████▋ | 346/398 [00:05<00:01, 35.12it/s]Loading weights:  89%|████████▉ | 355/398 [00:06<00:01, 32.80it/s]Loading weights:  92%|█████████▏| 366/398 [00:06<00:00, 32.23it/s]Loading weights:  95%|█████████▍| 377/398 [00:07<00:00, 30.76it/s]Loading weights:  97%|█████████▋| 388/398 [00:07<00:00, 30.85it/s]Loading weights: 100%|██████████| 398/398 [00:07<00:00, 53.05it/s]
+[transformers] The tokenizer you are loading from 'models/fiorillo_v0_5/release/evidence_effect/s9_ei_wavg' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+usage_check end_utc: 2026-10-03T12:12:05Z
+usage_check exit_status: 0

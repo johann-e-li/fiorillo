@@ -1,0 +1,48 @@
+2026-10-01T20:05:41Z  stage trees started
+xgboost 3.2.0 | catboost 1.2.10 | lightgbm 4.7.0 | pandas 3.0.6 | scikit-learn 1.9.1
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+{
+ "recode": "written",
+ "tables_sha256": "46691eb124a7dba6c23bfd4d095d9a7cb6c23afdb87ceca23c55704fbb984aeb",
+ "columns": {
+  "session8": 44,
+  "added": 35,
+  "total": 79
+ },
+ "seconds": 4.2
+}
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+xgboost_codes: 333 trees on 55978 records in 9.9 s; validation log loss 0.84230
+catboost_codes: 1222 trees on 55978 records in 181.14 s; validation log loss 0.83800
+{"refit": ["xgboost_codes", "catboost_codes"], "seconds": 198.1}
+{
+ "lightgbm_tuned": {
+  "check": {
+   "against": "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv",
+   "against_sha256": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198",
+   "rows": 6997,
+   "max_abs_difference": 4.999920477644082e-10,
+   "limit": 0.001,
+   "passed": true,
+   "consequence": "the refit's predictions stand for lightgbm_tuned in the new pool, on validation and on test"
+  },
+  "seconds": 6.0
+ }
+}
+2026-10-01T20:09:26Z  stage trees finished

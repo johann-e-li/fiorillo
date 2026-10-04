@@ -1,0 +1,59 @@
+{
+  "plan": "docs/prompt_session8.md, THE PILOT AND THE COST RULE",
+  "steps": 30,
+  "timed_steps": "11 to 30",
+  "rule": "a setting passes if it did not run out of memory and its peak GPU memory plus 16 GiB (room for arm A beside it) is at most 76 GiB; the seeds use the passing setting with the higher training rate; if neither passes, setting c is run and used if it passes; if it does not, stop and ask",
+  "settings": [
+    {
+      "setting": "a",
+      "micro_batch": 1,
+      "grad_accum": 32,
+      "gradient_checkpointing": false,
+      "steps": 30,
+      "train_items_per_second": 2.8557667737879053,
+      "peak_gpu_memory_gib": 36.397950172424316,
+      "out_of_memory": false,
+      "timed_steps": [
+        11,
+        30
+      ],
+      "passes": true
+    },
+    {
+      "setting": "b",
+      "micro_batch": 4,
+      "grad_accum": 8,
+      "gradient_checkpointing": true,
+      "steps": 30,
+      "train_items_per_second": 1.292276985725993,
+      "peak_gpu_memory_gib": 15.386985778808594,
+      "out_of_memory": false,
+      "timed_steps": [
+        11,
+        30
+      ],
+      "passes": true
+    }
+  ],
+  "chosen": {
+    "setting": "a",
+    "micro_batch": 1,
+    "grad_accum": 32,
+    "gradient_checkpointing": false,
+    "train_items_per_second": 2.8557667737879053,
+    "peak_gpu_memory_gib": 36.397950172424316
+  },
+  "stop_and_ask": false,
+  "validation_items": 300,
+  "validation_batch_size": 4,
+  "validation_seconds": 55.857371180318296,
+  "validation_items_per_second": 5.3708220358516785,
+  "items": {
+    "train": 10046,
+    "validation": 300
+  },
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "written_utc": "2026-09-30T14:15:53Z"
+}

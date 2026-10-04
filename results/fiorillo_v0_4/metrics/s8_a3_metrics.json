@@ -1,0 +1,313 @@
+{
+  "system": "s8_a3",
+  "calibration_mode": "separate",
+  "batching": "by-question",
+  "reinit_head": false,
+  "freeze_encoder_steps": 0,
+  "autocast": "torch.float16",
+  "eval_every": 250,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "base_model": "/root/eddm_s8/models/s8_a2",
+  "rows": {
+    "train": 87627,
+    "validation": 9147,
+    "test": 0
+  },
+  "epochs": 1,
+  "micro_batch": 8,
+  "grad_accum": 4,
+  "optimizer_steps": 2739,
+  "max_len": 768,
+  "elapsed_seconds": 2555.8,
+  "train_seconds": 2451.4,
+  "sequences_per_second": 35.75,
+  "validation_history": [
+    {
+      "n": 9147,
+      "accuracy": 0.6705,
+      "log_loss": 0.7424,
+      "ece": 0.0141,
+      "selection_log_loss": 0.8132,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7733,
+          "log_loss": 0.7321,
+          "ece": 0.1342
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8942,
+          "ece": 0.0136
+        }
+      },
+      "epoch": 1,
+      "step": 250,
+      "elapsed_seconds": 235.9
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6673,
+      "log_loss": 0.7603,
+      "ece": 0.0565,
+      "selection_log_loss": 0.7964,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7133,
+          "log_loss": 0.6849,
+          "ece": 0.1102
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.908,
+          "ece": 0.068
+        }
+      },
+      "epoch": 1,
+      "step": 500,
+      "elapsed_seconds": 464.4
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6702,
+      "log_loss": 0.7487,
+      "ece": 0.047,
+      "selection_log_loss": 0.8335,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.7735,
+          "ece": 0.1571
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8934,
+          "ece": 0.0534
+        }
+      },
+      "epoch": 1,
+      "step": 750,
+      "elapsed_seconds": 694.6
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.673,
+      "log_loss": 0.7642,
+      "ece": 0.0984,
+      "selection_log_loss": 0.8298,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7867,
+          "log_loss": 0.7385,
+          "ece": 0.1224
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.9212,
+          "ece": 0.1248
+        }
+      },
+      "epoch": 1,
+      "step": 1000,
+      "elapsed_seconds": 924.6
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6722,
+      "log_loss": 0.728,
+      "ece": 0.0204,
+      "selection_log_loss": 0.8351,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.74,
+          "log_loss": 0.7869,
+          "ece": 0.1514
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8833,
+          "ece": 0.0244
+        }
+      },
+      "epoch": 1,
+      "step": 1250,
+      "elapsed_seconds": 1150.3
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.673,
+      "log_loss": 0.7195,
+      "ece": 0.0334,
+      "selection_log_loss": 0.7951,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.76,
+          "log_loss": 0.7144,
+          "ece": 0.1407
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.593,
+          "log_loss": 0.8757,
+          "ece": 0.041
+        }
+      },
+      "epoch": 1,
+      "step": 1500,
+      "elapsed_seconds": 1376.5
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6751,
+      "log_loss": 0.7223,
+      "ece": 0.0332,
+      "selection_log_loss": 0.8458,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.8185,
+          "ece": 0.138
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.5955,
+          "log_loss": 0.873,
+          "ece": 0.038
+        }
+      },
+      "epoch": 1,
+      "step": 1750,
+      "elapsed_seconds": 1604.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6754,
+      "log_loss": 0.7145,
+      "ece": 0.0302,
+      "selection_log_loss": 0.8189,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7533,
+          "log_loss": 0.7732,
+          "ece": 0.1678
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.5964,
+          "log_loss": 0.8645,
+          "ece": 0.0358
+        }
+      },
+      "epoch": 1,
+      "step": 2000,
+      "elapsed_seconds": 1833.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.684,
+      "log_loss": 0.7097,
+      "ece": 0.0137,
+      "selection_log_loss": 0.8361,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7333,
+          "log_loss": 0.8138,
+          "ece": 0.1504
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6078,
+          "log_loss": 0.8585,
+          "ece": 0.0145
+        }
+      },
+      "epoch": 1,
+      "step": 2250,
+      "elapsed_seconds": 2060.9
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6869,
+      "log_loss": 0.7036,
+      "ece": 0.0175,
+      "selection_log_loss": 0.8078,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7333,
+          "log_loss": 0.7596,
+          "ece": 0.1366
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6101,
+          "log_loss": 0.856,
+          "ece": 0.0208
+        }
+      },
+      "epoch": 1,
+      "step": 2500,
+      "elapsed_seconds": 2287.7
+    },
+    {
+      "n": 9147,
+      "accuracy": 0.6871,
+      "log_loss": 0.7039,
+      "ece": 0.0139,
+      "selection_log_loss": 0.8284,
+      "per_question": {
+        "pubmedqa_answer": {
+          "n": 150,
+          "accuracy": 0.7467,
+          "log_loss": 0.8031,
+          "ece": 0.1424
+        },
+        "readmit_window": {
+          "n": 6997,
+          "accuracy": 0.6104,
+          "log_loss": 0.8536,
+          "ece": 0.0145
+        }
+      },
+      "epoch": 1,
+      "step": 2739,
+      "elapsed_seconds": 2507.0
+    }
+  ],
+  "best_validation_selection_log_loss": 0.7951,
+  "best_validation_selection_log_loss_exact": 0.79505,
+  "keep": "last",
+  "kept_validation_selection_log_loss_exact": 0.82835,
+  "temperature": {
+    "pubmedqa_answer": 1.9491,
+    "readmit_window": 0.9935
+  },
+  "maybe_weight": {
+    "mode": "none",
+    "w": null
+  },
+  "no_test": true,
+  "validation_final": {
+    "n": 9147,
+    "accuracy": 0.6871,
+    "log_loss": 0.7039,
+    "ece": 0.0139
+  },
+  "test": "not run (--no-test)"
+}

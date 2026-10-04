@@ -1,0 +1,454 @@
+{
+ "plan": "docs/prompt_session8.md, CALIBRATION",
+ "s8_ei": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_4/predictions/s8_ei-raw_evidence_effect_validation.csv",
+    "kind": "mean of the three seeds' softmaxed logits",
+    "seeds": [
+     "s8_ei_1",
+     "s8_ei_2",
+     "s8_ei_3"
+    ]
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.1994439116069687,
+      "min": 0.19873314874014866,
+      "max": 0.2011350411299828
+     },
+     "params": [
+      0.37846529139749446
+     ],
+     "temperature": 1.4600421298966246,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20037996242304473,
+      "min": 0.19870944049871356,
+      "max": 0.2034520597513696
+     },
+     "params": [
+      0.37872267265494336,
+      -0.14437397692679702,
+      0.10775902101307741
+     ],
+     "temperature": 1.460417965740422,
+     "intercepts": [
+      0.0,
+      -0.14437397692679702,
+      0.10775902101307741
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:03Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.2252394658672678,
+    "log_loss": 0.1986508240753473,
+    "ece": 0.010951965906151195
+   }
+  }
+ },
+ "s8_ei_1": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_4/logits/s8_ei_1_evidence_effect_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.19904421342598347,
+      "min": 0.19840801822627888,
+      "max": 0.20088218776196362
+     },
+     "params": [
+      0.4133571298973945
+     ],
+     "temperature": 1.5118848688193127,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.2005338383282608,
+      "min": 0.19890259594729373,
+      "max": 0.203568492944111
+     },
+     "params": [
+      0.4150584308060376,
+      -0.07650141763475611,
+      0.04577254151649875
+     ],
+     "temperature": 1.5144592291802683,
+     "intercepts": [
+      0.0,
+      -0.07650141763475611,
+      0.04577254151649875
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:04Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.23014451125103538,
+    "log_loss": 0.19823435502624115,
+    "ece": 0.013728827834063144
+   }
+  }
+ },
+ "s8_ei_2": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_4/logits/s8_ei_2_evidence_effect_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20829915199383514,
+      "min": 0.20764694025176247,
+      "max": 0.2093917922690524
+     },
+     "params": [
+      0.44935946980538677
+     ],
+     "temperature": 1.5673079558348253,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.20903054114019398,
+      "min": 0.20740842860386496,
+      "max": 0.21201487358987403
+     },
+     "params": [
+      0.44724954245012355,
+      -0.1579710497436716,
+      0.12341613729671222
+     ],
+     "temperature": 1.5640045361180126,
+     "intercepts": [
+      0.0,
+      -0.1579710497436716,
+      0.12341613729671222
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:05Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.24702525305217157,
+    "log_loss": 0.2075411833784501,
+    "ece": 0.02541066158987721
+   }
+  }
+ },
+ "s8_ei_3": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_4/logits/s8_ei_3_evidence_effect_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.206982488495407,
+      "min": 0.2062464084206699,
+      "max": 0.20818156158419757
+     },
+     "params": [
+      0.3779769982963041
+     ],
+     "temperature": 1.4593293754278556,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.2073119143697523,
+      "min": 0.2057375136769881,
+      "max": 0.2099004437763399
+     },
+     "params": [
+      0.37721781805667753,
+      -0.19803444391873518,
+      0.14326106801863117
+     ],
+     "temperature": 1.4582219018421467,
+     "intercepts": [
+      0.0,
+      -0.19803444391873518,
+      0.14326106801863117
+     ]
+    }
+   },
+   "chosen": "temperature",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:07Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.23429358297478173,
+    "log_loss": 0.20615989531133766,
+    "ece": 0.012079286334881393
+   }
+  }
+ },
+ "s8_a3": {
+  "pubmedqa_answer": {
+   "source": {
+    "file": "results/fiorillo_v0_4/logits/s8_a3_pubmedqa_answer_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 150,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.6609166420267945,
+      "min": 0.65682681359662,
+      "max": 0.6756077292503575
+     },
+     "params": [
+      0.6684814556157129
+     ],
+     "temperature": 1.9512719766002247,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.60889260313967,
+      "min": 0.6026650304429135,
+      "max": 0.6226643076721293
+     },
+     "params": [
+      0.8404950075426373,
+      -0.30913254119049516,
+      -1.2705315799713617
+     ],
+     "temperature": 2.3175138797455044,
+     "intercepts": [
+      0.0,
+      -0.30913254119049516,
+      -1.2705315799713617
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:07Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.8030901746596243,
+    "log_loss": 0.5984883547012074,
+    "ece": 0.0721634935655169
+   }
+  },
+  "readmit_window": {
+   "source": {
+    "file": "results/fiorillo_v0_4/logits/s8_a3_readmit_window_validation_logits.csv",
+    "kind": "logits"
+   },
+   "n_calibrate": 6997,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8536583409426113,
+      "min": 0.8536185482619814,
+      "max": 0.853749867992857
+     },
+     "params": [
+      -0.007893827429495695
+     ],
+     "temperature": 0.9921372470070758,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.8536027399144004,
+      "min": 0.8534523555023421,
+      "max": 0.8539495943683081
+     },
+     "params": [
+      -0.03862445886471262,
+      -0.00931714996840789,
+      0.08836514320885583
+     ],
+     "temperature": 0.9621119539264348,
+     "intercepts": [
+      0.0,
+      -0.00931714996840789,
+      0.08836514320885583
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:09Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 0.8536184034189306,
+    "log_loss": 0.853416698084858,
+    "ece": 0.011730044457167604
+   }
+  }
+ },
+ "gemma4_31b": {
+  "evidence_effect": {
+   "source": {
+    "file": "results/fiorillo_v0_4/large_model/gemma4_31b-raw_evidence_effect_validation.csv",
+    "kind": "raw probabilities (printed)",
+    "true_answer_printed_zero": 0
+   },
+   "n_calibrate": 1237,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.39564921622153076,
+      "min": 0.39498592877168276,
+      "max": 0.39659849497031974
+     },
+     "params": [
+      1.986279521943748
+     ],
+     "temperature": 7.28836704739717,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.3424417498481988,
+      "min": 0.34129917978976815,
+      "max": 0.3439424879575482
+     },
+     "params": [
+      1.8333212627098352,
+      -1.8503347417732563,
+      -1.30421978105362
+     ],
+     "temperature": 6.2546254542516975,
+     "intercepts": [
+      0.0,
+      -1.8503347417732563,
+      -1.30421978105362
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:10Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 1.9906393827560798,
+    "log_loss": 0.3403107199274278,
+    "ece": 0.04310169257646518
+   }
+  },
+  "pubmedqa_answer": {
+   "source": {
+    "file": "results/fiorillo_v0_4/large_model/gemma4_31b-raw_pubmedqa_answer_validation.csv",
+    "kind": "raw probabilities (printed)",
+    "true_answer_printed_zero": 0
+   },
+   "n_calibrate": 150,
+   "folds": 5,
+   "repeats": 20,
+   "seed": 20260927,
+   "families": {
+    "temperature": {
+     "out_of_fold_log_loss": {
+      "mean": 0.657888615264654,
+      "min": 0.6556748926003612,
+      "max": 0.6661635004610714
+     },
+     "params": [
+      2.301086343275727
+     ],
+     "temperature": 9.985023728461561,
+     "intercepts": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "temperature_intercepts": {
+     "out_of_fold_log_loss": {
+      "mean": 0.6003982915899142,
+      "min": 0.596835816469937,
+      "max": 0.6101649079216155
+     },
+     "params": [
+      2.302585092994046,
+      -0.3182465860904474,
+      -1.3483462638714405
+     ],
+     "temperature": 10.0,
+     "intercepts": [
+      0.0,
+      -0.3182465860904474,
+      -1.3483462638714405
+     ]
+    }
+   },
+   "chosen": "temperature_intercepts",
+   "rule": "the family with the lower mean out-of-fold log loss; an exact tie goes to temperature (session 7's rule)",
+   "time_utc": "2026-09-30T22:59:10Z",
+   "validation_calibrate_items": {
+    "raw_log_loss": 3.9164639492198123,
+    "log_loss": 0.5933595166783586,
+    "ece": 0.07378408483474778
+   }
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "plan": "docs/prompt_session8.md, THE LARGE MODEL",
+ "evidence_effect": {
+  "validation": {
+   "items": 1237,
+   "wall_seconds": 2358.4806692097336,
+   "gpu_seconds_per_item": 1.906613313831636,
+   "prompt_tokens_per_item": 3754.1899757477768,
+   "first_pass_seconds": 486.4856209754944,
+   "top1000_items": 1084,
+   "top1000_seconds": 417.14792561531067,
+   "second_pass_items": 587,
+   "second_pass_seconds": 1454.8471226189286,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  },
+  "test": {
+   "items": 1218,
+   "wall_seconds": 1972.961730703946,
+   "gpu_seconds_per_item": 1.6198372173267208,
+   "prompt_tokens_per_item": 3773.6494252873563,
+   "first_pass_seconds": 476.9783854484558,
+   "top1000_items": 1052,
+   "top1000_seconds": 406.0920059680939,
+   "second_pass_items": 523,
+   "second_pass_seconds": 1089.8913392873962,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  }
+ },
+ "pubmedqa_answer": {
+  "validation": {
+   "items": 150,
+   "wall_seconds": 141.75853352807462,
+   "gpu_seconds_per_item": 0.9450568901871641,
+   "prompt_tokens_per_item": 394.23333333333335,
+   "first_pass_seconds": 5.954177141189575,
+   "top1000_items": 109,
+   "top1000_seconds": 4.446779727935791,
+   "second_pass_items": 53,
+   "second_pass_seconds": 131.35757665894926,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  },
+  "test": {
+   "items": 500,
+   "wall_seconds": 402.01858259714044,
+   "gpu_seconds_per_item": 0.8040371651942809,
+   "prompt_tokens_per_item": 411.348,
+   "first_pass_seconds": 20.39389944076538,
+   "top1000_items": 362,
+   "top1000_seconds": 14.854366302490234,
+   "second_pass_items": 176,
+   "second_pass_seconds": 366.7703168538848,
+   "note": "the process runs alone on the GPU, so its wall time is GPU time; model loading not counted"
+  }
+ },
+ "vllm": "0.30.0",
+ "load_seconds_first": 48.29160141944885,
+ "load_seconds_second": 44.887784004211426,
+ "time_utc": "2026-10-01T02:08:59Z"
+}

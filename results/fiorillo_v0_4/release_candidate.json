@@ -1,0 +1,136 @@
+{
+ "plan": "docs/prompt_session8.md, step 12 (the freeze)",
+ "system": "fiorillo_v0_4",
+ "specialists": {
+  "pubmedqa_answer": {
+   "system": "s7_b3",
+   "calibration_source": "results/fiorillo_v0_3/calibration_s7.json",
+   "family": "temperature_intercepts",
+   "params": [
+    0.6853176484884109,
+    -0.3920624652488797,
+    -1.134493957354086
+   ],
+   "temperature": 1.984402077754515,
+   "intercepts": [
+    0.0,
+    -0.3920624652488797,
+    -1.134493957354086
+   ],
+   "out_of_fold_log_loss": {
+    "mean": 0.572085489107788,
+    "min": 0.5655190764837481,
+    "max": 0.5836487601051927
+   }
+  },
+  "evidence_effect": {
+   "system": "s8_ei",
+   "seeds": [
+    "s8_ei_1",
+    "s8_ei_2",
+    "s8_ei_3"
+   ],
+   "calibration_source": "results/fiorillo_v0_4/calibration_s8.json",
+   "family": "temperature",
+   "params": [
+    0.37846529139749446
+   ],
+   "temperature": 1.4600421298966246,
+   "intercepts": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "out_of_fold_log_loss": {
+    "mean": 0.1994439116069687,
+    "min": 0.19873314874014866,
+    "max": 0.2011350411299828
+   }
+  },
+  "readmit_window": {
+   "system": "readmission_pool",
+   "source": "results/fiorillo_v0_4/readmission_pool.json",
+   "members": [
+    "lightgbm_tuned",
+    "xgboost_tuned",
+    "catboost_tuned",
+    "arm_laya",
+    "s7_b3"
+   ],
+   "weights": {
+    "lightgbm_tuned": 0.0,
+    "xgboost_tuned": 0.4,
+    "catboost_tuned": 0.6,
+    "arm_laya": 0.0,
+    "s7_b3": 0.0
+   },
+   "T": 0.9957247324725937,
+   "validation_log_loss": 0.8367890633905656
+  }
+ },
+ "reference": {
+  "gemma4_31b": {
+   "evidence_effect": {
+    "family": "temperature_intercepts",
+    "params": [
+     1.8333212627098352,
+     -1.8503347417732563,
+     -1.30421978105362
+    ],
+    "temperature": 6.2546254542516975,
+    "intercepts": [
+     0.0,
+     -1.8503347417732563,
+     -1.30421978105362
+    ],
+    "out_of_fold_log_loss": {
+     "mean": 0.3424417498481988,
+     "min": 0.34129917978976815,
+     "max": 0.3439424879575482
+    }
+   },
+   "pubmedqa_answer": {
+    "family": "temperature_intercepts",
+    "params": [
+     2.302585092994046,
+     -0.3182465860904474,
+     -1.3483462638714405
+    ],
+    "temperature": 10.0,
+    "intercepts": [
+     0.0,
+     -0.3182465860904474,
+     -1.3483462638714405
+    ],
+    "out_of_fold_log_loss": {
+     "mean": 0.6003982915899142,
+     "min": 0.596835816469937,
+     "max": 0.6101649079216155
+    }
+   }
+  }
+ },
+ "ece_limits": {
+  "evidence_effect": {
+   "limit": 0.05,
+   "floor": 0.05,
+   "p95": 0.0202444146886282,
+   "n": 1218,
+   "draws": 5000,
+   "source": "results/fiorillo_v0_4/ece_limit_evidence_effect.json",
+   "note": "the noise floor draws prompts one by one, not by article, which makes the limit a little strict"
+  }
+ },
+ "sha256": {
+  "results/fiorillo_v0_3/calibration_s7.json": "a57e4c4739a0f6636f91e97b2027b20d52938e9c3d3270dd35cd93dbda15f277",
+  "results/fiorillo_v0_4/calibration_s8.json": "a1a202ffcc946e31c49d31971fc70b43dba1bb8725423b7c3cd7b669bae15f2c",
+  "results/fiorillo_v0_4/ece_limit_evidence_effect.json": "1a86c76e28fd6e73d37f627c0a028c7040ec35ff3971f7cb3261d347f191353a",
+  "results/fiorillo_v0_4/readmission_pool.json": "9a1f1b224ee7016d1c35fd4966815e919e79dbfd0dd0ec54817bb0b64027325a",
+  "results/fiorillo_v0_3/predictions/lightgbm_tuned_readmit_window_validation.csv": "1f6768479750a46fe6ebe8b1aa91f40784efe746ac0c87874419164e4db4b198",
+  "results/fiorillo_v0_4/predictions/xgboost_tuned_readmit_window_validation.csv": "5b59893b489d1da54aa793a27694a1505e681a5e1d0889ccfd54917235268aa9",
+  "results/fiorillo_v0_4/predictions/catboost_tuned_readmit_window_validation.csv": "768a4152632e371ab8d7e32302fef4ad9cf904b204c31572f667fa96d2759c05",
+  "results/public_v0/predictions/arm_laya_readmit_window_validation.csv": "a29839303e335d1c9bc57ab45eff457ef8edbec28baee1554afad8c5eadffe1c",
+  "results/fiorillo_v0_3/predictions/s7_b3_readmit_window_validation.csv": "44e8fc5fb581de83684c65664bc33e883865761ebf583583760aa10fab8f0f12"
+ },
+ "time_utc": "2026-09-30T23:00:15Z"
+}

@@ -1,0 +1,29 @@
+2026-10-01T19:19:32Z  stage all started
+2026-10-01T19:19:32Z  all: the chain starts (checks_s8, pilot_long, train with trees beside it, tabicl, the large stages if they apply, biogpt, calibrate, freeze, testpreds, package)
+2026-10-01T19:19:32Z  all: checks_s8 started (log /root/eddm_s9/logs/checks_s8.log)
+2026-10-01T19:33:25Z  all: checks_s8 finished
+2026-10-01T19:33:25Z  all: pilot_long started (log /root/eddm_s9/logs/pilot_long.log)
+2026-10-01T20:05:41Z  all: pilot_long finished
+2026-10-01T20:05:41Z  all: trees started beside train (log /root/eddm_s9/logs/trees.log)
+2026-10-01T20:05:41Z  all: train started (log /root/eddm_s9/logs/train.log)
+2026-10-02T12:17:10Z  all: train finished
+2026-10-02T12:17:10Z  all: waiting for the trees stage beside train (process 26181)
+2026-10-02T12:17:10Z  all: trees finished
+2026-10-02T12:17:10Z  all: tabicl started (log /root/eddm_s9/logs/tabicl.log)
+2026-10-02T12:17:20Z  all: tabicl wrote its NOT BUILT marker (NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)); the chain continues
+2026-10-02T12:17:20Z  all: v0.5's EI recipe reads 6,144 tokens, so GEMMA ON THE LONGER INPUT applies
+2026-10-02T12:17:20Z  all: prepare_large started (log /root/eddm_s9/logs/prepare_large.log)
+2026-10-02T12:25:13Z  all: prepare_large finished
+2026-10-02T12:25:13Z  all: smoke_large started (log /root/eddm_s9/logs/smoke_large.log)
+2026-10-02T12:30:42Z  all: smoke_large finished
+2026-10-02T12:30:42Z  all: large_validation started (log /root/eddm_s9/logs/large_validation.log)
+2026-10-02T13:28:21Z  all: large_validation finished
+2026-10-02T13:28:21Z  all: biogpt started (log /root/eddm_s9/logs/biogpt.log)
+2026-10-02T13:39:25Z  all: biogpt finished
+2026-10-02T13:39:25Z  all: calibrate started (log /root/eddm_s9/logs/calibrate.log)
+2026-10-02T13:40:31Z  all: calibrate finished
+2026-10-02T13:40:31Z  all: freeze started (log /root/eddm_s9/logs/freeze.log)
+2026-10-02T13:40:31Z  all: freeze finished
+2026-10-02T13:40:31Z  all: testpreds started (log /root/eddm_s9/logs/testpreds.log)
+2026-10-02T15:18:19Z  all: testpreds finished
+2026-10-02T15:18:19Z  all: package started (log /root/eddm_s9/logs/package.log)

@@ -1,0 +1,24 @@
+\begin{tabular}{>{\raggedright\arraybackslash}p{5.4cm}rcrc}
+\toprule
+Statistic & Prompts & v0.4 (\texttt{s8\_ei}) & Prompts & v0.5 (\texttt{s9\_ei\_wavg}) \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{No article}} \\[1pt]
+Accuracy & 1,218 & 0.5090 {\scriptsize (0.4779 to 0.5439)} & 1,218 & 0.5156 {\scriptsize (0.4874 to 0.5494)} \\
+Macro-F1 & 1,218 & 0.4289 {\scriptsize (0.3941 to 0.4634)} & 1,218 & 0.4384 {\scriptsize (0.4085 to 0.4726)} \\
+Agreement with the whole-article answer & 1,218 & 0.5140 {\scriptsize (0.4812 to 0.5473)} & 1,218 & 0.5238 {\scriptsize (0.4955 to 0.5571)} \\
+\multicolumn{5}{@{}l}{\textit{Title only}} \\[1pt]
+Accuracy & 1,209 & 0.5715 {\scriptsize (0.5346 to 0.6065)} & 1,209 & 0.5715 {\scriptsize (0.5389 to 0.6041)} \\
+Macro-F1 & 1,209 & 0.5338 {\scriptsize (0.4964 to 0.5733)} & 1,209 & 0.5327 {\scriptsize (0.4995 to 0.5692)} \\
+Agreement with the whole-article answer & 1,209 & 0.5682 {\scriptsize (0.5343 to 0.6027)} & 1,209 & 0.5782 {\scriptsize (0.5471 to 0.6108)} \\
+Macro-F1, no article, on the same prompts & 1,209 & 0.4314 {\scriptsize (0.3967 to 0.4650)} & 1,209 & 0.4388 {\scriptsize (0.4076 to 0.4723)} \\
+Macro-F1, title only minus no article & 1,209 & 0.1024 {\scriptsize (0.0736 to 0.1331)} & 1,209 & 0.0939 {\scriptsize (0.0655 to 0.1234)} \\
+\multicolumn{5}{@{}l}{\textit{Intervention and comparator exchanged}} \\[1pt]
+Accuracy against the exchanged answers & 1,218 & 0.8103 {\scriptsize (0.7802 to 0.8400)} & 1,218 & 0.7808 {\scriptsize (0.7493 to 0.8117)} \\
+Macro-F1 against the exchanged answers & 1,218 & 0.7958 {\scriptsize (0.7633 to 0.8283)} & 1,218 & 0.7600 {\scriptsize (0.7268 to 0.7946)} \\
+Share of direction answers that exchange & 703 & 0.7226 {\scriptsize (0.6765 to 0.7714)} & 699 & 0.6652 {\scriptsize (0.6208 to 0.7157)} \\
+Share of no-difference answers that stay & 515 & 0.9806 {\scriptsize (0.9657 to 0.9931)} & 519 & 0.9672 {\scriptsize (0.9477 to 0.9841)} \\
+\multicolumn{5}{@{}l}{\textit{Exchanged, on the prompts whose comparator is a time point or a baseline}} \\[1pt]
+Share of direction answers that exchange & 38 & 0.1316 {\scriptsize (0.0250 to 0.2632)} & 37 & 0.2162 {\scriptsize (0.0857 to 0.3439)} \\
+Share of no-difference answers that stay & 10 & 1.0000 {\scriptsize (1.0000 to 1.0000)} & 11 & 1.0000 {\scriptsize (1.0000 to 1.0000)} \\
+\bottomrule
+\end{tabular}

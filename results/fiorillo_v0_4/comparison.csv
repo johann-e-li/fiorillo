@@ -1,0 +1,508 @@
+section,evaluation,system,reference,group,metric,estimate,low,high,n,system_estimate,reference_estimate,note
+metrics,evidence_effect,s8_ei,,,log_loss,0.199449,0.157254,0.248619,1218,,,
+metrics,evidence_effect,s8_ei,,,brier,0.100116,0.077771,0.126561,1218,,,
+metrics,evidence_effect,s8_ei,,,accuracy,0.940887,0.924604,0.955372,1218,,,
+metrics,evidence_effect,s8_ei,,,macro_f1,0.939909,0.922543,0.954353,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_increased,0.935802,0.915164,0.952917,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_decreased,0.936455,0.911256,0.957656,1218,,,
+metrics,evidence_effect,s8_ei,,,f1_no_difference,0.947471,0.927764,0.963037,1218,,,
+metrics,evidence_effect,s8_ei,,,ece,0.011914,0.011950,0.029970,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,log_loss,0.199449,0.157254,0.248619,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,brier,0.100116,0.077771,0.126561,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,accuracy,0.940887,0.924604,0.955372,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,macro_f1,0.939909,0.922543,0.954353,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,f1_increased,0.935802,0.915164,0.952917,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,f1_decreased,0.936455,0.911256,0.957656,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,f1_no_difference,0.947471,0.927764,0.963037,1218,,,
+metrics,evidence_effect,s8_ei_temperature,,,ece,0.011914,0.011950,0.029970,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,log_loss,0.223751,0.165132,0.291510,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,brier,0.102420,0.078061,0.131320,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,accuracy,0.940887,0.924604,0.955372,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,macro_f1,0.939909,0.922543,0.954353,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,f1_increased,0.935802,0.915164,0.952917,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,f1_decreased,0.936455,0.911256,0.957656,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,f1_no_difference,0.947471,0.927764,0.963037,1218,,,
+metrics,evidence_effect,s8_ei-raw,,,ece,0.032459,0.024438,0.050419,1218,,,
+metrics,evidence_effect,s8_ei_1,,,log_loss,0.208516,0.164566,0.257498,1218,,,
+metrics,evidence_effect,s8_ei_1,,,brier,0.104955,0.081868,0.131482,1218,,,
+metrics,evidence_effect,s8_ei_1,,,accuracy,0.938424,0.921164,0.954025,1218,,,
+metrics,evidence_effect,s8_ei_1,,,macro_f1,0.937249,0.919836,0.953187,1218,,,
+metrics,evidence_effect,s8_ei_1,,,f1_increased,0.931204,0.910344,0.948959,1218,,,
+metrics,evidence_effect,s8_ei_1,,,f1_decreased,0.933786,0.909672,0.956081,1218,,,
+metrics,evidence_effect,s8_ei_1,,,f1_no_difference,0.946757,0.926827,0.963037,1218,,,
+metrics,evidence_effect,s8_ei_1,,,ece,0.013812,0.011442,0.032149,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,log_loss,0.208516,0.164566,0.257498,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,brier,0.104955,0.081868,0.131482,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,accuracy,0.938424,0.921164,0.954025,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,macro_f1,0.937249,0.919836,0.953187,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,f1_increased,0.931204,0.910344,0.948959,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,f1_decreased,0.933786,0.909672,0.956081,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,f1_no_difference,0.946757,0.926827,0.963037,1218,,,
+metrics,evidence_effect,s8_ei_1_temperature,,,ece,0.013812,0.011442,0.032149,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,log_loss,0.243769,0.181201,0.319048,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,brier,0.108196,0.083396,0.137172,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,accuracy,0.938424,0.921164,0.954025,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,macro_f1,0.937249,0.919836,0.953187,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,f1_increased,0.931204,0.910344,0.948959,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,f1_decreased,0.933786,0.909672,0.956081,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,f1_no_difference,0.946757,0.926827,0.963037,1218,,,
+metrics,evidence_effect,s8_ei_1-raw,,,ece,0.036944,0.027578,0.055221,1218,,,
+metrics,evidence_effect,s8_ei_2,,,log_loss,0.209829,0.166996,0.260539,1218,,,
+metrics,evidence_effect,s8_ei_2,,,brier,0.105418,0.081952,0.132702,1218,,,
+metrics,evidence_effect,s8_ei_2,,,accuracy,0.936782,0.919279,0.952385,1218,,,
+metrics,evidence_effect,s8_ei_2,,,macro_f1,0.935847,0.917900,0.951555,1218,,,
+metrics,evidence_effect,s8_ei_2,,,f1_increased,0.933661,0.913519,0.951632,1218,,,
+metrics,evidence_effect,s8_ei_2,,,f1_decreased,0.931553,0.905851,0.953384,1218,,,
+metrics,evidence_effect,s8_ei_2,,,f1_no_difference,0.942326,0.921345,0.958370,1218,,,
+metrics,evidence_effect,s8_ei_2,,,ece,0.018759,0.014037,0.033098,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,log_loss,0.209829,0.166996,0.260539,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,brier,0.105418,0.081952,0.132702,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,accuracy,0.936782,0.919279,0.952385,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,macro_f1,0.935847,0.917900,0.951555,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,f1_increased,0.933661,0.913519,0.951632,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,f1_decreased,0.931553,0.905851,0.953384,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,f1_no_difference,0.942326,0.921345,0.958370,1218,,,
+metrics,evidence_effect,s8_ei_2_temperature,,,ece,0.018759,0.014037,0.033098,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,log_loss,0.246801,0.183073,0.324720,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,brier,0.109752,0.083436,0.139058,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,accuracy,0.936782,0.919279,0.952385,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,macro_f1,0.935847,0.917900,0.951555,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,f1_increased,0.933661,0.913519,0.951632,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,f1_decreased,0.931553,0.905851,0.953384,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,f1_no_difference,0.942326,0.921345,0.958370,1218,,,
+metrics,evidence_effect,s8_ei_2-raw,,,ece,0.040644,0.029538,0.057779,1218,,,
+metrics,evidence_effect,s8_ei_3,,,log_loss,0.199843,0.157687,0.248904,1218,,,
+metrics,evidence_effect,s8_ei_3,,,brier,0.099113,0.076843,0.125321,1218,,,
+metrics,evidence_effect,s8_ei_3,,,accuracy,0.938424,0.920990,0.953165,1218,,,
+metrics,evidence_effect,s8_ei_3,,,macro_f1,0.937933,0.920293,0.952877,1218,,,
+metrics,evidence_effect,s8_ei_3,,,f1_increased,0.932515,0.912098,0.950522,1218,,,
+metrics,evidence_effect,s8_ei_3,,,f1_decreased,0.937815,0.911849,0.959582,1218,,,
+metrics,evidence_effect,s8_ei_3,,,f1_no_difference,0.943470,0.923703,0.959502,1218,,,
+metrics,evidence_effect,s8_ei_3,,,ece,0.013697,0.011247,0.029494,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,log_loss,0.199843,0.157687,0.248904,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,brier,0.099113,0.076843,0.125321,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,accuracy,0.938424,0.920990,0.953165,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,macro_f1,0.937933,0.920293,0.952877,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,f1_increased,0.932515,0.912098,0.950522,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,f1_decreased,0.937815,0.911849,0.959582,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,f1_no_difference,0.943470,0.923703,0.959502,1218,,,
+metrics,evidence_effect,s8_ei_3_temperature,,,ece,0.013697,0.011247,0.029494,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,log_loss,0.223215,0.164659,0.289407,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,brier,0.102054,0.077846,0.130427,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,accuracy,0.938424,0.920990,0.953165,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,macro_f1,0.937933,0.920293,0.952877,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,f1_increased,0.932515,0.912098,0.950522,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,f1_decreased,0.937815,0.911849,0.959582,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,f1_no_difference,0.943470,0.923703,0.959502,1218,,,
+metrics,evidence_effect,s8_ei_3-raw,,,ece,0.036507,0.025634,0.052312,1218,,,
+metrics,evidence_effect,gemma4_31b,,,log_loss,0.407805,0.337272,0.480403,1218,,,
+metrics,evidence_effect,gemma4_31b,,,brier,0.204016,0.167069,0.241809,1218,,,
+metrics,evidence_effect,gemma4_31b,,,accuracy,0.871100,0.845020,0.894911,1218,,,
+metrics,evidence_effect,gemma4_31b,,,macro_f1,0.862587,0.833263,0.887909,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_increased,0.845466,0.808773,0.879348,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_decreased,0.824104,0.778712,0.862701,1218,,,
+metrics,evidence_effect,gemma4_31b,,,f1_no_difference,0.918191,0.894729,0.939537,1218,,,
+metrics,evidence_effect,gemma4_31b,,,ece,0.028293,0.022099,0.056017,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,log_loss,0.442366,0.376106,0.509456,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,brier,0.220458,0.182277,0.262168,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,accuracy,0.869458,0.843034,0.893973,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,macro_f1,0.860839,0.831526,0.887385,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,f1_increased,0.839895,0.802636,0.874304,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,f1_decreased,0.824841,0.778545,0.864026,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,f1_no_difference,0.917782,0.895038,0.938811,1218,,,
+metrics,evidence_effect,gemma4_31b_temperature,,,ece,0.032144,0.024849,0.056136,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,log_loss,2.291077,1.827532,2.775923,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,brier,0.261526,0.212387,0.314808,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,accuracy,0.869458,0.843034,0.893973,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,macro_f1,0.860839,0.831526,0.887385,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,f1_increased,0.839895,0.802636,0.874304,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,f1_decreased,0.824841,0.778545,0.864026,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,f1_no_difference,0.917782,0.895038,0.938811,1218,,,
+metrics,evidence_effect,gemma4_31b-raw,,,ece,0.131669,0.106897,0.158728,1218,,,
+metrics,evidence_effect,prior,,,log_loss,1.076717,1.058008,1.094031,1218,,,
+metrics,evidence_effect,prior,,,brier,0.652536,0.639467,0.664342,1218,,,
+metrics,evidence_effect,prior,,,accuracy,0.421182,0.385464,0.458370,1218,,,
+metrics,evidence_effect,prior,,,macro_f1,0.197574,0.185480,0.209535,1218,,,
+metrics,evidence_effect,prior,,,f1_increased,0.000000,0.000000,0.000000,1218,,,
+metrics,evidence_effect,prior,,,f1_decreased,0.000000,0.000000,0.000000,1218,,,
+metrics,evidence_effect,prior,,,f1_no_difference,0.592721,0.556441,0.628606,1218,,,
+metrics,evidence_effect,prior,,,ece,0.030540,0.001807,0.066258,1218,,,
+metrics,pubmedqa_answer,s7_b3,,,log_loss,0.579666,0.506978,0.650873,500,,,
+metrics,pubmedqa_answer,s7_b3,,,brier,0.314738,0.268273,0.359516,500,,,
+metrics,pubmedqa_answer,s7_b3,,,ece,0.040133,0.031459,0.079987,500,,,
+metrics,pubmedqa_answer,s7_b3,,,accuracy,0.796000,0.760000,0.834000,500,,,
+metrics,pubmedqa_answer,s7_b3,,,macro_f1,0.569754,0.540643,0.603864,500,,,
+metrics,pubmedqa_answer,s7_b3_temperature,,,log_loss,0.604423,0.533633,0.676698,500,,,
+metrics,pubmedqa_answer,s7_b3_temperature,,,brier,0.327721,0.283709,0.371100,500,,,
+metrics,pubmedqa_answer,s7_b3_temperature,,,ece,0.040142,0.034470,0.081976,500,,,
+metrics,pubmedqa_answer,s7_b3_temperature,,,accuracy,0.786000,0.750000,0.822000,500,,,
+metrics,pubmedqa_answer,s7_b3_temperature,,,macro_f1,0.622284,0.578015,0.668815,500,,,
+metrics,pubmedqa_answer,s7_b3-raw,,,log_loss,0.671036,0.558663,0.783724,500,,,
+metrics,pubmedqa_answer,s7_b3-raw,,,brier,0.336053,0.281712,0.388725,500,,,
+metrics,pubmedqa_answer,s7_b3-raw,,,ece,0.076706,0.059175,0.116203,500,,,
+metrics,pubmedqa_answer,s7_b3-raw,,,accuracy,0.786000,0.750000,0.822000,500,,,
+metrics,pubmedqa_answer,s7_b3-raw,,,macro_f1,0.622284,0.578015,0.668815,500,,,
+metrics,pubmedqa_answer,arm_laya,,,log_loss,0.742808,0.669808,0.816414,500,,,
+metrics,pubmedqa_answer,arm_laya,,,brier,0.413810,0.368633,0.458223,500,,,
+metrics,pubmedqa_answer,arm_laya,,,ece,0.027569,0.030068,0.081787,500,,,
+metrics,pubmedqa_answer,arm_laya,,,accuracy,0.714000,0.672000,0.756000,500,,,
+metrics,pubmedqa_answer,arm_laya,,,macro_f1,0.500519,0.474432,0.525804,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,log_loss,0.613082,0.530868,0.695734,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,brier,0.320942,0.272804,0.369646,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,ece,0.057493,0.043073,0.096993,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,accuracy,0.784000,0.745950,0.820050,500,,,
+metrics,pubmedqa_answer,gemma4_31b,,,macro_f1,0.586196,0.552652,0.625214,500,,,
+metrics,pubmedqa_answer,gemma4_31b_temperature,,,log_loss,0.637449,0.570704,0.708971,500,,,
+metrics,pubmedqa_answer,gemma4_31b_temperature,,,brier,0.344978,0.299884,0.391242,500,,,
+metrics,pubmedqa_answer,gemma4_31b_temperature,,,ece,0.094493,0.070896,0.132795,500,,,
+metrics,pubmedqa_answer,gemma4_31b_temperature,,,accuracy,0.772000,0.734000,0.808000,500,,,
+metrics,pubmedqa_answer,gemma4_31b_temperature,,,macro_f1,0.627265,0.586496,0.674984,500,,,
+metrics,pubmedqa_answer,gemma4_31b-raw,,,log_loss,3.643300,2.980415,4.297614,500,,,
+metrics,pubmedqa_answer,gemma4_31b-raw,,,brier,0.448821,0.376150,0.522534,500,,,
+metrics,pubmedqa_answer,gemma4_31b-raw,,,ece,0.222589,0.188033,0.261588,500,,,
+metrics,pubmedqa_answer,gemma4_31b-raw,,,accuracy,0.772000,0.734000,0.808000,500,,,
+metrics,pubmedqa_answer,gemma4_31b-raw,,,macro_f1,0.627265,0.586496,0.674984,500,,,
+metrics,pubmedqa_answer,s8_a3,,,log_loss,0.607278,0.535048,0.680485,500,,,
+metrics,pubmedqa_answer,s8_a3,,,brier,0.324958,0.279913,0.368390,500,,,
+metrics,pubmedqa_answer,s8_a3,,,ece,0.057087,0.044831,0.099261,500,,,
+metrics,pubmedqa_answer,s8_a3,,,accuracy,0.790000,0.754000,0.826000,500,,,
+metrics,pubmedqa_answer,s8_a3,,,macro_f1,0.556696,0.535438,0.577882,500,,,
+metrics,pubmedqa_answer,s8_a3_temperature,,,log_loss,0.636850,0.573108,0.702816,500,,,
+metrics,pubmedqa_answer,s8_a3_temperature,,,brier,0.350231,0.307584,0.392325,500,,,
+metrics,pubmedqa_answer,s8_a3_temperature,,,ece,0.053699,0.041654,0.094037,500,,,
+metrics,pubmedqa_answer,s8_a3_temperature,,,accuracy,0.764000,0.726000,0.804000,500,,,
+metrics,pubmedqa_answer,s8_a3_temperature,,,macro_f1,0.620862,0.579620,0.665088,500,,,
+metrics,pubmedqa_answer,s8_a3-raw,,,log_loss,0.752566,0.628502,0.875053,500,,,
+metrics,pubmedqa_answer,s8_a3-raw,,,brier,0.369558,0.313378,0.426747,500,,,
+metrics,pubmedqa_answer,s8_a3-raw,,,ece,0.107719,0.085221,0.147927,500,,,
+metrics,pubmedqa_answer,s8_a3-raw,,,accuracy,0.764000,0.726000,0.804000,500,,,
+metrics,pubmedqa_answer,s8_a3-raw,,,macro_f1,0.620862,0.579620,0.665088,500,,,
+metrics,pubmedqa_answer,s7_a3,,,log_loss,0.650607,0.573118,0.730229,500,,,
+metrics,pubmedqa_answer,s7_a3,,,brier,0.358394,0.311913,0.406114,500,,,
+metrics,pubmedqa_answer,s7_a3,,,ece,0.046217,0.037142,0.090492,500,,,
+metrics,pubmedqa_answer,s7_a3,,,accuracy,0.754000,0.716000,0.792000,500,,,
+metrics,pubmedqa_answer,s7_a3,,,macro_f1,0.529344,0.504887,0.551386,500,,,
+metrics,pubmedqa_answer,s7_a3_temperature,,,log_loss,0.662802,0.587997,0.744235,500,,,
+metrics,pubmedqa_answer,s7_a3_temperature,,,brier,0.365436,0.318359,0.414505,500,,,
+metrics,pubmedqa_answer,s7_a3_temperature,,,ece,0.055699,0.042272,0.098272,500,,,
+metrics,pubmedqa_answer,s7_a3_temperature,,,accuracy,0.752000,0.714000,0.790000,500,,,
+metrics,pubmedqa_answer,s7_a3_temperature,,,macro_f1,0.574638,0.527397,0.620969,500,,,
+metrics,pubmedqa_answer,prior,,,log_loss,1.159279,1.040141,1.292050,500,,,
+metrics,pubmedqa_answer,prior,,,brier,0.585499,0.550341,0.620792,500,,,
+metrics,pubmedqa_answer,prior,,,ece,0.064627,0.022627,0.108627,500,,,
+metrics,pubmedqa_answer,prior,,,accuracy,0.552000,0.508000,0.594000,500,,,
+metrics,pubmedqa_answer,prior,,,macro_f1,0.237113,0.224580,0.248432,500,,,
+metrics,readmit_window,readmission_pool,,,log_loss,0.827515,0.813195,0.841139,6998,,,
+metrics,readmit_window,readmission_pool,,,brier,0.497196,0.488222,0.506167,6998,,,
+metrics,readmit_window,readmission_pool,,,ece,0.006583,0.008520,0.022508,6998,,,
+metrics,readmit_window,readmission_pool,,,accuracy,0.615747,0.604173,0.626897,6998,,,
+metrics,readmit_window,readmission_pool,,,macro_f1,0.369494,0.357856,0.381300,6998,,,
+metrics,readmit_window,readmission_pool,,,macro_f1_tuned,0.463226,0.448849,0.478001,6998,,,
+metrics,readmit_window,readmission_pool,,,quadratic_weighted_kappa,0.130131,0.110128,0.149150,6998,,,
+metrics,readmit_window,readmission_pool,,,auroc_30d,0.662194,0.639414,0.685497,6998,,,
+metrics,readmit_window,readmission_pool,,,calibration_intercept_30d,-0.019197,-0.103092,0.064556,6998,,,
+metrics,readmit_window,readmission_pool,,,calibration_slope_30d,1.049268,0.910825,1.194045,6998,,,
+metrics,readmit_window,xgboost_tuned,,,log_loss,0.830997,0.816581,0.844752,6998,,,
+metrics,readmit_window,xgboost_tuned,,,brier,0.499664,0.490681,0.508485,6998,,,
+metrics,readmit_window,xgboost_tuned,,,ece,0.010262,0.008106,0.024107,6998,,,
+metrics,readmit_window,xgboost_tuned,,,accuracy,0.613890,0.602601,0.625039,6998,,,
+metrics,readmit_window,xgboost_tuned,,,macro_f1,0.374791,0.362505,0.387050,6998,,,
+metrics,readmit_window,xgboost_tuned,,,macro_f1_tuned,0.455123,0.440973,0.469032,6998,,,
+metrics,readmit_window,xgboost_tuned,,,quadratic_weighted_kappa,0.137122,0.116834,0.158276,6998,,,
+metrics,readmit_window,xgboost_tuned,,,auroc_30d,0.658421,0.635458,0.681687,6998,,,
+metrics,readmit_window,xgboost_tuned,,,calibration_intercept_30d,-0.033816,-0.118058,0.050939,6998,,,
+metrics,readmit_window,xgboost_tuned,,,calibration_slope_30d,0.996908,0.863492,1.142972,6998,,,
+metrics,readmit_window,catboost_tuned,,,log_loss,0.829101,0.814933,0.842893,6998,,,
+metrics,readmit_window,catboost_tuned,,,brier,0.498072,0.488885,0.507156,6998,,,
+metrics,readmit_window,catboost_tuned,,,ece,0.007804,0.008461,0.023026,6998,,,
+metrics,readmit_window,catboost_tuned,,,accuracy,0.614747,0.603458,0.626182,6998,,,
+metrics,readmit_window,catboost_tuned,,,macro_f1,0.367136,0.356577,0.378065,6998,,,
+metrics,readmit_window,catboost_tuned,,,macro_f1_tuned,0.460437,0.446874,0.474925,6998,,,
+metrics,readmit_window,catboost_tuned,,,quadratic_weighted_kappa,0.127445,0.108413,0.145904,6998,,,
+metrics,readmit_window,catboost_tuned,,,auroc_30d,0.658112,0.634750,0.682305,6998,,,
+metrics,readmit_window,catboost_tuned,,,calibration_intercept_30d,-0.028683,-0.111994,0.056069,6998,,,
+metrics,readmit_window,catboost_tuned,,,calibration_slope_30d,1.016025,0.880575,1.157419,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,log_loss,0.834734,0.820257,0.848693,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,brier,0.502580,0.493736,0.511372,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,ece,0.007108,0.007421,0.022507,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,accuracy,0.615747,0.604316,0.627472,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,macro_f1,0.356902,0.347657,0.365999,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,macro_f1_tuned,0.448428,0.433529,0.464257,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,quadratic_weighted_kappa,0.119972,0.102909,0.137652,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,auroc_30d,0.657741,0.634105,0.680674,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,calibration_intercept_30d,-0.017698,-0.101102,0.067960,6998,,,
+metrics,readmit_window,lightgbm_tuned,,,calibration_slope_30d,1.093528,0.937853,1.250393,6998,,,
+metrics,readmit_window,lightgbm,,,log_loss,0.839976,0.825446,0.853777,6998,,,
+metrics,readmit_window,lightgbm,,,brier,0.505876,0.496938,0.514770,6998,,,
+metrics,readmit_window,lightgbm,,,ece,0.006558,0.007077,0.021409,6998,,,
+metrics,readmit_window,lightgbm,,,accuracy,0.609603,0.597456,0.621606,6998,,,
+metrics,readmit_window,lightgbm,,,macro_f1,0.349382,0.339578,0.359309,6998,,,
+metrics,readmit_window,lightgbm,,,macro_f1_tuned,0.441682,0.428486,0.456410,6998,,,
+metrics,readmit_window,lightgbm,,,quadratic_weighted_kappa,0.108113,0.091197,0.126239,6998,,,
+metrics,readmit_window,lightgbm,,,auroc_30d,0.646855,0.622621,0.671493,6998,,,
+metrics,readmit_window,lightgbm,,,calibration_intercept_30d,-0.030582,-0.117061,0.054874,6998,,,
+metrics,readmit_window,lightgbm,,,calibration_slope_30d,0.978150,0.824001,1.129168,6998,,,
+metrics,readmit_window,blend_v0_1,,,log_loss,0.833995,0.819688,0.847930,6998,,,
+metrics,readmit_window,blend_v0_1,,,brier,0.502140,0.493266,0.510806,6998,,,
+metrics,readmit_window,blend_v0_1,,,ece,0.007449,0.007772,0.022609,6998,,,
+metrics,readmit_window,blend_v0_1,,,accuracy,0.611603,0.599739,0.622749,6998,,,
+metrics,readmit_window,blend_v0_1,,,macro_f1,0.340193,0.331645,0.349206,6998,,,
+metrics,readmit_window,blend_v0_1,,,macro_f1_tuned,0.452023,0.437022,0.467818,6998,,,
+metrics,readmit_window,blend_v0_1,,,quadratic_weighted_kappa,0.098636,0.082210,0.115280,6998,,,
+metrics,readmit_window,blend_v0_1,,,auroc_30d,0.661231,0.637721,0.685474,6998,,,
+metrics,readmit_window,blend_v0_1,,,calibration_intercept_30d,-0.009975,-0.092951,0.075126,6998,,,
+metrics,readmit_window,blend_v0_1,,,calibration_slope_30d,1.175202,1.013255,1.335825,6998,,,
+metrics,readmit_window,arm_laya,,,log_loss,0.852353,0.838387,0.866234,6998,,,
+metrics,readmit_window,arm_laya,,,brier,0.514852,0.506270,0.523738,6998,,,
+metrics,readmit_window,arm_laya,,,ece,0.016885,0.010068,0.029545,6998,,,
+metrics,readmit_window,arm_laya,,,accuracy,0.604458,0.593452,0.616033,6998,,,
+metrics,readmit_window,arm_laya,,,macro_f1,0.293383,0.286323,0.300236,6998,,,
+metrics,readmit_window,arm_laya,,,macro_f1_tuned,0.426052,0.412501,0.440872,6998,,,
+metrics,readmit_window,arm_laya,,,quadratic_weighted_kappa,0.053685,0.042249,0.065671,6998,,,
+metrics,readmit_window,arm_laya,,,auroc_30d,0.642349,0.618451,0.666095,6998,,,
+metrics,readmit_window,arm_laya,,,calibration_intercept_30d,-0.095655,-0.178132,-0.010297,6998,,,
+metrics,readmit_window,arm_laya,,,calibration_slope_30d,1.188288,1.006405,1.375559,6998,,,
+metrics,readmit_window,s7_b3,,,log_loss,0.860512,0.846621,0.873849,6998,,,
+metrics,readmit_window,s7_b3,,,brier,0.519591,0.511013,0.527951,6998,,,
+metrics,readmit_window,s7_b3,,,ece,0.014889,0.012068,0.029902,6998,,,
+metrics,readmit_window,s7_b3,,,accuracy,0.602458,0.590740,0.614036,6998,,,
+metrics,readmit_window,s7_b3,,,macro_f1,0.322324,0.314291,0.330677,6998,,,
+metrics,readmit_window,s7_b3,,,macro_f1_tuned,0.418275,0.405384,0.430897,6998,,,
+metrics,readmit_window,s7_b3,,,quadratic_weighted_kappa,0.076828,0.062276,0.092287,6998,,,
+metrics,readmit_window,s7_b3,,,auroc_30d,0.629336,0.604701,0.654904,6998,,,
+metrics,readmit_window,s7_b3,,,calibration_intercept_30d,-0.124616,-0.209962,-0.037766,6998,,,
+metrics,readmit_window,s7_b3,,,calibration_slope_30d,0.765133,0.620019,0.912280,6998,,,
+metrics,readmit_window,s7_a3,,,log_loss,0.858028,0.844302,0.871327,6998,,,
+metrics,readmit_window,s7_a3,,,brier,0.518420,0.509836,0.527323,6998,,,
+metrics,readmit_window,s7_a3,,,ece,0.025447,0.018753,0.037696,6998,,,
+metrics,readmit_window,s7_a3,,,accuracy,0.601172,0.589597,0.613032,6998,,,
+metrics,readmit_window,s7_a3,,,macro_f1,0.334694,0.326492,0.343002,6998,,,
+metrics,readmit_window,s7_a3,,,macro_f1_tuned,0.421325,0.409070,0.434405,6998,,,
+metrics,readmit_window,s7_a3,,,quadratic_weighted_kappa,0.088316,0.072619,0.106415,6998,,,
+metrics,readmit_window,s7_a3,,,auroc_30d,0.625494,0.601438,0.649390,6998,,,
+metrics,readmit_window,s7_a3,,,calibration_intercept_30d,-0.113798,-0.198860,-0.029595,6998,,,
+metrics,readmit_window,s7_a3,,,calibration_slope_30d,1.115552,0.921055,1.314933,6998,,,
+metrics,readmit_window,s8_a3,,,log_loss,0.844460,0.830443,0.858490,6998,,,
+metrics,readmit_window,s8_a3,,,brier,0.508631,0.499756,0.517265,6998,,,
+metrics,readmit_window,s8_a3,,,ece,0.014986,0.010389,0.028083,6998,,,
+metrics,readmit_window,s8_a3,,,accuracy,0.608460,0.596881,0.619895,6998,,,
+metrics,readmit_window,s8_a3,,,macro_f1,0.349948,0.340551,0.360035,6998,,,
+metrics,readmit_window,s8_a3,,,macro_f1_tuned,0.437998,0.424922,0.451807,6998,,,
+metrics,readmit_window,s8_a3,,,quadratic_weighted_kappa,0.112016,0.095001,0.130673,6998,,,
+metrics,readmit_window,s8_a3,,,auroc_30d,0.643296,0.619751,0.667855,6998,,,
+metrics,readmit_window,s8_a3,,,calibration_intercept_30d,-0.117360,-0.201517,-0.030325,6998,,,
+metrics,readmit_window,s8_a3,,,calibration_slope_30d,0.953888,0.809696,1.096904,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,log_loss,0.844090,0.829979,0.858045,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,brier,0.508516,0.499737,0.517055,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,ece,0.018283,0.010978,0.030480,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,accuracy,0.608745,0.597171,0.620181,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,macro_f1,0.346484,0.337874,0.355125,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,macro_f1_tuned,0.436712,0.423426,0.451061,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,quadratic_weighted_kappa,0.110601,0.093298,0.128043,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,auroc_30d,0.643360,0.619800,0.667732,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,calibration_intercept_30d,-0.073191,-0.157265,0.013421,6998,,,
+metrics,readmit_window,s8_a3_temperature,,,calibration_slope_30d,0.986552,0.837636,1.134848,6998,,,
+metrics,readmit_window,s8_a3-raw,,,log_loss,0.844184,0.830164,0.858026,6998,,,
+metrics,readmit_window,s8_a3-raw,,,brier,0.508555,0.499851,0.517036,6998,,,
+metrics,readmit_window,s8_a3-raw,,,ece,0.017224,0.011003,0.029754,6998,,,
+metrics,readmit_window,s8_a3-raw,,,accuracy,0.608745,0.597171,0.620181,6998,,,
+metrics,readmit_window,s8_a3-raw,,,macro_f1,0.346484,0.337874,0.355125,6998,,,
+metrics,readmit_window,s8_a3-raw,,,macro_f1_tuned,0.436724,0.423750,0.450507,6998,,,
+metrics,readmit_window,s8_a3-raw,,,quadratic_weighted_kappa,0.110601,0.093298,0.128043,6998,,,
+metrics,readmit_window,s8_a3-raw,,,auroc_30d,0.643390,0.619827,0.667756,6998,,,
+metrics,readmit_window,s8_a3-raw,,,calibration_intercept_30d,-0.085242,-0.169458,0.001263,6998,,,
+metrics,readmit_window,s8_a3-raw,,,calibration_slope_30d,0.994881,0.844725,1.144514,6998,,,
+metrics,readmit_window,prior,,,log_loss,0.886096,0.873382,0.898439,6998,,,
+metrics,readmit_window,prior,,,brier,0.537695,0.529761,0.545345,6998,,,
+metrics,readmit_window,prior,,,ece,0.001669,0.000189,0.012675,6998,,,
+metrics,readmit_window,prior,,,accuracy,0.594170,0.582877,0.604744,6998,,,
+metrics,readmit_window,prior,,,macro_f1,0.248476,0.245493,0.251232,6998,,,
+metrics,readmit_window,prior,,,macro_f1_tuned,0.248476,0.245493,0.251232,6998,,,
+metrics,readmit_window,prior,,,quadratic_weighted_kappa,0.000000,0.000000,0.000000,6998,,,
+metrics,readmit_window,prior,,,auroc_30d,0.500000,0.500000,0.500000,6998,,,
+metrics,readmit_window,prior,,,calibration_intercept_30d,-0.029918,-0.111998,0.053650,6998,,,
+metrics,readmit_window,prior,,,calibration_slope_30d,,,,6998,,,
+G1,evidence_effect,s8_ei,prior,,log_loss,-0.877268,-0.920105,-0.827397,1218,0.199449,1.076717,lower (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,brier,-0.552420,-0.576715,-0.524697,1218,0.100116,0.652536,lower (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,accuracy,0.519704,0.479002,0.554125,1218,0.940887,0.421182,higher (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,macro_f1,0.742336,0.721684,0.760240,1218,0.939909,0.197574,higher (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,f1_increased,0.935802,0.915164,0.952917,1218,0.935802,0.000000,higher (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,f1_decreased,0.936455,0.911256,0.957656,1218,0.936455,0.000000,higher (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,f1_no_difference,0.354750,0.320787,0.387380,1218,0.947471,0.592721,higher (better); s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,prior,,ece,-0.018626,-0.046084,0.018718,1218,0.011914,0.030540,no difference was detected; s8_ei minus the prior (the training split's answer shares)
+G1,evidence_effect,s8_ei,gemma4_31b,,log_loss,-0.208355,-0.268980,-0.149845,1218,0.199449,0.407805,"lower (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,brier,-0.103900,-0.135694,-0.074131,1218,0.100116,0.204016,"lower (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,accuracy,0.069787,0.048738,0.092342,1218,0.940887,0.871100,"higher (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,macro_f1,0.077322,0.054326,0.102247,1218,0.939909,0.862587,"higher (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,f1_increased,0.090336,0.058806,0.124283,1218,0.935802,0.845466,"higher (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,f1_decreased,0.112351,0.077092,0.152118,1218,0.936455,0.824104,"higher (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,f1_no_difference,0.029280,0.012040,0.047610,1218,0.947471,0.918191,"higher (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G1,evidence_effect,s8_ei,gemma4_31b,,ece,-0.016378,-0.036914,-0.000722,1218,0.011914,0.028293,"lower (better); s8_ei minus gemma4_31b, both calibrated on validation"
+G2,evidence_effect,s8_ei,s8_ei_1,,log_loss,-0.009066,-0.015062,-0.002993,1218,0.199449,0.208516,lower (better); the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,brier,-0.004840,-0.008797,-0.001279,1218,0.100116,0.104955,lower (better); the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,accuracy,0.002463,-0.003387,0.009269,1218,0.940887,0.938424,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,macro_f1,0.002660,-0.003827,0.010400,1218,0.939909,0.937249,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,f1_increased,0.004599,-0.002964,0.012643,1218,0.935802,0.931204,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,f1_decreased,0.002669,-0.009027,0.015627,1218,0.936455,0.933786,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,f1_no_difference,0.000714,-0.005141,0.006683,1218,0.947471,0.946757,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_1,,ece,-0.001898,-0.010027,0.009451,1218,0.011914,0.013812,no difference was detected; the average minus s8_ei_1 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,log_loss,-0.010380,-0.017834,-0.003007,1218,0.199449,0.209829,lower (better); the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,brier,-0.005302,-0.009737,-0.001264,1218,0.100116,0.105418,lower (better); the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,accuracy,0.004105,-0.001535,0.009927,1218,0.940887,0.936782,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,macro_f1,0.004063,-0.001662,0.009943,1218,0.939909,0.935847,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,f1_increased,0.002142,-0.004543,0.008837,1218,0.935802,0.933661,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,f1_decreased,0.004902,-0.005109,0.014461,1218,0.936455,0.931553,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,f1_no_difference,0.005144,-0.000883,0.011228,1218,0.947471,0.942326,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_2,,ece,-0.006844,-0.013703,0.008531,1218,0.011914,0.018759,no difference was detected; the average minus s8_ei_2 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,log_loss,-0.000394,-0.007324,0.006209,1218,0.199449,0.199843,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,brier,0.001002,-0.002815,0.004614,1218,0.100116,0.099113,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,accuracy,0.002463,-0.002496,0.007930,1218,0.940887,0.938424,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,macro_f1,0.001976,-0.003254,0.007557,1218,0.939909,0.937933,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,f1_increased,0.003287,-0.004187,0.011522,1218,0.935802,0.932515,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,f1_decreased,-0.001360,-0.008483,0.005709,1218,0.936455,0.937815,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,f1_no_difference,0.004001,-0.001055,0.009701,1218,0.947471,0.943470,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G2,evidence_effect,s8_ei,s8_ei_3,,ece,-0.001783,-0.011528,0.011920,1218,0.011914,0.013697,no difference was detected; the average minus s8_ei_3 alone (each calibrated by its own rule)
+G4,pubmedqa_answer,s7_b3,arm_laya,,log_loss,-0.163143,-0.208216,-0.119589,500,0.579666,0.742808,lower (better); v0.4 (s7_b3) minus v0.1
+G4,pubmedqa_answer,s7_b3,arm_laya,,brier,-0.099072,-0.130318,-0.070657,500,0.314738,0.413810,lower (better); v0.4 (s7_b3) minus v0.1
+G4,pubmedqa_answer,s7_b3,arm_laya,,ece,0.012565,-0.034033,0.032030,500,0.040133,0.027569,no difference was detected; v0.4 (s7_b3) minus v0.1
+G4,pubmedqa_answer,s7_b3,arm_laya,,accuracy,0.082000,0.050000,0.116000,500,0.796000,0.714000,higher (better); v0.4 (s7_b3) minus v0.1
+G4,pubmedqa_answer,s7_b3,arm_laya,,macro_f1,0.069235,0.039782,0.103085,500,0.569754,0.500519,higher (better); v0.4 (s7_b3) minus v0.1
+G4,pubmedqa_answer,s7_b3,gemma4_31b,,log_loss,-0.033417,-0.078544,0.013697,500,0.579666,0.613082,no difference was detected; v0.4 (s7_b3) minus gemma4_31b
+G4,pubmedqa_answer,s7_b3,gemma4_31b,,brier,-0.006204,-0.035092,0.020871,500,0.314738,0.320942,no difference was detected; v0.4 (s7_b3) minus gemma4_31b
+G4,pubmedqa_answer,s7_b3,gemma4_31b,,ece,-0.017360,-0.046911,0.020827,500,0.040133,0.057493,no difference was detected; v0.4 (s7_b3) minus gemma4_31b
+G4,pubmedqa_answer,s7_b3,gemma4_31b,,accuracy,0.012000,-0.014000,0.040000,500,0.796000,0.784000,no difference was detected; v0.4 (s7_b3) minus gemma4_31b
+G4,pubmedqa_answer,s7_b3,gemma4_31b,,macro_f1,-0.016442,-0.056117,0.023700,500,0.569754,0.586196,no difference was detected; v0.4 (s7_b3) minus gemma4_31b
+G4,pubmedqa_answer,s8_a3,s7_a3,,log_loss,-0.043329,-0.075243,-0.014748,500,0.607278,0.650607,"lower (better); the last weights minus the kept checkpoint, one run each; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G4,pubmedqa_answer,s8_a3,s7_a3,,brier,-0.033435,-0.054101,-0.013981,500,0.324958,0.358394,"lower (better); the last weights minus the kept checkpoint, one run each; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G4,pubmedqa_answer,s8_a3,s7_a3,,ece,0.010870,-0.029225,0.045009,500,0.057087,0.046217,"no difference was detected; the last weights minus the kept checkpoint, one run each; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G4,pubmedqa_answer,s8_a3,s7_a3,,accuracy,0.036000,0.012000,0.060000,500,0.790000,0.754000,"higher (better); the last weights minus the kept checkpoint, one run each; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G4,pubmedqa_answer,s8_a3,s7_a3,,macro_f1,0.027352,0.009594,0.045389,500,0.556696,0.529344,"higher (better); the last weights minus the kept checkpoint, one run each; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G4,pubmedqa_answer,s8_a3,arm_laya,,log_loss,-0.135530,-0.175294,-0.090549,500,0.607278,0.742808,lower (better); s8_a3 minus v0.1
+G4,pubmedqa_answer,s8_a3,arm_laya,,brier,-0.088852,-0.116534,-0.059688,500,0.324958,0.413810,lower (better); s8_a3 minus v0.1
+G4,pubmedqa_answer,s8_a3,arm_laya,,ece,0.029519,-0.023539,0.051254,500,0.057087,0.027569,no difference was detected; s8_a3 minus v0.1
+G4,pubmedqa_answer,s8_a3,arm_laya,,accuracy,0.076000,0.042000,0.106050,500,0.790000,0.714000,higher (better); s8_a3 minus v0.1
+G4,pubmedqa_answer,s8_a3,arm_laya,,macro_f1,0.056178,0.031748,0.078999,500,0.556696,0.500519,higher (better); s8_a3 minus v0.1
+G5,readmit_window,readmission_pool,lightgbm_tuned,,log_loss,-0.007219,-0.010408,-0.004230,6998,0.827515,0.834734,lower (better)
+G5,readmit_window,readmission_pool,lightgbm_tuned,,brier,-0.005384,-0.007468,-0.003442,6998,0.497196,0.502580,lower (better)
+G5,readmit_window,readmission_pool,lightgbm_tuned,,ece,-0.000525,-0.009187,0.010337,6998,0.006583,0.007108,no difference was detected
+G5,readmit_window,readmission_pool,lightgbm_tuned,,accuracy,0.000000,-0.006148,0.005859,6998,0.615747,0.615747,no difference was detected
+G5,readmit_window,readmission_pool,lightgbm_tuned,,macro_f1,0.012592,0.003065,0.021767,6998,0.369494,0.356902,higher (better)
+G5,readmit_window,readmission_pool,lightgbm_tuned,,macro_f1_tuned,0.014798,0.005146,0.026524,6998,0.463226,0.448428,higher (better)
+G5,readmit_window,readmission_pool,lightgbm_tuned,,quadratic_weighted_kappa,0.010159,-0.004829,0.024028,6998,0.130131,0.119972,no difference was detected
+G5,readmit_window,readmission_pool,lightgbm_tuned,,auroc_30d,0.004452,-0.006327,0.015970,6998,0.662194,0.657741,no difference was detected
+G5,readmit_window,readmission_pool,lightgbm_tuned,,calibration_intercept_30d,-0.001499,-0.009562,0.005844,6998,-0.019197,-0.017698,no difference was detected
+G5,readmit_window,readmission_pool,lightgbm_tuned,,calibration_slope_30d,-0.044260,-0.112996,0.025035,6998,1.049268,1.093528,no difference was detected
+G5,readmit_window,readmission_pool,blend_v0_1,,log_loss,-0.006481,-0.009372,-0.003806,6998,0.827515,0.833995,lower (better)
+G5,readmit_window,readmission_pool,blend_v0_1,,brier,-0.004945,-0.006949,-0.003013,6998,0.497196,0.502140,lower (better)
+G5,readmit_window,readmission_pool,blend_v0_1,,ece,-0.000866,-0.008594,0.009270,6998,0.006583,0.007449,no difference was detected
+G5,readmit_window,readmission_pool,blend_v0_1,,accuracy,0.004144,-0.001433,0.009431,6998,0.615747,0.611603,no difference was detected
+G5,readmit_window,readmission_pool,blend_v0_1,,macro_f1,0.029300,0.019856,0.039255,6998,0.369494,0.340193,higher (better)
+G5,readmit_window,readmission_pool,blend_v0_1,,macro_f1_tuned,0.011203,0.002134,0.021431,6998,0.463226,0.452023,higher (better)
+G5,readmit_window,readmission_pool,blend_v0_1,,quadratic_weighted_kappa,0.031496,0.017330,0.045617,6998,0.130131,0.098636,higher (better)
+G5,readmit_window,readmission_pool,blend_v0_1,,auroc_30d,0.000963,-0.008696,0.011003,6998,0.662194,0.661231,no difference was detected
+G5,readmit_window,readmission_pool,blend_v0_1,,calibration_intercept_30d,-0.009222,-0.016823,-0.002764,6998,-0.019197,-0.009975,lower (worse)
+G5,readmit_window,readmission_pool,blend_v0_1,,calibration_slope_30d,-0.125934,-0.189645,-0.060639,6998,1.049268,1.175202,lower (worse)
+G5,readmit_window,readmission_pool,arm_laya,,log_loss,-0.024838,-0.029679,-0.020228,6998,0.827515,0.852353,lower (better)
+G5,readmit_window,readmission_pool,arm_laya,,brier,-0.017657,-0.021211,-0.014263,6998,0.497196,0.514852,lower (better)
+G5,readmit_window,readmission_pool,arm_laya,,ece,-0.010302,-0.015813,0.007671,6998,0.006583,0.016885,no difference was detected
+G5,readmit_window,readmission_pool,arm_laya,,accuracy,0.011289,0.003712,0.018577,6998,0.615747,0.604458,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,macro_f1,0.076110,0.064631,0.087500,6998,0.369494,0.293383,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,macro_f1_tuned,0.037174,0.024814,0.049362,6998,0.463226,0.426052,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,quadratic_weighted_kappa,0.076447,0.058299,0.092715,6998,0.130131,0.053685,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,auroc_30d,0.019845,0.004327,0.035727,6998,0.662194,0.642349,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,calibration_intercept_30d,0.076458,0.066236,0.085227,6998,-0.019197,-0.095655,higher (better)
+G5,readmit_window,readmission_pool,arm_laya,,calibration_slope_30d,-0.139020,-0.252428,-0.032478,6998,1.049268,1.188288,lower (worse)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,log_loss,-0.003737,-0.006851,-0.000779,6998,0.830997,0.834734,lower (better)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,brier,-0.002916,-0.004998,-0.000966,6998,0.499664,0.502580,lower (better)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,ece,0.003154,-0.008402,0.010795,6998,0.010262,0.007108,no difference was detected
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,accuracy,-0.001858,-0.007859,0.003430,6998,0.613890,0.615747,no difference was detected
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,macro_f1,0.017889,0.008292,0.027989,6998,0.374791,0.356902,higher (better)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,macro_f1_tuned,0.006695,-0.003239,0.016841,6998,0.455123,0.448428,no difference was detected
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,quadratic_weighted_kappa,0.017150,0.002650,0.030749,6998,0.137122,0.119972,higher (better)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,auroc_30d,0.000680,-0.010196,0.010731,6998,0.658421,0.657741,no difference was detected
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,calibration_intercept_30d,-0.016118,-0.023693,-0.008839,6998,-0.033816,-0.017698,lower (worse)
+G5,readmit_window,xgboost_tuned,lightgbm_tuned,,calibration_slope_30d,-0.096620,-0.163527,-0.032533,6998,0.996908,1.093528,lower (worse)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,log_loss,-0.005633,-0.009453,-0.002036,6998,0.829101,0.834734,lower (better)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,brier,-0.004508,-0.007135,-0.002062,6998,0.498072,0.502580,lower (better)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,ece,0.000695,-0.009579,0.010935,6998,0.007804,0.007108,no difference was detected
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,accuracy,-0.001000,-0.007716,0.005430,6998,0.614747,0.615747,no difference was detected
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,macro_f1,0.010235,0.000520,0.019643,6998,0.367136,0.356902,higher (better)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,macro_f1_tuned,0.012009,0.001278,0.023490,6998,0.460437,0.448428,higher (better)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,quadratic_weighted_kappa,0.007472,-0.007720,0.022268,6998,0.127445,0.119972,no difference was detected
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,auroc_30d,0.000371,-0.012396,0.014000,6998,0.658112,0.657741,no difference was detected
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,calibration_intercept_30d,-0.010986,-0.020156,-0.001877,6998,-0.028683,-0.017698,lower (worse)
+G5,readmit_window,catboost_tuned,lightgbm_tuned,,calibration_slope_30d,-0.077504,-0.153597,0.003909,6998,1.016025,1.093528,no difference was detected
+G5,readmit_window,s8_a3,s7_a3,,log_loss,-0.013568,-0.017735,-0.009538,6998,0.844460,0.858028,"lower (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,brier,-0.009789,-0.012837,-0.007000,6998,0.508631,0.518420,"lower (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,ece,-0.010461,-0.022595,0.004477,6998,0.014986,0.025447,"no difference was detected; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,accuracy,0.007288,0.000286,0.014004,6998,0.608460,0.601172,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,macro_f1,0.015254,0.006499,0.023564,6998,0.349948,0.334694,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,macro_f1_tuned,0.016673,0.006483,0.027062,6998,0.437998,0.421325,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,quadratic_weighted_kappa,0.023699,0.009527,0.038498,6998,0.112016,0.088316,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,auroc_30d,0.017802,0.003220,0.031850,6998,0.643296,0.625494,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,calibration_intercept_30d,-0.003562,-0.010553,0.003707,6998,-0.117360,-0.113798,"no difference was detected; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,s7_a3,,calibration_slope_30d,-0.161664,-0.254420,-0.066244,6998,0.953888,1.115552,"lower (worse); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,log_loss,-0.007893,-0.012076,-0.004333,6998,0.844460,0.852353,"lower (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,brier,-0.006221,-0.009412,-0.003464,6998,0.508631,0.514852,"lower (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,ece,-0.001899,-0.015070,0.014841,6998,0.014986,0.016885,"no difference was detected; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,accuracy,0.004001,-0.003144,0.011007,6998,0.608460,0.604458,"no difference was detected; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,macro_f1,0.056565,0.046969,0.065734,6998,0.349948,0.293383,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,macro_f1_tuned,0.011946,0.001744,0.022477,6998,0.437998,0.426052,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,quadratic_weighted_kappa,0.058331,0.043196,0.073520,6998,0.112016,0.053685,"higher (better); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,auroc_30d,0.000947,-0.013058,0.015377,6998,0.643296,0.642349,"no difference was detected; Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,calibration_intercept_30d,-0.021705,-0.029665,-0.014240,6998,-0.117360,-0.095655,"lower (worse); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G5,readmit_window,s8_a3,arm_laya,,calibration_slope_30d,-0.234401,-0.333116,-0.141333,6998,0.953888,1.188288,"lower (worse); Each EI seed ran once and the three are reported apart as well as averaged; s8_a3 and s7_a3 differ in the keep rule and in the run itself, so s8_a3 minus s7_a3 cannot separate the two; retraining alone moved PubMedQA log loss by about 0.023 per run in this project (results/fiorillo_v0_2/retry_check.json)."
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,log_loss,-0.876398,-0.920861,-0.829314,1212,0.199901,1.076299,lower (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,brier,-0.551812,-0.577166,-0.524863,1212,0.100395,0.652208,lower (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,accuracy,0.518152,0.475324,0.555751,1212,0.940594,0.422442,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,macro_f1,0.741602,0.720833,0.760598,1212,0.939591,0.197989,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,f1_increased,0.935162,0.914979,0.952621,1212,0.935162,0.000000,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,f1_decreased,0.936242,0.911817,0.957293,1212,0.936242,0.000000,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,f1_no_difference,0.353401,0.315943,0.387816,1212,0.947368,0.593968,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,prior,unflagged,ece,-0.017519,-0.045261,0.017964,1212,0.011761,0.029280,no difference was detected; without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,log_loss,-0.209700,-0.275792,-0.151199,1212,0.199901,0.409601,lower (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,brier,-0.104605,-0.137652,-0.074757,1212,0.100395,0.205001,lower (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,accuracy,0.070132,0.048876,0.094100,1212,0.940594,0.870462,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,macro_f1,0.077780,0.055396,0.102743,1212,0.939591,0.861811,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,f1_increased,0.091291,0.058395,0.126474,1212,0.935162,0.843871,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,f1_decreased,0.112712,0.077782,0.151759,1212,0.936242,0.823529,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,f1_no_difference,0.029336,0.012573,0.047986,1212,0.947368,0.918033,higher (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei,gemma4_31b,unflagged,ece,-0.016886,-0.035669,-0.000504,1212,0.011761,0.028647,lower (better); without every test prompt the README flags
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,log_loss,-0.852966,-0.912766,-0.783128,1218,0.223751,1.076717,lower (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,brier,-0.550116,-0.576146,-0.521223,1218,0.102420,0.652536,lower (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,accuracy,0.519704,0.479002,0.554125,1218,0.940887,0.421182,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,macro_f1,0.742336,0.721684,0.760240,1218,0.939909,0.197574,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,f1_increased,0.935802,0.915164,0.952917,1218,0.935802,0.000000,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,f1_decreased,0.936455,0.911256,0.957656,1218,0.936455,0.000000,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,f1_no_difference,0.354750,0.320787,0.387380,1218,0.947471,0.592721,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,prior,,ece,0.001919,-0.030760,0.036902,1218,0.032459,0.030540,no difference was detected; s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,log_loss,-0.184054,-0.251214,-0.116408,1218,0.223751,0.407805,lower (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,brier,-0.101596,-0.133342,-0.071583,1218,0.102420,0.204016,lower (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,accuracy,0.069787,0.048738,0.092342,1218,0.940887,0.871100,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,macro_f1,0.077322,0.054326,0.102247,1218,0.939909,0.862587,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,f1_increased,0.090336,0.058806,0.124283,1218,0.935802,0.845466,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,f1_decreased,0.112351,0.077092,0.152118,1218,0.936455,0.824104,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,f1_no_difference,0.029280,0.012040,0.047610,1218,0.947471,0.918191,higher (better); s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei-raw,gemma4_31b,,ece,0.004166,-0.020786,0.016957,1218,0.032459,0.028293,no difference was detected; s8_ei-raw in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,log_loss,-0.877268,-0.920105,-0.827397,1218,0.199449,1.076717,lower (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,brier,-0.552420,-0.576715,-0.524697,1218,0.100116,0.652536,lower (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,accuracy,0.519704,0.479002,0.554125,1218,0.940887,0.421182,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,macro_f1,0.742336,0.721684,0.760240,1218,0.939909,0.197574,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,f1_increased,0.935802,0.915164,0.952917,1218,0.935802,0.000000,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,f1_decreased,0.936455,0.911256,0.957656,1218,0.936455,0.000000,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,f1_no_difference,0.354750,0.320787,0.387380,1218,0.947471,0.592721,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,prior,,ece,-0.018626,-0.046084,0.018718,1218,0.011914,0.030540,no difference was detected; s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,log_loss,-0.208355,-0.268980,-0.149845,1218,0.199449,0.407805,lower (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,brier,-0.103900,-0.135694,-0.074131,1218,0.100116,0.204016,lower (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,accuracy,0.069787,0.048738,0.092342,1218,0.940887,0.871100,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,macro_f1,0.077322,0.054326,0.102247,1218,0.939909,0.862587,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,f1_increased,0.090336,0.058806,0.124283,1218,0.935802,0.845466,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,f1_decreased,0.112351,0.077092,0.152118,1218,0.936455,0.824104,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,f1_no_difference,0.029280,0.012040,0.047610,1218,0.947471,0.918191,higher (better); s8_ei_temperature in place of s8_ei
+G1_sensitivity,evidence_effect,s8_ei_temperature,gemma4_31b,,ece,-0.016378,-0.036914,-0.000722,1218,0.011914,0.028293,lower (better); s8_ei_temperature in place of s8_ei
+release_bar,,,,,criterion 1,,,,,,,"PASS: s8_ei's ECE at most the limit (the larger of 0.05 and the 95th percentile of a calibrated model's ECE at n 1,218, fixed in release_candidate.json before any test prediction); values {""ece"": 0.011914206362069092, ""limit"": 0.05}"
+release_bar,,,,,criterion 2,,,,,,,"PASS: s8_ei's log loss below the prior's, with the 95 percent interval of the difference (s8_ei minus the prior; 10,000 article resamples) wholly below zero; values {""estimate"": -0.8772679021933214, ""low"": -0.9225173348839658, ""high"": -0.8280529802683985, ""resamples"": 10000, ""n"": 1218, ""articles"": 333}"
+release_bar,,,,,criterion 3,,,,,,,"PASS: s8_ei's log loss below gemma4_31b's (both calibrated on validation), with the 95 percent interval of the difference (10,000 article resamples) wholly below zero; values {""estimate"": -0.2083554227661726, ""low"": -0.2720161694545972, ""high"": -0.1505168146288581, ""resamples"": 10000, ""n"": 1218, ""articles"": 333}"
+release_bar,,,,,criterion 4,,,,,,,"PASS: s8_ei's macro-F1 not below gemma4_31b's point estimate; values {""s8_ei"": 0.9399093785849176, ""gemma4_31b"": 0.8625869860641254}"
+release_bar,,,,,overall,,,,,,,PASS: every criterion passes; releasing v0.4 is my decision after the closeout
+note,,,,,contamination,,,,,,,"Known contamination: Qwen3's and Gemma 4's pretraining text is not published and may include PMC articles (EI's articles are PMC's), EI's repository (public since 2019), PubMedQA and the UCI data, which would favor both; EI's test labels are public (the project's site serves them to its leaderboard), so no evaluation of EI can be blind; Laya's, ModernBERT's and reader v1's notes and session 4's notes on Duan stand."

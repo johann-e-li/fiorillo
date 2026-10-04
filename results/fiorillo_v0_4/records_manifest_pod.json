@@ -1,0 +1,26 @@
+{
+ "written_utc": "2026-09-30T13:49:21Z",
+ "files": {
+  "evidence_effect_train.jsonl": {
+   "sha256": "68d884e501b815d20269a7c2f8bffd5f8155d3b5dce912ede02040e5907328d7",
+   "expected": "68d884e501b815d20269a7c2f8bffd5f8155d3b5dce912ede02040e5907328d7",
+   "equal": true
+  },
+  "evidence_effect_validation.jsonl": {
+   "sha256": "4c0e9ac86e2cb8d8d1a2f650e4488b1b6ecfebb1149c7c5a94ef4b3b5468e0ee",
+   "expected": "4c0e9ac86e2cb8d8d1a2f650e4488b1b6ecfebb1149c7c5a94ef4b3b5468e0ee",
+   "equal": true
+  },
+  "evidence_effect_test.jsonl": {
+   "sha256": "47e002c9be721e4171822a1ac7ce9e0c2a84a025998d5ae5f8f3bee9af6bb2df",
+   "expected": "47e002c9be721e4171822a1ac7ce9e0c2a84a025998d5ae5f8f3bee9af6bb2df",
+   "equal": true
+  },
+  "evidence_effect_validation_monitor.jsonl": {
+   "sha256": "d5de2581bc0eeb0c2a701b64b6e1b6c4138ce44af4ad515e23ab97b55b538366",
+   "expected": "d5de2581bc0eeb0c2a701b64b6e1b6c4138ce44af4ad515e23ab97b55b538366",
+   "equal": true
+  }
+ },
+ "all_equal": true
+}

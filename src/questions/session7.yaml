@@ -1,0 +1,11 @@
+# Question bank for session 7 (docs/prompt_session7.md, THE LABELER). Wording fixed in the plan; do not edit.
+# Keys use Laya's public question format: type, instructions, criteria. The criteria are the question bank's
+# pubmedqa_answer criteria (src/questions/public_v0.yaml), in the same order (labels yes 0, no 1, maybe 2).
+questions:
+  pubmedqa_conclusion:
+    type: choice
+    instructions: "Based only on this conclusion, what is the answer to the research question?"
+    criteria:
+      "yes": "the reported results support yes"
+      "no": "the reported results support no"
+      "maybe": "the reported results are inconclusive"

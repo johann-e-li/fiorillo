@@ -1,0 +1,152 @@
+{
+ "plan": "docs/prompt_session9.md, HAND-OFF ANALYSES (I-35; fitted and frozen on validation; not part of v0.5 and never released)",
+ "source": "src/eval/handoff_curves_session9.py fit-rule",
+ "written_utc": "2026-10-01T14:04:21Z",
+ "question": "evidence_effect",
+ "split": "validation",
+ "system": "s8_ei",
+ "large_model": "gemma4_31b",
+ "target": "1 when Fiorillo's calibrated top answer is wrong and the large model's calibrated top answer is right, else 0",
+ "features": [
+  {
+   "name": "top_probability",
+   "definition": "Fiorillo's calibrated top probability",
+   "source": "Fiorillo's calibrated file"
+  },
+  {
+   "name": "margin",
+   "definition": "Fiorillo's calibrated top probability minus its second highest",
+   "source": "Fiorillo's calibrated file"
+  },
+  {
+   "name": "entropy",
+   "definition": "the entropy of Fiorillo's calibrated distribution, natural logarithm, 0 log 0 taken as 0",
+   "source": "Fiorillo's calibrated file"
+  },
+  {
+   "name": "run_sd",
+   "definition": "the sample standard deviation (ddof 1) across Fiorillo's runs (three, or two under correction 8) of the raw probability each run gives the averaged top answer (the answer with the highest mean of the runs' raw probabilities)",
+   "source": "the raw run files"
+  }
+ ],
+ "scaling": {
+  "method": "standardized: (x - mean) / scale, the mean and the standard deviation (ddof 0) on these validation items",
+  "mean": {
+   "top_probability": 0.9401372177477777,
+   "margin": 0.8936140551709704,
+   "entropy": 0.19865084584277845,
+   "run_sd": 0.01694944419339481
+  },
+  "scale": {
+   "top_probability": 0.0996190256656233,
+   "margin": 0.1844708140145637,
+   "entropy": 0.20545688662380904,
+   "run_sd": 0.05014273632037566
+  }
+ },
+ "model": {
+  "family": "logistic regression",
+  "penalty": "L2",
+  "C": 1.0,
+  "solver": "lbfgs",
+  "intercept_penalized": false,
+  "class_weight": null,
+  "library": "scikit-learn 1.7.2",
+  "params": {
+   "C": 1.0,
+   "class_weight": null,
+   "dual": false,
+   "fit_intercept": true,
+   "intercept_scaling": 1,
+   "l1_ratio": null,
+   "max_iter": 1000,
+   "multi_class": "deprecated",
+   "n_jobs": null,
+   "penalty": "l2",
+   "random_state": null,
+   "solver": "lbfgs",
+   "tol": 1e-08,
+   "verbose": 0,
+   "warm_start": false
+  },
+  "iterations": 27,
+  "gradient_max_abs": 3.288329029071946e-06,
+  "gradient_tolerance": 0.001237,
+  "numpy_minus_scikit_learn_max_abs": 1.1102230246251565e-16,
+  "at_l2_optimum": true
+ },
+ "coefficients": {
+  "top_probability": -0.42718417656799557,
+  "margin": -0.21671814200060766,
+  "entropy": 0.5406752763614076,
+  "run_sd": 0.007667296959444981
+ },
+ "intercept": -4.840863070578208,
+ "apply": "p = 1 / (1 + exp(-(intercept + sum over the features of coefficient x (x - mean) / scale))); at hand-off rate r the floor(r n) items with the highest p are handed off, ties by record ID as text (lower first)",
+ "files": {
+  "fiorillo": {
+   "path": "results/fiorillo_v0_4/predictions/s8_ei_evidence_effect_validation.csv",
+   "sha256": "997195f2b5d60d8b1d8da7de1bec264ab7d077047aa20aafe7af8260053e241b"
+  },
+  "runs": [
+   {
+    "path": "results/fiorillo_v0_4/predictions/s8_ei_1-raw_evidence_effect_validation.csv",
+    "sha256": "229552d4d72a9551c1a733e4c2e88eb7fbfe10f8976c9a2d3eec4444c7dd57db"
+   },
+   {
+    "path": "results/fiorillo_v0_4/predictions/s8_ei_2-raw_evidence_effect_validation.csv",
+    "sha256": "4756abd6e806123a5153cede0831b6ff4feee5024e03e7fe6c7ad78ff91ec782"
+   },
+   {
+    "path": "results/fiorillo_v0_4/predictions/s8_ei_3-raw_evidence_effect_validation.csv",
+    "sha256": "dbc55c19b1ce92b8a96f9895de53ca29e64d160a52a15d21d8e0dd8c06ca437c"
+   }
+  ],
+  "large_model": {
+   "path": "results/fiorillo_v0_4/predictions/gemma4_31b_evidence_effect_validation.csv",
+   "sha256": "5cbb020296861a52e1539e62577fba815255234f6255d847112237b3d3a22126"
+  },
+  "records": {
+   "path": "data/processed/session8/evidence_effect_validation.jsonl",
+   "sha256": "4c0e9ac86e2cb8d8d1a2f650e4488b1b6ecfebb1149c7c5a94ef4b3b5468e0ee"
+  }
+ },
+ "n": 1237,
+ "articles": 340,
+ "positives": 31,
+ "averaged_answer_differs_from_calibrated_answer": 0,
+ "ties": {
+  "rule_probability": 0
+ },
+ "room": {
+  "items": 1237,
+  "fiorillo_wrong_large_model_right": 31,
+  "fiorillo_right_large_model_wrong": 94,
+  "both_right": 1065,
+  "both_wrong": 47,
+  "share_fiorillo_wrong_large_model_right": 0.025060630557801132,
+  "confidence_rule": {
+   "rate_10": {
+    "handed_off": 123,
+    "fiorillo_wrong_large_model_right": 23,
+    "fiorillo_right_large_model_wrong": 23
+   },
+   "rate_20": {
+    "handed_off": 247,
+    "fiorillo_wrong_large_model_right": 25,
+    "fiorillo_right_large_model_wrong": 47
+   },
+   "rate_30": {
+    "handed_off": 371,
+    "fiorillo_wrong_large_model_right": 28,
+    "fiorillo_right_large_model_wrong": 66
+   },
+   "rate_50": {
+    "handed_off": 618,
+    "fiorillo_wrong_large_model_right": 31,
+    "fiorillo_right_large_model_wrong": 86
+   }
+  },
+  "statement": "On validation s8_ei was wrong where gemma4_31b was right on 31 of 1,237 prompts (2.5 percent), and the confidence rule's 10 percent hand-off (123 prompts) held 23 of them and 23 prompts the other way (s8_ei right, gemma4_31b wrong), so a better rule has room of at most about 2.5 points of accuracy and few cases to learn from."
+ }
+}

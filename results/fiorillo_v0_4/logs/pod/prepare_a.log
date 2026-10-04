@@ -1,0 +1,47 @@
+2026-09-30T13:50:53Z  stage prepare_a started
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:00,  9.89it/s]Fetching 4 files: 100%|██████████| 4/4 [00:04<00:00,  1.18s/it]Fetching 4 files: 100%|██████████| 4/4 [00:04<00:00,  1.10s/it]
+reader v1 downloaded from johanneli/fiorillo-reader-v1 at c92dc7a9f3be0e0887591ebd21874846eac2fb44
+reader v1: SHA-256 checked
+wrote /root/eddm_s8/models/reader_v1_laya: 170 encoder tensors replaced
+{"rebuilt": "/root/eddm_s8/code/data/processed/session7/pubmedqa_phase2_train.jsonl", "records": 30599, "sha256": "19678b1b8503ffd4588371a77fae0ee78e1223c9c390a14036b038e237891d1d", "matches_labeler_json": true}
+pubmedqa_pqa_l_train.jsonl 1050 records
+{"records": 209246, "items": 209246, "skipped": 0, "truncated": 479, "max_len": 768, "head_max_len": 192, "files": ["/root/eddm_s8/code/data/processed/session7/pubmedqa_phase1_train.jsonl"]}
+{"records": 2150, "items": 2150, "skipped": 0, "truncated": 8, "max_len": 768, "head_max_len": 192, "files": ["data/processed/public/pubmedqa_answer_validation.jsonl"]}
+{"records": 30599, "items": 30599, "skipped": 0, "truncated": 111, "max_len": 768, "head_max_len": 192, "files": ["/root/eddm_s8/code/data/processed/session7/pubmedqa_phase2_train.jsonl"]}
+{"records": 87627, "items": 87627, "skipped": 0, "truncated": 114, "max_len": 768, "head_max_len": 192, "files": ["data/processed/public/readmit_window_train.jsonl", "/root/eddm_s8/code/data/processed/session7/pubmedqa_pqa_l_train.jsonl", "/root/eddm_s8/code/data/processed/session7/pubmedqa_phase2_train.jsonl"]}
+{"records": 9147, "items": 9147, "skipped": 0, "truncated": 8, "max_len": 768, "head_max_len": 192, "files": ["data/processed/public/readmit_window_validation.jsonl", "data/processed/public/pubmedqa_answer_validation.jsonl"]}
+arm A's items built (records, items, skipped, cut):
+{
+ "a_phase1": {
+  "records": 209246,
+  "items": 209246,
+  "skipped": 0,
+  "truncated": 479
+ },
+ "a_phase2": {
+  "records": 30599,
+  "items": 30599,
+  "skipped": 0,
+  "truncated": 111
+ },
+ "a_phase3": {
+  "records": 87627,
+  "items": 87627,
+  "skipped": 0,
+  "truncated": 114
+ },
+ "a_val12": {
+  "records": 2150,
+  "items": 2150,
+  "skipped": 0,
+  "truncated": 8
+ },
+ "a_val3": {
+  "records": 9147,
+  "items": 9147,
+  "skipped": 0,
+  "truncated": 8
+ }
+}
+2026-09-30T13:55:41Z  stage prepare_a finished

@@ -1,0 +1,36 @@
+{
+ "plan": "docs/prompt_session9.md, THE RECIPE RULE (I-39, the weight average)",
+ "written_utc": "2026-10-02T12:03:59Z",
+ "sources": {
+  "/root/eddm_s9/models/s9_long_1": {
+   "system": "s9_long_1",
+   "adapter_sha256": "1d06b893a03a0c7d74839567a5dbbfc2aca91244e7d75ab1c893a9277d645c94"
+  },
+  "/root/eddm_s9/models/s9_long_2": {
+   "system": "s9_long_2",
+   "adapter_sha256": "23cbb9d39224c7b979dfb03e552eb44b7dafe29c7422b376a85ca596967ce33b"
+  },
+  "/root/eddm_s9/models/s9_long_3": {
+   "system": "s9_long_3",
+   "adapter_sha256": "6db0529c0cb2a2367f17d48df89240e427af763089dd9ac03f71c3801adc0970"
+  }
+ },
+ "rank": 48,
+ "alpha": 96.0,
+ "scale": 2.0,
+ "adapted_layers": 252,
+ "largest_difference": 7.574604452779271e-11,
+ "largest_difference_by_kind": {
+  "down_proj": 4.0333480479104455e-11,
+  "gate_proj": 7.574604452779271e-11,
+  "up_proj": 5.447707150836589e-11,
+  "k_proj": 6.548703593289851e-11,
+  "o_proj": 6.826132714632394e-11,
+  "q_proj": 7.146279965355995e-11,
+  "v_proj": 7.145233493419112e-11
+ },
+ "tolerance": 1e-05,
+ "passed": true,
+ "out": "/root/eddm_s9/models/s9_ei_wavg",
+ "adapter_sha256": "ba72d47e9449d0ee86b2ea07c3f75e0b738b0e940b5fa3dea1a1d79ea3004115"
+}

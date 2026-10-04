@@ -1,0 +1,103 @@
+{
+ "source": "src/eval/retry_check_session5.py",
+ "note": "Session 5 follow-up, at Johann's request (29 September 2026): would a second try at Fiorillo v0.2 that retrains only the decision layer on reader v1 have a real chance of passing release criterion 4? Nothing is trained or selected here; no model is changed; the release bar is not changed.",
+ "candidate_minus_v0_1": {
+  "pubmedqa_answer": {
+   "n": 500,
+   "estimate": -0.01803917079380561,
+   "low": -0.052832853225069865,
+   "high": 0.018235815368542945,
+   "se_bootstrap": 0.01829476342990512,
+   "se_analytic": 0.01799539971127539
+  },
+  "readmit_window": {
+   "n": 6998,
+   "estimate": 0.0018488571110440622,
+   "low": -0.00026251959020120617,
+   "high": 0.004067986349063923,
+   "se_bootstrap": 0.0010860993861723021,
+   "se_analytic": 0.0010957497741666822
+  }
+ },
+ "pubmedqa_lines": {
+  "pass_line_95": -0.03585707771113056,
+  "pass_line_97_5_second_look": -0.041005937636079626,
+  "true_gain_for_80_percent_95": 0.05125433480377074,
+  "true_gain_for_80_percent_97_5": 0.056403194728719803
+ },
+ "readmission_line": {
+  "estimate_must_be_at_most": 0.00212871569731981
+ },
+ "run_to_run_pairs": [
+  {
+   "what": "BioClinical's reader, fresh head",
+   "runs": [
+    "arm_bioclinical",
+    "s5_bioclinical"
+   ],
+   "counted_in_spread": true,
+   "pubmedqa_answer": {
+    "arm_bioclinical": 0.7051254990303869,
+    "s5_bioclinical": 0.7486379683148247,
+    "difference": 0.04351246928443784
+   },
+   "readmit_window": {
+    "arm_bioclinical": 0.852318730631333,
+    "s5_bioclinical": 0.8630728623042466,
+    "difference": 0.010754131672913716
+   }
+  },
+  {
+   "what": "Laya's reader, fresh head",
+   "runs": [
+    "arm_laya_fresh",
+    "s5_laya"
+   ],
+   "counted_in_spread": true,
+   "pubmedqa_answer": {
+    "arm_laya_fresh": 0.7942866345638913,
+    "s5_laya": 0.7814689430837448,
+    "difference": -0.012817691480146592
+   },
+   "readmit_window": {
+    "arm_laya_fresh": 0.8829068686800573,
+    "s5_laya": 0.8586278842118101,
+    "difference": -0.024278984468247004
+   }
+  },
+  {
+   "what": "Laya's reader and head: session 4 run 2, then run 3 (v0.1) after correction 7",
+   "runs": [
+    "arm_laya_run2",
+    "arm_laya"
+   ],
+   "counted_in_spread": false,
+   "pubmedqa_answer": {
+    "arm_laya_run2": 0.8091339295608645,
+    "arm_laya": 0.7428082477206182,
+    "difference": -0.06632568184024629
+   },
+   "readmit_window": {
+    "arm_laya_run2": 0.870048852252543,
+    "arm_laya": 0.8523529124511091,
+    "difference": -0.017695939801433958
+   }
+  }
+ ],
+ "run_to_run_sd_per_run": {
+  "pubmedqa_answer": 0.022680543413404853,
+  "readmit_window": 0.013277051958621548
+ },
+ "chance_a_retry_no_better_than_the_candidate_passes": {
+  "95": {
+   "pubmedqa_part": 0.21605000189457446,
+   "readmission_part": 0.5084084295256779,
+   "both": 0.10984164216224034
+  },
+  "97_5_second_look": {
+   "pubmedqa_part": 0.1556209045146436,
+   "readmission_part": 0.5084084295256779,
+   "both": 0.07911897966565544
+  }
+ }
+}

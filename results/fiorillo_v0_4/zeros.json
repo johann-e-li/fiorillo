@@ -1,0 +1,519 @@
+{
+ "plan": "docs/prompt_session8.md, COMPARISONS",
+ "rows_whose_true_answer_prints_as_0": {
+  "s8_ei": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_temperature": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei-raw": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_1": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_1_temperature": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_1-raw": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_2": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_2_temperature": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_2-raw": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_3": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_3_temperature": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_ei_3-raw": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "gemma4_31b": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "gemma4_31b_temperature": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "gemma4_31b-raw": {
+   "validation": {
+    "evidence_effect": {
+     "rows": 1237,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "evidence_effect": {
+     "rows": 1218,
+     "true_answer_printed_zero": 0
+    },
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s7_b3": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s7_b3_temperature": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s7_b3-raw": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "arm_laya": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_a3": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_a3_temperature": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s8_a3-raw": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s7_a3": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "s7_a3_temperature": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "prior": {
+   "validation": {
+    "pubmedqa_answer": {
+     "rows": 2150,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "pubmedqa_answer": {
+     "rows": 500,
+     "true_answer_printed_zero": 0
+    },
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "readmission_pool": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "xgboost_tuned": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "catboost_tuned": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "lightgbm_tuned": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "lightgbm": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  },
+  "blend_v0_1": {
+   "validation": {
+    "readmit_window": {
+     "rows": 6997,
+     "true_answer_printed_zero": 0
+    }
+   },
+   "test": {
+    "readmit_window": {
+     "rows": 6998,
+     "true_answer_printed_zero": 0
+    }
+   }
+  }
+ }
+}

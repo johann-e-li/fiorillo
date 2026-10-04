@@ -1,0 +1,1678 @@
+{
+ "plan": "docs/prompt_session9.md, HAND-OFF ANALYSES (I-34 and I-35; secondary and descriptive)",
+ "source": "src/eval/handoff_curves_session9.py curves",
+ "written_utc": "2026-10-02T15:38:46Z",
+ "split": "test",
+ "seed": 20260927,
+ "resamples": 1000,
+ "hand_off_rates_percent": [
+  0,
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "coverages_percent": [
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75,
+  80,
+  85,
+  90,
+  95,
+  100
+ ],
+ "registered_rates_percent": [
+  10,
+  20,
+  30,
+  50
+ ],
+ "definitions": {
+  "items": "validation: the records marked calibrate (a record without the key counts as marked, as session 8 read them); test: every record; rows follow the large model's file (handoff_session8.aligned)",
+  "ranking": "confidence is Fiorillo's calibrated top probability; the least confident is handed off first; at hand-off rate r the floor(r n) least confident items go to the large model (session 8's order and count)",
+  "ties": "among exact ties the lower record ID, as text, is handed off first, in every order; inside a resample copies of one item are ordered by their place in the resample (key: the ID's rank times the resample's size plus the place)",
+  "risk_coverage": "at coverage c percent, the error rate of the n - floor((100 - c) n / 100) most confident answers, those the confidence rule keeps at hand-off rate 100 - c percent",
+  "aurc": "per item: the mean over k = 1 to n of the error rate of the k most confident answers (the reverse of the hand-off order, so among exact ties the higher ID counts as more confident)",
+  "e_aurc": "AURC minus the AURC, by the same rule, of a perfect ranking of the same answers (every right answer first)",
+  "augrc": "Traub et al. 2024 (arXiv:2407.01032, equations 3, 6 and 7): the area under the generalized risk-coverage curve, the generalized risk being the wrong answers among those kept divided by n (all items); computed as the authors' code does: one point for each distinct confidence, the curve closed at coverage 0 with risk 0, the trapezoid rule, not multiplied by the 1,000 their code uses for display; equal to (1 - AUROC_f) acc (1 - acc) + (1 - acc)^2 / 2, checked; without ties, the per-item mean over k of (wrong among the k most confident) / n, less (1 - acc) / (2 n)",
+  "confidence": "combined accuracy, the floor(r n) least confident handed off (session 8's rule)",
+  "random_expected": "the exact expected combined accuracy when floor(r n) items drawn uniformly without replacement are handed off: acc_F + floor(r n) / n x (acc_L - acc_F)",
+  "oracle": "a bound, not a rule: first the items Fiorillo gets wrong and the large model right, then those both get right or both wrong, last those Fiorillo gets right and the large model wrong, each group in session 8's order; no rule that hands off as many of the same items can do better",
+  "large_model_confidence": "a reference, not a usable rule (it needs the large model's answer on every item): the large model's calibrated top probability, the highest handed off first",
+  "intervals": "95 percent, percentile, from the resamples of handoff_session8.resample_indices (numpy default_rng(20260927); EI: articles, integers(0, m, m) over the m articles sorted by PMCID as text, every prompt of a drawn article kept; PubMedQA: items, integers(0, n, n)); at the registered rates for every curve, and for the three areas; each statistic computed again inside each resample, the items ranked again"
+ },
+ "pairs": [
+  {
+   "question": "evidence_effect",
+   "fiorillo": "s8_ei",
+   "large_model": "gemma4_31b",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_4/predictions/s8_ei_evidence_effect_test.csv",
+     "sha256": "8890814e830a5ad65c381e3316bf2806ed35db657cfdbf7538c7da82d55f1b84"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_4/predictions/gemma4_31b_evidence_effect_test.csv",
+     "sha256": "4d399e13d2bcf1031aad76cd8fa5d4e6a691fb2efb269295d8c729e7179a8df7"
+    },
+    "records": {
+     "path": "data/processed/session8/evidence_effect_test.jsonl",
+     "sha256": "47e002c9be721e4171822a1ac7ce9e0c2a84a025998d5ae5f8f3bee9af6bb2df"
+    }
+   },
+   "n": 1218,
+   "articles": 333,
+   "resampling": "articles, sorted by PMCID as text",
+   "fiorillo_alone": {
+    "accuracy": 0.9408866995073891,
+    "wrong": 72
+   },
+   "large_model_alone": {
+    "accuracy": 0.8711001642036125,
+    "wrong": 157
+   },
+   "ties": {
+    "fiorillo_confidence": 0,
+    "large_model_confidence": 141
+   },
+   "room": {
+    "items": 1218,
+    "fiorillo_wrong_large_model_right": 21,
+    "fiorillo_right_large_model_wrong": 106,
+    "both_right": 1040,
+    "both_wrong": 51,
+    "share_fiorillo_wrong_large_model_right": 0.017241379310344827,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 121,
+      "fiorillo_wrong_large_model_right": 14,
+      "fiorillo_right_large_model_wrong": 28
+     },
+     "rate_20": {
+      "handed_off": 243,
+      "fiorillo_wrong_large_model_right": 17,
+      "fiorillo_right_large_model_wrong": 47
+     },
+     "rate_30": {
+      "handed_off": 365,
+      "fiorillo_wrong_large_model_right": 20,
+      "fiorillo_right_large_model_wrong": 70
+     },
+     "rate_50": {
+      "handed_off": 609,
+      "fiorillo_wrong_large_model_right": 21,
+      "fiorillo_right_large_model_wrong": 97
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     61,
+     122,
+     183,
+     244,
+     305,
+     366,
+     427,
+     488,
+     549,
+     609,
+     670,
+     731,
+     792,
+     853,
+     914,
+     975,
+     1036,
+     1097,
+     1158,
+     1218
+    ],
+    "wrong": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     2,
+     4,
+     5,
+     6,
+     11,
+     12,
+     16,
+     21,
+     27,
+     35,
+     52,
+     72
+    ],
+    "risk": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.00273224043715847,
+     0.00234192037470726,
+     0.0020491803278688526,
+     0.0036429872495446266,
+     0.006568144499178982,
+     0.007462686567164179,
+     0.008207934336525308,
+     0.013888888888888888,
+     0.01406799531066823,
+     0.0175054704595186,
+     0.021538461538461538,
+     0.026061776061776062,
+     0.03190519598906107,
+     0.044905008635578586,
+     0.059113300492610835
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.01157914505353679,
+     "low": 0.0071270378644057815,
+     "high": 0.01742532812039275
+    },
+    "e_aurc": {
+     "estimate": 0.009772211665319044,
+     "low": 0.006071808441521603,
+     "high": 0.014684002796235529
+    },
+    "augrc": {
+     "estimate": 0.009379019146302993,
+     "low": 0.006004220100405685,
+     "high": 0.013651261044321053
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.001806933388217746
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.009379019146302998,
+    "auroc_f": 0.862783595113438,
+    "difference": -5.204170427930421e-18,
+    "per_item_right_sum": 0.009403285690019171,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     60,
+     121,
+     182,
+     243,
+     304,
+     365,
+     426,
+     487,
+     548,
+     609,
+     669,
+     730,
+     791,
+     852,
+     913,
+     974,
+     1035,
+     1096,
+     1157,
+     1218
+    ],
+    "confidence": [
+     0.9408866995073891,
+     0.9326765188834154,
+     0.9293924466338259,
+     0.9236453201970444,
+     0.916256157635468,
+     0.9055829228243021,
+     0.8998357963875205,
+     0.8940886699507389,
+     0.8850574712643678,
+     0.8809523809523809,
+     0.8784893267651889,
+     0.8752052545155994,
+     0.8752052545155994,
+     0.8727422003284072,
+     0.8719211822660099,
+     0.8719211822660099,
+     0.8711001642036125,
+     0.8711001642036125,
+     0.8711001642036125,
+     0.8711001642036125,
+     0.8711001642036125
+    ],
+    "random_expected": [
+     0.9408866995073891,
+     0.9374489391475972,
+     0.9339538827818087,
+     0.9304588264160202,
+     0.9269637700502317,
+     0.9234687136844433,
+     0.9199736573186548,
+     0.9164786009528663,
+     0.9129835445870778,
+     0.9094884882212892,
+     0.9059934318555007,
+     0.9025556714957088,
+     0.8990606151299203,
+     0.8955655587641319,
+     0.8920705023983434,
+     0.8885754460325549,
+     0.8850803896667664,
+     0.8815853333009779,
+     0.8780902769351895,
+     0.874595220569401,
+     0.8711001642036125
+    ],
+    "oracle": [
+     0.9408866995073891,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.958128078817734,
+     0.9211822660098522,
+     0.8711001642036125
+    ],
+    "large_model_confidence": [
+     0.9408866995073891,
+     0.9408866995073891,
+     0.9400656814449918,
+     0.9384236453201971,
+     0.9384236453201971,
+     0.9367816091954023,
+     0.9343185550082101,
+     0.9343185550082101,
+     0.9343185550082101,
+     0.9343185550082101,
+     0.9351395730706076,
+     0.9351395730706076,
+     0.9293924466338259,
+     0.9269293924466339,
+     0.9261083743842364,
+     0.922824302134647,
+     0.9220032840722496,
+     0.9170771756978654,
+     0.9055829228243021,
+     0.8899835796387521,
+     0.8711001642036125
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 121,
+     "confidence": {
+      "estimate": 0.9293924466338259,
+      "low": 0.9101939314549093,
+      "high": 0.9447214141866189
+     },
+     "random_expected": {
+      "estimate": 0.9339538827818087,
+      "low": 0.9183417155156569,
+      "high": 0.948466539224967
+     },
+     "oracle": {
+      "estimate": 0.958128078817734,
+      "low": 0.9432562995656107,
+      "high": 0.970540716667513
+     },
+     "large_model_confidence": {
+      "estimate": 0.9400656814449918,
+      "low": 0.9231360107374783,
+      "high": 0.9548125227583458
+     }
+    },
+    "rate_20": {
+     "handed_off": 243,
+     "confidence": {
+      "estimate": 0.916256157635468,
+      "low": 0.8984819407292317,
+      "high": 0.9321956147323794
+     },
+     "random_expected": {
+      "estimate": 0.9269637700502317,
+      "low": 0.9109883515977568,
+      "high": 0.9416460432385405
+     },
+     "oracle": {
+      "estimate": 0.958128078817734,
+      "low": 0.9432562995656107,
+      "high": 0.970540716667513
+     },
+     "large_model_confidence": {
+      "estimate": 0.9384236453201971,
+      "low": 0.9221671122695543,
+      "high": 0.9539751532508433
+     }
+    },
+    "rate_30": {
+     "handed_off": 365,
+     "confidence": {
+      "estimate": 0.8998357963875205,
+      "low": 0.8782255643778011,
+      "high": 0.9191687806056551
+     },
+     "random_expected": {
+      "estimate": 0.9199736573186548,
+      "low": 0.9036415652535053,
+      "high": 0.9352358574077606
+     },
+     "oracle": {
+      "estimate": 0.958128078817734,
+      "low": 0.9432562995656107,
+      "high": 0.970540716667513
+     },
+     "large_model_confidence": {
+      "estimate": 0.9343185550082101,
+      "low": 0.916661787665886,
+      "high": 0.950981220190779
+     }
+    },
+    "rate_50": {
+     "handed_off": 609,
+     "confidence": {
+      "estimate": 0.8784893267651889,
+      "low": 0.8551777137462773,
+      "high": 0.9014320173549383
+     },
+     "random_expected": {
+      "estimate": 0.9059934318555007,
+      "low": 0.8875895390777843,
+      "high": 0.9228900471248382
+     },
+     "oracle": {
+      "estimate": 0.958128078817734,
+      "low": 0.9432562995656107,
+      "high": 0.970540716667513
+     },
+     "large_model_confidence": {
+      "estimate": 0.9351395730706076,
+      "low": 0.9171376925815173,
+      "high": 0.9517493293490441
+     }
+    }
+   },
+   "i35_rule": {
+    "split": "test",
+    "system": "s8_ei",
+    "large_model": "gemma4_31b",
+    "in_sample": false,
+    "note": "the rule as frozen on validation, applied to this split",
+    "n": 1218,
+    "articles": 333,
+    "resamples": 1000,
+    "seed": 20260927,
+    "averaged_answer_differs_from_calibrated_answer": 0,
+    "ties": {
+     "rule_probability": 0
+    },
+    "room": {
+     "items": 1218,
+     "fiorillo_wrong_large_model_right": 21,
+     "fiorillo_right_large_model_wrong": 106,
+     "both_right": 1040,
+     "both_wrong": 51,
+     "share_fiorillo_wrong_large_model_right": 0.017241379310344827,
+     "confidence_rule": {
+      "rate_10": {
+       "handed_off": 121,
+       "fiorillo_wrong_large_model_right": 14,
+       "fiorillo_right_large_model_wrong": 28
+      },
+      "rate_20": {
+       "handed_off": 243,
+       "fiorillo_wrong_large_model_right": 17,
+       "fiorillo_right_large_model_wrong": 47
+      },
+      "rate_30": {
+       "handed_off": 365,
+       "fiorillo_wrong_large_model_right": 20,
+       "fiorillo_right_large_model_wrong": 70
+      },
+      "rate_50": {
+       "handed_off": 609,
+       "fiorillo_wrong_large_model_right": 21,
+       "fiorillo_right_large_model_wrong": 97
+      }
+     }
+    },
+    "room_on_validation": "On validation s8_ei was wrong where gemma4_31b was right on 31 of 1,237 prompts (2.5 percent), and the confidence rule's 10 percent hand-off (123 prompts) held 23 of them and 23 prompts the other way (s8_ei right, gemma4_31b wrong), so a better rule has room of at most about 2.5 points of accuracy and few cases to learn from.",
+    "registered_rates": {
+     "rate_10": {
+      "handed_off": 121,
+      "rule": {
+       "estimate": 0.9285714285714286,
+       "low": 0.910181705034631,
+       "high": 0.9447165699114343
+      },
+      "confidence": {
+       "estimate": 0.9293924466338259,
+       "low": 0.9101939314549093,
+       "high": 0.9447214141866189
+      },
+      "rule_minus_confidence": {
+       "estimate": -0.0008210180623973162,
+       "low": -0.002366878488230997,
+       "high": 0.001581342613734776,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0016 and a loss larger than 0.0024 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 14,
+       "fiorillo_right_large_model_wrong": 29
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 14,
+       "fiorillo_right_large_model_wrong": 28
+      }
+     },
+     "rate_20": {
+      "handed_off": 243,
+      "rule": {
+       "estimate": 0.916256157635468,
+       "low": 0.8986092343339097,
+       "high": 0.9324360001756428
+      },
+      "confidence": {
+       "estimate": 0.916256157635468,
+       "low": 0.8984819407292317,
+       "high": 0.9321956147323794
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0,
+       "low": -0.0016120300692674615,
+       "high": 0.0016475144219528781,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0016 and a loss larger than 0.0016 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 17,
+       "fiorillo_right_large_model_wrong": 47
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 17,
+       "fiorillo_right_large_model_wrong": 47
+      }
+     },
+     "rate_30": {
+      "handed_off": 365,
+      "rule": {
+       "estimate": 0.8998357963875205,
+       "low": 0.8782255643778011,
+       "high": 0.9193370874840001
+      },
+      "confidence": {
+       "estimate": 0.8998357963875205,
+       "low": 0.8782255643778011,
+       "high": 0.9191687806056551
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0,
+       "low": -0.0008376089869025771,
+       "high": 0.0016156069931258649,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0016 and a loss larger than 0.0008 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 20,
+       "fiorillo_right_large_model_wrong": 70
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 20,
+       "fiorillo_right_large_model_wrong": 70
+      }
+     },
+     "rate_50": {
+      "handed_off": 609,
+      "rule": {
+       "estimate": 0.8784893267651889,
+       "low": 0.8551777137462773,
+       "high": 0.9014320173549383
+      },
+      "confidence": {
+       "estimate": 0.8784893267651889,
+       "low": 0.8551777137462773,
+       "high": 0.9014320173549383
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0,
+       "low": 0.0,
+       "high": 0.0008319467554076532,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0008 and a loss larger than -0.0000 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 21,
+       "fiorillo_right_large_model_wrong": 97
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 21,
+       "fiorillo_right_large_model_wrong": 97
+      }
+     }
+    },
+    "rule_file": {
+     "path": "results/fiorillo_v0_5/validation_analyses/handoff_rule_s8.json",
+     "sha256": "f5d8335a67186183137a9fe488b0b6d07a2fdf1db0dc9415e35fa99384da3958",
+     "written_utc": "2026-10-01T14:04:21Z"
+    },
+    "runs": [
+     {
+      "path": "results/fiorillo_v0_4/predictions/s8_ei_1-raw_evidence_effect_test.csv",
+      "sha256": "cfeb9ac0efb284980c054fb1db4365aece8b8721a22752c4c5f79c642324b080"
+     },
+     {
+      "path": "results/fiorillo_v0_4/predictions/s8_ei_2-raw_evidence_effect_test.csv",
+      "sha256": "5d4bd29c2d406f53cf991d8735ec7f2c27a739f8d7547fc7b6808406544ccf93"
+     },
+     {
+      "path": "results/fiorillo_v0_4/predictions/s8_ei_3-raw_evidence_effect_test.csv",
+      "sha256": "c9158d22d5569dc42c3bf98ed035aa30e5a20617d98508db3e20971f299d9c27"
+     }
+    ]
+   }
+  },
+  {
+   "question": "evidence_effect",
+   "fiorillo": "s9_ei_wavg",
+   "large_model": "gemma4_31b_long",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_5/predictions/s9_ei_wavg_evidence_effect_test.csv",
+     "sha256": "3ae26b1db8a683ebfe47fbc2cab2bc5287ffbcc62c083189feeacdb8301d30d3"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_5/predictions/gemma4_31b_long_evidence_effect_test.csv",
+     "sha256": "835b525eb672178a4d6b31482cf3114a5931f6cb41dc4369622016b12c56c691"
+    },
+    "records": {
+     "path": "data/processed/session8/evidence_effect_test.jsonl",
+     "sha256": "47e002c9be721e4171822a1ac7ce9e0c2a84a025998d5ae5f8f3bee9af6bb2df"
+    }
+   },
+   "n": 1218,
+   "articles": 333,
+   "resampling": "articles, sorted by PMCID as text",
+   "fiorillo_alone": {
+    "accuracy": 0.9269293924466339,
+    "wrong": 89
+   },
+   "large_model_alone": {
+    "accuracy": 0.8752052545155994,
+    "wrong": 152
+   },
+   "ties": {
+    "fiorillo_confidence": 51,
+    "large_model_confidence": 137
+   },
+   "room": {
+    "items": 1218,
+    "fiorillo_wrong_large_model_right": 37,
+    "fiorillo_right_large_model_wrong": 100,
+    "both_right": 1029,
+    "both_wrong": 52,
+    "share_fiorillo_wrong_large_model_right": 0.030377668308702793,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 121,
+      "fiorillo_wrong_large_model_right": 25,
+      "fiorillo_right_large_model_wrong": 17
+     },
+     "rate_20": {
+      "handed_off": 243,
+      "fiorillo_wrong_large_model_right": 33,
+      "fiorillo_right_large_model_wrong": 45
+     },
+     "rate_30": {
+      "handed_off": 365,
+      "fiorillo_wrong_large_model_right": 37,
+      "fiorillo_right_large_model_wrong": 74
+     },
+     "rate_50": {
+      "handed_off": 609,
+      "fiorillo_wrong_large_model_right": 37,
+      "fiorillo_right_large_model_wrong": 98
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     61,
+     122,
+     183,
+     244,
+     305,
+     366,
+     427,
+     488,
+     549,
+     609,
+     670,
+     731,
+     792,
+     853,
+     914,
+     975,
+     1036,
+     1097,
+     1158,
+     1218
+    ],
+    "wrong": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     2,
+     3,
+     5,
+     7,
+     12,
+     14,
+     17,
+     25,
+     28,
+     42,
+     59,
+     89
+    ],
+    "risk": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.004098360655737705,
+     0.0036429872495446266,
+     0.0049261083743842365,
+     0.007462686567164179,
+     0.009575923392612859,
+     0.015151515151515152,
+     0.016412661195779603,
+     0.018599562363238512,
+     0.02564102564102564,
+     0.02702702702702703,
+     0.03828623518687329,
+     0.05094991364421416,
+     0.07307060755336617
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.012804942120072908,
+     "low": 0.008187873017888429,
+     "high": 0.01824327389130224
+    },
+    "e_aurc": {
+     "estimate": 0.010037787982735972,
+     "low": 0.006393611235236963,
+     "high": 0.014540936172914302
+    },
+    "augrc": {
+     "estimate": 0.010530668866833296,
+     "low": 0.006927459889039528,
+     "high": 0.01468158575733372
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.002767154137336937
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.010530668866833293,
+    "auroc_f": 0.8839382569839074,
+    "difference": 3.469446951953614e-18,
+    "per_item_right_sum": 0.010560665011149129,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     60,
+     121,
+     182,
+     243,
+     304,
+     365,
+     426,
+     487,
+     548,
+     609,
+     669,
+     730,
+     791,
+     852,
+     913,
+     974,
+     1035,
+     1096,
+     1157,
+     1218
+    ],
+    "confidence": [
+     0.9269293924466339,
+     0.9351395730706076,
+     0.9334975369458128,
+     0.9293924466338259,
+     0.9170771756978654,
+     0.9055829228243021,
+     0.896551724137931,
+     0.8916256157635468,
+     0.8866995073891626,
+     0.8850574712643678,
+     0.8768472906403941,
+     0.8768472906403941,
+     0.8768472906403941,
+     0.8768472906403941,
+     0.8760262725779967,
+     0.8752052545155994,
+     0.8752052545155994,
+     0.8752052545155994,
+     0.8752052545155994,
+     0.8752052545155994,
+     0.8752052545155994
+    ],
+    "random_expected": [
+     0.9269293924466339,
+     0.9243814053564351,
+     0.921790951814733,
+     0.919200498273031,
+     0.9166100447313289,
+     0.914019591189627,
+     0.9114291376479249,
+     0.9088386841062228,
+     0.9062482305645208,
+     0.9036577770228187,
+     0.9010673234811166,
+     0.8985193363909179,
+     0.8959288828492158,
+     0.8933384293075137,
+     0.8907479757658117,
+     0.8881575222241097,
+     0.8855670686824076,
+     0.8829766151407056,
+     0.8803861615990035,
+     0.8777957080573014,
+     0.8752052545155994
+    ],
+    "oracle": [
+     0.9269293924466339,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9573070607553367,
+     0.9252873563218391,
+     0.8752052545155994
+    ],
+    "large_model_confidence": [
+     0.9269293924466339,
+     0.9277504105090312,
+     0.9269293924466339,
+     0.9252873563218391,
+     0.9261083743842364,
+     0.9277504105090312,
+     0.9244663382594417,
+     0.9244663382594417,
+     0.9244663382594417,
+     0.9252873563218391,
+     0.9261083743842364,
+     0.9244663382594417,
+     0.9220032840722496,
+     0.9211822660098522,
+     0.9203612479474549,
+     0.9178981937602627,
+     0.916256157635468,
+     0.9113300492610837,
+     0.896551724137931,
+     0.8842364532019704,
+     0.8752052545155994
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 121,
+     "confidence": {
+      "estimate": 0.9334975369458128,
+      "low": 0.9160479865972596,
+      "high": 0.9491844857187451
+     },
+     "random_expected": {
+      "estimate": 0.921790951814733,
+      "low": 0.9039661028674145,
+      "high": 0.9369188736247104
+     },
+     "oracle": {
+      "estimate": 0.9573070607553367,
+      "low": 0.9442151085758425,
+      "high": 0.9693114799511205
+     },
+     "large_model_confidence": {
+      "estimate": 0.9269293924466339,
+      "low": 0.9097046089700412,
+      "high": 0.9427886337183276
+     }
+    },
+    "rate_20": {
+     "handed_off": 243,
+     "confidence": {
+      "estimate": 0.9170771756978654,
+      "low": 0.8985846253326556,
+      "high": 0.932843306779477
+     },
+     "random_expected": {
+      "estimate": 0.9166100447313289,
+      "low": 0.8987976458097088,
+      "high": 0.9322362669818428
+     },
+     "oracle": {
+      "estimate": 0.9573070607553367,
+      "low": 0.9442151085758425,
+      "high": 0.9693114799511205
+     },
+     "large_model_confidence": {
+      "estimate": 0.9261083743842364,
+      "low": 0.9076362656930769,
+      "high": 0.9429736684737322
+     }
+    },
+    "rate_30": {
+     "handed_off": 365,
+     "confidence": {
+      "estimate": 0.896551724137931,
+      "low": 0.8750988442822385,
+      "high": 0.9172810697004246
+     },
+     "random_expected": {
+      "estimate": 0.9114291376479249,
+      "low": 0.8934670129454438,
+      "high": 0.9276116450671131
+     },
+     "oracle": {
+      "estimate": 0.9573070607553367,
+      "low": 0.9442151085758425,
+      "high": 0.9693114799511205
+     },
+     "large_model_confidence": {
+      "estimate": 0.9244663382594417,
+      "low": 0.9055353506913886,
+      "high": 0.9422671234998331
+     }
+    },
+    "rate_50": {
+     "handed_off": 609,
+     "confidence": {
+      "estimate": 0.8768472906403941,
+      "low": 0.8534694275790542,
+      "high": 0.901311696246144
+     },
+     "random_expected": {
+      "estimate": 0.9010673234811166,
+      "low": 0.8821094384658719,
+      "high": 0.9182456131144788
+     },
+     "oracle": {
+      "estimate": 0.9573070607553367,
+      "low": 0.9442151085758425,
+      "high": 0.9693114799511205
+     },
+     "large_model_confidence": {
+      "estimate": 0.9261083743842364,
+      "low": 0.9072828478467219,
+      "high": 0.9440738557873346
+     }
+    }
+   },
+   "i35_rule": {
+    "split": "test",
+    "system": "s9_ei_wavg",
+    "large_model": "gemma4_31b_long",
+    "in_sample": false,
+    "note": "the rule as frozen on validation, applied to this split",
+    "n": 1218,
+    "articles": 333,
+    "resamples": 1000,
+    "seed": 20260927,
+    "averaged_answer_differs_from_calibrated_answer": 6,
+    "ties": {
+     "rule_probability": 0
+    },
+    "room": {
+     "items": 1218,
+     "fiorillo_wrong_large_model_right": 37,
+     "fiorillo_right_large_model_wrong": 100,
+     "both_right": 1029,
+     "both_wrong": 52,
+     "share_fiorillo_wrong_large_model_right": 0.030377668308702793,
+     "confidence_rule": {
+      "rate_10": {
+       "handed_off": 121,
+       "fiorillo_wrong_large_model_right": 25,
+       "fiorillo_right_large_model_wrong": 17
+      },
+      "rate_20": {
+       "handed_off": 243,
+       "fiorillo_wrong_large_model_right": 33,
+       "fiorillo_right_large_model_wrong": 45
+      },
+      "rate_30": {
+       "handed_off": 365,
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 74
+      },
+      "rate_50": {
+       "handed_off": 609,
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 98
+      }
+     }
+    },
+    "room_on_validation": "On validation s9_ei_wavg was wrong where gemma4_31b_long was right on 28 of 1,237 prompts (2.3 percent), and the confidence rule's 10 percent hand-off (123 prompts) held 16 of them and 19 prompts the other way (s9_ei_wavg right, gemma4_31b_long wrong), so a better rule has room of at most about 2.3 points of accuracy and few cases to learn from.",
+    "registered_rates": {
+     "rate_10": {
+      "handed_off": 121,
+      "rule": {
+       "estimate": 0.9334975369458128,
+       "low": 0.9149754037699708,
+       "high": 0.9492968134836388
+      },
+      "confidence": {
+       "estimate": 0.9334975369458128,
+       "low": 0.9160479865972596,
+       "high": 0.9491844857187451
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0,
+       "low": -0.004762665449566392,
+       "high": 0.0041192132931321115,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0041 and a loss larger than 0.0048 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 26,
+       "fiorillo_right_large_model_wrong": 18
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 25,
+       "fiorillo_right_large_model_wrong": 17
+      }
+     },
+     "rate_20": {
+      "handed_off": 243,
+      "rule": {
+       "estimate": 0.916256157635468,
+       "low": 0.8993066196518057,
+       "high": 0.9335544293162067
+      },
+      "confidence": {
+       "estimate": 0.9170771756978654,
+       "low": 0.8985846253326556,
+       "high": 0.932843306779477
+      },
+      "rule_minus_confidence": {
+       "estimate": -0.0008210180623974273,
+       "low": -0.002449432733619683,
+       "high": 0.0032340898186669627,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0032 and a loss larger than 0.0024 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 33,
+       "fiorillo_right_large_model_wrong": 46
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 33,
+       "fiorillo_right_large_model_wrong": 45
+      }
+     },
+     "rate_30": {
+      "handed_off": 365,
+      "rule": {
+       "estimate": 0.896551724137931,
+       "low": 0.8749948854337152,
+       "high": 0.9170059869947956
+      },
+      "confidence": {
+       "estimate": 0.896551724137931,
+       "low": 0.8750988442822385,
+       "high": 0.9172810697004246
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0,
+       "low": -0.0024024061864503232,
+       "high": 0.0017140174789484095,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0017 and a loss larger than 0.0024 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 74
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 74
+      }
+     },
+     "rate_50": {
+      "handed_off": 609,
+      "rule": {
+       "estimate": 0.8776683087027914,
+       "low": 0.8531763005858666,
+       "high": 0.9013769543868717
+      },
+      "confidence": {
+       "estimate": 0.8768472906403941,
+       "low": 0.8534694275790542,
+       "high": 0.901311696246144
+      },
+      "rule_minus_confidence": {
+       "estimate": 0.0008210180623973162,
+       "low": -0.0008578184073548295,
+       "high": 0.0008613822281132193,
+       "reading": "no difference was detected",
+       "excludes": "a gain larger than 0.0009 and a loss larger than 0.0009 in combined accuracy (not equivalence)"
+      },
+      "rule_hand_off": {
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 97
+      },
+      "confidence_hand_off": {
+       "fiorillo_wrong_large_model_right": 37,
+       "fiorillo_right_large_model_wrong": 98
+      }
+     }
+    },
+    "rule_file": {
+     "path": "results/fiorillo_v0_5/handoff_rule_v05.json",
+     "sha256": "c88a57688086ef39b0ec6ce992a80e302b1ae280b26d13c36558922446c62815",
+     "written_utc": "2026-10-02T13:40:30Z"
+    },
+    "runs": [
+     {
+      "path": "results/fiorillo_v0_5/predictions/s9_long_1-raw_evidence_effect_test.csv",
+      "sha256": "1b561fdafcf57a337abd002176b3841f6ae23e807d236486beac4c0c412558bc"
+     },
+     {
+      "path": "results/fiorillo_v0_5/predictions/s9_long_2-raw_evidence_effect_test.csv",
+      "sha256": "8ce8539bb69467e1ac63aa7e18fe691853de87be75292cf4f9282a9d8796ff29"
+     },
+     {
+      "path": "results/fiorillo_v0_5/predictions/s9_long_3-raw_evidence_effect_test.csv",
+      "sha256": "a3e62b9b8d5399d2964de93254b63ab2c1b22a1f549c9f553759cb02c959f6ee"
+     }
+    ]
+   }
+  },
+  {
+   "question": "pubmedqa_answer",
+   "fiorillo": "s7_b3",
+   "large_model": "gemma4_31b",
+   "files": {
+    "fiorillo": {
+     "path": "results/fiorillo_v0_3/predictions/s7_b3_pubmedqa_answer_test.csv",
+     "sha256": "4f67a62d56dc589ec94950e925ec6c0e7e710cca54d4559de6e3ab1a94c1edb1"
+    },
+    "large_model": {
+     "path": "results/fiorillo_v0_4/predictions/gemma4_31b_pubmedqa_answer_test.csv",
+     "sha256": "654dfd1bff9a4041debb1877924d9a7f72c092277ae98968fc41ae0ccc601588"
+    },
+    "records": {
+     "path": "data/processed/public/pubmedqa_answer_test.jsonl",
+     "sha256": "169cdbd58058d1fee64afe25fa1c30c0c99672da8d5e47dd5585e4ff12e45b72"
+    }
+   },
+   "n": 500,
+   "articles": null,
+   "resampling": "items",
+   "fiorillo_alone": {
+    "accuracy": 0.796,
+    "wrong": 102
+   },
+   "large_model_alone": {
+    "accuracy": 0.784,
+    "wrong": 108
+   },
+   "ties": {
+    "fiorillo_confidence": 0,
+    "large_model_confidence": 0
+   },
+   "room": {
+    "items": 500,
+    "fiorillo_wrong_large_model_right": 21,
+    "fiorillo_right_large_model_wrong": 27,
+    "both_right": 371,
+    "both_wrong": 81,
+    "share_fiorillo_wrong_large_model_right": 0.042,
+    "confidence_rule": {
+     "rate_10": {
+      "handed_off": 50,
+      "fiorillo_wrong_large_model_right": 8,
+      "fiorillo_right_large_model_wrong": 6
+     },
+     "rate_20": {
+      "handed_off": 100,
+      "fiorillo_wrong_large_model_right": 13,
+      "fiorillo_right_large_model_wrong": 13
+     },
+     "rate_30": {
+      "handed_off": 150,
+      "fiorillo_wrong_large_model_right": 17,
+      "fiorillo_right_large_model_wrong": 18
+     },
+     "rate_50": {
+      "handed_off": 250,
+      "fiorillo_wrong_large_model_right": 21,
+      "fiorillo_right_large_model_wrong": 21
+     }
+    }
+   },
+   "risk_coverage": {
+    "coverage_percent": [
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "kept": [
+     25,
+     50,
+     75,
+     100,
+     125,
+     150,
+     175,
+     200,
+     225,
+     250,
+     275,
+     300,
+     325,
+     350,
+     375,
+     400,
+     425,
+     450,
+     475,
+     500
+    ],
+    "wrong": [
+     0,
+     0,
+     2,
+     5,
+     8,
+     10,
+     12,
+     14,
+     17,
+     19,
+     23,
+     29,
+     33,
+     42,
+     49,
+     60,
+     70,
+     80,
+     91,
+     102
+    ],
+    "risk": [
+     0.0,
+     0.0,
+     0.02666666666666667,
+     0.05,
+     0.064,
+     0.06666666666666667,
+     0.06857142857142857,
+     0.07,
+     0.07555555555555556,
+     0.076,
+     0.08363636363636363,
+     0.09666666666666666,
+     0.10153846153846154,
+     0.12,
+     0.13066666666666665,
+     0.15,
+     0.16470588235294117,
+     0.17777777777777778,
+     0.19157894736842104,
+     0.204
+    ]
+   },
+   "areas": {
+    "aurc": {
+     "estimate": 0.09175860820054779,
+     "low": 0.06637800470227063,
+     "high": 0.1183308752100166
+    },
+    "e_aurc": {
+     "estimate": 0.06916701176517745,
+     "low": 0.049154871387584245,
+     "high": 0.09005436120108967
+    },
+    "augrc": {
+     "estimate": 0.061532,
+     "low": 0.04656935,
+     "high": 0.07665910000000001
+    },
+    "aurc_perfect_ranking": {
+     "estimate": 0.02259159643537034
+    }
+   },
+   "augrc_check": {
+    "equation_7": 0.06153199999999998,
+    "auroc_f": 0.7492117449995074,
+    "difference": 2.0816681711721685e-17,
+    "per_item_right_sum": 0.061736,
+    "per_item_right_sum_note": "the mean over k = 1 to n of (wrong among the k most confident) / n, ranked as for AURC; without ties it is AUGRC + (1 - acc) / (2 n); reported for reference, not as the AUGRC"
+   },
+   "deferral": {
+    "rate_percent": [
+     0,
+     5,
+     10,
+     15,
+     20,
+     25,
+     30,
+     35,
+     40,
+     45,
+     50,
+     55,
+     60,
+     65,
+     70,
+     75,
+     80,
+     85,
+     90,
+     95,
+     100
+    ],
+    "handed_off": [
+     0,
+     25,
+     50,
+     75,
+     100,
+     125,
+     150,
+     175,
+     200,
+     225,
+     250,
+     275,
+     300,
+     325,
+     350,
+     375,
+     400,
+     425,
+     450,
+     475,
+     500
+    ],
+    "confidence": [
+     0.796,
+     0.794,
+     0.8,
+     0.8,
+     0.796,
+     0.798,
+     0.794,
+     0.798,
+     0.798,
+     0.798,
+     0.796,
+     0.794,
+     0.792,
+     0.79,
+     0.788,
+     0.784,
+     0.784,
+     0.784,
+     0.784,
+     0.784,
+     0.784
+    ],
+    "random_expected": [
+     0.796,
+     0.7954,
+     0.7948000000000001,
+     0.7942,
+     0.7936000000000001,
+     0.793,
+     0.7924,
+     0.7918000000000001,
+     0.7912,
+     0.7906000000000001,
+     0.79,
+     0.7894,
+     0.7888000000000001,
+     0.7882,
+     0.7876000000000001,
+     0.787,
+     0.7864,
+     0.7858,
+     0.7852,
+     0.7846000000000001,
+     0.784
+    ],
+    "oracle": [
+     0.796,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.838,
+     0.834,
+     0.784
+    ],
+    "large_model_confidence": [
+     0.796,
+     0.796,
+     0.8,
+     0.8,
+     0.8,
+     0.802,
+     0.804,
+     0.804,
+     0.804,
+     0.804,
+     0.802,
+     0.802,
+     0.804,
+     0.808,
+     0.806,
+     0.804,
+     0.806,
+     0.806,
+     0.806,
+     0.79,
+     0.784
+    ]
+   },
+   "registered_rates": {
+    "rate_10": {
+     "handed_off": 50,
+     "confidence": {
+      "estimate": 0.8,
+      "low": 0.762,
+      "high": 0.836
+     },
+     "random_expected": {
+      "estimate": 0.7948000000000001,
+      "low": 0.7603949999999999,
+      "high": 0.830805
+     },
+     "oracle": {
+      "estimate": 0.838,
+      "low": 0.804,
+      "high": 0.87205
+     },
+     "large_model_confidence": {
+      "estimate": 0.8,
+      "low": 0.764,
+      "high": 0.838
+     }
+    },
+    "rate_20": {
+     "handed_off": 100,
+     "confidence": {
+      "estimate": 0.796,
+      "low": 0.76,
+      "high": 0.834
+     },
+     "random_expected": {
+      "estimate": 0.7936000000000001,
+      "low": 0.75958,
+      "high": 0.82841
+     },
+     "oracle": {
+      "estimate": 0.838,
+      "low": 0.804,
+      "high": 0.87205
+     },
+     "large_model_confidence": {
+      "estimate": 0.8,
+      "low": 0.76595,
+      "high": 0.838
+     }
+    },
+    "rate_30": {
+     "handed_off": 150,
+     "confidence": {
+      "estimate": 0.794,
+      "low": 0.758,
+      "high": 0.832
+     },
+     "random_expected": {
+      "estimate": 0.7924,
+      "low": 0.757985,
+      "high": 0.8261999999999999
+     },
+     "oracle": {
+      "estimate": 0.838,
+      "low": 0.804,
+      "high": 0.87205
+     },
+     "large_model_confidence": {
+      "estimate": 0.804,
+      "low": 0.76995,
+      "high": 0.84
+     }
+    },
+    "rate_50": {
+     "handed_off": 250,
+     "confidence": {
+      "estimate": 0.796,
+      "low": 0.75995,
+      "high": 0.834
+     },
+     "random_expected": {
+      "estimate": 0.79,
+      "low": 0.754975,
+      "high": 0.823
+     },
+     "oracle": {
+      "estimate": 0.838,
+      "low": 0.804,
+      "high": 0.87205
+     },
+     "large_model_confidence": {
+      "estimate": 0.802,
+      "low": 0.768,
+      "high": 0.838
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,228 @@
+2026-10-02T13:40:31Z  stage testpreds started
+{"release_candidate_sha256": "bd45820bef38b523092813b406949c44af7f40babed6eb20658559ff3e83ea55", "testpreds_start_utc": "2026-10-02T13:40:32Z"}
+2026-10-02T13:40:32Z  GPU free: 0 MiB used
+2026-10-02T13:40:32Z  s9_b_1 predicts test from /root/eddm_s9/code/data/processed/session8 (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 3046.53it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 3028.72it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_b_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_b_1 test: 1218 rows, 221.2 forward seconds
+2026-10-02T13:44:23Z  s9_b_2 predicts test from /root/eddm_s9/code/data/processed/session8 (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 5442.65it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_b_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_b_2 test: 1218 rows, 221.3 forward seconds
+2026-10-02T13:48:15Z  s9_b_3 predicts test from /root/eddm_s9/code/data/processed/session8 (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  35%|███▍      | 139/398 [00:00<00:00, 1381.27it/s]Loading weights:  70%|██████▉   | 278/398 [00:00<00:00, 957.92it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1114.58it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_b_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_b_3 test: 1218 rows, 221.1 forward seconds
+2026-10-02T13:52:06Z  s9_long_1 predicts test from data/processed/session9/long (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 155/398 [00:00<00:00, 1545.95it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1993.21it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_long_1' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_long_1 test: 1218 rows, 369.3 forward seconds
+2026-10-02T13:58:31Z  s9_long_2 predicts test from data/processed/session9/long (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7581.12it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_long_2' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_long_2 test: 1218 rows, 369.4 forward seconds
+2026-10-02T14:04:51Z  s9_long_3 predicts test from data/processed/session9/long (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 188/398 [00:00<00:00, 1879.28it/s]Loading weights:  94%|█████████▍| 376/398 [00:00<00:00, 1601.46it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1695.48it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_long_3' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_long_3 test: 1218 rows, 369.0 forward seconds
+2026-10-02T14:11:12Z  s9_ei_wavg predicts test from data/processed/session9/long (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 7308.49it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_ei_wavg' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_ei_wavg test: 1218 rows, 369.5 forward seconds
+2026-10-02T14:17:34Z  s9_ei_wavg_none predicts test from /root/eddm_s9/code/data/processed/session9/checks/none (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 1467.11it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 2990.07it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_ei_wavg' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_ei_wavg_none test: 1218 rows, 13.1 forward seconds
+2026-10-02T14:17:58Z  s9_ei_wavg_title predicts test from /root/eddm_s9/code/data/processed/session9/checks/title (1209 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 6564.35it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_ei_wavg' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_ei_wavg_title test: 1209 rows, 13.4 forward seconds
+2026-10-02T14:18:23Z  s9_ei_wavg_swap predicts test from data/processed/session9/checks/swap_long (1218 rows); GPU memory used now: 0 MiB
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  68%|██████▊   | 271/398 [00:00<00:00, 2708.69it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 2232.70it/s]
+[transformers] The tokenizer you are loading from '/root/eddm_s9/models/s9_ei_wavg' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+s9_ei_wavg_swap test: 1218 rows, 369.2 forward seconds
+2026-10-02T14:24:45Z  GPU free: 0 MiB used
+{"prompts": {"evidence_effect_test": 1218}}
+INFO 10-02 14:25:04 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s9/models/gemma4_31b', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.9, 'max_logprobs': 1000, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s9/models/gemma4_31b'}
+INFO 10-02 14:25:04 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 10-02 14:25:04 [model.py:2030] Using max model len 8192
+WARNING 10-02 14:25:04 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 10-02 14:25:06 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 10-02 14:25:06 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 10-02 14:25:06 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 10-02 14:25:06 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 10-02 14:25:06 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 10-02 14:25:06 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 10-02 14:25:06 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 10-02 14:25:06 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 10-02 14:25:06 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=102780) INFO 10-02 14:25:10 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s9/models/gemma4_31b', speculative_config=None, tokenizer='/root/eddm_s9/models/gemma4_31b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s9/models/gemma4_31b, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=102780) INFO 10-02 14:25:11 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_8cc14e1b9cc446ef9f04391302c38fc5 backend=nccl
+(EngineCore pid=102780) INFO 10-02 14:25:11 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=102780) INFO 10-02 14:25:11 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=102780) INFO 10-02 14:25:12 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=102780) INFO 10-02 14:25:12 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=102780) INFO 10-02 14:25:13 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=102780) INFO 10-02 14:25:13 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=102780) INFO 10-02 14:25:13 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 58.25 GiB. Available RAM: 132.07 GiB.
+(EngineCore pid=102780) INFO 10-02 14:25:13 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=102780) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(EngineCore pid=102780) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:07<00:07,  7.82s/it]
+(EngineCore pid=102780) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  4.71s/it]
+(EngineCore pid=102780) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  5.18s/it]
+(EngineCore pid=102780) 
+(EngineCore pid=102780) INFO 10-02 14:25:24 [default_loader.py:430] Loading weights took 10.50 seconds
+(EngineCore pid=102780) INFO 10-02 14:25:24 [model_runner.py:428] Model loading took 57.76 GiB memory and 12.749497 seconds
+(EngineCore pid=102780) INFO 10-02 14:25:24 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=102780) INFO 10-02 14:25:24 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=102780) INFO 10-02 14:25:27 [gpu_worker.py:640] Available KV cache memory: 9.5 GiB
+(EngineCore pid=102780) INFO 10-02 14:25:28 [kv_cache_utils.py:2395] GPU KV cache size: 11,302 tokens, Maximum concurrency for 8,192 tokens per request: 1.38x
+(EngineCore pid=102780) INFO 10-02 14:25:28 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=102780) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=102780)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=102780) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:08<00:00,  8.22s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:08<00:00,  8.22s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=102780) INFO 10-02 14:25:36 [kernel_warmup.py:185] JIT kernel warmup finished in 8.22s.
+(EngineCore pid=102780) INFO 10-02 14:25:36 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/27a6dea707f23bf28944a86cbb8f543a75d352cfe532f5617df1f963fd22ac56/autotune_configs.json
+(EngineCore pid=102780) 2026-10-02 14:25:36,713 - INFO - autotuner.py:2789 - flashinfer.jit: [Autotuner]: Loaded 0 configs from /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/27a6dea707f23bf28944a86cbb8f543a75d352cfe532f5617df1f963fd22ac56/autotune_configs.json
+(EngineCore pid=102780) 2026-10-02 14:25:36,713 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=102780) INFO 10-02 14:25:36 [kernel_warmup.py:359] Running FlashInfer autotune with 16384 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024, 1280, 1536, 1792, 2048, 2560, 3072, 3584, 4096, 8192, 16384).
+(EngineCore pid=102780) /root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=102780)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=102780) 2026-10-02 14:25:43,700 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=102780) 2026-10-02 14:25:43,707 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/27a6dea707f23bf28944a86cbb8f543a75d352cfe532f5617df1f963fd22ac56/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=102780) INFO 10-02 14:25:51 [gpu_worker.py:888] Free memory on device (78.67/79.18 GiB) on startup. Desired GPU memory utilization is (0.9, 71.26 GiB). Actual usage is 59.13 GiB for consumed memory (weights + non-torch), 2.63 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=10046280807` (9.36 GiB) to fit into requested memory, or `--kv-cache-memory=17995836928` (16.76 GiB) to fully utilize gpu memory. Current kv cache memory in use is 9.5 GiB.
+(EngineCore pid=102780) INFO 10-02 14:25:52 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=102780) INFO 10-02 14:25:52 [torch_utils.py:287] Reducing Torch threads from 104 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=102780) INFO 10-02 14:25:52 [core.py:379] init engine (profile, create kv cache, warmup model) took 27.86 s
+(EngineCore pid=102780) INFO 10-02 14:25:52 [kv_cache_utils.py:748] kv cache group sizes [16, 16, 16, 16, 16, 32]
+(EngineCore pid=102780) INFO 10-02 14:25:52 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=102780) INFO 10-02 14:25:52 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 10-02 14:25:55 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.9; max_logprobs 1000; max_num_seqs None; max_num_batched_tokens None
+(EngineCore pid=102780) WARNING 10-02 14:25:56 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=102780) /root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=102780)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=102780) WARNING 10-02 14:26:02 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+evidence_effect test: 1218 items in 657.0 s; 1051 asked again with the top 1000 (558.6 s); 512 left for the second process
+INFO 10-02 14:46:11 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 10-02 14:46:11 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 10-02 14:46:11 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=102780) INFO 10-02 14:46:11 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=102780) INFO 10-02 14:46:11 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=102780) INFO 10-02 14:46:11 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=102780) INFO 10-02 14:46:11 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 10-02 14:46:12 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 10-02 14:46:12 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 10-02 14:46:12 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.6 s
+512 items need the second process: run second
+2026-10-02T14:46:14Z  GPU free: 0 MiB used
+INFO 10-02 14:46:25 [api_utils.py:286] non-default args: {'tokenizer': '/root/eddm_s9/models/gemma4_31b', 'dtype': 'bfloat16', 'seed': 20260927, 'max_model_len': 8192, 'gpu_memory_utilization': 0.9, 'max_num_batched_tokens': 1024, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0, 'audio': 0, 'video': 0}, 'model': '/root/eddm_s9/models/gemma4_31b'}
+INFO 10-02 14:46:25 [model.py:692] Resolved architecture: Gemma4ForConditionalGeneration
+INFO 10-02 14:46:25 [model.py:2030] Using max model len 8192
+WARNING 10-02 14:46:25 [model.py:994] Model does not support mm_device_do_normalize, forcing mm_device_do_normalize = False.
+[transformers] `SiglipImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `SiglipImageProcessor` instead.
+INFO 10-02 14:46:27 [registry.py:146] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+INFO 10-02 14:46:27 [model.py:900] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.
+INFO 10-02 14:46:27 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=1024.
+INFO 10-02 14:46:27 [config.py:245] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.
+WARNING 10-02 14:46:27 [vllm.py:1547] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 10-02 14:46:27 [vllm.py:1570] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 10-02 14:46:27 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 10-02 14:46:27 [vllm.py:1780] Cudagraph is disabled under eager mode
+INFO 10-02 14:46:27 [compilation.py:336] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=103380) INFO 10-02 14:46:32 [core.py:123] Initializing a V1 LLM engine (v0.30.0) with config: model='/root/eddm_s9/models/gemma4_31b', speculative_config=None, tokenizer='/root/eddm_s9/models/gemma4_31b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=20260927, served_model_name=/root/eddm_s9/models/gemma4_31b, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [1024], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=103380) INFO 10-02 14:46:33 [parallel_state.py:1827] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_e24e464ec0474e2ea7677035c8a0358d backend=nccl
+(EngineCore pid=103380) INFO 10-02 14:46:33 [parallel_state.py:2267] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=103380) INFO 10-02 14:46:33 [gpu_worker.py:441] Using V2 Model Runner
+(EngineCore pid=103380) INFO 10-02 14:46:34 [model_runner.py:396] Loading model from scratch...
+(EngineCore pid=103380) INFO 10-02 14:46:34 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=103380) INFO 10-02 14:46:35 [cuda.py:538] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=103380) INFO 10-02 14:46:35 [flash_attn.py:1116] Using FlashAttention version 4
+(EngineCore pid=103380) INFO 10-02 14:46:35 [weight_utils.py:895] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 58.25 GiB. Available RAM: 132.15 GiB.
+(EngineCore pid=103380) INFO 10-02 14:46:35 [weight_utils.py:918] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+(EngineCore pid=103380) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(EngineCore pid=103380) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:07<00:07,  7.82s/it]
+(EngineCore pid=103380) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  4.83s/it]
+(EngineCore pid=103380) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  5.28s/it]
+(EngineCore pid=103380) 
+(EngineCore pid=103380) INFO 10-02 14:46:46 [default_loader.py:430] Loading weights took 10.69 seconds
+(EngineCore pid=103380) INFO 10-02 14:46:47 [model_runner.py:428] Model loading took 57.76 GiB memory and 13.033364 seconds
+(EngineCore pid=103380) INFO 10-02 14:46:47 [topk_topp_sampler.py:62] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=103380) INFO 10-02 14:46:47 [utils.py:320] Using LBNHC KV cache layout.
+(EngineCore pid=103380) INFO 10-02 14:46:48 [gpu_worker.py:640] Available KV cache memory: 13.02 GiB
+(EngineCore pid=103380) INFO 10-02 14:46:48 [kv_cache_utils.py:2395] GPU KV cache size: 35,780 tokens, Maximum concurrency for 8,192 tokens per request: 4.37x
+(EngineCore pid=103380) INFO 10-02 14:46:48 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=103380) JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__FakeTensorBFloat16div1div1div1i64div8i64div81_FakeTensorBFloat16div1div1div1div1i64div8i6'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=103380)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=103380) JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:08<00:00,  8.29s/kernel, FA4DenseAttentionKernel (5 keys)]JIT kernel warmup (5 compile keys): 100%|██████████| 1/1 [00:08<00:00,  8.29s/kernel, FA4DenseAttentionKernel (5 keys)]
+(EngineCore pid=103380) INFO 10-02 14:46:57 [kernel_warmup.py:185] JIT kernel warmup finished in 8.29s.
+(EngineCore pid=103380) INFO 10-02 14:46:57 [kernel_warmup.py:438] Using FlashInfer autotune cache file: /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/10c2ac488711f5717ffc73a724879c60208931b568ce25e6c47a876623d66213/autotune_configs.json
+(EngineCore pid=103380) 2026-10-02 14:46:57,487 - INFO - autotuner.py:2789 - flashinfer.jit: [Autotuner]: Loaded 0 configs from /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/10c2ac488711f5717ffc73a724879c60208931b568ce25e6c47a876623d66213/autotune_configs.json
+(EngineCore pid=103380) 2026-10-02 14:46:57,487 - INFO - autotuner.py:972 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=103380) INFO 10-02 14:46:57 [kernel_warmup.py:359] Running FlashInfer autotune with 1024 tokens and token buckets (1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 768, 1024).
+(EngineCore pid=103380) /root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i641_None_10'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=103380)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=103380) 2026-10-02 14:47:03,699 - INFO - autotuner.py:995 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=103380) 2026-10-02 14:47:03,706 - INFO - autotuner.py:2652 - flashinfer.jit: [Autotuner]: Saved 0 configs to /root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/10c2ac488711f5717ffc73a724879c60208931b568ce25e6c47a876623d66213/autotune_configs.json (0 new, 0 from previous config)
+(EngineCore pid=103380) INFO 10-02 14:47:07 [gpu_worker.py:888] Free memory on device (78.67/79.18 GiB) on startup. Desired GPU memory utilization is (0.9, 71.26 GiB). Actual usage is 58.08 GiB for consumed memory (weights + non-torch), 0.16 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=13823270503` (12.87 GiB) to fit into requested memory, or `--kv-cache-memory=21772826624` (20.28 GiB) to fully utilize gpu memory. Current kv cache memory in use is 13.02 GiB.
+(EngineCore pid=103380) INFO 10-02 14:47:07 [jit_monitor.py:85] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=103380) INFO 10-02 14:47:08 [torch_utils.py:287] Reducing Torch threads from 104 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=103380) INFO 10-02 14:47:08 [core.py:379] init engine (profile, create kv cache, warmup model) took 21.35 s
+(EngineCore pid=103380) INFO 10-02 14:47:08 [kv_cache_utils.py:748] kv cache group sizes [16, 16, 16, 16, 16, 32]
+(EngineCore pid=103380) INFO 10-02 14:47:08 [kv_cache_utils.py:749] kv lcm block sizes 32
+(EngineCore pid=103380) INFO 10-02 14:47:08 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+INFO 10-02 14:47:10 [hf.py:642] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+vLLM engine: multimodal inputs limited to 0 for ['image', 'audio', 'video']; utilization 0.9; max_logprobs 20; max_num_seqs 1; max_num_batched_tokens 1024
+(EngineCore pid=103380) WARNING 10-02 14:47:13 [jit_monitor.py:141] Triton kernel JIT compilation during inference: _topk_log_softmax_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=103380) WARNING 10-02 14:47:13 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=103380) /root/eddm_s9/vllm_env/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2463: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__Tensorgmemoi64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tensorgmemoi64i64i641_Tens'. Its type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>` is not supported. If the value is known at compile time, annotate it: `aux_data: Constexpr`. Otherwise, implement the `JitArgument` or `DynamicExpression` protocol for type `<class 'vllm.vllm_flash_attn.cute.utils.AuxData'>`, or register a custom argument adapter.
+(EngineCore pid=103380)   exe_args, func_types, adapted_args = self.generate_mlir_function_types(
+(EngineCore pid=103380) WARNING 10-02 14:47:17 [jit_monitor.py:141] CuTeDSL JIT compilation during inference: FlashAttentionForwardCombine. This causes a latency spike; consider extending warmup to cover this shape/config.
+INFO 10-02 15:17:37 [core_client.py:744] [shutdown] MPClient: start timeout=30s
+INFO 10-02 15:17:37 [core_client.py:746] [shutdown] MPClient: stopping engine manager
+INFO 10-02 15:17:37 [utils.py:632] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=103380) INFO 10-02 15:17:37 [core.py:1342] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=103380) INFO 10-02 15:17:37 [core.py:1493] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=103380) INFO 10-02 15:17:37 [core.py:1524] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=103380) INFO 10-02 15:17:37 [core.py:1355] [shutdown] EngineCore: exiting busy loop
+INFO 10-02 15:17:39 [core_client.py:748] [shutdown] MPClient: engine manager stopped
+INFO 10-02 15:17:39 [core_client.py:749] [shutdown] MPClient: cleaning up background resources
+INFO 10-02 15:17:39 [core_client.py:751] [shutdown] MPClient: complete
+vLLM engine shut down in 1.6 s
+evidence_effect test: 1218 rows written; letters' median summed probability 1.0000
+2026-10-02T15:17:42Z  large model (test): gemma4_31b's files copied to the name gemma4_31b_long in results/fiorillo_v0_5/large_model/
+2026-10-02T15:17:42Z  GPU free: 0 MiB used
+Loading weights:   0%|          | 0/773 [00:00<?, ?it/s]Loading weights: 100%|██████████| 773/773 [00:00<00:00, 25171.16it/s]
+biogpt_large_pqa test: 500 rows written to results/fiorillo_v0_5/predictions/biogpt_large_pqa-raw_pubmedqa_answer_test.csv; 15.1 forward seconds
+2026-10-02T15:18:11Z  tabicl: NOT BUILT (NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)); no test predictions
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+xgboost_codes: validation reproduced (largest difference 5.00e-10); 6998 test rows written
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+/root/eddm_s9/code/src/eval/trees_session9.py:383: Pandas4Warning: Constructing a Categorical with a dtype and values containing non-null entries not in that dtype's categories is deprecated and will raise in a future version.
+  cols[code3_column(f)] = pd.Categorical(codes[f], categories=tables["code3_categories"][f])
+catboost_codes: validation reproduced (largest difference 5.00e-10); 6998 test rows written
+lightgbm_tuned: validation reproduced (largest difference 5.00e-10); 6998 test rows written
+2026-10-02T15:18:19Z  test predictions written: s9_b_1 s9_b_2 s9_b_3 s9_long_1 s9_long_2 s9_long_3 s9_ei_wavg; the reading checks of s9_ei_wavg; the large model if it applies; biogpt_large_pqa and tabicl unless NOT BUILT; xgboost_codes catboost_codes lightgbm_tuned
+2026-10-02T15:18:19Z  stage testpreds finished

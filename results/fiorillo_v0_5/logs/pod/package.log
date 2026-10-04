@@ -1,0 +1,4 @@
+2026-10-02T15:18:19Z  stage package started
+not_built.json: {"tabicl": "NOT BUILT: tabicl, trees_session9.py tabicl failed (exit 1; the error is in logs/tabicl.log) (written 2026-10-02T12:17:20Z)"}
+ei zip: ['s9_b_1', 's9_b_2', 's9_b_3', 's9_ei_wavg', 's9_long_1', 's9_long_2', 's9_long_3', 's9_lr1_1', 's9_lr1_2', 's9_lr2_1', 's9_lr2_2', 's9_swap_1', 's9_swap_2']
+trees zip: written

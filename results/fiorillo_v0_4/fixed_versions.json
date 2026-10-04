@@ -1,0 +1,42 @@
+{
+ "plan": "docs/prompt_session8.md, step 0 (d), with correction 1",
+ "written_utc": "2026-09-30T10:37:01Z",
+ "gemma_4_31b_it": {
+  "repo": "google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "gated": false,
+  "license": "apache-2.0 (model card license_link https://ai.google.dev/gemma/docs/gemma_4_license)",
+  "created": "2026-03-11",
+  "last_modified": "2026-07-20",
+  "architecture": "Gemma4ForConditionalGeneration (text, image; text only here)",
+  "weights_bytes": 62546338248,
+  "weights_gb": 62.55,
+  "text_config": {
+   "num_hidden_layers": 60,
+   "hidden_size": 5376,
+   "num_attention_heads": 32,
+   "num_key_value_heads": 16,
+   "head_dim": 256,
+   "vocab_size": 262144,
+   "sliding_window": 1024
+  },
+  "thinking_off": "apply_chat_template(messages, add_generation_prompt=True, enable_thinking=False) with no system message; the template's default for enable_thinking is false, and with it off the generation prompt ends with an empty thought block, '<|channel>thought\\n<channel|>', so the next token is the answer (model card, section 'Thinking Mode Configuration': 'if thinking is disabled, the model will still generate the tags but with an empty thought block')"
+ },
+ "vllm": {
+  "version": "0.30.0",
+  "released": "2026-09-22",
+  "license": "Apache-2.0",
+  "gemma_4": "supported; the 0.30.0 release notes list Gemma 4 work (QKV fuser for Gemma4, #55690; pruned sliding-window tiles for Gemma 4 multimodal prompts, #53147)",
+  "requires": "torch==2.13.0; transformers>=5.10.4",
+  "builds": {
+   "default": "vllm==0.30.0 from PyPI, built for CUDA 13.0 (the release's default)",
+   "cu129": "vllm-0.30.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl from https://github.com/vllm-project/vllm/releases/tag/v0.30.0, with torch==2.13.0 from https://download.pytorch.org/whl/cu129"
+  },
+  "rule_on_the_pod": "prepare_large reads the driver's CUDA version from nvidia-smi: 13.0 or later, the default build; otherwise the cu129 build; then checks that vLLM imports and CUDA starts in /root/eddm_s8/vllm_env/ (correction 1)"
+ },
+ "tokenizers": {
+  "tokenizers": "0.23.2",
+  "transformers": "5.17.0",
+  "note": "the linked shell's versions, equal to uv.lock's"
+ }
+}

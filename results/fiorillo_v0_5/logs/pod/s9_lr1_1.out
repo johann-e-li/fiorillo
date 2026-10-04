@@ -1,0 +1,39 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 8338.74it/s]
+epoch 1 step 20/330 loss 0.4910 (2.8 sequences/s)
+epoch 1 step 40/330 loss 0.1102 (2.8 sequences/s)
+epoch 1 step 60/330 loss 0.0561 (2.8 sequences/s)
+epoch 1 step 80/330 loss 0.0081 (2.8 sequences/s)
+validation after epoch 1, step 80: {'n': 200, 'accuracy': 0.935, 'log_loss': 0.1912, 'ece': 0.0217, 'selection_log_loss': 0.1912, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.935, 'log_loss': 0.1912, 'ece': 0.0217}}, 'epoch': 1, 'step': 80, 'elapsed_seconds': 945.9}
+epoch 1 step 100/330 loss 0.0200 (2.7 sequences/s)
+epoch 1 step 120/330 loss 0.0034 (2.8 sequences/s)
+epoch 1 step 140/330 loss 2.9414 (2.8 sequences/s)
+epoch 1 step 160/330 loss 0.0022 (2.8 sequences/s)
+validation after epoch 1, step 160: {'n': 200, 'accuracy': 0.94, 'log_loss': 0.1892, 'ece': 0.0415, 'selection_log_loss': 0.1892, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.94, 'log_loss': 0.1892, 'ece': 0.0415}}, 'epoch': 1, 'step': 160, 'elapsed_seconds': 1889.2}
+validation after epoch 1, step 165: {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1864, 'ece': 0.0362, 'selection_log_loss': 0.1864, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1864, 'ece': 0.0362}}, 'epoch': 1, 'step': 165, 'elapsed_seconds': 1982.5}
+epoch 2 step 180/330 loss 0.0001 (2.7 sequences/s)
+epoch 2 step 200/330 loss 0.0002 (2.7 sequences/s)
+epoch 2 step 220/330 loss 0.0095 (2.8 sequences/s)
+epoch 2 step 240/330 loss 0.0013 (2.8 sequences/s)
+validation after epoch 2, step 240: {'n': 200, 'accuracy': 0.935, 'log_loss': 0.2054, 'ece': 0.0405, 'selection_log_loss': 0.2054, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.935, 'log_loss': 0.2054, 'ece': 0.0405}}, 'epoch': 2, 'step': 240, 'elapsed_seconds': 2869.5}
+epoch 2 step 260/330 loss 0.0010 (2.7 sequences/s)
+epoch 2 step 280/330 loss 0.0017 (2.7 sequences/s)
+epoch 2 step 300/330 loss 0.0038 (2.7 sequences/s)
+epoch 2 step 320/330 loss 0.0027 (2.8 sequences/s)
+validation after epoch 2, step 320: {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1969, 'ece': 0.0361, 'selection_log_loss': 0.1969, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1969, 'ece': 0.0361}}, 'epoch': 2, 'step': 320, 'elapsed_seconds': 3808.9}
+validation after epoch 2, step 330: {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1957, 'ece': 0.0529, 'selection_log_loss': 0.1957, 'per_question': {'evidence_effect': {'n': 200, 'accuracy': 0.93, 'log_loss': 0.1957, 'ece': 0.0529}}, 'epoch': 2, 'step': 330, 'elapsed_seconds': 3959.4}
+/usr/local/lib/python3.12/dist-packages/torch/optim/lbfgs.py:457: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  loss = float(closure())
+{
+  "system": "s9_lr1_1",
+  "optimizer_steps": 330,
+  "sequences_per_second": 2.73,
+  "kept_validation_selection_log_loss_exact": 0.1957,
+  "temperature": {
+    "evidence_effect": 1.3304
+  },
+  "trainable_parameters": {
+    "adapters": 33030144,
+    "projection_and_head": 29134595
+  }
+}

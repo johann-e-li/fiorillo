@@ -1,0 +1,32 @@
+# Question bank for public v0 (session 4). Wording fixed in docs/prompt_session4.md, step 3; do not edit.
+# Keys use Laya's public question format: type, instructions, criteria.
+# The duan_* questions are copied character for character from Duan's demo
+# (docs/prior_art_snapshots/2026-09-27_duan-demo-index.html) and are used only to evaluate Duan.
+questions:
+  pubmedqa_answer:
+    type: choice
+    instructions: "Based only on this abstract, what is the answer to the research question?"
+    criteria:
+      "yes": "the reported results support yes"
+      "no": "the reported results support no"
+      "maybe": "the reported results are inconclusive"
+  readmit_window:
+    type: score
+    instructions: "How soon after this hospital discharge is the patient readmitted?"
+    criteria:
+      - "no readmission after this discharge"
+      - "readmitted more than 30 days after this discharge"
+      - "readmitted within 30 days of this discharge"
+  duan_conclusion_supported:
+    type: noul
+    instructions: "Treat the study's research question as a statement about the effect being studied. Using only the reported results, decide whether that statement is supported."
+    criteria:
+      "false": "the reported results do not support the statement"
+      "true": "the reported results support the statement"
+  duan_readmit_window:
+    type: score
+    instructions: "Rate how soon this diabetes patient is readmitted after this index hospitalization: level 0 = no readmission, level 1 = readmitted more than 30 days after discharge, level 2 = readmitted within 30 days of discharge."
+    criteria:
+      - "no readmission after this discharge"
+      - "readmitted more than 30 days after this discharge"
+      - "readmitted within 30 days of this discharge"
