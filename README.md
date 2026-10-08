@@ -4,6 +4,8 @@ Fiorillo answers typed medical questions with calibrated probabilities. Version 
 
 This repository holds the code, the results files and the sources of the paper "Calibrated Answers About Randomized Trials From a 4-Billion-Parameter Open Model: A Registered Test and a License-Clean Release" (Johann Emmanuel Li, 2026). The paper's arXiv link will be added here when it is posted.
 
+The paper is on arXiv: [arXiv:2610.07019](https://arxiv.org/abs/2610.07019).
+
 - The model: https://huggingface.co/johanneli/fiorillo-v0.5 (digital object identifier 10.57967/hf/10722)
 - The registration and its update, on the Open Science Framework: https://osf.io/kaxmn/
 - ORCID iD: https://orcid.org/0009-0009-8726-460X
