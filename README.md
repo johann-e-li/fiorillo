@@ -2,7 +2,7 @@
 
 Fiorillo answers typed medical questions with calibrated probabilities. Version 0.5 answers three, each with its own specialist: whether a randomized trial's article reports an outcome significantly higher, significantly lower or not significantly different with an intervention than with a comparator (Evidence Inference 2.0); the answer to a biomedical research question from its abstract (PubMedQA: yes, no or maybe); and how soon a patient with diabetes is readmitted after a hospital discharge (the Diabetes 130-US Hospitals data of the University of California, Irvine (UCI) Machine Learning Repository). It is for research. It is not a medical device and must not be used to make clinical decisions.
 
-This repository holds the code, the results files and the sources of the paper "Calibrated Answers About Randomized Trials From a 4-Billion-Parameter Open Model: A Registered Test and a License-Clean Release" (Johann Emmanuel Li, 2026). The paper's arXiv link will be added here when it is posted.
+This repository holds the code, the results files and the sources of the paper "Calibrated Answers About Randomized Trials From a 4-Billion-Parameter Open Model: A Registered Test and a License-Clean Release" (Johann Emmanuel Li, 2026).
 
 The paper is on arXiv: [arXiv:2610.07019](https://arxiv.org/abs/2610.07019).
 
