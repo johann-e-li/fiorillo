@@ -1,0 +1,1 @@
+22 pages, 2 figures, 15 tables. Code, results files and the paper's sources: https://github.com/johann-e-li/fiorillo. Model: https://doi.org/10.57967/hf/10722. Registration: https://osf.io/kaxmn/

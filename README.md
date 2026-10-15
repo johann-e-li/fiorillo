@@ -1,8 +1,8 @@
 # Fiorillo
 
-Fiorillo answers typed medical questions with calibrated probabilities. Version 0.5 answers three, each with its own specialist: whether a randomized trial's article reports an outcome significantly higher, significantly lower or not significantly different with an intervention than with a comparator (Evidence Inference 2.0); the answer to a biomedical research question from its abstract (PubMedQA: yes, no or maybe); and how soon a patient with diabetes is readmitted after a hospital discharge (the Diabetes 130-US Hospitals data of the University of California, Irvine (UCI) Machine Learning Repository). It is for research. It is not a medical device and must not be used to make clinical decisions.
+Fiorillo is a set of open models for closed-set medical classification, each of which gives a calibrated probability for every label. Version 0.5 holds one model for each of three tasks: whether a randomized trial's article reports an outcome significantly higher, significantly lower or not significantly different with an intervention than with a comparator (Evidence Inference 2.0); the answer to a biomedical research question from its abstract (PubMedQA: yes, no or maybe); and how soon a patient with diabetes is readmitted after a hospital discharge (the Diabetes 130-US Hospitals data of the University of California, Irvine (UCI) Machine Learning Repository). It is for research. It is not a medical device and must not be used to make clinical decisions.
 
-This repository holds the code, the results files and the sources of the paper "Calibrated Answers About Randomized Trials From a 4-Billion-Parameter Open Model: A Registered Test and a License-Clean Release" (Johann Emmanuel Li, 2026).
+This repository holds the code, the results files and the sources of the paper "Calibrated Evidence Inference With a Small, Permissively Licensed Open Model" (Johann Emmanuel Li, 2026). Its first version on arXiv was titled "Calibrated Answers About Randomized Trials From a 4-Billion-Parameter Open Model: A Registered Test and a License-Clean Release"; the second, of 15 October 2026, uses standard machine-learning terms and the new title.
 
 The paper is on arXiv: [arXiv:2610.07019](https://arxiv.org/abs/2610.07019).
 
@@ -12,10 +12,10 @@ The paper is on arXiv: [arXiv:2610.07019](https://arxiv.org/abs/2610.07019).
 
 ## What is here
 
-- `src/`: the code that builds the question records, trains the readers and decision heads, calibrates and evaluates them, and checks reported numbers against the results files. Its tests are in `src/tests/`.
-- `scripts/`: the scripts I ran on my Mac and on rented cloud servers with graphics processing units, including the release script and the release's usage check.
-- `results/`: the results files of v0.4 and v0.5, the two versions the paper reports, and the earlier results files that the documents below cite.
-- `docs/`: the registration (`osf_prereg_fiorillo_v0_4.md`) and its update (`osf_update_session9.md`), the reports on v0.4 and v0.5 with their figure checks, the model card of v0.5, the paper's sources (`docs/preprint/`) with the checks I ran on it, and an independent review of its draft (`docs/research/`).
+- `src/`: the code that builds the question records, trains the models and their classification heads, calibrates and evaluates them, and checks reported numbers against the results files. Its tests are in `src/tests/`.
+- `scripts/`: the scripts I ran on my Mac and on rented cloud servers with graphics processing units, including the release script and the release's reproducibility check.
+- `results/`: the results files of v0.4 and v0.5, the two versions the paper reports (its full-data model and its released model), and the earlier results files that the documents below cite.
+- `docs/`: the registration (`osf_prereg_fiorillo_v0_4.md`) and its update (`osf_update_session9.md`), the reports on v0.4 and v0.5 with their figure checks, the model card of v0.5, the paper's sources (`docs/preprint/` for its first version and `docs/preprint/v2/` for its second) with the checks I ran on them, and an independent review of its draft (`docs/research/`).
 
 This is a copy of the parts of my working repository that the paper relies on. Some files cite my working plans, log and notes, which are not part of it.
 

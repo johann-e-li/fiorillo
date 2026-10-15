@@ -1,0 +1,10 @@
+\begin{tabular}{c>{\raggedright\arraybackslash}p{3.4cm}cccc}
+\toprule
+ & Criterion & Full-data model & Result & Released model & Result \\
+\midrule
+1 & ECE at most the limit & 0.0119 (limit 0.05) & met & 0.0168 (limit 0.05) & met \\[2pt]
+2 & Log loss minus the class prior's, interval below 0 & \begin{tabular}[t]{@{}c@{}}$-$0.8773\\[-1pt]{\scriptsize ($-$0.9225 to $-$0.8281)}\end{tabular} & met & \begin{tabular}[t]{@{}c@{}}$-$0.8603\\[-1pt]{\scriptsize ($-$0.9078 to $-$0.8104)}\end{tabular} & met \\[2pt]
+3 & Log loss minus Gemma 4 31B-it's, interval below 0 & \begin{tabular}[t]{@{}c@{}}$-$0.2084\\[-1pt]{\scriptsize ($-$0.2720 to $-$0.1505)}\end{tabular} & met & \begin{tabular}[t]{@{}c@{}}$-$0.1829\\[-1pt]{\scriptsize ($-$0.2598 to $-$0.1164)}\end{tabular} & met \\[2pt]
+4 & Macro-F1 not below Gemma 4 31B-it's & 0.9399 against 0.8626 & met & 0.9248 against 0.8668 & met \\[2pt]
+\bottomrule
+\end{tabular}
